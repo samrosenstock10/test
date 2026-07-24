@@ -1,46 +1,51 @@
 {
-  "updatedAt": "2026-07-17T22:30:00Z",
+  "updatedAt": "2026-07-24T21:16:22Z",
   "period": {
-    "start": "2026-07-13",
-    "end": "2026-07-17",
-    "label": "Week ended Jul 17"
+    "start": "2026-07-20",
+    "end": "2026-07-24",
+    "label": "Week ended Jul 24"
   },
   "items": {
     "META": {
-      "text": "Meta fell about 3.5% as the broader AI selloff was amplified by fresh concern that rapidly rising infrastructure spending could pressure free cash flow before the returns on that investment become visible.",
+      "text": "Meta fell about 7.9%, far more than the Nasdaq’s 2.1% decline, as Alphabet’s record cash burn and higher AI capex intensified concern that Meta’s own spending surge could pressure free cash flow ahead of its earnings; no new Meta-specific operating catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/global-markets-wrapup-1-2026-07-17/",
-        "https://www.investing.com/news/stock-market-news/meta-stock-falls-as-bmo-cuts-rating-citing-ai-roi-and-capex-concerns-93CH-4148395"
+        "https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23/",
+        "https://www.reuters.com/business/wall-st-futures-rise-after-tech-rout-mideast-tariffs-focus-2026-07-24/"
       ]
     },
     "NVDA": {
-      "text": "Nvidia fell about 3.9% with the global semiconductor rout as investors questioned stretched AI valuations and reacted to new competitive pressure from cheaper Chinese AI models.",
+      "text": "Nvidia gained about 2.0% despite a 2.1% Nasdaq decline, mostly because battered semiconductor shares rebounded sharply early in the week on renewed AI-demand optimism; Friday’s capex-driven chip selloff erased part of the gain, and no distinct Nvidia catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/global-markets-wrapup-1-2026-07-17/"
+        "https://www.investing.com/news/stock-market-news/wall-st-futures-gain-on-iran-ceasefire-hopes-earnings-in-focus-4802354",
+        "https://www.reuters.com/business/wall-st-futures-rise-after-tech-rout-mideast-tariffs-focus-2026-07-24/"
       ]
     },
     "AVGO": {
-      "text": "Broadcom fell about 7.3% mainly with the semiconductor-sector unwind, as investors reduced exposure to highly valued AI infrastructure names rather than reacting to a distinct Broadcom announcement.",
+      "text": "Broadcom gained about 3.0% as investors bought the prior week’s semiconductor dip after Morgan Stanley argued datacenter shortages still supported AI infrastructure demand; the move largely matched the chip rebound rather than reflecting new Broadcom news.",
       "sources": [
-        "https://www.reuters.com/business/global-markets-wrapup-1-2026-07-17/"
+        "https://www.investing.com/news/stock-market-news/why-is-broadcom-stock-climbing-today-93CH-4800613",
+        "https://www.investing.com/news/stock-market-news/wall-st-futures-gain-on-iran-ceasefire-hopes-earnings-in-focus-4802354"
       ]
     },
     "PLTR": {
-      "text": "No verified company-specific catalyst emerged; Palantir’s roughly 4.4% gain was an idiosyncratic rebound against a falling Nasdaq, so the precise driver remains unresolved.",
+      "text": "Palantir fell about 7.1%, underperforming the Nasdaq, with no confirmed company-specific catalyst; the clearest explanation was a valuation-led selloff in high-multiple AI software ahead of its August 3 earnings, amplified by recent insider-sale optics.",
       "sources": [
-        "https://apnews.com/article/stocks-markets-tariffs-trump-ai-4bfafdd3de75beb15f64f68d50bd9e58"
+        "https://www.investing.com/news/stock-market-news/why-is-palantir-technologies-stock-sliding-today-93CH-4806353",
+        "https://www.reuters.com/business/wall-st-futures-rise-after-tech-rout-mideast-tariffs-focus-2026-07-24/"
       ]
     },
     "SPCX": {
-      "text": "SpaceX fell about 14.7% as post-IPO selling intensified and a Starship test was aborted after multiple engines failed to ignite, reinforcing near-term execution and valuation concerns.",
+      "text": "SpaceX fell about 7.2% as repeated Starship launch delays reinforced execution concerns while heavy short positioning and the approaching post-IPO lockup expiry kept selling pressure elevated; the move was company-specific rather than a broad-market decline.",
       "sources": [
-        "https://www.reuters.com/business/aerospace-defense/spacex-aborts-starship-test-after-engine-ignition-failures-2026-07-17/"
+        "https://www.reuters.com/business/media-telecom/short-sellers-notch-155-billion-profit-spacex-shares-slide-2026-07-23/",
+        "https://www.investing.com/news/stock-market-news/spacex-moves-starship-launch-attempt-to-thursday-4812020"
       ]
     },
     "MU": {
-      "text": "Micron fell about 13.3% as the memory trade reversed after SK Hynix’s sharp selloff, with profit-taking spreading across memory and storage stocks after an exceptional rally.",
+      "text": "Micron gained about 8.5% after Morgan Stanley called the memory selloff a buying opportunity and projected sharply higher memory prices, then Tesla publicly thanked Micron for a significant chip allocation; Friday’s memory-sector pullback trimmed a much larger midweek gain.",
       "sources": [
-        "https://www.investing.com/news/stock-market-news/memory-stocks-tumble-as-sk-hynix-plunges-sparking-broad-profit-taking-4149399"
+        "https://www.investing.com/news/stock-market-news/why-is-micron-technology-stock-up-over-6-today-93CH-4802607",
+        "https://www.investing.com/news/stock-market-news/micron-gains-as-musk-thanks-it-for--significant-memory-chip-allocation-4809785"
       ]
     }
   }
