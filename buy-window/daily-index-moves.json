@@ -1,0 +1,22 @@
+{
+  "updatedAt": "2026-07-24T21:18:06.848Z",
+  "period": {
+    "date": "2026-07-24",
+    "label": "Jul 24, 2026"
+  },
+  "items": {
+    "SPY": {
+      "text": "SPY edged up 0.1% as a sharp drop in oil eased inflation pressure enough to offset losses in technology and chip stocks plus renewed tariff concerns.",
+      "sources": [
+        "https://www.reuters.com/business/wall-st-futures-rise-after-tech-rout-mideast-tariffs-focus-2026-07-24/",
+        "https://apnews.com/article/0b9c3b2aa5ca83eb391c1388efe03c97"
+      ]
+    },
+    "QQQ": {
+      "text": "QQQ fell 1.1% as concern over heavy AI spending and a broad semiconductor selloff outweighed relief from lower oil prices.",
+      "sources": [
+        "https://www.reuters.com/business/wall-st-futures-rise-after-tech-rout-mideast-tariffs-focus-2026-07-24/"
+      ]
+    }
+  }
+}
