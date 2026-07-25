@@ -6,72 +6,84 @@
       "loggedDate": "2026-07-24",
       "sourceDate": "2026-07-24",
       "company": "ASML Holding / ASML",
+      "bullishness": 4,
       "summary": "ASML is entering a stronger multiyear wafer-fab-equipment upcycle, with improving visibility, pricing and installed-base economics creating upside to consensus revenue and likely long-term guidance. SemiAnalysis explicitly says the signals point to a stronger upcycle, sees upside to Street revenue forecasts and expects ASML to raise its long-term guidance."
     },
     {
       "loggedDate": "2026-07-23",
       "sourceDate": "2026-07-23",
       "company": "Nvidia / NVDA",
+      "bullishness": 5,
       "summary": "Nvidia’s Rubin rack-scale platform materially strengthens its ability to sustain accelerator economics by delivering sharply better inference performance, power efficiency and cost per token while a smoother software and manufacturing ramp reduces the execution drag seen with Blackwell. SemiAnalysis says Rubin’s early results are encouraging and expects its lead to widen as software matures; reuse of Blackwell kernels, a more mature rack-scale backplane and a simpler cableless compute-tray design should improve time to market and production ramp execution."
     },
     {
       "loggedDate": "2026-07-22",
       "sourceDate": "2026-07-21",
       "company": "Bloom Energy / BE",
+      "bullishness": 3,
       "summary": "Bloom remains exposed to the large behind-the-meter datacenter-power buildout, but SemiAnalysis now expects reciprocating engines—not fuel cells—to energize the lion's share, while Bloom's flagship deployments remain vulnerable to gas-infrastructure and permitting delays. SemiAnalysis still sees grid scarcity creating a large BTM market, but it now says recips offer the best mix of cost, time-to-power, modularity and bankability versus fuel cells; this follows its Project Jupiter work showing that Bloom cannot eliminate upstream gas-pipeline and air-permit bottlenecks."
     },
     {
       "loggedDate": "2026-07-22",
       "sourceDate": "2026-07-22",
       "company": "Meta Platforms / META",
+      "bullishness": 4,
       "summary": "Meta still has unusual advantages in data, talent, compute and distribution, but infrastructure politics and repeated hardware co-design failures materially reduce confidence that its enormous capex will translate efficiently into frontier-model and external-compute returns. SemiAnalysis remains optimistic about Meta Superintelligence Labs, but says Meta Infrastructure is bloated, political and over-engineered, and needs a cultural reset to serve MSL and external compute customers effectively."
     },
     {
       "loggedDate": "2026-07-22",
       "sourceDate": "2026-07-21",
       "company": "Caterpillar / CAT; Cummins / CMI (INNIO private)",
+      "bullishness": 4,
       "summary": "AI datacenter grid scarcity is structurally reordering reciprocating-engine demand from occasional backup use to always-on prime power, creating a multiyear equipment and service cycle for CAT and CMI. SemiAnalysis expects recips to energize the lion's share of marginal behind-the-meter capacity because they offer the best combination of cost, speed, modular staged deployment and bankability, while OEM capacity is ramping into a severely undersupplied power market."
     },
     {
       "loggedDate": "2026-07-10",
       "sourceDate": "2026-07-08",
       "company": "Anthropic (private; prospective IPO)",
+      "bullishness": 5,
       "summary": "Anthropic’s B2B leadership, Claude Code adoption and superior unit economics could make it the first AI lab to compound into a multi-trillion-dollar platform. SemiAnalysis calls Anthropic the clear leader in profitable AI-model monetization, says its opportunity is theirs to lose, and views a $6T outcome as a base-case possibility if execution continues."
     },
     {
       "loggedDate": "2026-07-10",
       "sourceDate": "2025-11-28",
       "company": "Alphabet / GOOGL",
+      "bullishness": 5,
       "summary": "Google’s full-stack TPU system is becoming a merchant AI-compute platform that can improve Google Cloud growth, margins and strategic positioning versus GPU-only clouds. SemiAnalysis has long viewed TPU systems as neck-and-neck with Nvidia at the system level; external commercialization and superior cloud economics now validate that advantage as a business."
     },
     {
       "loggedDate": "2026-07-10",
       "sourceDate": "2025-11-28",
       "company": "Broadcom / AVGO",
+      "bullishness": 5,
       "summary": "Broadcom is a high-margin toll collector on Google’s rapidly scaling merchant TPU platform and should benefit from large upward revisions in custom-accelerator volume. SemiAnalysis explicitly highlighted massive upward revisions to Broadcom and Google TPU orders and identified Broadcom as the high-margin TPU co-designer and rack seller."
     },
     {
       "loggedDate": "2026-07-10",
       "sourceDate": "2025-12-30",
       "company": "GE Vernova / GEV",
+      "bullishness": 4,
       "summary": "GE Vernova can sustain strong turbine pricing, backlog and high-value service revenue as AI datacenters bypass grid delays with onsite gas generation. SemiAnalysis expects triple-digit annual growth in onsite gas generation and identifies GE Vernova as a core incumbent whose production is already booked years ahead."
     },
     {
       "loggedDate": "2026-07-10",
       "sourceDate": "2026-03-12",
       "company": "TSMC / TSM",
+      "bullishness": 5,
       "summary": "TSMC’s advanced-node capacity is becoming the central AI-silicon bottleneck, supporting exceptional utilization, customer dependence and pricing power. SemiAnalysis identifies N3 capacity as one of the largest constraints in AI infrastructure and expects demand to exceed supply for at least two years despite heavy capital spending."
     },
     {
       "loggedDate": "2026-07-10",
       "sourceDate": "2026-03-12",
       "company": "SK Hynix / 000660.KS",
+      "bullishness": 4,
       "summary": "SK Hynix can retain superior HBM economics as memory content per accelerator surges and HBM4 qualification and yield constraints keep supply tight. SemiAnalysis expects the memory shortage to persist and describes SK Hynix as ahead of Micron in HBM4 speed and yield."
     },
     {
       "loggedDate": "2026-07-10",
       "sourceDate": "2026-07-02",
       "company": "CoreWeave / CRWV",
+      "bullishness": 4,
       "summary": "CoreWeave’s growth thesis remains intact because hyperscalers still need neocloud capacity and financing backstops expand the amount of deployable AI infrastructure. SemiAnalysis called the selloff based on Meta vertical integration erroneous, expects Meta’s capacity build to accelerate, and argues Meta can rationally pay neocloud margins for speed and flexibility."
     }
   ]
