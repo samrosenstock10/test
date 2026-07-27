@@ -1,7 +1,14 @@
 {
-  "updatedAt": "2026-07-25T21:15:00.000Z",
+  "updatedAt": "2026-07-27T00:40:42.414Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit?gid=215053161#gid=215053161",
   "rows": [
+    {
+      "loggedDate": "2026-07-26",
+      "sourceDate": "2026-07-25",
+      "company": "Advanced Micro Devices / AMD",
+      "bullishness": 4,
+      "summary": "AMD now has a credible path to meaningful AI-accelerator share because its software organization and agentic engineering culture have improved sharply, while major customers are committing to MI455X—provided it fixes Helios manufacturing and internal development-cluster bottlenecks. SemiAnalysis upgraded AMD from a 0% chance of closing the CUDA gap, to a meaningful chance, and now to a “great chance of success” if two identified execution risks are solved. It cites responsive leadership, improving ROCm software, open-source positioning for agentic development and large Anthropic, Microsoft/OpenAI and Meta demand commitments."
+    },
     {
       "loggedDate": "2026-07-24",
       "sourceDate": "2026-07-24",
