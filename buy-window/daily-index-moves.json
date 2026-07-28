@@ -1,21 +1,22 @@
 {
-  "updatedAt": "2026-07-24T21:18:06.848Z",
+  "updatedAt": "2026-07-28T23:03:36.194Z",
   "period": {
-    "date": "2026-07-24",
-    "label": "Jul 24, 2026"
+    "date": "2026-07-28",
+    "label": "Jul 28, 2026"
   },
   "items": {
     "SPY": {
-      "text": "SPY edged up 0.1% as a sharp drop in oil eased inflation pressure enough to offset losses in technology and chip stocks plus renewed tariff concerns.",
+      "text": "SPY rose about 0.2% as strong earnings from Boeing and Coca-Cola plus lower oil prices outweighed a 4.5% semiconductor-sector drop and broader concerns about returns on AI spending.",
       "sources": [
-        "https://www.reuters.com/business/wall-st-futures-rise-after-tech-rout-mideast-tariffs-focus-2026-07-24/",
-        "https://apnews.com/article/0b9c3b2aa5ca83eb391c1388efe03c97"
+        "https://www.reuters.com/business/nasdaq-futures-drop-ai-chip-worries-ahead-pivotal-earnings-2026-07-28/",
+        "https://stockanalysis.com/etf/spy/history/"
       ]
     },
     "QQQ": {
-      "text": "QQQ fell 1.1% as concern over heavy AI spending and a broad semiconductor selloff outweighed relief from lower oil prices.",
+      "text": "QQQ fell about 1.0% as the semiconductor and AI selloff deepened on concerns about heavy data-center spending, profitability and rising Chinese competition ahead of Big Tech earnings.",
       "sources": [
-        "https://www.reuters.com/business/wall-st-futures-rise-after-tech-rout-mideast-tariffs-focus-2026-07-24/"
+        "https://www.reuters.com/business/nasdaq-futures-drop-ai-chip-worries-ahead-pivotal-earnings-2026-07-28/",
+        "https://stockanalysis.com/etf/qqq/history/"
       ]
     }
   }
