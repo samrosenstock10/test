@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-07-28T23:03:36.194Z",
+  "updatedAt": "2026-07-29T23:04:57.583Z",
   "period": {
-    "date": "2026-07-28",
-    "label": "Jul 28, 2026"
+    "date": "2026-07-29",
+    "label": "Jul 29, 2026"
   },
   "items": {
     "SPY": {
-      "text": "SPY rose about 0.2% as strong earnings from Boeing and Coca-Cola plus lower oil prices outweighed a 4.5% semiconductor-sector drop and broader concerns about returns on AI spending.",
+      "text": "SPY fell about 1.5% as the Fed held rates but Chair Kevin Warsh’s inflation-focused remarks pushed long-term yields higher, while a 7% oil spike and renewed AI-stock selling deepened the risk-off move.",
       "sources": [
-        "https://www.reuters.com/business/nasdaq-futures-drop-ai-chip-worries-ahead-pivotal-earnings-2026-07-28/",
+        "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/",
         "https://stockanalysis.com/etf/spy/history/"
       ]
     },
     "QQQ": {
-      "text": "QQQ fell about 1.0% as the semiconductor and AI selloff deepened on concerns about heavy data-center spending, profitability and rising Chinese competition ahead of Big Tech earnings.",
+      "text": "QQQ fell about 2.0% as the AI and semiconductor selloff deepened after SK Hynix’s weak results, while the Fed’s inflation-focused hold and rising long-term yields further pressured expensive growth stocks.",
       "sources": [
-        "https://www.reuters.com/business/nasdaq-futures-drop-ai-chip-worries-ahead-pivotal-earnings-2026-07-28/",
+        "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/",
         "https://stockanalysis.com/etf/qqq/history/"
       ]
     }
