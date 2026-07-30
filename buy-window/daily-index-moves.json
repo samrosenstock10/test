@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-07-29T23:04:57.583Z",
+  "updatedAt": "2026-07-30T23:05:22.037Z",
   "period": {
-    "date": "2026-07-29",
-    "label": "Jul 29, 2026"
+    "date": "2026-07-30",
+    "label": "Jul 30, 2026"
   },
   "items": {
     "SPY": {
-      "text": "SPY fell about 1.5% as the Fed held rates but Chair Kevin Warsh’s inflation-focused remarks pushed long-term yields higher, while a 7% oil spike and renewed AI-stock selling deepened the risk-off move.",
+      "text": "SPY rose about 1.7%, led by Microsoft’s 15.5% post-earnings surge and an 8.2% semiconductor rally after strong cloud growth and lower-than-feared capital spending renewed confidence in AI returns; elevated long-term Treasury yields limited the broader advance.",
       "sources": [
-        "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/",
-        "https://stockanalysis.com/etf/spy/history/"
+        "https://www.reuters.com/business/us-stock-futures-steady-microsoft-offsets-fed-concerns-2026-07-30/",
+        "https://www.wsj.com/market-data/quotes/etf/SPY/historical-prices"
       ]
     },
     "QQQ": {
-      "text": "QQQ fell about 2.0% as the AI and semiconductor selloff deepened after SK Hynix’s weak results, while the Fed’s inflation-focused hold and rising long-term yields further pressured expensive growth stocks.",
+      "text": "QQQ jumped about 3.3% as Microsoft’s strong sales and Azure outlook, paired with lower-than-expected capital spending, drove the stock up 15.5% and sparked an 8.2% rebound in semiconductors, outweighing Meta’s AI-cost-driven decline.",
       "sources": [
-        "https://www.reuters.com/business/sp-500-nasdaq-futures-inch-up-before-fed-decision-chip-stocks-wobble-2026-07-29/",
-        "https://stockanalysis.com/etf/qqq/history/"
+        "https://www.reuters.com/business/us-stock-futures-steady-microsoft-offsets-fed-concerns-2026-07-30/",
+        "https://www.reuters.com/markets/quote/QQQ.O/"
       ]
     }
   }
