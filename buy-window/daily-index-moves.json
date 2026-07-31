@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-07-30T23:05:22.037Z",
+  "updatedAt": "2026-07-31T23:05:00Z",
   "period": {
-    "date": "2026-07-30",
-    "label": "Jul 30, 2026"
+    "date": "2026-07-31",
+    "label": "Jul 31, 2026"
   },
   "items": {
     "SPY": {
-      "text": "SPY rose about 1.7%, led by Microsoft’s 15.5% post-earnings surge and an 8.2% semiconductor rally after strong cloud growth and lower-than-feared capital spending renewed confidence in AI returns; elevated long-term Treasury yields limited the broader advance.",
+      "text": "SPY rose about 0.7% as Amazon’s 15% post-earnings surge and Microsoft’s continued gains lifted the index, outweighing Apple’s 7.4% drop; higher Treasury yields and hawkish Fed commentary limited the advance.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-steady-microsoft-offsets-fed-concerns-2026-07-30/",
-        "https://www.wsj.com/market-data/quotes/etf/SPY/historical-prices"
+        "https://www.reuters.com/business/nasdaq-100-leads-us-futures-higher-amazon-surge-offsets-apple-decline-2026-07-31/",
+        "https://www.marketwatch.com/investing/fund/spy"
       ]
     },
     "QQQ": {
-      "text": "QQQ jumped about 3.3% as Microsoft’s strong sales and Azure outlook, paired with lower-than-expected capital spending, drove the stock up 15.5% and sparked an 8.2% rebound in semiconductors, outweighing Meta’s AI-cost-driven decline.",
+      "text": "QQQ gained about 0.7% as Amazon’s strongest revenue growth in more than four years and accelerating cloud business eased AI-spending fears, while Microsoft added to its earnings rally; Apple’s 7.4% fall and nearly flat chip stocks kept the gain modest.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-steady-microsoft-offsets-fed-concerns-2026-07-30/",
-        "https://www.reuters.com/markets/quote/QQQ.O/"
+        "https://www.reuters.com/business/nasdaq-100-leads-us-futures-higher-amazon-surge-offsets-apple-decline-2026-07-31/",
+        "https://www.marketwatch.com/investing/fund/qqq"
       ]
     }
   }
