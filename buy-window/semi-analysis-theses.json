@@ -1,7 +1,14 @@
 {
-  "updatedAt": "2026-07-27T00:40:42.414Z",
+  "updatedAt": "2026-08-02T00:04:55.541Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit?gid=215053161#gid=215053161",
   "rows": [
+    {
+      "loggedDate": "2026-08-01",
+      "sourceDate": "2026-07-29",
+      "company": "Vertiv / VRT",
+      "bullishness": 4,
+      "summary": "Vertiv is positioned to roughly double its revenue content per datacenter megawatt as AI builders shift from component purchases toward integrated modular power, cooling and facility platforms that materially shorten construction schedules. SemiAnalysis identifies modularization as the default response to an emerging skilled-labor bottleneck and highlights Vertiv as a principal public beneficiary because its OneCore and MegaMod offerings let it capture the full power, thermal, cooling and infrastructure stack rather than selling individual components."
+    },
     {
       "loggedDate": "2026-07-26",
       "sourceDate": "2026-07-25",
