@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-07-31T23:05:00Z",
+  "updatedAt": "2026-08-03T22:59:40Z",
   "period": {
-    "date": "2026-07-31",
-    "label": "Jul 31, 2026"
+    "date": "2026-08-03",
+    "label": "Aug 3, 2026"
   },
   "items": {
     "SPY": {
-      "text": "SPY rose about 0.7% as Amazon’s 15% post-earnings surge and Microsoft’s continued gains lifted the index, outweighing Apple’s 7.4% drop; higher Treasury yields and hawkish Fed commentary limited the advance.",
+      "text": "SPY rose about 1.4% as hopes for renewed U.S.-Iran talks drove oil roughly 5% lower and pulled Treasury yields down, easing inflation concerns; strong earnings and technology gains broadened the rally.",
       "sources": [
-        "https://www.reuters.com/business/nasdaq-100-leads-us-futures-higher-amazon-surge-offsets-apple-decline-2026-07-31/",
-        "https://www.marketwatch.com/investing/fund/spy"
+        "https://www.reuters.com/business/wall-st-futures-edge-up-mideast-deal-hopes-healthcare-focus-2026-08-03/",
+        "https://www.wsj.com/market-data/quotes/etf/SPY"
       ]
     },
     "QQQ": {
-      "text": "QQQ gained about 0.7% as Amazon’s strongest revenue growth in more than four years and accelerating cloud business eased AI-spending fears, while Microsoft added to its earnings rally; Apple’s 7.4% fall and nearly flat chip stocks kept the gain modest.",
+      "text": "QQQ gained about 1.8%, led by mega-cap technology including Amazon, Meta and Alphabet, as falling oil and Treasury yields improved risk appetite on hopes for renewed U.S.-Iran talks.",
       "sources": [
-        "https://www.reuters.com/business/nasdaq-100-leads-us-futures-higher-amazon-surge-offsets-apple-decline-2026-07-31/",
-        "https://www.marketwatch.com/investing/fund/qqq"
+        "https://www.reuters.com/business/wall-st-futures-edge-up-mideast-deal-hopes-healthcare-focus-2026-08-03/",
+        "https://www.wsj.com/market-data/quotes/etf/QQQ/historical-prices"
       ]
     }
   }
