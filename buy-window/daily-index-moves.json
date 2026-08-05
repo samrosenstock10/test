@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-08-04T23:02:57Z",
+  "updatedAt": "2026-08-05T23:01:55.165Z",
   "period": {
-    "date": "2026-08-04",
-    "label": "Aug 4, 2026"
+    "date": "2026-08-05",
+    "label": "Aug 5, 2026"
   },
   "items": {
     "SPY": {
-      "text": "SPY rose about 1.8%, reaching a record close as strong AI-linked earnings and chip gains lifted technology while optimism that a U.S.-Iran deal was near pushed oil and Treasury yields lower.",
+      "text": "SPY slipped about 0.2% as weakness in mega-cap technology and semiconductors—especially Alphabet and AMD—slightly outweighed healthcare and consumer earnings gains; lower Treasury yields and optimism around Iran talks limited the decline.",
       "sources": [
-        "https://www.reuters.com/business/nasdaq-futures-underpinned-by-strong-ai-forecasts-focus-earnings-data-2026-08-04/",
+        "https://www.reuters.com/business/media-telecom/sp-500-dow-futures-inch-up-mideast-hopes-offset-spacex-amd-drag-2026-08-05/",
         "https://www.wsj.com/market-data/quotes/etf/SPY/historical-prices"
       ]
     },
     "QQQ": {
-      "text": "QQQ jumped about 3.4%, outpacing the broader market as a 6.6% semiconductor rally and Palantir’s strong results reinforced AI enthusiasm; lower oil and Treasury yields added a broad risk-on tailwind.",
+      "text": "QQQ fell about 0.9% as AMD slid 7%, Alphabet fell roughly 4%, and semiconductor shares declined after investors reacted negatively to AI-spending and earnings details; lower Treasury yields were not enough to offset the technology selloff.",
       "sources": [
-        "https://www.reuters.com/business/nasdaq-futures-underpinned-by-strong-ai-forecasts-focus-earnings-data-2026-08-04/",
+        "https://www.reuters.com/business/media-telecom/sp-500-dow-futures-inch-up-mideast-hopes-offset-spacex-amd-drag-2026-08-05/",
         "https://www.wsj.com/market-data/quotes/etf/QQQ/historical-prices"
       ]
     }
