@@ -1,58 +1,72 @@
 {
-  "updatedAt": "2026-07-31T21:18:00Z",
+  "updatedAt": "2026-08-07T21:14:00Z",
   "period": {
-    "start": "2026-07-27",
-    "end": "2026-07-31",
-    "label": "Week ended Jul 31"
+    "start": "2026-08-03",
+    "end": "2026-08-07",
+    "label": "Week ended Aug 7"
   },
   "items": {
-    "META": {
-      "text": "Meta fell about 6.5% after quarterly free cash flow plunged 91% and management raised the low end of its 2026 capital-spending forecast, intensifying concern that its AI infrastructure buildout lacks the near-term monetization Microsoft and Amazon demonstrated.",
-      "sources": [
-        "https://www.reuters.com/business/retail-consumer/metas-ai-splurge-lays-bare-its-compute-conundrum-2026-07-30/",
-        "https://www.reuters.com/business/retail-consumer/amazon-jumps-aws-growth-soothes-fears-over-rising-ai-spending-2026-07-31/"
-      ]
-    },
-    "TSM": {
-      "text": "TSM fell roughly mid-single digits, mostly with the global semiconductor selloff as concerns over hyperscaler spending returns, Chinese chip competition and leveraged AI positioning outweighed its strong recent earnings; no new TSM-specific operating setback was confirmed.",
-      "sources": [
-        "https://www.reuters.com/world/china/samsung-sk-hynix-slide-amid-nvidia-financing-worries-china-competition-2026-07-28/",
-        "https://www.reuters.com/commentary/breakingviews/theres-no-escape-ai-whipsaw-2026-07-31/"
-      ]
-    },
     "NVDA": {
-      "text": "Nvidia fell about 2.9% as the semiconductor sector was whipsawed by deleveraging, Chinese competition fears and scrutiny of whether hyperscalers’ enormous AI spending will generate adequate returns; Friday’s Amazon-led rebound recovered part of the decline.",
+      "text": "Nvidia jumped about 11.6%, far outpacing the Nasdaq, as SpaceX said it would standardize on Nvidia’s Vera Rubin architecture and renewed hyperscaler capex commitments reinforced confidence that AI-compute demand remains exceptionally strong.",
       "sources": [
-        "https://www.reuters.com/world/china/samsung-sk-hynix-slide-amid-nvidia-financing-worries-china-competition-2026-07-28/",
-        "https://www.reuters.com/business/nasdaq-100-leads-us-futures-higher-amazon-surge-offsets-apple-decline-2026-07-31/"
+        "https://www.marketwatch.com/story/two-reasons-why-nvidias-stock-saw-its-biggest-weekly-surge-in-more-than-a-year-644875c8",
+        "https://apnews.com/article/9d586bdbf1fb230dcf1f915dcaf50858"
       ]
     },
     "AVGO": {
-      "text": "Broadcom gained about 1.9%, outperforming the volatile chip sector, as Microsoft and Amazon’s strong cloud growth reassured investors that hyperscaler AI infrastructure demand remains real; no distinct new Broadcom catalyst was confirmed.",
+      "text": "Broadcom rose about 9.9%, mostly with the resurgent AI-chip complex as hyperscaler spending and Nvidia’s SpaceX/Vera Rubin endorsement reinforced data-center demand; no distinct Broadcom operating catalyst was confirmed, and the EU antitrust document ruling was a headwind rather than the driver.",
       "sources": [
-        "https://www.reuters.com/business/retail-consumer/amazon-jumps-aws-growth-soothes-fears-over-rising-ai-spending-2026-07-31/",
-        "https://www.reuters.com/commentary/breakingviews/big-tech-multiples-stuck-ai-value-chain-clog-2026-07-29/"
+        "https://www.marketwatch.com/story/two-reasons-why-nvidias-stock-saw-its-biggest-weekly-surge-in-more-than-a-year-644875c8",
+        "https://www.reuters.com/legal/litigation/broadcom-loses-court-bid-suspend-eu-antitrust-request-us-legal-papers-2026-08-03/"
+      ]
+    },
+    "TSM": {
+      "text": "TSM gained about 3.9%, largely with the AI-semiconductor rebound rather than on new company news; Nvidia-led strength and renewed hyperscaler spending lifted chip names, while TSMC’s next monthly sales release was not due until August 10.",
+      "sources": [
+        "https://www.marketwatch.com/story/two-reasons-why-nvidias-stock-saw-its-biggest-weekly-surge-in-more-than-a-year-644875c8",
+        "https://investor.tsmc.com/english/financial-calendar"
+      ]
+    },
+    "ASML": {
+      "text": "ASML rose about 6.9%, mostly with the AI-semiconductor rebound as renewed hyperscaler spending supported advanced-chip demand; no new ASML-specific catalyst was confirmed, so the move appears more sector-led than company-led.",
+      "sources": [
+        "https://www.marketwatch.com/story/two-reasons-why-nvidias-stock-saw-its-biggest-weekly-surge-in-more-than-a-year-644875c8",
+        "https://www.investing.com/news/stock-market-news/asml-tops-q2-estimates-on-ai-chip-demand-4792151"
+      ]
+    },
+    "DDOG": {
+      "text": "Datadog fell about 12.7% after earnings because, despite beating consensus and raising guidance, its revenue beat narrowed versus the prior quarter and Q3 implied only modest sequential growth, disappointing the elevated expectations embedded in the stock.",
+      "sources": [
+        "https://www.marketwatch.com/story/datadogs-stock-slides-after-earnings-this-is-whats-nagging-at-investors-eeb6fa9a",
+        "https://investors.datadoghq.com/"
+      ]
+    },
+    "META": {
+      "text": "Meta rebounded about 6.4%, roughly in line with the Nasdaq’s 5.2% weekly gain, with no confirmed new company-specific catalyst; lower yields after a weak jobs report and renewed risk appetite in megacap tech appear to have been the main support.",
+      "sources": [
+        "https://apnews.com/article/9d586bdbf1fb230dcf1f915dcaf50858",
+        "https://www.marketwatch.com/story/two-reasons-why-nvidias-stock-saw-its-biggest-weekly-surge-in-more-than-a-year-644875c8"
       ]
     },
     "PLTR": {
-      "text": "Palantir finished essentially flat, with no confirmed company-specific catalyst, as investors largely waited for its August 3 earnings while broader software weakness and its high valuation capped Monday’s pre-report rebound.",
+      "text": "Palantir surged about 39.8%, its best week since 2024, after Q2 revenue grew 93% and U.S. commercial revenue jumped 149% while management raised its 2026 U.S. commercial outlook, making the move overwhelmingly company-specific.",
       "sources": [
-        "https://www.investopedia.com/here-is-how-much-palantir-stock-is-expected-to-move-after-earnings-pltr-q2-fy2026-12029537",
-        "https://www.investing.com/news/stock-market-news/palantir-earnings-outlook-high-growth-high-valuation-ahead-of-august-3-report-93CH-4814769"
+        "https://www.marketwatch.com/story/palantirs-stock-stages-best-week-since-2024-showing-its-no-longer-an-ai-loser-2fc6c32b",
+        "https://www.reuters.com/business/retail-consumer/global-markets-flows-graphic-2026-08-07/"
       ]
     },
     "SPCX": {
-      "text": "SpaceX fell about 5.8% to a new low as investors remained focused on its August 4 results and the subsequent release of roughly 911.5 million insider shares, while merger rumors failed to offset dilution and supply-overhang concerns.",
+      "text": "SpaceX rose about 22.8% as strong first public-quarter results—$7.8 billion of revenue and $3.5 billion of adjusted EBITDA—helped shares overcome midweek fears about heavy AI spending and the lockup expiration; Friday’s 15.8% jump came as feared insider selling failed to materialize.",
       "sources": [
-        "https://www.reuters.com/business/media-telecom/spacex-selloff-ominous-sign-lockup-expiry-looms-2026-07-16/",
-        "https://www.investopedia.com/market-update-a-teslaspacex-merger-may-be-on-the-horizon-tsla-spcx-12031760"
+        "https://www.barrons.com/articles/spacex-stock-price-today-26cc591d",
+        "https://www.wsj.com/livecoverage/july-jobs-report-stock-market-08-07-2026/card/so-much-for-those-end-of-lockup-spacex-fears-3aeqsCLMswzWhMKzMgkX"
       ]
     },
     "MU": {
-      "text": "Micron fell about 10.6% amid extreme memory-stock volatility as fears of higher rates, Chinese competition and an overheated memory cycle outweighed evidence of strong hyperscaler demand; Friday’s 5.9% drop reversed part of Thursday’s sharp rebound.",
+      "text": "Micron gained about 6.6% despite late-week memory-sector weakness, with the rebound supported by persistent AI-driven DRAM/HBM tightness; Friday’s SK Hynix fab-expansion news trimmed gains, but analysts noted the added supply will take years to arrive.",
       "sources": [
-        "https://www.barrons.com/articles/micron-stock-price-apple-cook-8ea028d6",
-        "https://www.reuters.com/world/china/samsung-sk-hynix-slide-amid-nvidia-financing-worries-china-competition-2026-07-28/"
+        "https://www.barrons.com/articles/micron-stock-price-sk-hynix-memory-a6ba5523",
+        "https://www.marketwatch.com/story/microns-stock-claws-back-to-buck-the-memory-chip-selloff-58af0155"
       ]
     }
   }
