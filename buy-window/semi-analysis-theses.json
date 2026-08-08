@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-08-02T00:04:55.541Z",
+  "updatedAt": "2026-08-08T12:43:34.456Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit?gid=215053161#gid=215053161",
   "rows": [
+    {
+      "loggedDate": "2026-08-08",
+      "sourceDate": "2026-08-07",
+      "company": "SpaceX / SPCX",
+      "bullishness": 5,
+      "summary": "SemiAnalysis believes SpaceX can scale AI compute toward 10GW in 2027 and monetize it at extraordinary revenue per megawatt, creating a path toward roughly $500B of AI ARR with Microsoft as the largest offtaker. The article is explicitly framed as a defense of the 10GW 2027 buildout as realistic rather than aspirational and as an economic thesis on SpaceX’s ability to monetize scarce inference capacity at unusually high revenue per GW."
+    },
+    {
+      "loggedDate": "2026-08-07",
+      "sourceDate": "2026-08-07",
+      "company": "Alphabet / GOOGL",
+      "bullishness": 5,
+      "summary": "Google’s merchant TPU/GCP thesis has materially strengthened in the near term: SemiAnalysis expects external TPU system sales and third-party AI workloads to drive GCP growth above 100% in 2027 and add roughly $3 to Google EPS, even as DeepMind’s frontier-model position deteriorates. SemiAnalysis now explicitly frames GCP—not Gemini—as the major financial beneficiary of Google’s compute allocation. It expects Google Cloud to absorb the TPU platform economics through direct system sales and third-party AI infrastructure, while management prioritizes monetizing scarce compute over preserving DeepMind’s frontier position."
+    },
     {
       "loggedDate": "2026-08-01",
       "sourceDate": "2026-07-29",
@@ -57,13 +71,6 @@
       "company": "Anthropic (private; prospective IPO)",
       "bullishness": 5,
       "summary": "Anthropic’s B2B leadership, Claude Code adoption and superior unit economics could make it the first AI lab to compound into a multi-trillion-dollar platform. SemiAnalysis calls Anthropic the clear leader in profitable AI-model monetization, says its opportunity is theirs to lose, and views a $6T outcome as a base-case possibility if execution continues."
-    },
-    {
-      "loggedDate": "2026-07-10",
-      "sourceDate": "2025-11-28",
-      "company": "Alphabet / GOOGL",
-      "bullishness": 5,
-      "summary": "Google’s full-stack TPU system is becoming a merchant AI-compute platform that can improve Google Cloud growth, margins and strategic positioning versus GPU-only clouds. SemiAnalysis has long viewed TPU systems as neck-and-neck with Nvidia at the system level; external commercialization and superior cloud economics now validate that advantage as a business."
     },
     {
       "loggedDate": "2026-07-10",
