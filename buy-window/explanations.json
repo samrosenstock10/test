@@ -1,72 +1,97 @@
 {
-  "updatedAt": "2026-08-07T21:14:00Z",
+  "updatedAt": "2026-08-11T14:06:00Z",
   "period": {
-    "start": "2026-08-03",
-    "end": "2026-08-07",
-    "label": "Week ended Aug 7"
+    "start": "2026-08-10",
+    "end": "2026-08-10",
+    "label": "Session Aug 10"
   },
   "items": {
     "NVDA": {
-      "text": "Nvidia jumped about 11.6%, far outpacing the Nasdaq, as SpaceX said it would standardize on Nvidia’s Vera Rubin architecture and renewed hyperscaler capex commitments reinforced confidence that AI-compute demand remains exceptionally strong.",
+      "move": "-2.9%",
+      "text": "Nvidia fell about 2.9% as semiconductor stocks pulled back broadly and reports it was helping assemble a roughly $500 billion AI-infrastructure fund added financing-risk concerns; the move was partly sector-led as the Nasdaq and chip index also declined.",
       "sources": [
-        "https://www.marketwatch.com/story/two-reasons-why-nvidias-stock-saw-its-biggest-weekly-surge-in-more-than-a-year-644875c8",
-        "https://apnews.com/article/9d586bdbf1fb230dcf1f915dcaf50858"
+        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/",
+        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-soft-july-payrolls-fed-hike-trump-iran-war-nuclear-deal/card/nasdaq-s-selloff-highlighted-by-weakness-in-chip-optical-stocks-pgZa2m6ErqL0WJihiiko"
       ]
     },
     "AVGO": {
-      "text": "Broadcom rose about 9.9%, mostly with the resurgent AI-chip complex as hyperscaler spending and Nvidia’s SpaceX/Vera Rubin endorsement reinforced data-center demand; no distinct Broadcom operating catalyst was confirmed, and the EU antitrust document ruling was a headwind rather than the driver.",
+      "move": "-1.3%",
+      "text": "Broadcom fell about 1.3%, ending a seven-day winning streak, with no confirmed new company-specific catalyst; the move largely tracked a broad semiconductor pullback as Nvidia, Qualcomm and Intel also declined.",
       "sources": [
-        "https://www.marketwatch.com/story/two-reasons-why-nvidias-stock-saw-its-biggest-weekly-surge-in-more-than-a-year-644875c8",
-        "https://www.reuters.com/legal/litigation/broadcom-loses-court-bid-suspend-eu-antitrust-request-us-legal-papers-2026-08-03/"
+        "https://www.marketwatch.com/data-news/broadcom-inc-stock-outperforms-competitors-despite-losses-on-the-day-b99ad243-4cabb21c2655",
+        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/"
       ]
     },
     "TSM": {
-      "text": "TSM gained about 3.9%, largely with the AI-semiconductor rebound rather than on new company news; Nvidia-led strength and renewed hyperscaler spending lifted chip names, while TSMC’s next monthly sales release was not due until August 10.",
+      "move": "-0.4%",
+      "text": "TSM slipped about 0.4% even after TSMC reported July sales up roughly 45% year over year, as the strong operating update was outweighed by a broader semiconductor selloff.",
       "sources": [
-        "https://www.marketwatch.com/story/two-reasons-why-nvidias-stock-saw-its-biggest-weekly-surge-in-more-than-a-year-644875c8",
+        "https://www.investors.com/news/technology/tsm-stock-tsmc-july-sales-sox-index/",
         "https://investor.tsmc.com/english/financial-calendar"
       ]
     },
     "ASML": {
-      "text": "ASML rose about 6.9%, mostly with the AI-semiconductor rebound as renewed hyperscaler spending supported advanced-chip demand; no new ASML-specific catalyst was confirmed, so the move appears more sector-led than company-led.",
+      "move": "-0.4%",
+      "text": "ASML edged down about 0.4% with the broader chip complex; no new ASML-specific catalyst was confirmed, and the day's weakness was mainly sector-led as semiconductor shares pulled back.",
       "sources": [
-        "https://www.marketwatch.com/story/two-reasons-why-nvidias-stock-saw-its-biggest-weekly-surge-in-more-than-a-year-644875c8",
-        "https://www.investing.com/news/stock-market-news/asml-tops-q2-estimates-on-ai-chip-demand-4792151"
+        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/",
+        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-soft-july-payrolls-fed-hike-trump-iran-war-nuclear-deal/card/nasdaq-s-selloff-highlighted-by-weakness-in-chip-optical-stocks-pgZa2m6ErqL0WJihiiko"
       ]
     },
-    "DDOG": {
-      "text": "Datadog fell about 12.7% after earnings because, despite beating consensus and raising guidance, its revenue beat narrowed versus the prior quarter and Q3 implied only modest sequential growth, disappointing the elevated expectations embedded in the stock.",
+    "KLAC": {
+      "move": "-2.7%",
+      "text": "KLA fell about 2.7% in a broad semiconductor-equipment pullback, moving alongside declines in Applied Materials and Marvell; no distinct KLA-specific catalyst was confirmed.",
       "sources": [
-        "https://www.marketwatch.com/story/datadogs-stock-slides-after-earnings-this-is-whats-nagging-at-investors-eeb6fa9a",
-        "https://investors.datadoghq.com/"
+        "https://www.marketwatch.com/data-news/kla-corp-stock-outperforms-competitors-despite-losses-on-the-day-0c3c787b-aa424042fb0f",
+        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-soft-july-payrolls-fed-hike-trump-iran-war-nuclear-deal/card/nasdaq-s-selloff-highlighted-by-weakness-in-chip-optical-stocks-pgZa2m6ErqL0WJihiiko"
       ]
     },
-    "META": {
-      "text": "Meta rebounded about 6.4%, roughly in line with the Nasdaq’s 5.2% weekly gain, with no confirmed new company-specific catalyst; lower yields after a weak jobs report and renewed risk appetite in megacap tech appear to have been the main support.",
+    "INTC": {
+      "move": "-4.1%",
+      "text": "Intel fell about 4.1% after announcing a $15 billion stock offering to fund general corporate and AI/foundry investment, making dilution and added capital needs the clear company-specific catalyst.",
       "sources": [
-        "https://apnews.com/article/9d586bdbf1fb230dcf1f915dcaf50858",
-        "https://www.marketwatch.com/story/two-reasons-why-nvidias-stock-saw-its-biggest-weekly-surge-in-more-than-a-year-644875c8"
-      ]
-    },
-    "PLTR": {
-      "text": "Palantir surged about 39.8%, its best week since 2024, after Q2 revenue grew 93% and U.S. commercial revenue jumped 149% while management raised its 2026 U.S. commercial outlook, making the move overwhelmingly company-specific.",
-      "sources": [
-        "https://www.marketwatch.com/story/palantirs-stock-stages-best-week-since-2024-showing-its-no-longer-an-ai-loser-2fc6c32b",
-        "https://www.reuters.com/business/retail-consumer/global-markets-flows-graphic-2026-08-07/"
-      ]
-    },
-    "SPCX": {
-      "text": "SpaceX rose about 22.8% as strong first public-quarter results—$7.8 billion of revenue and $3.5 billion of adjusted EBITDA—helped shares overcome midweek fears about heavy AI spending and the lockup expiration; Friday’s 15.8% jump came as feared insider selling failed to materialize.",
-      "sources": [
-        "https://www.barrons.com/articles/spacex-stock-price-today-26cc591d",
-        "https://www.wsj.com/livecoverage/july-jobs-report-stock-market-08-07-2026/card/so-much-for-those-end-of-lockup-spacex-fears-3aeqsCLMswzWhMKzMgkX"
+        "https://www.reuters.com/legal/transactional/intel-launches-15-billion-share-sale-turnaround-rally-lifts-stock-2026-08-10/",
+        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/"
       ]
     },
     "MU": {
-      "text": "Micron gained about 6.6% despite late-week memory-sector weakness, with the rebound supported by persistent AI-driven DRAM/HBM tightness; Friday’s SK Hynix fab-expansion news trimmed gains, but analysts noted the added supply will take years to arrive.",
+      "move": "-1.9%",
+      "text": "Micron fell about 1.9% with the chip sector, with no confirmed new negative company-specific catalyst; the decline appears mainly sector-led as semiconductor shares broadly pulled back.",
       "sources": [
-        "https://www.barrons.com/articles/micron-stock-price-sk-hynix-memory-a6ba5523",
-        "https://www.marketwatch.com/story/microns-stock-claws-back-to-buck-the-memory-chip-selloff-58af0155"
+        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/",
+        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-soft-july-payrolls-fed-hike-trump-iran-war-nuclear-deal/card/nasdaq-s-selloff-highlighted-by-weakness-in-chip-optical-stocks-pgZa2m6ErqL0WJihiiko"
+      ]
+    },
+    "DDOG": {
+      "move": "+11.5%",
+      "text": "Datadog rebounded about 11.5% with no confirmed new company-specific catalyst; after last week's earnings-driven selloff, the move appears to have been a reversal of that reaction rather than a broad-market move, since the Nasdaq fell.",
+      "sources": [
+        "https://www.barrons.com/articles/stockstoday-s-and-p-500-pulls-back-d9fc5a53",
+        "https://www.marketwatch.com/story/datadogs-stock-slides-after-earnings-this-is-whats-nagging-at-investors-eeb6fa9a"
+      ]
+    },
+    "META": {
+      "move": "+0.5%",
+      "text": "Meta edged up about 0.5% despite a lower Nasdaq, with no confirmed market-moving company catalyst; the gain was modest enough to look like ordinary stock-specific trading rather than a broad tech move.",
+      "sources": [
+        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/",
+        "https://www.barrons.com/articles/stockstoday-s-and-p-500-pulls-back-d9fc5a53"
+      ]
+    },
+    "PLTR": {
+      "move": "+1.9%",
+      "text": "Palantir gained about 1.9%, extending the prior week's earnings-driven surge; no new Monday catalyst was confirmed, so residual momentum from the blowout Q2 report remained the clearest support.",
+      "sources": [
+        "https://www.marketwatch.com/story/palantirs-stock-stages-best-week-since-2024-showing-its-no-longer-an-ai-loser-2fc6c32b",
+        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/"
+      ]
+    },
+    "SPCX": {
+      "move": "+4.2%",
+      "text": "SpaceX rose about 4.2% and closed above its $135 IPO price as fears of heavy insider selling after the first lockup expiration continued to fade, while enthusiasm around the Terafab chip project supported the rebound.",
+      "sources": [
+        "https://www.marketwatch.com/story/spacexs-stock-moves-above-its-ipo-price-for-the-first-time-in-almost-a-month-fc3f91b7",
+        "https://www.barrons.com/articles/stockstoday-s-and-p-500-pulls-back-d9fc5a53"
       ]
     }
   }
