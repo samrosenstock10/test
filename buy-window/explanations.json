@@ -1,97 +1,94 @@
 {
-  "updatedAt": "2026-08-11T14:06:00Z",
+  "updatedAt": "2026-08-12T14:05:47Z",
   "period": {
-    "start": "2026-08-10",
-    "end": "2026-08-10",
-    "label": "Session Aug 10"
+    "start": "2026-08-11",
+    "end": "2026-08-11",
+    "label": "Session Aug 11"
   },
   "items": {
     "NVDA": {
-      "move": "-2.9%",
-      "text": "Nvidia fell about 2.9% as semiconductor stocks pulled back broadly and reports it was helping assemble a roughly $500 billion AI-infrastructure fund added financing-risk concerns; the move was partly sector-led as the Nasdaq and chip index also declined.",
+      "move": "-0.0%",
+      "text": "Nvidia finished essentially flat and outperformed a 0.6% Nasdaq decline as investors digested its newly announced $500 billion-plus compute-financing partnerships; no clearer stock-specific catalyst emerged.",
       "sources": [
-        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/",
-        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-soft-july-payrolls-fed-hike-trump-iran-war-nuclear-deal/card/nasdaq-s-selloff-highlighted-by-weakness-in-chip-optical-stocks-pgZa2m6ErqL0WJihiiko"
+        "https://www.reuters.com/world/china/global-markets-global-markets-2026-08-11/",
+        "https://www.reuters.com/business/wall-st-futures-muted-us-iran-impasse-lifts-oil-prices-2026-08-11/"
       ]
     },
     "AVGO": {
-      "move": "-1.3%",
-      "text": "Broadcom fell about 1.3%, ending a seven-day winning streak, with no confirmed new company-specific catalyst; the move largely tracked a broad semiconductor pullback as Nvidia, Qualcomm and Intel also declined.",
+      "move": "-1.5%",
+      "text": "Broadcom fell about 1.5% with the weaker technology tape as fading U.S.-Iran deal hopes lifted oil and pressured the Nasdaq; no distinct Broadcom-specific catalyst was confirmed.",
       "sources": [
-        "https://www.marketwatch.com/data-news/broadcom-inc-stock-outperforms-competitors-despite-losses-on-the-day-b99ad243-4cabb21c2655",
-        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/"
+        "https://www.reuters.com/business/wall-st-futures-muted-us-iran-impasse-lifts-oil-prices-2026-08-11/"
       ]
     },
     "TSM": {
-      "move": "-0.4%",
-      "text": "TSM slipped about 0.4% even after TSMC reported July sales up roughly 45% year over year, as the strong operating update was outweighed by a broader semiconductor selloff.",
+      "move": "+0.9%",
+      "text": "TSM gained about 0.9% and outperformed the falling Nasdaq, with recent strong July sales still supportive and no fresh company-specific catalyst confirmed during Tuesday's risk-off market session.",
       "sources": [
-        "https://www.investors.com/news/technology/tsm-stock-tsmc-july-sales-sox-index/",
-        "https://investor.tsmc.com/english/financial-calendar"
+        "https://investor.tsmc.com/english/monthly-revenue/2026",
+        "https://www.reuters.com/business/wall-st-futures-muted-us-iran-impasse-lifts-oil-prices-2026-08-11/"
       ]
     },
     "ASML": {
-      "move": "-0.4%",
-      "text": "ASML edged down about 0.4% with the broader chip complex; no new ASML-specific catalyst was confirmed, and the day's weakness was mainly sector-led as semiconductor shares pulled back.",
+      "move": "+3.8%",
+      "text": "ASML rose about 3.8% despite a lower Nasdaq; no fresh ASML-specific catalyst was confirmed, and the move appears to reflect a semiconductor-equipment rebound within an otherwise mixed technology session.",
       "sources": [
-        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/",
-        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-soft-july-payrolls-fed-hike-trump-iran-war-nuclear-deal/card/nasdaq-s-selloff-highlighted-by-weakness-in-chip-optical-stocks-pgZa2m6ErqL0WJihiiko"
+        "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-us-iran-spacex-rocket-lab-rklb/",
+        "https://www.reuters.com/business/wall-st-futures-muted-us-iran-impasse-lifts-oil-prices-2026-08-11/"
       ]
     },
     "KLAC": {
-      "move": "-2.7%",
-      "text": "KLA fell about 2.7% in a broad semiconductor-equipment pullback, moving alongside declines in Applied Materials and Marvell; no distinct KLA-specific catalyst was confirmed.",
+      "move": "+4.0%",
+      "text": "KLA rose about 4.0% despite the Nasdaq decline, with no confirmed company-specific catalyst; the move appears to have been part of relative strength in semiconductor shares during the session.",
       "sources": [
-        "https://www.marketwatch.com/data-news/kla-corp-stock-outperforms-competitors-despite-losses-on-the-day-0c3c787b-aa424042fb0f",
-        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-soft-july-payrolls-fed-hike-trump-iran-war-nuclear-deal/card/nasdaq-s-selloff-highlighted-by-weakness-in-chip-optical-stocks-pgZa2m6ErqL0WJihiiko"
+        "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-us-iran-spacex-rocket-lab-rklb/",
+        "https://www.reuters.com/business/wall-st-futures-muted-us-iran-impasse-lifts-oil-prices-2026-08-11/"
       ]
     },
     "INTC": {
-      "move": "-4.1%",
-      "text": "Intel fell about 4.1% after announcing a $15 billion stock offering to fund general corporate and AI/foundry investment, making dilution and added capital needs the clear company-specific catalyst.",
+      "move": "+0.2%",
+      "text": "Intel edged up about 0.2% after completing a $20 billion share sale, stabilizing after Monday's dilution-driven drop as investors absorbed the newly raised capital.",
       "sources": [
-        "https://www.reuters.com/legal/transactional/intel-launches-15-billion-share-sale-turnaround-rally-lifts-stock-2026-08-10/",
-        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/"
+        "https://www.reuters.com/world/china/global-markets-global-markets-2026-08-11/",
+        "https://www.reuters.com/legal/transactional/intel-launches-15-billion-share-sale-turnaround-rally-lifts-stock-2026-08-10/"
       ]
     },
     "MU": {
-      "move": "-1.9%",
-      "text": "Micron fell about 1.9% with the chip sector, with no confirmed new negative company-specific catalyst; the decline appears mainly sector-led as semiconductor shares broadly pulled back.",
+      "move": "+0.9%",
+      "text": "Micron gained about 0.9% while the Nasdaq fell, with no confirmed Micron-specific catalyst; the move appears to have reflected relative strength in semiconductor shares during the session.",
       "sources": [
-        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/",
-        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-soft-july-payrolls-fed-hike-trump-iran-war-nuclear-deal/card/nasdaq-s-selloff-highlighted-by-weakness-in-chip-optical-stocks-pgZa2m6ErqL0WJihiiko"
+        "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-us-iran-spacex-rocket-lab-rklb/",
+        "https://www.reuters.com/business/wall-st-futures-muted-us-iran-impasse-lifts-oil-prices-2026-08-11/"
       ]
     },
     "DDOG": {
-      "move": "+11.5%",
-      "text": "Datadog rebounded about 11.5% with no confirmed new company-specific catalyst; after last week's earnings-driven selloff, the move appears to have been a reversal of that reaction rather than a broad-market move, since the Nasdaq fell.",
+      "move": "-5.4%",
+      "text": "Datadog fell about 5.4%, giving back part of Monday's sharp rebound with no new catalyst confirmed as trading remained dominated by the prior earnings reaction and concerns about its modest sequential growth outlook.",
       "sources": [
-        "https://www.barrons.com/articles/stockstoday-s-and-p-500-pulls-back-d9fc5a53",
-        "https://www.marketwatch.com/story/datadogs-stock-slides-after-earnings-this-is-whats-nagging-at-investors-eeb6fa9a"
+        "https://www.marketwatch.com/story/datadogs-stock-slides-after-earnings-this-is-whats-nagging-at-investors-eeb6fa9a",
+        "https://www.reuters.com/business/wall-st-futures-muted-us-iran-impasse-lifts-oil-prices-2026-08-11/"
       ]
     },
     "META": {
-      "move": "+0.5%",
-      "text": "Meta edged up about 0.5% despite a lower Nasdaq, with no confirmed market-moving company catalyst; the gain was modest enough to look like ordinary stock-specific trading rather than a broad tech move.",
+      "move": "+0.7%",
+      "text": "Meta gained about 0.7% and outperformed the Nasdaq's 0.6% decline, with no confirmed market-moving company catalyst; the move was modest enough to look like ordinary stock-specific resilience.",
       "sources": [
-        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/",
-        "https://www.barrons.com/articles/stockstoday-s-and-p-500-pulls-back-d9fc5a53"
+        "https://www.reuters.com/business/wall-st-futures-muted-us-iran-impasse-lifts-oil-prices-2026-08-11/"
       ]
     },
     "PLTR": {
-      "move": "+1.9%",
-      "text": "Palantir gained about 1.9%, extending the prior week's earnings-driven surge; no new Monday catalyst was confirmed, so residual momentum from the blowout Q2 report remained the clearest support.",
+      "move": "-0.2%",
+      "text": "Palantir finished essentially flat, slipping about 0.2%, with no fresh company-specific catalyst confirmed after the prior week's earnings-driven surge.",
       "sources": [
-        "https://www.marketwatch.com/story/palantirs-stock-stages-best-week-since-2024-showing-its-no-longer-an-ai-loser-2fc6c32b",
-        "https://www.reuters.com/business/sp-500-nasdaq-futures-tick-higher-with-hormuz-outlook-focus-2026-08-10/"
+        "https://www.reuters.com/business/wall-st-futures-muted-us-iran-impasse-lifts-oil-prices-2026-08-11/"
       ]
     },
     "SPCX": {
-      "move": "+4.2%",
-      "text": "SpaceX rose about 4.2% and closed above its $135 IPO price as fears of heavy insider selling after the first lockup expiration continued to fade, while enthusiasm around the Terafab chip project supported the rebound.",
+      "move": "-3.9%",
+      "text": "SpaceX fell about 3.9% back below its $135 IPO price, ending a three-day rally as investors took profits amid continuing lockup-supply concerns and weaker results from satellite-broadband peer AST SpaceMobile.",
       "sources": [
-        "https://www.marketwatch.com/story/spacexs-stock-moves-above-its-ipo-price-for-the-first-time-in-almost-a-month-fc3f91b7",
-        "https://www.barrons.com/articles/stockstoday-s-and-p-500-pulls-back-d9fc5a53"
+        "https://www.investors.com/news/spacex-rocket-lab-elon-musk-rocket-lab-ast-spacemobile-space-industry/",
+        "https://www.barrons.com/articles/spacex-stock-ast-earnings-price-06e0eee7"
       ]
     }
   }
