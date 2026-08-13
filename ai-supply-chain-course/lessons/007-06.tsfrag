@@ -12,4 +12,3 @@ Lesson 008: Process Control — How KLA Finds Defects Before They Destroy Yield
 
 We will learn the difference between inspection and metrology, why shrinking tolerances make defects more expensive, and why process control can gain value as manufacturing complexity rises.`,
 } satisfies Lesson;
-
