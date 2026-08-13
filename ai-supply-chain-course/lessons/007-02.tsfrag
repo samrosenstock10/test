@@ -1,0 +1,45 @@
+e companies such as Lam Research, Applied Materials and Tokyo Electron supply tools that physically transfer that pattern into the material underneath.
+
+2. Wet etch versus dry etch
+
+There are two broad families to know.
+
+Wet etch uses liquid chemicals to dissolve selected material.
+
+Imagine placing a material in a chemical bath that attacks one substance faster than another. Wet etch can be effective, inexpensive and high-throughput, but the chemistry may remove material in several directions at once.
+
+Dry etch generally uses gases and plasma inside a vacuum chamber.
+
+Plasma is an energized gas containing charged particles. In a dry-etch tool, engineers use carefully controlled chemistry and electric fields to direct reactive particles toward the wafer.
+
+For advanced chips, dry plasma etch is especially important because it can create much more directional, precisely shaped features.
+
+3. Why directionality matters
+
+Suppose you want to cut a narrow vertical trench.
+
+If the process removes material equally downward and sideways, the trench widens as it gets deeper. That is called isotropic behavior—roughly equal removal in multiple directions.
+
+Advanced manufacturing often needs anisotropic etch, meaning the process removes material much more strongly in one direction than another.
+
+The intuition is simple:
+
+Isotropic = digging a hole while the walls also dissolve sideways.
+
+Anisotropic = cutting almost straight down while keeping the sidewalls intact.
+
+That ability is crucial for dense transistor structures, interconnects, DRAM capacitors and 3D NAND.
+
+4. The hard problem: high-aspect-ratio etch
+
+Aspect ratio = depth divided by width.
+
+A hole that is 10 units deep and 1 unit wide has an aspect ratio of 10:1.
+
+The higher the aspect ratio, the harder the manufacturing problem becomes.
+
+Imagine trying to drill a perfectly straight, extremely deep hole that is much narrower than a human hair—then multiply that by billions of structures across a wafer.
+
+The etch process has to get reactive particles all the way to the bottom while avoiding damage to the sidewalls, keeping the opening from collapsing, and making each feature nearly identical.
+
+This is one reason 3D NAND has become such an important equipment marke

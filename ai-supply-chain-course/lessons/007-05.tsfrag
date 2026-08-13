@@ -1,0 +1,39 @@
+or AI
+
+AI demand pushes several parts of the etch opportunity.
+
+Leading-edge logic: GPUs and custom accelerators use advanced process nodes with complex transistor and interconnect structures.
+
+HBM and DRAM: AI systems require enormous memory bandwidth, which supports investment in advanced memory manufacturing where etch is essential.
+
+NAND and storage: AI data centers also create large storage needs, although NAND demand is more cyclical and less directly tied to accelerator shipments than HBM.
+
+Advanced packaging: packaging uses its own patterning and material-removal processes, giving equipment companies another path to benefit as AI packages become more complex.
+
+The important point is that an AI chip is not simply “more NVIDIA demand.” More compute can pull capital spending through many upstream manufacturing steps.
+
+The value-chain map today
+
+Deposition adds material
+↓
+Lithography defines the pattern
+↓
+Etch transfers that pattern into the material
+↓
+Clean + inspect + measure
+↓
+Repeat hundreds of times to build transistors and interconnects
+
+Remember these 6 things
+
+1. Etch removes selected material from a wafer after lithography defines where the cut should happen.
+
+2. Wet etch uses liquid chemistry; dry plasma etch is especially important for precise, directional advanced-chip structures.
+
+3. High-aspect-ratio etch means cutting very deep, narrow structures and becomes increasingly difficult in technologies such as 3D NAND.
+
+4. Selectivity means removing the target material much faster than surrounding materials.
+
+5. Lam Research is a major leader in etch, while Applied Materials and Tokyo Electron are important competitors; unlike EUV, etch is not a single-vendor monopoly.
+
+6. The long-term thesis is rising etch intensity per wafer, but near-term re

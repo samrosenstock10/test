@@ -1,0 +1,36 @@
+import type { Lesson } from "./lessons";
+
+export const lesson007 = {
+  number: 7,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Etch — The Other Half of the Build-and-Carve Loop",
+  date: "2026-08-13",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 002: EUV’s 13.5nm wavelength enables finer patterning than 193nm DUV and can reduce the costly complexity of multiple-patterning steps.
+
+Lesson 003: A process node such as 3nm is a manufacturing generation, and foundry economics depend heavily on process know-how and yield, not simply owning the same equipment.
+
+Lesson 004: Chips begin on ultra-pure 300mm silicon wafers supplied by companies such as Shin-Etsu and SUMCO, showing that an input can be essential without having monopoly-like economics.
+
+Lesson 005: A chip is built through a repeated loop of deposition, lithography, etch, doping, cleaning and inspection, so leading-edge complexity creates value for many equipment suppliers beyond ASML.
+
+Lesson 006: Deposition adds ultra-thin films to a wafer, and increasingly three-dimensional chip structures raise the value of precise techniques such as ALD and the tools supplied by Applied Materials, Lam Research and Tokyo Electron.
+
+The big idea
+
+Yesterday we covered deposition: adding material to a wafer. Etch is the complementary step—removing selected material with extreme precision.
+
+Think of semiconductor fabrication as microscopic sculpting. Deposition gives you a fresh block of material. Lithography draws the stencil. Etch carves away exactly what the stencil leaves exposed.
+
+That sounds simple until you remember the dimensions involved. A modern fab may need to cut features only nanometers wide, create deep vertical holes through many stacked layers, stop at exactly the right material, and do all of that uniformly across a 300mm wafer.
+
+1. The basic sequence
+
+A simplified patterning cycle is:
+
+Deposit material → coat with photoresist → lithography prints the pattern → develop the resist → etch exposed areas → strip the resist → clean and inspect.
+
+Lithography tells the fab where to cut. Etch performs much of the actual cutting.
+
+That distinction matters economically. ASML can bethe bottleneck in printing the pattern, while

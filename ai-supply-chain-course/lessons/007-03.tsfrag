@@ -1,0 +1,43 @@
+t. NAND makers increase storage density by stacking more memory layers vertically. More layers can mean much deeper channel holes that must be etched through the stack.
+
+As layer counts rise, the difficulty of the etch problem can increase faster than wafer volume itself.
+
+That is another example of process intensity.
+
+5. Selectivity — remove one material, preserve another
+
+Etch is not simply “remove material.” A fab may want to remove material A while barely touching material B underneath or next to it.
+
+Selectivity describes how much faster the process removes one material than another.
+
+If an etch process removes the target film 20 times faster than the stop layer underneath, it has much more room for error than a process that attacks both materials at similar rates.
+
+This matters because modern chips use many different materials packed together at tiny dimensions.
+
+A good etch process must balance several goals at once:
+
+- high selectivity;
+- precise feature shape;
+- uniformity across the wafer;
+- low defect and damage rates;
+- sufficient throughput for mass production.
+
+Improving one can sometimes hurt another. That is why the process recipe and tool design matter so much.
+
+6. Where Lam Research fits
+
+Lam Research is one of the most important etch-equipment suppliers in the world and is particularly strong in plasma etch.
+
+Its position matters because advanced logic and memory repeatedly require more difficult material-removal steps.
+
+Lam is especially exposed to memory. In 3D NAND, manufacturers stack many layers and then perform extremely demanding high-aspect-ratio etches through those structures. That creates a direct link between increasing NAND complexity and demand for sophisticated etch equipment.
+
+Lam also participates in deposition, which gives it exposure to both halves of the build-and-carve loop.
+
+For an investor, this is useful because Lam does not need total semiconductor wafer volume to grow at the same rate as its opportunity. If each wafer requires more complex etch and deposition work, equipment content per wafer can rise.
+
+7. Applied Materials and Tokyo Electron
+
+Lam is not a monopoly like ASML in EUV.
+
+Applied Materials also sells important etch systems and has a very broad portf

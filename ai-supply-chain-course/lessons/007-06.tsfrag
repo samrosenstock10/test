@@ -1,0 +1,15 @@
+venue remains exposed to semiconductor and especially memory capex cycles.
+
+Quick check
+
+Why could Lam Research’s etch opportunity grow even if the number of NAND wafers produced stays roughly flat?
+
+Answer: if NAND manufacturers keep stacking more layers, each wafer can require deeper, more difficult high-aspect-ratio etches and more sophisticated equipment, increasing etch content per wafer.
+
+Next lesson
+
+Lesson 008: Process Control — How KLA Finds Defects Before They Destroy Yield
+
+We will learn the difference between inspection and metrology, why shrinking tolerances make defects more expensive, and why process control can gain value as manufacturing complexity rises.`,
+} satisfies Lesson;
+
