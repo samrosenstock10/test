@@ -1,0 +1,49 @@
+
+Structural growth tells you how the opportunity may expand over many years.
+
+Cyclicality tells you how unevenly that growth may arrive.
+
+A company can have excellent long-term structural exposure and still experience meaningful revenue declines during a semiconductor downcycle.
+
+For an investor with a long horizon, the analytical job is therefore not merely to identify a growing technical need. You also need to understand market share, process leadership, customer concentration, capital intensity and where you are in the spending cycle.
+
+The value-chain map today
+
+Materials and gases
+↓
+Deposition equipment — Applied Materials / Lam Research / Tokyo Electron
+↓
+Ultra-thin films created on the wafer
+↓
+Lithography defines the pattern
+↓
+Etch selectively removes material
+↓
+The loop repeats to build transistors and wiring
+
+Remember these 6 things
+
+1. Deposition adds ultra-thin material films to a wafer.
+
+2. CVD uses chemical reactions, PVD physically transfers material, and ALD provides exceptionally precise layer-by-layer control.
+
+3. More three-dimensional chip structures make uniform deposition harder and can increase deposition intensity.
+
+4. Applied Materials, Lam Research and Tokyo Electron are major deposition-equipment vendors; unlike ASML in EUV, deposition is not a single-vendor monopoly.
+
+5. Equipment demand can grow even without equivalent wafer-volume growth because the amount and sophistication of equipment work per wafer can increase.
+
+6. Structural semiconductor complexity can drive long-term growth while capex and memory cycles still create significant short-term volatility.
+
+Quick check
+
+Why might ALD become more valuable as transistors become more three-dimensional?
+
+Answer: complex 3D structures need extremely thin, uniform films on multiple surfaces; ALD can control thickness with near-atomic precision and coat intricate geometries more evenly than less precise approaches.
+
+Next lesson
+
+Lesson 007: Etch — The Other Half of the Build-and-Carve Loop
+
+We will learn how fabs selectively remove material, why high-aspect-ratio structures are so difficult to etch, and why Lam Research has become strategically important in advanced logic and memory manufacturing.`,
+} satisfies Lesson;
