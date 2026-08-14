@@ -1,0 +1,69 @@
+import type { Lesson } from "./lessons";
+
+export const lesson008 = {
+  number: 8,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Process Control — How KLA Finds Defects Before They Destroy Yield",
+  date: "2026-08-14",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 003: A process node such as 3nm is a manufacturing generation, and foundry economics depend heavily on process know-how and yield, not simply owning the same equipment.
+
+Lesson 004: Chips begin on ultra-pure 300mm silicon wafers supplied by companies such as Shin-Etsu and SUMCO, showing that an input can be essential without having monopoly-like economics.
+
+Lesson 005: A chip is built through a repeated loop of deposition, lithography, etch, doping, cleaning and inspection, so leading-edge complexity creates value for many equipment suppliers beyond ASML.
+
+Lesson 006: Deposition adds ultra-thin films to a wafer, and increasingly three-dimensional chip structures raise the value of precise techniques such as ALD and the tools supplied by Applied Materials, Lam Research and Tokyo Electron.
+
+Lesson 007: Etch removes selected material after lithography defines the pattern, and rising 3D complexity increases the value of high-precision plasma etch, especially for Lam Research.
+
+The big idea
+
+A semiconductor fab cannot wait until the end of a months-long manufacturing process to discover that a critical layer was misaligned or contaminated.
+
+By then, hundreds of expensive process steps may already have been performed on a bad wafer.
+
+Process control is the system of inspection, measurement and data analysis that tells the fab whether each step is actually working.
+
+If lithography, deposition and etch are the construction crews, process control is the combination of quality-control inspector, surveyor and early-warning system.
+
+KLA is the company most closely associated with this part of the semiconductor equipment stack.
+
+1. Why defects are economically dangerous
+
+Imagine a wafer containing hundreds of potential high-end chips. The wafer passes through an enormous number of fabrication steps before those chips are complete.
+
+A defect introduced early can ruin a transistor, break an interconnect or cause a chip to fail electrical testing later.
+
+The economic problem is not only the defect itself. It is the additional value that the fab may continue adding to a wafer that was already doomed.
+
+That means early detection can save far more money than the cost of the inspection step.
+
+This connects directly to yield.
+
+Yield = the percentage of manufactured dies that work well enough to sell.
+
+If a wafer produces 100 potential dies and 90 are usable, yield is about 90%. If only 60 are usable, a large share of the wafer-processing cost has been wasted.
+
+For expensive AI accelerators, advanced CPUs, HBM and other leading-edge products, small changes in yield can have very large economic consequences.
+
+2. Inspection versus metrology
+
+These terms sound similar but answer different questions.
+
+Inspection asks: Is something wrong?
+
+Metrology asks: Did we build the feature to the intended dimensions and position?
+
+Inspection looks for defects such as particles, scratches, pattern abnormalities or other unwanted features.
+
+Metrology measures things such as:
+
+- line width or critical dimension;
+- film thickness;
+- layer-to-layer alignment;
+- feature shape;
+- surface topography;
+- material or optical properties.
+
+A useful analogy is building a skyscraper.
