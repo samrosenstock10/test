@@ -1,0 +1,69 @@
+Inspection asks whether there is a crack in a beam.
+
+Metrology asks whether the beam is exactly the right length, thickness and location.
+
+A leading-edge fab needs both.
+
+3. Overlay — did one layer line up with the previous layer?
+
+Modern chips are constructed layer by layer.
+
+Each new pattern must align extremely precisely with structures that were created earlier.
+
+Overlay is the measurement of how accurately one patterned layer is aligned relative to another.
+
+Imagine printing a detailed map in dozens of transparent layers. If one layer shifts slightly, roads, buildings and electrical lines no longer connect correctly.
+
+At semiconductor dimensions, a tiny alignment error can make a transistor or wire fail.
+
+This is why metrology equipment sits so close to lithography economically. Better lithography is not enough if the fab cannot verify that patterns are landing where they are supposed to.
+
+KLA sells overlay metrology systems for this purpose.
+
+4. The difference between finding a defect and understanding it
+
+A modern wafer can contain an enormous number of potential anomalies. A fab does not simply want a machine that says, “Something looks strange here.”
+
+It needs to know:
+
+- Where is the defect?
+- How large is it?
+- What type of defect is it?
+- Which process step likely caused it?
+- Is it random or systematic?
+- Is it getting worse over time?
+- Does the process need to be stopped or adjusted?
+
+This is where data analytics and software become part of process control.
+
+Inspection tools generate huge amounts of information. Software helps classify defects, identify patterns across wafers and connect the problem back to a specific process tool or recipe.
+
+So KLA is not only selling cameras or microscopes. Its value increasingly includes the data and analytics layer that helps a fab learn why yield is changing.
+
+5. Optical inspection versus electron-beam inspection
+
+You only need the basic trade-off for now.
+
+Optical inspection uses light to scan wafers quickly. It can inspect large areas at high throughput, which is valuable in production environments where fabs must process enormous wafer volumes.
+
+Electron-beam, or e-beam, inspection uses electrons rather than visible light. Because electrons can resolve extremely small features, e-beam systems can provide very high sensitivity and resolution.
+
+But there is a trade-off.
+
+Higher resolution often comes with lower throughput.
+
+Think of satellite imagery versus sending a person with a microscope.
+
+The satellite can survey a huge region quickly. The microscope can see much finer detail but only across a small area at a time.
+
+Fabs therefore use different inspection technologies for different jobs and increasingly combine them.
+
+6. Sampling — you cannot inspect everything at maximum resolution
+
+A fab would ideally measure every feature on every wafer after every process step.
+
+That is not economically practical.
+
+Inspection itself takes time, and semiconductor fabs are designed to move wafers through production efficiently.
+
+So manufacturers use sampling strategies: inspect enough wafers and enough locations to understand whether the process is healthy without slowing the factory excessively.
