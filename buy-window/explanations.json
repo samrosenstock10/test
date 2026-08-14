@@ -1,97 +1,92 @@
 {
-  "updatedAt": "2026-08-13T14:06:30Z",
+  "updatedAt": "2026-08-14T14:03:21.256Z",
   "period": {
-    "start": "2026-08-12",
-    "end": "2026-08-12",
-    "label": "Session Aug 12"
+    "start": "2026-08-13",
+    "end": "2026-08-13",
+    "label": "Session Aug 13"
   },
   "items": {
     "NVDA": {
-      "move": "+3.0%",
-      "text": "Nvidia rose about 3.0% as strong CoreWeave and other AI-infrastructure results revived the AI hardware trade, while in-line CPI reduced rate-hike fears and lifted the Nasdaq.",
+      "move": "+0.5%",
+      "text": "Nvidia rose about 0.5% with the broader technology and AI trade as tame producer-price data eased rate concerns; no distinct Nvidia-specific catalyst was confirmed.",
       "sources": [
-        "https://www.wsj.com/finance/stocks/coreweave-stock-surge-gives-the-ai-trade-a-boost-1b546f50",
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-12/"
+        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
       ]
     },
     "AVGO": {
-      "move": "-0.0%",
-      "text": "Broadcom finished essentially flat despite a 0.5% Nasdaq gain; no fresh company-specific catalyst was confirmed, leaving it a notable laggard during Wednesday's AI-infrastructure rally.",
+      "move": "+0.4%",
+      "text": "Broadcom rose about 0.4% with the broader technology and semiconductor tape as tame producer-price data supported risk appetite; no distinct company-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-12/",
-        "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-july-cpi-inflation-nvidia-partner-coreweave/"
+        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
       ]
     },
     "TSM": {
-      "move": "+1.7%",
-      "text": "TSM gained about 1.7% with the AI and chip rally as strong infrastructure earnings reinforced advanced-compute demand, while in-line CPI eased rate concerns.",
+      "move": "+0.3%",
+      "text": "TSM edged up about 0.3% with the broader AI and semiconductor trade as tame producer-price data eased rate concerns; no fresh TSM-specific catalyst was confirmed.",
       "sources": [
-        "https://www.wsj.com/finance/stocks/coreweave-stock-surge-gives-the-ai-trade-a-boost-1b546f50",
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-12/"
+        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
       ]
     },
     "ASML": {
-      "move": "+0.6%",
-      "text": "ASML added about 0.6% as semiconductor and AI-infrastructure shares strengthened after upbeat technology earnings and an in-line CPI report; no distinct ASML-specific catalyst was confirmed.",
+      "move": "+2.1%",
+      "text": "ASML rose about 2.1% as semiconductor-equipment shares remained supported by expanding AI-related fab spending, including Intel's newly enlarged capital raise, while the broader tech market advanced.",
       "sources": [
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-12/",
-        "https://www.marketwatch.com/story/chip-stocks-are-closing-in-on-a-bull-market-heres-why-some-analysts-are-nervous-2a180b75"
+        "https://www.barrons.com/articles/intel-stock-offering-price-766da245",
+        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
       ]
     },
     "KLAC": {
-      "move": "+3.9%",
-      "text": "KLA jumped about 3.9% as the AI-infrastructure rally broadened into chips and semiconductor equipment after strong CoreWeave and other technology results boosted confidence in continued data-center spending.",
+      "move": "+0.5%",
+      "text": "KLA rose about 0.5% with semiconductor and AI-infrastructure shares as tame producer-price data supported the broader technology rally; no distinct KLA-specific catalyst was confirmed.",
       "sources": [
-        "https://www.wsj.com/finance/stocks/coreweave-stock-surge-gives-the-ai-trade-a-boost-1b546f50",
-        "https://www.marketwatch.com/story/chip-stocks-are-closing-in-on-a-bull-market-heres-why-some-analysts-are-nervous-2a180b75"
+        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
       ]
     },
     "INTC": {
-      "move": "+3.3%",
-      "text": "Intel rose about 3.3% as AI-infrastructure stocks rallied on strong technology earnings, extending its rebound after investors absorbed this week's large equity offering.",
+      "move": "+3.6%",
+      "text": "Intel rose about 3.6%, extending its rebound as investors absorbed the upsized $20 billion equity raise intended to support foundry and AI investment, while semiconductor shares benefited from the broader tech rally.",
       "sources": [
-        "https://www.businessinsider.com/coreweave-stock-price-earnings-nebius-nbis-ai-nvda-cpi-2026-8",
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-12/"
+        "https://www.reuters.com/legal/transactional/intel-launches-15-billion-share-sale-turnaround-rally-lifts-stock-2026-08-10/",
+        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
       ]
     },
     "MU": {
-      "move": "+4.9%",
-      "text": "Micron jumped about 4.9% as strong CoreWeave and other AI-infrastructure earnings lifted demand expectations across the AI hardware chain, making memory a major beneficiary of Wednesday's rally.",
+      "move": "+4.2%",
+      "text": "Micron jumped about 4.2% as Sandisk's strong long-term growth outlook reinforced expectations for sustained AI-driven memory demand, helping memory-chip shares outperform during Thursday's technology rally.",
       "sources": [
-        "https://www.wsj.com/finance/stocks/coreweave-stock-surge-gives-the-ai-trade-a-boost-1b546f50",
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-12/"
+        "https://www.reuters.com/business/sandisk-forecasts-mid-to-high-teens-revenue-growth-through-2030-2026-08-13/",
+        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
       ]
     },
     "DDOG": {
-      "move": "-2.4%",
-      "text": "Datadog fell about 2.4% despite a rising Nasdaq; no fresh catalyst was confirmed, and the stock remained under pressure from last week's earnings reaction and concerns about modest sequential growth.",
+      "move": "+4.7%",
+      "text": "Datadog rebounded about 4.7% with enterprise-software strength, recovering further from last week's earnings-driven selloff; no fresh company-specific catalyst was confirmed Thursday.",
       "sources": [
-        "https://www.marketwatch.com/story/datadogs-stock-slides-after-earnings-this-is-whats-nagging-at-investors-eeb6fa9a",
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-12/"
+        "https://www.investors.com/research/ibd-industry-themes/dow-jones-microsoft-msft-palantir-pltr-twilio-twlo/",
+        "https://www.marketwatch.com/story/datadogs-stock-slides-after-earnings-this-is-whats-nagging-at-investors-eeb6fa9a"
       ]
     },
     "META": {
-      "move": "-3.4%",
-      "text": "Meta fell about 3.4% even as the Nasdaq rose 0.5%; no fresh market-moving company catalyst was confirmed, so the move appears primarily stock-specific rather than a broad technology selloff.",
+      "move": "+2.8%",
+      "text": "Meta rose about 2.8% as communication-services and mega-cap technology shares advanced after tame producer-price data eased rate concerns; no distinct Meta-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-12/",
-        "https://apnews.com/article/c2b9200bd737220ef848a37ffea21f95"
+        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
       ]
     },
     "PLTR": {
-      "move": "-2.2%",
-      "text": "Palantir fell about 2.2% despite a stronger Nasdaq, with no fresh company-specific catalyst confirmed after its recent earnings-driven surge; the session looked like a pullback after that run.",
+      "move": "+4.7%",
+      "text": "Palantir gained about 4.7%, extending its earnings-driven breakout as enterprise-software shares remained strong and the broader Nasdaq advanced; no new Palantir-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-12/",
-        "https://apnews.com/article/c2b9200bd737220ef848a37ffea21f95"
+        "https://www.investors.com/research/ibd-industry-themes/dow-jones-microsoft-msft-palantir-pltr-twilio-twlo/",
+        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
       ]
     },
     "SPCX": {
-      "move": "+9.6%",
-      "text": "SpaceX surged about 9.6% after Elon Musk's all-hands highlighted 22 million Starlink mobile subscribers, satellite-to-cell growth and ambitious AI-compute plans, while lockup anxiety continued to ease.",
+      "move": "-3.3%",
+      "text": "SpaceX fell about 3.3% with no confirmed negative operating catalyst; trading remained volatile after its recent rebound and the post-lockup increase in tradable shares, while Musk disclosed a 48.4% stake.",
       "sources": [
-        "https://www.barrons.com/articles/spacex-starlink-launch-stock-price-5b6ac356",
-        "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-july-cpi-inflation-nvidia-partner-coreweave/"
+        "https://www.reuters.com/legal/legalindustry/musk-discloses-484-stake-spacex-regulatory-filing-2026-08-13/",
+        "https://www.reuters.com/business/spacex-shares-slip-lockup-expiry-adds-post-ipo-woes-2026-08-06/"
       ]
     }
   }
