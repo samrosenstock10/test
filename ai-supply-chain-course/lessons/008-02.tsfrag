@@ -1,3 +1,4 @@
+
 Inspection asks whether there is a crack in a beam.
 
 Metrology asks whether the beam is exactly the right length, thickness and location.
@@ -65,5 +66,3 @@ A fab would ideally measure every feature on every wafer after every process ste
 That is not economically practical.
 
 Inspection itself takes time, and semiconductor fabs are designed to move wafers through production efficiently.
-
-So manufacturers use sampling strategies: inspect enough wafers and enough locations to understand whether the process is healthy without slowing the factory excessively.
