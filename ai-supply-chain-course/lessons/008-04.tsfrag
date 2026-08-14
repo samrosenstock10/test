@@ -1,0 +1,68 @@
+If advanced chips were easy to manufacture, customers would need less inspection.
+
+KLA benefits precisely because leading-edge manufacturing is difficult.
+
+11. The AI connection
+
+AI affects process control through several paths.
+
+Leading-edge logic: NVIDIA GPUs, custom accelerators and advanced CPUs require sophisticated foundry processes with extremely tight tolerances.
+
+HBM and DRAM: AI demand is driving investment in high-bandwidth memory, where complex structures and aggressive performance requirements increase process-control needs.
+
+Advanced packaging: large AI packages combine multiple dies, memory stacks, interposers and increasingly dense connections. More interfaces create more places where defects or alignment errors can destroy value.
+
+KLA explicitly highlighted leading-edge foundry/logic, memory complexity and advanced packaging as demand drivers in its fiscal 2026 results.
+
+The key idea is that AI does not only create demand for more wafers. It pushes the industry toward products that are unusually difficult and expensive to manufacture, which can increase inspection and metrology intensity.
+
+12. The cyclicality question
+
+KLA is still a semiconductor equipment company.
+
+If TSMC, Samsung, Micron or SK Hynix cut capital spending, equipment demand can weaken.
+
+But process control has an interesting characteristic: customers cannot simply eliminate quality control when the cycle slows.
+
+A fab may delay capacity expansion, but the wafers it continues producing still need inspection and measurement.
+
+KLA also has a large installed base that generates recurring service demand.
+
+That does not make KLA non-cyclical. It does mean its economic exposure is not identical to a vendor that depends mainly on adding entirely new production capacity.
+
+The investment framework should therefore separate:
+
+Structural intensity: Are customers spending more on process control per unit of advanced manufacturing?
+
+Capex cycle: Are customers currently adding or upgrading enough capacity to drive equipment purchases?
+
+Competitive position: Does KLA maintain leadership in the inspection and metrology applications where complexity is rising fastest?
+
+Remember these 7 things
+
+1. Process control is the inspection, measurement and analytics system that tells a fab whether manufacturing is working correctly.
+
+2. Inspection asks whether a defect exists; metrology measures whether a feature has the intended size, shape, thickness or alignment.
+
+3. Overlay measures how accurately one patterned layer aligns with another.
+
+4. Optical inspection offers high throughput; e-beam inspection can offer higher resolution but generally scans more slowly.
+
+5. Fabs sample rather than inspect every feature at maximum resolution because inspection itself consumes time.
+
+6. Shrinking tolerances, 3D structures and advanced packaging can raise process-control intensity per wafer.
+
+7. KLA’s moat is not an EUV-style monopoly; it comes from technical leadership, embedded process knowledge, customer qualification, data and switching costs.
+
+Quick check
+
+Why could KLA’s opportunity grow even if the number of wafers manufactured stays flat?
+
+Answer: if each wafer becomes harder and more expensive to manufacture, fabs may need more frequent, more sensitive and more valuable inspection and metrology to protect yield, increasing process-control spending per wafer.
+
+Next lesson
+
+Lesson 009: Yield — The Number That Determines Whether a Great Chip Process Is Economically Great
+
+We will connect defect density, die size and wafer economics and show why two fabs using similar equipment can have radically different profitability.`,
+} satisfies Lesson;
