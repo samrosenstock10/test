@@ -1,0 +1,69 @@
+This creates a key process-control optimization problem:
+
+More inspection → more information and lower risk of missing defects.
+
+Too much inspection → lower throughput and higher manufacturing cost.
+
+The best process-control systems help fabs get the most useful information per unit of inspection time.
+
+As chips become harder to manufacture, customers may choose to inspect more frequently or use more sophisticated tools because the cost of an undetected error rises.
+
+7. Excursions — when a process suddenly goes wrong
+
+An excursion is a meaningful deviation from normal manufacturing behavior.
+
+Suppose an etch chamber begins producing a subtle defect after a component degrades. If the fab notices only after thousands of wafers pass through the tool, the financial loss can be enormous.
+
+Process-control systems try to detect the excursion quickly.
+
+The workflow is roughly:
+
+Inspect / measure → identify abnormal pattern → trace likely source → adjust or stop process → verify correction.
+
+This is one reason process-control equipment can have value far beyond its purchase price. It helps protect the productivity of many other expensive machines in the fab.
+
+8. Why advanced nodes can increase process-control intensity
+
+This is the structural investment thesis.
+
+As features shrink, the acceptable error gets smaller.
+
+A particle or alignment error that was harmless on an older process may become catastrophic on a leading-edge process.
+
+At the same time, structures are becoming more three-dimensional, materials stacks are more complex, and advanced packaging introduces additional interfaces that must be inspected and measured.
+
+That creates a simple relationship:
+
+More manufacturing complexity → more opportunities for defects → tighter tolerances → greater need for inspection and metrology.
+
+So process-control spending can grow faster than wafer volume.
+
+This is similar to what we learned with deposition and etch: equipment opportunity depends not only on the number of wafers, but also on process intensity per wafer.
+
+9. Where KLA fits
+
+KLA’s core semiconductor process-control business includes wafer inspection, metrology and data analytics.
+
+In fiscal 2026, KLA generated about $13.6 billion of total revenue, and roughly $12.2 billion came from Semiconductor Process Control — about 90% of the company.
+
+That concentration is important. KLA is much more directly tied to process control than Applied Materials or Lam, whose largest franchises are centered on other wafer-processing steps.
+
+KLA also has businesses in specialty semiconductor process equipment and PCB/component inspection, but process control is the economic center of the company.
+
+KLA says its systems help customers accelerate development ramps, achieve higher and more stable die yields and improve profitability.
+
+This is a good way to understand the product economically: KLA sells tools that help fabs convert extremely expensive process technology into repeatable, high-yield manufacturing.
+
+10. Why KLA can have strong economics without an ASML-style monopoly
+
+KLA does not own a single obvious bottleneck equivalent to ASML’s EUV monopoly.
+
+Its moat is different.
+
+Process-control tools become embedded in a customer’s manufacturing recipe. Engineers build years of defect libraries, measurement methods, analytics and process knowledge around those systems.
+
+A replacement tool must not merely look technically competitive on paper. It has to prove that it can find the right defects, measure accurately, integrate with the fab’s workflow and maintain production throughput.
+
+That creates switching costs and deep customer relationships.
+
+The other important point is that process control becomes more valuable when manufacturing gets harder.
