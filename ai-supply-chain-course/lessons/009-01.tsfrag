@@ -1,0 +1,131 @@
+import type { Lesson } from "./lessons";
+
+export const lesson009 = {
+  number: 9,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Yield — The Number That Determines Whether a Great Chip Process Is Economically Great",
+  date: "2026-08-15",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 004: Chips begin on ultra-pure 300mm silicon wafers, and wafer quality matters because tiny starting defects can destroy value after expensive processing.
+
+Lesson 005: A chip is built through a repeated fabrication loop of deposition, lithography, etch, doping, cleaning and inspection rather than in one printing step.
+
+Lesson 006: Deposition adds ultra-thin films, and increasingly three-dimensional chip structures increase the value of precise deposition methods such as ALD.
+
+Lesson 007: Etch removes selected material after lithography defines the pattern, and rising 3D complexity increases the value of high-precision plasma etch.
+
+Lesson 008: Process control uses inspection, metrology and analytics to catch defects early, protect yield and prevent fabs from adding value to wafers that are already bad.
+
+The big idea
+
+A semiconductor process can be technologically impressive and still be economically terrible if too many chips come off the wafer defective.
+
+That is why yield is one of the most important numbers in semiconductor manufacturing.
+
+Yield = the percentage of manufactured dies that work well enough to sell.
+
+A foundry is not paid for how many transistors it attempted to build. It is paid for usable silicon.
+
+So the economics of a fab are roughly:
+
+Wafer revenue opportunity → minus fabrication cost → divided across the good dies that survive.
+
+If more dies survive, the effective manufacturing cost per good chip falls sharply.
+
+1. Start with the wafer
+
+A leading-edge fab usually processes 300mm wafers.
+
+Many copies of the same chip design are patterned across one wafer. After fabrication, the wafer is cut into individual rectangles called dies.
+
+Die = one individual piece of silicon that can become a chip.
+
+Suppose a wafer physically contains 100 potential dies.
+
+If 90 are usable, yield is 90%.
+
+If only 50 are usable, yield is 50%.
+
+The wafer still consumed roughly the same lithography, deposition, etch, clean, inspection, labor, utilities and factory time either way.
+
+That is why yield has such powerful economic leverage.
+
+2. A simple cost example
+
+Assume one processed wafer costs $20,000.
+
+Case A: 100 possible dies, 90 good dies.
+
+Cost per good die = $20,000 / 90 = about $222.
+
+Case B: 100 possible dies, 60 good dies.
+
+Cost per good die = $20,000 / 60 = about $333.
+
+Nothing about the nominal wafer cost changed.
+
+But because fewer usable chips survived, the manufacturing cost per good die increased by roughly 50%.
+
+This is why a small yield advantage can become a major gross-margin advantage.
+
+3. Yield is not one number for the entire fab
+
+There are several layers of yield.
+
+First-pass intuition:
+
+Process-step yield: did a specific manufacturing step work correctly?
+
+Wafer yield: did the wafer make it through fabrication without being scrapped?
+
+Die yield: how many individual dies on the wafer function correctly?
+
+Final test yield: how many packaged chips pass electrical and reliability testing?
+
+Packaging yield: did advanced packaging successfully connect the die, HBM, substrate and other components?
+
+When people casually discuss semiconductor yield, they usually mean the share of dies or finished chips that become sellable products.
+
+But economically, losses can happen at multiple stages.
+
+4. Why larger chips are harder to yield
+
+This is especially important for AI accelerators.
+
+Imagine defects occur randomly across a wafer.
+
+A tiny chip occupies a small area, so there is less surface area where a defect can land.
+
+A very large chip occupies more area, so there are more opportunities for one defect to ruin it.
+
+That means, all else equal:
+
+Larger die → more defect exposure → lower expected die yield.
+
+This is one reason giant AI accelerators are difficult and expensive to manufacture.
+
+A high-end GPU may be physically much larger than a smartphone chip or small microcontroller.
+
+If the process has a given defect density, the larger die suffers more.
+
+5. Defect density
+
+Defect density is a rough measure of how many yield-killing defects occur per unit of wafer area.
+
+Lower defect density is better.
+
+Suppose two fabs can both print the same transistor dimensions.
+
+Fab A has fewer particles, fewer patterning errors, more stable etch, better overlay and tighter process control.
+
+Fab B has more variation and more random defects.
+
+They may advertise similar node names, but Fab A can have far better economics because more sellable chips emerge from each wafer.
+
+This is a crucial point:
+
+Node leadership is not only about transistor size or theoretical performance.
+
+It is also about manufacturing repeatability at scale.
+
