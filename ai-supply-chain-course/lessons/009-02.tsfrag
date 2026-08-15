@@ -1,0 +1,89 @@
+6. Why TSMC's moat is partly a yield moat
+
+TSMC buys equipment from many of the same major vendors available to Samsung and Intel: ASML, Applied Materials, Lam Research, KLA, Tokyo Electron and others.
+
+The moat is not simply owning machines.
+
+TSMC's advantage includes process integration: knowing how to combine thousands of steps, recipes, materials and tool settings into high-volume production with commercially attractive yield.
+
+A process that works in a laboratory is not the same as a process that reliably produces millions of chips.
+
+This is why a competitor cannot recreate TSMC merely by buying equivalent equipment.
+
+Manufacturing learning matters.
+
+7. The yield learning curve
+
+When a new process node launches, yield is usually worse than it will be later.
+
+Engineers then improve it over time.
+
+The basic cycle is:
+
+Run wafers → inspect defects → identify root cause → adjust process recipe or tool → run more wafers → measure again.
+
+Every cycle produces information.
+
+Over time, the fab learns which defects matter, where variation originates and how to keep each step within tighter tolerances.
+
+This is called yield learning.
+
+A faster yield-learning curve means a company can reach profitable high-volume manufacturing sooner.
+
+8. Why early yield is strategically important
+
+Suppose two foundries launch competing advanced nodes.
+
+Both can technically manufacture the chip.
+
+Foundry A reaches 80% yield relatively quickly.
+
+Foundry B remains at 50%.
+
+Foundry A can offer customers:
+
+- lower effective cost per good die;
+- more predictable supply;
+- better delivery schedules;
+- more confidence for large-volume product launches.
+
+Foundry B may need to charge less, absorb lower margins, delay production ramps or spend more time fixing the process.
+
+So yield can turn into customer share.
+
+And customer share creates more wafer volume, which creates more manufacturing data, which can improve yield further.
+
+That can become a reinforcing loop.
+
+9. The learning flywheel
+
+A simplified foundry flywheel is:
+
+More leading-edge customers → more wafer starts → more manufacturing data → faster defect learning → better yield → stronger customer economics → more leading-edge customers.
+
+This is one reason scale can create a moat in advanced semiconductor manufacturing.
+
+The important insight is that volume is not only revenue.
+
+Volume can also be learning.
+
+A smaller competitor may have technically capable equipment but fewer opportunities to discover rare failure modes at production scale.
+
+10. Why process control companies benefit
+
+Yesterday we covered KLA.
+
+Yield explains why customers will spend heavily on inspection and metrology.
+
+A process-control tool is valuable if it helps the fab find a defect source before thousands of additional wafers are affected.
+
+Suppose a tool identifies a subtle lithography overlay problem one day earlier.
+
+That may prevent millions of dollars of bad work-in-process from moving through downstream equipment.
+
+So the economic value of process control is not measured only by the price of the inspection tool.
+
+It is measured partly by the yield loss it prevents.
+
+This helps explain why KLA can have strong economics even though its machines do not directly create the transistor.
+
