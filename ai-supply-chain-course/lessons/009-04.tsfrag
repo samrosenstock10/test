@@ -1,0 +1,113 @@
+15. Gross margin connection
+
+For a manufacturer, better yield can expand gross margin even without raising price.
+
+Why?
+
+Revenue per good chip may stay the same while manufacturing cost per good chip falls.
+
+A rough relationship is:
+
+Better yield → more sellable chips per wafer → lower cost per good chip → higher manufacturing margin.
+
+This is one reason reported gross margin can reveal something about manufacturing quality and process maturity, although pricing, depreciation, utilization, product mix and many other factors also matter.
+
+Do not interpret gross margin as a pure yield metric.
+
+But yield is one important driver underneath it.
+
+16. Utilization versus yield
+
+Do not confuse these two.
+
+Utilization = how much of the fab's available capacity is being used.
+
+Yield = how much of what is produced becomes usable product.
+
+A fab can have high utilization and poor yield.
+
+That would mean it is running a lot of wafers but wasting too much output.
+
+A fab can also have strong yield but low utilization during a demand downturn.
+
+Both matter economically, but for different reasons.
+
+Utilization affects fixed-cost absorption.
+
+Yield affects usable output per wafer.
+
+17. Why yield can be hard for outsiders to measure
+
+Foundries and chipmakers do not always disclose detailed yield by process node or product.
+
+The number is commercially sensitive.
+
+Customers care deeply about it, and competitors would love to know it.
+
+So investors often infer process health indirectly from:
+
+- production ramp timing;
+- customer adoption;
+- capacity utilization;
+- gross margin progression;
+- product delays;
+- defect or reliability commentary;
+- equipment orders;
+- industry supply-chain checks.
+
+Be careful with rumors claiming an exact yield percentage.
+
+Unless the company or a credible source provides a clear basis, precise yield numbers can create false confidence.
+
+18. Investment-banking way to think about yield
+
+Think of yield as operating leverage hidden inside the manufacturing process.
+
+A wafer is a largely sunk production cost once processed.
+
+Every additional good die recovered from that wafer spreads the same fabrication cost across more sellable units.
+
+That means a seemingly small improvement in manufacturing quality can create a disproportionately large economic improvement.
+
+The most important question is not simply:
+
+Can this company manufacture the chip?
+
+It is:
+
+Can this company manufacture the chip repeatedly, at high volume, with enough yield to make the economics attractive?
+
+Remember these 8 things
+
+1. Yield is the percentage of manufactured dies or finished chips that are usable.
+
+2. Better yield lowers the effective manufacturing cost per good chip because wafer cost is spread across more sellable dies.
+
+3. Larger dies generally suffer more from random defects because they occupy more wafer area.
+
+4. Defect density and process variation can make two fabs using similar equipment have very different economics.
+
+5. Yield learning is the repeated process of finding defects, fixing root causes and improving manufacturing performance over time.
+
+6. Scale can create a learning flywheel because more wafer volume generates more manufacturing data.
+
+7. Chiplets can improve die-level yield by replacing one huge die with several smaller ones, but they shift complexity into advanced packaging.
+
+8. Yield matters through the entire AI stack—from foundry wafers to HBM stacks to multi-die advanced packages.
+
+Quick check
+
+A processed wafer costs $20,000 and contains 100 possible dies. At 80% yield, what is the manufacturing cost per good die before packaging and other downstream costs?
+
+Answer: $20,000 divided by 80 good dies = $250 per good die.
+
+If yield falls to 50%, the same wafer cost becomes $400 per good die.
+
+That is why yield is an economic variable, not merely an engineering statistic.
+
+Next lesson
+
+Lesson 010: Doping and Ion Implantation — How Engineers Turn Silicon Into an Electrical Switch
+
+We will learn why pure silicon is not enough, what p-type and n-type regions mean, how ion implantation works, and where Applied Materials and Axcelis fit in the process.`,
+} satisfies Lesson;
