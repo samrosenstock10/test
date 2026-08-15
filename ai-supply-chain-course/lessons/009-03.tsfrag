@@ -1,0 +1,81 @@
+11. Why yield matters for ASML, Lam and Applied Materials too
+
+Yield also affects process-tool vendors.
+
+If a new process requires tighter lithography accuracy, better etch profiles or more precise films to achieve target yield, the customer may need higher-performance equipment or more process steps.
+
+That can increase equipment intensity.
+
+Examples:
+
+ASML: better patterning and overlay reduce lithography-driven defects.
+
+Lam Research: more precise etch can improve feature shape and reduce damage.
+
+Applied Materials: better deposition and materials engineering can reduce film variation and defects.
+
+KLA: inspection and metrology identify where the process is drifting.
+
+The whole equipment ecosystem ultimately exists to help customers manufacture good chips consistently.
+
+12. Yield and chiplets
+
+Chiplets are one response to the yield problem.
+
+Instead of building one enormous monolithic die, a designer can sometimes split a system into several smaller dies and connect them in a package.
+
+Why can this help?
+
+Smaller dies generally have higher yield because each die occupies less wafer area and is less likely to contain a random defect.
+
+A simplified example:
+
+One very large monolithic die may have poor yield.
+
+Four smaller dies may each yield better, and the system can be assembled from good dies.
+
+This does not make chiplets automatically cheaper.
+
+Advanced packaging adds cost, interconnect complexity, power challenges and its own yield risk.
+
+But chiplets let designers trade some front-end die-yield difficulty for packaging complexity.
+
+We will go much deeper into this when we reach advanced packaging.
+
+13. Known-good die
+
+This leads to an important packaging term: known-good die.
+
+A known-good die is a die that has already been tested and shown to function before being combined with other expensive components.
+
+Imagine assembling an advanced AI package containing:
+
+- one expensive compute die;
+- several HBM stacks;
+- an interposer or advanced substrate;
+- complex packaging steps.
+
+If one component is bad, it can destroy the value of the entire package.
+
+So testing components before assembly becomes extremely important.
+
+As AI packages become more expensive, packaging and test yield become increasingly strategic.
+
+14. Yield and HBM
+
+HBM illustrates multiplicative yield risk.
+
+An HBM stack combines multiple memory dies vertically.
+
+If several components must all work together, one bad component can reduce the yield of the final stack.
+
+This makes testing, known-good-die strategies, bonding quality and packaging process control critical.
+
+The same principle will matter when we later study CoWoS and other advanced AI packaging systems.
+
+AI systems are moving toward increasingly expensive multi-component packages.
+
+That means yield is no longer only a front-end wafer issue.
+
+It extends through memory stacking, packaging and final system assembly.
+
