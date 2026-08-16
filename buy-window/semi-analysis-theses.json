@@ -1,13 +1,20 @@
 {
-  "updatedAt": "2026-08-08T12:43:34.456Z",
+  "updatedAt": "2026-08-16T11:30:00.000Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit?gid=215053161#gid=215053161",
   "rows": [
     {
-      "loggedDate": "2026-08-08",
+      "loggedDate": "2026-08-16",
+      "sourceDate": "2026-08-10",
+      "company": "Nvidia / NVDA",
+      "bullishness": 5,
+      "summary": "Nvidia’s platform thesis strengthens beyond Rubin hardware: software such as TileRT can extend standard GPU fleets into premium ultra-low-latency inference while preserving the fungibility and broad workload coverage that specialist inference ASICs cannot match. SemiAnalysis argues that premium fast modes prove users will pay for lower latency, and TileRT shows standard Nvidia GPUs can credibly serve that speed tier without forcing buyers to procure a separate fixed-purpose fleet. The economic advantage is flexibility: providers can shift the same GPU pool among prefill, conventional decode and high-interactivity decode as demand changes."
+    },
+    {
+      "loggedDate": "2026-08-16",
       "sourceDate": "2026-08-07",
       "company": "SpaceX / SPCX",
       "bullishness": 5,
-      "summary": "SemiAnalysis believes SpaceX can scale AI compute toward 10GW in 2027 and monetize it at extraordinary revenue per megawatt, creating a path toward roughly $500B of AI ARR with Microsoft as the largest offtaker. The article is explicitly framed as a defense of the 10GW 2027 buildout as realistic rather than aspirational and as an economic thesis on SpaceX’s ability to monetize scarce inference capacity at unusually high revenue per GW."
+      "summary": "SemiAnalysis still believes SpaceX can scale AI compute toward 10GW by year-end 2027 and monetize scarce capacity at exceptional pricing, but its current published base case points to roughly $300B of ARR rather than the $500B figure previously captured in the ledger. The core thesis remains highly bullish: SemiAnalysis says the 10GW buildout is real, SpaceX can build faster than traditional operators, premium inference economics support unusually high $/MW pricing, and Microsoft is a plausible anchor offtaker. The correction narrows the quantified ARR case but does not change the scale or strategic logic."
     },
     {
       "loggedDate": "2026-08-07",
@@ -36,13 +43,6 @@
       "company": "ASML Holding / ASML",
       "bullishness": 4,
       "summary": "ASML is entering a stronger multiyear wafer-fab-equipment upcycle, with improving visibility, pricing and installed-base economics creating upside to consensus revenue and likely long-term guidance. SemiAnalysis explicitly says the signals point to a stronger upcycle, sees upside to Street revenue forecasts and expects ASML to raise its long-term guidance."
-    },
-    {
-      "loggedDate": "2026-07-23",
-      "sourceDate": "2026-07-23",
-      "company": "Nvidia / NVDA",
-      "bullishness": 5,
-      "summary": "Nvidia’s Rubin rack-scale platform materially strengthens its ability to sustain accelerator economics by delivering sharply better inference performance, power efficiency and cost per token while a smoother software and manufacturing ramp reduces the execution drag seen with Blackwell. SemiAnalysis says Rubin’s early results are encouraging and expects its lead to widen as software matures; reuse of Blackwell kernels, a more mature rack-scale backplane and a simpler cableless compute-tray design should improve time to market and production ramp execution."
     },
     {
       "loggedDate": "2026-07-22",
