@@ -1,0 +1,165 @@
+import type { Lesson } from "./lessons";
+
+export const lesson010 = {
+  number: 10,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Doping and Ion Implantation — How Engineers Turn Silicon Into an Electrical Switch",
+  date: "2026-08-16",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 005: A chip is built through a repeated fabrication loop of deposition, lithography, etch, doping, cleaning and inspection rather than in one printing step.
+
+Lesson 006: Deposition adds ultra-thin films, and increasingly three-dimensional chip structures increase the value of precise deposition methods such as ALD.
+
+Lesson 007: Etch removes selected material after lithography defines the pattern, and rising 3D complexity increases the value of high-precision plasma etch.
+
+Lesson 008: Process control uses inspection, metrology and analytics to catch defects early, protect yield and prevent fabs from adding value to wafers that are already bad.
+
+Lesson 009: Yield measures how much manufactured output becomes usable product, and small yield differences can create large cost and gross-margin differences because the same wafer cost is spread across more or fewer good dies.
+
+The big idea
+
+Pure silicon is not yet a useful transistor.
+
+To turn silicon into a material that can form electrical switches, engineers deliberately add tiny amounts of other atoms. This process is called doping.
+
+Doping changes how easily electrical charge can move through selected regions of silicon.
+
+One of the main tools used to do this is ion implantation.
+
+The simplest mental model is:
+
+Pure silicon → add precisely chosen dopant atoms → create regions with different electrical behavior → use those regions to build transistors.
+
+This is another example of semiconductor manufacturing turning a material problem into a precision-equipment problem.
+
+1. Why pure silicon is not enough
+
+Silicon is a semiconductor.
+
+That means its ability to conduct electricity sits between a good conductor, such as copper, and a strong insulator, such as glass.
+
+But a useful transistor needs more than "some conductivity."
+
+It needs carefully engineered regions that can either supply mobile electrical charge or accept it.
+
+Engineers create those regions by adding very small concentrations of dopant atoms to the silicon crystal.
+
+The dopant atoms slightly change the crystal's electrical behavior without replacing the silicon itself.
+
+Think of a huge crowd where almost everyone is identical, but a tiny number of strategically placed people change how easily information can move through the crowd.
+
+The dopants are few relative to the silicon atoms, but electrically they matter enormously.
+
+2. Two basic kinds of doped silicon
+
+You will repeatedly hear two terms:
+
+n-type silicon
+
+p-type silicon
+
+You do not need semiconductor equations yet. The intuition is enough.
+
+n-type silicon has extra mobile electrons available to carry electrical charge.
+
+p-type silicon has "holes," which behave like positive charge carriers.
+
+A hole is not a physical particle floating around.
+
+It is the absence of an electron in a place where an electron could be, and that absence can move through the crystal in a way that acts like a positive charge.
+
+Common dopants include:
+
+- Phosphorus or arsenic for n-type regions.
+
+- Boron for p-type regions.
+
+The important point is not to memorize every chemistry pair today.
+
+Remember:
+
+n-type → electron-rich behavior.
+
+p-type → hole-rich behavior.
+
+3. Why p-type and n-type regions matter
+
+A transistor works because engineers can control current through carefully arranged semiconductor regions.
+
+At a high level, a transistor has regions called source, drain and channel, plus a gate that controls whether current can pass through the channel.
+
+Doping helps define the electrical properties of those regions.
+
+The source and drain may need relatively heavy doping so current can enter and leave efficiently.
+
+Other regions may need much lighter doping so the electric field behaves correctly.
+
+This means fabs do not simply "dope the wafer."
+
+They perform multiple highly controlled implants at different places, depths, angles and concentrations.
+
+Different transistor structures require different doping recipes.
+
+4. What ion implantation actually does
+
+Ion implantation is a way of physically firing charged dopant atoms into the wafer.
+
+The process is roughly:
+
+Create dopant ions → accelerate them with electric fields → select the desired ion species and energy → shape and scan the ion beam → strike the wafer → embed dopant atoms into the silicon.
+
+An ion is an atom or molecule with an electrical charge.
+
+Because it is charged, electric and magnetic fields can control its motion.
+
+That allows the machine to accelerate the ions to precise energies and steer them toward the wafer.
+
+This is why an ion implanter looks less like a chemical tank and more like a highly controlled particle-beam machine.
+
+5. Dose versus energy
+
+Two terms matter immediately:
+
+Dose = how many dopant ions are implanted into a given area.
+
+Energy = how much kinetic energy those ions have when they hit the wafer.
+
+Dose mainly affects how much dopant is introduced.
+
+Energy strongly influences how deeply the ions penetrate.
+
+A simple analogy:
+
+Dose is how many darts you throw.
+
+Energy is how hard you throw them.
+
+Higher energy generally drives ions deeper into the material.
+
+Lower energy keeps the implant closer to the surface.
+
+A fab may need extremely shallow implants for one transistor feature and much deeper implants for another.
+
+That is why implant equipment is segmented into high-current, medium-current and high-energy tools.
+
+6. Why high current matters
+
+Current in an ion implanter is related to how many charged particles can be delivered per unit time.
+
+If a process requires a very high dopant dose, the fab wants to deliver many ions efficiently.
+
+High-current tools are designed for those high-dose applications.
+
+Why does this matter economically?
+
+Throughput.
+
+If the tool can deliver the required dose faster while preserving accuracy, particle control and wafer safety, the fab can process more wafers per hour.
+
+Axcelis says its Purion platform is designed for high purity, precision and productivity, with some configurations supporting throughput of up to roughly 500 wafers per hour.
+
+Do not treat the headline throughput number as universal across every recipe; actual throughput depends on the implant conditions.
+
+The key concept is that implant productivity is a tradeoff between speed and process quality.
+
