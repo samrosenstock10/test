@@ -1,0 +1,148 @@
+18. Installed base and service
+
+An implant tool is not valuable only when it is first sold.
+
+Once installed, it needs:
+
+- spare parts;
+
+- maintenance;
+
+- source replacements;
+
+- process support;
+
+- upgrades;
+
+- software and control improvements;
+
+- and field service.
+
+This creates recurring aftermarket revenue for equipment companies.
+
+A large installed base can therefore become strategically valuable.
+
+It also raises switching costs.
+
+A fab that has qualified a specific implant platform and tuned recipes around it does not casually replace that tool.
+
+Qualification time and process risk matter.
+
+19. Throughput, utilization and yield — connect the concepts
+
+You now know three different operating metrics:
+
+Throughput = how much output a tool or process can produce per unit time.
+
+Utilization = how much of available capacity is actually being used.
+
+Yield = how much of produced output becomes usable product.
+
+Ion implantation makes the difference easy to see.
+
+A high-throughput implanter may process many wafers per hour.
+
+But if the fab only needs it half the time, utilization may be low.
+
+And if its dose uniformity is poor and causes defective transistors, yield may suffer.
+
+So:
+
+High throughput does not guarantee high utilization.
+
+High utilization does not guarantee high yield.
+
+High yield does not guarantee high throughput.
+
+A strong manufacturing operation needs all three to work together.
+
+20. The economic lens
+
+For a fab, the value of a better ion implanter comes from several places:
+
+- more wafers processed per hour;
+
+- fewer particles and contamination events;
+
+- tighter dose repeatability;
+
+- better uniformity;
+
+- lower maintenance downtime;
+
+- longer source life;
+
+- lower cost per wafer;
+
+- and better device yield.
+
+This is why equipment economics are often better understood through cost of ownership than purchase price alone.
+
+A tool that costs more upfront may be cheaper economically if it produces more good wafers with less downtime.
+
+That is the same logic we saw with EUV.
+
+The customer buys manufacturing economics, not a machine in isolation.
+
+The value-chain map today
+
+Silicon wafer
+
+↓
+
+Lithography defines where doping should occur
+
+↓
+
+Ion implantation places dopant atoms at controlled dose, depth and angle
+
+↓
+
+Annealing repairs crystal damage and activates dopants
+
+↓
+
+Etch + deposition + additional patterning build the transistor structure
+
+↓
+
+Inspection and metrology verify the process
+
+↓
+
+Electrical test determines whether the transistor and final die actually work
+
+Remember these 8 things
+
+1. Doping changes silicon's electrical behavior by adding very small amounts of selected impurity atoms.
+
+2. n-type silicon has electron-rich behavior; p-type silicon has hole-rich behavior.
+
+3. Ion implantation accelerates charged dopant atoms into the wafer with controlled dose, energy and angle.
+
+4. Dose mainly controls how many ions are implanted; energy strongly affects how deep they penetrate.
+
+5. Implantation damages the crystal lattice, so annealing is used to repair damage and electrically activate dopants.
+
+6. Axcelis is a focused ion-implant equipment supplier, while Applied Materials also participates through its Varian implant business as part of a much broader equipment portfolio.
+
+7. Tool value comes from precision, particle control, repeatability, throughput and cost of ownership—not merely the ability to fire ions into silicon.
+
+8. Throughput, utilization and yield are different metrics and can move independently.
+
+Quick check
+
+A fab wants to place a dopant deeper inside the wafer without mainly changing how many dopant atoms are delivered per unit area.
+
+Which implant variable should it primarily increase?
+
+Answer: implant energy.
+
+Higher-energy ions generally penetrate deeper into the semiconductor, while dose determines how many dopant ions are delivered.
+
+Next lesson
+
+Lesson 011: Annealing and Thermal Processing — How Heat Repairs the Wafer and Activates Dopants
+
+We will learn why a fab intentionally damages the silicon during implantation, how rapid thermal processing repairs that damage, why thermal budget matters, and where Applied Materials and other thermal-processing suppliers fit.`,
+} satisfies Lesson;
