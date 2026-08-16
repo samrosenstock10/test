@@ -1,0 +1,136 @@
+7. Why high energy matters
+
+Some device structures require dopants to be placed deeper inside the semiconductor.
+
+That requires higher-energy ions.
+
+High-energy implantation is especially important in certain power-device and memory applications where dopants must penetrate deeper than in many surface-level implants.
+
+This is one reason an equipment vendor needs multiple implant architectures rather than one universal machine.
+
+The customer may need:
+
+- very high dose at relatively shallow depth;
+
+- moderate dose with extremely tight control;
+
+- or lower dose but much greater penetration depth.
+
+The equipment portfolio must cover different combinations of dose, energy, beam current and angle.
+
+8. The hard part: precision
+
+Firing ions into silicon sounds crude.
+
+At semiconductor scale, it is anything but crude.
+
+The fab must control:
+
+- which ion species reaches the wafer;
+
+- exact dose;
+
+- implant energy;
+
+- beam angle;
+
+- uniformity across the entire wafer;
+
+- contamination;
+
+- particles;
+
+- repeatability from wafer to wafer;
+
+- and damage to the silicon crystal.
+
+A small process variation can shift transistor electrical behavior.
+
+That can hurt performance, power consumption, leakage, reliability or yield.
+
+So ion implantation is not merely "put boron here."
+
+It is controlled materials engineering.
+
+9. Crystal damage and annealing
+
+When energetic ions strike silicon, they disturb the crystal lattice.
+
+Imagine firing tiny projectiles into a neatly arranged wall of atoms.
+
+Some silicon atoms get displaced from their ideal positions.
+
+The implant creates the dopant distribution you want, but it also creates damage you do not want.
+
+The fab therefore usually follows implantation with a thermal process called annealing.
+
+Annealing heats the wafer so the silicon lattice can partially repair itself and the dopant atoms can become electrically active.
+
+The simplified sequence is:
+
+Implant dopants → crystal damage occurs → anneal → repair lattice + activate dopants.
+
+This is a recurring manufacturing theme: one process step often creates a side effect that another process step must fix.
+
+10. Activation
+
+Simply placing dopant atoms inside silicon does not guarantee they contribute electrically.
+
+The dopants need to occupy useful positions in the crystal lattice.
+
+Annealing helps activate them.
+
+Activation means converting implanted dopants into electrically effective dopants.
+
+So a fab cares about both:
+
+Where are the dopant atoms?
+
+And:
+
+How many of them are electrically active?
+
+This creates a connection between implant equipment and thermal-processing equipment.
+
+Applied Materials and other equipment companies participate in the broader sequence of transistor formation, not just one isolated step.
+
+11. Masks and selective implantation
+
+The fab does not want every region of the wafer doped the same way.
+
+It uses lithography and masking to expose only the areas that should receive a particular implant.
+
+The simplified flow is:
+
+Apply photoresist → lithography defines openings → implant ions through exposed areas → remove resist → repeat with another implant if needed.
+
+That connects today's lesson directly to earlier lithography lessons.
+
+Lithography answers:
+
+Where should the implant happen?
+
+Ion implantation answers:
+
+What dopant should go there, how much, how deep and at what angle?
+
+12. Why angle matters
+
+Modern transistor structures are three-dimensional.
+
+That creates a geometric problem.
+
+If ions always arrive straight down, some surfaces may be shadowed or receive the wrong distribution.
+
+Implant tools therefore need precise beam-angle control.
+
+This became increasingly important as the industry moved from flat planar transistors toward FinFETs and other 3D architectures.
+
+Applied Materials highlighted angle and dose control as critical in its Varian VIISta implant systems for advanced transistor structures.
+
+The key investment takeaway is broader:
+
+As device geometry becomes more complicated, equipment value can rise even if the basic process category is decades old.
+
+Old process does not mean simple process.
+
