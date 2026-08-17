@@ -1,91 +1,90 @@
 {
-  "updatedAt": "2026-08-14T14:03:21.256Z",
+  "updatedAt": "2026-08-17T14:10:00.000Z",
   "period": {
-    "start": "2026-08-13",
-    "end": "2026-08-13",
-    "label": "Session Aug 13"
+    "start": "2026-08-14",
+    "end": "2026-08-14",
+    "label": "Session Aug 14"
   },
   "items": {
     "NVDA": {
-      "move": "+0.5%",
-      "text": "Nvidia rose about 0.5% with the broader technology and AI trade as tame producer-price data eased rate concerns; no distinct Nvidia-specific catalyst was confirmed.",
+      "move": "-0.1%",
+      "text": "Nvidia was essentially flat, down about 0.1%, as it proved resilient during an AI-chip pullback led by Applied Materials and Broadcom; no distinct Nvidia-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
+        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/"
       ]
     },
     "AVGO": {
-      "move": "+0.4%",
-      "text": "Broadcom rose about 0.4% with the broader technology and semiconductor tape as tame producer-price data supported risk appetite; no distinct company-specific catalyst was confirmed.",
+      "move": "-5.9%",
+      "text": "Broadcom fell about 5.9% as Applied Materials' post-earnings selloff reignited concern that lofty AI-chip expectations leave little room for error, pulling high-valuation semiconductor shares lower.",
       "sources": [
-        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
+        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/",
+        "https://www.reuters.com/business/applied-materials-slips-investors-seek-faster-growth-after-stellar-run-2026-08-14/"
       ]
     },
     "TSM": {
-      "move": "+0.3%",
-      "text": "TSM edged up about 0.3% with the broader AI and semiconductor trade as tame producer-price data eased rate concerns; no fresh TSM-specific catalyst was confirmed.",
+      "move": "-1.0%",
+      "text": "TSM fell about 1.0% with the broader semiconductor pullback after Applied Materials' upbeat outlook still disappointed elevated AI expectations; no fresh TSM-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
+        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/",
+        "https://www.reuters.com/business/applied-materials-slips-investors-seek-faster-growth-after-stellar-run-2026-08-14/"
       ]
     },
     "ASML": {
-      "move": "+2.1%",
-      "text": "ASML rose about 2.1% as semiconductor-equipment shares remained supported by expanding AI-related fab spending, including Intel's newly enlarged capital raise, while the broader tech market advanced.",
+      "move": "-0.2%",
+      "text": "ASML slipped about 0.2% but held up better than U.S. equipment peers as Applied Materials' selloff pressured the chip-equipment group; no distinct ASML-specific catalyst was confirmed.",
       "sources": [
-        "https://www.barrons.com/articles/intel-stock-offering-price-766da245",
-        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
+        "https://www.reuters.com/business/applied-materials-slips-investors-seek-faster-growth-after-stellar-run-2026-08-14/",
+        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/"
       ]
     },
     "KLAC": {
-      "move": "+0.5%",
-      "text": "KLA rose about 0.5% with semiconductor and AI-infrastructure shares as tame producer-price data supported the broader technology rally; no distinct KLA-specific catalyst was confirmed.",
+      "move": "-2.7%",
+      "text": "KLA fell about 2.7% as Applied Materials' post-earnings decline pressured semiconductor-equipment shares and highlighted how elevated AI expectations can punish even solid results; no fresh KLA-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
+        "https://www.reuters.com/business/applied-materials-slips-investors-seek-faster-growth-after-stellar-run-2026-08-14/",
+        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/"
       ]
     },
     "INTC": {
-      "move": "+3.6%",
-      "text": "Intel rose about 3.6%, extending its rebound as investors absorbed the upsized $20 billion equity raise intended to support foundry and AI investment, while semiconductor shares benefited from the broader tech rally.",
+      "move": "-2.0%",
+      "text": "Intel fell about 2.0% with the broader chip selloff as Applied Materials' reaction revived concern about stretched AI expectations, while weaker retail-sales data and Middle East tensions weighed on risk appetite.",
       "sources": [
-        "https://www.reuters.com/legal/transactional/intel-launches-15-billion-share-sale-turnaround-rally-lifts-stock-2026-08-10/",
-        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
+        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/"
       ]
     },
     "MU": {
-      "move": "+4.2%",
-      "text": "Micron jumped about 4.2% as Sandisk's strong long-term growth outlook reinforced expectations for sustained AI-driven memory demand, helping memory-chip shares outperform during Thursday's technology rally.",
+      "move": "+2.3%",
+      "text": "Micron rose about 2.3%, extending its memory-stock rally as Sandisk's long-term outlook and expectations for sharply higher DRAM and NAND pricing reinforced optimism around the memory cycle.",
       "sources": [
-        "https://www.reuters.com/business/sandisk-forecasts-mid-to-high-teens-revenue-growth-through-2030-2026-08-13/",
-        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
+        "https://www.barrons.com/articles/micron-stock-price-memory-cb1e4459"
       ]
     },
     "DDOG": {
-      "move": "+4.7%",
-      "text": "Datadog rebounded about 4.7% with enterprise-software strength, recovering further from last week's earnings-driven selloff; no fresh company-specific catalyst was confirmed Thursday.",
+      "move": "+1.3%",
+      "text": "Datadog rose about 1.3%, extending its rebound from the prior week's earnings-driven selloff; no fresh company-specific catalyst was confirmed Friday.",
       "sources": [
-        "https://www.investors.com/research/ibd-industry-themes/dow-jones-microsoft-msft-palantir-pltr-twilio-twlo/",
-        "https://www.marketwatch.com/story/datadogs-stock-slides-after-earnings-this-is-whats-nagging-at-investors-eeb6fa9a"
+        "https://www.investors.com/news/technology/datadog-stock-ddog-datadog-earnings-q22026/"
       ]
     },
     "META": {
-      "move": "+2.8%",
-      "text": "Meta rose about 2.8% as communication-services and mega-cap technology shares advanced after tame producer-price data eased rate concerns; no distinct Meta-specific catalyst was confirmed.",
+      "move": "-0.9%",
+      "text": "Meta fell about 0.9% with the broader market's modest retreat as weak retail-sales data and renewed Middle East tension tempered risk appetite; no distinct Meta-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
+        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/"
       ]
     },
     "PLTR": {
-      "move": "+4.7%",
-      "text": "Palantir gained about 4.7%, extending its earnings-driven breakout as enterprise-software shares remained strong and the broader Nasdaq advanced; no new Palantir-specific catalyst was confirmed.",
+      "move": "-2.8%",
+      "text": "Palantir fell about 2.8% during a session in which investors showed renewed sensitivity to high AI valuations; no fresh Palantir-specific catalyst was confirmed in contemporaneous reporting.",
       "sources": [
-        "https://www.investors.com/research/ibd-industry-themes/dow-jones-microsoft-msft-palantir-pltr-twilio-twlo/",
-        "https://www.reuters.com/business/retail-consumer/wall-st-futures-tick-higher-oil-retreats-ahead-inflation-data-2026-08-13/"
+        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/"
       ]
     },
     "SPCX": {
-      "move": "-3.3%",
-      "text": "SpaceX fell about 3.3% with no confirmed negative operating catalyst; trading remained volatile after its recent rebound and the post-lockup increase in tradable shares, while Musk disclosed a 48.4% stake.",
+      "move": "-0.9%",
+      "text": "SpaceX slipped about 0.9% with no confirmed operating catalyst; Reuters reported retail holders turned net sellers Friday as investors continued digesting post-IPO ownership disclosures and expanded share supply.",
       "sources": [
-        "https://www.reuters.com/legal/legalindustry/musk-discloses-484-stake-spacex-regulatory-filing-2026-08-13/",
+        "https://www.reuters.com/business/finance/alphabets-spacex-bet-grows-100-fold-over-decade-94-billion-2026-08-14/",
         "https://www.reuters.com/business/spacex-shares-slip-lockup-expiry-adds-post-ipo-woes-2026-08-06/"
       ]
     }
