@@ -1,0 +1,99 @@
+Think of placing a drop of food coloring at one exact point in water.
+
+Over time, the color spreads out.
+
+Heat makes atomic movement easier, so higher temperatures generally accelerate diffusion.
+
+The fab therefore wants enough heat to repair damage and activate dopants, but not so much heat for so long that the carefully engineered dopant profile blurs.
+
+That tradeoff leads to one of today's most important concepts.
+
+4. Thermal budget
+
+Thermal budget means the total amount of heat exposure a wafer experiences across its manufacturing process.
+
+It depends on both temperature and time.
+
+A wafer held at a moderately high temperature for a long period can accumulate a large thermal budget.
+
+A wafer heated to a very high temperature for only milliseconds can sometimes accomplish a desired reaction while limiting how far atoms have time to diffuse.
+
+The exact physics is more complicated, but the investing intuition is simple:
+
+As transistor dimensions shrink, fabs have less room for unwanted atomic movement.
+
+That makes thermal control more valuable.
+
+You should think of thermal budget as a scarce manufacturing allowance.
+
+Every high-temperature step uses some of that allowance.
+
+5. Traditional furnace processing
+
+One way to heat wafers is in a furnace.
+
+A batch furnace can process many wafers together at elevated temperature.
+
+This has important economic advantages:
+
+- many wafers can be processed at once;
+- throughput per tool can be attractive;
+- the equipment can support oxidation, diffusion, deposition and anneal applications.
+
+Tokyo Electron's TELINDY PLUS platform, for example, is a 300mm batch furnace used for oxidation, anneal and LPCVD deposition.
+
+ASM also sells vertical furnaces for thermal processes such as diffusion and oxidation.
+
+Batch processing is useful, but it is not ideal for every thermal step.
+
+If a process requires extremely short, tightly controlled heating, a single-wafer rapid thermal system can be better.
+
+6. Rapid thermal processing
+
+Rapid thermal processing, or RTP, heats one wafer very quickly and then cools it quickly.
+
+Instead of slowly heating an entire batch inside a furnace, RTP can use powerful lamps or other heat sources to drive the wafer temperature upward at a much faster rate.
+
+The goal is precise time-temperature control.
+
+A typical advanced anneal may expose the wafer to high temperature for seconds or less rather than many minutes.
+
+That lets the fab activate dopants while reducing the time available for diffusion.
+
+Applied Materials is a major supplier of RTP equipment.
+
+Its Vantage platform supports multiple anneal approaches, including lamp-based and laser-based processing.
+
+The important point is not the brand name.
+
+It is why customers pay for the equipment:
+
+faster heating + tighter temperature control + faster cooling = more control over the transistor's final electrical properties.
+
+7. Soak, spike and millisecond anneals
+
+You will hear several anneal styles.
+
+Soak anneal
+
+The wafer reaches a target temperature and stays there for a meaningful period.
+
+This gives reactions time to occur but uses more thermal budget.
+
+Spike anneal
+
+The wafer rapidly reaches a high temperature and is cooled almost immediately, creating a sharp temperature peak.
+
+The idea is to get the activation benefit of high temperature while reducing diffusion time.
+
+Millisecond anneal
+
+The wafer surface is heated for only milliseconds.
+
+Laser-based systems can deliver extremely intense, localized heating with extremely short exposure.
+
+Applied Materials says its Vantage Astra laser anneal can heat the top surface layers above 1,000°C in less than a millisecond.
+
+The exact recipe depends on the device and process step.
+
+Do not memorize which anneal goes with which transistor yet.
