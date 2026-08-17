@@ -1,0 +1,99 @@
+import type { Lesson } from "./lessons";
+
+export const lesson011 = {
+  number: 11,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Annealing and Thermal Processing — How Heat Repairs the Wafer and Activates Dopants",
+  date: "2026-08-17",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 006: Deposition adds ultra-thin films, and increasingly three-dimensional chip structures increase the value of precise deposition methods such as ALD.
+
+Lesson 007: Etch removes selected material after lithography defines the pattern, and rising 3D complexity increases the value of high-precision plasma etch.
+
+Lesson 008: Process control uses inspection, metrology and analytics to catch defects early, protect yield and stop fabs from adding value to wafers that are already bad.
+
+Lesson 009: Yield measures how much manufactured output becomes usable product, and small yield differences can create large cost and gross-margin differences because the same wafer cost is spread across more or fewer good dies.
+
+Lesson 010: Doping changes silicon's electrical behavior, and ion implantation places dopant atoms at controlled dose, depth and angle before thermal processing repairs the crystal and activates those dopants.
+
+The big idea
+
+Yesterday we intentionally fired energetic ions into a silicon wafer.
+
+That solved one problem: it placed dopant atoms where the transistor needs them.
+
+But it created another problem.
+
+The impact of those ions damages the silicon crystal, and many implanted dopant atoms are not yet electrically active.
+
+The fab therefore heats the wafer.
+
+This is annealing.
+
+Annealing uses carefully controlled heat to repair crystal damage, activate dopants and modify material properties without allowing the wafer to become too hot for too long.
+
+The simplest mental model is:
+
+Ion implantation creates the right dopant distribution but damages the crystal → annealing repairs the lattice and activates the dopants → the transistor can behave as designed.
+
+The difficult part is that heat is both useful and dangerous.
+
+1. Why the silicon crystal needs repair
+
+Silicon atoms in a wafer are arranged in a highly ordered crystal lattice.
+
+Ion implantation shoots dopant ions into that lattice at high speed.
+
+The ions collide with silicon atoms and knock some of them away from their ideal positions.
+
+Think of a perfectly organized grid of billiard balls.
+
+Now fire additional balls into the grid.
+
+You can place the new balls inside, but the collisions disrupt the original arrangement.
+
+That is roughly what implantation does at atomic scale.
+
+If the fab did nothing afterward, the damaged lattice would hurt the transistor's electrical behavior.
+
+Annealing gives atoms enough thermal energy to move toward lower-energy, more orderly positions.
+
+The crystal can partially repair itself.
+
+2. Annealing also activates the dopants
+
+Repairing damage is only half the job.
+
+A dopant atom such as boron or phosphorus does not automatically help conduct electrical charge simply because it is physically inside the wafer.
+
+It usually needs to sit in the right kind of location within the silicon lattice.
+
+When that happens, the dopant becomes electrically active.
+
+So annealing performs two linked jobs:
+
+- repair implantation damage;
+- activate implanted dopants.
+
+This is why yesterday's implant step and today's thermal step should be thought of as a pair.
+
+Implant decides where the dopants go.
+
+Anneal helps make those dopants electrically useful.
+
+3. The dangerous side of heat: diffusion
+
+If heating were only beneficial, the fab could simply cook the wafer for a long time.
+
+It cannot.
+
+Heat also causes atoms to move.
+
+That movement is called diffusion.
+
+Suppose a fab carefully implants dopants into a very shallow region only a few nanometers from the surface.
+
+If the wafer stays hot for too long, those dopants can spread away from their intended positions.
+
+The transistor feature becomes less sharply defined.
