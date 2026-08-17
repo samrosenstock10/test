@@ -1,0 +1,100 @@
+- densify deposited films;
+- change film structure;
+- improve interfaces;
+- form low-resistance contacts;
+- reduce contamination or unwanted defects.
+
+So an anneal tool is not tied to one single transistor step.
+
+Different recipes appear throughout the flow.
+
+This creates a broad installed base, but it also means competition varies by application.
+
+13. The economic tradeoff: batch versus single wafer
+
+Suppose a batch furnace processes many wafers together.
+
+That can produce excellent throughput and attractive cost per wafer.
+
+But suppose an advanced transistor step requires an extremely narrow time-temperature window.
+
+A single-wafer RTP tool may cost more per chamber and process fewer wafers simultaneously, but it can provide much tighter control.
+
+The fab cares about the economics of good output, not merely the number of wafers that fit inside the machine.
+
+So the comparison is:
+
+lower equipment cost or higher batch productivity
+
+versus
+
+better process control, lower diffusion, improved uniformity and potentially higher yield.
+
+This is the same economic framework we have repeatedly used.
+
+Cost per tool is not the final metric.
+
+Cost per good wafer is closer to what matters.
+
+14. Throughput versus process quality
+
+Thermal tools also show why throughput cannot be viewed alone.
+
+A faster thermal cycle can raise wafers per hour.
+
+But if the temperature profile is less uniform, electrical variation may rise and yield may fall.
+
+A fab therefore optimizes several variables at once:
+
+Throughput = wafers processed per unit time.
+
+Uniformity = how consistently the thermal result is achieved across the wafer.
+
+Repeatability = how consistently one wafer matches the next.
+
+Yield = how much final output becomes sellable product.
+
+Cost of ownership = the total economic cost of running the tool.
+
+The highest-throughput machine is not automatically the best machine.
+
+15. Why thermal processing becomes harder as chips scale
+
+At first glance, annealing sounds like an old, mature process.
+
+But scaling makes the control problem harder.
+
+Smaller features mean:
+
+- dopants have less room to diffuse;
+- interfaces are thinner and more sensitive;
+- tiny electrical variations matter more;
+- new materials respond differently to heat;
+- three-dimensional structures create more complex temperature behavior;
+- later process steps must avoid damaging structures already built.
+
+So the process category may be old while the technical challenge keeps changing.
+
+This is a useful investing pattern.
+
+Do not ask only whether a process is new.
+
+Ask whether the tolerance window is shrinking.
+
+Shrinking tolerance can increase the value of precision equipment.
+
+16. Why this matters for AI chips
+
+Advanced AI accelerators depend on leading-edge logic.
+
+Leading-edge logic depends on extremely controlled transistor formation.
+
+Thermal processing is one of the steps that makes those transistors electrically usable and repeatable.
+
+But thermal equipment is not an AI-only market.
+
+The same vendors sell into memory, mature logic, analog, power devices and other semiconductor categories.
+
+That means AI can increase leading-edge demand without making thermal-processing revenue move one-for-one with NVIDIA GPU shipments.
+
+The investment read-through is indirect:
