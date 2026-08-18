@@ -1,0 +1,120 @@
+- acids;
+- bases;
+- oxidizers;
+- solvents;
+- surfactants;
+- and mechanical or acoustic energy.
+
+The challenge is selectivity.
+
+You want to remove the contaminant without attacking the transistor structure, metal line, dielectric film or other valuable material underneath it.
+
+This is similar to etch selectivity, but the goal is surface preparation rather than deliberately carving the device.
+
+5. The classic RCA clean
+
+One foundational semiconductor-cleaning sequence is often called the RCA clean.
+
+You do not need to memorize the chemistry, but two concepts are useful.
+
+SC-1 is commonly used to remove particles and organic contamination.
+
+SC-2 is commonly used to remove metallic contamination.
+
+The exact modern production recipes vary by device and manufacturer. Advanced fabs do not simply run one universal RCA recipe after every step.
+
+But the framework matters:
+
+Different contaminants require different chemistry.
+
+This is why wafer cleaning is a materials-engineering problem, not just rinsing with water.
+
+6. Dilute hydrofluoric acid and oxide removal
+
+Sometimes the fab wants to remove a thin silicon oxide layer before the next process.
+
+Dilute hydrofluoric acid, or HF, can be used for this.
+
+The purpose might be to expose a fresh silicon surface before deposition, epitaxy or another interface-sensitive step.
+
+This shows how cleaning and surface preparation overlap.
+
+The wafer is not merely being made "less dirty."
+
+Its surface chemistry is being deliberately reset for the next operation.
+
+At advanced nodes, the quality of an interface between two materials can strongly affect device performance.
+
+That makes pre-clean steps strategically important even when they remove only a tiny amount of material.
+
+7. Batch cleaning versus single-wafer cleaning
+
+There are two broad architectures to understand.
+
+Batch cleaning
+
+Many wafers are processed together in a chemical bath or wet station.
+
+The advantage is productivity. One chamber can handle many wafers simultaneously.
+
+Single-wafer cleaning
+
+Wafers are processed individually, often while spinning.
+
+The advantage is tighter control over chemistry, flow, particle removal and drying on each wafer.
+
+As structures become smaller and more fragile, single-wafer systems have become increasingly important for advanced processes.
+
+SCREEN's SU series and Tokyo Electron's CELLESTA series are examples.
+
+The economic tradeoff should now feel familiar:
+
+Batch processing can lower cost per wafer through scale.
+
+Single-wafer processing can justify higher equipment intensity when tighter process control protects yield.
+
+8. Cleaning is also a drying problem
+
+After a wafer is washed, it must be dried.
+
+That sounds trivial.
+
+It is not.
+
+Imagine two extremely thin, tall structures standing next to each other. As liquid evaporates between them, surface tension can pull the structures together.
+
+They may bend, stick or collapse.
+
+This is called pattern collapse.
+
+The problem becomes more serious as structures get narrower, taller and mechanically weaker.
+
+So a cleaning system must solve two problems:
+
+Remove contamination.
+
+Then remove the cleaning liquid without damaging the device.
+
+Tokyo Electron developed its CELLESTA SCD system around supercritical drying for advanced structures, while SCREEN also emphasizes drying technology designed to reduce micropattern collapse.
+
+This is a recurring semiconductor theme:
+
+The harder part of a process may be the side effect created by the process itself.
+
+9. Why supercritical drying helps
+
+A supercritical fluid is a substance held above a specific temperature and pressure where the distinction between liquid and gas disappears.
+
+You do not need the thermodynamics yet.
+
+The useful intuition is that conventional drying creates a liquid-gas interface, and that interface creates surface-tension forces.
+
+Supercritical drying can greatly reduce that interface problem.
+
+That can help prevent fragile nanoscale patterns from collapsing.
+
+The process is more complex than simply spinning the wafer dry, so fabs use it where the yield benefit justifies the additional equipment and process complexity.
+
+This is another cost-of-ownership decision:
+
+More expensive drying can be rational if it saves enough high-value wafers.
