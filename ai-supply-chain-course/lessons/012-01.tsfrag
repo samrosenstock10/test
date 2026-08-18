@@ -1,0 +1,120 @@
+import type { Lesson } from "./lessons";
+
+export const lesson012 = {
+  number: 12,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Cleaning and Contamination Control — Why a Speck of Dirt Can Ruin a Wafer",
+  date: "2026-08-18",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 007: Etch removes selected material after lithography defines the pattern, and increasingly three-dimensional structures make precise plasma etch more valuable.
+
+Lesson 008: Process control uses inspection, metrology and analytics to find defects early, protect yield and stop fabs from adding more value to wafers that are already bad.
+
+Lesson 009: Yield measures how much manufactured output becomes usable product, and small yield differences can create large cost and gross-margin differences.
+
+Lesson 010: Doping changes silicon's electrical behavior, while ion implantation places dopant atoms at controlled dose, depth and angle.
+
+Lesson 011: Annealing uses precisely controlled heat to repair implantation damage and activate dopants while limiting unwanted diffusion through the wafer's thermal budget.
+
+The big idea
+
+A semiconductor fab is one of the cleanest manufacturing environments on Earth.
+
+That does not mean wafers stay clean by themselves.
+
+Almost every major process step can leave behind particles, chemicals, metals, organic residue or material that should not remain on the wafer. If contamination survives into the next step, a tiny defect can become permanently buried inside a transistor or interconnect.
+
+So fabs clean wafers again and again.
+
+The simple mental model is:
+
+Process the wafer → remove unwanted material → dry without damaging the pattern → inspect → continue building.
+
+Cleaning sounds less glamorous than EUV, etch or deposition, but it is one of the processes that makes those expensive steps usable at high yield.
+
+1. What counts as contamination?
+
+Several different things can contaminate a wafer.
+
+Particles
+
+A particle can be dust, process residue, flaked chamber material or another microscopic solid sitting on the wafer.
+
+Organic contamination
+
+Photoresist residue, oils or carbon-containing material can remain after earlier processing.
+
+Metal contamination
+
+Tiny amounts of metals such as iron, copper or nickel can change electrical behavior or create reliability problems even when the quantity is extremely small.
+
+Native or unwanted oxide
+
+Silicon surfaces naturally form oxide when exposed to oxygen. Sometimes that oxide is useful. Sometimes the next process requires a freshly exposed silicon surface, so the oxide must be removed first.
+
+Chemical residue
+
+A prior etch, strip or deposition step can leave chemicals or reaction byproducts that interfere with the next process.
+
+The important point is that "clean" does not mean only "no dirt."
+
+It means the wafer surface is in the exact chemical and physical condition required for the next manufacturing step.
+
+2. Why can one tiny particle matter?
+
+Imagine printing a microscopic transistor feature but a particle sits where the feature should be formed.
+
+The particle might block lithography, distort an etch, prevent a film from depositing correctly or create a short between structures.
+
+At advanced nodes, the critical features are so small that a particle invisible to the human eye can be enormous relative to the device geometry.
+
+This connects directly to Lesson 009 on yield.
+
+Suppose a wafer has hundreds of potential dies. A contamination event that ruins several dies reduces the number of good chips produced from the same expensive wafer.
+
+Worse, contamination can propagate.
+
+A dirty wafer can contaminate a process chamber, and that chamber can then expose later wafers to the same problem.
+
+So contamination control protects both the individual wafer and the manufacturing line.
+
+3. Why cleaning happens between process steps
+
+A chip is built through repeated loops.
+
+Deposit material.
+
+Pattern it.
+
+Etch it.
+
+Implant dopants.
+
+Anneal it.
+
+Polish it.
+
+Inspect it.
+
+Each step can leave something behind.
+
+That means cleaning is not a single point in the process flow. It appears repeatedly between other operations.
+
+Tokyo Electron describes cleaning as an essential step performed between processes, and SCREEN sells an entire family of wet stations, single-wafer cleaners, scrubbers and backside-cleaning tools.
+
+This is the first important investment idea:
+
+A process can be economically important because it repeats many times, even if no single cleaning step looks as dramatic as lithography.
+
+4. Wet cleaning
+
+The most common first-pass concept is wet cleaning.
+
+Wet cleaning uses liquids to remove particles, films, metals or organic contamination from the wafer surface.
+
+The chemistry depends on what must be removed and what must remain untouched.
+
+A cleaning recipe may combine:
+
+- ultra-pure water;
