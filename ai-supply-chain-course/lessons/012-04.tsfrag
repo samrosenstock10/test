@@ -1,0 +1,108 @@
+
+16. Why this matters for AI
+
+AI accelerators depend on advanced logic, HBM and advanced packaging.
+
+All three depend on extremely high manufacturing yield.
+
+Cleaning does not create the GPU architecture, but poor contamination control can destroy the economics of manufacturing that architecture.
+
+The chain is:
+
+More advanced AI chips → tighter features and more complex structures → lower tolerance for contamination → more demanding cleaning and drying → greater value placed on process control and yield.
+
+But do not overstate the AI linkage.
+
+Cleaning vendors also serve memory, mature logic, power semiconductors, image sensors and many other markets.
+
+Their revenue depends on semiconductor capital spending, product share and customer investment cycles, not only AI demand.
+
+17. The economic lens
+
+Cleaning equipment usually does not have an ASML-style monopoly moat.
+
+Several credible suppliers compete.
+
+The moat tends to come from:
+
+- cleaning performance;
+- low damage;
+- drying capability;
+- chemical efficiency;
+- throughput;
+- chamber uniformity;
+- installed base;
+- customer qualification;
+- service;
+- and process recipes.
+
+Once a fab qualifies a cleaner for a sensitive process, replacing it can be costly and risky.
+
+But competitive tools do exist.
+
+So the right valuation framework is not "cleaning is critical, therefore the supplier has monopoly economics."
+
+Instead ask:
+
+Which cleaning step is getting harder?
+
+Which supplier solves it best?
+
+How much process content does that supplier gain per wafer?
+
+How durable is the qualified position?
+
+And how cyclical is customer capex?
+
+The value-chain map today
+
+Deposition / etch / implant / CMP or another process step
+
+↓
+
+Particles, residues or unwanted surface material remain
+
+↓
+
+Wet, physical or dry cleaning removes contamination
+
+↓
+
+Drying removes liquid without collapsing fragile structures
+
+↓
+
+Inspection checks whether defects remain
+
+↓
+
+The clean wafer enters the next high-value process step
+
+Remember these 7 things
+
+1. Cleaning is repeated throughout fabrication because almost every major process step can leave contamination or residue.
+
+2. Contamination includes particles, organic material, metals, unwanted oxide and chemical residue.
+
+3. Advanced cleaning is selective surface preparation, not simply washing with water.
+
+4. Single-wafer cleaning offers tighter process control, while batch cleaning can offer strong throughput and cost efficiency.
+
+5. Drying matters because surface tension can collapse fragile high-aspect-ratio structures.
+
+6. SCREEN is a leading cleaning-equipment supplier, Tokyo Electron is another major player, and ACM Research is a smaller challenger with differentiated cleaning technologies.
+
+7. Cleaning benefits from rising process complexity, but vendor economics still depend on market share, qualification, cost of ownership and semiconductor capex cycles.
+
+Quick check
+
+Why might a fab spend more on a cleaning system even if both the old and new systems can remove visible particles?
+
+Answer: the better system may remove much smaller defects, cause less damage, dry fragile structures without pattern collapse, use fewer chemicals, improve throughput and ultimately raise the number of good dies produced per wafer.
+
+Next lesson
+
+Lesson 013: Chemical Mechanical Planarization — Why the Wafer Must Be Flattened Again and Again
+
+We will learn how CMP combines chemistry and mechanical polishing to keep the wafer flat enough for later lithography and multilayer construction, and where the key equipment and consumables suppliers fit.`,
+} satisfies Lesson;
