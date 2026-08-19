@@ -1,91 +1,94 @@
 {
-  "updatedAt": "2026-08-17T14:10:00.000Z",
+  "updatedAt": "2026-08-19T14:00:04.000Z",
   "period": {
-    "start": "2026-08-14",
-    "end": "2026-08-14",
-    "label": "Session Aug 14"
+    "start": "2026-08-18",
+    "end": "2026-08-18",
+    "label": "Session Aug 18"
   },
   "items": {
     "NVDA": {
-      "move": "-0.1%",
-      "text": "Nvidia was essentially flat, down about 0.1%, as it proved resilient during an AI-chip pullback led by Applied Materials and Broadcom; no distinct Nvidia-specific catalyst was confirmed.",
+      "move": "-2.3%",
+      "text": "Nvidia fell 2.3% as a 5% semiconductor-index selloff and rising long-term Treasury yields pressured AI-chip shares; no distinct Nvidia-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/"
+        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/",
+        "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/"
       ]
     },
     "AVGO": {
-      "move": "-5.9%",
-      "text": "Broadcom fell about 5.9% as Applied Materials' post-earnings selloff reignited concern that lofty AI-chip expectations leave little room for error, pulling high-valuation semiconductor shares lower.",
+      "move": "-3.2%",
+      "text": "Broadcom fell 3.2% with the broad semiconductor rout as rising yields and profit-taking hit AI-hardware shares; no distinct Broadcom-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/",
-        "https://www.reuters.com/business/applied-materials-slips-investors-seek-faster-growth-after-stellar-run-2026-08-14/"
+        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/",
+        "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/"
       ]
     },
     "TSM": {
-      "move": "-1.0%",
-      "text": "TSM fell about 1.0% with the broader semiconductor pullback after Applied Materials' upbeat outlook still disappointed elevated AI expectations; no fresh TSM-specific catalyst was confirmed.",
+      "move": "-4.1%",
+      "text": "TSM fell 4.1% as the semiconductor selloff deepened amid rising long-term yields and broad AI-hardware profit-taking; no fresh TSM-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/",
-        "https://www.reuters.com/business/applied-materials-slips-investors-seek-faster-growth-after-stellar-run-2026-08-14/"
+        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/",
+        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-bond-sell-off-yield-us-30-year-treasury-home-depot-results/card/semiconductor-stocks-tumble-with-shares-of-marvell-and-micron-posting-big-losses-qfu9atlDQ5XTMLpL99Cd"
       ]
     },
     "ASML": {
-      "move": "-0.2%",
-      "text": "ASML slipped about 0.2% but held up better than U.S. equipment peers as Applied Materials' selloff pressured the chip-equipment group; no distinct ASML-specific catalyst was confirmed.",
+      "move": "-4.3%",
+      "text": "ASML fell 4.3% with semiconductor-equipment and AI-hardware shares as rising bond yields and broad chip de-risking pressured the sector; no distinct ASML-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/applied-materials-slips-investors-seek-faster-growth-after-stellar-run-2026-08-14/",
-        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/"
+        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/",
+        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-bond-sell-off-yield-us-30-year-treasury-home-depot-results/card/semiconductor-stocks-tumble-with-shares-of-marvell-and-micron-posting-big-losses-qfu9atlDQ5XTMLpL99Cd"
       ]
     },
     "KLAC": {
-      "move": "-2.7%",
-      "text": "KLA fell about 2.7% as Applied Materials' post-earnings decline pressured semiconductor-equipment shares and highlighted how elevated AI expectations can punish even solid results; no fresh KLA-specific catalyst was confirmed.",
+      "move": "-5.3%",
+      "text": "KLA fell 5.3% as the 5% semiconductor-index selloff spread through chip-equipment names amid rising yields and profit-taking; no fresh KLA-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/applied-materials-slips-investors-seek-faster-growth-after-stellar-run-2026-08-14/",
-        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/"
+        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/",
+        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-bond-sell-off-yield-us-30-year-treasury-home-depot-results/card/semiconductor-stocks-tumble-with-shares-of-marvell-and-micron-posting-big-losses-qfu9atlDQ5XTMLpL99Cd"
       ]
     },
     "INTC": {
-      "move": "-2.0%",
-      "text": "Intel fell about 2.0% with the broader chip selloff as Applied Materials' reaction revived concern about stretched AI expectations, while weaker retail-sales data and Middle East tensions weighed on risk appetite.",
+      "move": "-6.6%",
+      "text": "Intel fell 6.6% during the broad semiconductor rout as rising yields and fading risk appetite hit chip shares; no distinct Intel-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/"
+        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/",
+        "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/"
       ]
     },
     "MU": {
-      "move": "+2.3%",
-      "text": "Micron rose about 2.3%, extending its memory-stock rally as Sandisk's long-term outlook and expectations for sharply higher DRAM and NAND pricing reinforced optimism around the memory cycle.",
+      "move": "-7.0%",
+      "text": "Micron fell 7.0%, among the day's hardest-hit chip names, as memory and AI-hardware shares sold off sharply amid profit-taking and rising-yield concerns; no fresh Micron-specific negative catalyst was confirmed.",
       "sources": [
-        "https://www.barrons.com/articles/micron-stock-price-memory-cb1e4459"
+        "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/",
+        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/"
       ]
     },
     "DDOG": {
-      "move": "+1.3%",
-      "text": "Datadog rose about 1.3%, extending its rebound from the prior week's earnings-driven selloff; no fresh company-specific catalyst was confirmed Friday.",
+      "move": "-0.5%",
+      "text": "Datadog fell 0.5% as technology shares broadly weakened in a higher-yield, risk-off session; no distinct Datadog-specific catalyst was confirmed.",
       "sources": [
-        "https://www.investors.com/news/technology/datadog-stock-ddog-datadog-earnings-q22026/"
+        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/"
       ]
     },
     "META": {
-      "move": "-0.9%",
-      "text": "Meta fell about 0.9% with the broader market's modest retreat as weak retail-sales data and renewed Middle East tension tempered risk appetite; no distinct Meta-specific catalyst was confirmed.",
+      "move": "-4.4%",
+      "text": "Meta fell 4.4% as a pivotal trial over social media's effects on children added company-specific legal pressure while the Nasdaq also dropped in a broader technology selloff.",
       "sources": [
-        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/"
+        "https://apnews.com/article/3c8b311d6c942e9a042924f45a33ae19",
+        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/"
       ]
     },
     "PLTR": {
-      "move": "-2.8%",
-      "text": "Palantir fell about 2.8% during a session in which investors showed renewed sensitivity to high AI valuations; no fresh Palantir-specific catalyst was confirmed in contemporaneous reporting.",
+      "move": "-0.6%",
+      "text": "Palantir slipped 0.6% during a broader technology selloff driven by rising yields and AI-risk reduction; no distinct Palantir-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/wall-st-futures-muted-higher-oil-prices-temper-risk-appetite-after-sp-record-2026-08-14/"
+        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/"
       ]
     },
     "SPCX": {
-      "move": "-0.9%",
-      "text": "SpaceX slipped about 0.9% with no confirmed operating catalyst; Reuters reported retail holders turned net sellers Friday as investors continued digesting post-IPO ownership disclosures and expanded share supply.",
+      "move": "-2.0%",
+      "text": "SpaceX fell 2.0% after testing resistance near its initial trading price as space stocks broadly weakened; no fresh SpaceX operating catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/finance/alphabets-spacex-bet-grows-100-fold-over-decade-94-billion-2026-08-14/",
-        "https://www.reuters.com/business/spacex-shares-slip-lockup-expiry-adds-post-ipo-woes-2026-08-06/"
+        "https://www.investors.com/news/spacex-stock-falcon9-starlink-nasa-payload-services-blue-origin-firefly/"
       ]
     }
   }
