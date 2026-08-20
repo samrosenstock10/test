@@ -1,0 +1,372 @@
+import type { Lesson } from "./lessons";
+
+export const lesson014 = {
+  number: 14,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "CMP Consumables — Slurry, Pads and Why a Capital Tool Creates Recurring Revenue",
+  date: "2026-08-20",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 009: Yield turns process quality into economics because more good dies from the same wafer lowers effective chip cost.
+
+Lesson 010: Ion implantation places dopants into silicon at controlled dose, depth and angle to create electrically useful regions.
+
+Lesson 011: Annealing repairs implantation damage and activates dopants while the fab manages the wafer's thermal budget.
+
+Lesson 012: Cleaning repeatedly resets the wafer surface so particles, residues and drying damage do not poison later steps.
+
+Lesson 013: CMP combines chemistry and mechanical polishing to flatten the wafer repeatedly so later layers can be built accurately.
+
+The big idea
+
+Yesterday we learned the CMP tool. Today focus on what the tool consumes every time it runs.
+
+A CMP system needs two especially important consumables: slurry and a polishing pad.
+
+The simple mental model is:
+
+CMP tool = the machine.
+
+Slurry = the engineered liquid that chemically prepares and abrasively helps remove the target material.
+
+Pad = the engineered surface that transfers mechanical force and carries slurry across the wafer.
+
+That distinction matters economically. A fab may buy a CMP tool once and use it for years, but it must keep buying slurry, pads and related consumables while wafers are being processed.
+
+This creates a useful semiconductor-business pattern: installed equipment can generate recurring materials demand tied more closely to wafer production than to new-fab capex.
+
+1. What is CMP slurry?
+
+Slurry is not just liquid sandpaper.
+
+It is an engineered mixture whose job is to remove one material at a controlled rate while minimizing damage to everything that should remain.
+
+A slurry commonly contains:
+
+- abrasive particles, often silica, ceria or another engineered material;
+- water or another carrier liquid;
+- oxidizers or other chemicals that react with the target surface;
+- additives that control pH, corrosion, particle behavior and selectivity.
+
+The chemistry depends on what the fab is polishing. Copper, tungsten, oxide and emerging metals do not want the same recipe.
+
+Entegris, for example, sells slurries for tungsten, dielectric materials, copper, barrier materials, aluminum and emerging materials such as molybdenum.
+
+So the correct mental model is not "one CMP slurry market." It is a portfolio of highly specific polishing problems.
+
+2. Why chemistry and abrasives work together
+
+Imagine trying to remove a metal line with pure mechanical force.
+
+You could polish harder, but that can increase scratches and damage.
+
+Instead, the slurry chemistry can change the topmost surface into a form that is easier to remove. The abrasive particles and pad then help carry that reacted material away.
+
+The fab tunes this interaction to achieve a target removal rate.
+
+Too slow means poor throughput.
+
+Too fast can make endpoint control harder and increase over-polish risk.
+
+The winning slurry is therefore not necessarily the one that removes material fastest. It is the one that produces the best total process result: removal rate, selectivity, uniformity, low defects and acceptable cost.
+
+3. Selectivity is the key concept
+
+Suppose copper fills a trench surrounded by dielectric material.
+
+The fab wants to remove excess copper above the trench without excessively attacking the surrounding material.
+
+That ratio is a form of selectivity.
+
+A slurry can be engineered so its chemistry interacts much more strongly with one material than another.
+
+This is similar to what you learned in etch: semiconductor manufacturing repeatedly depends on removing material A while protecting material B.
+
+As chips introduce new metals and more complicated stacks, slurry development can become harder because the supplier must optimize several interacting materials at once.
+
+4. Defects can erase the benefit of faster polishing
+
+Slurry contains particles on purpose, but uncontrolled particles are dangerous.
+
+Agglomerates, contaminants or poorly controlled abrasive distributions can scratch the wafer or create defects.
+
+That is why slurry manufacturing, filtration, storage and delivery matter.
+
+Entegris is strategically interesting here because it sells not only CMP slurry and pads but also filters, high-purity packaging, fluid monitoring and post-CMP cleaning products.
+
+This gives us a broader systems lesson:
+
+The slurry formulation can be excellent and still fail economically if contamination control around the slurry is poor.
+
+Semiconductor process performance often depends on the whole delivery system, not just the headline material.
+
+5. What does the polishing pad actually do?
+
+The pad is the surface pressed against the wafer during CMP.
+
+It must distribute pressure, transport slurry, remove reacted material and maintain stable contact across a 300 mm wafer.
+
+Pads are commonly engineered from polyurethane or related materials.
+
+Important pad properties include:
+
+- hardness;
+- compressibility;
+- pore structure;
+- surface texture;
+- groove pattern;
+- chemical compatibility;
+- wear rate.
+
+Entegris describes its NexPlanar pads as thermoset polyurethane products offered with different hardness and porosity options for different CMP applications.
+
+A harder pad may help with planarity but can create different defect tradeoffs than a softer pad. There is no universal best pad.
+
+The pad, slurry and process recipe are a system.
+
+6. Why pads wear out
+
+The pad is repeatedly exposed to pressure, motion, chemistry and abrasive material.
+
+Its surface gradually changes.
+
+If the pad becomes glazed or its texture changes too much, slurry distribution and removal behavior can deteriorate.
+
+So fabs condition the pad to restore the surface and eventually replace it.
+
+This creates recurring demand.
+
+The same fab can run the same CMP tool for years while repeatedly purchasing pads, slurry, conditioners, brushes, filters and cleaning chemistry.
+
+That is economically different from selling another multi-million-dollar capital tool.
+
+7. Capital spending versus wafer-volume spending
+
+This distinction is worth memorizing.
+
+Equipment demand is driven heavily by capacity additions, technology transitions and fab capital budgets.
+
+Consumables demand is driven more directly by how much qualified manufacturing actually runs and how much material each wafer consumes.
+
+That does not make consumables non-cyclical. If wafer starts fall sharply, slurry and pad usage can fall. Customers can also reduce inventories or negotiate pricing.
+
+But the revenue profile can be steadier than new-equipment sales because fabs need consumables to keep already-installed tools producing wafers.
+
+This is one reason investors often value high-share semiconductor consumables businesses differently from pure equipment businesses.
+
+8. A simple unit-economics model
+
+Suppose a fab processes 100,000 wafers per month.
+
+Assume, only for illustration, that each wafer averages 15 CMP passes.
+
+That means 1.5 million CMP wafer-passes per month.
+
+Now suppose the slurry, pad wear and directly related consumables average an illustrative $4 of cost per pass.
+
+That would imply about $6 million of monthly CMP-consumables demand, or roughly $72 million annualized.
+
+Those are not estimates for a real fab. Actual costs vary dramatically by recipe, material, supplier contract and process.
+
+The point is the equation:
+
+Wafer starts × CMP passes per wafer × consumables cost per pass = rough recurring CMP consumables pool.
+
+Compare that with yesterday's equipment equation:
+
+Wafer starts × CMP passes ÷ effective tool throughput = rough CMP tool capacity required.
+
+One physical process therefore creates two different revenue models.
+
+9. Macro scale: how large is the consumables market?
+
+Exact market estimates vary by research methodology, which is itself a useful warning against false precision.
+
+A 2025 Global Info Research estimate put the combined global CMP slurry-and-pads market at about $3.0 billion in 2024, with slurry representing roughly two-thirds of that market and 300 mm wafers roughly three-quarters of demand.
+
+A separate July 2026 Fortune Business Insights estimate put slurry alone at about $2.6 billion in 2025 and projected roughly 7.7% annual growth through 2034.
+
+Do not memorize both forecasts as truth. Memorize the scale:
+
+CMP slurry and pads are a several-billion-dollar annual consumables market, not a $50 billion equipment category.
+
+That denominator matters. Even strong growth in a niche can be economically meaningful for a focused supplier while remaining small relative to total semiconductor manufacturing spend.
+
+SEMI's February 2026 CMP market report also says advanced logic, 3D NAND and multi-gate structures are supporting renewed demand for slurries and pads, while new materials such as cobalt and molybdenum are changing planarization requirements.
+
+10. Who are the important suppliers?
+
+For slurry and pads, remember a broader supplier set than the CMP equipment market.
+
+Entegris became much larger in CMP materials through its acquisition of CMC Materials. Its portfolio now spans slurry, pads, post-CMP cleaning chemistry, brushes, filtration and related contamination-control products.
+
+DuPont is another major name, especially in polishing pads and CMP materials.
+
+Fujimi is important in precision polishing and slurry.
+
+Resonac and several Asian specialty-chemical suppliers also participate.
+
+Third-party market estimates differ on exact share, so do not anchor too hard on a single percentage. The more durable point is that this market is concentrated enough for qualification and know-how to matter, but it is not a one-company monopoly.
+
+11. Why qualification creates stickiness
+
+Imagine a fab has spent months tuning a copper CMP process around one slurry and pad combination.
+
+Engineers know its removal rate, defect signature, endpoint behavior, temperature sensitivity and interaction with the tool.
+
+A cheaper competing slurry appears.
+
+The fab cannot simply pour it into the line tomorrow.
+
+It must test whether the new material changes yield, uniformity, corrosion, scratches, dishing, erosion or downstream process behavior.
+
+The potential savings on slurry are tiny compared with the value of wafers that could be damaged by a bad transition.
+
+That creates qualification-based switching costs.
+
+This is one of the most important recurring moats in semiconductor materials: the product itself may not look impossible to reproduce, but replacing a qualified material inside a high-yield process can be economically dangerous.
+
+12. But recurring revenue does not mean automatic pricing power
+
+This is where investment analysis often becomes too simplistic.
+
+A consumable can be recurring and still be a mediocre business.
+
+Ask four questions:
+
+How differentiated is the formulation?
+
+How costly is requalification?
+
+How many credible alternate suppliers exist?
+
+How large is the consumable cost relative to the yield risk it controls?
+
+If the material is easy to substitute, customers can pressure price.
+
+If the material is deeply process-specific and a tiny portion of wafer cost but materially affects yield, the supplier can have much stronger economics.
+
+The best semiconductor consumables are often inexpensive relative to the value they protect.
+
+13. Why new materials can create opportunity
+
+Semiconductor roadmaps periodically introduce new materials because old materials stop scaling well enough.
+
+That creates a new polishing problem.
+
+The old slurry may have the wrong chemistry or selectivity. Suppliers must formulate and qualify a new solution.
+
+Entegris specifically highlights emerging interconnect materials such as molybdenum as an opportunity for new slurry development.
+
+This can reset competitive positions.
+
+An incumbent benefits from customer relationships and process knowledge, but a technology transition can also give a challenger an opening if it solves the new material better.
+
+So materials transitions are moments to watch closely.
+
+14. Logic, DRAM and NAND do not consume CMP identically
+
+Leading-edge logic uses CMP across transistor formation and multilayer interconnects.
+
+DRAM requires highly uniform planarization across dense memory structures and interconnects.
+
+3D NAND builds extremely tall vertical stacks, which can create thick films and difficult topography.
+
+That means wafer growth alone does not determine consumables growth.
+
+You also need to know CMP intensity per wafer and whether newer structures use more expensive or more specialized recipes.
+
+This is the same expert habit we are building across the course:
+
+Units × process intensity × price/content per unit = supplier revenue opportunity.
+
+15. AI linkage: real, but indirect
+
+AI demand raises demand for advanced logic and HBM, and both require sophisticated wafer processing.
+
+That can increase CMP consumables demand through more wafers, more difficult structures or higher-value recipes.
+
+But saying "AI is growing, therefore CMP slurry is a great investment" skips too many steps.
+
+The stronger chain is:
+
+AI compute demand → advanced logic/HBM demand → wafer starts and process complexity → CMP passes and recipe difficulty → qualified slurry/pad consumption → supplier volume, mix and pricing.
+
+Every arrow can weaken the thesis.
+
+A supplier may lose share. Process changes may reduce consumption. Customers may dual-source. Growth may occur in a recipe where the supplier is weak.
+
+This is why understanding the physical flow improves investment analysis.
+
+16. The economic comparison to remember
+
+CMP equipment and CMP consumables solve the same manufacturing problem but monetize differently.
+
+Applied Materials and EBARA primarily expose you to the capital equipment layer: tools, installed capacity, upgrades and service.
+
+Entegris, DuPont and other materials suppliers expose you more directly to recurring slurry/pad usage, though each company has many businesses beyond CMP.
+
+Neither model is automatically superior.
+
+Equipment can capture large dollars when fabs build aggressively or process intensity jumps.
+
+Consumables can compound with the installed base and wafer volume while benefiting from qualification stickiness.
+
+A sophisticated investor asks which layer captures the incremental margin dollars from the specific technology transition being studied.
+
+The value-chain map today
+
+Wafer enters a CMP tool
+
+↓
+
+Slurry chemistry reacts with the target material
+
+↓
+
+Abrasive particles + pad mechanically remove the reacted surface
+
+↓
+
+Pad conditioning keeps the polishing surface effective
+
+↓
+
+Slurry filtration and delivery control particles and contamination
+
+↓
+
+Post-CMP cleaning removes residue
+
+↓
+
+Every processed wafer consumes materials, creating recurring demand around the installed tool base
+
+Remember these 7 things
+
+1. Slurry is an engineered chemical-and-abrasive system, not generic polishing liquid.
+
+2. The pad controls mechanical contact, slurry transport and planarity; its hardness, porosity and grooves are part of the process recipe.
+
+3. Slurry and pads are recurring consumables because fabs must replenish them while CMP tools keep running.
+
+4. Think in two equations: tool capacity depends on wafer passes divided by throughput; consumables demand depends on wafer starts × passes × consumable content per pass.
+
+5. The combined slurry-and-pad market is on the order of several billion dollars annually, with slurry the larger portion in common third-party estimates.
+
+6. Entegris, DuPont, Fujimi and other specialty-material suppliers compete through formulation, defect control, qualification and customer integration rather than monopoly equipment positions.
+
+7. Recurring does not automatically mean high-quality economics: always test differentiation, qualification cost, alternate suppliers and the value protected relative to material cost.
+
+Quick check
+
+Why might a fab refuse to switch to a slurry that is 20% cheaper?
+
+Answer: if the existing slurry is deeply qualified and the cheaper alternative creates even a small risk of lower yield, scratches, corrosion or process instability, the potential wafer losses can dwarf the consumable savings.
+
+Next lesson
+
+Lesson 015: Synthesis — The Fab Flow So Far, Where Time and Money Accumulate, and Which Steps Actually Bottleneck
+
+We will zoom out from individual processes and build the first connected operating model of the fab: the process loop, rough tool intensity, cycle-time logic, yield risk, recurring materials and how to distinguish an essential step from a true capacity bottleneck.`,
+} satisfies Lesson;
