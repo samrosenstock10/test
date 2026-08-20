@@ -1,94 +1,96 @@
 {
-  "updatedAt": "2026-08-19T14:00:04.000Z",
+  "updatedAt": "2026-08-20T14:02:02.000Z",
   "period": {
-    "start": "2026-08-18",
-    "end": "2026-08-18",
-    "label": "Session Aug 18"
+    "start": "2026-08-19",
+    "end": "2026-08-19",
+    "label": "Session Aug 19"
   },
   "items": {
     "NVDA": {
-      "move": "-2.3%",
-      "text": "Nvidia fell 2.3% as a 5% semiconductor-index selloff and rising long-term Treasury yields pressured AI-chip shares; no distinct Nvidia-specific catalyst was confirmed.",
+      "move": "-1.0%",
+      "text": "Nvidia fell 1.0% as semiconductor weakness persisted despite Treasury-driven relief in long-term yields; no fresh Nvidia-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/",
-        "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/"
+        "https://www.marketwatch.com/story/the-chip-stock-rally-hits-a-speed-bump-but-these-analysts-see-reason-to-be-hopeful-61821295",
+        "https://www.wsj.com/finance/stocks/u-s-stocks-gain-as-treasury-buybacks-calm-bond-yields-moderna-surges-402249fb"
       ]
     },
     "AVGO": {
-      "move": "-3.2%",
-      "text": "Broadcom fell 3.2% with the broad semiconductor rout as rising yields and profit-taking hit AI-hardware shares; no distinct Broadcom-specific catalyst was confirmed.",
+      "move": "-4.6%",
+      "text": "Broadcom fell 4.6% after Marvell unveiled an expanded custom-AI-chip deal with Google, raising concerns that Google is diversifying spending beyond Broadcom even though analysts cautioned the new programs may not directly displace its core TPU work.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/",
-        "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/"
+        "https://www.reuters.com/technology/marvell-grants-google-122-billion-stock-warrant-custom-chip-deal-2026-08-19/",
+        "https://www.marketwatch.com/story/marvells-stock-soars-on-news-of-google-chip-deal-and-broadcoms-falls-c2a7f559"
       ]
     },
     "TSM": {
-      "move": "-4.1%",
-      "text": "TSM fell 4.1% as the semiconductor selloff deepened amid rising long-term yields and broad AI-hardware profit-taking; no fresh TSM-specific catalyst was confirmed.",
+      "move": "-0.3%",
+      "text": "TSM slipped 0.3% as chip stocks remained soft after Tuesday's rout despite a sharp Treasury-driven drop in long-term yields; no fresh TSM-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/",
-        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-bond-sell-off-yield-us-30-year-treasury-home-depot-results/card/semiconductor-stocks-tumble-with-shares-of-marvell-and-micron-posting-big-losses-qfu9atlDQ5XTMLpL99Cd"
+        "https://www.marketwatch.com/story/the-chip-stock-rally-hits-a-speed-bump-but-these-analysts-see-reason-to-be-hopeful-61821295",
+        "https://www.reuters.com/business/us-30-year-treasury-yields-drop-multi-year-highs-2026-08-19/"
       ]
     },
     "ASML": {
-      "move": "-4.3%",
-      "text": "ASML fell 4.3% with semiconductor-equipment and AI-hardware shares as rising bond yields and broad chip de-risking pressured the sector; no distinct ASML-specific catalyst was confirmed.",
+      "move": "-2.8%",
+      "text": "ASML fell 2.8% with the broader semiconductor complex as investors continued trimming AI and chip exposure despite Treasury-driven relief in long-term yields; no fresh ASML-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/",
-        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-bond-sell-off-yield-us-30-year-treasury-home-depot-results/card/semiconductor-stocks-tumble-with-shares-of-marvell-and-micron-posting-big-losses-qfu9atlDQ5XTMLpL99Cd"
+        "https://www.marketwatch.com/story/the-chip-stock-rally-hits-a-speed-bump-but-these-analysts-see-reason-to-be-hopeful-61821295",
+        "https://www.reuters.com/business/us-30-year-treasury-yields-drop-multi-year-highs-2026-08-19/"
       ]
     },
     "KLAC": {
-      "move": "-5.3%",
-      "text": "KLA fell 5.3% as the 5% semiconductor-index selloff spread through chip-equipment names amid rising yields and profit-taking; no fresh KLA-specific catalyst was confirmed.",
+      "move": "-3.9%",
+      "text": "KLA fell 3.9%, underperforming a modestly higher broad market as semiconductor shares remained under pressure in continued AI-chip de-risking; no fresh KLA-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/",
-        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-bond-sell-off-yield-us-30-year-treasury-home-depot-results/card/semiconductor-stocks-tumble-with-shares-of-marvell-and-micron-posting-big-losses-qfu9atlDQ5XTMLpL99Cd"
+        "https://www.marketwatch.com/story/the-chip-stock-rally-hits-a-speed-bump-but-these-analysts-see-reason-to-be-hopeful-61821295",
+        "https://apnews.com/article/cb67d83b0638d31e5fe3c80c8de5934c"
       ]
     },
     "INTC": {
-      "move": "-6.6%",
-      "text": "Intel fell 6.6% during the broad semiconductor rout as rising yields and fading risk appetite hit chip shares; no distinct Intel-specific catalyst was confirmed.",
+      "move": "-4.0%",
+      "text": "Intel fell 4.0% with continued semiconductor weakness; no fresh Intel-specific catalyst was confirmed, while the recently completed $20 billion share sale remained a dilution and capital-raise overhang.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/",
-        "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/"
+        "https://www.reuters.com/legal/transactional/intel-launches-15-billion-share-sale-turnaround-rally-lifts-stock-2026-08-10/",
+        "https://www.marketwatch.com/story/the-chip-stock-rally-hits-a-speed-bump-but-these-analysts-see-reason-to-be-hopeful-61821295"
       ]
     },
     "MU": {
-      "move": "-7.0%",
-      "text": "Micron fell 7.0%, among the day's hardest-hit chip names, as memory and AI-hardware shares sold off sharply amid profit-taking and rising-yield concerns; no fresh Micron-specific negative catalyst was confirmed.",
+      "move": "-0.4%",
+      "text": "Micron slipped 0.4% as memory and other AI-linked chip stocks remained volatile after Tuesday's sharp selloff; no fresh Micron-specific catalyst was confirmed.",
       "sources": [
-        "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/",
-        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/"
+        "https://www.marketwatch.com/story/the-chip-stock-rally-hits-a-speed-bump-but-these-analysts-see-reason-to-be-hopeful-61821295",
+        "https://www.investors.com/news/technology/chip-stocks-micron-nvidia-drop-dog-days-summer/"
       ]
     },
     "DDOG": {
-      "move": "-0.5%",
-      "text": "Datadog fell 0.5% as technology shares broadly weakened in a higher-yield, risk-off session; no distinct Datadog-specific catalyst was confirmed.",
+      "move": "-5.1%",
+      "text": "Datadog fell 5.1% despite a modestly higher Nasdaq; no fresh company-specific catalyst was confirmed, leaving the move consistent with continued volatility after its Aug. 6 reset around slower growth and reduced usage by its largest AI customer.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/"
+        "https://www.wsj.com/business/earnings/datadog-says-lower-usage-from-major-ai-customer-could-dent-growth-8b8904c9",
+        "https://apnews.com/article/cb67d83b0638d31e5fe3c80c8de5934c"
       ]
     },
     "META": {
-      "move": "-4.4%",
-      "text": "Meta fell 4.4% as a pivotal trial over social media's effects on children added company-specific legal pressure while the Nasdaq also dropped in a broader technology selloff.",
+      "move": "+0.4%",
+      "text": "Meta edged up 0.4% as lower long-term Treasury yields supported the broader market, outweighing continued legal pressure from testimony in the 29-state youth-safety trial.",
       "sources": [
-        "https://apnews.com/article/3c8b311d6c942e9a042924f45a33ae19",
-        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/"
+        "https://www.reuters.com/legal/litigation/former-meta-engineer-resumes-testimony-landmark-trial-over-social-medias-harm-2026-08-19/",
+        "https://www.reuters.com/business/us-30-year-treasury-yields-drop-multi-year-highs-2026-08-19/"
       ]
     },
     "PLTR": {
-      "move": "-0.6%",
-      "text": "Palantir slipped 0.6% during a broader technology selloff driven by rising yields and AI-risk reduction; no distinct Palantir-specific catalyst was confirmed.",
+      "move": "+2.1%",
+      "text": "Palantir rose 2.1% as falling long-term Treasury yields helped growth stocks recover; no fresh Palantir-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-drop-fading-iran-peace-hopes-lift-oil-bond-yields-2026-08-18/"
+        "https://www.wsj.com/finance/stocks/u-s-stocks-gain-as-treasury-buybacks-calm-bond-yields-moderna-surges-402249fb",
+        "https://www.reuters.com/business/us-30-year-treasury-yields-drop-multi-year-highs-2026-08-19/"
       ]
     },
     "SPCX": {
-      "move": "-2.0%",
-      "text": "SpaceX fell 2.0% after testing resistance near its initial trading price as space stocks broadly weakened; no fresh SpaceX operating catalyst was confirmed.",
+      "move": "-2.6%",
+      "text": "SpaceX fell 2.6% ahead of Thursday's lockup expiration, when up to 319 million employee and early-investor shares become eligible for trading, adding potential supply to the market.",
       "sources": [
-        "https://www.investors.com/news/spacex-stock-falcon9-starlink-nasa-payload-services-blue-origin-firefly/"
+        "https://www.marketwatch.com/story/more-spacex-stock-is-about-to-hit-the-market-heres-what-to-know-789923d4"
       ]
     }
   }
