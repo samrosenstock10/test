@@ -1,0 +1,363 @@
+import type { Lesson } from "./lessons";
+
+export const lesson016 = {
+  number: 16,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Wafer Starts, Wafers per Month and Fab Capacity — How to Read the Numbers Analysts Throw Around",
+  date: "2026-08-22",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 011: Annealing repairs implantation damage and activates dopants while the fab manages the wafer's thermal budget.
+
+Lesson 012: Cleaning repeatedly resets wafer surfaces so particles, residues and drying damage do not poison later steps.
+
+Lesson 013: CMP chemically and mechanically flattens wafers so later layers can be patterned accurately.
+
+Lesson 014: CMP slurry and pads show how recurring consumables revenue can scale with wafer volume and process intensity.
+
+Lesson 015: A fab is a network of repeated process loops and queues, so the marginal bottleneck—not the most impressive technology—determines incremental output.
+
+The big idea
+
+Analysts constantly say things like:
+
+"That fab is 30,000 wafers per month."
+
+"Leading-edge capacity is tight."
+
+"TSMC has more than 17 million 12-inch-equivalent wafers of annual capacity."
+
+Those numbers sound precise, but they are easy to misuse.
+
+A wafer-capacity number is not a chip-output number.
+
+To translate fab capacity into useful economics, you need a chain:
+
+wafer starts → processed wafers → good wafers → dies per wafer → yield → good chips
+
+Today we build that language.
+
+1. What is a wafer start?
+
+A wafer start means a blank wafer begins the manufacturing flow.
+
+If a fab says it can run 50,000 wafer starts per month, or WSPM, the simple meaning is:
+
+about 50,000 new wafers can enter that production line each month at the stated operating conditions.
+
+It does not mean 50,000 wafers finish that same month.
+
+Remember Lesson 015: a leading-edge wafer can remain inside the fab for weeks or months while it moves through hundreds of operations and waits in queues.
+
+So wafer starts are a flow into the factory. Completed wafers are a flow out. In a stable factory, starts and completions eventually become similar over time. During ramps, shutdowns or major process transitions, they can diverge.
+
+2. Wafers per month is a rate, not an inventory
+
+Suppose a fab has capacity for 100,000 300mm wafers per month.
+
+That is approximately 1.2 million wafers per year if the line can sustain that rate for twelve months.
+
+But do not confuse this with 100,000 wafers physically sitting in the fab. Because cycle time spans multiple months, work-in-process inventory can be much larger than one month's starts.
+
+The analogy is a highway tollbooth. "2,000 cars per hour" describes throughput capacity. It does not tell you how many cars are currently somewhere on the highway.
+
+3. Installed capacity is not actual production
+
+Installed capacity asks: How much could the factory process with its installed production system?
+
+Actual output asks: How much did it really process?
+
+If a line has installed capacity of 100,000 wafers per month but runs at 80% utilization, a first approximation is:
+
+100,000 × 80% = 80,000 wafer starts per month.
+
+Why might utilization be below 100%? Demand may be weak. Tools may be down for maintenance. The node may be ramping. Customers may require different product mixes. Some capacity may be reserved for engineering or qualification.
+
+And, as we learned yesterday, running every critical tool at its absolute limit can create enormous queues.
+
+So "capacity" is a ceiling-like concept, not a promise of output.
+
+4. Capacity itself is not perfectly fixed
+
+Even installed capacity is not as clean as it sounds. A fab's effective capacity depends on the process recipe being run.
+
+Imagine one product needs 10 visits to a certain etch family while another needs 14. The same physical tool fleet supports fewer wafers of the more etch-intensive product.
+
+Likewise, a new node may require more EUV layers, more deposition steps, more metrology, longer chamber recipes or more rework during the ramp.
+
+The building did not shrink. The tools did not disappear. But the number of wafers the system can push through can change.
+
+That is why analysts should be careful when treating a fab as if it were a tank with a fixed number of wafer slots.
+
+5. The global denominator
+
+SEMI's current 2Q26 300mm outlook says total installed 300mm capacity is growing about 7% in 2026.
+
+A useful order-of-magnitude baseline is roughly ten million 300mm wafers per month globally. SEMI's earlier forecast put 2026 global 300mm capacity at about 9.6 million wafers per month, while a later outlook projects the industry reaching 11.1 million per month by 2028.
+
+Do not memorize 9.6 versus 10.0 versus 10.5 as if one decimal point determines the thesis. Memorize the scale:
+
+Global 300mm front-end capacity is on the order of 10 million wafers per month.
+
+Now compare submarkets.
+
+SEMI projects worldwide 300mm memory capacity at about 4.1 million wafers per month in 2026.
+
+And it projects advanced 7nm-and-below capacity reaching about 1.4 million wafers per month by 2028, up from about 850,000 in 2024.
+
+That immediately tells you two things.
+
+First, "300mm" does not mean "leading-edge AI chips." Most 300mm capacity is outside the most advanced logic nodes.
+
+Second, advanced capacity is growing much faster than the overall wafer base.
+
+6. Put TSMC in context
+
+TSMC reported more than 17 million 12-inch-equivalent wafers of annual capacity in 2025.
+
+Divide by twelve:
+
+17 million ÷ 12 ≈ 1.4 million 12-inch-equivalent wafers per month.
+
+TSMC also shipped about 15 million 12-inch-equivalent wafers in 2025.
+
+A rough shipments-to-capacity comparison is therefore in the high-80%s or lower, depending on the exact capacity denominator and how equivalent-wafer accounting maps to real production. Do not treat that as TSMC's official utilization rate—it is only a rough scale calculation.
+
+The useful intuition is that TSMC alone operates manufacturing capacity on the order of a million-plus 300mm-equivalent wafers per month.
+
+But another warning matters: TSMC's 17 million figure includes capacity expressed in 12-inch equivalents across multiple wafer sizes and technologies. It is not 17 million leading-edge AI wafers.
+
+7. Why "12-inch equivalent" exists
+
+Fabs still use different wafer diameters. The major ones you will hear are:
+
+300mm = about 12 inches
+
+200mm = about 8 inches
+
+A 300mm wafer has much more surface area than a 200mm wafer. Area scales with radius squared.
+
+So:
+
+300² ÷ 200² = 2.25
+
+A 300mm wafer has about 2.25 times the gross surface area of a 200mm wafer.
+
+That is why companies sometimes convert production into a common equivalent-wafer measure. Otherwise saying "we made one million wafers" could hide a major difference in physical silicon area.
+
+But equivalent-wafer accounting is still not equivalent chip output, because die sizes, yields and process technologies differ.
+
+8. From wafers to dies
+
+Now we make the number useful.
+
+Suppose you have a 300mm wafer. Its total geometric area is approximately:
+
+π × 150² ≈ 70,700 mm².
+
+If a chip die is 700 mm², you might initially think:
+
+70,700 ÷ 700 ≈ 101 dies.
+
+But you cannot tile the circular wafer perfectly with square or rectangular dies. Dies near the edge are incomplete. So actual gross dies per wafer will be lower.
+
+The key intuition is simple:
+
+smaller die → more dies per wafer
+
+larger die → fewer dies per wafer
+
+This is one reason giant AI accelerators are expensive. A very large die consumes a large fraction of valuable wafer area before we even discuss yield.
+
+9. Yield converts gross dies into good dies
+
+Suppose a wafer produces 80 complete candidate dies.
+
+At 90% die yield:
+
+80 × 90% = 72 good dies.
+
+At 70% yield:
+
+80 × 70% = 56 good dies.
+
+Same wafer. Same fab capacity. About 29% more good chips in the first case than the second.
+
+This is why "wafer capacity" by itself can badly mislead you during a new-node ramp.
+
+A foundry can increase sellable output through more wafer starts, better yield, smaller die area, design changes, or some combination. The cheapest incremental chip may come from improving yield rather than constructing another fab.
+
+10. A simple fab-output example
+
+Imagine an advanced line with:
+
+50,000 wafer starts per month
+
+90% effective utilization
+
+70 gross candidate dies per wafer
+
+80% die yield
+
+First estimate actual starts:
+
+50,000 × 90% = 45,000 wafers per month.
+
+Then gross dies:
+
+45,000 × 70 = 3.15 million candidate dies.
+
+Then good dies:
+
+3.15 million × 80% = 2.52 million good dies per month.
+
+Now improve yield from 80% to 90%, holding everything else constant:
+
+3.15 million × 90% = 2.835 million good dies.
+
+That is 315,000 additional good chips per month without adding a single wafer start.
+
+This is why process-control and yield-learning tools can create economic value far beyond their share of fab capex.
+
+11. But AI packages complicate the math
+
+A modern AI system may require much more than one logic die.
+
+An accelerator package can combine one or more advanced logic dies, multiple HBM stacks, an interposer or other advanced-packaging structure, and supporting components.
+
+So 100,000 good logic dies do not automatically equal 100,000 finished AI accelerators.
+
+Finished-package output is constrained by the scarcest required component.
+
+If logic capacity supports 100,000 units but HBM supports only 80,000 and advanced packaging supports only 70,000, then roughly 70,000 finished packages are possible before other losses.
+
+This is the supply-chain version of Lesson 015: the bottleneck migrates.
+
+12. Capacity additions do not arrive instantly
+
+When you hear "Company X is adding 30,000 wafers per month," do not immediately put 30,000 into next quarter's model.
+
+Ask what stage the capacity is in:
+
+Announced — management intends to build it.
+
+Construction — the fab shell and facilities are being built.
+
+Tool move-in — manufacturing equipment is arriving.
+
+Qualification — tools and process recipes are being validated.
+
+Risk production — early wafers are running.
+
+Volume production — commercial output is ramping.
+
+Mature ramp — utilization and yield approach intended economics.
+
+There can be years between announcement and mature high-volume output. Even after nominal capacity exists, usable good-die output can ramp gradually.
+
+13. Cleanroom space is not wafer capacity
+
+Another common mistake is hearing that a fab has room for another production phase and treating that as installed capacity.
+
+An empty cleanroom bay is optionality.
+
+To turn it into wafer output, the company needs tools, facility hookups, power and water, process recipes, trained staff, qualification, and enough capacity at every interacting process step.
+
+A fab shell without tools is not semiconductor capacity. A tool installed but not qualified is not fully productive capacity. And qualified capacity without customer demand may not be utilized.
+
+Always ask where the project sits on that ladder.
+
+14. Why 200mm still matters
+
+AI discussion can make it sound as if every semiconductor is produced on 300mm leading-edge wafers. That is wrong.
+
+SEMI projects 200mm installed capacity at about 7.7 million wafers per month in 2026.
+
+That sounds surprisingly close to the 300mm wafer count. But remember area: one 300mm wafer has about 2.25 times the area of one 200mm wafer. And the device mix is very different.
+
+200mm fabs remain important for power devices, analog chips, microcontrollers, MEMS and many mature-node products. An AI server still depends on many non-GPU semiconductors.
+
+So the supply chain has multiple capacity pools, not one universal "chip capacity" number.
+
+15. The analyst's translation ladder
+
+When someone gives you a fab-capacity number, mentally walk down this ladder:
+
+1. Wafer diameter — 300mm, 200mm or an equivalent measure?
+
+2. Node/device — leading-edge logic, mature logic, DRAM, NAND, analog, power?
+
+3. Installed capacity — how many wafers could the line support?
+
+4. Utilization — how much of that capacity is actually being run?
+
+5. Process mix — does this product consume unusually high tool-hours per wafer?
+
+6. Yield — what fraction becomes good output?
+
+7. Die size — how many candidate dies fit on each wafer?
+
+8. Packaging — can downstream packaging and memory support the same unit volume?
+
+9. Ramp timing — announced, installed, qualified or mature?
+
+Only after those questions can you translate "50,000 wafers per month" into an economically meaningful chip-supply number.
+
+16. The macro scoreboard
+
+Carry these approximate numbers forward:
+
+~10 million wafers/month — order of magnitude for global 300mm front-end capacity today.
+
+~4.1 million wafers/month — SEMI's 2026 estimate for 300mm memory capacity.
+
+~1.4 million wafers/month — SEMI's projected 7nm-and-below global capacity in 2028.
+
+>17 million 12-inch-equivalent wafers/year — TSMC's stated 2025 annual capacity, or roughly 1.4 million per month on that equivalent basis.
+
+~7.7 million wafers/month — SEMI's projected 2026 installed 200mm capacity.
+
+These are not interchangeable numbers.
+
+The expert habit is knowing both the number and its denominator.
+
+Remember these 8 things
+
+1. Wafer starts measure wafers entering the manufacturing flow, not chips leaving it.
+
+2. Wafers per month is a throughput rate, not the number of wafers physically inside the fab.
+
+3. Installed capacity can exceed actual production because utilization is below 100%.
+
+4. Effective capacity changes with process mix because different products consume different tool-hours.
+
+5. Global 300mm capacity is on the order of 10 million wafers per month, but only a fraction is leading-edge logic.
+
+6. To estimate chip output, translate wafers → gross dies → yield → good dies.
+
+7. AI accelerator output can still be constrained downstream by HBM and advanced packaging.
+
+8. Announced cleanroom or fab capacity is not the same as qualified, high-yield volume production.
+
+Quick check
+
+Two fabs each start 40,000 wafers per month. Fab A produces 80 candidate dies per wafer at 90% yield. Fab B produces 100 candidate dies per wafer at 65% yield. Which produces more good dies?
+
+Fab A:
+
+40,000 × 80 × 90% = 2.88 million good dies.
+
+Fab B:
+
+40,000 × 100 × 65% = 2.60 million good dies.
+
+Same wafer starts, but Fab A produces about 11% more good chips.
+
+That is why wafer capacity is only the beginning of the analysis.
+
+Next lesson
+
+Lesson 017: Die Size, Defect Density and Yield — Why Giant AI Chips Are So Expensive to Manufacture
+
+We will connect wafer geometry to defect probability and show why larger dies suffer a structural yield disadvantage, how chiplets change the equation, and why leading-edge yield is one of the most economically important numbers in semiconductors.`,
+} satisfies Lesson;
