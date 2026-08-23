@@ -1,0 +1,494 @@
+import type { Lesson } from "./lessons";
+
+export const lesson017 = {
+  number: 17,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Die Size, Defect Density and Yield — Why Giant AI Chips Are So Expensive to Manufacture",
+  date: "2026-08-23",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 012: Cleaning repeatedly resets wafer surfaces so particles, residues and drying damage do not poison later steps.
+
+Lesson 013: CMP chemically and mechanically flattens wafers so later layers can be patterned accurately.
+
+Lesson 014: CMP slurry and pads show how recurring consumables revenue can scale with wafer volume and process intensity.
+
+Lesson 015: A fab is a network of repeated process loops and queues, so the marginal bottleneck—not the most impressive technology—determines incremental output.
+
+Lesson 016: Wafer-start numbers become economically useful only after translating capacity through utilization, die size, yield and downstream packaging constraints.
+
+The big idea
+
+Yesterday we learned that wafer capacity is only the beginning of chip-supply analysis.
+
+Today we focus on the next conversion:
+
+wafer area → candidate dies → good dies
+
+The crucial fact is simple:
+
+A large chip is punished twice.
+
+First, fewer large dies fit on each wafer.
+
+Second, each large die has more physical area in which a manufacturing defect can land and kill the chip.
+
+That is one reason cutting-edge AI accelerators are so expensive. They are often among the largest, most complex pieces of silicon that a leading-edge process can manufacture.
+
+1. Start with the wafer
+
+A standard leading-edge logic wafer is 300mm in diameter.
+
+Its geometric area is roughly:
+
+π × 150² ≈ 70,700 mm².
+
+But you cannot simply divide 70,700 by die area and call the answer chip output.
+
+Why?
+
+The wafer is circular while dies are approximately rectangular. Around the outer edge, many die rectangles extend beyond the usable wafer and cannot become complete chips.
+
+So there are two losses to remember before yield even enters the discussion:
+
+- the die itself consumes wafer area;
+- edge geometry wastes some remaining area.
+
+A smaller die generally lets you use the circle more efficiently and produces more candidate dies per wafer.
+
+2. Die size is the physical footprint of one chip
+
+The die is the actual piece of silicon cut from the wafer after fabrication.
+
+If a processor die is 100 mm², many can fit on a wafer.
+
+If it is 800 mm², far fewer can fit.
+
+This sounds obvious, but it has a powerful economic consequence.
+
+Suppose, purely for intuition, that one wafer costs the foundry the same amount to process regardless of whether the customer prints 100 large dies or 500 small dies.
+
+The manufacturing cost must then be spread across far fewer candidate chips in the large-die case.
+
+So even at identical yield, cost per candidate die rises sharply with die size.
+
+3. Why AI accelerators tend to be large
+
+AI workloads reward enormous amounts of parallel compute, memory bandwidth and data movement.
+
+Designers therefore want lots of compute units, cache, interfaces and high-speed connectivity.
+
+For years, one straightforward way to get more capability was to put more transistors onto a larger piece of advanced silicon.
+
+But semiconductor manufacturing has a practical ceiling on how large one lithographically patterned die can be. This is commonly discussed as the reticle limit: the maximum field that lithography equipment can expose as one conventional die image.
+
+Modern high-end accelerators have repeatedly pushed close to this practical large-die regime.
+
+That means the economics of die size and yield matter disproportionately for AI.
+
+4. Defect density: the missing variable
+
+A fab cannot manufacture every square millimeter perfectly.
+
+Even an excellent process has some density of random defects.
+
+Defect density is usually expressed as defects per unit area, often per square centimeter.
+
+Imagine rain falling randomly on a parking lot.
+
+A motorcycle occupies little area, so the chance that a raindrop hits it is relatively low.
+
+A huge truck occupies much more area, so it has more chances to be hit.
+
+A die behaves similarly.
+
+If defects are distributed across the wafer, a larger die presents a larger target.
+
+This gives us the structural rule:
+
+larger die + same defect density = lower probability that the die is defect-free
+
+5. A simple yield model
+
+The real semiconductor industry uses more sophisticated yield models, because defects cluster and not every defect is fatal.
+
+But a simple Poisson-style model is useful for intuition:
+
+Yield ≈ e^(-D × A)
+
+where:
+
+D = defect density per unit area
+
+A = die area in the same units
+
+You do not need to memorize the equation. Memorize what it says.
+
+If either defect density or die area rises, yield falls.
+
+And the effect compounds rather than behaving like a simple fixed cost.
+
+6. Put numbers on it
+
+Assume defect density is 0.1 defects per cm².
+
+A 100 mm² die is 1 cm².
+
+The simple model gives:
+
+Yield ≈ e^(-0.1 × 1) ≈ 90%
+
+Now take a 600 mm² die, or 6 cm²:
+
+Yield ≈ e^(-0.1 × 6) ≈ 55%
+
+Same fab.
+
+Same defect density.
+
+But the much larger die has far lower modeled defect-free yield.
+
+Do not treat those percentages as a forecast for any real product. Actual yield depends on process maturity, design, defect clustering, redundancy, repairability and what counts as a fatal defect.
+
+The point is the direction and magnitude: area matters enormously.
+
+7. The double penalty
+
+Now combine geometry and defects.
+
+Suppose a small die gives roughly 500 gross candidates per wafer and yields 90%.
+
+That is:
+
+500 × 90% = 450 good dies.
+
+Suppose a very large die gives only 70 gross candidates and yields 70%.
+
+That is:
+
+70 × 70% = 49 good dies.
+
+The large chip does not merely cost about seven times more because seven times fewer gross dies fit.
+
+Yield widens the gap further.
+
+This is the double penalty:
+
+1. fewer candidate dies per wafer;
+
+2. a lower fraction of those candidates survive.
+
+That is the economic intuition you should carry when someone says a new AI processor is an enormous leading-edge die.
+
+8. Yield improves as a process matures
+
+Defect density is not fixed forever.
+
+When a new manufacturing node enters production, engineers are still learning where defects come from and how to eliminate them.
+
+They may improve:
+
+- lithography recipes;
+- etch uniformity;
+- deposition quality;
+- chamber cleanliness;
+- CMP control;
+- inspection sensitivity;
+- process windows;
+- equipment matching;
+- and design rules.
+
+As defect density falls, yield rises.
+
+This is yield learning.
+
+It is one reason the economics of a new node can improve dramatically even before the fab adds more physical wafer capacity.
+
+A mature process can produce more good chips from the same installed tool base.
+
+9. Why process control has nonlinear value
+
+Think back to KLA and Lesson 008.
+
+If better inspection finds the source of a recurring defect and engineers eliminate it, the benefit is not simply that the inspection tool found one bad wafer.
+
+It may lower defect density across thousands of future wafers.
+
+For a large die, that can be especially valuable because each reduction in defect density raises the probability that a large area remains usable.
+
+This is why process-control spending should not be judged only by its percentage of fab capex.
+
+A relatively small improvement in defect learning can unlock a large amount of sellable output from an expensive leading-edge line.
+
+10. Why chiplets change the equation
+
+Now imagine you need 800 mm² of total logic.
+
+Option A is one giant 800 mm² monolithic die.
+
+Option B is four 200 mm² chiplets connected together in an advanced package.
+
+If random defects are the main issue, the smaller chiplets can have much better individual manufacturing yield.
+
+And there is another advantage: you can test chiplets before packaging and discard bad ones rather than losing one giant monolithic die whenever any region contains a fatal defect.
+
+This is called known-good-die selection.
+
+So chiplets can convert one very difficult manufacturing problem into several smaller, more yield-friendly dies.
+
+11. But chiplets are not free
+
+If chiplets solved everything without tradeoffs, every chip would simply be divided into tiny pieces.
+
+Splitting a chip creates new costs:
+
+- advanced packaging;
+- die-to-die interconnects;
+- extra power for communication;
+- latency;
+- package area;
+- thermal complexity;
+- test complexity;
+- and additional assembly yield risk.
+
+Some functions also benefit strongly from being physically close together on one piece of silicon.
+
+So the design question is not "monolithic or chiplets?"
+
+It is:
+
+At what partition does the manufacturing-yield benefit outweigh the packaging, power and performance penalties?
+
+That is an economic optimization problem as much as an engineering problem.
+
+12. NVIDIA gives us the right mental model
+
+You do not need to memorize every NVIDIA die configuration yet; we will study accelerator architecture later.
+
+What matters now is the direction of travel.
+
+As AI systems require more compute than is practical to keep scaling on one conventional monolithic die, designers increasingly combine multiple pieces of advanced silicon inside one package or system.
+
+That moves part of the manufacturing challenge downstream.
+
+Instead of asking only:
+
+Can the foundry yield one enormous die?
+
+You now also ask:
+
+Can the packaging supply chain connect multiple high-value dies at enormous bandwidth and acceptable yield?
+
+This is why advanced packaging becomes strategically important rather than merely the final step after wafer fabrication.
+
+13. Redundancy can rescue imperfect dies
+
+A physical defect does not always mean the entire die must be thrown away.
+
+Designers can build redundancy into some structures.
+
+Memory is the easiest intuition. If a memory array contains spare rows or columns, testing may identify a defective region and substitute a spare.
+
+Large processors can also sometimes tolerate disabled units and sell the resulting chip as a lower-spec product.
+
+This is binning.
+
+A die that cannot meet the highest performance target may still become a commercially useful product.
+
+Therefore:
+
+physical defect-free yield ≠ always the same thing as sellable yield
+
+That distinction matters when interpreting simplistic yield models.
+
+14. Yield and performance are different
+
+Even if a die is electrically functional, it may not run at the desired frequency or power level.
+
+Manufacturing creates variation.
+
+Some dies perform better than others.
+
+After fabrication, testing sorts chips into performance bins.
+
+A premium accelerator SKU therefore depends on more than whether the die turns on.
+
+The manufacturer cares about:
+
+- functional yield;
+- performance distribution;
+- power characteristics;
+- package yield;
+- and final system qualification.
+
+This is another reason a single headline "yield percentage" can hide important economics.
+
+Always ask: yield of what stage and to what specification?
+
+15. The cost-per-good-die equation
+
+You can now build a useful simplified framework:
+
+Cost per good die ≈ processed wafer cost ÷ good dies per wafer
+
+And:
+
+good dies per wafer = gross dies per wafer × die yield
+
+This is not a full accounting model. Packaging, test, depreciation allocation, masks, engineering and many other costs matter.
+
+But it tells you where the first-order manufacturing leverage comes from.
+
+A company can reduce cost per good die by:
+
+- shrinking die area;
+- improving defect density;
+- improving process yield;
+- using redundancy or binning;
+- partitioning into chiplets when economically sensible;
+- or lowering wafer-processing cost.
+
+16. A $20,000 wafer thought experiment
+
+Use a deliberately round hypothetical number: assume a processed leading-edge wafer costs $20,000.
+
+Case A produces 100 gross dies at 90% yield:
+
+90 good dies.
+
+$20,000 ÷ 90 ≈ $222 of wafer cost per good die.
+
+Case B produces 60 gross dies at 70% yield:
+
+42 good dies.
+
+$20,000 ÷ 42 ≈ $476 per good die.
+
+Same wafer cost, but more than 2× the wafer cost per sellable die.
+
+Again, these are teaching numbers, not estimates for a specific NVIDIA or AMD product.
+
+The lesson is that die size and yield can create enormous cost differences before HBM, packaging, substrates, test or board assembly are added.
+
+17. Why a new node can look bad before it looks great
+
+Suppose a new node provides better transistor density and performance, but early defect density is high.
+
+At first, the wafer may be more expensive and the yield lower than the mature prior node.
+
+The new technology can therefore have unattractive cost per good die during the ramp.
+
+Over time, three things may improve:
+
+- yield rises;
+- utilization rises;
+- designs learn how to use the process better.
+
+Eventually the new node's density and performance advantages can dominate.
+
+This is why node economics should be analyzed dynamically, not from one early-quarter snapshot.
+
+18. The investment lens
+
+Different companies capture different pieces of this yield problem.
+
+TSMC, Samsung and Intel create value by integrating thousands of process details into a manufacturable node with competitive yield.
+
+KLA and other process-control suppliers help fabs detect, classify and reduce defects.
+
+ASML, Applied Materials, Lam Research and Tokyo Electron supply major process tools whose precision affects whether structures are manufactured correctly.
+
+EDA and design companies help engineers build layouts that are manufacturable within the process rules.
+
+Advanced-packaging suppliers become more valuable when chiplet architectures move complexity from one monolithic die into a multi-die package.
+
+The non-obvious point is that a bottleneck can migrate because engineers respond economically.
+
+If giant-die yield becomes too painful, the industry does not simply accept the cost forever. It changes architecture. Chiplets can relieve front-end yield pressure while increasing demand for packaging, interconnect and test capability.
+
+19. The analyst's translation ladder
+
+When you hear that a chip is "huge" or that a node has "good yield," ask:
+
+1. What is the die area?
+
+2. How many gross dies fit on a 300mm wafer?
+
+3. What defect density is the process achieving?
+
+4. What does that imply for functional yield?
+
+5. Is the process early in its yield-learning curve or mature?
+
+6. Can redundancy or binning rescue partially imperfect dies?
+
+7. Is the design monolithic or split into chiplets?
+
+8. What extra packaging cost and yield risk does that architecture create?
+
+9. What is the final number of sellable packages, not merely good front-end dies?
+
+That chain converts a vague technology statement into semiconductor economics.
+
+20. The macro intuition to carry forward
+
+Do not memorize one universal yield number. There is no useful universal number.
+
+Instead memorize the relationships:
+
+larger die → fewer gross dies per wafer
+
+larger die → greater exposure to random defects
+
+lower defect density → higher yield
+
+higher yield → more sellable chips from the same fab capacity
+
+chiplets → potentially better die yield, but more packaging complexity
+
+This connects directly to yesterday's macro capacity lesson.
+
+A fab adding 10% more wafer starts does not necessarily add 10% more finished AI accelerators.
+
+Likewise, a fab that adds zero wafer starts can still increase good-die output materially through yield improvement.
+
+Capacity and yield are separate levers.
+
+Remember these 8 things
+
+1. A 300mm wafer has about 70,700 mm² of geometric area, but circular-edge losses mean not all of it becomes complete dies.
+
+2. Larger dies suffer a double penalty: fewer fit on each wafer and each has a higher chance of encountering a defect.
+
+3. Defect density measures manufacturing defects per unit area; lower defect density generally means higher yield.
+
+4. Yield learning can increase output without adding wafer capacity.
+
+5. Large AI processors make die-size economics unusually important.
+
+6. Chiplets can improve manufacturing economics by replacing one giant die with several smaller dies, but they shift cost and complexity into packaging and interconnect.
+
+7. Functional yield, performance binning and final package yield are different concepts.
+
+8. The useful economic metric is not wafer cost or die size alone; it is ultimately cost per good, sellable chip or package.
+
+Quick check
+
+Two designs require roughly the same total amount of logic.
+
+Design A uses one giant monolithic die.
+
+Design B splits the logic into four smaller chiplets.
+
+Why might Design B have better front-end manufacturing economics even if total silicon area is similar?
+
+Because each smaller chiplet has less area in which a random defect can land. The fab can test the chiplets separately, discard bad pieces and assemble known-good dies rather than losing one enormous die whenever any part contains a fatal defect.
+
+But the correct follow-up is: what packaging, interconnect, power and assembly costs did we add to get that yield benefit?
+
+Next lesson
+
+Lesson 018: Masks, Reticles and the Reticle Limit — The Master Patterns Behind Every Lithography Step
+
+We will connect yesterday's die-size discussion to the physical masks used by lithography, explain why mask sets are so expensive, what the reticle limit actually means, and why mask complexity affects the economics of leading-edge chip design.`,
+} satisfies Lesson;
