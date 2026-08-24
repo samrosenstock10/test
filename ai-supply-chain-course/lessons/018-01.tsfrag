@@ -1,0 +1,196 @@
+import type { Lesson } from "./lessons";
+
+export const lesson018 = {
+  number: 18,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Masks, Reticles and the Reticle Limit — The Master Patterns Behind Every Lithography Step",
+  date: "2026-08-24",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 013: CMP repeatedly flattens wafer topography so later layers can still be patterned accurately.
+
+Lesson 014: CMP consumables show how wafer volume can create recurring materials revenue around an installed equipment base.
+
+Lesson 015: Fab output is governed by a network of queues, yield risks and migrating bottlenecks rather than one universally dominant tool.
+
+Lesson 016: Wafer-start capacity becomes useful only after translating it through utilization, die size, yield and downstream constraints.
+
+Lesson 017: Large dies suffer both fewer candidates per wafer and greater defect exposure, pushing AI designs toward chiplets when packaging economics allow it.
+
+The big idea
+
+Lithography does not invent a circuit pattern while the wafer is inside the scanner.
+
+It copies a master pattern onto the wafer.
+
+That master pattern is carried on a photomask, often called a reticle in advanced wafer lithography.
+
+The simple mental model is:
+
+designer's layout → mask/reticle → scanner projects pattern → photoresist records it → etch or another process transfers it into the wafer
+
+A modern chip needs many patterned layers, so it needs many mask patterns. This creates two important economics: mask sets are expensive and slow to change, and the scanner's maximum exposure field helps set the practical size limit of one conventional monolithic die.
+
+1. What is physically on a mask?
+
+Think of a mask as an extraordinarily precise stencil.
+
+It is typically a flat transparent substrate with a carefully manufactured pattern that controls how lithography light reaches the wafer. EUV masks are physically different because EUV optics are reflective rather than transmissive, but the role is similar: encode the pattern that the scanner must reproduce.
+
+The scanner does not normally print the mask at full size. Projection optics reduce the mask pattern onto the wafer, commonly by 4× in leading lithography systems.
+
+So if a feature on the mask is 40 nm wide, the projected wafer-scale feature would be roughly 10 nm before accounting for the much more complicated realities of imaging and process correction.
+
+2. Why one chip needs many masks
+
+A finished processor is not patterned in one exposure.
+
+Different layers define different structures: transistor features, contacts, metal wiring and many other elements. Each lithographically distinct layer needs the appropriate mask pattern.
+
+That means an advanced process can require a large mask set rather than one master stencil.
+
+The key economic consequence is that design changes late in development can be expensive. If engineers change a layer, the relevant mask may need to be remade and requalified before wafers can run the revised design.
+
+This is why a "tape-out" matters. It is the handoff point where the design database is prepared for manufacturing. After tape-out, changing the physical design becomes much more costly than editing software.
+
+3. Masks themselves must be nearly perfect
+
+A defect on a wafer may kill one die.
+
+A repeating defect on a mask is more dangerous because the scanner can reproduce that defect across many dies and many wafers.
+
+So mask manufacturing has its own precision ecosystem: writing the pattern, inspecting it, repairing defects when possible, measuring critical dimensions and protecting the finished mask from contamination.
+
+This is a useful systems insight: lithography yield depends not only on the scanner. The mask, resist, optics, computational corrections, wafer positioning and process control all have to work together.
+
+4. Why masks are economically sticky
+
+Leading-edge mask sets can cost millions of dollars, with exact costs varying substantially by node, design and how many advanced layers are involved.
+
+The important scale intuition is not one exact price. It is that a mask set is expensive enough to matter in chip-development economics but tiny relative to the revenue of a successful high-volume AI processor.
+
+That creates a fixed-cost effect.
+
+If a mask set costs several million dollars and supports only 1,000 sellable chips, mask cost per chip is enormous.
+
+If it supports millions of chips, the mask cost per chip becomes small.
+
+So advanced-node economics strongly reward volume. The huge up-front engineering and mask costs can be amortized across enormous unit or revenue pools.
+
+5. The reticle limit
+
+Now connect this to Lesson 017.
+
+A lithography scanner can expose only a finite rectangular field in one conventional shot. For mainstream advanced 4× systems, the maximum wafer exposure field is roughly 26 mm × 33 mm, or about 858 mm².
+
+That does not mean every 858 mm² design is practical, nor that every product uses the entire field. But it gives you the right order of magnitude for the maximum conventional monolithic die footprint.
+
+This is the reticle limit.
+
+It is why an AI chip cannot simply keep becoming one infinitely large piece of silicon.
+
+Once designers approach this physical field boundary, more compute must increasingly come from architectural changes: multiple dies, chiplets, multiple packages or more systems connected together.
+
+6. Why the limit matters economically
+
+Suppose compute demand wants 2× more transistors.
+
+If the current die is already near the reticle limit, the designer cannot simply double die area.
+
+It has to find another path:
+
+- use denser transistors on a newer node;
+- improve architecture;
+- split the design across multiple dies;
+- or scale across multiple packaged accelerators.
+
+Each solution shifts the bottleneck somewhere else.
+
+Moving to a new node increases dependence on leading-edge foundry capacity and yield.
+
+Splitting into chiplets increases advanced-packaging and die-to-die interconnect requirements.
+
+Scaling across packages increases networking, power and cooling requirements.
+
+This is a core supply-chain principle: physical limits at one layer create demand in adjacent layers.
+
+7. Reticle size versus wafer size
+
+Do not confuse the 300 mm wafer with the reticle field.
+
+The wafer is the large circular manufacturing surface.
+
+The reticle field is the much smaller rectangular area the scanner patterns at one location before stepping or scanning to the next location.
+
+The scanner repeats the field across the wafer.
+
+So one wafer may contain many copies of a large accelerator die, but each individual conventional die must fit inside the scanner's printable field.
+
+This is why yesterday's die-per-wafer math and today's reticle limit are related but different constraints.
+
+Wafer geometry limits how many dies fit.
+
+Reticle geometry limits how large one conventional die can be.
+
+8. Can the industry print beyond one reticle?
+
+Yes, with techniques such as stitching, where patterns from multiple exposure fields are joined to create a structure larger than one normal field.
+
+But stitching adds alignment and manufacturing complexity, so it is not a free escape from the limit.
+
+Large interposers used in advanced packaging are an important place where beyond-reticle techniques can matter. That is a preview of Topic 3: once multiple compute dies must communicate at very high bandwidth, the package itself starts looking like a sophisticated miniature system.
+
+So the reticle limit is not merely a lithography fact. It is one reason advanced packaging became strategically important to AI.
+
+9. The supplier map
+
+ASML supplies the advanced lithography scanners, but it does not own the entire mask ecosystem.
+
+Mask blanks, mask writing, inspection, metrology, resist and computational lithography involve additional specialized suppliers and internal capabilities at chipmakers and foundries.
+
+KLA participates in mask inspection and metrology. Applied Materials has mask-related inspection and process equipment. Photronics, Toppan and DNP are notable commercial photomask manufacturers, although the exact supplier structure differs by technology and customer.
+
+The investment lesson is the same one we have used throughout the course: map the exact physical choke point before assigning value to a company merely because it touches the process.
+
+10. The analyst translation ladder
+
+When you hear that an AI chip is "reticle-sized," translate the phrase:
+
+1. The die is approaching the maximum conventional lithography exposure field.
+
+2. Gross dies per wafer will be relatively low because the die is physically large.
+
+3. Yield becomes especially important because each die exposes a large area to defects.
+
+4. Further scaling cannot rely mainly on making one die larger.
+
+5. More compute therefore pushes toward denser nodes, chiplets, advanced packaging and system-level scaling.
+
+That is how one lithography constraint propagates through the AI supply chain.
+
+Remember these 6 things
+
+1. A mask or reticle carries the master pattern that lithography reproduces on the wafer.
+
+2. Advanced chips need many mask patterns because fabrication builds many separately patterned layers.
+
+3. Mask defects are dangerous because they can repeat across many dies and wafers.
+
+4. Leading-edge mask sets are expensive fixed development costs, so high production volume improves their per-chip economics.
+
+5. A conventional advanced lithography field is roughly 26 × 33 mm on the wafer, giving an order-of-magnitude reticle area near 858 mm².
+
+6. The reticle limit helps push AI scaling from giant monolithic dies toward chiplets, advanced packaging and system-level interconnect.
+
+Quick check
+
+Why does the reticle limit create opportunity for advanced packaging?
+
+Because once a single conventional die cannot grow much larger, designers can combine multiple smaller dies into one package. That relieves the monolithic die-size constraint but increases the need for high-bandwidth die-to-die connections, interposers and precise multi-die assembly.
+
+Next lesson
+
+Lesson 019: Photoresist — The Light-Sensitive Film That Turns a Mask Pattern Into Something the Fab Can Etch
+
+We will zoom into the temporary chemical layer that actually records the lithography image, including why EUV resist sensitivity, resolution and defects create a difficult three-way tradeoff.`,
+} satisfies Lesson;
