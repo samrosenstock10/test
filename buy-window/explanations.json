@@ -1,97 +1,97 @@
 {
-  "updatedAt": "2026-08-21T14:06:00.000Z",
+  "updatedAt": "2026-08-24T15:15:00.000Z",
   "period": {
-    "start": "2026-08-20",
-    "end": "2026-08-20",
-    "label": "Session Aug 20"
+    "start": "2026-08-21",
+    "end": "2026-08-21",
+    "label": "Session Aug 21"
   },
   "items": {
     "NVDA": {
-      "move": "-0.3%",
-      "text": "Nvidia slipped 0.3% as rising Treasury yields and renewed oil and inflation concerns pushed the Nasdaq down 1.0% and kept pressure on AI-chip shares; no fresh Nvidia-specific catalyst was confirmed.",
+      "move": "-1.0%",
+      "text": "Nvidia fell 1.0% as semiconductors lagged Friday's broader market rebound ahead of its Aug. 26 earnings, with elevated yields and AI-spending concerns still pressuring chip shares; no fresh Nvidia-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-muted-bond-yields-resume-uptrend-ahead-walmarts-earnings-2026-08-20/",
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-20/"
+        "https://www.reuters.com/business/wall-st-week-ahead-nvidia-earnings-jackson-hole-test-pillars-stock-rally-2026-08-21/",
+        "https://www.barrons.com/livecoverage/stock-market-news-today-082126/card/the-nasdaq-is-back-no-thanks-to-chip-stocks-RkNTKhIF3abtGwa1RYwf"
       ]
     },
     "AVGO": {
-      "move": "+0.4%",
-      "text": "Broadcom edged up 0.4%, bucking a 1.0% Nasdaq decline; no fresh Broadcom-specific catalyst was confirmed, making the move a modest rebound after Wednesday's Marvell-Google-driven selloff rather than a broad chip move.",
+      "move": "+1.2%",
+      "text": "Broadcom rose 1.2%, outperforming a semiconductor group that remained soft on Friday; no fresh Broadcom-specific catalyst was confirmed, so the move appears to be a relative rebound within a broader market recovery.",
       "sources": [
-        "https://www.reuters.com/technology/marvell-grants-google-122-billion-stock-warrant-custom-chip-deal-2026-08-19/",
-        "https://www.reuters.com/business/us-stock-futures-muted-bond-yields-resume-uptrend-ahead-walmarts-earnings-2026-08-20/"
+        "https://www.reuters.com/business/us-stock-futures-rise-after-sharp-losses-prior-session-2026-08-21/",
+        "https://www.barrons.com/livecoverage/stock-market-news-today-082126/card/the-nasdaq-is-back-no-thanks-to-chip-stocks-RkNTKhIF3abtGwa1RYwf"
       ]
     },
     "TSM": {
-      "move": "+0.9%",
-      "text": "TSM gained 0.9% despite a 1.0% Nasdaq drop and higher yields; no fresh TSM-specific catalyst was confirmed, so the move appears to be relative strength within an otherwise pressured semiconductor tape.",
+      "move": "+0.7%",
+      "text": "TSM gained 0.7% with Friday's broader market rebound even as semiconductor shares remained mixed; no fresh TSM-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-muted-bond-yields-resume-uptrend-ahead-walmarts-earnings-2026-08-20/",
-        "https://www.reuters.com/world/china/global-markets-global-markets-2026-08-21/"
+        "https://www.reuters.com/business/us-stock-futures-rise-after-sharp-losses-prior-session-2026-08-21/",
+        "https://www.barrons.com/livecoverage/stock-market-news-today-082126/card/the-nasdaq-is-back-no-thanks-to-chip-stocks-RkNTKhIF3abtGwa1RYwf"
       ]
     },
     "ASML": {
-      "move": "-0.1%",
-      "text": "ASML finished nearly flat, down 0.1%, as semiconductor shares remained pressured by rising global yields and AI-spending concerns; no fresh ASML-specific catalyst was confirmed.",
+      "move": "+0.8%",
+      "text": "ASML rose 0.8% as U.S. equities rebounded Friday despite continued volatility in chip shares and bond yields; no fresh ASML-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/world/china/global-markets-global-markets-2026-08-21/",
-        "https://www.reuters.com/business/us-stock-futures-muted-bond-yields-resume-uptrend-ahead-walmarts-earnings-2026-08-20/"
+        "https://www.reuters.com/business/us-stock-futures-rise-after-sharp-losses-prior-session-2026-08-21/",
+        "https://www.barrons.com/livecoverage/stock-market-news-today-082126/card/the-nasdaq-is-back-no-thanks-to-chip-stocks-RkNTKhIF3abtGwa1RYwf"
       ]
     },
     "KLAC": {
-      "move": "-0.8%",
-      "text": "KLA fell 0.8% as the semiconductor complex stayed under pressure from rising yields and AI-spending concerns; no fresh KLA-specific catalyst was confirmed.",
+      "move": "-1.0%",
+      "text": "KLA fell 1.0% for a fourth straight decline, underperforming a rising market while semiconductor peers were mixed; no fresh KLA-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/world/china/global-markets-global-markets-2026-08-21/",
-        "https://www.reuters.com/business/us-stock-futures-muted-bond-yields-resume-uptrend-ahead-walmarts-earnings-2026-08-20/"
+        "https://www.marketwatch.com/data-news/kla-corp-stock-underperforms-friday-when-compared-to-competitors-50161b2e-62162b29e764",
+        "https://www.reuters.com/business/us-stock-futures-rise-after-sharp-losses-prior-session-2026-08-21/"
       ]
     },
     "INTC": {
-      "move": "-0.7%",
-      "text": "Intel slipped 0.7% as higher Treasury yields and broad technology weakness weighed on semiconductors; no fresh Intel-specific catalyst was confirmed during Thursday's session.",
+      "move": "-2.2%",
+      "text": "Intel fell 2.2% and underperformed both the broader market and most chip peers; no fresh Intel-specific catalyst was verified, so the move appears to reflect continued semiconductor pressure plus stock-specific weakness without a confirmed news trigger.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-muted-bond-yields-resume-uptrend-ahead-walmarts-earnings-2026-08-20/",
-        "https://www.reuters.com/world/china/global-markets-global-markets-2026-08-21/"
+        "https://beststocks.com/stocks/intc/what-changed",
+        "https://www.reuters.com/business/us-stock-futures-rise-after-sharp-losses-prior-session-2026-08-21/"
       ]
     },
     "MU": {
-      "move": "+4.0%",
-      "text": "Micron jumped 4.0% after unveiling Micron Research Labs, a U.S.-based long-horizon R&D hub focused on advanced memory and AI, helping the shares sharply outperform a falling semiconductor market.",
+      "move": "-0.8%",
+      "text": "Micron fell 0.8% in line with a still-soft memory and semiconductor tape after a volatile week; no fresh Micron-specific catalyst was confirmed Friday.",
       "sources": [
-        "https://www.micron.com/about/press/news",
-        "https://www.reuters.com/business/us-stock-futures-muted-bond-yields-resume-uptrend-ahead-walmarts-earnings-2026-08-20/"
+        "https://beststocks.com/stocks/mu/what-changed",
+        "https://www.barrons.com/livecoverage/stock-market-news-today-082126/card/the-nasdaq-is-back-no-thanks-to-chip-stocks-RkNTKhIF3abtGwa1RYwf"
       ]
     },
     "TSLA": {
-      "move": "-1.7%",
-      "text": "Tesla fell 1.7% as Big Tech sold off in a rising-yield, oil-driven risk-off session; no fresh Tesla-specific catalyst was confirmed.",
+      "move": "+5.1%",
+      "text": "Tesla jumped 5.1% after Nevada regulators cleared the company to deploy up to 5,000 robotaxis in Clark County, materially advancing its planned Las Vegas robotaxi rollout.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-muted-bond-yields-resume-uptrend-ahead-walmarts-earnings-2026-08-20/",
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-20/"
+        "https://www.marketwatch.com/story/tesla-stocks-jumps-as-the-company-gets-ready-for-a-robotaxi-push-c680f87f",
+        "https://www.reuters.com/business/us-stock-futures-rise-after-sharp-losses-prior-session-2026-08-21/"
       ]
     },
     "META": {
-      "move": "-0.0%",
-      "text": "Meta was essentially flat, down less than 0.1%, outperforming a 1.0% Nasdaq drop as the broader market sold off on higher yields and oil and inflation concerns; no fresh Meta-specific catalyst was confirmed.",
+      "move": "+0.7%",
+      "text": "Meta gained 0.7% with Friday's rebound in large-cap technology shares; no fresh Meta-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-muted-bond-yields-resume-uptrend-ahead-walmarts-earnings-2026-08-20/",
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-20/"
+        "https://www.reuters.com/business/us-stock-futures-rise-after-sharp-losses-prior-session-2026-08-21/",
+        "https://www.barrons.com/livecoverage/stock-market-news-today-082126/card/the-nasdaq-is-back-no-thanks-to-chip-stocks-RkNTKhIF3abtGwa1RYwf"
       ]
     },
     "PLTR": {
-      "move": "-0.7%",
-      "text": "Palantir slipped 0.7% as higher Treasury yields pressured growth stocks during a broad Nasdaq selloff; no fresh Palantir-specific catalyst was confirmed.",
+      "move": "+3.4%",
+      "text": "Palantir rose 3.4% as growth and software stocks rebounded, extending momentum from its strong Aug. 4 earnings; no fresh company-specific catalyst was confirmed Friday.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-muted-bond-yields-resume-uptrend-ahead-walmarts-earnings-2026-08-20/",
-        "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-08-20/"
+        "https://www.investors.com/news/palantir-stock-freeport-mcmoran-stocks-near-buy-points/",
+        "https://www.reuters.com/business/us-stock-futures-rise-after-sharp-losses-prior-session-2026-08-21/"
       ]
     },
     "SPCX": {
-      "move": "-4.0%",
-      "text": "SpaceX fell 4.0% as a 319 million-share post-IPO unlock expanded tradable supply, while Musk said the next Starship 'catch' milestone was likely months away, adding company-specific pressure.",
+      "move": "+2.2%",
+      "text": "SpaceX rebounded 2.2%, snapping a three-day losing streak as the broader market recovered; no fresh Friday catalyst was confirmed after Thursday's lockup-supply and Starship-timeline pressure.",
       "sources": [
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-08-20-2026/card/musk-says-next-rocket-catch-is-months-away-and-spacex-stock-sags-ziB2u03acA87Pvu9AJr2",
-        "https://finance.yahoo.com/news/spacex-stock-slips-as-319-million-new-shares-come-to-market-143100875.html"
+        "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-stock-market-sell-off-bitcoin-surges/",
+        "https://www.marketwatch.com/story/more-spacex-stock-is-about-to-hit-the-market-heres-what-to-know-789923d4"
       ]
     }
   }
