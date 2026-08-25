@@ -1,0 +1,116 @@
+import type { Lesson } from "./lessons";
+
+export const lesson019 = {
+  number: 19,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Photoresist — The Light-Sensitive Film That Records the Lithography Pattern",
+  date: "2026-08-25",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 014: CMP consumables turn wafer volume and repeated polishing into recurring materials demand.
+Lesson 015: Fab output is determined by connected queues, yield risks and the marginal bottleneck.
+Lesson 016: Wafer-start capacity matters only after utilization, die size, yield and downstream constraints.
+Lesson 017: Large dies suffer fewer candidates per wafer and greater defect exposure, encouraging chiplets when packaging economics work.
+Lesson 018: Masks carry lithography's master patterns, while the reticle field limits how large one conventional die can become.
+
+The big idea
+
+Yesterday's reticle contains the pattern, but the silicon wafer cannot "see" that pattern by itself.
+
+Before exposure, the fab coats the wafer with **photoresist**: a very thin light-sensitive chemical film. Lithography changes the resist chemically; development then removes selected resist, leaving a temporary stencil on the wafer.
+
+The flow is:
+
+coat resist → expose through the lithography system → develop resist → transfer the pattern by etch or another process → strip the resist
+
+Photoresist is therefore not part of the finished transistor. It is temporary manufacturing material used again and again while the chip is built.
+
+## 1. What physically happens
+
+A wafer enters a coating track and liquid resist is dispensed near its center. The wafer spins rapidly, spreading the liquid into an extremely uniform thin film.
+
+After baking, the coated wafer goes to the scanner. Light reaches selected regions according to the mask pattern and changes the chemistry of the resist.
+
+A developer then dissolves one set of regions while leaving the other set behind.
+
+Imagine painting a floor with a coating that becomes washable only where a special light hits it. After exposure, you wash away the selected paint and use the remaining paint as a stencil.
+
+That remaining resist protects some wafer areas while the next process modifies the exposed areas.
+
+## 2. Positive versus negative resist
+
+In a **positive resist**, exposed regions become easier to dissolve, so development removes the exposed material.
+
+In a **negative resist**, exposure causes the illuminated regions to remain while other material is removed.
+
+You do not need to memorize the chemistry. The important idea is that light converts an optical image into a physical chemical pattern that later fab tools can act on.
+
+## 3. The EUV tradeoff
+
+At leading-edge nodes, resist becomes extremely difficult because features are tiny and EUV photons are scarce compared with ordinary visible light.
+
+Engineers balance three competing goals:
+
+- **Resolution:** print extremely small features.
+- **Sensitivity:** require fewer photons, helping scanner throughput.
+- **Roughness/defects:** keep feature edges smooth and avoid random printing failures.
+
+Improving one can hurt another. A more sensitive resist may need a lower EUV dose and therefore expose wafers faster, but too little photon information can increase stochastic defects — random missing or malformed features caused partly by the statistical nature of photons and resist chemistry.
+
+This means resist chemistry can affect both **yield and lithography throughput**.
+
+## 4. Why this matters to fab economics
+
+Suppose a lithography step needs a higher EUV dose to print reliably. The scanner must spend more exposure time per wafer.
+
+If the scanner is already one of the fab's most expensive and capacity-sensitive tools, that extra time can reduce wafers per hour. The resist is inexpensive relative to the EUV scanner, yet its performance can influence how productively the scanner is used.
+
+This is an important supply-chain pattern:
+
+**low-cost input does not mean low economic importance.**
+
+A cheap chemical can affect the throughput or yield of equipment worth hundreds of millions of dollars.
+
+## 5. The supplier map
+
+Photoresist is a specialized electronic material rather than a general industrial chemical. Japanese suppliers have historically held strong positions in advanced photoresists and related materials, including **JSR, Tokyo Ohka Kogyo (TOK), Shin-Etsu Chemical and Fujifilm**.
+
+The moat is not simply "knowing the recipe." A resist must work consistently with a customer's scanner, mask, process conditions, developer, etch flow and defect-control requirements. Qualification is demanding because changing chemistry can alter yield on very expensive wafers.
+
+That makes qualified materials sticky even when they are not the largest line item in fab capex.
+
+## 6. The analyst's mental model
+
+When you hear about a new lithography resist, ask four questions:
+
+1. Does it enable smaller or cleaner features?
+2. What exposure dose does it require?
+3. Does that dose improve or hurt scanner throughput?
+4. Does it reduce or increase stochastic defects and therefore yield risk?
+
+That is more useful than asking only what the resist costs.
+
+The economic chain is:
+
+resist chemistry → required exposure dose + pattern quality → scanner throughput + defect rate → good wafers / good dies → economics
+
+## Remember these 5 things
+
+1. Photoresist is a temporary light-sensitive film that records the lithography image.
+2. Development turns that chemical image into a physical stencil for later processing.
+3. Leading-edge resist must balance resolution, sensitivity and defect/roughness performance.
+4. Resist can influence the throughput of extremely expensive lithography equipment even though the chemical itself is a much smaller cost item.
+5. Qualified semiconductor materials can be economically sticky because changing them risks the entire integrated process.
+
+## Quick check
+
+Why might a fab willingly use a more expensive photoresist?
+
+Because resist purchase price is only one variable. If the better resist lowers exposure dose, improves scanner throughput, or prevents yield-killing defects, its system-level economic value can greatly exceed its incremental chemical cost.
+
+## Next lesson
+
+Lesson 020: Overlay and Alignment — How a Fab Stacks Billions of Features in the Correct Place
+
+We will focus on how each new lithography layer is positioned relative to everything already built underneath it, and why tiny alignment errors can destroy otherwise perfect features.`,
+} satisfies Lesson;
