@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-21T13:40:00Z",
+  "updatedAt": "2026-08-27T14:08:00.000Z",
   "items": {
-    "NVDA": {"date":"2026-08-26","status":"confirmed","source":"https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Second-Quarter-Financial-Results/default.aspx"},
+    "NVDA": {"date":"2026-11-17","status":"confirmed","source":"https://www.marketwatch.com/livecoverage/nvidia-earnings-stock-results-guidance-nvda-q2/card/for-the-first-time-in-three-years-nvidia-s-next-earnings-report-won-t-be-on-a-wednesday-RRP7OJqDuNT95M4Qy8nX"},
     "AVGO": {"date":"2026-09-02","status":"confirmed","source":"https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announce-third-quarter-fiscal-year-2026-financial"},
     "TSM": {"date":"2026-10-15","status":"estimated","source":"https://finance.yahoo.com/quote/TSM/"},
     "ASML": {"date":"2026-10-14","status":"confirmed","source":"https://www.asml.com/en/investors/financial-results"},
