@@ -1,0 +1,51 @@
+## 8. The supplier map
+
+ASML is central to the lithography exposure that creates the initial pattern.
+
+KLA is a major process-control supplier across inspection and metrology. Hitachi High-Tech has long been important in CD-SEM metrology.
+
+The moat comes from more than microscope resolution. The tool must deliver repeatable measurements at useful throughput, match the fab's process recipes, detect subtle drift and integrate its data into the broader manufacturing-control system.
+
+Once a metrology method is qualified into a sensitive process loop, switching can be costly because measurement consistency itself becomes part of process control.
+
+## 9. The analyst's mental model
+
+When someone says a new node can print “smaller features,” do not stop there.
+
+Ask:
+
+1. What critical dimensions actually matter for device performance?
+2. How tightly must they be controlled across the wafer?
+3. How wide is the lithography/process window?
+4. How much does etch change the printed resist dimension?
+5. How frequently must the fab measure CD to catch drift?
+6. Does tighter control reduce yield, throughput or performance-bin risk?
+
+This connects the last three lessons:
+
+**reticle defines the pattern → photoresist records it → overlay puts it in the right place → CD control makes sure the final feature has the right geometry.**
+
+## Remember these 5 things
+
+1. Critical dimension is a feature size whose variation materially affects device performance or manufacturability.
+
+2. Final CD is created by the whole pattern-transfer chain, not lithography alone.
+
+3. Dose, focus, resist and etch all influence whether the final feature lands inside specification.
+
+4. A good average CD can hide dangerous variation across wafers, fields or time.
+
+5. CD metrology closes the feedback loop before small process drift becomes large yield or performance-bin loss.
+
+## Quick check
+
+Why can a fab have perfect overlay and still manufacture a bad chip?
+
+Because overlay only says the feature was placed in the correct location. If the feature is too wide, too narrow or varies too much across the wafer, its electrical behavior can still be wrong.
+
+## Next lesson
+
+Lesson 022: Patterning Synthesis — Resolution, Overlay, CD and the Real Lithography Control Loop
+
+We will connect masks, resist, overlay and critical-dimension control into one manufacturing system and identify which errors create throughput risk, yield risk and process-control demand.`,
+} satisfies Lesson;
