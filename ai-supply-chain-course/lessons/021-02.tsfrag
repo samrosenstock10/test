@@ -1,0 +1,63 @@
+## 4. CD uniformity matters as much as average CD
+
+Suppose the target line width is correct on average across the wafer.
+
+That does not guarantee a good wafer.
+
+The center could be slightly too wide while the edge is slightly too narrow. Different scanner fields could behave differently. One chamber might gradually drift away from another.
+
+So fabs track **critical-dimension uniformity**: how consistently the dimension is held across the wafer and over time.
+
+The key mental model is:
+
+**average can look fine while variation destroys yield.**
+
+This is a recurring manufacturing lesson. Semiconductor economics depend not just on hitting a target once, but on repeating it millions and billions of times.
+
+## 5. How the fab measures it
+
+The fab cannot electrically test every tiny feature immediately after every process step, so it uses metrology.
+
+One important tool is the **CD-SEM**, or critical-dimension scanning electron microscope.
+
+Instead of using visible light, it scans the surface with electrons and measures tiny patterned features with much finer spatial resolution.
+
+Engineers sample selected locations, compare the measured CD with the target, look for systematic drift, and feed corrections back into lithography and process recipes.
+
+This turns metrology into a control loop:
+
+measure → detect drift → adjust process → verify → continue production
+
+That loop is one reason process-control equipment creates economic value beyond simply “finding defects.” It helps keep the manufacturing process centered before bad variation spreads across many expensive wafers.
+
+## 6. What happens when CD drifts
+
+CD errors can hurt a chip in several ways.
+
+- **Performance:** transistor switching speed can move away from target.
+- **Power:** leakage or resistance can increase.
+- **Yield:** features can fail specification or become electrically open/shorted.
+- **Binning:** a functional die may still miss the performance or power target for the highest-value product.
+
+This last point matters economically.
+
+A process can produce functioning chips while still reducing the number that qualify for the most profitable SKU.
+
+So manufacturing control affects not only **good-die yield**, but sometimes the **mix of performance bins** inside that yield.
+
+## 7. The bottleneck question
+
+CD metrology is usually not the same kind of capacity bottleneck as an EUV scanner.
+
+The scanner performs a required production exposure on every relevant wafer layer. Metrology often samples rather than measuring every feature on every wafer.
+
+But sampling cannot be reduced without limit.
+
+If a fab measures too little, process drift can run undetected. If it measures too much, inspection time and tool capacity increase.
+
+The optimization is therefore:
+
+**measure enough to control the process without turning measurement itself into unnecessary cycle time.**
+
+As process tolerances tighten, the economic value of fast, precise metrology can rise even if the metrology step itself is not the largest capex line.
+
