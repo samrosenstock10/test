@@ -1,0 +1,81 @@
+import type { Lesson } from "./lessons";
+
+export const lesson021 = {
+  number: 21,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Critical-Dimension Control — Why Printing the Right Shape Is Not Enough",
+  date: "2026-08-27",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 016: Wafer-start capacity becomes useful only after translating it through utilization, die size, yield and downstream constraints.
+
+Lesson 017: Large dies suffer fewer candidates per wafer and greater defect exposure, making yield especially important for AI accelerators.
+
+Lesson 018: Masks and reticles carry lithography's master patterns, while the reticle field limits the size of a conventional monolithic die.
+
+Lesson 019: Photoresist converts the scanner's optical image into a temporary physical stencil that later processes can act on.
+
+Lesson 020: Overlay asks whether each new patterned layer lands in the correct position relative to the layers already built.
+
+The big idea
+
+Yesterday we separated **placement** from **resolution**: a tiny feature is useless if it lands in the wrong place.
+
+Today we add a third requirement.
+
+Even if a feature lands in exactly the right place, it can still fail if it is the wrong **width**.
+
+That width is one example of a **critical dimension**, usually shortened to **CD**.
+
+Think of building a highway. The road can follow the correct route perfectly, but if a lane that should be 12 feet wide is accidentally 8 feet wide in one section and 16 feet wide in another, the highway is still badly made.
+
+A fab faces the same problem at nanometer scale.
+
+## 1. What critical dimension means
+
+A semiconductor pattern contains lines, spaces, contacts, gates and other tiny shapes.
+
+Some dimensions are especially important because a small change materially affects whether the device works. Those are critical dimensions.
+
+For a transistor, the exact geometry of the gate and surrounding structures influences how current flows, how much power leaks and how fast the transistor can switch.
+
+For a metal layer, an unexpectedly narrow wire can raise electrical resistance. A feature that is too wide can crowd neighboring structures or change capacitance.
+
+So CD control asks:
+
+**Did we manufacture the intended geometry closely enough, everywhere on the wafer, wafer after wafer?**
+
+## 2. The scanner does not control CD by itself
+
+Lithography strongly affects CD, but the final dimension is created by a chain of processes.
+
+A simplified path is:
+
+mask pattern → scanner exposure → photoresist image → development → etch transfer → final feature
+
+Each stage can shift the result.
+
+For example, changing exposure dose or focus can make the resist image slightly wider or narrower. Then etch can remove material laterally as well as vertically, changing the width again.
+
+That difference between the resist dimension and the final etched dimension is often called **etch bias**.
+
+This is why a fab cannot say, “the scanner printed it correctly, so we are done.”
+
+The final electrical device depends on the entire pattern-transfer process.
+
+## 3. Why dose and focus create a process window
+
+Imagine taking a photograph.
+
+If the image is badly out of focus, edges blur. If exposure is badly wrong, the image can become washed out or too faint.
+
+Lithography has an analogous problem.
+
+Engineers need a combination of exposure **dose** and **focus** that produces acceptable feature dimensions.
+
+There is usually not one magic point. There is a range of dose/focus combinations in which the feature stays within specification. That acceptable region is the **process window**.
+
+A wide process window is valuable because real manufacturing is never perfectly identical from wafer to wafer.
+
+A narrow window means tiny drifts in focus, resist thickness, temperature or dose can push CD out of spec and hurt yield.
+
