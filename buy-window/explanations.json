@@ -1,94 +1,94 @@
 {
-  "updatedAt": "2026-08-27T14:10:00.000Z",
+  "updatedAt": "2026-08-28T14:03:00.000Z",
   "period": {
-    "start": "2026-08-26",
-    "end": "2026-08-26",
-    "label": "Session Aug 26"
+    "start": "2026-08-27",
+    "end": "2026-08-27",
+    "label": "Session Aug 27"
   },
   "items": {
     "NVDA": {
-      "move": "-1.6%",
-      "text": "Nvidia fell 1.6% in the regular session as investors stayed cautious ahead of its after-hours earnings report and a hotter inflation reading; no separate pre-close Nvidia-specific catalyst was confirmed.",
+      "move": "+8.7%",
+      "text": "Nvidia jumped 8.7% after its quarterly beat and a stronger long-term revenue outlook reassured investors that AI infrastructure demand remains robust.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-subdued-run-up-nvidia-results-inflation-print-2026-08-26/",
+        "https://www.reuters.com/business/nvidia-rises-after-signaling-longer-ai-spending-runway-2026-08-27/",
         "https://finance.yahoo.com/quote/NVDA/"
       ]
     },
     "AVGO": {
-      "move": "-0.3%",
-      "text": "Broadcom fell 0.3% in subdued semiconductor trading as investors awaited Nvidia earnings after a hotter inflation reading; no fresh Broadcom-specific catalyst was confirmed.",
+      "move": "+4.5%",
+      "text": "Broadcom rose 4.5% with the Nvidia-led semiconductor rally after Nvidia's outlook strengthened confidence in sustained AI infrastructure spending; no separate Broadcom-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-subdued-run-up-nvidia-results-inflation-print-2026-08-26/",
+        "https://www.reuters.com/business/nvidia-rises-after-signaling-longer-ai-spending-runway-2026-08-27/",
         "https://finance.yahoo.com/quote/AVGO/"
       ]
     },
     "TSM": {
-      "move": "+0.1%",
-      "text": "TSM edged up 0.1% in cautious semiconductor trading ahead of Nvidia earnings, with no fresh TSM-specific catalyst confirmed.",
+      "move": "+2.3%",
+      "text": "TSM rose 2.3% with the Nvidia-led chip rally as Nvidia's stronger AI demand outlook supported expectations for continued advanced-semiconductor demand; no fresh TSM-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-subdued-run-up-nvidia-results-inflation-print-2026-08-26/",
+        "https://www.reuters.com/business/nvidia-rises-after-signaling-longer-ai-spending-runway-2026-08-27/",
         "https://finance.yahoo.com/quote/TSM/"
       ]
     },
     "ASML": {
-      "move": "+0.1%",
-      "text": "ASML edged up 0.1% in subdued semiconductor trading ahead of Nvidia earnings, with no fresh ASML-specific catalyst confirmed.",
+      "move": "-0.6%",
+      "text": "ASML fell 0.6% despite the Nvidia-led chip rally, with no fresh ASML-specific catalyst confirmed and reports of possible broader U.S. semiconductor tariffs creating an offsetting policy overhang.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-subdued-run-up-nvidia-results-inflation-print-2026-08-26/",
+        "https://www.theguardian.com/business/live/2026/aug/27/asian-technology-shares-ride-high-ai-optimism-nvidias-stunning-results-jackson-hole-live-updates",
         "https://finance.yahoo.com/quote/ASML/"
       ]
     },
     "KLAC": {
-      "move": "+0.3%",
-      "text": "KLA rose 0.3% in modest semiconductor trading ahead of Nvidia earnings, with no fresh KLA-specific catalyst confirmed.",
+      "move": "0.0%",
+      "text": "KLA finished essentially flat despite the Nvidia-led chip rally, with no fresh company-specific catalyst confirmed and possible new U.S. semiconductor tariffs adding policy uncertainty for chip equipment.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-subdued-run-up-nvidia-results-inflation-print-2026-08-26/",
+        "https://www.theguardian.com/business/live/2026/aug/27/asian-technology-shares-ride-high-ai-optimism-nvidias-stunning-results-jackson-hole-live-updates",
         "https://finance.yahoo.com/quote/KLAC/"
       ]
     },
     "INTC": {
-      "move": "+0.9%",
-      "text": "Intel rose 0.9% as chip shares held relatively firm ahead of Nvidia earnings despite a hotter inflation reading; no fresh Intel-specific catalyst was confirmed.",
+      "move": "+4.4%",
+      "text": "Intel rose 4.4% as Nvidia's strong results and long-term forecast sparked a broad semiconductor rally; no separate Intel-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-subdued-run-up-nvidia-results-inflation-print-2026-08-26/",
+        "https://www.reuters.com/business/nvidia-rises-after-signaling-longer-ai-spending-runway-2026-08-27/",
         "https://finance.yahoo.com/quote/INTC/"
       ]
     },
     "MU": {
-      "move": "+0.6%",
-      "text": "Micron rose 0.6% in the broader semiconductor trade ahead of Nvidia earnings, with no fresh Micron-specific catalyst confirmed.",
+      "move": "-0.3%",
+      "text": "Micron slipped 0.3%, reversing an early Nvidia-led chip gain; no fresh Micron-specific catalyst was confirmed, leaving the close as relative underperformance within an otherwise strong semiconductor session.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-subdued-run-up-nvidia-results-inflation-print-2026-08-26/",
+        "https://www.reuters.com/business/nvidia-rises-after-signaling-longer-ai-spending-runway-2026-08-27/",
         "https://finance.yahoo.com/quote/MU/"
       ]
     },
     "TSLA": {
-      "move": "-1.3%",
-      "text": "Tesla fell 1.3% in ordinary trading as the broader market finished roughly flat to slightly lower, with no confirmed fresh Tesla-specific catalyst strong enough to explain the move.",
+      "move": "+2.6%",
+      "text": "Tesla rose 2.6% during the broader technology rally while investors continued to digest its Nevada robotaxi approval; no stronger same-day Tesla-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-subdued-run-up-nvidia-results-inflation-print-2026-08-26/",
+        "https://www.marketwatch.com/story/tesla-stocks-jumps-as-the-company-gets-ready-for-a-robotaxi-push-c680f87f",
         "https://finance.yahoo.com/quote/TSLA/"
       ]
     },
     "META": {
-      "move": "+1.1%",
-      "text": "Meta rose 1.1% after agreeing to a multibillion-dollar settlement with U.S. states over youth social-media claims, reducing a major litigation overhang without requiring fundamental changes to its business model.",
+      "move": "-0.9%",
+      "text": "Meta fell 0.9% despite the broader technology rally as Poland asked the EU to fine the company €250 million over alleged failures to curb scam advertisements.",
       "sources": [
-        "https://www.reuters.com/business/meta-reaches-18-billion-settlements-over-childrens-social-media-addiction-2026-08-26/",
+        "https://www.reuters.com/world/europe/poland-asks-eu-fine-meta-250-million-urges-action-against-scams-false-ads-2026-08-27/",
         "https://finance.yahoo.com/quote/META/"
       ]
     },
     "PLTR": {
-      "move": "+2.8%",
-      "text": "Palantir rose 2.8% with no fresh company-specific catalyst conclusively confirmed; the move extended its strong post-earnings momentum while the broader market finished roughly flat.",
+      "move": "+4.7%",
+      "text": "Palantir rose 4.7% as the Nvidia-led AI rally lifted technology shares and its strong post-earnings momentum continued; no fresh company-specific catalyst was confirmed.",
       "sources": [
-        "https://www.reuters.com/business/us-stock-futures-subdued-run-up-nvidia-results-inflation-print-2026-08-26/",
-        "https://www.advfn.com/stock-market/NASDAQ/PLTR/options"
+        "https://www.reuters.com/business/nvidia-rises-after-signaling-longer-ai-spending-runway-2026-08-27/",
+        "https://finance.yahoo.com/quote/PLTR/"
       ]
     },
     "SPCX": {
-      "move": "+1.2%",
-      "text": "SpaceX rose 1.2% after announcing plans for a $100 billion Starbase campus in Louisiana, extending the stock's rebound as investors assessed the scale of the company's planned launch expansion.",
+      "move": "+0.9%",
+      "text": "SpaceX rose 0.9% as investors continued digesting its recently announced $100 billion Louisiana Starbase plan; no newer same-day company-specific catalyst was confirmed.",
       "sources": [
         "https://www.investors.com/news/spacex-starbase-louisiana-100-billion-starship-launches-falcon-9-spacex-stock/",
         "https://finance.yahoo.com/quote/SPCX/"
