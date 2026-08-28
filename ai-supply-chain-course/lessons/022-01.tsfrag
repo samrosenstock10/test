@@ -1,0 +1,82 @@
+import type { Lesson } from "./lessons";
+
+export const lesson022 = {
+  number: 22,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Patterning Synthesis — Resolution, Overlay, CD and the Real Lithography Control Loop",
+  date: "2026-08-28",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 017: Large dies suffer fewer candidates per wafer and greater defect exposure, making yield especially important for AI accelerators.
+
+Lesson 018: Masks and reticles carry lithography's master patterns, while the reticle field limits the size of a conventional monolithic die.
+
+Lesson 019: Photoresist turns the scanner's optical image into a temporary physical stencil that later processes can act on.
+
+Lesson 020: Overlay asks whether each new patterned layer lands in the correct position relative to the layers already built.
+
+Lesson 021: Critical-dimension control asks whether the final patterned feature has the right width and geometry, not merely the right location.
+
+The big idea
+
+The last four lessons were not separate trivia about lithography.
+
+They describe one control system.
+
+A fab has to repeatedly answer four different questions:
+
+1. What pattern are we trying to print?
+2. Did the light and resist reproduce that pattern?
+3. Did the new pattern land in the right place?
+4. Did the final transferred feature end up with the right dimensions?
+
+A wafer can pass three of those tests and still fail the fourth.
+
+That is why leading-edge patterning is better understood as a loop of pattern → print → measure → correct, not as one scanner doing one job.
+
+## 1. Start with the intended pattern
+
+The mask or reticle contains the master pattern for one lithography layer.
+
+The scanner projects the reticle pattern onto the wafer.
+
+Resolution asks whether the system can reproduce features small enough for the design. It does not tell us whether the feature lands in the right place or ends with the right width.
+
+Think of handwriting a tiny letter: it can be small enough yet written on the wrong line or with strokes that are too thick.
+
+Patterning therefore has three separate dimensions: size capability, placement accuracy and shape control.
+
+## 2. Photoresist is the temporary translator
+
+The wafer itself does not directly become patterned when light hits it.
+
+Photoresist records the optical image as a chemical pattern; development turns it into a temporary stencil that later etch or other process steps use.
+
+The resist image and the final transferred feature are not automatically identical. Exposure dose, focus, resist chemistry, development and etch can all change the final geometry.
+
+That is why the fab must measure the result rather than simply trust the recipe.
+
+## 3. Overlay controls position
+
+Now imagine the feature is the correct size but shifted sideways.
+
+A metal line may miss the contact underneath it, or a via may only partially connect two layers.
+
+That is an overlay failure: where did this new layer land relative to the layers already on the wafer?
+
+Because a wafer can distort slightly through heat, deposition, etch and CMP, alignment is not just putting it back in the same physical spot. The scanner and metrology system must model and correct small distortions across the wafer.
+
+## 4. Critical dimension controls shape
+
+Now assume the feature lands in exactly the correct position.
+
+It can still be too wide, too narrow or inconsistent across the wafer.
+
+That is the critical-dimension problem.
+
+Final CD depends on the full pattern-transfer chain:
+
+mask → exposure → resist → development → etch → final structure
+
+If a line is too narrow, resistance may rise; if a transistor dimension drifts, switching speed, leakage or power can move away from target.
+
