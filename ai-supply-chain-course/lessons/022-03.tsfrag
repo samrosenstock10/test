@@ -1,0 +1,8 @@
+The features could be positioned incorrectly relative to earlier layers, creating overlay failures, or they could end up with the wrong width or geometry, creating critical-dimension failures. Small resolution alone does not guarantee manufacturable patterns.
+
+## Next lesson
+
+Lesson 023: Multiple Patterning — Why One Lithography Exposure Sometimes Becomes Several
+
+We will see how fabs split one dense pattern across multiple exposure-and-etch steps when a single patterning pass cannot create the required pitch cleanly, and why that multiplies cost, cycle time and overlay demands.`,
+} satisfies Lesson;
