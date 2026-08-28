@@ -1,0 +1,75 @@
+Overlay asks where the feature is. CD asks what geometry it actually became. A fab needs both under control at the same time.
+
+## 5. The real manufacturing loop
+
+Put everything together and the patterning loop becomes:
+
+design target → mask → scanner exposure → resist image → development → pattern transfer → metrology → recipe correction
+
+Then the next wafer arrives and the loop repeats.
+
+Manufacturing is continuous feedback control, not "set the machine correctly once." Tools drift, materials vary and wafers distort.
+
+The fab samples output, detects drift, changes scanner or process recipes, and verifies the correction. That loop is why process-control capability becomes more valuable as tolerances tighten.
+
+## 6. Throughput risk versus yield risk
+
+Patterning creates two different economic failure modes.
+
+The first is throughput risk.
+
+A higher exposure dose, more measurement, extra rework or slower process recipe can increase the time required per wafer. Even if yield remains acceptable, fewer wafers may move through the constrained tool set each day.
+
+The second is yield risk.
+
+Bad overlay, bad CD, resist defects or pattern-transfer errors can produce wafers that continue consuming expensive downstream processing before the problem is discovered.
+
+These risks interact. More measurement may protect yield but add cycle time; less sampling may increase speed but let more drift escape.
+
+The operating goal is not maximum throughput or maximum measurement. It is maximum good output from the connected fab.
+
+## 7. Where the suppliers fit
+
+ASML sits at the center of exposure and scanner alignment. Photoresist suppliers affect how cleanly the image is recorded. KLA and other process-control vendors measure placement, dimensions and defects; Hitachi High-Tech is important in CD-SEM measurement.
+
+Etch suppliers such as Lam Research and Applied Materials also matter because pattern transfer can change the geometry that lithography created.
+
+The supplier lesson: final performance depends on a coupled system, not one heroic machine.
+
+## 8. The analyst's error tree
+
+When a new process is having patterning problems, do not immediately conclude "lithography is bad."
+
+Work down the error tree:
+
+1. Can the system resolve the intended feature?
+2. Is the mask correct and stable?
+3. Is the resist recording the image cleanly?
+4. Is overlay within the required placement budget?
+5. Is final CD within specification?
+6. Is etch changing the resist pattern too much?
+7. Is the problem random, systematic or tool-specific?
+8. How quickly can metrology detect and correct the drift?
+
+Each answer points to a different bottleneck and potentially a different supplier.
+
+That is much closer to how an expert should reason than treating every leading-edge problem as simply "more EUV."
+
+## Remember these 6 things
+
+1. Resolution, overlay and critical dimension are separate manufacturing requirements.
+
+2. Photoresist translates the optical image into a temporary physical stencil.
+
+3. The final feature is created by the whole pattern-transfer chain, not the scanner alone.
+
+4. Metrology closes the loop by detecting drift and feeding corrections back into production.
+
+5. Patterning failures can hurt either throughput, yield, performance-bin mix, or several at once.
+
+6. The useful analyst question is not "which machine is most advanced?" but "which part of the control loop is limiting good output?"
+
+## Quick check
+
+A fab can print extremely small features and still have poor yield. Give two separate reasons from this lesson.
+
