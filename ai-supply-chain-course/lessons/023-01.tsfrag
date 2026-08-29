@@ -1,0 +1,70 @@
+import type { Lesson } from "./lessons";
+
+export const lesson023 = {
+  number: 23,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Multiple Patterning — Why One Lithography Layer Sometimes Becomes Several",
+  date: "2026-08-29",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 018: Masks and reticles carry lithography's master patterns, while the reticle field limits the size of a conventional monolithic die.
+
+Lesson 019: Photoresist turns the scanner's optical image into a temporary physical stencil that later processes can act on.
+
+Lesson 020: Overlay asks whether each new patterned layer lands in the correct position relative to the layers already built.
+
+Lesson 021: Critical-dimension control asks whether the final patterned feature has the right width and geometry, not merely the right location.
+
+Lesson 022: Leading-edge patterning is a feedback loop in which resolution, resist, overlay, CD, etch and metrology must all work together.
+
+The big idea
+
+Sometimes the circuit pattern is too dense to print cleanly in one lithography pass.
+
+Instead of forcing one exposure to create every line, the fab can split the pattern into two or more simpler patterns, print them separately, and combine them on the wafer.
+
+That is **multiple patterning**.
+
+Think of drawing alternating black and white fence posts that are too close together for your marker. One workaround is to draw every other post first, then come back and fill the gaps with a second pass.
+
+The final pattern is denser than either pass could create alone.
+
+## 1. Why a single exposure can run out of room
+
+Lithography has a practical resolution limit: there is only so much detail one optical exposure can reproduce reliably at a given wavelength, numerical aperture, resist and process window.
+
+When designers want lines closer together than one exposure can comfortably resolve, the fab has choices.
+
+It can use a more capable lithography system, redesign the pattern, or split the layer into multiple patterning steps.
+
+Before EUV became widely used in leading-edge logic, advanced DUV lithography relied heavily on multiple patterning to keep shrinking critical pitches.
+
+EUV reduced some of that burden by printing smaller features in fewer exposures, but it did not make every form of multi-patterning disappear.
+
+## 2. The simplest intuition: double patterning
+
+Imagine a layer containing tightly packed parallel lines.
+
+Instead of asking one mask to print every line, the design is divided into two masks:
+
+- Mask A prints lines 1, 3, 5, 7...
+- Mask B prints lines 2, 4, 6, 8...
+
+Each exposure now sees a less-dense pattern that is easier to resolve.
+
+After both patterns are transferred, the wafer contains the full dense structure.
+
+The important point is that one logical circuit layer can become several physical manufacturing operations.
+
+## 3. Why this makes manufacturing harder
+
+The second pattern must land precisely between the first pattern's features.
+
+So multiple patterning turns a resolution problem into a larger **overlay problem**.
+
+If the first pass is slightly left and the second pass is slightly right, the spacing between neighboring lines becomes uneven.
+
+That can create electrical variation or outright defects.
+
+This connects directly to Lesson 020: splitting one layer into several exposures means those exposures must align not only with earlier circuit layers, but also with each other.
+
