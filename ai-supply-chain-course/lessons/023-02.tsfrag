@@ -1,0 +1,55 @@
+## 4. More passes mean more cycle time and cost
+
+Every extra patterning pass can require some combination of:
+
+- another mask;
+- another resist coat and bake;
+- another scanner exposure;
+- another development step;
+- another etch or deposition step;
+- extra cleaning;
+- extra metrology;
+- and more waiting in tool queues.
+
+The exact flow depends on the patterning scheme, but the economic direction is clear.
+
+A layer that needs two, three or four patterning cycles consumes more tool time than a layer printed once.
+
+That raises wafer cost and lengthens cycle time even if every individual step works perfectly.
+
+## 5. Self-aligned patterning changes the trick
+
+Not all multiple patterning simply uses several masks.
+
+In **self-aligned double patterning**, or SADP, the fab first prints a relatively easy template. It then deposits a thin spacer material along the sides of that template and removes selected material so the spacers themselves define a denser set of features.
+
+The clever part is that the new lines are partly defined by deposition thickness rather than by asking a second optical exposure to position every line independently.
+
+Self-aligned quadruple patterning, or SAQP, repeats the idea to create even denser structures.
+
+This can reduce some overlay sensitivity for the repeated line pattern, but it adds deposition, etch and process-control steps.
+
+So again, the bottleneck migrates rather than vanishes.
+
+## 6. Why NAND is an important contrast
+
+Leading-edge logic often fights to create very small horizontal pitches.
+
+Modern NAND took a different route: instead of continuing to shrink every memory cell only in two dimensions, manufacturers began stacking many layers vertically.
+
+That does not eliminate difficult patterning, but it changes where complexity accumulates. Very deep etch, deposition uniformity and vertical structure control become central.
+
+This is a useful expert habit: when one scaling method becomes too expensive, the industry may change architecture rather than keep repeating the same process more times forever.
+
+## 7. Why EUV changed the economics
+
+EUV's shorter wavelength allowed some critical layers that previously needed several DUV patterning steps to be printed with fewer exposures.
+
+That can remove masks, process steps, queue time and overlay opportunities.
+
+This is why comparing lithography tools only by purchase price is incomplete.
+
+An EUV scanner is extremely expensive, but its economic value can include replacing several DUV exposures and the deposition, etch, cleaning and metrology work surrounding them.
+
+The correct comparison is often **cost and good-wafer output for the full patterning flow**, not scanner price versus scanner price.
+
