@@ -1,0 +1,47 @@
+## 8. The supplier map
+
+Multiple patterning links several equipment categories.
+
+ASML supplies the lithography scanners. Applied Materials and Lam Research participate in deposition and etch steps that become especially important in self-aligned schemes. KLA and other process-control vendors help measure overlay, dimensions and defects created across the repeated flow.
+
+Mask suppliers and resist/material suppliers also see more work when the process uses more masks and exposures.
+
+This is why one architectural choice in patterning can change demand across several parts of wafer-fab equipment.
+
+## 9. The analyst's mental model
+
+When someone says a node has a tighter pitch, ask:
+
+1. Can that pitch be printed in one exposure?
+2. If not, how many patterning passes are required?
+3. Which steps are lithography versus deposition/etch-driven?
+4. How much extra overlay control does the scheme require?
+5. What happens to wafer cycle time and tool demand?
+6. Could EUV or a new architecture remove some of those passes?
+
+That translation matters because two nodes with similar headline dimensions can have very different manufacturing complexity and cost.
+
+## Remember these 5 things
+
+1. Multiple patterning splits one dense logical layer into several easier physical patterning steps.
+
+2. It extends resolution, but increases process count, cost, cycle time and often overlay burden.
+
+3. Self-aligned schemes use deposited spacers to create denser patterns, shifting work toward deposition and etch.
+
+4. EUV can be valuable because one EUV exposure may replace several DUV-centered patterning steps on some layers.
+
+5. The useful economic unit is the full patterning flow required to create a good feature, not the sticker price of one scanner.
+
+## Quick check
+
+Why can replacing several DUV patterning passes with one EUV pass be economically attractive even if the EUV scanner itself is much more expensive?
+
+Because the EUV pass may eliminate additional masks, exposures, deposition/etch steps, metrology, queue time and overlay risk. The comparison must be made at the full process-flow level.
+
+## Next lesson
+
+Lesson 024: EUV Throughput and Stochastics — Why More Photons Can Mean Slower Wafers
+
+We will connect exposure dose, photons, resist behavior, defects and scanner throughput to understand why lithography capacity is not just a count of installed EUV machines.`,
+} satisfies Lesson;
