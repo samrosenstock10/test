@@ -1,0 +1,69 @@
+import type { Lesson } from "./lessons";
+
+export const lesson024 = {
+  number: 24,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "EUV Throughput and Stochastics — Why More Photons Can Mean Slower Wafers",
+  date: "2026-08-30",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 019: Photoresist converts a lithography image into a temporary chemical stencil, and its sensitivity can influence both yield and scanner throughput.
+
+Lesson 020: Overlay measures whether a new pattern lands in the right place relative to earlier layers, making alignment a system-wide yield constraint.
+
+Lesson 021: Critical-dimension control asks whether printed features have the correct width and geometry, because tiny size errors can alter electrical behavior.
+
+Lesson 022: Lithography is a closed control loop linking resolution, resist, overlay, CD, etch and metrology rather than a single scanner exposure.
+
+Lesson 023: Multiple patterning creates denser structures by splitting one logical layer into several physical patterning steps, trading resolution for more process complexity.
+
+The big idea
+
+EUV lithography has a strange tradeoff:
+
+**more photons usually make the printed pattern more reliable — but delivering those photons takes time.**
+
+So the same EUV scanner can produce different wafer output depending on the exposure dose required by the resist and pattern.
+
+That means counting scanners is not enough to understand EUV capacity.
+
+A better mental model is:
+
+**effective EUV capacity ≈ installed scanners × wafers per hour × availability × utilization**
+
+And even that must be adjusted for how many EUV layers each wafer needs.
+
+## 1. What “dose” means
+
+During exposure, the scanner delivers EUV energy to the photoresist.
+
+The **dose** is the amount of exposure energy delivered per unit area, commonly measured in millijoules per square centimeter.
+
+Higher dose means the resist receives more photon-driven chemical events before the scanner moves on.
+
+Why might that help?
+
+Because photons arrive statistically. At very small dimensions, a feature may depend on a relatively small number of useful photon events. Random variation can therefore become large enough that the feature prints incorrectly.
+
+Those random local failures are part of what engineers call **stochastics**.
+
+Think of flipping a coin. If you flip it 10,000 times, the result is very predictable. If you flip it four times, randomness dominates.
+
+Tiny EUV features have a similar problem: too little photon information can produce missing contacts, broken lines, bridges, rough edges or local dimension errors even when the scanner itself is well calibrated.
+
+## 2. The dose-throughput tradeoff
+
+Suppose one pattern prints reliably at 20 mJ/cm², while another needs 30 mJ/cm² to suppress defects.
+
+The second pattern requires 50% more exposure energy.
+
+All else equal, that means more exposure time and therefore fewer wafers per hour.
+
+ASML’s older NXE:3400C specification made this relationship unusually visible: at 20 mJ/cm² it specified at least 170 wafers per hour, while at 30 mJ/cm² it specified at least 135 wafers per hour.
+
+Do not treat those exact numbers as a rule for every modern tool. Newer systems have more source power, faster stages and better productivity.
+
+The important relationship is:
+
+**higher required dose can consume scanner capacity.**
+
