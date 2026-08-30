@@ -1,0 +1,54 @@
+## 7. The bottleneck can move
+
+Faster EUV does not guarantee finished-chip output rises by the same amount.
+
+If etch, deposition, metrology, CMP, HBM or advanced packaging is already the marginal bottleneck, faster lithography may simply push wafers into another queue faster.
+
+So the operator-level question is not:
+
+“Did EUV throughput improve?”
+
+It is:
+
+**“Was EUV the constraint on incremental good-chip output?”**
+
+This distinction matters economically. Improving a non-binding constraint can still be useful, but it does not necessarily create immediate incremental system output.
+
+## The analyst’s mental model
+
+When you hear a claim about EUV capacity, ask:
+
+1. How many scanners are installed and qualified?
+2. What wafers-per-hour can the relevant recipe actually achieve?
+3. What dose does the layer require?
+4. How many EUV layers does each wafer need?
+5. What is tool availability?
+6. Is EUV the marginal bottleneck?
+7. If EUV capacity rises, which downstream step becomes limiting next?
+
+That turns “more EUV machines” into a production model.
+
+## Remember these 5 things
+
+1. EUV dose is exposure energy delivered to the resist; higher dose can improve photon statistics but takes more exposure time.
+
+2. Stochastic defects are random local patterning failures that become important when tiny features depend on relatively few photon-driven events.
+
+3. Wafers per hour depends partly on dose, source power, stages and process requirements — not just scanner model.
+
+4. Effective EUV capacity depends on scanner count, throughput, availability, utilization and EUV layers per wafer.
+
+5. Faster EUV only increases finished-chip output materially if lithography is actually the marginal bottleneck.
+
+## Quick check
+
+Why might two fabs with the same number of EUV scanners have very different effective EUV capacity?
+
+Because their scanners may run different doses, wafers-per-hour, availability levels, utilization rates and numbers of EUV layers per wafer.
+
+## Next lesson
+
+Lesson 025: EUV Availability and Service — Why Uptime Can Matter Almost as Much as Tool Count
+
+We will look at downtime, maintenance, installed-base service and why a small change in tool availability can create or destroy substantial fab capacity.`,
+} satisfies Lesson;
