@@ -1,0 +1,63 @@
+## 3. Why source power matters economically
+
+One way to deliver the same dose faster is to generate more usable EUV light.
+
+More source power means the scanner can put the required energy onto the wafer in less time.
+
+That is why source power is not merely an engineering specification. It can become capacity.
+
+As of April 2026, ASML said the NXE:3800E had reached 230 wafers per hour, up from 220 wafers per hour, and that its longer-term Low-NA EUV roadmap targets at least 330 wafers per hour around the start of the next decade.
+
+Going from 220 to 230 wafers per hour is roughly a 4.5% increase in nominal throughput from an installed tool.
+
+For equipment this expensive and difficult to add quickly, a few percentage points of productivity can matter.
+
+## 4. Scanner count is not the same as capacity
+
+Imagine two fabs each own 20 EUV scanners.
+
+Fab A runs lower-dose recipes, has excellent uptime and uses 15 EUV layers per wafer.
+
+Fab B runs more difficult, higher-dose recipes, has more downtime and uses 20 EUV layers per wafer.
+
+The two fabs do not have the same usable EUV capacity even though the machine count is identical.
+
+This is why a statement such as “the fab installed five more EUV tools” is incomplete.
+
+You also need to know:
+
+- qualified wafers per hour;
+- required dose;
+- tool availability;
+- utilization;
+- EUV layers per wafer;
+- and whether EUV is actually the marginal bottleneck.
+
+## 5. One wafer can consume EUV capacity many times
+
+A leading-edge wafer does not pass through EUV once.
+
+Different critical layers require separate exposures.
+
+So if a process moves from 15 EUV layers to 20, the same wafer-start volume creates about one-third more EUV exposure demand before considering any change in dose.
+
+That is **lithography intensity**.
+
+This connects directly to multiple patterning. Manufacturing demand depends on the number and difficulty of process passes, not simply on the number of wafers entering the fab.
+
+## 6. Better resist can act like hidden capacity
+
+Now reconnect this to Lesson 019.
+
+Suppose a better resist achieves the same pattern quality at a lower dose.
+
+The resist itself may cost more, but if it lets the scanner expose wafers faster without increasing stochastic defects, the fab can get more output from the installed EUV fleet.
+
+So a materials improvement can behave like a small capacity expansion.
+
+The chain is:
+
+better resist or more source power → acceptable pattern with less exposure time → more wafers per hour → more effective EUV capacity
+
+That is why tool vendors, materials suppliers and process integration cannot be analyzed independently.
+
