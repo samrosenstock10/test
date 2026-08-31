@@ -1,0 +1,50 @@
+## 4. A 5-point availability improvement can resemble another scanner
+
+Use a simplified fleet of 20 scanners, each capable of 230 wafers per hour when running.
+
+Nominal throughput is:
+
+20 × 230 = 4,600 wafers per hour.
+
+At 90% availability, effective available throughput is:
+
+4,600 × 90% = 4,140 wafers per hour.
+
+At 95% availability:
+
+4,600 × 95% = 4,370 wafers per hour.
+
+The difference is **230 wafers per hour** — equal to the nominal throughput of one additional scanner in this simplified example.
+
+Do not interpret 90% or 95% as a claim about a specific customer’s current EUV fleet. They are teaching assumptions.
+
+The point is structural:
+
+**on a large installed base, a few percentage points of availability can have the capacity effect of expensive new hardware.**
+
+## 5. Why service becomes economically important
+
+This creates a second ASML business around the installed fleet.
+
+ASML calls its service and field-option revenue **Installed Base Management**. In 2025, that category generated about €8.2 billion versus €32.7 billion of total ASML sales — roughly one-quarter of company revenue.
+
+That figure is not pure repair revenue; it also includes field options and upgrades. But it shows why the economics do not end when a scanner is shipped.
+
+Once a fab has billions of euros of ASML equipment embedded in a qualified production flow, it needs continuing parts, service, software, upgrades and engineering support to protect output.
+
+This is recurring revenue attached to an installed capital base.
+
+## 6. Why the service moat can be strong
+
+A fab cannot treat an EUV scanner like generic factory equipment and call any local repair shop.
+
+The tool is deeply integrated with ASML hardware, software, diagnostics, spare-parts logistics and process knowledge. A poorly executed repair or calibration can reduce throughput, overlay performance or yield even if the machine technically turns back on.
+
+The switching problem is therefore not just contractual.
+
+It is operational risk.
+
+For a leading-edge fab, the cost of losing production on an EUV bottleneck can be far larger than the price of the service intervention itself.
+
+That gives the original equipment vendor unusually strong economic relevance over the life of the tool.
+
