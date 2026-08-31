@@ -1,0 +1,69 @@
+## 7. Availability is not the same as utilization
+
+Keep these two concepts separate.
+
+**Availability** asks: could the scanner run?
+
+**Utilization** asks: was the available scanner actually being used for production?
+
+A tool can be 95% available but only 70% utilized because wafer demand is weak, another process is bottlenecked, recipes are not qualified, or scheduling leaves idle time.
+
+So effective output still depends on the full chain:
+
+systems × throughput × availability × utilization × process-pass demand
+
+This is why an analyst should not convert installed tool count directly into wafer starts.
+
+## 8. The bottleneck lesson
+
+Suppose EUV is the marginal constraint in a leading-edge fab. Raising availability can immediately increase wafer output.
+
+But if etch, deposition, metrology or advanced packaging is already the binding constraint, better EUV uptime may mainly create a longer queue somewhere else.
+
+So availability has two values:
+
+1. **local value:** more scanner hours are available;
+2. **system value:** more finished good chips are produced.
+
+The second matters more economically.
+
+This is the recurring theme of the course: capacity only creates value when it relaxes the actual bottleneck.
+
+## The analyst’s mental model
+
+When someone says a fab has “20 EUV tools,” ask:
+
+1. What qualified wafers per hour do the relevant recipes achieve?
+2. What is actual tool availability?
+3. What drives planned versus unplanned downtime?
+4. How fast can failures be diagnosed and repaired?
+5. How much of the fleet is truly utilized?
+6. How many EUV exposures does each wafer require?
+7. Is EUV the marginal bottleneck?
+
+Tool count is inventory. **Available productive tool-hours are capacity.**
+
+## Remember these 5 things
+
+1. Availability is the share of scheduled time when a tool is capable of qualified production.
+
+2. Planned maintenance can improve long-run output by preventing larger unexpected failures.
+
+3. Better MTBF and lower MTTR both raise availability.
+
+4. On a large fleet, a small availability gain can create capacity comparable to adding another expensive scanner.
+
+5. ASML’s installed-base business matters because protecting uptime and upgrading qualified tools remains economically valuable long after the original system sale.
+
+## Quick check
+
+Why can improving availability be cheaper and faster than adding another scanner?
+
+Because it extracts more productive hours from equipment the fab already owns, avoiding the manufacturing, delivery, installation, qualification and cleanroom requirements of a new tool — provided EUV is actually the limiting constraint.
+
+## Next lesson
+
+Lesson 026: High-NA EUV — Why a Larger Numerical Aperture Improves Resolution but Changes the Manufacturing Tradeoffs
+
+We will explain numerical aperture physically, why High-NA can reduce multiple patterning, and why better resolution does not automatically mean cheaper wafers.`,
+} satisfies Lesson;
