@@ -1,0 +1,73 @@
+import type { Lesson } from "./lessons";
+
+export const lesson025 = {
+  number: 25,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "EUV Availability and Service — Why Uptime Can Matter Almost as Much as Tool Count",
+  date: "2026-08-31",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 020: Overlay asks whether each new pattern lands in the correct place relative to earlier layers, making alignment a system-wide yield constraint.
+
+Lesson 021: Critical-dimension control asks whether printed features have the correct width and shape, because tiny geometry errors can alter electrical behavior.
+
+Lesson 022: Lithography is a closed control loop linking resolution, resist, overlay, CD, etch and metrology rather than a single exposure step.
+
+Lesson 023: Multiple patterning creates denser structures by splitting one logical layer into several physical patterning steps, trading resolution for more process complexity.
+
+Lesson 024: EUV dose, source power and stochastic defects connect pattern quality directly to scanner wafers-per-hour and effective lithography capacity.
+
+The big idea
+
+Yesterday we built the EUV capacity equation around scanner count and wafers per hour.
+
+Today we add the variable that turns a fast machine into a useful production asset:
+
+**availability — the fraction of scheduled production time when the tool is actually capable of running wafers.**
+
+ASML itself uses the simple relationship:
+
+**EUV capacity ≈ systems × throughput × availability.**
+
+That means a fab can gain meaningful lithography capacity without buying another scanner if it can keep the installed fleet running more consistently.
+
+## 1. What “availability” means physically
+
+An EUV scanner is not one simple machine. It is a tightly coupled system containing a laser-produced-plasma light source, vacuum systems, reflective optics, reticle and wafer stages, sensors, contamination-control systems, cooling, software and many calibration loops.
+
+If a critical subsystem is unavailable, the scanner may be unable to expose production wafers even if most of the machine is healthy.
+
+Think of an airplane. Having the engines, wings and pilots does not help if one flight-critical system grounds the aircraft.
+
+For a fab operator, time therefore falls into two broad buckets:
+
+- **available time:** the scanner can run qualified production;
+- **unavailable time:** maintenance, repair, calibration or another issue prevents production.
+
+Some downtime is planned. Some is unexpected.
+
+## 2. Planned maintenance is not wasted time
+
+A scanner contains components whose performance changes with use. Engineers schedule maintenance, cleaning, replacement and calibration before those changes become yield problems or unexpected failures.
+
+The goal is not “zero maintenance.”
+
+The goal is to choose maintenance timing that maximizes reliable production over the long run.
+
+Skipping maintenance may temporarily increase today’s uptime but create a larger failure tomorrow. This is the same logic airlines use when taking an aircraft out of service for inspection rather than waiting for something to break in flight.
+
+A well-run fab also tries to place maintenance into lower-value windows and coordinate work so several tasks happen during the same outage rather than creating separate interruptions.
+
+## 3. Unplanned downtime is more painful
+
+Unexpected failures are worse because they interrupt the production schedule and create uncertainty.
+
+Two useful reliability concepts are:
+
+- **MTBF — mean time between failures:** roughly, how long the system runs before a failure occurs;
+- **MTTR — mean time to repair:** roughly, how long it takes to diagnose and restore the system after a failure.
+
+Availability improves when failures happen less often, repairs happen faster, or both.
+
+This is why diagnostics, spare parts, field engineers, remote monitoring and predictive maintenance can become capacity tools rather than merely support functions.
+
