@@ -1,0 +1,100 @@
+import type { Lesson } from "./lessons";
+
+export const lesson026 = {
+  number: 26,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "High-NA EUV — Why a Larger Numerical Aperture Improves Resolution but Changes the Manufacturing Tradeoffs",
+  date: "2026-09-01",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 021: Critical-dimension control asks whether patterned features have the intended width and geometry, because tiny size errors can change electrical behavior.
+
+Lesson 022: Lithography is a closed control loop linking resolution, resist, overlay, CD, etch and metrology rather than a single scanner exposure.
+
+Lesson 023: Multiple patterning creates denser structures by splitting one logical layer into several physical patterning steps, trading resolution for more process complexity.
+
+Lesson 024: EUV dose, source power and stochastic defects connect pattern quality directly to scanner wafers-per-hour and effective lithography capacity.
+
+Lesson 025: EUV availability converts installed tools into productive capacity, so uptime and service can matter almost as much as scanner count.
+
+The big idea
+
+High-NA EUV improves lithography resolution by changing the optics rather than changing EUV’s 13.5 nm wavelength.
+
+The key number is **numerical aperture**, or **NA**.
+
+Mainstream EUV scanners use roughly **0.33 NA**. High-NA systems raise that to **0.55 NA**.
+
+That sounds like one engineering specification, but it changes the economics of the full patterning flow.
+
+Higher NA can print smaller features in a single exposure and remove some multiple-patterning steps. But the optics are larger and more complex, the exposure field is smaller, the tool is more expensive, and the surrounding mask, resist, metrology and process ecosystem must mature with it.
+
+So the useful question is not simply “is High-NA better?”
+
+It is:
+
+**On which layers does the extra resolution remove enough manufacturing complexity to justify the new costs and tradeoffs?**
+
+## 1. What numerical aperture means physically
+
+Lithography resolution is often summarized with the Rayleigh relationship:
+
+**minimum printable feature ≈ k₁ × wavelength ÷ NA**
+
+You do not need to memorize the equation.
+
+Keep the direction:
+
+- shorter wavelength improves resolution;
+- larger NA improves resolution;
+- process optimization can also push imaging closer to the physical limit.
+
+EUV already shortened wavelength dramatically versus DUV: 13.5 nm instead of 193 nm.
+
+High-NA keeps the same 13.5 nm light but changes the projection optics so they collect and focus a wider cone of light onto the wafer.
+
+Think of a camera lens: a more capable optical system can preserve finer image detail.
+
+## 2. Why 0.55 NA is a meaningful jump
+
+ASML’s NXE EUV platform uses 0.33 NA.
+
+Its EXE High-NA platform uses 0.55 NA.
+
+ASML says the EXE platform reaches about **8 nm resolution** and can print features about **1.7× smaller** in one exposure than its 0.33-NA NXE systems.
+
+If dimensions shrink by 1.7× in both directions, the theoretical area-density improvement is roughly:
+
+1.7 × 1.7 ≈ **2.9×**
+
+Do not read that as “every High-NA node gets 2.9× more transistors.” Real chip density depends on layout, design rules, routing and architecture.
+
+The important point is that the imaging capability changes materially, not marginally.
+
+## 3. The biggest economic benefit: removing process passes
+
+Connect this directly to Lesson 023.
+
+Suppose a critical layer cannot be printed cleanly with one 0.33-NA EUV exposure.
+
+The fab may need multiple patterning: extra masks, resist coats, exposures, etch/deposition steps, cleans and metrology.
+
+If High-NA prints that layer in one exposure, the fab may remove several surrounding operations.
+
+That can reduce:
+
+- wafer cycle time;
+- overlay opportunities;
+- defect opportunities;
+- mask count;
+- deposition and etch intensity;
+- queueing between repeated patterning steps.
+
+This is why a much more expensive scanner can still lower the **cost of creating one good patterned layer**.
+
+The right comparison is not High-NA scanner price versus Low-NA scanner price.
+
+It is:
+
+**full High-NA process flow versus full Low-NA multiple-patterning flow.**
+
