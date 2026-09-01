@@ -1,0 +1,73 @@
+## 4. The half-field tradeoff
+
+High-NA does not simply replace every existing EUV tool.
+
+Because the 0.55-NA projection optics are so large, ASML uses **anamorphic optics**: the image is reduced differently in the two directions.
+
+That lets chipmakers keep using conventionally sized reticles, but the wafer exposure field becomes **half the area** of the normal 0.33-NA EUV field.
+
+Low-NA EUV can expose about **26 mm × 33 mm** in one field.
+
+High-NA’s field is roughly **26 mm × 16.5 mm**.
+
+For many structures this is manageable.
+
+For very large dies, especially AI accelerators near the conventional reticle limit, the smaller field can create another integration problem: some layers may need stitching across fields or a carefully chosen mix of High-NA and Low-NA exposures.
+
+Better resolution can therefore create a new geometric constraint.
+
+## 5. Why productivity still matters
+
+A smaller field means the scanner must expose more fields to cover the same wafer area.
+
+If nothing else changed, that would hurt throughput.
+
+ASML therefore redesigned the EXE platform with faster wafer and reticle stages.
+
+This is a useful fab-operator lesson:
+
+**a better imaging specification is not enough if the machine gives up too much wafer productivity to achieve it.**
+
+The tool still has to deliver competitive wafers per hour, overlay, dose efficiency and availability.
+
+That is why High-NA is not merely an optics project. It is a whole-system engineering problem.
+
+## 6. The cost hurdle is enormous
+
+High-NA machines are among the most expensive manufacturing tools ever built.
+
+Public reporting has put first-generation systems around the **€350 million / roughly $400 million** class.
+
+That scale matters, but the tool’s sticker price is not the final economic answer.
+
+A €350 million tool that removes several masks and repeated process passes across a high-volume node may create attractive system economics.
+
+The same tool used on a layer that 0.33-NA EUV already prints cheaply and reliably may add little value.
+
+So High-NA adoption should be **layer-specific and node-specific**, not automatic.
+
+## 7. Maturity matters as much as resolution
+
+A mature 0.33-NA EUV fleet has years of production learning behind it.
+
+High-NA must prove:
+
+- imaging and overlay;
+- resist behavior;
+- mask quality;
+- defectivity;
+- tool availability;
+- throughput at real production doses;
+- matching between machines;
+- process integration across the fab.
+
+By early 2026, ASML said High-NA had reached readiness for high-volume chip production after extensive wafer processing.
+
+But customers still have to qualify it inside their own nodes and products.
+
+That distinction matters:
+
+**technology readiness is not the same as customer production maturity.**
+
+A foundry can rationally delay High-NA on a given layer if the older flow is already qualified, yielding well and economically competitive.
+
