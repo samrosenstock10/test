@@ -1,0 +1,60 @@
+## 8. The supplier map and second-order effects
+
+ASML captures the scanner economics, but High-NA changes demand around the scanner too.
+
+ZEISS supplies the advanced reflective optics.
+
+Photoresist suppliers need chemistries that exploit higher imaging contrast without unacceptable stochastic defects or dose penalties.
+
+KLA and other process-control suppliers must measure tighter overlay, CD and defect budgets.
+
+Etch and deposition suppliers may lose some process intensity if High-NA removes multiple-patterning steps on certain layers — even though those tools remain essential elsewhere.
+
+That is an important second-order effect:
+
+**a breakthrough in one equipment category can reduce demand intensity in another.**
+
+## The analyst’s decision tree
+
+When a chipmaker adopts High-NA, ask:
+
+1. Which specific layers use it?
+2. What Low-NA or multiple-patterning flow does it replace?
+3. How many masks and process passes disappear?
+4. What happens to wafer cycle time?
+5. What is real throughput at the required dose?
+6. How mature are availability and service?
+7. Does the half-field create stitching or layout complications?
+8. What happens to deposition, etch and metrology intensity?
+9. Does total cost per good wafer improve?
+
+High-NA is not economically valuable because 0.55 is bigger than 0.33.
+
+It is valuable when **better imaging removes more manufacturing complexity than the new system introduces.**
+
+## Remember these 6 things
+
+1. Numerical aperture is one of the main variables controlling lithography resolution; higher NA enables smaller printable features at the same wavelength.
+
+2. High-NA EUV raises NA from 0.33 to 0.55 and targets roughly 8 nm single-exposure resolution.
+
+3. Its biggest economic advantage can be replacing multiple-patterning steps, not merely printing a smaller feature.
+
+4. High-NA uses anamorphic optics and a half-size exposure field, creating new stage-speed and large-die integration tradeoffs.
+
+5. A roughly €350 million-class tool can still lower total wafer cost if it removes enough masks, process steps, cycle time and defects.
+
+6. The correct comparison is total cost and good-wafer output for the complete process flow, not scanner price alone.
+
+## Quick check
+
+Why might a fab choose not to use High-NA on a layer even though High-NA has better resolution?
+
+Because the existing 0.33-NA process may already print that layer reliably and cheaply. If High-NA does not remove enough steps or improve yield enough to offset its tool cost, half-field complexity and qualification burden, the older flow can remain economically superior.
+
+## Next lesson
+
+Lesson 027: EUV Pellicles and Mask Protection — Why a Tiny Particle on the Master Pattern Can Repeat Across Thousands of Dies
+
+We will return to the mask ecosystem and explain how pellicles protect reticles, why EUV makes that protection unusually difficult, and how contamination control can become a yield and throughput issue.`,
+} satisfies Lesson;
