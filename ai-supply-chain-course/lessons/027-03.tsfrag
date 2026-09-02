@@ -1,0 +1,41 @@
+
+
+1. What is its single-pass EUV transmission?
+2. What does that imply after two crossings?
+3. How much extra source power or exposure time does the loss require?
+4. Can the membrane survive the relevant EUV power and temperature?
+5. How long does it last before replacement?
+6. What contamination risk does it remove?
+7. How often must the mask still be inspected or cleaned?
+8. Is EUV actually the marginal bottleneck?
+
+The useful equation is not pellicle price.
+
+It is:
+
+**pellicle economics = avoided contamination and yield loss − throughput penalty − replacement and inspection cost**
+
+## Remember these 5 things
+
+1. A particle on a reticle can create a repeating systematic defect across many exposures.
+
+2. A pellicle protects the mask by moving contamination out of the optical focal plane.
+
+3. EUV pellicles are difficult because 13.5 nm light is strongly absorbed by most materials and must cross the membrane twice.
+
+4. Pellicle transmission can affect scanner throughput because lost EUV energy must be replaced with more source power or exposure time.
+
+5. The right question is whether the pellicle improves total good-wafer economics, not whether the membrane itself is expensive.
+
+## Quick check
+
+Why can improving single-pass pellicle transmission from 94% to 97% matter more than the three-percentage-point difference initially suggests?
+
+Because EUV crosses the pellicle twice. In a simplified calculation, 94% single-pass transmission gives about 88% two-pass transmission, while 97% gives about 94%, recovering materially more usable EUV energy.
+
+## Next lesson
+
+Lesson 028: EUV Masks and Multilayer Mirrors — Why the “Mask” Is Actually a Precision Optical Stack
+
+We will look inside the reflective EUV reticle itself, explain why it uses multilayer mirrors rather than transparent glass, and connect mask defects and reflectivity to scanner dose, imaging and yield.`,
+} satisfies Lesson;
