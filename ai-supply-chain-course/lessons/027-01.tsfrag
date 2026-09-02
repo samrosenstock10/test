@@ -1,0 +1,70 @@
+import type { Lesson } from "./lessons";
+
+export const lesson027 = {
+  number: 27,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "EUV Pellicles and Mask Protection — Why a Tiny Particle on the Master Pattern Can Repeat Across Thousands of Dies",
+  date: "2026-09-02",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 022: Lithography is a closed control loop linking resolution, resist, overlay, critical dimension, etch and metrology rather than a single exposure step.
+
+Lesson 023: Multiple patterning extends resolution by splitting one logical layer into several physical patterning steps, trading simplicity for more cost, cycle time and overlay risk.
+
+Lesson 024: EUV dose, source power and stochastic defects connect pattern quality directly to scanner wafers-per-hour and effective lithography capacity.
+
+Lesson 025: EUV availability converts installed scanners into productive capacity, so uptime and service can matter almost as much as tool count.
+
+Lesson 026: High-NA EUV improves resolution by raising numerical aperture, but its value depends on whether it removes more process complexity than it introduces.
+
+The big idea
+
+The reticle is the master pattern used again and again to print one chip layer.
+
+That repetition creates a dangerous asymmetry:
+
+**one particle on the reticle can repeat the same defect across every exposure field that follows.**
+
+A **pellicle** is a very thin protective membrane suspended above the reticle. Its job is to make particles land somewhere where they are too far out of focus to print sharply onto the wafer.
+
+That sounds simple. In EUV, it is not.
+
+The membrane must survive high EUV power, remain mechanically stable in vacuum, absorb very little 13.5 nm light and avoid distorting the image.
+
+So a seemingly minor piece of material can protect the productivity of one of the most expensive tools in the fab.
+
+## 1. Why a mask particle is unusually dangerous
+
+A random particle on a wafer usually damages only the local area where it lands.
+
+A particle on a reticle is different because the reticle is reused for many exposures. If contamination sits on the patterned surface and prints into the image, the scanner can reproduce the same defect field after field and wafer after wafer until engineers catch it.
+
+Think of a photocopier with dirt on the master document.
+
+The problem is not one dirty copy. It is making thousands of copies with the same mark.
+
+That makes reticle contamination a **systematic defect source**, not merely a random one.
+
+## 2. What the pellicle physically does
+
+The pellicle sits a few millimeters above the reticle surface.
+
+If a particle lands on the pellicle instead of the mask, it is displaced from the optical focal plane.
+
+The scanner is focused on the reticle pattern, not the membrane surface, so the particle becomes heavily blurred and normally does not reproduce as a sharp circuit defect.
+
+The pellicle does not eliminate contamination.
+
+It changes contamination from a potentially printable defect into an out-of-focus event.
+
+## 3. Why EUV makes the problem harder
+
+DUV pellicles can use materials that transmit 193 nm light relatively well.
+
+EUV uses 13.5 nm radiation, which most ordinary materials absorb strongly.
+
+EUV masks are also reflective rather than transmissive. Light passes through the pellicle toward the mask, reflects from the mask, and then passes through the pellicle again on the way back toward the projection optics.
+
+That means the transmission penalty is effectively paid twice.
+
+If single-pass transmission is 94%, the simplified two-pass transmission is:
