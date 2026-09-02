@@ -42,6 +42,21 @@ test('ignores timestamp-only changes', () => {
   assert.equal(second.changed, false);
 });
 
+test('accepts legacy row order for comparison and canonicalizes the next semantic change', () => {
+  const existing = prepareCandidate(candidate()).combined;
+  existing.sources.semianalysis.rows.reverse();
+
+  const noChange = prepareCandidate(candidate('2026-09-02T13:00:00Z'), existing);
+  assert.equal(noChange.changed, false);
+
+  const changedCandidate = candidate('2026-09-02T14:00:00Z');
+  changedCandidate.sources.a16z.rows.push(a16z('Another Theme', '2026-09-02'));
+  const changed = prepareCandidate(changedCandidate, existing);
+  assert.equal(changed.changed, true);
+  assert.equal(changed.combined.sources.semianalysis.rows[0].company, 'Newer');
+  assert.deepEqual(changed.legacy.rows, changed.combined.sources.semianalysis.rows);
+});
+
 test('rejects duplicate current company identities', () => {
   const value = candidate();
   value.sources.semianalysis.rows.push(semi('Newer', '2026-07-01'));
