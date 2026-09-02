@@ -1,0 +1,84 @@
+
+
+**0.94 × 0.94 ≈ 88%**
+
+At 97% single-pass transmission:
+
+**0.97 × 0.97 ≈ 94%**
+
+So a three-point improvement in single-pass transmission can recover roughly six points of usable two-pass EUV energy.
+
+## 4. Transmission becomes throughput
+
+Connect this directly to Lesson 024.
+
+If the resist needs a fixed exposure dose to suppress stochastic defects, any EUV energy absorbed by the pellicle has to be replaced with more source power, more exposure time, or both.
+
+More exposure time means fewer wafers per hour.
+
+So the tradeoff is:
+
+**better mask protection can reduce contamination risk, but poor transmission can consume scanner throughput.**
+
+Imec reported full-field carbon-nanotube pellicles with single-pass EUV transmission as high as 97% in scanner testing. In 2023, imec and Mitsui Chemicals announced a commercialization effort targeting CNT pellicles with at least roughly 94% transmission and durability for future high-power EUV systems.
+
+The exact production specification will evolve. The economic relationship will not: when EUV is the bottleneck, every percentage point of transmission can matter.
+
+## 5. Heat is another constraint
+
+The EUV energy that does not transmit through the pellicle is not harmless.
+
+Some of it becomes heat.
+
+The membrane is extremely thin, yet it must survive repeated exposure without sagging, deforming, contaminating the mask or failing mechanically.
+
+That becomes harder as source power rises.
+
+The material therefore has to combine properties that do not naturally come together:
+
+- very high EUV transmission;
+- low reflectivity;
+- mechanical strength;
+- thermal stability;
+- chemical cleanliness;
+- long usable lifetime.
+
+Carbon-nanotube membranes are attractive partly because they can combine high transmission with strength and high-temperature tolerance.
+
+## 6. Why not simply run without a pellicle?
+
+Because there is no free answer.
+
+Without a pellicle, the scanner avoids the transmission penalty.
+
+But the reticle is more exposed to contamination, so the fab needs stronger inspection, cleaning, handling and contamination-control procedures.
+
+Cleaning an EUV mask is itself risky and expensive. Miss a particle and it can repeat into many dies; clean too aggressively and the mask can be damaged or its imaging behavior altered.
+
+So the real comparison is not:
+
+pellicle = safe, no pellicle = bad.
+
+It is:
+
+**which protection strategy minimizes total cost per good wafer?**
+
+That includes scanner throughput, contamination probability, inspection frequency, cleaning risk, downtime and yield loss.
+
+## 7. Why this matters economically
+
+A pellicle is not likely to be the largest revenue pool in semiconductor equipment.
+
+Its strategic importance can still be high because it protects a much more valuable production asset and a reusable master pattern.
+
+This is a recurring supply-chain lesson:
+
+**small dollar content can have large system value when failure propagates through an expensive bottleneck.**
+
+ASML must make the scanner, mask handling and contamination-control system work with the pellicle. Mitsui Chemicals is developing EUV pellicles and is working with imec on carbon-nanotube designs. Mask inspection and process-control vendors matter because repeating reticle defects must be detected quickly.
+
+The key investment distinction is between **importance** and **profit pool**. A component can be essential without becoming a huge standalone business.
+
+## The analyst’s mental model
+
+When you hear about an EUV pellicle, ask:
