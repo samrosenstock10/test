@@ -62,7 +62,7 @@ function rowComparator(left, right) {
   return right.loggedDate.localeCompare(left.loggedDate);
 }
 
-function validateRows(sourceKey, rows) {
+function validateRows(sourceKey, rows, { requireSorted = true } = {}) {
   const config = SOURCE_CONFIG[sourceKey];
   invariant(Array.isArray(rows), `${sourceKey}_rows_not_array`);
   const identities = new Set();
@@ -87,7 +87,7 @@ function validateRows(sourceKey, rows) {
     invariant(!identities.has(identity), `${sourceKey}_duplicate_company:${row.company}`);
     identities.add(identity);
 
-    if (index > 0) {
+    if (requireSorted && index > 0) {
       invariant(rowComparator(rows[index - 1], row) <= 0, `${sourceKey}_rows_not_sorted:${index}`);
     }
   });
@@ -133,10 +133,36 @@ export function validateFeedPair(combined, legacy) {
 
 function normalizeRows(sourceKey, rows) {
   const fields = SOURCE_CONFIG[sourceKey].fields;
-  invariant(Array.isArray(rows), `${sourceKey}_rows_not_array`);
+  validateRows(sourceKey, rows, { requireSorted: false });
   return rows
     .map((row) => Object.fromEntries(fields.map((field) => [field, row[field]])))
     .sort(rowComparator);
+}
+
+function normalizeCombinedFeed(feed) {
+  validateExactKeys(feed, ['updatedAt', 'sourceSheet', 'sources'], 'combined');
+  validateIsoTimestamp(feed.updatedAt, 'combined_updatedAt');
+  invariant(feed.sourceSheet === SOURCE_SHEET, 'combined_source_sheet_invalid');
+  validateExactKeys(feed.sources, ['semianalysis', 'a16z'], 'combined_sources');
+
+  const sources = {};
+  for (const [sourceKey, config] of Object.entries(SOURCE_CONFIG)) {
+    const source = feed.sources[sourceKey];
+    validateExactKeys(source, ['label', 'rows'], `combined_${sourceKey}`);
+    invariant(source.label === config.label, `${sourceKey}_label_invalid`);
+    sources[sourceKey] = {
+      label: config.label,
+      rows: normalizeRows(sourceKey, source.rows),
+    };
+  }
+
+  const normalized = {
+    updatedAt: feed.updatedAt,
+    sourceSheet: feed.sourceSheet,
+    sources,
+  };
+  validateCombinedFeed(normalized);
+  return normalized;
 }
 
 function semanticView(feed) {
@@ -172,8 +198,8 @@ export function prepareCandidate(candidate, existingCombined = null) {
 
   let changed = true;
   if (existingCombined) {
-    validateCombinedFeed(existingCombined);
-    changed = JSON.stringify(semanticView(existingCombined)) !== JSON.stringify(semanticView(combined));
+    const normalizedExisting = normalizeCombinedFeed(existingCombined);
+    changed = JSON.stringify(semanticView(normalizedExisting)) !== JSON.stringify(semanticView(combined));
   }
 
   return { changed, combined, legacy };
