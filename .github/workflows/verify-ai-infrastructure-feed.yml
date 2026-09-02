@@ -1,0 +1,41 @@
+name: Verify AI infrastructure feeds
+
+on:
+  pull_request:
+    paths:
+      - 'buy-window/ai-infrastructure-theses.json'
+      - 'buy-window/semi-analysis-theses.json'
+      - 'automation/ai-infrastructure-feed.mjs'
+      - 'automation/ai-infrastructure-feed.node-test.mjs'
+      - 'docs/automation/ai-infrastructure-feed.md'
+      - '.github/workflows/verify-ai-infrastructure-feed.yml'
+      - '.github/workflows/accept-ai-infrastructure-feed.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'buy-window/ai-infrastructure-theses.json'
+      - 'buy-window/semi-analysis-theses.json'
+      - 'automation/ai-infrastructure-feed.mjs'
+      - 'automation/ai-infrastructure-feed.node-test.mjs'
+      - 'docs/automation/ai-infrastructure-feed.md'
+      - '.github/workflows/verify-ai-infrastructure-feed.yml'
+      - '.github/workflows/accept-ai-infrastructure-feed.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Run feed contract tests
+        run: node --test automation/ai-infrastructure-feed.node-test.mjs
+      - name: Validate current combined and legacy feeds
+        run: node automation/ai-infrastructure-feed.mjs validate
