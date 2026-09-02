@@ -52,7 +52,7 @@ jobs:
           test "${#changes[@]}" -eq 1
           IFS=$'\t' read -r status path <<< "${changes[0]}"
           test "$status" = "A"
-          [[ "$path" =~ ^buy-window/inbox/ai-infrastructure/[0-9TZ:-]+\.json$ ]]
+          [[ "$path" =~ ^buy-window/inbox/ai-infrastructure/[0-9]{8}T[0-9]{6}Z\.json$ ]]
           echo "input=$path" >> "$GITHUB_OUTPUT"
 
       - name: Prepare canonical feeds
@@ -64,7 +64,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           PR_URL: ${{ github.event.pull_request.html_url }}
-        run: gh pr close "$PR_URL" --comment "The candidate matched the current semantic feed exactly. No timestamp-only commit or deployment was created."
+        run: gh pr close "$PR_URL" --delete-branch --comment "The candidate matched the current semantic feed exactly. No timestamp-only commit or deployment was created."
 
       - name: Replace candidate with generated feeds
         if: steps.prepare.outputs.changed == 'true'
@@ -100,6 +100,7 @@ jobs:
       - name: Merge exact validated head
         if: steps.prepare.outputs.changed == 'true'
         env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
           GH_TOKEN: ${{ github.token }}
           PR_URL: ${{ github.event.pull_request.html_url }}
         shell: bash
@@ -111,12 +112,19 @@ jobs:
             test "$current_head" = "$validated_head"
             mergeable="$(gh pr view "$PR_URL" --json mergeable --jq '.mergeable')"
             if [[ "$mergeable" = "CONFLICTING" ]]; then
+              echo "ai_infrastructure_feed_merge_conflict" >&2
               exit 1
             fi
             if [[ "$mergeable" = "MERGEABLE" ]]; then
-              gh pr merge "$PR_URL" --squash --delete-branch --match-head-commit "$validated_head"
-              exit 0
+              git fetch --no-tags origin main
+              test "$(git rev-parse origin/main)" = "$BASE_SHA"
+              if gh pr merge "$PR_URL" --squash --delete-branch --match-head-commit "$validated_head"; then
+                exit 0
+              fi
+            fi
+            if [[ "$attempt" -eq 30 ]]; then
+              echo "ai_infrastructure_feed_merge_readiness_timeout:$mergeable" >&2
+              exit 1
             fi
             sleep 2
           done
-          exit 1
