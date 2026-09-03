@@ -1,0 +1,89 @@
+So mask reflectivity is not merely an optical-quality statistic.
+
+When EUV is the bottleneck, reflectivity can become a capacity variable.
+
+## 4. The absorber creates the actual pattern
+
+The multilayer mirror by itself would simply reflect EUV everywhere.
+
+The circuit pattern comes from an **absorber layer** patterned on top of the mirror.
+
+Where the absorber remains, EUV reflection is strongly suppressed.
+
+Where the absorber has been removed, the multilayer can reflect light toward the projection optics.
+
+So the scanner sees a spatial pattern of reflected versus suppressed EUV energy and projects that image onto the photoresist-coated wafer.
+
+This is the EUV version of a stencil — but the stencil is sitting on top of a sophisticated optical mirror.
+
+## 5. Why mask defects can hide below the surface
+
+EUV introduces a particularly difficult defect problem.
+
+A particle or bump can be buried inside or underneath the multilayer while the mask blank is being manufactured.
+
+Even if the top surface later looks smooth, that buried defect can deform the multilayer stack above it.
+
+Because the multilayer controls the phase and direction of reflected EUV light, a tiny deformation can alter the aerial image that reaches the wafer.
+
+That means the fab does not only care about obvious absorber defects on the surface.
+
+It also cares about **multilayer defects that change the reflected wavefront**.
+
+This is more subtle than a simple blocked-or-unblocked stencil.
+
+## 6. Why inspection is unusually hard
+
+A defect matters only if it changes the printed wafer image enough to hurt yield.
+
+But inspecting an EUV mask with a different wavelength can miss behavior that appears specifically at 13.5 nm.
+
+That is why **actinic inspection** is important: inspecting with EUV-wavelength light so the measurement sees the mask more like the production scanner does.
+
+The tradeoff is familiar by now.
+
+More inspection improves confidence and defect capture, but inspection tools themselves must be precise, fast and productive enough for manufacturing.
+
+The real goal is not “inspect everything infinitely.”
+
+It is to detect printable defects before a reusable master pattern repeats them across expensive wafers.
+
+## 7. The mask is a system, not one supplier product
+
+Several specialized capabilities have to work together:
+
+- an ultra-flat, low-thermal-expansion substrate;
+- extremely uniform Mo/Si multilayer deposition;
+- a protective capping layer;
+- absorber deposition and patterning;
+- mask writing;
+- defect inspection and metrology;
+- cleaning and repair when possible;
+- pellicle integration and contamination control.
+
+That is why the mask ecosystem should not be reduced to “who sells the blank?”
+
+The economic value may sit in different places depending on which step limits defectivity, throughput or qualification.
+
+KLA participates in mask inspection and metrology. ASML must make the reticle behave correctly inside the scanner. Specialized materials and mask manufacturers contribute blanks, coatings and finished masks.
+
+The key question is the same as elsewhere in the fab:
+
+**which capability is difficult to qualify, scarce enough to constrain output, and valuable enough to capture economics?**
+
+## 8. High-NA makes mask behavior even more important
+
+Lesson 026 showed that High-NA EUV uses different imaging geometry and a half-sized exposure field.
+
+Higher numerical aperture also makes the interaction between light and the three-dimensional mask structure more demanding.
+
+The absorber is not infinitely thin. EUV arrives at an angle, so absorber height, material choice and feature orientation can change the reflected image.
+
+These are often called **mask 3D effects**.
+
+As lithography pushes tighter dimensions, engineers therefore optimize not only the scanner optics, but also absorber materials and mask structure to preserve image quality.
+
+A better scanner can expose weaknesses elsewhere in the patterning system.
+
+## 9. The analyst’s mental model
+
