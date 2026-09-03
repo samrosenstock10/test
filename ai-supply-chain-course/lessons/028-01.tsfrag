@@ -1,0 +1,81 @@
+import type { Lesson } from "./lessons";
+
+export const lesson028 = {
+  number: 28,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "EUV Masks and Multilayer Mirrors — Why the ‘Mask’ Is Actually a Precision Optical Stack",
+  date: "2026-09-03",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 023: Multiple patterning extends resolution by splitting one logical layer into several physical patterning steps, trading simplicity for more cost, cycle time and overlay risk.
+
+Lesson 024: EUV dose, source power and stochastic defects connect pattern quality directly to scanner wafers-per-hour and effective lithography capacity.
+
+Lesson 025: EUV availability converts installed scanners into productive capacity, so uptime and service can matter almost as much as tool count.
+
+Lesson 026: High-NA EUV improves resolution by raising numerical aperture, but its value depends on whether it removes more manufacturing complexity than it introduces.
+
+Lesson 027: EUV pellicles protect reusable reticles from repeating contamination defects, but their transmission and thermal behavior can affect scanner throughput.
+
+The big idea
+
+The word **mask** makes an EUV reticle sound like a simple stencil.
+
+It is not.
+
+At 13.5 nm, EUV light is absorbed so strongly by ordinary materials that the mask cannot work like the transparent masks used in conventional optical lithography.
+
+Instead, an EUV mask is a **precision multilayer mirror with a patterned absorber on top**.
+
+The scanner shines EUV light onto the mask at an angle. Regions without absorber reflect useful light back into the projection optics; absorber-covered regions suppress that reflection and create the circuit pattern.
+
+So the basic structure is:
+
+low-expansion substrate → multilayer mirror → protective cap → patterned absorber
+
+That stack has to be almost unbelievably uniform, because the same reticle is reused across many fields and wafers.
+
+## 1. Why EUV needs a mirror instead of transparent glass
+
+Visible light can pass through glass. EUV generally cannot.
+
+At a 13.5 nm wavelength, even materials that look transparent to us absorb EUV strongly.
+
+That is why EUV scanners use reflective optics throughout the light path rather than ordinary transmissive lenses.
+
+The mask follows the same rule.
+
+Instead of asking light to pass through selected regions, the EUV reticle controls **where light is reflected**.
+
+This is the first mental shift:
+
+**DUV-style mask intuition is transmission; EUV mask intuition is reflection.**
+
+## 2. One metal surface is not reflective enough
+
+A normal metal mirror is still not good enough at EUV wavelengths.
+
+The solution is a multilayer reflector made from many alternating nanometer-scale layers, typically molybdenum and silicon.
+
+Current EUV mask stacks are commonly described as roughly **40–50 Mo/Si layer pairs**, with the complete reflective stack around a few hundred nanometers thick.
+
+Each individual interface reflects only part of the incoming EUV light.
+
+But engineers tune the layer thicknesses so those tiny reflections return in phase and reinforce each other through constructive interference.
+
+Think of many people pushing a swing at exactly the right moment. Each push is small, but coordinated pushes add together.
+
+The result is a mirror optimized around 13.5 nm rather than a surface that reflects broadly across visible wavelengths.
+
+## 3. Even the optimized mirror loses a lot of light
+
+A good Mo/Si EUV multilayer reflects only roughly the **high-60% to around-70%** range near its design wavelength, not close to 100%.
+
+That matters because the mask is only one reflective surface in a scanner that already loses photons at other mirrors.
+
+Every lost photon makes the source, resist and exposure-time problem harder.
+
+This connects directly to Lesson 024:
+
+lower optical efficiency → less useful EUV reaches the resist → more source power or exposure time may be needed → scanner throughput can fall
+
