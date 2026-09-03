@@ -1,0 +1,43 @@
+When you hear about an EUV mask problem, separate four questions:
+
+1. **Reflectivity:** is enough 13.5 nm energy returning from the multilayer?
+2. **Pattern fidelity:** does the absorber create the intended optical image?
+3. **Defectivity:** are there surface or buried defects that print onto wafers?
+4. **Repeatability:** will the same mask behave consistently through many exposures, cleans and handling cycles?
+
+Then translate the problem economically:
+
+mask optical loss → exposure time / throughput
+
+mask defect → repeating wafer defect / yield loss
+
+mask change → requalification / development delay
+
+mask limitation → more inspection, process control or redesign
+
+That is why the reticle is not a passive accessory. It is part of the lithography production system.
+
+## Remember these 5 things
+
+1. EUV masks are reflective because ordinary materials absorb 13.5 nm light too strongly for a conventional transmissive mask.
+
+2. The reflector uses roughly 40–50 alternating Mo/Si pairs whose reflections reinforce one another near the EUV wavelength.
+
+3. Even a strong EUV multilayer reflects only around 70% of incident light, so mask optical efficiency can influence exposure economics.
+
+4. Buried multilayer defects can distort the reflected wavefront even when the surface defect is not obvious.
+
+5. The absorber, multilayer, inspection, cleaning and pellicle all have to work as one qualified mask system.
+
+## Quick check
+
+Why can a tiny buried defect inside an EUV mask matter even if it does not visibly block the surface pattern?
+
+Because the defect can deform the multilayer mirror and change the phase or direction of reflected EUV light, distorting the image projected onto every wafer field that uses that reticle.
+
+## Next lesson
+
+Lesson 029: Mask Inspection and Repair — How a Fab Decides Which Reticle Defects Are Actually Printable
+
+We will connect actinic inspection, defect review and repair to the economics of preventing one master-pattern error from repeating across an entire production lot.`,
+} satisfies Lesson;
