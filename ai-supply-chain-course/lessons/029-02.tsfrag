@@ -1,0 +1,85 @@
+This does not mean every mask measurement must be actinic.
+
+Manufacturing typically uses a funnel of techniques: faster inspection can locate candidates, then more specialized review or imaging can determine which ones threaten printing.
+
+The economic objective is to spend the most expensive inspection time where it changes a decision.
+
+## 4. AIMS asks what the scanner would approximately print
+
+Another important tool class measures the **aerial image** produced by a small region of the mask.
+
+ZEISS's AIMS EUV systems are designed to emulate key imaging conditions of an EUV scanner so engineers can assess how a suspicious mask feature is likely to appear at the wafer plane.
+
+Think of this as moving from:
+
+"There is a bump here"
+
+to:
+
+"Under lithography-like imaging conditions, does this bump distort the printed line enough to matter?"
+
+That is a much more useful manufacturing question.
+
+It also helps prevent unnecessary mask scrapping. If a defect exists physically but has negligible printing impact, the fab may be able to continue using the reticle rather than replacing an expensive qualified mask.
+
+## 5. Defect disposition is an economic decision tree
+
+After inspection and review, a mask defect can fall into several practical buckets:
+
+- **Not printable:** monitor it or accept it.
+- **Printable but repairable:** repair the mask, then re-inspect it.
+- **Printable but design-mitigatable:** in some cases, modify nearby absorber geometry or compensate elsewhere.
+- **Unrepairable or too risky:** reject or remake the mask.
+
+The important point is that "defect found" is not the end of the process.
+
+The fab wants the lowest-cost path that returns the reticle to a state where wafer printing is safely inside specification.
+
+## 6. How mask repair physically works
+
+For some absorber-layer defects, repair tools can remove unwanted material or deposit material where something is missing.
+
+ZEISS's MeRiT systems, for example, use a tightly focused electron beam together with process gases to drive localized reactions on the mask.
+
+Conceptually, the tool is doing microscopic surgery.
+
+If excess absorber exists, the repair process can selectively remove material. If absorber is missing, a localized deposition process can rebuild a feature.
+
+The challenge is not merely changing the shape.
+
+The repair must leave the mask optically correct enough that the scanner prints the intended wafer feature. That is why repair is followed by another imaging or inspection step rather than trusted blindly.
+
+The loop becomes:
+
+inspect → classify → repair → verify
+
+## 7. Throughput still matters
+
+Mask inspection is a quality-control step, but it also consumes time.
+
+A wafer fab may inspect masks when they arrive and periodically requalify them during production, especially when contamination or degradation is a concern.
+
+If inspection is extremely slow, fabs face a tradeoff: inspect more often and consume mask-cycle time, or inspect less often and carry more risk of an escaped repeating defect.
+
+That makes inspection throughput economically relevant even though the inspection tool itself does not manufacture a transistor.
+
+The same pattern appears repeatedly in semiconductor production:
+
+**quality control creates value by preventing expensive downstream work from being performed incorrectly.**
+
+## 8. Why one escaped mask defect can be unusually expensive
+
+Compare two defect types.
+
+A random particle on one wafer may kill one die or one region of one wafer.
+
+A defect built into a reusable reticle can print in the same location every time that mask field is exposed.
+
+So a mask defect can be **systematic** rather than random.
+
+The loss can propagate like this:
+
+bad reticle → repeated bad pattern → many affected wafer fields → lower yield → investigation and production interruption
+
+This is why fabs can justify sophisticated inspection even when the direct inspection step adds no sellable output.
+
