@@ -1,0 +1,77 @@
+import type { Lesson } from "./lessons";
+
+export const lesson029 = {
+  number: 29,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Mask Inspection and Repair — How a Fab Decides Which Reticle Defects Are Actually Printable",
+  date: "2026-09-04",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 024: EUV dose, source power and stochastic defects connect pattern quality directly to scanner wafers-per-hour and effective lithography capacity.
+
+Lesson 025: EUV availability converts installed scanners into productive capacity, so uptime and service can matter almost as much as tool count.
+
+Lesson 026: High-NA EUV improves resolution by raising numerical aperture, but its value depends on whether it removes more manufacturing complexity than it introduces.
+
+Lesson 027: EUV pellicles protect reusable reticles from repeating contamination defects, but their transmission and thermal behavior can affect scanner throughput.
+
+Lesson 028: An EUV mask is a patterned multilayer mirror, so reflectivity, absorber geometry and buried defects all influence what is actually printed on the wafer.
+
+The big idea
+
+Yesterday we learned why an EUV mask can contain defects that are hard to see but still distort the printed image.
+
+Today we add the manufacturing question:
+
+**Which mask defects actually matter?**
+
+A mask-inspection system can find suspicious features, but finding an imperfection is not the same as proving that it will print badly on a wafer.
+
+The useful production loop is:
+
+find a defect → judge whether it is printable → repair or reject it → verify the result
+
+That distinction matters because a reticle is a reusable master pattern. A small defect that escapes qualification can repeat at the same location across many wafer exposures.
+
+## 1. Detection and printability are different problems
+
+Imagine a scratch on a projector slide.
+
+A microscope might clearly see the scratch. But whether the audience sees it on the screen depends on the projector optics, illumination, focus and image contrast.
+
+Mask inspection works similarly.
+
+The inspection tool first asks:
+
+**Is something on the mask different from what should be there?**
+
+Then the fab must ask:
+
+**Will that difference materially change the aerial image that the scanner projects onto photoresist?**
+
+This second question is printability.
+
+An inspection system that flags every harmless irregularity would create enormous review workload. A system that misses one genuinely printable defect can create repeating wafer yield loss.
+
+So the goal is not maximum alarms. It is high capture of economically meaningful defects with manageable false positives.
+
+## 2. Why EUV makes printability harder to judge
+
+For a simple transmissive mask, it is tempting to think of defects as blocked or unblocked light.
+
+EUV masks are more complicated because they are reflective multilayer optical systems.
+
+A surface particle can block or scatter light. An absorber defect can change the intended pattern. A buried multilayer defect can alter the phase of the reflected EUV wave even when the top surface does not look dramatically damaged.
+
+That means two defects with similar physical size can have very different wafer consequences depending on where they sit and how they interact with the scanner's illumination and optics.
+
+This is why EUV mask control increasingly becomes an imaging problem, not merely a microscope problem.
+
+## 3. Actinic inspection asks the mask the right optical question
+
+**Actinic** inspection means using the same 13.5 nm wavelength used by EUV lithography.
+
+That is valuable because some EUV-specific phase defects may behave differently under ordinary visible or deep-ultraviolet inspection than they do during actual EUV exposure.
+
+Lasertec's ACTIS systems are an example of actinic patterned-mask inspection. They use EUV light to detect defects that can print on the wafer, including defects that are difficult to characterize with a different inspection wavelength.
+
