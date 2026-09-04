@@ -1,0 +1,54 @@
+It is insurance against multiplying the same error across high-value work in process.
+
+## 9. The supplier map is more specialized than it first appears
+
+Three companies illustrate different pieces of the control loop.
+
+**KLA** has deep positions in reticle inspection, defect review and computational process control across advanced mask manufacturing.
+
+**Lasertec** has built a particularly important position in actinic EUV mask inspection, where using 13.5 nm light helps expose EUV-specific printable defects.
+
+**ZEISS** supplies aerial-image qualification and mask-repair systems that help determine whether a defect prints and whether a repaired region has returned to specification.
+
+These are complementary functions rather than one simple winner-take-all category.
+
+For an investor, the better question is not merely "who inspects masks?"
+
+Ask where qualification becomes hardest, where customers have the fewest substitutes, and which tool sits on the critical decision path between finding a defect and releasing a reticle back into production.
+
+## 10. The analyst's mental model
+
+When you hear that a fab has a mask-defect problem, walk through five questions:
+
+1. **What kind of defect is it?** Particle, absorber error, buried multilayer phase defect, contamination or damage?
+2. **Can the inspection method actually see the relevant physics?**
+3. **Is the defect printable under scanner-like conditions?**
+4. **Can it be repaired and verified, or must the mask be remade?**
+5. **How much production could repeat the error before it is caught?**
+
+That final question turns mask inspection from a niche metrology topic into fab economics.
+
+## Remember these 5 things
+
+1. Detecting a physical mask defect and proving that it will print on the wafer are different jobs.
+
+2. Actinic inspection uses 13.5 nm EUV light, making it especially useful for EUV-specific printable defects and phase effects.
+
+3. Aerial-image measurement helps determine how a suspicious mask region behaves under lithography-like imaging conditions.
+
+4. Repair is a closed loop: modify the defect, then verify that the printed image is acceptable.
+
+5. Reticle defects are dangerous because one master-pattern error can repeat systematically across many exposures.
+
+## Quick check
+
+Why might a fab tolerate a physical defect on an EUV reticle instead of automatically repairing or replacing the mask?
+
+Because the economically relevant question is whether the defect changes the wafer image enough to matter. If scanner-like or actinic review shows that it is not printable, intervention may create more cost and risk than simply monitoring it.
+
+## Next lesson
+
+Lesson 030: Mask Writers and Multi-Beam E-Beam Lithography — How the Master Pattern Itself Gets Written
+
+We will move one step upstream and see how the reticle pattern is written in the first place, why mask-writing time can become extreme, and how multi-beam electron-beam systems attack that bottleneck.`,
+} satisfies Lesson;
