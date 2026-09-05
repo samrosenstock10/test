@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-09-04T11:30:45.000Z",
+  "updatedAt": "2026-09-05T11:33:48.000Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "sources": {
     "semianalysis": {
       "label": "SemiAnalysis",
       "rows": [
         {
-          "loggedDate": "2026-09-04",
-          "sourceDate": "2026-09-03",
+          "loggedDate": "2026-09-05",
+          "sourceDate": "2026-09-05",
           "company": "Advanced Micro Devices / AMD",
           "bullishness": 4,
-          "summary": "AMD’s AI-accelerator thesis materially strengthens because rapid upstream serving-software optimization has closed much of the realistic inference gap on important frontier workloads, showing MI355X can become economically competitive faster than the Aug. 24 AgentX results implied, although B300 still leads on absolute performance and rack-scale execution remains a constraint. SemiAnalysis explicitly praised AMD’s rapid MI355X improvements on realistic production workloads such as Qwen3.5 397B and MiniMax M3 and said it expects the gap to B300 to continue closing. The live InferenceX data now shows MI355X competitive with or ahead of older Blackwell in selected matched-interactivity economics, directly addressing the prior concern that upstream vLLM/SGLang performance lagged AMD’s vendor-specific ATOM stack."
+          "summary": "AMD’s AI-accelerator thesis strengthens again: MI355X has moved from selective B200 parity to beating B300 on total-token TCO at lower-interactivity AgentX points in some large-model workloads, showing software convergence is now translating into selective Blackwell Ultra-class economics, although B300 still leads at higher interactivity and across other models and AMD’s rack-scale risks remain. SemiAnalysis explicitly says a new AMD MI355X submission beats B300 on total tokens per dollar of TCO at lower-interactivity ranges on AgentX and credits vLLM, AMD and LMCache engineers. The live InferenceX curves corroborate that this is no longer only an older-Blackwell comparison: MI355X can now be the cheaper option versus B300 in selected low-interactivity Kimi and GLM operating points, directly reducing the software-economics concern that drove the Aug. 24 downgrade."
         },
         {
           "loggedDate": "2026-09-02",
