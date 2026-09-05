@@ -1,0 +1,79 @@
+import type { Lesson } from "./lessons";
+
+export const lesson030 = {
+  number: 30,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Mask Writers and Multi-Beam E-Beam Lithography — How the Master Pattern Itself Gets Written",
+  date: "2026-09-05",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 025: EUV availability converts installed scanners into productive capacity, so uptime and service can matter almost as much as tool count.
+
+Lesson 026: High-NA EUV improves resolution by raising numerical aperture, but its value depends on whether it removes more manufacturing complexity than it introduces.
+
+Lesson 027: EUV pellicles protect reusable reticles from repeating contamination defects, but their transmission and thermal behavior can affect scanner throughput.
+
+Lesson 028: An EUV mask is a patterned multilayer mirror, so reflectivity, absorber geometry and buried defects all influence what is actually printed on the wafer.
+
+Lesson 029: Mask inspection and repair separate harmless imperfections from printable defects before one master-pattern error can repeat across many exposures.
+
+The big idea
+
+Before a scanner can project a circuit pattern onto a wafer, someone has to create the master pattern on the reticle itself.
+
+That is the job of the **mask writer**.
+
+A mask writer takes digital chip-layout data and uses an electron beam to expose a resist-coated mask blank. The mask is then developed and etched so its absorber pattern becomes the master image used by lithography.
+
+The economic problem is that advanced masks have become so geometrically complicated that writing them one feature at a time can take an impractical amount of time.
+
+The industry’s answer is **multi-beam electron-beam writing**: instead of drawing with one beam, write with roughly a quarter-million beamlets in parallel.
+
+This is a useful bottleneck lesson because the mask writer normally sits upstream of the wafer fab. It does not process every production wafer.
+
+But if mask writing is too slow, a new chip design cannot get into the fab quickly enough.
+
+## 1. How a mask is physically written
+
+Start with the finished digital layout for one lithography layer.
+
+Software first converts that layout into detailed exposure instructions.
+
+Then the physical flow is roughly:
+
+mask blank → e-beam resist → electron-beam exposure → develop → absorber etch → clean → inspect → repair/qualify
+
+The writer performs the exposure step.
+
+Why electrons?
+
+An electron beam can be focused extremely tightly and steered electronically. Unlike optical lithography, the writer does not need another physical mask above it.
+
+It is **direct write**: digital data controls where electrons hit the resist.
+
+That makes e-beam writing precise enough to manufacture the master pattern that an optical or EUV scanner will later reproduce many times.
+
+## 2. The traditional approach: variable-shaped beam
+
+For decades, advanced mask writers commonly used **variable-shaped beam**, or VSB, technology.
+
+A VSB system shapes one electron beam into rectangles or other simple geometric shots.
+
+Imagine drawing with a stamp whose width and height can change.
+
+For simple rectangular patterns, this is efficient because one shot can cover a useful area.
+
+But modern masks are not simple.
+
+Optical proximity correction adds assist features and edge changes to compensate for how lithography distorts patterns. Inverse lithography can create even more complicated, sometimes curvilinear shapes.
+
+The writer must break those shapes into a huge number of shots.
+
+So VSB write time tends to rise with **shot count and pattern complexity**. At leading-edge complexity, industry discussions have described dense-mask write times stretching into tens of hours.
+
+That becomes painful because inspection, repair and qualification cannot begin until writing is finished.
+
+## 3. Multi-beam changes the scaling law
+
+A multi-beam writer attacks the problem with parallelism.
+
