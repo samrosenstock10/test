@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T11:33:48.000Z",
+  "updatedAt": "2026-09-05T12:32:00Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "sources": {
     "semianalysis": {
@@ -129,6 +129,16 @@
     "a16z": {
       "label": "a16z Machine Age",
       "rows": [
+        {
+          "loggedDate": "2026-09-05",
+          "sourceDate": "2026-09-04",
+          "company": "Gimlet Labs (private)",
+          "bullishness": 5,
+          "category": "Inference Infrastructure / Heterogeneous Compute",
+          "partner": "Raghu Raghuram; Sarah Wang; Shangda Xu; Stephenie Zhang",
+          "signalType": "Direct investment",
+          "summary": "AI inference is becoming too heterogeneous and power-constrained for one-size-fits-all compute, creating a new infrastructure layer that dynamically maps each model, tool and inference stage to the processor and physical configuration that delivers the best latency, throughput and cost per watt. a16z argues inference has fragmented into materially different workloads and that no single processor can optimize cost, throughput and latency across all of them; Gimlet turns GPUs, CPUs and purpose-built accelerators into one orchestrated pool and hides the complexity behind a single inference API."
+        },
         {
           "loggedDate": "2026-08-30",
           "sourceDate": "2026-08-28",
