@@ -1,0 +1,49 @@
+IMS describes itself as the global leader in multi-beam mask writers. NuFlare sells both VSB and multi-beam systems; its MBM-2000PLUS targets advanced 3nm-class-and-beyond masks.
+
+For public-market exposure, the mapping is imperfect. NuFlare is wholly owned by Toshiba, while IMS is not separately public.
+
+That is a useful investing lesson: a technically important bottleneck is not automatically a clean pure-play public-equity opportunity.
+
+## 9. The analyst’s mental model
+
+When someone says “mask writing is a bottleneck,” ask:
+
+1. Is the problem **write time**, **accuracy**, or both?
+2. Is the pattern simple enough for VSB, or does shot count explode?
+3. How much curvilinear OPC or inverse lithography is being used?
+4. What is mask write time per critical layer?
+5. How many new or replacement masks must the shop produce?
+6. Is the data path keeping up with the beam array?
+7. Does the writer meet placement and CD requirements after correction?
+8. Is mask writing delaying a tape-out or node ramp, or merely adding cost?
+
+The key distinction is:
+
+**wafer-throughput bottleneck ≠ product-development bottleneck.**
+
+A mask writer can be strategically critical even though wafers do not pass through it every day.
+
+## Remember these 5 things
+
+1. An e-beam mask writer converts digital chip-layout data into the physical master pattern on a reticle.
+
+2. VSB systems write shaped shots sequentially, so highly complex masks can suffer exploding shot counts and long write times.
+
+3. Multi-beam systems use roughly 260,000 controlled beamlets in parallel, making write time much less sensitive to pattern complexity.
+
+4. The hard problems shift to beam uniformity, placement, blanking, stage control, resist correction and real-time data flow.
+
+5. Mask-writing capacity mainly constrains mask-shop and development cycle time rather than ordinary wafer throughput.
+
+## Quick check
+
+Why can curvilinear inverse-lithography patterns make multi-beam mask writers more valuable even if the wafer scanner itself does not change?
+
+Because those optimized shapes can require an enormous number of sequential VSB shots. Multi-beam writes many pixels in parallel, so it can manufacture complex mask patterns without letting write time grow nearly as fast as pattern complexity.
+
+## Next lesson
+
+Lesson 031: OPC, ILT and Mask Data Preparation — How Software Turns a Chip Layout Into a Printable Reticle
+
+We will move upstream from the writer into the computation that deliberately distorts the mask pattern so the wafer prints correctly, and connect software complexity to mask data volume, write time and lithography economics.`,
+} satisfies Lesson;
