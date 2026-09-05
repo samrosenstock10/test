@@ -26,4 +26,5 @@ The candidate schema is:
 }
 ```
 
-Use the exact existing row fields. Include every current row from both ledgers. The protected workflow sorts rows, validates schema/identity/score/date rules, derives the legacy feed exactly from SemiAnalysis, suppresses timestamp-only commits, and merges only the validated output. A no-change candidate is closed and its branch deleted without a merge.
+Use the exact existing row fields plus optional `sourceUrls`: an array of at most 20 distinct public HTTP(S) URLs copied from that row's canonical Sheet Source URL cell, in its existing evidence order. Keep prior source links; remove duplicate URLs and prose labels such as `Prior:`. Omit the field only when the Sheet has no verified URL. The builder retains these links in both feed formats, and the site displays them on the thesis card. Include every current row from both ledgers. The protected workflow sorts rows, validates schema/identity/score/date rules, derives the legacy feed exactly from SemiAnalysis, suppresses timestamp-only commits, and merges only the validated output. A no-change candidate is closed and its branch deleted without a merge.
+
