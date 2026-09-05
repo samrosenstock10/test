@@ -1,0 +1,83 @@
+IMS Nanofabrication’s platform uses a programmable **512 × 512 array — 262,144 beamlets**. NuFlare’s advanced MBM systems similarly control roughly **260,000 beams**.
+
+Instead of asking one beam to draw every shape sequentially, the system exposes a field with many individually controlled beamlets at once.
+
+Think of one person coloring a giant grid square by square versus roughly 260,000 tiny pens working simultaneously.
+
+The engineering problem shifts from “make one beam fast” to “control hundreds of thousands of beams with nearly identical dose, position and timing.”
+
+## 4. Why complexity matters less to multi-beam
+
+This is the central economic advantage.
+
+With VSB, more complicated geometry usually means more shots and therefore more write time.
+
+With multi-beam, the writer behaves more like a pixelated exposure system. The array scans across the mask while individual beamlets are turned on, off or dose-modulated.
+
+The number of strange curves in the design does not increase write time in the same way.
+
+IMS says its production multi-beam technology can keep mask write time below roughly **10 hours**, including for complex patterns. NuFlare likewise emphasizes high throughput that is far less dependent on data complexity.
+
+That makes multi-beam especially valuable as computational lithography produces patterns that are better for wafer printing but worse for a sequential writer.
+
+## 5. Parallel beams create new bottlenecks
+
+Multi-beam does not make the problem easy.
+
+The machine must solve several hard jobs simultaneously:
+
+- keep hundreds of thousands of beamlets uniform;
+- place exposures with nanometer-class accuracy;
+- switch and dose-control individual beams at high speed;
+- move the mask stage smoothly;
+- feed enormous amounts of pattern data in real time;
+- correct for electron scattering and resist effects.
+
+NuFlare lists roughly **1.3 nm image-placement accuracy at 3σ** and about **0.65 nm local CD uniformity at 3σ** for its MBM-2000PLUS.
+
+Those are mask-level specifications, not direct wafer dimensions. The point is the scale of control required before lithography even begins.
+
+A systematic writer error can propagate:
+
+mask-writing error → reticle error → repeated wafer imaging error → yield loss
+
+## 6. Where the bottleneck actually appears
+
+A mask writer usually does **not** sit in the daily wafer process loop.
+
+Once a production reticle is qualified, a scanner can reuse it for many wafer exposures without returning to the writer.
+
+So adding one more mask writer does not automatically increase wafer starts.
+
+Mask-writing capacity matters when:
+
+- a new tape-out needs a mask set;
+- a node ramp requires many new masks;
+- a design respin changes critical layers;
+- a damaged mask must be replaced;
+- computational patterns increase write demand.
+
+That makes mask writing especially important to **development cycle time and mask-shop capacity**.
+
+If the mask shop is constrained, an expensive fab can be ready while the reticles needed for the next design are still waiting upstream.
+
+## 7. Why High-NA and curvilinear masks increase strategic value
+
+As imaging gets harder, chipmakers increasingly use computation to shape the mask around scanner physics.
+
+The best wafer image may require a reticle pattern that looks less like the original circuit layout and more like a mathematically optimized collection of curves and corrections.
+
+That can explode VSB shot count.
+
+Multi-beam is therefore not merely a faster writer. It helps make **computationally optimized mask shapes economically manufacturable**.
+
+The second-order chain is:
+
+better computational lithography → more complex mask data → more pressure on mask writing → greater value of parallel writing and high-speed data processing
+
+A software improvement can create hardware demand upstream.
+
+## 8. The supplier map
+
+Two important advanced mask-writer suppliers are **IMS Nanofabrication** and **NuFlare Technology**.
+
