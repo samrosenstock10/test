@@ -69,12 +69,21 @@ function validateRows(sourceKey, rows, { requireSorted = true } = {}) {
 
   rows.forEach((row, index) => {
     const path = `${sourceKey}_row_${index}`;
-    validateExactKeys(row, config.fields, path);
+    validateExactKeys(row, row.sourceUrls === undefined ? config.fields : [...config.fields, 'sourceUrls'], path);
     validateDate(row.loggedDate, `${path}_loggedDate`);
     validateDate(row.sourceDate, `${path}_sourceDate`);
     validateText(row.company, `${path}_company`, 2);
     invariant(Number.isInteger(row.bullishness) && row.bullishness >= 1 && row.bullishness <= 5, `${path}_bullishness_invalid`);
     validateText(row.summary, `${path}_summary`, 40);
+    if (row.sourceUrls !== undefined) {
+      invariant(Array.isArray(row.sourceUrls) && row.sourceUrls.length <= 20, `${path}_sourceUrls_invalid`);
+      for (const value of row.sourceUrls) {
+        let url;
+        try { url = new URL(value); } catch { /* Report the field below. */ }
+        invariant(typeof value === 'string' && value === value.trim() && url && ['https:', 'http:'].includes(url.protocol) && !url.username && !url.password, `${path}_sourceUrls_invalid`);
+      }
+      invariant(new Set(row.sourceUrls).size === row.sourceUrls.length, `${path}_sourceUrls_duplicate`);
+    }
 
     if (sourceKey === 'a16z') {
       validateText(row.category, `${path}_category`, 2);
@@ -135,7 +144,7 @@ function normalizeRows(sourceKey, rows) {
   const fields = SOURCE_CONFIG[sourceKey].fields;
   validateRows(sourceKey, rows, { requireSorted: false });
   return rows
-    .map((row) => Object.fromEntries(fields.map((field) => [field, row[field]])))
+    .map((row) => ({ ...Object.fromEntries(fields.map((field) => [field, row[field]])), ...(row.sourceUrls === undefined ? {} : { sourceUrls: [...row.sourceUrls] }) }))
     .sort(rowComparator);
 }
 

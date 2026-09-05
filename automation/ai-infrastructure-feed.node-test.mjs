@@ -74,3 +74,20 @@ test('rejects legacy divergence', () => {
   result.legacy.rows = result.legacy.rows.slice(1);
   assert.throws(() => validateFeedPair(result.combined, result.legacy), /legacy_rows_mismatch/);
 });
+
+test('preserves source links in both feed formats and ignores timestamp-only replays', () => {
+  const value = candidate();
+  value.sources.semianalysis.rows[0].sourceUrls = ['https://newsletter.semianalysis.com/p/example'];
+  value.sources.a16z.rows[0].sourceUrls = ['https://a16z.com/example', 'https://a16z.com/another'];
+  const first = prepareCandidate(value);
+  assert.deepEqual(first.legacy.rows.find(row => row.company === 'Older').sourceUrls, ['https://newsletter.semianalysis.com/p/example']);
+  assert.deepEqual(first.combined.sources.a16z.rows[0].sourceUrls, ['https://a16z.com/example', 'https://a16z.com/another']);
+  value.requestedAt = '2026-09-02T14:00:00Z';
+  assert.equal(prepareCandidate(value, first.combined).changed, false);
+});
+
+test('rejects malformed source links without changing the old row contract', () => {
+  const value = candidate();
+  value.sources.a16z.rows[0].sourceUrls = ['not a source URL'];
+  assert.throws(() => prepareCandidate(value), /sourceUrls/);
+});
