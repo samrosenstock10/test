@@ -109,7 +109,14 @@ jobs:
           validated_head="$(git rev-parse HEAD)"
           for attempt in {1..30}; do
             current_head="$(gh pr view "$PR_URL" --json headRefOid --jq '.headRefOid')"
-            test "$current_head" = "$validated_head"
+            if [[ "$current_head" != "$validated_head" ]]; then
+              if [[ "$attempt" -eq 30 ]]; then
+                echo "ai_infrastructure_feed_head_visibility_timeout:$current_head" >&2
+                exit 1
+              fi
+              sleep 2
+              continue
+            fi
             mergeable="$(gh pr view "$PR_URL" --json mergeable --jq '.mergeable')"
             if [[ "$mergeable" = "CONFLICTING" ]]; then
               echo "ai_infrastructure_feed_merge_conflict" >&2
