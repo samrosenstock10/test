@@ -1,0 +1,89 @@
+large enough to help the desired image → small enough not to print itself
+
+If the process changes, that balance can change too.
+
+So OPC is tied to the actual scanner, mask stack, resist and process conditions rather than being a one-time abstract geometry cleanup.
+
+## 4. ILT: solve the problem backward
+
+Traditional OPC often begins with the original design edges and iteratively moves or decorates them.
+
+**Inverse lithography technology, or ILT,** takes a more global approach.
+
+It asks:
+
+**Given the wafer image I want, what mask pattern should produce it under this physical imaging model?**
+
+That is an inverse problem.
+
+Instead of limiting the answer to neat rectangles, the optimization can discover irregular or curving mask shapes that provide a larger process window.
+
+Synopsys and Siemens both now support curvilinear mask-synthesis flows, reflecting the industry's move beyond purely Manhattan — horizontal-and-vertical — mask geometry.
+
+The tradeoff is compute and data complexity.
+
+The more freedom the optimizer has, the larger the search problem becomes.
+
+## 5. Why curvilinear masks matter
+
+Curves are not valuable because curved masks look sophisticated.
+
+They matter only if they improve how robustly the wafer pattern prints across real manufacturing variation.
+
+A better mask may keep the feature closer to target as:
+
+- focus shifts slightly;
+- exposure dose changes;
+- local pattern density changes;
+- mask and resist effects interact.
+
+That broader acceptable operating region is the **process window**.
+
+So the economic question is not whether a curvilinear mask is prettier or more computationally advanced.
+
+It is whether the extra computation and mask-making complexity buy enough process-window, yield or patterning benefit to justify themselves.
+
+## 6. The computation itself can become a bottleneck
+
+Full-chip OPC and ILT are enormous numerical workloads.
+
+The software repeatedly models electromagnetic behavior and process response across billions of features, then adjusts mask geometry and checks the result again.
+
+NVIDIA has described computational lithography as one of semiconductor manufacturing's largest compute workloads. In a 2024 production announcement with TSMC and Synopsys, the companies reported roughly **45× acceleration on curvilinear flows and nearly 60× on more traditional Manhattan-style flows** in shared cuLitho testing.
+
+Treat those as vendor-reported workload results, not universal speedups.
+
+The important lesson is the scale relationship:
+
+more advanced patterning → more complex correction → more compute → longer tape-out turnaround unless software and compute improve
+
+A fab can therefore have enough scanners and mask-writing capacity but still lose development time waiting for corrected mask data to be generated and verified.
+
+## 7. Why faster computation has physical manufacturing value
+
+This is a subtle point.
+
+Computational lithography runs in data centers, not inside the wafer process chamber.
+
+So faster OPC does not automatically increase wafers per hour on an already-qualified production mask.
+
+Its biggest leverage is often **development cycle time**.
+
+If engineers change the process, retune a model or redesign a critical layer, the correction flow may need to run again.
+
+Reducing that turnaround can let a foundry test more alternatives, converge on a manufacturable process faster, and deliver corrected masks sooner.
+
+That means compute can be a bottleneck to learning rather than a direct wafer-throughput bottleneck.
+
+This is the same distinction from Lesson 030:
+
+**development bottleneck ≠ steady-state wafer bottleneck.**
+
+## 8. Mask data preparation: turn geometry into something the writer can consume
+
+After OPC or ILT produces the corrected mask geometry, the job is still not finished.
+
+The mask shop needs data that its writer can actually manufacture.
+
+**Mask data preparation, or MDP,** converts and validates the corrected layout for the mask-making flow.
+
