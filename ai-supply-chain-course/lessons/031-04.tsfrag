@@ -1,0 +1,8 @@
+Because the mask is compensating in advance for predictable distortions from diffraction, optics, resist and process behavior. The deliberately modified mask passes through those distortions and produces a wafer image closer to the original target.
+
+## Next lesson
+
+Lesson 032: Source-Mask Optimization — Why the Illumination and Reticle Pattern Are Designed Together
+
+We will move from correcting the mask alone to jointly optimizing the scanner illumination and mask pattern, and see why lithography performance increasingly comes from co-designing the entire imaging system.`,
+} satisfies Lesson;
