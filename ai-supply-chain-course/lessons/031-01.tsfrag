@@ -1,0 +1,85 @@
+import type { Lesson } from "./lessons";
+
+export const lesson031 = {
+  number: 31,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "OPC, ILT and Mask Data Preparation — How Software Turns a Chip Layout Into a Printable Reticle",
+  date: "2026-09-06",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 026: High-NA EUV improves resolution by raising numerical aperture, but its value depends on whether it removes more manufacturing complexity than it introduces.
+
+Lesson 027: EUV pellicles protect reusable reticles from repeating contamination defects, while transmission and thermal behavior can affect scanner throughput.
+
+Lesson 028: An EUV mask is a patterned multilayer mirror, so reflectivity, absorber geometry and buried defects all influence what is actually printed on the wafer.
+
+Lesson 029: Mask inspection and repair separate harmless imperfections from printable defects before one master-pattern error can repeat across many exposures.
+
+Lesson 030: Multi-beam e-beam writers use massive parallelism to manufacture increasingly complex mask shapes without letting write time scale directly with pattern complexity.
+
+The big idea
+
+A chip designer does **not** simply draw the transistor or wire shape they want on the wafer and send that same shape to the mask shop.
+
+At leading-edge dimensions, light diffraction, scanner optics, photoresist chemistry, mask effects and later process steps distort what finally prints.
+
+So the mask is deliberately made **wrong in order for the wafer to come out right**.
+
+That transformation is computational lithography.
+
+A simplified flow is:
+
+desired wafer layout → lithography model → OPC or ILT correction → mask manufacturability checks → mask data preparation → mask writer
+
+This is the software layer sitting between chip design and the physical reticle from the last several lessons.
+
+## 1. Why the original layout cannot simply be printed
+
+Imagine wanting a perfectly square black shape on a wall, but your projector blurs every sharp corner and spreads light into neighboring regions.
+
+If you project the square exactly as drawn, the wall image will not be square.
+
+The semiconductor version is much harder because features can be close to the practical resolution limit of the scanner.
+
+Nearby lines interact through diffraction and interference. Corners round. Line ends shorten. Dense patterns and isolated patterns print differently. Dose and focus variations change dimensions across the process window.
+
+The mask therefore has to anticipate those distortions.
+
+The goal is not:
+
+**make the mask match the chip layout.**
+
+The goal is:
+
+**make the wafer image match the chip layout after the entire imaging process acts on it.**
+
+## 2. OPC: deliberately distort the mask
+
+**Optical proximity correction, or OPC,** starts with a model of how the scanner, mask, resist and process will print a pattern.
+
+Software simulates the wafer image, compares it with the intended target, modifies the mask, and repeats.
+
+Typical corrections can include:
+
+- moving an edge slightly outward or inward;
+- extending a line end;
+- reshaping a corner;
+- changing local widths;
+- adding tiny assist features near the real circuit feature.
+
+Those assist features may never be intended to print as working circuit structures. Their job is to alter the optical field so the **main** feature prints more accurately.
+
+This is why a modern reticle can look surprisingly different from the clean geometric layout a circuit designer originally drew.
+
+## 3. SRAFs: features that help without becoming features
+
+A common example is the **sub-resolution assist feature**, or SRAF.
+
+Suppose one isolated line prints differently from a line surrounded by neighbors.
+
+Software can place small shapes near the isolated line so, optically, it behaves more like a dense pattern.
+
+The SRAF is designed to influence diffraction but remain below the threshold required to print as a real wafer feature.
+
+That creates a narrow operating window:
+
