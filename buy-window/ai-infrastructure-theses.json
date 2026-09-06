@@ -1,10 +1,23 @@
 {
-  "updatedAt": "2026-09-05T22:01:58.628Z",
+  "updatedAt": "2026-09-06T11:30:00Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "sources": {
     "semianalysis": {
       "label": "SemiAnalysis",
       "rows": [
+        {
+          "loggedDate": "2026-09-06",
+          "sourceDate": "2026-09-05",
+          "company": "OpenAI (private)",
+          "bullishness": 5,
+          "summary": "OpenAI’s 5/5 thesis strengthens again: model-driven serving optimization is directly lowering inference cost while its custom-ASIC program has asymmetric strategic value—successful Jalapeño raises revenue per MW, while even failure can extract substantial Nvidia financing and backstops. SemiAnalysis says that at OpenAI’s serving scale even single-digit-percent kernel gains are worth hundreds of millions of dollars of compute, and reports that 5.6-sol rewrote a production kernel that produced 20% lower serving costs plus 15% better token-generation efficiency from improved speculative decoding, with savings passed into Luna/Terra price cuts. Separately, SemiAnalysis argues OpenAI wins strategically either way on Jalapeño: success improves revenue per MW; failure still pressures Nvidia to provide billions of dollars of financing/backstops.",
+          "sourceUrls": [
+            "https://www.linkedin.com/company/semianalysis",
+            "https://www.linkedin.com/posts/semianalysis_openainvidia-it-is-clearly-a-good-idea-activity-7501414047330787329-EZvJ",
+            "https://www.dwarkesh.com/p/dylan-patel-3",
+            "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia"
+          ]
+        },
         {
           "loggedDate": "2026-09-05",
           "sourceDate": "2026-09-05",
@@ -55,17 +68,6 @@
           "sourceUrls": [
             "https://www.dwarkesh.com/p/dylan-patel-3",
             "https://newsletter.semianalysis.com/p/are-open-models-catching-up"
-          ]
-        },
-        {
-          "loggedDate": "2026-08-28",
-          "sourceDate": "2026-08-25",
-          "company": "OpenAI (private)",
-          "bullishness": 5,
-          "summary": "OpenAI’s thesis materially strengthens beyond custom silicon: SemiAnalysis expects OpenAI and Anthropic to absorb roughly half of incremental global AI compute by end-2027 and potentially 70–80% by 2028 because frontier-lab monetization lets them outbid other buyers for scarce capacity. Patel’s argument is an economic flywheel: frontier labs can generate exceptional revenue per MW, bid more aggressively for scarce compute, and increasingly redirect marginal capacity toward R&D, potentially reinforcing their model advantage. OpenAI’s new custom silicon further improves the economics of this compute concentration.",
-          "sourceUrls": [
-            "https://www.dwarkesh.com/p/dylan-patel-3",
-            "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia"
           ]
         },
         {
