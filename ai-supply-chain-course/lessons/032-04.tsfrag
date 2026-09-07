@@ -1,0 +1,2 @@
+We will move from optimizing the mask alone to co-optimizing the scanner's illumination pattern and the reticle, and see why the best printable solution can depend on treating the light source and mask as one coupled imaging problem.`,
+} satisfies Lesson;
