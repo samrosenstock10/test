@@ -1,0 +1,108 @@
+## 3. Resist and metrology determine whether throughput becomes good output
+
+The scanner produces an optical image. Photoresist converts it into chemistry and then a temporary physical stencil.
+
+The process wants several things at once:
+
+- small features;
+- accurate edges;
+- low random-defect probability;
+- enough process margin;
+- acceptable exposure time.
+
+Improving one can hurt another. A higher dose might improve pattern reliability but reduce scanner throughput.
+
+Then the fab measures what actually printed.
+
+Did the new layer land in the correct place? That is overlay.
+
+Did the line print at the intended width? That is critical-dimension control.
+
+Are there random or systematic defects? Inspection and process-control tools answer that.
+
+Those measurements feed back into scanner settings, process recipes and future corrections.
+
+That creates the third clock:
+
+**yield-learning time.**
+
+A fab can have enough equipment to process many wafers but still make too few good dies because the process window is narrow or defects are poorly understood.
+
+So remember:
+
+installed capacity ≠ actual wafer throughput ≠ good-die output
+
+## 4. The three clocks
+
+You should now carry three separate lithography clocks in your head.
+
+**Clock 1 — Design and mask cycle**
+
+layout → OPC/ILT → mask data → writing → inspection → repair
+
+This determines how quickly a new or changed pattern becomes a qualified reticle.
+
+**Clock 2 — Wafer production cycle**
+
+scanner exposure → resist processing → pattern transfer → next wafer
+
+This determines how much physical wafer volume the line can process.
+
+**Clock 3 — Yield-learning cycle**
+
+measure errors → identify cause → correct process → verify improvement
+
+This determines how quickly nominal capacity becomes reliable good-die output.
+
+A technology can improve one clock while barely affecting another.
+
+Faster computational lithography may shorten Clock 1.
+
+More scanners or better uptime can improve Clock 2.
+
+Better metrology and process integration can accelerate Clock 3.
+
+That distinction is more useful than simply asking whether a technology is "important."
+
+## 5. Where the bottlenecks actually sit
+
+Now classify the layers we have studied.
+
+**Mask writing and inspection** can constrain development turnaround as pattern complexity rises, but they do not automatically limit production wafers per hour.
+
+**EUV scanner count, exposure time and availability** can directly constrain wafer throughput.
+
+**Pellicle transmission, resist performance and required dose** can affect how productively expensive scanner capacity is used.
+
+**Overlay, critical dimension and stochastic defects** can constrain yield even when gross wafer throughput looks healthy.
+
+**Computational lithography** can expand process window and speed development, but software compute is not the same thing as fab wafers per hour.
+
+The causal chain you want is:
+
+constraint → physical consequence → affected clock → economic scarcity → company that can capture value
+
+## 6. Why the foundry is more than the sum of its tools
+
+Suppose two fabs buy similar classes of lithography, deposition, etch and metrology equipment.
+
+They can still achieve different manufacturing results because the value is partly in **integration**.
+
+A mask correction can alter the resist image.
+
+A resist change can alter required dose.
+
+Dose can change scanner throughput and random-defect risk.
+
+CMP or thermal distortion from earlier steps can worsen overlay.
+
+Metrology may reveal that an apparent lithography problem actually originated elsewhere.
+
+The foundry has to tune the whole production system so these interactions produce acceptable yield, throughput and cost.
+
+That is why TSMC, Samsung or Intel cannot be analyzed merely by totaling the equipment they purchase.
+
+## 7. Who captures the economics
+
+The supplier map now becomes clearer.
+
