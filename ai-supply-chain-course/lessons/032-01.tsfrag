@@ -1,0 +1,81 @@
+import type { Lesson } from "./lessons";
+
+export const lesson032 = {
+  number: 32,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Lithography Stack Synthesis — From Layout File to Printed Wafer, and Where the Real Bottlenecks Sit",
+  date: "2026-09-07",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 027: EUV pellicles protect reusable reticles from repeating contamination defects, while transmission and thermal behavior can affect scanner throughput.
+
+Lesson 028: An EUV mask is a patterned multilayer mirror, so reflectivity, absorber geometry and buried defects all influence what is actually printed on the wafer.
+
+Lesson 029: Mask inspection and repair separate harmless imperfections from printable defects before one master-pattern error can repeat across many exposures.
+
+Lesson 030: Multi-beam e-beam writers use massive parallelism to manufacture increasingly complex reticle patterns without letting write time scale directly with mask complexity.
+
+Lesson 031: OPC and ILT deliberately distort mask geometry so diffraction, optics, resist and process effects produce a wafer image closer to the intended circuit.
+
+The big idea
+
+We have spent several lessons zoomed in on individual pieces of lithography.
+
+Now zoom out.
+
+A leading-edge lithography layer is not produced by one miraculous machine. It is produced by a **chain of models, masks, optics, chemicals, measurements and feedback loops** that all have to work together:
+
+desired wafer pattern → computational correction → physical reticle → scanner → photoresist image → measured wafer pattern → process correction
+
+The key analyst lesson is that the word **bottleneck** means different things at different points in this chain.
+
+A mask writer can delay a new design.
+
+An EUV scanner can limit steady-state wafer output.
+
+Poor overlay or stochastic defects can destroy yield even when scanner capacity is abundant.
+
+The job is to identify **which clock is actually binding**.
+
+## 1. Before a wafer enters the scanner
+
+The chip designer ultimately wants structures on silicon: transistor features, contacts and metal lines in the correct shapes and locations.
+
+But Lesson 031 showed why that desired wafer geometry cannot simply be copied onto a mask. The imaging system will distort it.
+
+Computational lithography therefore works backward from the wafer target and creates a corrected reticle pattern that anticipates optics, diffraction, resist and process behavior.
+
+That corrected digital pattern then has to become a physical mask.
+
+The mask writer writes it. Inspection looks for defects that could print. Repair fixes important defects. For EUV, the reticle is a reflective multilayer optical stack, and a pellicle can protect it from particles.
+
+This entire chain happens before normal wafer production.
+
+That gives us the first clock:
+
+**design and mask turnaround time.**
+
+If OPC, mask-data preparation, writing, inspection or repair takes too long, a new design can be delayed even if the fab has spare wafer-processing capacity.
+
+That is a development bottleneck, not necessarily a production bottleneck.
+
+## 2. The scanner creates the optical image
+
+Now the reticle enters the scanner.
+
+The scanner does not simply shine generic light at a pattern. Its illumination, mirrors, projection optics, wafer stage, focus and dose control all shape the image reaching the resist.
+
+For EUV, useful photon supply matters because the process needs enough exposure dose to print reliably while still moving wafers through the scanner quickly.
+
+That gives us the second clock:
+
+**steady-state wafer-production time.**
+
+If a critical layer requires longer exposure, scanner availability falls, or there are too few qualified scanners, lithography can directly constrain how many wafers the fab processes.
+
+Do not confuse this with mask turnaround.
+
+One delays when a design becomes manufacturable.
+
+The other can constrain daily factory output.
+
