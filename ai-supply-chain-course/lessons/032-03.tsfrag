@@ -1,0 +1,62 @@
+**ASML** owns the exposure-tool layer. When EUV scanner capability, tool count or availability is the binding constraint, its position is unusually direct.
+
+**KLA and other process-control suppliers** monetize the need to detect problems, shorten learning cycles and protect yield.
+
+**Mask-writing and inspection vendors** can be strategically critical because every advanced design needs qualified reticles, but their scarcity often affects development turnaround differently from daily wafer throughput.
+
+**EDA and computational-lithography vendors** help translate desired chip geometry into something the physical process can print.
+
+**Materials suppliers** can affect scanner productivity or defectivity even when the consumable itself is a small cost item.
+
+And **the foundry** captures value from integrating the entire chain into a qualified process.
+
+Physical importance, bottleneck severity and investment attractiveness are related—but not identical.
+
+## 8. The analyst's translation test
+
+Imagine someone says:
+
+**"AI chip demand is exploding, so every lithography supplier should benefit equally."**
+
+That is too crude.
+
+Ask instead:
+
+1. Is the constraint design turnaround, wafer throughput or yield?
+2. Which lithography layers are actually capacity-limited?
+3. Is more output unlocked by more tools, better uptime, better dose efficiency, better masks or faster yield learning?
+4. Does the supplier own a scarce bottleneck or merely an essential input?
+5. Does solving this bottleneck increase finished good-chip output, or just move the constraint downstream?
+
+That last question matters.
+
+If EUV wafer capacity expands but advanced packaging cannot handle the additional good dies, system output may barely change.
+
+The AI supply chain is a sequence of coupled constraints. Solving one often reveals the next.
+
+## Remember these 6 things
+
+1. Leading-edge lithography is a coordinated stack from corrected design data through masks, optics, resist and metrology—not one machine.
+
+2. Separate three clocks: design/mask turnaround, wafer-production throughput and yield learning.
+
+3. A development bottleneck can delay a chip without constraining steady-state wafers per hour.
+
+4. Scanner count, exposure time and availability can constrain wafer output; overlay, CD control and stochastic defects can constrain good-die yield.
+
+5. Foundry process integration matters because changes in one part of the stack propagate into other steps.
+
+6. Ask what physical constraint is binding, how it affects output, and who captures value from relieving it.
+
+## Quick check
+
+A fab has enough EUV scanners to meet its planned wafer starts, but a new process has poor overlay and unstable critical dimensions.
+
+Is scanner capacity still the bottleneck?
+
+Not necessarily. Scanner capacity may be adequate while **yield learning and process control** are binding. Buying another scanner would not fix a process that cannot reliably print good structures.
+
+## Next lesson
+
+Lesson 033: Source-Mask Optimization — Why the Illumination and Reticle Pattern Are Designed Together
+
