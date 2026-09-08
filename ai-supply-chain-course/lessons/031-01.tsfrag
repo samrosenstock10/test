@@ -2,8 +2,8 @@ import type { Lesson } from "./lessons";
 
 export const lesson031 = {
   number: 31,
-  module: "Module 2: From Wafer to Working AI Accelerator",
-  title: "From a Finished Wafer to Useful AI — Where the Bottleneck Moves",
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Topic 1 Synthesis — From Wafer Fabrication to Useful AI",
   date: "2026-09-06",
   body: `Prior Lessons — 1-Sentence Recap
 
@@ -17,51 +17,43 @@ Lesson 029: Mask inspection and repair catch important defects before a faulty m
 
 Lesson 030: Mask writers make the master patterns used to print chips, so slow mask production can delay a new design.
 
-The big idea
+Closing Topic 1 — How a Chip Is Physically Made
 
-You now understand much of what happens inside a wafer fab. This lesson begins a new unit: following the finished silicon until it becomes useful AI.
+We began with a blank silicon wafer and followed the steps that turn it into working circuits. Before moving to packaging, put those pieces back together.
 
-The question is simple: if a fab produces 20% more working accelerator dies, can customers do 20% more AI work?
+The purpose of this first topic was to understand how a fab produces good dies reliably, and why that is much harder than simply owning the right machines.
 
-Only if the rest of the system can use them. Learning to find the limiting step is the reason we studied the manufacturing details.
+1. The manufacturing story, from beginning to end
 
-1. Put the whole system back on the map
+The wafer provides the starting surface. Deposition adds thin films. Lithography prints a temporary pattern in a light-sensitive coating. Etch removes selected material to transfer that pattern into the underlying layer.
 
-Chip design → wafer fabrication → tested dies → packaging with memory → servers and networking → powered, cooled clusters → software running models → useful AI output
+Doping changes silicon's electrical behavior, and annealing uses heat to repair damage and activate dopants. Cleaning removes contamination. CMP, or polishing, flattens the surface so later layers can be built accurately.
 
-This is a dependency map, not one factory conveyor belt. Memory chips are made separately. Data centers and power infrastructure can be built while accelerator dies are still in production. Software influences the chip design before manufacturing even starts.
+These operations repeat in different combinations across many layers. Inspection and measurement check the results along the way so engineers can identify problems and adjust the process.
 
-The branches must meet at the right time. A finished logic die cannot replace a missing memory stack, and a delivered server cannot replace an unfinished electrical connection.
+Build material → define a pattern → modify selected areas → clean and flatten → measure and correct → repeat
 
-TSMC's CoWoS documentation illustrates one of those meeting points: packaging integrates compute silicon and high-bandwidth memory into a product. The following lessons explain how.
+That is the physical story behind the individual lessons. The fab must integrate the steps into one repeatable process.
 
-2. Three different questions hide inside the word bottleneck
+2. Where EUV fits in that story
 
-Manufacturing: how many working accelerators can suppliers deliver per month? Wafer output, memory supply, assembly and test all matter.
+EUV is one way to print exceptionally fine patterns. Its surrounding system includes the light source, optics, masks, protective pellicles, photoresist and precise positioning.
 
-Deployment: how many delivered accelerators can the customer put into service? Server integration, networking, power, cooling and commissioning matter here.
+Our recent lessons explained why these pieces have to work together. A defective mask can repeat an error; poor alignment can put a good pattern in the wrong place; downtime can leave an expensive machine unproductive.
 
-Runtime: how much useful work can the installed system complete? The workload and software determine how effectively it uses compute, memory and communication.
+Those details support one larger idea: better patterning only creates value when it helps the complete process produce useful chips.
 
-These require different evidence. Scanner uptime helps answer a manufacturing question. It cannot, by itself, explain why an installed GPU is waiting for data.
+Lithography does not deposit every film, etch every structure or guarantee yield. EUV is a crucial part of the manufacturing system, and its importance must be understood in relation to the other steps.
 
-3. A small model makes the distinction concrete
+3. The three economic lessons to carry forward
 
-The following numbers are invented teaching assumptions, not estimates of any company. Consider one product needing one good logic die and six qualified HBM stacks per accelerator.
+First, count good output. Wafer starts are an input; working dies are an output. Die size, utilization and yield help connect them. A factory can process more wafers without producing proportionately more usable chips.
 
-Assume a steady monthly flow, no starting inventory, and capacities already adjusted for losses and allocated to this product:
+Second, distinguish installed equipment from productive capacity. Uptime, process qualification and the surrounding tools determine what a machine can actually contribute.
 
-- Logic supply: enough for 100,000 accelerators.
+Third, find the current constraint. Improving a step that already has spare capacity may have little immediate effect on factory output. The constraint can move as engineers improve the process.
 
-- HBM supply: 480,000 stacks, enough for 80,000 accelerators.
+This is also why a supplier's technical importance does not, by itself, establish its profits. Competition, customer bargaining and the cost of adding capacity still matter.
 
-- Packaging and test: 90,000 working accelerators.
-
-- Site deployment: 70,000 additional accelerators brought into service.
-
-Manufacturing is capped at 80,000 accelerators per month by HBM. Deployment is capped at 70,000 per month by site readiness. Output above deployment capacity accumulates as inventory in this simplified example.
-
-Now raise good logic output from 100,000 to 120,000. Neither limit changes. More finished silicon alone creates no additional operational accelerators that month.
-
-This does not make wafer capacity unimportant. It means its marginal value depends on what is available beside and downstream of it.
+4. Check whether the pieces connect
 
