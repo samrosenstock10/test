@@ -1,2 +1,2 @@
-We will open the accelerator package and see why a working die still needs an entire manufacturing system around it.`,
+Topic 1 followed the making of the die. Topic 2 follows how that die becomes part of a working product, starting with the physical connections between compute and memory.`,
 } satisfies Lesson;
