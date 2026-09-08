@@ -1,7 +1,32 @@
 {
-  "updatedAt": "2026-09-06T11:30:00Z",
+  "updatedAt": "2026-09-08T11:32:56Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "rows": [
+    {
+      "loggedDate": "2026-09-08",
+      "sourceDate": "2026-09-07",
+      "company": "Nvidia / NVDA",
+      "bullishness": 4,
+      "summary": "Nvidia remains a high-conviction AI platform beneficiary, but SemiAnalysis’s new TPUv7 evidence materially weakens the merchant-inference/CUDA moat beyond frontier-lab custom ASICs because Google is now externalizing a large-scale alternative that can beat B200/B300 on modeled performance per dollar at many FP8 operating points, even as sovereign AI broadens Nvidia’s demand base. SemiAnalysis still has strong reasons to remain constructive on Nvidia—its broad merchant platform, mature software, FP4 advantage and new sovereign-AI demand—but the Sep. 7 work adds a distinct competitive threat. SemiAnalysis says TPU externalization is moving full steam ahead, expects Google’s external software stack to mature rapidly, and shows Ironwood already offering superior modeled inference economics across meaningful parts of the curve.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
+        "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
+        "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+        "https://newsletter.semianalysis.com/p/ultra-high-interactivity-on-nvidia"
+      ]
+    },
+    {
+      "loggedDate": "2026-09-08",
+      "sourceDate": "2026-09-07",
+      "company": "Alphabet / GOOGL",
+      "bullishness": 5,
+      "summary": "Google’s merchant TPU/GCP thesis materially strengthens again: third-party InferenceX preview results now show TPUv7 Ironwood can beat Nvidia B200/B300 on modeled inference performance per dollar across meaningful FP8 operating points while Google rapidly externalizes its software stack, materially de-risking the technical foundation behind SemiAnalysis’s already-bullish external TPU/GCP revenue thesis. SemiAnalysis says TPU externalization is heading in the right direction and moving full steam ahead, expects Google’s decades of software-engineering and quality culture to mature the external stack rapidly, and now has public benchmark evidence that Ironwood’s lower TCO can offset lower raw throughput. This converts the prior GCP/TPU thesis from mostly backlog and commercialization evidence into direct third-party proof that outside customers can achieve compelling economics.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
+        "https://newsletter.semianalysis.com/p/gemini-is-cooked-but-gcp-is-cooking",
+        "https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the"
+      ]
+    },
     {
       "loggedDate": "2026-09-06",
       "sourceDate": "2026-09-05",
@@ -30,18 +55,6 @@
         "https://inferencex.semianalysis.com/rankings/fastest-gpu-for-minimax-m3",
         "https://newsletter.semianalysis.com/p/agentx-inferencexv3-does-cuda-moat",
         "https://newsletter.semianalysis.com/p/can-amd-break-the-cuda-moat-amd-advancing"
-      ]
-    },
-    {
-      "loggedDate": "2026-09-02",
-      "sourceDate": "2026-09-01",
-      "company": "Nvidia / NVDA",
-      "bullishness": 4,
-      "summary": "Nvidia’s thesis materially strengthens through sovereign AI: nation-state demand can diversify Nvidia away from a shrinking set of frontier-lab/hyperscaler buyers even as custom ASICs weaken its moat with the largest sophisticated customers. SemiAnalysis explicitly calls sovereign AI a major Nvidia opportunity because countries seeking domestic control of frontier-capable models still lack scaled domestic accelerator ecosystems. Nvidia can pair hardware, software, roadmap access and financing to become the default sovereign compute platform while helping create customers outside OpenAI, Anthropic and the hyperscalers.",
-      "sourceUrls": [
-        "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
-        "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
-        "https://newsletter.semianalysis.com/p/ultra-high-interactivity-on-nvidia"
       ]
     },
     {
@@ -96,17 +109,6 @@
       "summary": "SemiAnalysis still believes SpaceX can scale AI compute toward 10GW by year-end 2027 and monetize scarce capacity at exceptional pricing, but its current published base case points to roughly $300B of ARR rather than the $500B figure previously captured in the ledger. The core thesis remains highly bullish: SemiAnalysis says the 10GW buildout is real, SpaceX can build faster than traditional operators, premium inference economics support unusually high $/MW pricing, and Microsoft is a plausible anchor offtaker. The correction narrows the quantified ARR case but does not change the scale or strategic logic.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/spacex-10gw-in-2027-why-its-real"
-      ]
-    },
-    {
-      "loggedDate": "2026-08-07",
-      "sourceDate": "2026-08-07",
-      "company": "Alphabet / GOOGL",
-      "bullishness": 5,
-      "summary": "Google’s merchant TPU/GCP thesis has materially strengthened in the near term: SemiAnalysis expects external TPU system sales and third-party AI workloads to drive GCP growth above 100% in 2027 and add roughly $3 to Google EPS, even as DeepMind’s frontier-model position deteriorates. SemiAnalysis now explicitly frames GCP—not Gemini—as the major financial beneficiary of Google’s compute allocation. It expects Google Cloud to absorb the TPU platform economics through direct system sales and third-party AI infrastructure, while management prioritizes monetizing scarce compute over preserving DeepMind’s frontier position.",
-      "sourceUrls": [
-        "https://newsletter.semianalysis.com/p/gemini-is-cooked-but-gcp-is-cooking",
-        "https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the"
       ]
     },
     {
