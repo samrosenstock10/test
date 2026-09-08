@@ -2,84 +2,66 @@ import type { Lesson } from "./lessons";
 
 export const lesson031 = {
   number: 31,
-  module: "Module 1: How a Chip Is Physically Made",
-  title: "OPC, ILT and Mask Data Preparation — How Software Turns a Chip Layout Into a Printable Reticle",
+  module: "Module 2: From Wafer to Working AI Accelerator",
+  title: "From a Finished Wafer to Useful AI — Where the Bottleneck Moves",
   date: "2026-09-06",
   body: `Prior Lessons — 1-Sentence Recap
 
-Lesson 026: High-NA EUV improves resolution by raising numerical aperture, but its value depends on whether it removes more manufacturing complexity than it introduces.
+Lesson 026: High-NA EUV can print finer features, but chipmakers must weigh that improvement against changes in manufacturing cost and complexity.
 
-Lesson 027: EUV pellicles protect reusable reticles from repeating contamination defects, while transmission and thermal behavior can affect scanner throughput.
+Lesson 027: A pellicle protects the chip's master pattern from particles, helping prevent the same defect from being printed repeatedly.
 
-Lesson 028: An EUV mask is a patterned multilayer mirror, so reflectivity, absorber geometry and buried defects all influence what is actually printed on the wafer.
+Lesson 028: An EUV mask uses carefully built mirrors and patterned materials to direct light into the shapes needed on a wafer.
 
-Lesson 029: Mask inspection and repair separate harmless imperfections from printable defects before one master-pattern error can repeat across many exposures.
+Lesson 029: Mask inspection and repair catch important defects before a faulty master pattern can spoil many chips.
 
-Lesson 030: Multi-beam e-beam writers use massive parallelism to manufacture increasingly complex mask shapes without letting write time scale directly with pattern complexity.
+Lesson 030: Mask writers make the master patterns used to print chips, so slow mask production can delay a new design.
 
 The big idea
 
-A chip designer does **not** simply draw the transistor or wire shape they want on the wafer and send that same shape to the mask shop.
+You now understand much of what happens inside a wafer fab. This lesson begins a new unit: following the finished silicon until it becomes useful AI.
 
-At leading-edge dimensions, light diffraction, scanner optics, photoresist chemistry, mask effects and later process steps distort what finally prints.
+The question is simple: if a fab produces 20% more working accelerator dies, can customers do 20% more AI work?
 
-So the mask is deliberately made **wrong in order for the wafer to come out right**.
+Only if the rest of the system can use them. Learning to find the limiting step is the reason we studied the manufacturing details.
 
-That transformation is computational lithography.
+1. Put the whole system back on the map
 
-A simplified flow is:
+Chip design → wafer fabrication → tested dies → packaging with memory → servers and networking → powered, cooled clusters → software running models → useful AI output
 
-desired wafer layout → lithography model → OPC or ILT correction → mask manufacturability checks → mask data preparation → mask writer
+This is a dependency map, not one factory conveyor belt. Memory chips are made separately. Data centers and power infrastructure can be built while accelerator dies are still in production. Software influences the chip design before manufacturing even starts.
 
-This is the software layer sitting between chip design and the physical reticle from the last several lessons.
+The branches must meet at the right time. A finished logic die cannot replace a missing memory stack, and a delivered server cannot replace an unfinished electrical connection.
 
-## 1. Why the original layout cannot simply be printed
+TSMC's CoWoS documentation illustrates one of those meeting points: packaging integrates compute silicon and high-bandwidth memory into a product. The following lessons explain how.
 
-Imagine wanting a perfectly square black shape on a wall, but your projector blurs every sharp corner and spreads light into neighboring regions.
+2. Three different questions hide inside the word bottleneck
 
-If you project the square exactly as drawn, the wall image will not be square.
+Manufacturing: how many working accelerators can suppliers deliver per month? Wafer output, memory supply, assembly and test all matter.
 
-The semiconductor version is much harder because features can be close to the practical resolution limit of the scanner.
+Deployment: how many delivered accelerators can the customer put into service? Server integration, networking, power, cooling and commissioning matter here.
 
-Nearby lines interact through diffraction and interference. Corners round. Line ends shorten. Dense patterns and isolated patterns print differently. Dose and focus variations change dimensions across the process window.
+Runtime: how much useful work can the installed system complete? The workload and software determine how effectively it uses compute, memory and communication.
 
-The mask therefore has to anticipate those distortions.
+These require different evidence. Scanner uptime helps answer a manufacturing question. It cannot, by itself, explain why an installed GPU is waiting for data.
 
-The goal is not:
+3. A small model makes the distinction concrete
 
-**make the mask match the chip layout.**
+The following numbers are invented teaching assumptions, not estimates of any company. Consider one product needing one good logic die and six qualified HBM stacks per accelerator.
 
-The goal is:
+Assume a steady monthly flow, no starting inventory, and capacities already adjusted for losses and allocated to this product:
 
-**make the wafer image match the chip layout after the entire imaging process acts on it.**
+- Logic supply: enough for 100,000 accelerators.
 
-## 2. OPC: deliberately distort the mask
+- HBM supply: 480,000 stacks, enough for 80,000 accelerators.
 
-**Optical proximity correction, or OPC,** starts with a model of how the scanner, mask, resist and process will print a pattern.
+- Packaging and test: 90,000 working accelerators.
 
-Software simulates the wafer image, compares it with the intended target, modifies the mask, and repeats.
+- Site deployment: 70,000 additional accelerators brought into service.
 
-Typical corrections can include:
+Manufacturing is capped at 80,000 accelerators per month by HBM. Deployment is capped at 70,000 per month by site readiness. Output above deployment capacity accumulates as inventory in this simplified example.
 
-- moving an edge slightly outward or inward;
-- extending a line end;
-- reshaping a corner;
-- changing local widths;
-- adding tiny assist features near the real circuit feature.
+Now raise good logic output from 100,000 to 120,000. Neither limit changes. More finished silicon alone creates no additional operational accelerators that month.
 
-Those assist features may never be intended to print as working circuit structures. Their job is to alter the optical field so the **main** feature prints more accurately.
-
-This is why a modern reticle can look surprisingly different from the clean geometric layout a circuit designer originally drew.
-
-## 3. SRAFs: features that help without becoming features
-
-A common example is the **sub-resolution assist feature**, or SRAF.
-
-Suppose one isolated line prints differently from a line surrounded by neighbors.
-
-Software can place small shapes near the isolated line so, optically, it behaves more like a dense pattern.
-
-The SRAF is designed to influence diffraction but remain below the threshold required to print as a real wafer feature.
-
-That creates a narrow operating window:
+This does not make wafer capacity unimportant. It means its marginal value depends on what is available beside and downstream of it.
 
