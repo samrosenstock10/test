@@ -2,80 +2,60 @@ import type { Lesson } from "./lessons";
 
 export const lesson032 = {
   number: 32,
-  module: "Module 1: How a Chip Is Physically Made",
-  title: "Lithography Stack Synthesis — From Layout File to Printed Wafer, and Where the Real Bottlenecks Sit",
+  module: "Module 2: From Wafer to Working AI Accelerator",
+  title: "Advanced Packaging — How Compute and Memory Become One Product",
   date: "2026-09-07",
   body: `Prior Lessons — 1-Sentence Recap
 
-Lesson 027: EUV pellicles protect reusable reticles from repeating contamination defects, while transmission and thermal behavior can affect scanner throughput.
+Lesson 027: A pellicle keeps particles off the chip's master pattern, helping prevent the same defect from appearing on many dies.
 
-Lesson 028: An EUV mask is a patterned multilayer mirror, so reflectivity, absorber geometry and buried defects all influence what is actually printed on the wafer.
+Lesson 028: An EUV mask is a precision mirror with a pattern that controls where light reaches the wafer.
 
-Lesson 029: Mask inspection and repair separate harmless imperfections from printable defects before one master-pattern error can repeat across many exposures.
+Lesson 029: Inspecting and repairing masks helps stop a small error in a master pattern from becoming a large manufacturing loss.
 
-Lesson 030: Multi-beam e-beam writers use massive parallelism to manufacture increasingly complex reticle patterns without letting write time scale directly with mask complexity.
+Lesson 030: Mask writers create the patterns used in lithography, and their speed affects how quickly new designs can enter production.
 
-Lesson 031: OPC and ILT deliberately distort mask geometry so diffraction, optics, resist and process effects produce a wafer image closer to the intended circuit.
+Lesson 031: More chips only create more useful AI when memory, packaging, data centers and software can turn that extra supply into working systems.
 
 The big idea
 
-We have spent several lessons zoomed in on individual pieces of lithography.
+A finished accelerator die is a piece of silicon containing circuits. An accelerator package is the physical assembly that connects that die to memory, power and the rest of the computer.
 
-Now zoom out.
+Packaging is therefore part of the architecture. It influences which components can communicate, how densely they fit together and whether the product can be manufactured reliably.
 
-A leading-edge lithography layer is not produced by one miraculous machine. It is produced by a **chain of models, masks, optics, chemicals, measurements and feedback loops** that all have to work together:
+Where we are
 
-desired wafer pattern → computational correction → physical reticle → scanner → photoresist image → measured wafer pattern → process correction
+Fabricated and tested dies + separately manufactured memory → advanced package → server board → networked, powered cluster
 
-The key analyst lesson is that the word **bottleneck** means different things at different points in this chain.
+1. Open the package in your mind
 
-A mask writer can delay a new design.
+Picture a compute die with several memory stacks beside it. Underneath is a structure with very fine wiring that connects them. Beneath that is a package substrate, which provides connections at a scale suitable for the larger circuit board.
 
-An EUV scanner can limit steady-state wafer output.
+The fine wiring structure is called an interposer. The substrate is another layer of the assembly; the two words do not mean the same thing. Their exact materials and construction vary by packaging technology.
 
-Poor overlay or stochastic defects can destroy yield even when scanner capacity is abundant.
+The practical problem is connecting a huge number of signals in a small space while delivering power and managing heat and mechanical stress.
 
-The job is to identify **which clock is actually binding**.
+2. What CoWoS actually does
 
-## 1. Before a wafer enters the scanner
+CoWoS stands for Chip-on-Wafer-on-Substrate. It is TSMC's family of advanced packaging technologies for integrating compute dies and high-bandwidth memory.
 
-The chip designer ultimately wants structures on silicon: transistor features, contacts and metal lines in the correct shapes and locations.
+CoWoS-S uses a silicon interposer. CoWoS-R uses a redistribution-layer interposer, built with polymer and copper routing. CoWoS-L combines redistribution wiring with local silicon interconnects. These are different ways to provide connections and scale the assembly; the family should not be treated as one identical production line.
 
-But Lesson 031 showed why that desired wafer geometry cannot simply be copied onto a mask. The imaging system will distort it.
+For now, understand the function. We will revisit detailed routing and bonding when we can evaluate their system tradeoffs.
 
-Computational lithography therefore works backward from the wafer target and creates a corrected reticle pattern that anticipates optics, diffraction, resist and process behavior.
+3. Why put compute and memory together?
 
-That corrected digital pattern then has to become a physical mask.
+A processor continually needs data. If moving that data becomes too restrictive, adding more arithmetic units may not help.
 
-The mask writer writes it. Inspection looks for defects that could print. Repair fixes important defects. For EUV, the reticle is a reflective multilayer optical stack, and a pellicle can protect it from particles.
+Advanced packaging makes it possible to place wide memory interfaces close to the logic and connect them densely. TSMC describes this integration as a way to improve system performance, efficiency and form factor.
 
-This entire chain happens before normal wafer production.
+The engineering question is no longer only how many transistors fit on one die. It also becomes how effectively several pieces of silicon work together.
 
-That gives us the first clock:
+This is your first link from the wafer fab to runtime performance: manufacturing choices determine the physical communication paths available to the software.
 
-**design and mask turnaround time.**
+4. Why chiplets enter the picture
 
-If OPC, mask-data preparation, writing, inspection or repair takes too long, a new design can be delayed even if the fab has spare wafer-processing capacity.
+A chiplet is a die designed to operate as part of a larger multi-die product. Splitting functions can allow some blocks to use an advanced process and others to use a more mature process.
 
-That is a development bottleneck, not necessarily a production bottleneck.
-
-## 2. The scanner creates the optical image
-
-Now the reticle enters the scanner.
-
-The scanner does not simply shine generic light at a pattern. Its illumination, mirrors, projection optics, wafer stage, focus and dose control all shape the image reaching the resist.
-
-For EUV, useful photon supply matters because the process needs enough exposure dose to print reliably while still moving wafers through the scanner quickly.
-
-That gives us the second clock:
-
-**steady-state wafer-production time.**
-
-If a critical layer requires longer exposure, scanner availability falls, or there are too few qualified scanners, lithography can directly constrain how many wafers the fab processes.
-
-Do not confuse this with mask turnaround.
-
-One delays when a design becomes manufacturable.
-
-The other can constrain daily factory output.
+Recall Lesson 017: die size and defects affect manufacturing economics. Smaller dies can help in some circumstances, but splitting a processor also adds connections, design work and assembly requirements.
 
