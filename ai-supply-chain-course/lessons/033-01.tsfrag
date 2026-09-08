@@ -1,0 +1,83 @@
+import type { Lesson } from "./lessons";
+
+export const lesson033 = {
+  number: 33,
+  module: "Module 1: How a Chip Is Physically Made",
+  title: "Source-Mask Optimization — Why the Illumination and Reticle Pattern Are Designed Together",
+  date: "2026-09-08",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 028: An EUV mask is a patterned multilayer mirror, so reflectivity, absorber geometry and buried defects all influence what is actually printed on the wafer.
+
+Lesson 029: Mask inspection and repair separate harmless imperfections from printable defects before one master-pattern error can repeat across many exposures.
+
+Lesson 030: Multi-beam e-beam writers use massive parallelism to manufacture increasingly complex reticle patterns without letting write time scale directly with mask complexity.
+
+Lesson 031: OPC and ILT deliberately distort mask geometry so diffraction, optics, resist and process effects produce a wafer image closer to the intended circuit.
+
+Lesson 032: The lithography stack has three different clocks — design and mask turnaround, wafer throughput and yield learning — so the analyst must identify which one is actually binding.
+
+The big idea
+
+Lesson 031 showed that the mask is deliberately changed to compensate for the physics of printing.
+
+But the mask is only half of the imaging problem.
+
+The scanner also controls **how light illuminates that mask**.
+
+Source-mask optimization, or **SMO**, jointly designs those two things:
+
+illumination pattern + mask pattern → best printable wafer pattern
+
+One terminology warning matters immediately. In SMO, the word **source** usually means the illumination distribution entering the projection optics — the angles and locations from which light reaches the mask. It does not simply mean making the EUV plasma source brighter.
+
+That distinction turns SMO from a power problem into an imaging-design problem.
+
+## 1. Why illumination angle changes what prints
+
+A mask contains features that diffract light into different directions.
+
+The projection optics cannot collect every diffracted component equally. Which components enter the lens or mirror system depends partly on the angle at which the mask was illuminated.
+
+So changing the illumination pattern can make some geometries easier to resolve and others harder.
+
+A useful analogy is photographing texture on a surface.
+
+If light comes straight from the camera direction, some details may look flat. Move the light to the side and the same physical surface can reveal much stronger contrast.
+
+Lithography is far more exact, but the principle is similar: **the pattern and the illumination interact**.
+
+## 2. The scanner does not need one generic illumination shape
+
+Engineers can shape the illumination in the scanner pupil rather than treating it as one uniform disk of light.
+
+Common conceptual shapes include:
+
+- conventional illumination;
+- annular, or ring-shaped, illumination;
+- dipole illumination, with two favored regions;
+- quadrupole illumination, with four favored regions;
+- more complex freeform shapes.
+
+Different pitches and feature orientations respond differently to these choices.
+
+For example, a source that gives excellent contrast for one repeating line pattern may be less helpful for another orientation or for isolated features.
+
+That creates the core optimization problem:
+
+**there is no universally perfect source shape for every pattern on the chip.**
+
+## 3. Why optimizing the source alone is incomplete
+
+Suppose engineers first choose one illumination pattern and freeze it.
+
+They can then run OPC or ILT to find the best mask for that fixed source.
+
+That may work well, but it leaves a degree of freedom unused.
+
+SMO instead asks a larger question:
+
+**What source shape and what mask shape, together, give the largest robust process window for the important patterns?**
+
+The algorithm can alternate between the two sides of the problem:
+
