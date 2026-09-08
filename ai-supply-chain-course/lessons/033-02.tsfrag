@@ -1,101 +1,56 @@
-adjust source → optimize mask → simulate wafer image → measure error and process window → repeat
+An accelerator with 80 GB of memory might fit those weights, but the remaining space must also support runtime state, intermediate data and other requirements. Training needs additional memory for items such as gradients and optimizer state. Weight size is not total memory demand.
 
-The result may be a source shape that looks unintuitive and a mask that looks even less like the original chip layout.
+Adding capacity could allow a larger workload to fit on one accelerator. That can change the need to distribute work across devices, creating a connection from HBM to networking. It does not guarantee faster execution if the workload already fits.
 
-That is fine if the wafer prints more reliably.
+5. Bandwidth asks how fast data arrives
 
-## 4. The real target is process window, not one perfect image
+Suppose one stage of an invented workload must read 60 GB from HBM and has 3 TB/s of available bandwidth. Using decimal units, the transfer alone takes at least 0.02 seconds: 60 divided by 3,000.
 
-A lithography recipe cannot be judged only at one exact focus and one exact exposure dose.
+At 6 TB/s, that ideal transfer time becomes 0.01 seconds. But that is not automatically a twofold improvement in the whole workload. Arithmetic, other transfers, communication and overhead may still dominate.
 
-Real manufacturing drifts slightly.
+NVIDIA's roofline framework relates achievable math performance to both peak compute and memory bandwidth, using arithmetic intensity: operations performed per byte moved. We will study it more fully in the accelerator block.
 
-Focus changes across wafers. Dose varies. Mask dimensions and resist behavior are not perfectly identical forever.
+6. Software can change the hardware requirement
 
-A strong process therefore needs **margin**: the pattern should remain acceptable across a range of realistic conditions.
+Imagine software reusing data already close to the arithmetic units, reducing HBM traffic for the same mathematical task. A bandwidth-constrained calculation can improve without changing the memory hardware.
 
-That acceptable region is the process window.
+Now imagine a model growing enough to exceed available capacity. Even excellent data reuse does not by itself make the full working set fit.
 
-SMO is valuable because it can search for a source-mask pair that does not merely make the nominal image look sharp. It can make the pattern **less fragile to manufacturing variation**.
+The right question is therefore specific: is this workload limited by capacity, data movement, computation or something else? Calling every slow AI workload an HBM shortage confuses a runtime problem with a manufacturing shortage.
 
-That is more important economically.
+7. Return to the supply chain
 
-A design that prints perfectly at one mathematical point but fails after a tiny focus shift is not a good high-volume manufacturing process.
+Recall Lesson 031's fictional product requiring six HBM stacks per accelerator. If a redesign requires eight stacks and the supply remains 480,000 compatible stacks per month, the memory allocation supports 60,000 accelerators instead of 80,000.
 
-## 5. Why one layer can contain competing patterns
+That example holds stack output and compatibility fixed. Real designs may change memory density, stack height, interface and qualification requirements together.
 
-Now make the problem harder.
+More memory per accelerator can increase demand for memory, while also changing package area, power and cooling requirements. To assess the supplier opportunity, investigate the exact product and supply response rather than multiplying accelerator growth by a generic memory number.
 
-A real chip layer may contain:
+Quick check — answer before reading on
 
-- dense lines;
-- isolated lines;
-- contacts or holes;
-- corners;
-- several pitches;
-- several orientations.
+A workload fits comfortably in memory but spends most of its time transferring data. Capacity doubles while usable bandwidth, software and compute remain unchanged. Should you predict a large speed improvement?
 
-An illumination shape that strongly favors one pattern can reduce margin for another.
+Answer: no. Extra space does not resolve the stated data-transfer limit. It could enable a different execution strategy, but that would be a separate assumption to test.
 
-So engineers use representative pattern sets and optimize across the layer rather than chasing one test structure.
+Remember these three things
 
-This is another place where the foundry's integration knowledge matters.
+- Capacity, bandwidth and latency answer different questions.
 
-The objective is not to win a lithography benchmark on one easy pattern.
+- Stacked memory and advanced packaging connect manufacturing choices to processor performance.
 
-It is to get the **entire manufacturable layer** inside specification with acceptable yield, throughput and cost.
+- Workload and software determine whether more memory capacity or more bandwidth is useful.
 
-## 6. SMO connects directly to OPC and ILT
+Sources and assumptions
 
-SMO does not replace Lesson 031.
+Micron, HBM architecture and FAQs: https://www.micron.com/products/memory/hbm
 
-It changes the environment in which OPC or ILT operates.
+Micron, HBM2E physical architecture: https://www.micron.com/about/blog/applications/data-center/hbm2e-fastest-memory-modern-data-center
 
-A simplified development flow can look like:
+NVIDIA, Nsight Compute roofline analysis: https://developer.nvidia.com/blog/accelerating-hpc-applications-with-nsight-compute-roofline-analysis/
 
-choose candidate illumination → co-optimize source and mask on representative patterns → select a practical source → run detailed full-chip OPC or ILT → manufacture and inspect the mask → expose wafers → calibrate the model with measurements
+All numeric examples are invented teaching assumptions, not current product specifications or performance forecasts.
 
-Synopsys describes its Proteus SMO flow as source-mask co-optimization combined with OPC or ILT mask treatment. ASML's Brion work has similarly combined source-mask optimization with programmable scanner illumination as part of holistic lithography.
+Next lesson
 
-The important architecture is that software and scanner settings are being designed together rather than independently.
-
-## 7. Better imaging can remove physical manufacturing complexity
-
-This is where SMO becomes economically interesting.
-
-If better source-mask co-design gives enough resolution and process margin to print a layer with one exposure instead of a more complicated multiple-patterning flow, the benefit can propagate beyond the scanner.
-
-Potentially avoided work can include extra:
-
-- masks;
-- resist coats and develops;
-- etch or deposition steps;
-- cleans;
-- metrology passes;
-- overlay opportunities;
-- wafer cycle time.
-
-Do not assume SMO always removes an exposure. Often its value is simply a wider process window or better yield.
-
-But the correct economic question is still system-level:
-
-**How much manufacturing complexity does the better imaging solution remove or make more robust?**
-
-## 8. SMO can create tradeoffs too
-
-A mathematically optimal answer still has to survive real production constraints.
-
-The source shape must be achievable by the scanner's illuminator.
-
-The mask pattern must be manufacturable and inspectable.
-
-Curvilinear or highly corrected shapes can increase computational and mask-writing complexity.
-
-A source that helps one pattern family may hurt another.
-
-And a lithography improvement may simply move the factory bottleneck downstream.
-
-So the optimization target is not "maximum resolution at any cost."
-
-It is closer to:
+Lesson 034: Chiplets — Why Split a Processor Across Several Dies?
 
