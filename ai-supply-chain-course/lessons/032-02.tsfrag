@@ -1,108 +1,58 @@
-## 3. Resist and metrology determine whether throughput becomes good output
+The full comparison is the cost and performance of the finished working product. Cheaper individual dies do not automatically make a cheaper accelerator. Lesson 034 will develop this tradeoff.
 
-The scanner produces an optical image. Photoresist converts it into chemistry and then a temporary physical stencil.
+5. Packaging capacity needs a denominator
 
-The process wants several things at once:
+Suppose two package designs use different interposer areas. A facility that processes a given area each month may produce fewer units of the larger design, even before accounting for yield or additional steps.
 
-- small features;
-- accurate edges;
-- low random-defect probability;
-- enough process margin;
-- acceptable exposure time.
+Here is an intentionally simplified example. Assume a line can process 100,000 area units per month, one product uses two area units per package, and final package yield is 90%. Ignore edge losses, product mix and other constraints.
 
-Improving one can hurt another. A higher dose might improve pattern reliability but reduce scanner throughput.
+That supports 50,000 package attempts and 45,000 good packages. If the next design uses 2.5 area units with the same yield, output falls to 36,000 good packages from the same area capacity.
 
-Then the fab measures what actually printed.
+This is a teaching model, not a conversion formula for reported CoWoS wafers per month. Actual flows require the relevant wafer basis, geometry, routing steps, tool mix and yields.
 
-Did the new layer land in the correct place? That is overlay.
+6. Why this connects to the rest of the stack
 
-Did the line print at the intended width? That is critical-dimension control.
+From upstream, packaging needs qualified logic dies, memory and materials. Downstream, a finished package still needs a board, power delivery, cooling and system testing.
 
-Are there random or systematic defects? Inspection and process-control tools answer that.
+Imagine more compute dies arriving while a package input remains scarce. The extra dies can wait in inventory. Imagine packaging expanding before a data center is ready. The finished accelerators can wait instead.
 
-Those measurements feed back into scanner settings, process recipes and future corrections.
+You should now recognize Lesson 031's separate manufacturing and deployment constraints. Packaging can be critical without being the binding constraint for every product or every month.
 
-That creates the third clock:
+7. The analyst's questions
 
-**yield-learning time.**
+- Which package family and product does the capacity number describe?
 
-A fab can have enough equipment to process many wafers but still make too few good dies because the process window is narrow or defects are poorly understood.
+- Is the figure installed capacity, qualified capacity, assembly attempts or good shipped units?
 
-So remember:
+- What changes in product area, component count and yield as the next generation ramps?
 
-installed capacity ≠ actual wafer throughput ≠ good-die output
+- Are logic dies, memory, substrates and downstream deployment available at the same time?
 
-## 4. The three clocks
+The economic judgment comes after these questions. A technically necessary service may still face competition, customer bargaining and expensive capacity expansion. Scarcity today does not establish permanent pricing power.
 
-You should now carry three separate lithography clocks in your head.
+Quick check — make a prediction
 
-**Clock 1 — Design and mask cycle**
+In the illustrative area model, capacity expands 25% to 125,000 area units, while package area grows from two to 2.5 and yield stays at 90%. How much does good-unit output grow versus the original product?
 
-layout → OPC/ILT → mask data → writing → inspection → repair
+Answer: it stays at 45,000. The capacity increase is entirely absorbed by the larger package. The tempting mistake is to equate a 25% capacity headline with 25% more accelerators.
 
-This determines how quickly a new or changed pattern becomes a qualified reticle.
+Remember these three things
 
-**Clock 2 — Wafer production cycle**
+- Packaging connects separately manufactured components into one usable product.
 
-scanner exposure → resist processing → pattern transfer → next wafer
+- The interposer and substrate serve different connection roles.
 
-This determines how much physical wafer volume the line can process.
+- Translate packaging capacity into good units for the specific product before comparing it with chip or memory supply.
 
-**Clock 3 — Yield-learning cycle**
+Sources and assumptions
 
-measure errors → identify cause → correct process → verify improvement
+TSMC, CoWoS technology overview: https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
 
-This determines how quickly nominal capacity becomes reliable good-die output.
+TSMC, Introducing 3DFabric: https://www.tsmc.com/english/news-events/blog-article-20200803
 
-A technology can improve one clock while barely affecting another.
+The area-capacity example uses invented units and assumptions; it is not a company forecast.
 
-Faster computational lithography may shorten Clock 1.
+Next lesson
 
-More scanners or better uptime can improve Clock 2.
-
-Better metrology and process integration can accelerate Clock 3.
-
-That distinction is more useful than simply asking whether a technology is "important."
-
-## 5. Where the bottlenecks actually sit
-
-Now classify the layers we have studied.
-
-**Mask writing and inspection** can constrain development turnaround as pattern complexity rises, but they do not automatically limit production wafers per hour.
-
-**EUV scanner count, exposure time and availability** can directly constrain wafer throughput.
-
-**Pellicle transmission, resist performance and required dose** can affect how productively expensive scanner capacity is used.
-
-**Overlay, critical dimension and stochastic defects** can constrain yield even when gross wafer throughput looks healthy.
-
-**Computational lithography** can expand process window and speed development, but software compute is not the same thing as fab wafers per hour.
-
-The causal chain you want is:
-
-constraint → physical consequence → affected clock → economic scarcity → company that can capture value
-
-## 6. Why the foundry is more than the sum of its tools
-
-Suppose two fabs buy similar classes of lithography, deposition, etch and metrology equipment.
-
-They can still achieve different manufacturing results because the value is partly in **integration**.
-
-A mask correction can alter the resist image.
-
-A resist change can alter required dose.
-
-Dose can change scanner throughput and random-defect risk.
-
-CMP or thermal distortion from earlier steps can worsen overlay.
-
-Metrology may reveal that an apparent lithography problem actually originated elsewhere.
-
-The foundry has to tune the whole production system so these interactions produce acceptable yield, throughput and cost.
-
-That is why TSMC, Samsung or Intel cannot be analyzed merely by totaling the equipment they purchase.
-
-## 7. Who captures the economics
-
-The supplier map now becomes clearer.
+Lesson 033: HBM — Why an AI Chip Needs Memory Beside It
 
