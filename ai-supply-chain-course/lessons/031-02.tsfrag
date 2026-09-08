@@ -1,50 +1,58 @@
-4. Relieving one constraint reveals the next
+Imagine a fab increases wafer starts by 20%, using the same die design, but the fraction of good dies falls from 80% to 60%. Assume the same candidate dies per wafer and no other changes.
 
-Suppose qualified HBM rises to 600,000 stacks per month. Memory can now support 100,000 accelerators, but packaging still limits production to 90,000. Site readiness still limits deployment to 70,000.
+Before reading on, predict whether good-die output rises or falls.
 
-A real analysis also needs lead times, inventory, product compatibility and the ramp profile. Capacity may not be interchangeable between products. The minimum-capacity calculation is a first screening tool, not a complete forecast.
+Answer: it falls 10%. Relative output is 1.20 × 0.60 ÷ 0.80 = 0.90. The extra wafer starts do not compensate for the loss in yield.
 
-That is why an announced capacity expansion must be translated into the same product, time period and good-output units before comparison.
+These are invented teaching numbers. The point is to connect the capacity headline to the output customers can use.
 
-5. Installed hardware is only the starting point
+5. What comes after the fab?
 
-Even after deployment, twice the advertised compute does not guarantee twice the useful output. NVIDIA's performance guide distinguishes limits from math throughput, memory bandwidth and latency; the limiting factor depends on the work being executed.
+A working die is still not a complete AI system. It must be connected to memory, power and the rest of the computer.
 
-For a simple illustration, assume 70,000 identical operational accelerators, 720 hours in a 30-day month and a measured useful-throughput factor of 50% against a fixed workload baseline. That gives 25.2 million baseline-equivalent accelerator-hours.
+Good logic dies + separately manufactured memory → packaging → servers and networking → powered, cooled clusters → software running models
 
-At 60%, the same fleet gives 30.24 million: a 20% increase without another chip. This is an illustrative throughput normalization, not a standard GPU-utilization metric. Output quality and workload must stay comparable.
+This is a dependency map. Some activities happen in parallel, and their outputs must arrive together. TSMC's CoWoS technology is one example of the packaging that brings compute silicon and high-bandwidth memory together.
 
-6. What this changes in your analysis
+Now apply the same constraint logic beyond the fab.
 
-When someone says a component is essential, ask a second question: is more of it the thing that changes output now, and when might that change?
+Suppose monthly logic supply supports 100,000 accelerators, qualified memory supports 80,000, packaging supports 90,000 and site readiness allows 70,000 to enter service. Assume one product, no starting inventory and capacities already adjusted for losses.
 
-A supplier can have an extraordinary technology while another part of the system limits near-term growth. Conversely, an unglamorous component can have immediate operational importance. Neither observation, on its own, tells us the supplier's eventual profits.
+Manufacturing is limited to 80,000 by memory. Deployment is limited to 70,000 by site readiness. Raising logic supply alone to 120,000 changes neither limit.
 
-Over the next lessons we will connect packaging, memory, chiplets and test. Later blocks cover accelerator architecture, networking, power and cooling, model workloads, and chip design. We will return to fabrication with those connections in place.
+The lesson is not that the fab stopped mattering. Its contribution depends on what the rest of the chain can absorb.
 
-Quick check — answer before reading on
+6. Why this is the right place to move on
 
-In the example, HBM improves to support 100,000 accelerators and site deployment rises to 85,000. Logic remains at 120,000 and packaging at 90,000. What limits manufacturing and what limits deployment?
+We have completed a first pass through fabrication, not exhausted it. Advanced lithography, materials and process integration remain part of the longer course.
 
-Answer: packaging caps manufacturing at 90,000; site readiness caps deployment at 85,000. Calling HBM the bottleneck because it was yesterday's constraint would miss the change.
+But before another specialized branch, we need to understand what the fab is supplying. Packaging and memory give that knowledge a destination: a working accelerator.
 
-Remember these three things
+Later, we will return to fabrication with sharper questions about cost, yield and the capacity needed for a particular AI system. That is how the technical detail becomes more useful on each pass.
 
-- Manufacturing, deployment and runtime are different constraints.
+The foundation to keep
 
-- Compare capacities using the same product, time period and good-output units.
+- A chip is built through repeated, coordinated manufacturing steps.
 
-- Expertise means predicting how a change travels through the system and checking the prediction against evidence.
+- Yield and productive capacity determine how much usable silicon emerges.
+
+- An essential technology is not always the step limiting additional output.
+
+- A good die still needs memory, packaging and an operational system around it.
+
+Before leaving Topic 1
+
+Try explaining how a blank wafer becomes a working die in two minutes, without listing company names. Then explain why buying more EUV scanners does not automatically mean shipping more AI accelerators.
+
+If you can connect the steps and name the assumptions, you have the foundation for the next topic. Any gaps are useful signals for review, not a reason to memorize every specialist term before proceeding.
 
 Sources and assumptions
 
+The fabrication recap synthesizes Lessons 001–030. All numeric examples are illustrative assumptions, not company forecasts.
+
 TSMC, CoWoS technology overview: https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
 
-NVIDIA, GPU Performance Background: https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html
-
-All quantities in the exercises are illustrative assumptions. The bottleneck model and questions are course teaching examples.
-
-Next lesson
+Next — Topic 2: From Wafer to Working AI Accelerator
 
 Lesson 032: Advanced Packaging — How Compute and Memory Become One Product
 
