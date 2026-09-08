@@ -1,89 +1,50 @@
-large enough to help the desired image → small enough not to print itself
+4. Relieving one constraint reveals the next
 
-If the process changes, that balance can change too.
+Suppose qualified HBM rises to 600,000 stacks per month. Memory can now support 100,000 accelerators, but packaging still limits production to 90,000. Site readiness still limits deployment to 70,000.
 
-So OPC is tied to the actual scanner, mask stack, resist and process conditions rather than being a one-time abstract geometry cleanup.
+A real analysis also needs lead times, inventory, product compatibility and the ramp profile. Capacity may not be interchangeable between products. The minimum-capacity calculation is a first screening tool, not a complete forecast.
 
-## 4. ILT: solve the problem backward
+That is why an announced capacity expansion must be translated into the same product, time period and good-output units before comparison.
 
-Traditional OPC often begins with the original design edges and iteratively moves or decorates them.
+5. Installed hardware is only the starting point
 
-**Inverse lithography technology, or ILT,** takes a more global approach.
+Even after deployment, twice the advertised compute does not guarantee twice the useful output. NVIDIA's performance guide distinguishes limits from math throughput, memory bandwidth and latency; the limiting factor depends on the work being executed.
 
-It asks:
+For a simple illustration, assume 70,000 identical operational accelerators, 720 hours in a 30-day month and a measured useful-throughput factor of 50% against a fixed workload baseline. That gives 25.2 million baseline-equivalent accelerator-hours.
 
-**Given the wafer image I want, what mask pattern should produce it under this physical imaging model?**
+At 60%, the same fleet gives 30.24 million: a 20% increase without another chip. This is an illustrative throughput normalization, not a standard GPU-utilization metric. Output quality and workload must stay comparable.
 
-That is an inverse problem.
+6. What this changes in your analysis
 
-Instead of limiting the answer to neat rectangles, the optimization can discover irregular or curving mask shapes that provide a larger process window.
+When someone says a component is essential, ask a second question: is more of it the thing that changes output now, and when might that change?
 
-Synopsys and Siemens both now support curvilinear mask-synthesis flows, reflecting the industry's move beyond purely Manhattan — horizontal-and-vertical — mask geometry.
+A supplier can have an extraordinary technology while another part of the system limits near-term growth. Conversely, an unglamorous component can have immediate operational importance. Neither observation, on its own, tells us the supplier's eventual profits.
 
-The tradeoff is compute and data complexity.
+Over the next lessons we will connect packaging, memory, chiplets and test. Later blocks cover accelerator architecture, networking, power and cooling, model workloads, and chip design. We will return to fabrication with those connections in place.
 
-The more freedom the optimizer has, the larger the search problem becomes.
+Quick check — answer before reading on
 
-## 5. Why curvilinear masks matter
+In the example, HBM improves to support 100,000 accelerators and site deployment rises to 85,000. Logic remains at 120,000 and packaging at 90,000. What limits manufacturing and what limits deployment?
 
-Curves are not valuable because curved masks look sophisticated.
+Answer: packaging caps manufacturing at 90,000; site readiness caps deployment at 85,000. Calling HBM the bottleneck because it was yesterday's constraint would miss the change.
 
-They matter only if they improve how robustly the wafer pattern prints across real manufacturing variation.
+Remember these three things
 
-A better mask may keep the feature closer to target as:
+- Manufacturing, deployment and runtime are different constraints.
 
-- focus shifts slightly;
-- exposure dose changes;
-- local pattern density changes;
-- mask and resist effects interact.
+- Compare capacities using the same product, time period and good-output units.
 
-That broader acceptable operating region is the **process window**.
+- Expertise means predicting how a change travels through the system and checking the prediction against evidence.
 
-So the economic question is not whether a curvilinear mask is prettier or more computationally advanced.
+Sources and assumptions
 
-It is whether the extra computation and mask-making complexity buy enough process-window, yield or patterning benefit to justify themselves.
+TSMC, CoWoS technology overview: https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
 
-## 6. The computation itself can become a bottleneck
+NVIDIA, GPU Performance Background: https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html
 
-Full-chip OPC and ILT are enormous numerical workloads.
+All quantities in the exercises are illustrative assumptions. The bottleneck model and questions are course teaching examples.
 
-The software repeatedly models electromagnetic behavior and process response across billions of features, then adjusts mask geometry and checks the result again.
+Next lesson
 
-NVIDIA has described computational lithography as one of semiconductor manufacturing's largest compute workloads. In a 2024 production announcement with TSMC and Synopsys, the companies reported roughly **45× acceleration on curvilinear flows and nearly 60× on more traditional Manhattan-style flows** in shared cuLitho testing.
-
-Treat those as vendor-reported workload results, not universal speedups.
-
-The important lesson is the scale relationship:
-
-more advanced patterning → more complex correction → more compute → longer tape-out turnaround unless software and compute improve
-
-A fab can therefore have enough scanners and mask-writing capacity but still lose development time waiting for corrected mask data to be generated and verified.
-
-## 7. Why faster computation has physical manufacturing value
-
-This is a subtle point.
-
-Computational lithography runs in data centers, not inside the wafer process chamber.
-
-So faster OPC does not automatically increase wafers per hour on an already-qualified production mask.
-
-Its biggest leverage is often **development cycle time**.
-
-If engineers change the process, retune a model or redesign a critical layer, the correction flow may need to run again.
-
-Reducing that turnaround can let a foundry test more alternatives, converge on a manufacturable process faster, and deliver corrected masks sooner.
-
-That means compute can be a bottleneck to learning rather than a direct wafer-throughput bottleneck.
-
-This is the same distinction from Lesson 030:
-
-**development bottleneck ≠ steady-state wafer bottleneck.**
-
-## 8. Mask data preparation: turn geometry into something the writer can consume
-
-After OPC or ILT produces the corrected mask geometry, the job is still not finished.
-
-The mask shop needs data that its writer can actually manufacture.
-
-**Mask data preparation, or MDP,** converts and validates the corrected layout for the mask-making flow.
+Lesson 032: Advanced Packaging — How Compute and Memory Become One Product
 
