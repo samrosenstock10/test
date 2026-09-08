@@ -1,0 +1,57 @@
+**maximum useful process window subject to scanner, mask, throughput, yield and manufacturing constraints.**
+
+## 9. Why High-NA makes co-optimization more important, not less
+
+High-NA improves optical resolution, but it also tightens several surrounding interactions.
+
+The exposure field changes. Mask 3D effects matter. Feature orientation and imaging conditions become more demanding. Resist and stochastic behavior still matter.
+
+Better optics therefore do not eliminate computational lithography.
+
+They increase the value of accurately modeling the whole imaging system so the extra optical capability turns into robust wafer patterns.
+
+This is a recurring semiconductor rule:
+
+**a stronger physical tool often requires more software and process integration to capture its full value.**
+
+## 10. The analyst's mental model
+
+When someone says a new source-mask optimization technique improves lithography, ask:
+
+1. Which layer and pattern families are being optimized?
+2. What illumination degrees of freedom are available on the scanner?
+3. Is the objective nominal resolution, process window, yield, exposure count or some combination?
+4. Does the optimized mask remain manufacturable and inspectable?
+5. Does it reduce multiple patterning or only improve margin?
+6. What happens to computational turnaround time?
+7. Does the source choice create any dose or throughput penalty?
+8. Is the improvement large enough to increase good-wafer output, or does another bottleneck immediately take over?
+
+That turns SMO from abstract software into the same causal chain we use everywhere else:
+
+model choice → physical wafer image → process margin → yield and cycle time → economic value
+
+## Remember these 5 things
+
+1. In source-mask optimization, "source" means the scanner illumination distribution, not simply the brightness of the EUV plasma source.
+
+2. Illumination angle changes which diffracted information from the mask is captured efficiently by the projection optics.
+
+3. SMO jointly optimizes the illumination and mask because the best answer for one depends on the other.
+
+4. The main manufacturing goal is usually a wider, more robust process window across important real chip patterns — not one perfect nominal image.
+
+5. Better source-mask co-design can improve yield or sometimes remove patterning complexity, but its value must be judged against mask, compute, scanner and downstream constraints.
+
+## Quick check
+
+Why can changing the scanner illumination improve wafer printing even when the physical mask has not changed?
+
+Because the same mask diffracts light differently depending on how it is illuminated. Changing the angular distribution of incoming light changes which diffraction components the projection optics capture, which changes contrast and pattern fidelity at the wafer.
+
+## Next lesson
+
+Lesson 034: Focus-Exposure Matrices and Process Window — How a Fab Measures Whether a Lithography Recipe Is Robust
+
+We will make the idea of process window concrete by showing how engineers deliberately vary focus and dose, map where patterns remain inside specification, and decide whether a recipe is ready for high-volume manufacturing.`,
+} satisfies Lesson;
