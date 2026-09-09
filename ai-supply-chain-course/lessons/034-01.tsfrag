@@ -1,0 +1,63 @@
+import type { Lesson } from "./lessons";
+
+export const lesson034 = {
+  number: 34,
+  module: "Module 2: From Wafer to Working AI Accelerator",
+  title: "Chiplets — Why Split a Processor Across Several Dies?",
+  date: "2026-09-09",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 029: Mask inspection and repair stop errors in a reusable master pattern from repeatedly damaging the chips made from it.
+
+Lesson 030: Mask writers turn digital chip designs into physical masks, so their speed affects how quickly new chips can reach production.
+
+Lesson 031: More chip-factory output only becomes useful AI when memory, packaging, data centers and software can support the extra hardware.
+
+Lesson 032: Advanced packaging connects separate compute and memory dies, and its area and yield affect how many working accelerators can ship.
+
+Lesson 033: HBM provides nearby working memory, but its capacity, bandwidth and latency solve different limits on an AI processor.
+
+The big idea
+
+A monolithic processor places its main functions on one large die. A chiplet design divides those functions across several smaller dies and reconnects them inside one package.
+
+This can improve manufacturing yield, let each function use a suitable process and make designs easier to reuse. But the boundaries between dies add communication, packaging, testing and software costs.
+
+The correct comparison is therefore not one large die versus several cheap small dies. It is the performance and cost of one finished working product.
+
+Where we are
+
+Chip design → separate dies → test each die → connect them in an advanced package → test the complete product
+
+1. What physically changes?
+
+Inside one die, signals travel through microscopic metal wires built during wafer fabrication. In a chiplet product, some signals must leave one die, cross package wiring or a bonded interface, and enter another die.
+
+The package can hold several compute dies, an input/output die, cache, memory or other specialized blocks.
+
+That is why chiplets depend on Lesson 032. Splitting silicon only works if packaging can provide enough connections with acceptable power, latency and reliability.
+
+2. Why smaller dies can improve manufacturing output
+
+Recall Lesson 017: a defect is more likely to spoil a large die because the die occupies more wafer area. Smaller dies also let a manufacturer test pieces first and reserve working pieces for assembly. These are known-good dies.
+
+Use an invented example. Ignore wafer-edge losses and assume one wafer offers 70,000 square millimeters of usable area.
+
+A 700 mm² monolithic die gives 100 candidates. At 50% die yield, that produces 50 working dies.
+
+Now divide the design into four 175 mm² chiplets. The wafer gives 400 candidates. At 80% yield, it produces 320 good chiplets, enough for 80 four-chiplet sets. If final package yield is 90%, 72 complete products work.
+
+In this example, chiplets raise output from 50 to 72 products. The figures are teaching assumptions, not a universal chiplet rule. Real results depend on defect patterns, edge losses, die mix, test coverage, package yield and performance requirements.
+
+3. Use the right process for each function
+
+Not every circuit benefits equally from the newest manufacturing process.
+
+Dense compute logic may justify an advanced node. Input/output circuits, analog functions or cache may be economical on another process. A chiplet architecture can combine dies made with different technologies rather than forcing every block onto the most expensive node.
+
+TSMC describes this as heterogeneous integration. AMD's CDNA 4 design, for example, uses an advanced process for performance-sensitive compute dies while keeping some other functions on a different process.
+
+This can reduce cost and let one block change without redesigning everything, while adding production flows and qualification steps that must arrive together.
+
+4. The interconnect is not free
+

@@ -1,0 +1,2 @@
+We will examine known-good dies, assembly losses and the cost of one working accelerator.`,
+} satisfies Lesson;

@@ -1,0 +1,62 @@
+Crossing a die boundary usually costs more energy and time than traveling a short distance inside one die. The design may need extra circuits, data formatting, synchronization and physical connection area.
+
+If the link cannot move data fast enough, otherwise powerful compute units can wait. If it consumes too much energy, less of the package's power budget remains for useful computation.
+
+Advanced packaging shortens and widens these connections compared with ordinary circuit-board links, but it does not make separate dies identical to one die.
+
+So architects must decide which functions communicate often enough to stay together and which can be separated without an unacceptable penalty.
+
+5. Reuse and standards can shorten design time
+
+A reusable chiplet can become a building block across several products. TSMC highlights reuse of technology blocks as one way chiplets can shorten time to market.
+
+UCIe is an industry standard for die-to-die connections inside a package. Its goal is to make interfaces more consistent and support an ecosystem in which different chiplets can work together.
+
+The standard does not make every die interchangeable. Designers still must verify timing, thermal limits, security, software and manufacturing compatibility.
+
+6. The analyst's decision rule
+
+When evaluating a chiplet claim, ask:
+
+- Which functions were split, and why?
+
+- What die-yield benefit results after accounting for the number of required pieces?
+
+- Were cheaper or more mature processes used where they make sense?
+
+- What performance, power and area does the die-to-die link consume?
+
+- What is the final package yield and cost?
+
+- Does reuse shorten development, or does integration add more delay?
+
+Quick check — answer before reading on
+
+Suppose the illustrative chiplets still provide 80 complete sets, but package yield falls from 90% to 60%. How many working products result, and does the chiplet design still beat 50 monolithic dies?
+
+Answer: 48 products. The chiplet advantage disappears because assembly losses outweigh the die-yield benefit. The tempting mistake is to compare only wafer yields and ignore the finished package.
+
+Remember these three things
+
+- Smaller dies can improve wafer yield, but every required die and the package must work.
+
+- Chiplets let designers mix process technologies and reuse blocks.
+
+- Die-to-die communication, packaging, testing and software determine whether the complete product wins.
+
+Sources and assumptions
+
+AMD, 4th Gen EPYC Processor Architecture: https://www.amd.com/content/dam/amd/en/documents/products/epyc/4th-gen-epyc-processor-architecture-white-paper.pdf
+
+AMD, CDNA 4 Architecture: https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/white-papers/amd-cdna-4-architecture-whitepaper.pdf
+
+TSMC, 3DFabric: https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/3DFabric.htm
+
+UCIe Consortium, Specifications: https://www.uciexpress.org/specifications
+
+All numeric examples are invented teaching assumptions, not company specifications or forecasts.
+
+Next lesson
+
+Lesson 035: Test and Package Yield — When Good Components Still Make a Bad Product
+

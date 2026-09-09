@@ -316,7 +316,19 @@
         "lessons/033-02.tsfrag",
         "lessons/033-03.tsfrag"
       ]
+    },
+    {
+      "number": 34,
+      "module": "Module 2: From Wafer to Working AI Accelerator",
+      "title": "Chiplets — Why Split a Processor Across Several Dies?",
+      "date": "2026-09-09",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/034-01.tsfrag",
+        "lessons/034-02.tsfrag",
+        "lessons/034-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-09T11:06:36.849Z"
+  "updatedAt": "2026-09-09T11:13:37.363Z"
 }
