@@ -306,17 +306,17 @@
       "title": "Advanced Packaging — How Compute and Memory Become One Product"
     },
     {
+      "number": 33,
+      "module": "Module 2: From Wafer to Working AI Accelerator",
+      "title": "HBM — Why an AI Chip Needs Memory Beside It",
       "date": "2026-09-08",
       "format": "lesson-ts",
-      "module": "Module 2: From Wafer to Working AI Accelerator",
-      "number": 33,
       "parts": [
         "lessons/033-01.tsfrag",
         "lessons/033-02.tsfrag",
         "lessons/033-03.tsfrag"
-      ],
-      "title": "HBM — Why an AI Chip Needs Memory Beside It"
+      ]
     }
   ],
-  "updatedAt": "2026-09-08T16:39:36.588Z"
+  "updatedAt": "2026-09-09T11:06:36.849Z"
 }
