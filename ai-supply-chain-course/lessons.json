@@ -306,29 +306,40 @@
       "title": "Advanced Packaging — How Compute and Memory Become One Product"
     },
     {
-      "number": 33,
-      "module": "Module 2: From Wafer to Working AI Accelerator",
-      "title": "HBM — Why an AI Chip Needs Memory Beside It",
       "date": "2026-09-08",
       "format": "lesson-ts",
+      "module": "Module 2: From Wafer to Working AI Accelerator",
+      "number": 33,
       "parts": [
         "lessons/033-01.tsfrag",
         "lessons/033-02.tsfrag",
         "lessons/033-03.tsfrag"
-      ]
+      ],
+      "title": "HBM — Why an AI Chip Needs Memory Beside It"
     },
     {
-      "number": 34,
-      "module": "Module 2: From Wafer to Working AI Accelerator",
-      "title": "Chiplets — Why Split a Processor Across Several Dies?",
       "date": "2026-09-09",
       "format": "lesson-ts",
+      "module": "Module 2: From Wafer to Working AI Accelerator",
+      "number": 34,
       "parts": [
         "lessons/034-01.tsfrag",
         "lessons/034-02.tsfrag",
         "lessons/034-03.tsfrag"
-      ]
+      ],
+      "title": "Chiplets — Why Split a Processor Across Several Dies?"
+    },
+    {
+      "date": "2026-09-10",
+      "format": "lesson-ts",
+      "module": "Module 2: From Wafer to Working AI Accelerator",
+      "number": 35,
+      "parts": [
+        "lessons/035-01.tsfrag",
+        "lessons/035-02.tsfrag"
+      ],
+      "title": "Test and Package Yield — When Good Components Still Make a Bad Product"
     }
   ],
-  "updatedAt": "2026-09-09T11:13:37.363Z"
+  "updatedAt": "2026-09-10T11:09:13.904Z"
 }

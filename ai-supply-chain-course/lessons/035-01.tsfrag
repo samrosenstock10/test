@@ -1,0 +1,65 @@
+import type { Lesson } from "./lessons";
+
+export const lesson035 = {
+  number: 35,
+  module: "Module 2: From Wafer to Working AI Accelerator",
+  title: "Test and Package Yield — When Good Components Still Make a Bad Product",
+  date: "2026-09-10",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 030: Mask writers turn digital chip designs into physical masks, so their speed affects how quickly new chips can reach production.
+
+Lesson 031: More chip-factory output only becomes useful AI when memory, packaging, data centers and software can support the extra hardware.
+
+Lesson 032: Advanced packaging connects separate compute and memory dies, and its area and yield affect how many working accelerators can ship.
+
+Lesson 033: HBM supplies nearby working memory, but its capacity, bandwidth and latency solve different limits on an AI processor.
+
+Lesson 034: Chiplets split a processor across smaller dies, which can improve manufacturing but adds connection, packaging and testing risks.
+
+The big idea
+
+An advanced AI accelerator can contain working compute dies, working HBM stacks and a good substrate, yet fail after those pieces are assembled.
+
+Package yield measures how many attempted assemblies become working products. It matters because a late failure can waste several expensive components at once.
+
+Testing tries to find bad parts early, catch damage created during assembly and prevent weak products from reaching customers. The economic goal is not perfect testing at any cost. It is the lowest cost per reliable working accelerator.
+
+Where we are
+
+Fabricate wafers → test dies → select known-good dies → assemble compute, memory and package → test the finished accelerator
+
+1. Test before spending more value
+
+At wafer sort, probe equipment touches electrical pads or bumps while the dies are still on the wafer and classifies each die.
+
+A die that passes enough pre-assembly tests is called a known-good die. The name is useful shorthand, not a guarantee. Some defects appear only at full speed, high power, different temperatures or after long use.
+
+Early testing is especially valuable in a multi-die product. Placing one bad compute die beside several good HBM stacks can turn all of them into scrap. FormFactor makes the same point for HBM: if one die in a completed stack is defective, the entire system may be beyond repair.
+
+2. Assembly creates new ways to fail
+
+Passing components still must be placed, aligned and connected. Thousands of tiny connections may cross microbumps, hybrid bonds, an interposer and a package substrate.
+
+An assembly can fail because a connection is open or shorted, a die is misaligned, the package warps or a hidden crack grows. Component testing alone therefore cannot measure final yield.
+
+The product therefore needs tests at several stages: before assembly, sometimes after an intermediate stack is built, and after the complete package is finished. UCIe 2.0 explicitly supports test, telemetry and debug across a multi-chip package from sort through field operation.
+
+3. Yield compounds across required pieces
+
+Suppose an accelerator requires one compute assembly and six HBM stacks. If each selected HBM stack has a 99% chance of being truly good, the chance that all six are good is:
+
+0.99 × 0.99 × 0.99 × 0.99 × 0.99 × 0.99 = 94.1%
+
+Now assume the selected compute assembly is truly good 98% of the time and physical assembly succeeds 95% of the time. The illustrative probability of a working package is:
+
+94.1% × 98% × 95% = 87.6%
+
+Real factories define stages differently, and final-test yield may already include hidden component and assembly losses. Do not multiply overlapping yield numbers twice.
+
+4. Convert yield into cost per working accelerator
+
+Use another simplified example. A package attempt consumes a tested compute assembly costing $1,200, six HBM stacks costing $150 each, and $600 of substrate and assembly work.
+
+Attempted-package cost = $1,200 + $900 + $600 = $2,700
+
