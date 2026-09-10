@@ -1,0 +1,325 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestedAt": "2026-09-10T11:32:53Z",
+  "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
+  "sources": {
+    "semianalysis": {
+      "label": "SemiAnalysis",
+      "rows": [
+        {
+          "loggedDate": "2026-09-10",
+          "sourceDate": "2026-09-09",
+          "company": "Nvidia / NVDA",
+          "bullishness": 4,
+          "summary": "Nvidia’s 4/5 platform thesis materially strengthens through physical AI: SemiAnalysis’s robotics work shows frontier robot cognition is already outgrowing edge compute and can shift to shared B300-class datacenter GPUs, creating a new high-margin datacenter-accelerator demand leg while Nvidia also supplies the local Jetson control layer. SemiAnalysis argues a hybrid robotics-compute cascade is inevitable for sufficiently general robots: heavy planning/reasoning moves to nearby datacenter GPUs while low-level safety/control stays onboard. Nvidia is unusually positioned across both layers with Blackwell/B300 in the datacenter and Jetson Thor at the edge, and SemiAnalysis notes Blackwell datacenter GPUs currently carry materially higher gross margins than Jetson modules.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/where-does-a-robot-think-on-device",
+            "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
+            "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
+            "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+            "https://newsletter.semianalysis.com/p/ultra-high-interactivity-on-nvidia"
+          ]
+        },
+        {
+          "loggedDate": "2026-09-08",
+          "sourceDate": "2026-09-07",
+          "company": "Alphabet / GOOGL",
+          "bullishness": 5,
+          "summary": "Google’s merchant TPU/GCP thesis materially strengthens again: third-party InferenceX preview results now show TPUv7 Ironwood can beat Nvidia B200/B300 on modeled inference performance per dollar across meaningful FP8 operating points while Google rapidly externalizes its software stack, materially de-risking the technical foundation behind SemiAnalysis’s already-bullish external TPU/GCP revenue thesis. SemiAnalysis says TPU externalization is heading in the right direction and moving full steam ahead, expects Google’s decades of software-engineering and quality culture to mature the external stack rapidly, and now has public benchmark evidence that Ironwood’s lower TCO can offset lower raw throughput. This converts the prior GCP/TPU thesis from mostly backlog and commercialization evidence into direct third-party proof that outside customers can achieve compelling economics.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
+            "https://newsletter.semianalysis.com/p/gemini-is-cooked-but-gcp-is-cooking",
+            "https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the"
+          ]
+        },
+        {
+          "loggedDate": "2026-09-06",
+          "sourceDate": "2026-09-05",
+          "company": "OpenAI (private)",
+          "bullishness": 5,
+          "summary": "OpenAI’s 5/5 thesis strengthens again: model-driven serving optimization is directly lowering inference cost while its custom-ASIC program has asymmetric strategic value—successful Jalapeño raises revenue per MW, while even failure can extract substantial Nvidia financing and backstops. SemiAnalysis says that at OpenAI’s serving scale even single-digit-percent kernel gains are worth hundreds of millions of dollars of compute, and reports that 5.6-sol rewrote a production kernel that produced 20% lower serving costs plus 15% better token-generation efficiency from improved speculative decoding, with savings passed into Luna/Terra price cuts. Separately, SemiAnalysis argues OpenAI wins strategically either way on Jalapeño: success improves revenue per MW; failure still pressures Nvidia to provide billions of dollars of financing/backstops.",
+          "sourceUrls": [
+            "https://www.linkedin.com/company/semianalysis",
+            "https://www.linkedin.com/posts/semianalysis_openainvidia-it-is-clearly-a-good-idea-activity-7501414047330787329-EZvJ",
+            "https://www.dwarkesh.com/p/dylan-patel-3",
+            "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia"
+          ]
+        },
+        {
+          "loggedDate": "2026-09-05",
+          "sourceDate": "2026-09-05",
+          "company": "Advanced Micro Devices / AMD",
+          "bullishness": 4,
+          "summary": "AMD’s AI-accelerator thesis strengthens again: MI355X has moved from selective B200 parity to beating B300 on total-token TCO at lower-interactivity AgentX points in some large-model workloads, showing software convergence is now translating into selective Blackwell Ultra-class economics, although B300 still leads at higher interactivity and across other models and AMD’s rack-scale risks remain. SemiAnalysis explicitly says a new AMD MI355X submission beats B300 on total tokens per dollar of TCO at lower-interactivity ranges on AgentX and credits vLLM, AMD and LMCache engineers. The live InferenceX curves corroborate that this is no longer only an older-Blackwell comparison: MI355X can now be the cheaper option versus B300 in selected low-interactivity Kimi and GLM operating points, directly reducing the software-economics concern that drove the Aug. 24 downgrade.",
+          "sourceUrls": [
+            "https://www.linkedin.com/company/semianalysis",
+            "https://inferencex.semianalysis.com/compare/kimi-k3-b300-vs-mi355x",
+            "https://inferencex.semianalysis.com/compare-per-dollar/kimi-k26-b300-vs-mi355x",
+            "https://inferencex.semianalysis.com/compare-per-dollar/glm-5-1-b300-vs-mi355x",
+            "https://inferencex.semianalysis.com/rankings/fastest-gpu-for-qwen-3-5",
+            "https://inferencex.semianalysis.com/rankings/fastest-gpu-for-minimax-m3",
+            "https://newsletter.semianalysis.com/p/agentx-inferencexv3-does-cuda-moat",
+            "https://newsletter.semianalysis.com/p/can-amd-break-the-cuda-moat-amd-advancing"
+          ]
+        },
+        {
+          "loggedDate": "2026-09-02",
+          "sourceDate": "2026-09-01",
+          "company": "SK Hynix / 000660.KS",
+          "bullishness": 2,
+          "summary": "SK Hynix remains a structurally important HBM supplier, but SemiAnalysis’s Korea analysis further weakens the shareholder thesis because Nvidia appears positioned to extract favorable HBM pricing and large 2027 volume commitments from Hynix as Korea trades supplier economics for strategic access to leading-edge compute. SemiAnalysis now frames Korea’s sovereign-AI ambitions as potentially misaligned with Hynix shareholders: Korea needs Nvidia’s accelerator roadmap and supply, while Nvidia wants a more diversified customer base and stronger memory economics. SemiAnalysis believes this strategic dependence likely helped Nvidia secure favorable HBM terms from Hynix.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
+            "https://podcasts.apple.com/ca/podcast/semianalysis-weekly/id1877544643",
+            "https://newsletter.semianalysis.com/p/the-great-ai-silicon-shortage"
+          ]
+        },
+        {
+          "loggedDate": "2026-08-28",
+          "sourceDate": "2026-08-25",
+          "company": "Anthropic (private; prospective IPO)",
+          "bullishness": 5,
+          "summary": "Anthropic’s thesis materially strengthens: SemiAnalysis expects Anthropic and OpenAI to absorb roughly half of incremental global AI compute by end-2027 and potentially 70–80% by 2028 because frontier-lab revenue per MW lets them economically outbid other buyers. Dylan Patel argues compute centralization is being driven by superior monetization, not merely capital access: Anthropic is already producing roughly $50M of revenue per MW and could move toward $100M/MW, supporting willingness to pay $25M–$50M/MW for scarce capacity while still earning attractive economics.",
+          "sourceUrls": [
+            "https://www.dwarkesh.com/p/dylan-patel-3",
+            "https://newsletter.semianalysis.com/p/are-open-models-catching-up"
+          ]
+        },
+        {
+          "loggedDate": "2026-08-26",
+          "sourceDate": "2026-08-25",
+          "company": "Broadcom / AVGO",
+          "bullishness": 5,
+          "summary": "Broadcom’s custom-AI-silicon thesis materially strengthens because OpenAI’s first-generation Jalapeño ASIC, built with Broadcom, is already a credible high-volume Rubin-class inference competitor, validating Broadcom’s ability to monetize frontier labs’ shift from merchant GPUs toward custom accelerators. SemiAnalysis shows the OpenAI/Broadcom program moved from team formation to tape-out in roughly 16 months and produced unusually strong first-generation silicon. The economics explicitly benefit from replacing Nvidia’s high merchant margins with Broadcom’s lower but still high custom-silicon margins, while OpenAI’s rapid hardware/software co-design demonstrates that custom ASIC programs can work at frontier scale.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+            "https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the"
+          ]
+        },
+        {
+          "loggedDate": "2026-08-23",
+          "sourceDate": "2026-08-19",
+          "company": "Cerebras Systems / private",
+          "bullishness": 4,
+          "summary": "Cerebras materially strengthens its ultra-low-latency inference proposition with CS-4, nearly doubling per-user token speed at roughly similar customer TCO while improving rack manufacturability and enabling heterogeneous disaggregated inference. SemiAnalysis calls the customer economics a “no-brainer”: CS-4 reuses WSE-3 silicon but doubles clock and memory bandwidth, translating into nearly 2x tokens/sec/user at around the same hardware spend, while a modular backpack design should improve deployment speed and manufacturability.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/cerebrass-next-generation-cs-4-fast"
+          ]
+        },
+        {
+          "loggedDate": "2026-08-16",
+          "sourceDate": "2026-08-07",
+          "company": "SpaceX / SPCX",
+          "bullishness": 5,
+          "summary": "SemiAnalysis still believes SpaceX can scale AI compute toward 10GW by year-end 2027 and monetize scarce capacity at exceptional pricing, but its current published base case points to roughly $300B of ARR rather than the $500B figure previously captured in the ledger. The core thesis remains highly bullish: SemiAnalysis says the 10GW buildout is real, SpaceX can build faster than traditional operators, premium inference economics support unusually high $/MW pricing, and Microsoft is a plausible anchor offtaker. The correction narrows the quantified ARR case but does not change the scale or strategic logic.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/spacex-10gw-in-2027-why-its-real"
+          ]
+        },
+        {
+          "loggedDate": "2026-08-01",
+          "sourceDate": "2026-07-29",
+          "company": "Vertiv / VRT",
+          "bullishness": 4,
+          "summary": "Vertiv is positioned to roughly double its revenue content per datacenter megawatt as AI builders shift from component purchases toward integrated modular power, cooling and facility platforms that materially shorten construction schedules. SemiAnalysis identifies modularization as the default response to an emerging skilled-labor bottleneck and highlights Vertiv as a principal public beneficiary because its OneCore and MegaMod offerings let it capture the full power, thermal, cooling and infrastructure stack rather than selling individual components.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/the-wild-wild-west-of-lego-datacenters"
+          ]
+        },
+        {
+          "loggedDate": "2026-07-24",
+          "sourceDate": "2026-07-24",
+          "company": "ASML Holding / ASML",
+          "bullishness": 4,
+          "summary": "ASML is entering a stronger multiyear wafer-fab-equipment upcycle, with improving visibility, pricing and installed-base economics creating upside to consensus revenue and likely long-term guidance. SemiAnalysis explicitly says the signals point to a stronger upcycle, sees upside to Street revenue forecasts and expects ASML to raise its long-term guidance.",
+          "sourceUrls": [
+            "https://www.linkedin.com/posts/semianalysis_asml-raised-fy26-guidance-for-the-second-activity-7486058059908173824-hwGa"
+          ]
+        },
+        {
+          "loggedDate": "2026-07-22",
+          "sourceDate": "2026-07-22",
+          "company": "Meta Platforms / META",
+          "bullishness": 4,
+          "summary": "Meta still has unusual advantages in data, talent, compute and distribution, but infrastructure politics and repeated hardware co-design failures materially reduce confidence that its enormous capex will translate efficiently into frontier-model and external-compute returns. SemiAnalysis remains optimistic about Meta Superintelligence Labs, but says Meta Infrastructure is bloated, political and over-engineered, and needs a cultural reset to serve MSL and external compute customers effectively.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/metas-infrastructure-team-needs-a",
+            "https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence",
+            "https://newsletter.semianalysis.com/p/meta-compute-everyone-wants-to-be"
+          ]
+        },
+        {
+          "loggedDate": "2026-07-22",
+          "sourceDate": "2026-07-21",
+          "company": "Bloom Energy / BE",
+          "bullishness": 3,
+          "summary": "Bloom remains exposed to the large behind-the-meter datacenter-power buildout, but SemiAnalysis now expects reciprocating engines—not fuel cells—to energize the lion's share, while Bloom's flagship deployments remain vulnerable to gas-infrastructure and permitting delays. SemiAnalysis still sees grid scarcity creating a large BTM market, but it now says recips offer the best mix of cost, time-to-power, modularity and bankability versus fuel cells; this follows its Project Jupiter work showing that Bloom cannot eliminate upstream gas-pipeline and air-permit bottlenecks.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/us-grid-constraints-towards-40gw",
+            "https://www.linkedin.com/company/semianalysis",
+            "https://www.linkedin.com/posts/semianalysis_massive-delay_alert-to-oracles-stargate-activity-7484079629503246336-0llI"
+          ]
+        },
+        {
+          "loggedDate": "2026-07-22",
+          "sourceDate": "2026-07-21",
+          "company": "Caterpillar / CAT; Cummins / CMI (INNIO private)",
+          "bullishness": 4,
+          "summary": "AI datacenter grid scarcity is structurally reordering reciprocating-engine demand from occasional backup use to always-on prime power, creating a multiyear equipment and service cycle for CAT and CMI. SemiAnalysis expects recips to energize the lion's share of marginal behind-the-meter capacity because they offer the best combination of cost, speed, modular staged deployment and bankability, while OEM capacity is ramping into a severely undersupplied power market.",
+          "sourceUrls": [
+            "https://www.linkedin.com/company/semianalysis"
+          ]
+        },
+        {
+          "loggedDate": "2026-07-10",
+          "sourceDate": "2026-07-02",
+          "company": "CoreWeave / CRWV",
+          "bullishness": 4,
+          "summary": "CoreWeave’s growth thesis remains intact because hyperscalers still need neocloud capacity and financing backstops expand the amount of deployable AI infrastructure. SemiAnalysis called the selloff based on Meta vertical integration erroneous, expects Meta’s capacity build to accelerate, and argues Meta can rationally pay neocloud margins for speed and flexibility.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/meta-compute-200b-superintelligence"
+          ]
+        },
+        {
+          "loggedDate": "2026-07-10",
+          "sourceDate": "2026-03-12",
+          "company": "TSMC / TSM",
+          "bullishness": 5,
+          "summary": "TSMC’s advanced-node capacity is becoming the central AI-silicon bottleneck, supporting exceptional utilization, customer dependence and pricing power. SemiAnalysis identifies N3 capacity as one of the largest constraints in AI infrastructure and expects demand to exceed supply for at least two years despite heavy capital spending.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/the-great-ai-silicon-shortage"
+          ]
+        },
+        {
+          "loggedDate": "2026-07-10",
+          "sourceDate": "2025-12-30",
+          "company": "GE Vernova / GEV",
+          "bullishness": 4,
+          "summary": "GE Vernova can sustain strong turbine pricing, backlog and high-value service revenue as AI datacenters bypass grid delays with onsite gas generation. SemiAnalysis expects triple-digit annual growth in onsite gas generation and identifies GE Vernova as a core incumbent whose production is already booked years ahead.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/how-ai-labs-are-solving-the-power"
+          ]
+        }
+      ]
+    },
+    "a16z": {
+      "label": "a16z Machine Age",
+      "rows": [
+        {
+          "loggedDate": "2026-09-05",
+          "sourceDate": "2026-09-04",
+          "company": "Gimlet Labs (private)",
+          "bullishness": 5,
+          "category": "Inference Infrastructure / Heterogeneous Compute",
+          "partner": "Raghu Raghuram; Sarah Wang; Shangda Xu; Stephenie Zhang",
+          "signalType": "Direct investment",
+          "summary": "AI inference is becoming too heterogeneous and power-constrained for one-size-fits-all compute, creating a new infrastructure layer that dynamically maps each model, tool and inference stage to the processor and physical configuration that delivers the best latency, throughput and cost per watt. a16z argues inference has fragmented into materially different workloads and that no single processor can optimize cost, throughput and latency across all of them; Gimlet turns GPUs, CPUs and purpose-built accelerators into one orchestrated pool and hides the complexity behind a single inference API.",
+          "sourceUrls": ["https://a16z.com/announcement/investing-in-gimlet/"]
+        },
+        {
+          "loggedDate": "2026-08-30",
+          "sourceDate": "2026-08-28",
+          "company": "Machine Age AI infrastructure stack",
+          "bullishness": 5,
+          "category": "Cross-stack / Fund Thesis",
+          "partner": "Ben Horowitz; Martin Casado; Raghu Raghuram; David Ulevitch; David George",
+          "signalType": "Fund mandate / thematic",
+          "summary": "a16z is making a firm-level $1.1B bet that AI’s physical stack—from chips and memory through networking, data centers, robotics and electricity—must be rebuilt because demand is outrunning today’s supply chains and engineering limits. The fund thesis is explicitly that rising token intensity and vertical AI adoption are forcing simultaneous redesign across the physical compute stack, creating a once-in-a-generation platform opportunity rather than a single-component cycle.",
+          "sourceUrls": ["https://a16z.com/the-machine-age-fund/"]
+        },
+        {
+          "loggedDate": "2026-08-30",
+          "sourceDate": "2026-08-04",
+          "company": "Volta (private)",
+          "bullishness": 5,
+          "category": "Data Centers / Compute Financing",
+          "partner": "Raghu Raghuram; Shangda Xu",
+          "signalType": "Direct investment",
+          "summary": "Compute access is increasingly a project-finance bottleneck as well as a GPU bottleneck, and a vertically integrated neocloud that combines land, power, financing and cloud operations can unlock capacity for AI-native companies that hyperscaler-oriented infrastructure markets underserve. a16z argues Volta solves both halves of the problem—billions of dollars of infrastructure financing and production cloud operations—rather than being only a data-center developer or only a GPU cloud.",
+          "sourceUrls": ["https://a16z.com/announcement/investing-in-volta/"]
+        },
+        {
+          "loggedDate": "2026-09-01",
+          "sourceDate": "2026-07-22",
+          "company": "Atoms (private)",
+          "bullishness": 5,
+          "category": "Robotics / Industrial AI",
+          "partner": "Ben Horowitz; Alex Danco",
+          "signalType": "Direct investment",
+          "summary": "a16z is making a high-conviction bet that specialized robotics and industrial AI can become the computing layer for the physical economy, with Atoms applying autonomy to making, moving and storing physical goods across food, mining and transport. a16z argues that robots doing most menial physical work is an inevitable next step after computers automated the world of bits, and it is backing Atoms directly with Ben Horowitz joining the board; the Aug. 28 Machine Age Fund also names Atoms as one of a16z’s recent hardware investments.",
+          "sourceUrls": [
+            "https://a16z.com/travis-is-back/",
+            "https://a16z.com/the-machine-age-fund/",
+            "https://a16z.com/podcast/building-the-physical-ai-stack-travis-kalanick-on-tbpn/"
+          ]
+        },
+        {
+          "loggedDate": "2026-08-30",
+          "sourceDate": "2026-06-25",
+          "company": "Netris (private)",
+          "bullishness": 4,
+          "category": "Networking / GPU Cloud Operations",
+          "partner": "Guido Appenzeller; Raghu Raghuram; Jason Cui",
+          "signalType": "Direct investment",
+          "summary": "AI data centers require a new networking control plane because multi-network GPU fabrics are too complex and too economically critical to manage with cloud-era tooling. a16z was persuaded by Netris operating across tens of thousands of GPUs and by customers entrusting near-billion-dollar GPU data centers to its software, evidence that network automation has become production-critical infrastructure.",
+          "sourceUrls": ["https://a16z.com/announcement/investing-in-netris/"]
+        },
+        {
+          "loggedDate": "2026-08-30",
+          "sourceDate": "2026-06-02",
+          "company": "Westmag (private)",
+          "bullishness": 4,
+          "category": "Robotics / Motors & Actuators",
+          "partner": "Erin Price-Wright; Oliver Hsu",
+          "signalType": "Direct investment",
+          "summary": "Motors and actuators are a strategic physical-AI bottleneck, and domestic manufacturing can become valuable as robotics and drones scale while U.S. OEMs reduce dependence on Chinese component supply. a16z calls motors and actuators the muscle of physical AI and a single point of failure across drones, humanoids and industrial robots, making manufacturing capability itself part of the moat.",
+          "sourceUrls": ["https://a16z.com/announcement/investing-in-westmag/"]
+        },
+        {
+          "loggedDate": "2026-08-30",
+          "sourceDate": "2026-03-11",
+          "company": "Mind Robotics (private)",
+          "bullishness": 4,
+          "category": "Robotics / Industrial Automation",
+          "partner": "Sarah Wang",
+          "signalType": "Direct investment",
+          "summary": "The next major automation wave requires integrated models, dexterous hardware and deployment infrastructure designed together, because a large share of factory work is too variable for traditional industrial robots. a16z views embodied AI as an industrial systems problem rather than merely a model problem and backs a vertically integrated platform grounded in real manufacturing environments.",
+          "sourceUrls": ["https://a16z.com/announcement/investing-in-mind-robotics/"]
+        },
+        {
+          "loggedDate": "2026-08-30",
+          "sourceDate": "2026-03-10",
+          "company": "Nexthop AI (private)",
+          "bullishness": 5,
+          "category": "Networking / AI Switching",
+          "partner": "Raghu Raghuram; Shangda Xu; Guido Appenzeller",
+          "signalType": "Direct investment",
+          "summary": "AI networking is becoming a defining bottleneck and could create a new major networking platform because existing switching products were designed for cloud traffic rather than rapidly scaling distributed AI workloads. a16z explicitly says every compute platform shift creates a new networking giant and backs Nexthop as a native AI Ethernet-switching company built for hyperscaler requirements and open software standards.",
+          "sourceUrls": ["https://a16z.com/announcement/investing-in-nexthop/"]
+        },
+        {
+          "loggedDate": "2026-08-30",
+          "sourceDate": "2026-02-18",
+          "company": "Heron Power (private)",
+          "bullishness": 5,
+          "category": "Power / Grid / Power Electronics",
+          "partner": "Erin Price-Wright; Ryan McEntush",
+          "signalType": "Direct investment",
+          "summary": "The grid’s next bottleneck is power delivery and control, and software-defined solid-state transformers can become a new platform layer as AI data centers and distributed generation overwhelm passive legacy equipment. a16z argues the grid cannot support fast, variable AI-era load with 1970s-style passive transformers and backs programmable power electronics that can be manufactured modularly and coordinated in real time.",
+          "sourceUrls": ["https://a16z.com/announcement/investing-in-heron-power/"]
+        },
+        {
+          "loggedDate": "2026-08-30",
+          "sourceDate": "2025-12-08",
+          "company": "Unconventional AI (private)",
+          "bullishness": 4,
+          "category": "Chips / Efficient AI Compute",
+          "partner": "Matt Bornstein; Guido Appenzeller; Raghu Raghuram",
+          "signalType": "Direct investment",
+          "summary": "GPU scaling should continue, but ubiquitous intelligence also requires radically more efficient accelerator architectures, creating room for new hardware design points beyond general-purpose GPUs. a16z’s thesis is not that GPUs disappear; it is that the scale and energy intensity of training and inference make efficiency important enough to support new purpose-built compute architectures.",
+          "sourceUrls": ["https://a16z.com/announcement/investing-in-unconventional/"]
+        }
+      ]
+    }
+  }
+}
