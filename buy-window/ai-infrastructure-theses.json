@@ -1,17 +1,18 @@
 {
-  "updatedAt": "2026-09-08T11:32:56Z",
+  "updatedAt": "2026-09-10T11:32:53Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "sources": {
     "semianalysis": {
       "label": "SemiAnalysis",
       "rows": [
         {
-          "loggedDate": "2026-09-08",
-          "sourceDate": "2026-09-07",
+          "loggedDate": "2026-09-10",
+          "sourceDate": "2026-09-09",
           "company": "Nvidia / NVDA",
           "bullishness": 4,
-          "summary": "Nvidia remains a high-conviction AI platform beneficiary, but SemiAnalysis’s new TPUv7 evidence materially weakens the merchant-inference/CUDA moat beyond frontier-lab custom ASICs because Google is now externalizing a large-scale alternative that can beat B200/B300 on modeled performance per dollar at many FP8 operating points, even as sovereign AI broadens Nvidia’s demand base. SemiAnalysis still has strong reasons to remain constructive on Nvidia—its broad merchant platform, mature software, FP4 advantage and new sovereign-AI demand—but the Sep. 7 work adds a distinct competitive threat. SemiAnalysis says TPU externalization is moving full steam ahead, expects Google’s external software stack to mature rapidly, and shows Ironwood already offering superior modeled inference economics across meaningful parts of the curve.",
+          "summary": "Nvidia’s 4/5 platform thesis materially strengthens through physical AI: SemiAnalysis’s robotics work shows frontier robot cognition is already outgrowing edge compute and can shift to shared B300-class datacenter GPUs, creating a new high-margin datacenter-accelerator demand leg while Nvidia also supplies the local Jetson control layer. SemiAnalysis argues a hybrid robotics-compute cascade is inevitable for sufficiently general robots: heavy planning/reasoning moves to nearby datacenter GPUs while low-level safety/control stays onboard. Nvidia is unusually positioned across both layers with Blackwell/B300 in the datacenter and Jetson Thor at the edge, and SemiAnalysis notes Blackwell datacenter GPUs currently carry materially higher gross margins than Jetson modules.",
           "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/where-does-a-robot-think-on-device",
             "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
             "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
             "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
@@ -155,7 +156,7 @@
           "sourceUrls": [
             "https://newsletter.semianalysis.com/p/us-grid-constraints-towards-40gw",
             "https://www.linkedin.com/company/semianalysis",
-            "https://www.linkedin.com/posts/semianalysis_massive-delay-alert-to-oracles-stargate-activity-7484079629503246336-0llI"
+            "https://www.linkedin.com/posts/semianalysis_massive-delay_alert-to-oracles-stargate-activity-7484079629503246336-0llI"
           ]
         },
         {
