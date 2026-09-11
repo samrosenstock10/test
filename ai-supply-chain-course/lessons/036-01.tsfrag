@@ -1,0 +1,77 @@
+import type { Lesson } from "./lessons";
+
+export const lesson036 = {
+  number: 36,
+  module: "Module 2: From Wafer to Working AI Accelerator",
+  title: "Whole-Stack Case — What Must Change to Deliver 20% More Useful AI?",
+  date: "2026-09-11",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 031: More factory output becomes useful AI only when memory, packaging, data centers and software can support the additional hardware.
+
+Lesson 032: Advanced packaging connects compute and memory, while its area and yield determine how many complete accelerators can be built.
+
+Lesson 033: HBM keeps data near the processor, but capacity and bandwidth fix different problems and should not be treated as interchangeable.
+
+Lesson 034: Chiplets can improve manufacturing yield and reuse, but their connections add power, performance, packaging and testing costs.
+
+Lesson 035: Testing catches bad parts and assembly damage, because final package yield determines how much expensive hardware actually becomes usable.
+
+The big idea
+
+“Twenty percent more AI” is not a hardware specification. It must mean measurable output, such as training work or useful inference tokens delivered within a latency target.
+
+That output passes through a chain: wafers must produce good compute dies, HBM must be available, packages must assemble successfully, data centers must install them, and software must keep them doing useful work.
+
+Improving a stage that already has spare capacity may create no additional output. The correct plan changes the active bottleneck and checks where the bottleneck moves next.
+
+Where we are
+
+Good compute dies → matched HBM sets → working packages → deployed accelerators → available accelerator-hours → useful workload output
+
+1. Define the denominator
+
+Use an invented monthly system with one accelerator per package. Each accelerator needs one compute-die set and one complete HBM set.
+
+- The wafer process supplies 1,000 good compute-die sets per month.
+
+- HBM supply supports 900 complete accelerator packages per month.
+
+- Packaging can attempt 800 units, and 90% pass final test: 720 working accelerators.
+
+- The data center can install and commission 660 accelerators per month.
+
+- Once installed, accelerators are available 95% of scheduled time and spend 70% of available time on useful workload work.
+
+- Each useful accelerator-hour produces 100 standardized work units.
+
+“Work unit” is a teaching denominator. In practice it could be tokens meeting latency and quality targets, or training steps at a defined model size and precision.
+
+2. Find the physical bottleneck
+
+Before runtime, monthly hardware flow is the smallest stage:
+
+Minimum of 1,000 compute sets, 900 HBM sets, 720 working packages and 660 deployments = 660 deployed accelerators
+
+The wafer process is not the bottleneck. HBM is not the bottleneck. Packaging produces 60 more good units than deployment can commission, so deployment is the immediate physical limit.
+
+This revisits Lesson 031: capacity matters only after every downstream stage is considered.
+
+3. Translate hardware into useful output
+
+Baseline useful output per scheduled hour is:
+
+660 accelerators × 95% availability × 70% useful utilization × 100 work units = 43,890 work units
+
+The target is 20% higher:
+
+43,890 × 1.20 = 52,668 work units
+
+Availability means the installed equipment is ready to operate. Useful utilization means the available equipment is doing the defined workload rather than waiting for data, communication, scheduling or maintenance work. Mixing those two percentages would hide the cause of idle time.
+
+4. Test the tempting single-stage answers
+
+Raise good compute-die output by 20%, from 1,000 to 1,200. Deployed accelerators remain 660, so useful output remains 43,890. More wafers alone do nothing here.
+
+Raise HBM-supported packages from 900 to 1,080. Output again stays unchanged because packaging and deployment remain lower.
+

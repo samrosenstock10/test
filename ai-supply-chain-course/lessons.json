@@ -339,7 +339,18 @@
         "lessons/035-01.tsfrag",
         "lessons/035-02.tsfrag"
       ]
+    },
+    {
+      "number": 36,
+      "module": "Module 2: From Wafer to Working AI Accelerator",
+      "title": "Whole-Stack Case — What Must Change to Deliver 20% More Useful AI?",
+      "date": "2026-09-11",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/036-01.tsfrag",
+        "lessons/036-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-11T11:04:11.416Z"
+  "updatedAt": "2026-09-11T11:12:48.242Z"
 }

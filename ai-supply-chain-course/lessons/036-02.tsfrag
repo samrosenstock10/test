@@ -1,0 +1,56 @@
+Raise package attempts 20%, from 800 to 960, while yield stays 90%. That creates 864 working packages, but only 660 can be deployed. The extra packages become inventory rather than useful AI.
+
+These investments could matter later, but they do not meet the near-term target.
+
+5. Build a coordinated answer
+
+Suppose deployment rises from 660 to the existing package output of 720 accelerators. At the same time, better scheduling, data delivery and workload software raise useful utilization from 70% to 77%. Availability and per-useful-hour performance stay unchanged.
+
+720 × 95% × 77% × 100 = 52,668 work units
+
+That is exactly 20% above baseline. Deployment improves 9.1%, and useful utilization improves 10% on a relative basis. Their effects multiply: 1.091 × 1.10 ≈ 1.20.
+
+This solution uses the 60-package monthly gap that already existed, then extracts more useful work from each available accelerator. It does not require more wafer or HBM output yet.
+
+6. Check where the bottleneck moves
+
+After the change, deployment and working-package output both equal 720. There is no longer spare package flow. The next expansion must improve package attempts, package yield or both, while staying below the 900 HBM-set limit.
+
+For example, sustaining 792 deployments at unchanged 90% package yield would require:
+
+792 working packages ÷ 90% yield = 880 package attempts
+
+That still fits under the illustrative supplies of 900 HBM sets and 1,000 compute sets. A further increase could move the bottleneck to HBM.
+
+Quick check — answer before reading on
+
+Management announces 20% more wafer capacity and predicts 20% more useful AI, while every other baseline number stays fixed. Is the prediction supported?
+
+Answer: no. Deployment remains 660 and runtime efficiency is unchanged, so useful output remains 43,890 work units. The tempting mistake is to apply one upstream growth rate to the entire chain.
+
+Remember these three things
+
+- Define useful AI output with a unit, time period and performance requirement.
+
+- Total output is constrained by the tightest physical stage and then reduced by availability and ineffective runtime time.
+
+- A successful capacity plan identifies the current bottleneck, changes it and predicts where the limit moves next.
+
+Sources and assumptions
+
+NVIDIA, DGX H100/H200 System Hardware and Software Overview: https://docs.nvidia.com/dgx/dgxh100-user-guide/introduction-to-dgxh100.html
+
+TSMC, 3DFabric Advanced Packaging: https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/3DFabric.htm
+
+Micron, HBM3E: https://www.micron.com/products/memory/hbm/hbm3e
+
+MLCommons, MLPerf Inference Datacenter Benchmark: https://mlcommons.org/benchmarks/inference-datacenter/
+
+All production, yield, deployment, utilization and work-rate figures are invented teaching assumptions, not company specifications or forecasts.
+
+Next lesson
+
+Lesson 037: GPU Execution and Matrix Math — How an AI Accelerator Turns Numbers Into Work
+
+We will open the accelerator and follow a simple matrix operation through its compute units and memory.`,
+} satisfies Lesson;
