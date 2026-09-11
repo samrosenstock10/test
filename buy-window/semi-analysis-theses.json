@@ -1,7 +1,53 @@
 {
-  "updatedAt": "2026-09-10T11:32:53Z",
+  "updatedAt": "2026-09-11T11:32:52Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "rows": [
+    {
+      "loggedDate": "2026-09-11",
+      "sourceDate": "2026-09-10",
+      "company": "Bloom Energy / BE",
+      "bullishness": 4,
+      "summary": "Bloom’s behind-the-meter AI-power thesis materially re-strengthens: despite reciprocating engines remaining the broad share leader, Bloom now owns essentially all tracked fuel-cell bookings and is winning large deployments because its low-NOx, labor-light, vertically integrated fuel-cell model can clear permitting and execution bottlenecks that combustion equipment cannot. SemiAnalysis now has concrete evidence that Bloom is carving out a differentiated BTM niche rather than merely participating in a generic power shortage: fuel cells provide a lighter regulatory profile, require fewer scarce pressure trades, and Bloom handles much of installation and O&M itself. Google’s 900MW Wyoming deployment, Nebius’s 328MW 10-year deployment and Bloom’s overwhelming share of tracked fuel-cell orders materially offset the July concern that recips would dominate marginal BTM capacity.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/what-is-so-hard-about-behind-the",
+        "https://newsletter.semianalysis.com/p/us-grid-constraints-towards-40gw",
+        "https://www.linkedin.com/company/semianalysis",
+        "https://www.linkedin.com/posts/semianalysis_massive-delay-alert-to-oracles-stargate-activity-7484079629503246336-0llI"
+      ]
+    },
+    {
+      "loggedDate": "2026-09-11",
+      "sourceDate": "2026-09-10",
+      "company": "Caterpillar / CAT; Cummins / CMI (INNIO private)",
+      "bullishness": 4,
+      "summary": "SemiAnalysis’s reciprocating-engine thesis materially strengthens: behind-the-meter AI power has moved from early deployments to a 75GW firm-order market, recips continue gaining share as turbine slots push beyond 2030, and Caterpillar is nearly tripling large-engine output while 24/7 prime-power duty creates a recurring service cycle. SemiAnalysis says the shift toward recips is accelerating because datacenter developers compete with utilities for sold-out turbine capacity while recip OEMs can direct incremental manufacturing to AI compute. The Sep. 10 work adds company-specific scale and aftermarket evidence: Caterpillar is lifting large-engine output to nearly 3x 2024 levels, and continuous prime-power operation pulls major service intervals forward into a predictable multiyear maintenance stream.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/what-is-so-hard-about-behind-the",
+        "https://www.linkedin.com/company/semianalysis"
+      ]
+    },
+    {
+      "loggedDate": "2026-09-11",
+      "sourceDate": "2026-09-10",
+      "company": "GE Vernova / GEV",
+      "bullishness": 4,
+      "summary": "GE Vernova remains a strong turbine-scarcity beneficiary, but SemiAnalysis’s current BTM work redirects the thesis: factory slots now extend past 2030 and secondary-market premiums confirm exceptional scarcity pricing, while faster-growing recip and fuel-cell suppliers are capturing more of the marginal datacenter-specific volume. SemiAnalysis’s new evidence reinforces the pricing/backlog leg of the GEV thesis—large turbines are so scarce that released slots trade at large premiums and utilities compete directly with datacenters for supply—but it also says suppliers such as Caterpillar, INNIO, Wärtsilä, Cummins and Bloom are expanding datacenter-directed capacity more aggressively than incumbents like GEV. The result is a more balanced thesis: stronger scarcity economics, less certainty that GEV captures the fastest BTM unit growth.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/what-is-so-hard-about-behind-the",
+        "https://newsletter.semianalysis.com/p/how-ai-labs-are-solving-the-power"
+      ]
+    },
+    {
+      "loggedDate": "2026-09-11",
+      "sourceDate": "2026-09-10",
+      "company": "Positron AI / private",
+      "bullishness": 5,
+      "summary": "Dylan Patel is making a direct high-conviction bet that AI inference is becoming memory-bound enough for Positron’s memory-first architecture to create a major alternative accelerator platform by using commodity LPDDR5X to bypass HBM and advanced-packaging bottlenecks. Patel’s conviction is unusually explicit: SemiAnalysis Capital co-led Positron’s $875M financing, he is joining the board, and he says the architecture attacks the constraint that matters—memory—without depending on HBM or advanced packaging. He also points to the company’s first-generation deployment inside Oracle as evidence the team has already built real production experience rather than only a benchmark prototype.",
+      "sourceUrls": [
+        "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+        "https://www.positron.ai/about"
+      ]
+    },
     {
       "loggedDate": "2026-09-10",
       "sourceDate": "2026-09-09",
@@ -145,28 +191,6 @@
       ]
     },
     {
-      "loggedDate": "2026-07-22",
-      "sourceDate": "2026-07-21",
-      "company": "Bloom Energy / BE",
-      "bullishness": 3,
-      "summary": "Bloom remains exposed to the large behind-the-meter datacenter-power buildout, but SemiAnalysis now expects reciprocating engines—not fuel cells—to energize the lion's share, while Bloom's flagship deployments remain vulnerable to gas-infrastructure and permitting delays. SemiAnalysis still sees grid scarcity creating a large BTM market, but it now says recips offer the best mix of cost, time-to-power, modularity and bankability versus fuel cells; this follows its Project Jupiter work showing that Bloom cannot eliminate upstream gas-pipeline and air-permit bottlenecks.",
-      "sourceUrls": [
-        "https://newsletter.semianalysis.com/p/us-grid-constraints-towards-40gw",
-        "https://www.linkedin.com/company/semianalysis",
-        "https://www.linkedin.com/posts/semianalysis_massive-delay_alert-to-oracles-stargate-activity-7484079629503246336-0llI"
-      ]
-    },
-    {
-      "loggedDate": "2026-07-22",
-      "sourceDate": "2026-07-21",
-      "company": "Caterpillar / CAT; Cummins / CMI (INNIO private)",
-      "bullishness": 4,
-      "summary": "AI datacenter grid scarcity is structurally reordering reciprocating-engine demand from occasional backup use to always-on prime power, creating a multiyear equipment and service cycle for CAT and CMI. SemiAnalysis expects recips to energize the lion's share of marginal behind-the-meter capacity because they offer the best combination of cost, speed, modular staged deployment and bankability, while OEM capacity is ramping into a severely undersupplied power market.",
-      "sourceUrls": [
-        "https://www.linkedin.com/company/semianalysis"
-      ]
-    },
-    {
       "loggedDate": "2026-07-10",
       "sourceDate": "2026-07-02",
       "company": "CoreWeave / CRWV",
@@ -184,16 +208,6 @@
       "summary": "TSMC’s advanced-node capacity is becoming the central AI-silicon bottleneck, supporting exceptional utilization, customer dependence and pricing power. SemiAnalysis identifies N3 capacity as one of the largest constraints in AI infrastructure and expects demand to exceed supply for at least two years despite heavy capital spending.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/the-great-ai-silicon-shortage"
-      ]
-    },
-    {
-      "loggedDate": "2026-07-10",
-      "sourceDate": "2025-12-30",
-      "company": "GE Vernova / GEV",
-      "bullishness": 4,
-      "summary": "GE Vernova can sustain strong turbine pricing, backlog and high-value service revenue as AI datacenters bypass grid delays with onsite gas generation. SemiAnalysis expects triple-digit annual growth in onsite gas generation and identifies GE Vernova as a core incumbent whose production is already booked years ahead.",
-      "sourceUrls": [
-        "https://newsletter.semianalysis.com/p/how-ai-labs-are-solving-the-power"
       ]
     }
   ]
