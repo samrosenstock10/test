@@ -330,16 +330,16 @@
       "title": "Chiplets — Why Split a Processor Across Several Dies?"
     },
     {
+      "number": 35,
+      "module": "Module 2: From Wafer to Working AI Accelerator",
+      "title": "Test and Package Yield — When Good Components Still Make a Bad Product",
       "date": "2026-09-10",
       "format": "lesson-ts",
-      "module": "Module 2: From Wafer to Working AI Accelerator",
-      "number": 35,
       "parts": [
         "lessons/035-01.tsfrag",
         "lessons/035-02.tsfrag"
-      ],
-      "title": "Test and Package Yield — When Good Components Still Make a Bad Product"
+      ]
     }
   ],
-  "updatedAt": "2026-09-10T11:09:13.904Z"
+  "updatedAt": "2026-09-11T11:04:11.416Z"
 }
