@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-09-11T11:32:52Z",
+  "updatedAt": "2026-09-12T11:31:25Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "rows": [
+    {
+      "loggedDate": "2026-09-12",
+      "sourceDate": "2026-09-11",
+      "company": "Nvidia / NVDA",
+      "bullishness": 4,
+      "summary": "Nvidia’s 4/5 platform thesis materially strengthens again because SemiAnalysis now treats Nvidia’s balance sheet and credit support as a demand-creation moat: by backstopping neoclouds and datacenter projects, Nvidia can expand the pool of bankable GPU buyers, sell accelerators at full margin up front and earn additional upside if compute demand remains strong. SemiAnalysis argues Nvidia’s backstop economics are asymmetric in its favor while its balance sheet remains strong. Nvidia can manufacture alternative credit anchors for non-investment-grade AI operators by flooring rental revenue, guaranteeing landlords or signing leases, which lets those customers finance infrastructure at much lower costs without relying entirely on hyperscalers. In the upside case Nvidia wins on both the initial GPU sale and revenue participation; in a moderate downside the backstop can keep customers solvent and reduce contagion.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i",
+        "https://newsletter.semianalysis.com/p/where-does-a-robot-think-on-device",
+        "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
+        "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
+        "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+        "https://newsletter.semianalysis.com/p/ultra-high-interactivity-on-nvidia"
+      ]
+    },
     {
       "loggedDate": "2026-09-11",
       "sourceDate": "2026-09-10",
@@ -46,20 +61,6 @@
       "sourceUrls": [
         "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
         "https://www.positron.ai/about"
-      ]
-    },
-    {
-      "loggedDate": "2026-09-10",
-      "sourceDate": "2026-09-09",
-      "company": "Nvidia / NVDA",
-      "bullishness": 4,
-      "summary": "Nvidia’s 4/5 platform thesis materially strengthens through physical AI: SemiAnalysis’s robotics work shows frontier robot cognition is already outgrowing edge compute and can shift to shared B300-class datacenter GPUs, creating a new high-margin datacenter-accelerator demand leg while Nvidia also supplies the local Jetson control layer. SemiAnalysis argues a hybrid robotics-compute cascade is inevitable for sufficiently general robots: heavy planning/reasoning moves to nearby datacenter GPUs while low-level safety/control stays onboard. Nvidia is unusually positioned across both layers with Blackwell/B300 in the datacenter and Jetson Thor at the edge, and SemiAnalysis notes Blackwell datacenter GPUs currently carry materially higher gross margins than Jetson modules.",
-      "sourceUrls": [
-        "https://newsletter.semianalysis.com/p/where-does-a-robot-think-on-device",
-        "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
-        "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
-        "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
-        "https://newsletter.semianalysis.com/p/ultra-high-interactivity-on-nvidia"
       ]
     },
     {
