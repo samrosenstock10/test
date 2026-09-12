@@ -350,7 +350,18 @@
         "lessons/036-01.tsfrag",
         "lessons/036-02.tsfrag"
       ]
+    },
+    {
+      "number": 37,
+      "module": "Module 3: How an AI Accelerator Does Work",
+      "title": "GPU Execution and Matrix Math — How an AI Accelerator Turns Numbers Into Work",
+      "date": "2026-09-12",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/037-01.tsfrag",
+        "lessons/037-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-11T11:12:48.242Z"
+  "updatedAt": "2026-09-12T11:07:35.381Z"
 }

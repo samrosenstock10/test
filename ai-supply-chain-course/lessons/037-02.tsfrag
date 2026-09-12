@@ -1,0 +1,48 @@
+Tensor Cores perform matrix multiply-and-accumulate operations on small tiles. They are dense arithmetic machines coordinated by instructions and nearby memory, not separate AI brains.
+
+4. Why moving numbers can dominate
+
+Return to the tiny example. Calculating each of four outputs independently would request three numbers from A and three from B each time: 24 source-number reads.
+
+But A contains only six numbers and B contains six. If a tile is loaded once and reused for several outputs, the idealized source reads fall from 24 to 12. The arithmetic result does not change; the data movement does.
+
+At model scale, this reuse can save enormous memory traffic. Without it, matrix units may sit idle even though their advertised arithmetic capacity is high. This reconnects to Lesson 033: HBM bandwidth matters because compute cannot operate on numbers it has not received.
+
+5. What determines achieved speed
+
+Peak arithmetic throughput is a ceiling, not workload performance. Achieved speed depends on whether the workload exposes enough parallel work, uses supported data types and matrix shapes, keeps execution lanes busy, and reuses data effectively.
+
+Branches can also hurt. If threads in one warp take different paths, some lanes may wait while others work. Small or awkwardly shaped jobs may leave parts of the GPU unused.
+
+Quick check — answer before reading on
+
+A new GPU doubles its matrix arithmetic rate, but a workload already spends most of its time waiting for HBM and its memory traffic is unchanged. Should useful throughput double?
+
+Answer: no. The faster arithmetic shortens only the compute portion. Unless data reuse or memory delivery improves, the memory bottleneck remains and the matrix units spend more time waiting.
+
+Remember these three things
+
+- AI hardware processes numbers; matrix multiplication converts activations and weights into new activations.
+
+- GPUs gain speed by applying repeated instructions across many data elements and by using specialized matrix units.
+
+- Peak math matters only when memory and scheduling keep the compute units supplied with useful work.
+
+Sources
+
+NVIDIA, CUDA Programming Guide — Programming Model: https://docs.nvidia.com/cuda/cuda-programming-guide/01-introduction/programming-model.html
+
+NVIDIA, CUDA C++ Best Practices Guide: https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/
+
+NVIDIA, Programming Tensor Cores in CUDA: https://developer.nvidia.com/blog/programming-tensor-cores-cuda-9/
+
+AMD, ROCm GPU Hardware Specifications: https://rocm.docs.amd.com/en/docs-7.2.0/reference/gpu-arch-specs.html
+
+The small matrices and memory-read counts are teaching examples, not benchmark results.
+
+Next lesson
+
+Lesson 038: Memory Hierarchy and Data Reuse — Why Feeding the Math Can Be Harder Than Doing It
+
+We will trace data from HBM through caches, shared memory and registers, then calculate when reuse can keep an accelerator busy.`,
+} satisfies Lesson;

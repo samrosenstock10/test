@@ -1,0 +1,75 @@
+import type { Lesson } from "./lessons";
+
+export const lesson037 = {
+  number: 37,
+  module: "Module 3: How an AI Accelerator Does Work",
+  title: "GPU Execution and Matrix Math — How an AI Accelerator Turns Numbers Into Work",
+  date: "2026-09-12",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 032: Advanced packaging connects compute and memory in one product, but package size and assembly yield can restrict how many are built.
+
+Lesson 033: HBM holds data beside the processor; capacity determines how much fits, while bandwidth determines how quickly it can move.
+
+Lesson 034: Chiplets split a large design into smaller dies, improving manufacturing flexibility but adding connection, packaging and testing challenges.
+
+Lesson 035: Testing removes bad parts before costly assembly and catches later damage, so final package yield determines usable accelerator output.
+
+Lesson 036: More wafer capacity creates more useful AI only if memory, packaging, deployment and software are not tighter bottlenecks.
+
+The big idea
+
+An AI accelerator does not understand words or images. It receives arrays of numbers and repeatedly multiplies and adds them.
+
+A GPU is effective because it divides a large calculation into many similar small jobs, runs those jobs in parallel and reuses nearby data. Specialized matrix units accelerate the arithmetic, but only when data arrives fast enough.
+
+Where we are
+
+Working package → HBM supplies numbers → GPU loads small pieces → many compute units multiply and add → results return to memory
+
+Now we move inside the working accelerator and ask what its silicon does.
+
+1. Start with one dot product
+
+A model's weights are learned numbers that describe how strongly inputs should affect outputs. Activations are the temporary numbers produced for the current input.
+
+To create one output, the processor pairs a row of activations with a column of weights, multiplies each pair and adds the products. This is a dot product.
+
+For example:
+
+[1, 2, 0] · [2, 1, 0] = (1 × 2) + (2 × 1) + (0 × 0) = 4
+
+A matrix multiplication performs many related dot products together. Suppose two activation rows multiply a weight matrix:
+
+A = [[1, 2, 0], [0, 1, 3]]
+
+B = [[2, 1], [1, 0], [0, 2]]
+
+A × B = [[4, 1], [1, 6]]
+
+The four output numbers require 12 multiply-and-accumulate steps. Hardware performance tables often count the multiplication and addition separately, producing 24 floating-point operations for this shape.
+
+Matrix dimensions expose a useful denominator: multiplying an M-by-K matrix by a K-by-N matrix produces M × N outputs and roughly 2 × M × K × N floating-point operations.
+
+2. How a GPU divides the job
+
+Software launches a function called a kernel: a program intended to run many times across different pieces of data. On an NVIDIA GPU, kernel work is divided into a grid of thread blocks. Each block runs on a streaming multiprocessor, or SM.
+
+Inside a block, threads are grouped into warps of 32. A warp advances many threads through the same instruction, while each thread handles different data. This works well for matrix math because many output positions require the same multiply-and-add pattern.
+
+AMD uses the terms compute units and wavefronts, but the shared idea is wide parallel execution across repeated calculations.
+
+3. Follow one matrix tile through the chip
+
+Large matrices are divided into smaller rectangles called tiles. A simplified path is:
+
+- Read activation and weight tiles from HBM into the GPU.
+
+- Keep useful pieces in on-chip cache, shared memory or registers close to the arithmetic units.
+
+- Schedule thread blocks and warps across available SMs.
+
+- Feed small matrix pieces into ordinary arithmetic lanes or specialized matrix units such as NVIDIA Tensor Cores.
+
+- Accumulate partial sums, then write completed output tiles back to memory.
+
