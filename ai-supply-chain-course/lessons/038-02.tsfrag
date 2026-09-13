@@ -1,0 +1,46 @@
+Registers can also overflow into slower storage. Kernel design therefore balances fewer external reads against enough on-chip capacity and parallel work.
+
+5. What this changes across the stack
+
+Memory reuse explains why HBM bandwidth alone does not determine accelerator performance. Two chips with similar HBM can produce different results because their caches, on-chip storage, scheduling and software use that bandwidth differently.
+
+It also gives optimized libraries and kernels economic value. Better software can serve more work from the same hardware, lowering accelerator time and energy per useful output.
+
+If a model or batch cannot fit in one accelerator's memory, data may cross a scale-up link or cluster network. Local reuse can reduce pressure on both.
+
+The idea will return when we compare GPUs with custom accelerators. A custom design may arrange memory around a narrower workload, while a GPU preserves more flexibility. The winner depends on achieved workload performance and total system cost, not one peak specification.
+
+Quick check — answer before reading on
+
+Assume an illustrative memory system delivers 1 terabyte per second. Kernel A performs 0.5 operation per byte moved, while tiled Kernel B performs 32 operations per byte. Before considering the compute ceiling, what memory-limited rates do they imply?
+
+Answer: Kernel A is limited to about 0.5 trillion operations per second, or 0.5 TOPS. Kernel B is limited to about 32 TOPS. Reuse raised the memory-side ceiling by 64 times without changing external bandwidth.
+
+Kernel B is not guaranteed to run 64 times faster. It may hit the arithmetic ceiling, use too many registers or lose occupancy. The calculation shows a memory limit, not achieved speed.
+
+Remember these three things
+
+- HBM provides capacity and broad bandwidth, while caches, shared memory and registers keep active data closer to the math.
+
+- Arithmetic intensity measures useful calculation per byte moved; reuse raises it.
+
+- The best memory strategy balances fewer external reads against limited on-chip storage and enough parallel work.
+
+Sources
+
+NVIDIA, CUDA Programming Guide — Programming GPUs and memory hierarchy: https://docs.nvidia.com/cuda/cuda-programming-guide/index.html
+
+NVIDIA, CUDA C++ Best Practices Guide — memory access and optimization: https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/
+
+NVIDIA, CUTLASS documentation — efficient matrix multiplication: https://docs.nvidia.com/cutlass/media/docs/cpp/efficient_gemm.html
+
+AMD, HIP programming model — execution and memory model: https://rocm.docs.amd.com/projects/HIP/en/latest/understand/programming_model.html
+
+The matrix sizes, traffic counts and bandwidth are illustrative teaching assumptions, not measured product results.
+
+Next lesson
+
+Lesson 039: Precision and Numerical Tradeoffs — Why Fewer Bits Can Make AI Faster
+
+We will compare numerical formats and ask when using fewer bits saves memory and compute without harming the result.`,
+} satisfies Lesson;
