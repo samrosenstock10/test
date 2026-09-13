@@ -1,0 +1,75 @@
+import type { Lesson } from "./lessons";
+
+export const lesson038 = {
+  number: 38,
+  module: "Module 3: How an AI Accelerator Does Work",
+  title: "Memory Hierarchy and Data Reuse — Why Feeding the Math Can Be Harder Than Doing It",
+  date: "2026-09-13",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 033: HBM keeps model data beside the processor, and its capacity and bandwidth determine how much data fits and moves quickly.
+
+Lesson 034: Chiplets divide a large design into smaller dies, which can improve manufacturing but makes connections, packaging and testing harder.
+
+Lesson 035: Testing finds bad parts before and after assembly, so package yield determines how many expensive components become usable accelerators.
+
+Lesson 036: More chips create more useful AI only when memory, packaging, deployment and software can support the additional compute.
+
+Lesson 037: A GPU turns model data into results by running many matrix calculations in parallel, provided the math units receive data fast enough.
+
+The big idea
+
+A fast calculator is useless if it spends most of its time waiting for numbers.
+
+An accelerator therefore uses a memory hierarchy: small, fast storage sits close to the arithmetic units, while much larger but slower memory sits farther away. Good software moves useful data inward and reuses it before returning to HBM.
+
+Where we are
+
+HBM → L2 cache → L1 cache or shared memory → registers → arithmetic units
+
+1. The levels and their jobs
+
+HBM, exposed as global device memory, holds large arrays of model weights and activations. Every compute unit can reach it, but using data already on the chip is faster and consumes less movement.
+
+L2 cache is on-chip storage shared across the GPU. It can retain recently used portions of HBM so later requests avoid another external-memory trip.
+
+Closer to each compute unit are an L1 cache and shared memory. Hardware manages the cache. Shared memory is a software-managed workbench where threads in one block place and reuse a tile.
+
+Registers sit closest to the arithmetic units. They hold values an individual thread is actively using, including partial sums.
+
+2. Reuse changes memory traffic
+
+Consider an illustrative multiplication of two 64-by-64 matrices using 16-bit numbers, which occupy 2 bytes each.
+
+The calculation performs roughly:
+
+2 × 64 × 64 × 64 = 524,288 operations
+
+If every one of the 4,096 output positions separately fetched its 64 inputs from each matrix, source reads would total:
+
+4,096 outputs × 128 values × 2 bytes = 1,048,576 bytes
+
+That is about 0.5 operation per byte read.
+
+Now divide the work into tiles and ideally load each input matrix once:
+
+2 matrices × 4,096 values × 2 bytes = 16,384 bytes
+
+The arithmetic is unchanged, but idealized input traffic falls by 64 times. Arithmetic intensity—operations performed per byte moved—rises from about 0.5 to 32 operations per byte.
+
+Real kernels also move outputs and may reload tiles, so this is not a benchmark. The principle survives: reuse can raise useful compute without more HBM bandwidth.
+
+3. Why access patterns matter
+
+A GPU moves memory in chunks, not as isolated numbers. When neighboring threads request neighboring addresses, the hardware can combine their requests efficiently. This is called coalescing.
+
+Scattered requests may fetch chunks containing many unused bytes. Advertised HBM bandwidth counts all transferred data; useful bandwidth counts only bytes that advance the workload.
+
+Caches help when data is requested again. Shared memory gives software more control: threads cooperatively load an orderly tile once, synchronize and reuse it.
+
+4. Reuse is not free
+
+On-chip storage has limited capacity. A larger tile can increase reuse, but it consumes more shared memory and registers.
+
+That can reduce occupancy, meaning fewer warps remain ready on a compute unit. Ready warps matter because the scheduler can run one while another waits for data.
+
