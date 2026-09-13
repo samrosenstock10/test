@@ -363,16 +363,16 @@
       ]
     },
     {
+      "number": 38,
+      "module": "Module 3: How an AI Accelerator Does Work",
+      "title": "Memory Hierarchy and Data Reuse — Why Feeding the Math Can Be Harder Than Doing It",
       "date": "2026-09-13",
       "format": "lesson-ts",
-      "module": "Module 3: How an AI Accelerator Does Work",
-      "number": 38,
       "parts": [
         "lessons/038-01.tsfrag",
         "lessons/038-02.tsfrag"
-      ],
-      "title": "Memory Hierarchy and Data Reuse — Why Feeding the Math Can Be Harder Than Doing It"
+      ]
     }
   ],
-  "updatedAt": "2026-09-13T11:05:43.254Z"
+  "updatedAt": "2026-09-13T11:06:08.557Z"
 }
