@@ -1,0 +1,44 @@
+Capacity can matter more than peak arithmetic. If 8-bit weights let a model fit on one accelerator instead of two, the system may avoid cross-chip communication and leave more HBM for the KV cache or a larger batch. That can change latency, throughput and cost.
+
+The supplier implication is subtle. Better low-precision hardware can increase useful output per chip, but software support and model validation determine whether customers capture it. A format on a specification sheet is not proof of a faster application.
+
+5. How to test the claim
+
+Compare lower precision with an accepted baseline on representative and difficult examples. Measure output quality, end-to-end latency, useful outputs per second, HBM use and energy per useful output.
+
+A lower-precision result is valuable when it preserves the required quality while improving the system metric. The right threshold depends on the application.
+
+Quick check — answer before reading on
+
+An illustrative 14-billion-parameter model stores only its weights. How much memory do the weights require at 16 bits and at 8 bits? Which version can fit within 24 gigabytes?
+
+Answer: 14 billion × 2 bytes is about 28 gigabytes at 16 bits. At 8 bits it is about 14 gigabytes. Only the 8-bit weights fit within 24 gigabytes.
+
+A real deployment also needs activations, the KV cache, temporary workspaces and runtime overhead, so 14 gigabytes is not the full memory requirement. The calculation isolates the effect of weight precision.
+
+Remember these three things
+
+- Fewer bits reduce memory capacity and bandwidth needs, and supported hardware may perform more low-precision math per second.
+
+- Range and precision are different: a format can cover very large values while representing nearby values less finely.
+
+- The winning format is the lowest precision that passes workload-specific quality tests and improves end-to-end performance or cost.
+
+Sources
+
+NVIDIA, Train With Mixed Precision — memory, bandwidth, arithmetic and loss scaling: https://docs.nvidia.com/deeplearning/performance/mixed-precision-training/index.html
+
+Google Cloud TPU, Improve your model's performance with bfloat16 — BF16 range, storage and bandwidth: https://cloud.google.com/tpu/docs/bfloat16
+
+NVIDIA, Transformer Engine FP8 primer — FP8 formats and mixed-precision execution: https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/examples/fp8_primer.html
+
+NVIDIA TensorRT, Working with quantized types — scales and low-precision inference: https://docs.nvidia.com/deeplearning/tensorrt/latest/inference-library/work-quantized-types.html
+
+The model sizes and memory calculations are illustrative teaching assumptions, not measured workload results.
+
+Next lesson
+
+Lesson 040: GPU Versus Custom ASIC Design — What Do You Gain by Giving Up Flexibility?
+
+We will compare a programmable GPU with a workload-focused accelerator and ask when specialization improves useful performance enough to justify its limits.`,
+} satisfies Lesson;
