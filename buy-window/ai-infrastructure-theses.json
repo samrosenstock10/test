@@ -1,10 +1,23 @@
 {
-  "updatedAt": "2026-09-12T11:31:25Z",
+  "updatedAt": "2026-09-14T11:31:28Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "sources": {
     "semianalysis": {
       "label": "SemiAnalysis",
       "rows": [
+        {
+          "loggedDate": "2026-09-14",
+          "sourceDate": "2026-09-13",
+          "company": "SK Hynix / 000660.KS",
+          "bullishness": 3,
+          "summary": "SK Hynix’s HBM thesis partially re-strengthens because SemiAnalysis’s new 4-hi analysis argues shorter HBM stacks can improve dollar-per-bandwidth, stacking yield and supplier profitability per scarce DRAM wafer, offsetting part of the prior margin concern even though Hynix’s company-specific HBM4 leadership and Nvidia bargaining-power issues remain. SemiAnalysis argues inference is increasingly bandwidth-bound rather than capacity-bound: HBM4 can preserve full interface bandwidth with fewer DRAM layers, so a shorter stack can lower cost per token while allowing the same wafer supply to produce more usable HBM stacks. Crucially for suppliers, SemiAnalysis describes the shift as a win-win for lab TCO and memory-supplier profitability rather than a simple revenue loss from fewer dies per stack.",
+          "sourceUrls": [
+            "https://newsletter.semianalysis.com/p/long-live-the-short-king-why-4-hi",
+            "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
+            "https://podcasts.apple.com/ca/podcast/semianalysis-weekly/id1877544643",
+            "https://newsletter.semianalysis.com/p/the-great-ai-silicon-shortage"
+          ]
+        },
         {
           "loggedDate": "2026-09-12",
           "sourceDate": "2026-09-11",
@@ -106,18 +119,6 @@
             "https://inferencex.semianalysis.com/rankings/fastest-gpu-for-minimax-m3",
             "https://newsletter.semianalysis.com/p/agentx-inferencexv3-does-cuda-moat",
             "https://newsletter.semianalysis.com/p/can-amd-break-the-cuda-moat-amd-advancing"
-          ]
-        },
-        {
-          "loggedDate": "2026-09-02",
-          "sourceDate": "2026-09-01",
-          "company": "SK Hynix / 000660.KS",
-          "bullishness": 2,
-          "summary": "SK Hynix remains a structurally important HBM supplier, but SemiAnalysis’s Korea analysis further weakens the shareholder thesis because Nvidia appears positioned to extract favorable HBM pricing and large 2027 volume commitments from Hynix as Korea trades supplier economics for strategic access to leading-edge compute. SemiAnalysis now frames Korea’s sovereign-AI ambitions as potentially misaligned with Hynix shareholders: Korea needs Nvidia’s accelerator roadmap and supply, while Nvidia wants a more diversified customer base and stronger memory economics. SemiAnalysis believes this strategic dependence likely helped Nvidia secure favorable HBM terms from Hynix.",
-          "sourceUrls": [
-            "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
-            "https://podcasts.apple.com/ca/podcast/semianalysis-weekly/id1877544643",
-            "https://newsletter.semianalysis.com/p/the-great-ai-silicon-shortage"
           ]
         },
         {
