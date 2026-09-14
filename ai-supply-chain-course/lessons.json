@@ -372,7 +372,18 @@
         "lessons/038-01.tsfrag",
         "lessons/038-02.tsfrag"
       ]
+    },
+    {
+      "number": 39,
+      "module": "Module 3: How an AI Accelerator Does Work",
+      "title": "Precision and Numerical Tradeoffs — Why Fewer Bits Can Make AI Faster",
+      "date": "2026-09-14",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/039-01.tsfrag",
+        "lessons/039-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-13T11:06:08.557Z"
+  "updatedAt": "2026-09-14T11:06:35.772Z"
 }
