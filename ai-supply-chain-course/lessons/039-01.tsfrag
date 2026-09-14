@@ -1,0 +1,67 @@
+import type { Lesson } from "./lessons";
+
+export const lesson039 = {
+  number: 39,
+  module: "Module 3: How an AI Accelerator Does Work",
+  title: "Precision and Numerical Tradeoffs — Why Fewer Bits Can Make AI Faster",
+  date: "2026-09-14",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 034: Chiplets split a large processor into smaller dies, which can improve manufacturing but makes packaging and communication harder.
+
+Lesson 035: Testing removes bad parts before and after assembly, because one failed component can ruin an expensive accelerator package.
+
+Lesson 036: Adding accelerators helps only when memory, packaging, deployment and software can also support more useful work.
+
+Lesson 037: A GPU runs many matrix calculations in parallel, but those math units produce value only when data reaches them fast enough.
+
+Lesson 038: Caches and local storage let a chip reuse data near its math units, reducing slow trips to HBM.
+
+The big idea
+
+Fewer bits can make numbers cheaper to store, move and calculate, but they also increase rounding and overflow risk.
+
+The practical answer is usually mixed precision: use small formats where the model tolerates them and wider formats where errors could damage the result.
+
+Where we are
+
+model values → numerical format → HBM and cache traffic → matrix units → model output
+
+1. What a numerical format represents
+
+AI systems store weights, activations and gradients as binary numbers. Floating-point formats divide their bits among a sign, an exponent and a fraction.
+
+The exponent sets range; the fraction sets how finely nearby values can be distinguished.
+
+FP32 uses 32 bits and provides broad range and fine detail. FP16 uses half as many bits, with less range and precision.
+
+BF16 also uses 16 bits. It keeps FP32's exponent width, giving similar range, but leaves fewer fraction bits for detail. That can help training values that vary greatly in magnitude.
+
+FP8 compresses further, with layouts that trade range against precision. INT8 stores one of 256 integer codes, normally with a scale that maps each code to an approximate real value. Choosing that scale is part of quantization.
+
+2. Why fewer bits can be faster
+
+Suppose an illustrative model has 10 billion parameters.
+
+At 32 bits, or 4 bytes per parameter, the weights occupy about 40 gigabytes. At 16 bits they occupy about 20 gigabytes. At 8 bits they occupy about 10 gigabytes.
+
+Moving a 16-bit value from HBM requires half the bytes of a 32-bit value, so more values fit in each cache, transfer and network message.
+
+Hardware can also perform more supported low-precision multiplications in parallel. Lesson 038's reuse reduces how often data moves; lower precision reduces the bytes moved each time.
+
+3. Why smaller numbers can fail
+
+Conversion rounds values. Tiny values may become zero, large values may overflow, and repeated additions can lose small contributions.
+
+Training is especially sensitive because gradients can be very small and weight updates accumulate over many steps. FP16 training may use loss scaling: temporarily multiply gradients so important small values do not vanish, then undo the scale before updating weights.
+
+Another protection is wider accumulation: multiply lower-precision inputs but add products into an FP32 total. Important state can remain in FP32 while most tensors use BF16 or FP16.
+
+Inference does not update weights, so it can often use more aggressive quantization. Yet some layers, outlier values or tasks requiring fine numerical distinctions may lose quality.
+
+4. Precision is a system choice
+
+Lower precision helps only when hardware, software and the model agree on the format.
+
+Without fast hardware support, format conversions add work. Communication, CPU overhead or unsupported operations may erase a faster matrix multiplication.
+
