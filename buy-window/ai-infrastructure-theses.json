@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T11:31:28Z",
+  "updatedAt": "2026-09-14T12:40:48Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "sources": {
     "semianalysis": {
@@ -220,6 +220,21 @@
     "a16z": {
       "label": "a16z Machine Age",
       "rows": [
+        {
+          "loggedDate": "2026-09-14",
+          "sourceDate": "2026-09-13",
+          "company": "World Labs (private)",
+          "bullishness": 5,
+          "category": "World Models / Spatial Intelligence / Robotics Simulation",
+          "partner": "Martin Casado; Sarah Wang",
+          "signalType": "Direct investment",
+          "summary": "a16z’s World Labs thesis materially strengthens as Atlas moves spatial intelligence from generative 3D toward a reusable world-model layer that can reconstruct, generate and simulate physical environments, making simulation and real-to-sim-to-real robotics a more credible scaling infrastructure for physical AI. a16z originally backed World Labs on the view that spatial intelligence is a fundamental missing AI modality with potential impact comparable to the LLM revolution; its 2026 physical-world thesis explicitly identifies World Labs-style spatial models and simulation as enabling infrastructure, and the Sep. 13 a16z Show update provides concrete Atlas product evidence across reconstruction, generation and simulation.",
+          "sourceUrls": [
+            "https://podcast.app/world-models-robotics-and-the-future-of-3d-ai-e468839597",
+            "https://a16z.com/announcement/investing-in-world-labs/",
+            "https://a16z.com/frontier-systems-for-the-physical-world/"
+          ]
+        },
         {
           "loggedDate": "2026-09-05",
           "sourceDate": "2026-09-04",
