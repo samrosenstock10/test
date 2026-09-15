@@ -1,0 +1,63 @@
+import type { Lesson } from "./lessons";
+
+export const lesson040 = {
+  number: 40,
+  module: "Module 3: How an AI Accelerator Does Work",
+  title: "GPU Versus Custom ASIC Design — What Do You Gain by Giving Up Flexibility?",
+  date: "2026-09-15",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 035: Testing catches bad parts before and after packaging, because one failed component can waste an expensive finished accelerator.
+
+Lesson 036: More accelerators create value only when memory, packaging, deployment and software can also turn them into useful AI work.
+
+Lesson 037: A GPU performs many matrix calculations in parallel, but idle math units do not produce useful work.
+
+Lesson 038: Caches and local storage keep reused data near the math units, reducing slower trips to HBM.
+
+Lesson 039: Using fewer bits can make AI faster and cheaper, provided the smaller numbers preserve the quality the application needs.
+
+The big idea
+
+A GPU buys flexibility: it can run many changing workloads through a broad programming model.
+
+A custom AI ASIC buys specialization: it can devote more of its silicon, memory paths and power budget to a narrower set of operations.
+
+The right choice is not the chip with the highest advertised speed. It is the design that produces the most acceptable model outputs per dollar, watt and unit of time across the workloads that will actually run.
+
+Where we are
+
+model operation → compiler and kernels → compute units → on-chip memory and HBM → useful output
+
+1. What “general-purpose” means for a GPU
+
+A GPU is still specialized hardware, with many parallel execution units and dedicated matrix engines. Its advantage is programmability within parallel computing. CUDA lets software map many algorithms onto the same processor, so a new model can often run through new code instead of a new chip.
+
+That flexibility costs area and power. Instruction handling, scheduling, register files, caches and support for many data types and operations occupy silicon. They are valuable when workloads vary, but they are overhead when one stable operation dominates.
+
+2. What an AI ASIC changes
+
+ASIC means application-specific integrated circuit. A custom AI ASIC narrows the target so its designers can remove some generality and build data paths around expected work.
+
+Google's TPU architecture, for example, combines matrix-multiplication units with vector and scalar units, HBM and a chip-to-chip interconnect. The large matrix units use systolic arrays: data flows through a grid of multiply-accumulate cells and is reused along the way.
+
+An ASIC can remain programmable across supported operators and shapes. Its boundary is narrower: unusual work may run inefficiently, fall back to another processor or require compiler changes.
+
+3. A simple specialization calculation
+
+Imagine two chips with equal silicon and power budgets.
+
+The GPU devotes 60 budget units to the compute and local storage useful for a particular model. At 90% utilization, it delivers 60 × 90% = 54 units of useful work.
+
+The custom ASIC devotes 80 units to that path. At the same 90% utilization, it delivers 80 × 90% = 72 units, or 33% more than the GPU's 54.
+
+Now change the workload. If unsupported operations and awkward shapes reduce ASIC utilization to 60%, it delivers 80 × 60% = 48 units. If the GPU sustains 85%, it delivers 60 × 85% = 51 units. The ASIC's density advantage no longer wins.
+
+These figures are illustrative. They show why both hardware allocation and workload utilization belong in the denominator.
+
+4. The trade extends beyond arithmetic
+
+Memory can decide the result. A custom path may keep more values on chip and reduce HBM traffic, but poor reuse can still make external memory the limit.
+
+Software can reverse a paper advantage. GPUs benefit from mature libraries and tools. A custom chip needs a compiler, runtime and kernels that translate frameworks into work its hardware can execute; AWS Neuron fills that role for Trainium and Inferentia.
+
