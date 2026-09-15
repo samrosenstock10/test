@@ -383,7 +383,18 @@
         "lessons/039-01.tsfrag",
         "lessons/039-02.tsfrag"
       ]
+    },
+    {
+      "number": 40,
+      "module": "Module 3: How an AI Accelerator Does Work",
+      "title": "GPU Versus Custom ASIC Design — What Do You Gain by Giving Up Flexibility?",
+      "date": "2026-09-15",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/040-01.tsfrag",
+        "lessons/040-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-14T11:06:35.772Z"
+  "updatedAt": "2026-09-15T11:06:53.538Z"
 }
