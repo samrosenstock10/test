@@ -1,7 +1,42 @@
 {
-  "updatedAt": "2026-09-14T12:40:48Z",
+  "updatedAt": "2026-09-15T11:30:30Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "rows": [
+    {
+      "loggedDate": "2026-09-15",
+      "sourceDate": "2026-09-14",
+      "company": "Nvidia / NVDA",
+      "bullishness": 5,
+      "summary": "Nvidia’s platform thesis re-strengthens to 5/5 because Rubin’s first verified agentic-inference results show a large next-generation performance/TCO and power-efficiency lead while Nvidia’s day-zero model support continues to demonstrate the practical CUDA/software moat that competitors still struggle to match. SemiAnalysis is now explicitly bullish on both the hardware/system architecture and the software flywheel. Rubin’s early pre-release AgentX results show substantially better tokens per dollar and tokens per megawatt than Blackwell across realistic operating points, while SemiAnalysis says the software stack should improve further. Separately, DeepSeekV4.1 Flash was supported immediately across six Nvidia GPU SKUs while AMD’s public image arrived roughly two days later and remained dramatically worse on current perf/$, reinforcing the value of Nvidia’s developer ecosystem and day-zero optimization process.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference",
+        "https://www.linkedin.com/company/semianalysis",
+        "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i",
+        "https://newsletter.semianalysis.com/p/where-does-a-robot-think-on-device",
+        "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
+        "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
+        "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+        "https://newsletter.semianalysis.com/p/ultra-high-interactivity-on-nvidia"
+      ]
+    },
+    {
+      "loggedDate": "2026-09-15",
+      "sourceDate": "2026-09-14",
+      "company": "Advanced Micro Devices / AMD",
+      "bullishness": 3,
+      "summary": "AMD’s AI-accelerator thesis weakens back to 3/5 because recent selective MI355X TCO wins have not yet generalized into a robust production-software moat: on the new DeepSeekV4.1 Flash release AMD lagged Nvidia on day-zero support and remained dramatically worse on current performance per dollar. The early-September evidence showed AMD could close large software gaps quickly and even beat B300 on TCO at selected lower-interactivity Kimi/GLM operating points. The newest SemiAnalysis evidence shows the weakness is still systemic rather than solved: Nvidia’s vLLM stack supported DeepSeekV4.1 Flash immediately across six GPU generations, while AMD’s public image was not available on day zero and, once released, still trailed sharply on current perf/$. SemiAnalysis explicitly frames this as proof that CUDA’s developer/process ecosystem remains the moat.",
+      "sourceUrls": [
+        "https://www.linkedin.com/company/semianalysis",
+        "https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference",
+        "https://inferencex.semianalysis.com/compare/kimi-k3-b300-vs-mi355x",
+        "https://inferencex.semianalysis.com/compare-per-dollar/kimi-k26-b300-vs-mi355x",
+        "https://inferencex.semianalysis.com/compare-per-dollar/glm-5-1-b300-vs-mi355x",
+        "https://inferencex.semianalysis.com/rankings/fastest-gpu-for-qwen-3-5",
+        "https://inferencex.semianalysis.com/rankings/fastest-gpu-for-minimax-m3",
+        "https://newsletter.semianalysis.com/p/agentx-inferencexv3-does-cuda-moat",
+        "https://newsletter.semianalysis.com/p/can-amd-break-the-cuda-moat-amd-advancing"
+      ]
+    },
     {
       "loggedDate": "2026-09-14",
       "sourceDate": "2026-09-13",
@@ -13,21 +48,6 @@
         "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
         "https://podcasts.apple.com/ca/podcast/semianalysis-weekly/id1877544643",
         "https://newsletter.semianalysis.com/p/the-great-ai-silicon-shortage"
-      ]
-    },
-    {
-      "loggedDate": "2026-09-12",
-      "sourceDate": "2026-09-11",
-      "company": "Nvidia / NVDA",
-      "bullishness": 4,
-      "summary": "Nvidia’s 4/5 platform thesis materially strengthens again because SemiAnalysis now treats Nvidia’s balance sheet and credit support as a demand-creation moat: by backstopping neoclouds and datacenter projects, Nvidia can expand the pool of bankable GPU buyers, sell accelerators at full margin up front and earn additional upside if compute demand remains strong. SemiAnalysis argues Nvidia’s backstop economics are asymmetric in its favor while its balance sheet remains strong. Nvidia can manufacture alternative credit anchors for non-investment-grade AI operators by flooring rental revenue, guaranteeing landlords or signing leases, which lets those customers finance infrastructure at much lower costs without relying entirely on hyperscalers. In the upside case Nvidia wins on both the initial GPU sale and revenue participation; in a moderate downside the backstop can keep customers solvent and reduce contagion.",
-      "sourceUrls": [
-        "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i",
-        "https://newsletter.semianalysis.com/p/where-does-a-robot-think-on-device",
-        "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
-        "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
-        "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
-        "https://newsletter.semianalysis.com/p/ultra-high-interactivity-on-nvidia"
       ]
     },
     {
@@ -99,23 +119,6 @@
         "https://www.linkedin.com/posts/semianalysis_openainvidia-it-is-clearly-a-good-idea-activity-7501414047330787329-EZvJ",
         "https://www.dwarkesh.com/p/dylan-patel-3",
         "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia"
-      ]
-    },
-    {
-      "loggedDate": "2026-09-05",
-      "sourceDate": "2026-09-05",
-      "company": "Advanced Micro Devices / AMD",
-      "bullishness": 4,
-      "summary": "AMD’s AI-accelerator thesis strengthens again: MI355X has moved from selective B200 parity to beating B300 on total-token TCO at lower-interactivity AgentX points in some large-model workloads, showing software convergence is now translating into selective Blackwell Ultra-class economics, although B300 still leads at higher interactivity and across other models and AMD’s rack-scale risks remain. SemiAnalysis explicitly says a new AMD MI355X submission beats B300 on total tokens per dollar of TCO at lower-interactivity ranges on AgentX and credits vLLM, AMD and LMCache engineers. The live InferenceX curves corroborate that this is no longer only an older-Blackwell comparison: MI355X can now be the cheaper option versus B300 in selected low-interactivity Kimi and GLM operating points, directly reducing the software-economics concern that drove the Aug. 24 downgrade.",
-      "sourceUrls": [
-        "https://www.linkedin.com/company/semianalysis",
-        "https://inferencex.semianalysis.com/compare/kimi-k3-b300-vs-mi355x",
-        "https://inferencex.semianalysis.com/compare-per-dollar/kimi-k26-b300-vs-mi355x",
-        "https://inferencex.semianalysis.com/compare-per-dollar/glm-5-1-b300-vs-mi355x",
-        "https://inferencex.semianalysis.com/rankings/fastest-gpu-for-qwen-3-5",
-        "https://inferencex.semianalysis.com/rankings/fastest-gpu-for-minimax-m3",
-        "https://newsletter.semianalysis.com/p/agentx-inferencexv3-does-cuda-moat",
-        "https://newsletter.semianalysis.com/p/can-amd-break-the-cuda-moat-amd-advancing"
       ]
     },
     {
