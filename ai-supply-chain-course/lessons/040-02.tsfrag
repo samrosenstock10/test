@@ -1,0 +1,46 @@
+Scale changes the economics. ASIC design requires large upfront engineering and creates schedule risk. High volume spreads that cost across many chips; low volume or rapidly changing models favor reusable hardware.
+
+A custom accelerator still needs foundry capacity, advanced packaging, HBM, networking, power and cooling. Owning the logic does not remove those bottlenecks.
+
+5. How to make the comparison
+
+Start with representative workloads, required output quality and a deployment horizon. Measure end-to-end latency, throughput, energy and total cost per acceptable output—not peak operations per second.
+
+Then test change: a new model architecture, longer context, smaller batch or unsupported operator. A specialized design is attractive when its efficiency advantage survives realistic variation and covers enough volume to repay the development cost.
+
+For an investor or operator, the evidence is workload adoption plus delivered economics. A benchmark chosen for the chip is weaker evidence than sustained utilization and customer savings on production models.
+
+Quick check — answer before reading on
+
+A service spends $12 million per year running a workload on GPUs. A custom ASIC would cost $30 million to design and would reduce annual running cost by 40%. Ignoring financing and risk, how long is the simple payback?
+
+Answer: annual savings are $12 million × 40% = $4.8 million. Payback is $30 million ÷ $4.8 million = 6.25 years.
+
+If the workload may change materially in two years, that payback is unattractive even if the ASIC is more efficient today. Volume, stability and time all matter.
+
+Remember these three things
+
+- GPUs trade some hardware efficiency for programmability across changing workloads.
+
+- Custom ASICs can devote more silicon and power to expected work, but their advantage depends on utilization and software support.
+
+- Compare acceptable outputs per dollar and watt over the deployment life, including development cost and the risk that workloads change.
+
+Sources
+
+NVIDIA, CUDA Programming Guide — GPU programming model, thread hierarchy and memory spaces: https://docs.nvidia.com/cuda/cuda-programming-guide/index.html
+
+Google Cloud, TPU System Architecture — matrix, vector and scalar units, HBM and interconnects: https://docs.cloud.google.com/tpu/docs/system-architecture-tpu-vm
+
+Google Cloud, Introduction to Cloud TPU — XLA compilation, matrix-unit utilization and workload fit: https://docs.cloud.google.com/tpu/docs/intro-to-tpu
+
+AWS Neuron Documentation — compiler, runtime, frameworks and tools for Trainium and Inferentia: https://awsdocs-neuron.readthedocs-hosted.com/
+
+The budget units, utilization figures and payback calculation are illustrative teaching assumptions, not measured chip or customer results.
+
+Next lesson
+
+Lesson 041: Compiler and Kernel Software — How Code Reaches the Hardware
+
+We will follow a model operation from a framework through compilation and kernels, then identify where software can waste otherwise capable hardware.`,
+} satisfies Lesson;
