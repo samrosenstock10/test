@@ -1,0 +1,50 @@
+If a compiler fuses all three operations, intermediate values may stay in registers or shared memory. The fused kernel may read the original 100 megabytes once and write the final 100 megabytes once: about 200 megabytes.
+
+At an illustrative HBM bandwidth of one terabyte per second, the ideal transfer time falls from roughly 0.6 milliseconds to 0.2 milliseconds. Fusion removes about two-thirds of this memory traffic.
+
+The application will not automatically become three times faster. Math, launch overhead, dependencies and other layers still take time. Fusion also has limits: one giant kernel may require too many registers, reduce occupancy or be impossible when an intermediate result is needed elsewhere.
+
+5. How software leaves hardware idle
+
+Graph breaks divide a model and remove optimization opportunities. Dynamic shapes may trigger recompilation.
+
+Small kernels still pay launch overhead. Poor layouts force conversions or scattered memory access. Unsupported operations may fall back to a slower path or another processor.
+
+A kernel can request so many registers or so much shared memory that fewer thread blocks fit on each compute unit, leaving fewer active warps to hide latency.
+
+The right test is end-to-end. Profile which operations consume time, whether math or memory is limiting, how often kernels launch, where graph breaks occur and whether the compiled plan preserves output quality.
+
+Quick check — answer before reading on
+
+A model launches 50 kernels. Each performs 20 microseconds of useful work and adds 6 microseconds of launch overhead. Ignoring overlap, how long does the sequence take? If fusion reduces it to 10 launches without changing useful compute time, what is the new total?
+
+Answer: useful compute is 50 × 20 = 1,000 microseconds. Launch overhead is 50 × 6 = 300 microseconds, so the original total is 1,300 microseconds.
+
+After fusion, launch overhead is 10 × 6 = 60 microseconds. The new total is 1,060 microseconds, about 18% lower. Fusion helps, but most time still belongs to useful compute.
+
+Remember these three things
+
+- Framework code describes tensor operations; compilers and runtimes turn that description into hardware work.
+
+- A kernel is a small accelerator program, and its tiling, memory use and launch pattern determine how well the chip is used.
+
+- Software speedups come from improving the real bottleneck—often fusion, layouts or launch efficiency—not from changing code labels alone.
+
+Sources
+
+PyTorch, torch.compile Programming Model — graph capture, graph breaks and recompilation: https://docs.pytorch.org/docs/stable/user_guide/torch_compiler/compile/programming_model.html
+
+OpenXLA, XLA Architecture — compiler stages and hardware-specific backends: https://openxla.org/xla/architecture
+
+OpenXLA, XLA:GPU Architecture Overview — fusion, kernels and avoiding intermediate HBM storage: https://openxla.org/xla/gpu_architecture
+
+NVIDIA, CUDA Programming Guide — kernel launches, thread blocks, scheduling and hardware resources: https://docs.nvidia.com/cuda/cuda-programming-guide/index.html
+
+NVIDIA, cuDNN Graphs — operation graphs, engines and fused execution: https://docs.nvidia.com/deeplearning/cudnn/latest/developer/graph-api.html
+
+The tensor sizes, bandwidth and timing calculations are illustrative teaching assumptions, not measured workload results.
+
+Next lesson
+
+Lesson 042: Workload Case — When Does a Faster Accelerator Actually Cost Less?
+
