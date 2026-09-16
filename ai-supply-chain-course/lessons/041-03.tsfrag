@@ -1,0 +1,2 @@
+We will compare two accelerator systems using utilization, throughput, power and software efficiency to calculate cost per useful output.`,
+} satisfies Lesson;
