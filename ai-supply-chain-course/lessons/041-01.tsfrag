@@ -1,0 +1,61 @@
+import type { Lesson } from "./lessons";
+
+export const lesson041 = {
+  number: 41,
+  module: "Module 3: How an AI Accelerator Does Work",
+  title: "Compiler and Kernel Software — How Code Reaches the Hardware",
+  date: "2026-09-16",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 036: More accelerators create value only when memory, packaging, deployment and software can also turn them into useful AI work.
+
+Lesson 037: A GPU performs many matrix calculations in parallel, but idle math units do not produce useful work.
+
+Lesson 038: Caches and local storage keep reused data near the math units, reducing slower trips to HBM.
+
+Lesson 039: Using fewer bits can make AI faster and cheaper, provided the smaller numbers preserve the quality the application needs.
+
+Lesson 040: GPUs favor flexibility while custom chips favor efficiency, so the better design depends on the workload and its software.
+
+The big idea
+
+A model framework describes what math should happen. It does not directly tell billions of transistors when to multiply, move data or wait.
+
+Compilers, libraries, kernels and runtimes translate that model into hardware work. Better software can combine operations, reuse memory and keep compute units busy; poor software can make an excellent accelerator look slow.
+
+Where we are
+
+model framework → captured operation graph → compiler → library or generated kernel → runtime and driver → accelerator
+
+1. The framework describes the job
+
+In a framework such as PyTorch, a developer writes operations on tensors: multiply matrices, add a bias, apply an activation or normalize values.
+
+In eager execution, the framework can run operations as Python reaches them. That helps experimentation, but seeing one operation at a time limits optimization across the model.
+
+A compiler tries to capture a region as a graph: operations are nodes and tensors connect them. PyTorch's torch.compile finds compilable regions; a graph break ends one region and resumes later. Larger graphs provide more optimization opportunities, though changing inputs may require recompilation.
+
+2. The compiler turns intent into a plan
+
+The captured graph is lowered into an intermediate representation: a hardware-independent description that is easier to analyze than Python code.
+
+XLA uses High Level Optimizer, or HLO, operations. Compiler passes can remove redundant work, choose data layouts, trade recomputation for lower memory use and fuse compatible operations.
+
+The compiler then selects a tuned library implementation or generates code for a specific accelerator. Its plan must respect supported data types, registers, shared memory and thread organization.
+
+This is why the same model and chip can produce different performance after a software update. The hardware did not change; the translation did.
+
+3. A kernel is the unit sent to the accelerator
+
+Here, kernel does not mean an operating-system kernel. It is a small accelerator program that performs an operation, or a fused group of operations, across many data elements.
+
+A matrix kernel divides matrices into tiles, assigns thread blocks, stages data in fast memory and accumulates results. Those choices affect reuse, traffic and occupancy.
+
+Developers often use libraries instead of writing every kernel. NVIDIA's cuDNN accepts operation graphs and selects execution engines, including fused kernels for supported patterns.
+
+The runtime launches kernels with parameters such as grid size, thread-block size and stream. The driver submits that work to the device, whose scheduler assigns thread blocks to available compute units.
+
+4. Why fusion can matter
+
+Consider three simple operations applied in sequence to a 100-megabyte tensor. If each separate kernel reads 100 megabytes from HBM and writes 100 megabytes back, the three kernels move about 600 megabytes.
+
