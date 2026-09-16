@@ -394,7 +394,19 @@
         "lessons/040-01.tsfrag",
         "lessons/040-02.tsfrag"
       ]
+    },
+    {
+      "number": 41,
+      "module": "Module 3: How an AI Accelerator Does Work",
+      "title": "Compiler and Kernel Software — How Code Reaches the Hardware",
+      "date": "2026-09-16",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/041-01.tsfrag",
+        "lessons/041-02.tsfrag",
+        "lessons/041-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-15T11:06:53.538Z"
+  "updatedAt": "2026-09-16T11:07:11.525Z"
 }
