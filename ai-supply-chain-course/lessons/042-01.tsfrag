@@ -1,0 +1,73 @@
+import type { Lesson } from "./lessons";
+
+export const lesson042 = {
+  number: 42,
+  module: "Module 3: How an AI Accelerator Does Work",
+  title: "Workload Case — When Does a Faster Accelerator Actually Cost Less?",
+  date: "2026-09-17",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 037: GPUs perform many matrix calculations in parallel, but useful speed depends on keeping those math units busy.
+
+Lesson 038: Fast local memory reduces slow trips to HBM, so moving data can matter more than doing the arithmetic.
+
+Lesson 039: Lower precision uses fewer bits and can improve speed and memory efficiency if the application still meets its quality target.
+
+Lesson 040: GPUs trade some efficiency for flexibility, while custom chips can excel when their narrower design matches the workload.
+
+Lesson 041: Compilers and kernels translate model operations into hardware work, so software quality determines how much of the chip gets used.
+
+The big idea
+
+A faster accelerator is cheaper only if its extra useful output is worth more than its extra hourly cost.
+
+The correct comparison is not peak operations per second. It is cost per useful output at the required quality and latency, after accounting for memory limits, software efficiency and the share of paid time that produces work.
+
+Where we are
+
+model and quality target → software implementation → measured throughput and latency → productive utilization → cost and energy per useful output
+
+1. Define a useful output before comparing systems
+
+Suppose a company serves the same AI application on two accelerator systems. An output counts only if it meets the same quality target and arrives within the same latency limit.
+
+This prevents a misleading comparison. System B cannot claim victory by using lower precision if its answers become unacceptable. It also cannot combine slow batch results with System A's low-latency results and call them equivalent.
+
+MLPerf inference benchmarks use this discipline by defining models, quality targets, request patterns and scenario-specific performance metrics.
+
+2. Start with measured performance, not peak specifications
+
+Assume these illustrative results under the required quality and latency target:
+
+- System A costs $3.60 per accelerator-hour and produces 180 useful outputs per second.
+
+- System B costs $5.00 per accelerator-hour and produces 300 useful outputs per second.
+
+System B is 67% faster in the test. That advantage could come from more matrix throughput, greater memory bandwidth, lower precision, better kernels or a design specialized for this workload.
+
+But peak math alone would not establish the result. NVIDIA's performance guide notes that applications can be limited by math, memory bandwidth or latency.
+
+3. Convert measured speed into paid productive output
+
+Hardware does not always produce at the benchmark rate. Uneven requests, small batches, unsupported operations, compilation gaps, memory stalls and maintenance can all leave paid capacity idle.
+
+Call the share of a paid hour that produces at the measured useful rate the productive fraction.
+
+Assume System A has a 70% productive fraction because mature software and flexible scheduling keep it occupied. System B reaches only 50% because its narrower software path and uneven demand leave more capacity idle.
+
+Effective outputs per hour = measured outputs per second × 3,600 × productive fraction.
+
+System A produces 180 × 3,600 × 70% = 453,600 useful outputs per paid hour.
+
+System B produces 300 × 3,600 × 50% = 540,000 useful outputs per paid hour.
+
+System B was 67% faster in the controlled test, but it delivers only 19% more output per paid hour in this deployment.
+
+4. Calculate cost per useful output
+
+Cost per million useful outputs = hourly cost ÷ effective outputs per hour × 1,000,000.
+
+System A costs $3.60 ÷ 453,600 × 1,000,000 = about $7.94 per million useful outputs.
+
+System B costs $5.00 ÷ 540,000 × 1,000,000 = about $9.26 per million useful outputs.
+
