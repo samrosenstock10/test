@@ -1,0 +1,2 @@
+We will move beyond one accelerator and compare fast local links with larger networks for sharing work across many chips.`,
+} satisfies Lesson;
