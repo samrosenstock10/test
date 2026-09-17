@@ -1,0 +1,50 @@
+The faster accelerator is about 17% more expensive per useful output. Buying System B because 300 is larger than 180 would be naive rationalism: the simple model sounds correct but omits deployment reality.
+
+5. Add energy without double-counting it
+
+Assume average full-system power while provisioned is 0.7 kilowatts for A and 0.9 kilowatts for B. These are illustrative wall-power assumptions, not chip thermal-design ratings.
+
+Producing one million outputs takes about 2.20 paid hours on A and 1.85 hours on B. Energy use is therefore about 1.54 kilowatt-hours for A and 1.67 kilowatt-hours for B.
+
+System B again loses slightly. A higher-power chip can still save energy if it finishes enough useful work faster, so divide power by useful output rather than comparing wattage alone. MLCommons likewise ties full-system wall-power measurements to a specific benchmark result.
+
+6. Software can change the answer without changing the chip
+
+Now suppose better compiler coverage, fused kernels and scheduling raise System B's productive fraction from 50% to 70%. Its effective output becomes 300 × 3,600 × 70% = 756,000 per hour.
+
+Cost falls to about $6.61 per million outputs, and energy falls to about 1.19 kilowatt-hours per million. System B now beats A on both measures.
+
+The hardware did not change. The software and deployment system unlocked more of what was already there.
+
+Quick check — answer before reading on
+
+What productive fraction must System B exceed to match System A's $7.94 cost per million useful outputs?
+
+Answer: at $5.00 per hour, B must produce about 629,700 useful outputs each hour. Dividing that by its maximum 300 × 3,600 outputs gives roughly 58%.
+
+A tempting wrong answer is 42%, found by comparing only the systems' headline speed. The correct break-even point must include both the hourly-price difference and the productive fraction.
+
+Remember these three things
+
+- Compare systems at the same model quality and latency target; otherwise the outputs are not economically equivalent.
+
+- Cost per useful output combines measured workload speed, hourly cost and productive utilization.
+
+- Better software, batching and scheduling can reverse a hardware decision by changing how much paid capacity becomes useful work.
+
+Sources
+
+MLCommons, MLPerf Inference: Datacenter — scenarios, performance, quality targets and full-system power: https://mlcommons.org/benchmarks/inference-datacenter/
+
+NVIDIA, GPU Performance Background User's Guide — peak throughput and workload limits: https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html
+
+NVIDIA, System Management Interface documentation — utilization, memory, clocks and power monitoring: https://docs.nvidia.com/deploy/nvidia-smi/index.html
+
+Google Cloud, Compute pricing — running resources are billed for uptime, including while idle: https://cloud.google.com/products/compute/pricing
+
+All prices, throughput, utilization and power figures in the case are illustrative teaching assumptions, not vendor benchmarks or purchase quotes.
+
+Next lesson
+
+Lesson 043: Scale-Up Versus Scale-Out — Two Ways to Connect Accelerators
+
