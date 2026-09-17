@@ -1,13 +1,23 @@
 {
-  "updatedAt": "2026-09-15T11:30:30Z",
+  "updatedAt": "2026-09-17T11:30:00Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "rows": [
+    {
+      "loggedDate": "2026-09-17",
+      "sourceDate": "2026-09-14",
+      "company": "TeRAM / private",
+      "bullishness": 4,
+      "summary": "SemiAnalysis Capital’s decision to co-lead TeRAM’s $37M seed is a high-conviction bet that inference’s memory-bandwidth and power wall can support a new 3D SRAM memory layer integrated directly onto AI compute chips rather than relying only on larger HBM stacks.",
+      "sourceUrls": [
+        "https://teram.com/teram-press-release/"
+      ]
+    },
     {
       "loggedDate": "2026-09-15",
       "sourceDate": "2026-09-14",
       "company": "Nvidia / NVDA",
       "bullishness": 5,
-      "summary": "Nvidia’s platform thesis re-strengthens to 5/5 because Rubin’s first verified agentic-inference results show a large next-generation performance/TCO and power-efficiency lead while Nvidia’s day-zero model support continues to demonstrate the practical CUDA/software moat that competitors still struggle to match. SemiAnalysis is now explicitly bullish on both the hardware/system architecture and the software flywheel. Rubin’s early pre-release AgentX results show substantially better tokens per dollar and tokens per megawatt than Blackwell across realistic operating points, while SemiAnalysis says the software stack should improve further. Separately, DeepSeekV4.1 Flash was supported immediately across six Nvidia GPU SKUs while AMD’s public image arrived roughly two days later and remained dramatically worse on current perf/$, reinforcing the value of Nvidia’s developer ecosystem and day-zero optimization process.",
+      "summary": "Nvidia’s platform thesis re-strengthens to 5/5 because Rubin’s first verified agentic-inference results show a large next-generation performance/TCO and power-efficiency lead while Nvidia’s day-zero model support continues to demonstrate the practical CUDA/software moat that competitors still struggle to match.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference",
         "https://www.linkedin.com/company/semianalysis",
@@ -24,7 +34,7 @@
       "sourceDate": "2026-09-14",
       "company": "Advanced Micro Devices / AMD",
       "bullishness": 3,
-      "summary": "AMD’s AI-accelerator thesis weakens back to 3/5 because recent selective MI355X TCO wins have not yet generalized into a robust production-software moat: on the new DeepSeekV4.1 Flash release AMD lagged Nvidia on day-zero support and remained dramatically worse on current performance per dollar. The early-September evidence showed AMD could close large software gaps quickly and even beat B300 on TCO at selected lower-interactivity Kimi/GLM operating points. The newest SemiAnalysis evidence shows the weakness is still systemic rather than solved: Nvidia’s vLLM stack supported DeepSeekV4.1 Flash immediately across six GPU generations, while AMD’s public image was not available on day zero and, once released, still trailed sharply on current perf/$. SemiAnalysis explicitly frames this as proof that CUDA’s developer/process ecosystem remains the moat.",
+      "summary": "AMD’s AI-accelerator thesis weakens back to 3/5 because recent selective MI355X TCO wins have not yet generalized into a robust production-software moat: on the new DeepSeekV4.1 Flash release AMD lagged Nvidia on day-zero support and remained dramatically worse on current performance per dollar.",
       "sourceUrls": [
         "https://www.linkedin.com/company/semianalysis",
         "https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference",
@@ -42,7 +52,7 @@
       "sourceDate": "2026-09-13",
       "company": "SK Hynix / 000660.KS",
       "bullishness": 3,
-      "summary": "SK Hynix’s HBM thesis partially re-strengthens because SemiAnalysis’s new 4-hi analysis argues shorter HBM stacks can improve dollar-per-bandwidth, stacking yield and supplier profitability per scarce DRAM wafer, offsetting part of the prior margin concern even though Hynix’s company-specific HBM4 leadership and Nvidia bargaining-power issues remain. SemiAnalysis argues inference is increasingly bandwidth-bound rather than capacity-bound: HBM4 can preserve full interface bandwidth with fewer DRAM layers, so a shorter stack can lower cost per token while allowing the same wafer supply to produce more usable HBM stacks. Crucially for suppliers, SemiAnalysis describes the shift as a win-win for lab TCO and memory-supplier profitability rather than a simple revenue loss from fewer dies per stack.",
+      "summary": "SK Hynix’s HBM thesis partially re-strengthens because SemiAnalysis’s new 4-hi analysis argues shorter HBM stacks can improve dollar-per-bandwidth, stacking yield and supplier profitability per scarce DRAM wafer, offsetting part of the prior margin concern even though Hynix’s company-specific HBM4 leadership and Nvidia bargaining-power issues remain.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/long-live-the-short-king-why-4-hi",
         "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
@@ -55,12 +65,12 @@
       "sourceDate": "2026-09-10",
       "company": "Bloom Energy / BE",
       "bullishness": 4,
-      "summary": "Bloom’s behind-the-meter AI-power thesis materially re-strengthens: despite reciprocating engines remaining the broad share leader, Bloom now owns essentially all tracked fuel-cell bookings and is winning large deployments because its low-NOx, labor-light, vertically integrated fuel-cell model can clear permitting and execution bottlenecks that combustion equipment cannot. SemiAnalysis now has concrete evidence that Bloom is carving out a differentiated BTM niche rather than merely participating in a generic power shortage: fuel cells provide a lighter regulatory profile, require fewer scarce pressure trades, and Bloom handles much of installation and O&M itself. Google’s 900MW Wyoming deployment, Nebius’s 328MW 10-year deployment and Bloom’s overwhelming share of tracked fuel-cell orders materially offset the July concern that recips would dominate marginal BTM capacity.",
+      "summary": "Bloom’s behind-the-meter AI-power thesis materially re-strengthens: despite reciprocating engines remaining the broad share leader, Bloom now owns essentially all tracked fuel-cell bookings and is winning large deployments because its low-NOx, labor-light, vertically integrated fuel-cell model can clear permitting and execution bottlenecks that combustion equipment cannot.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/what-is-so-hard-about-behind-the",
         "https://newsletter.semianalysis.com/p/us-grid-constraints-towards-40gw",
         "https://www.linkedin.com/company/semianalysis",
-        "https://www.linkedin.com/posts/semianalysis_massive-delay-alert-to-oracles-stargate-activity-7484079629503246336-0llI"
+        "https://www.linkedin.com/posts/semianalysis_massive-delay_alert-to-oracles-stargate-activity-7484079629503246336-0llI"
       ]
     },
     {
@@ -68,7 +78,7 @@
       "sourceDate": "2026-09-10",
       "company": "Caterpillar / CAT; Cummins / CMI (INNIO private)",
       "bullishness": 4,
-      "summary": "SemiAnalysis’s reciprocating-engine thesis materially strengthens: behind-the-meter AI power has moved from early deployments to a 75GW firm-order market, recips continue gaining share as turbine slots push beyond 2030, and Caterpillar is nearly tripling large-engine output while 24/7 prime-power duty creates a recurring service cycle. SemiAnalysis says the shift toward recips is accelerating because datacenter developers compete with utilities for sold-out turbine capacity while recip OEMs can direct incremental manufacturing to AI compute. The Sep. 10 work adds company-specific scale and aftermarket evidence: Caterpillar is lifting large-engine output to nearly 3x 2024 levels, and continuous prime-power operation pulls major service intervals forward into a predictable multiyear maintenance stream.",
+      "summary": "SemiAnalysis’s reciprocating-engine thesis materially strengthens: behind-the-meter AI power has moved from early deployments to a 75GW firm-order market, recips continue gaining share as turbine slots push beyond 2030, and Caterpillar is nearly tripling large-engine output while 24/7 prime-power duty creates a recurring service cycle.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/what-is-so-hard-about-behind-the",
         "https://www.linkedin.com/company/semianalysis"
@@ -79,7 +89,7 @@
       "sourceDate": "2026-09-10",
       "company": "GE Vernova / GEV",
       "bullishness": 4,
-      "summary": "GE Vernova remains a strong turbine-scarcity beneficiary, but SemiAnalysis’s current BTM work redirects the thesis: factory slots now extend past 2030 and secondary-market premiums confirm exceptional scarcity pricing, while faster-growing recip and fuel-cell suppliers are capturing more of the marginal datacenter-specific volume. SemiAnalysis’s new evidence reinforces the pricing/backlog leg of the GEV thesis—large turbines are so scarce that released slots trade at large premiums and utilities compete directly with datacenters for supply—but it also says suppliers such as Caterpillar, INNIO, Wärtsilä, Cummins and Bloom are expanding datacenter-directed capacity more aggressively than incumbents like GEV. The result is a more balanced thesis: stronger scarcity economics, less certainty that GEV captures the fastest BTM unit growth.",
+      "summary": "GE Vernova remains a strong turbine-scarcity beneficiary, but SemiAnalysis’s current BTM work redirects the thesis: factory slots now extend past 2030 and secondary-market premiums confirm exceptional scarcity pricing, while faster-growing recip and fuel-cell suppliers are capturing more of the marginal datacenter-specific volume.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/what-is-so-hard-about-behind-the",
         "https://newsletter.semianalysis.com/p/how-ai-labs-are-solving-the-power"
@@ -90,7 +100,7 @@
       "sourceDate": "2026-09-10",
       "company": "Positron AI / private",
       "bullishness": 5,
-      "summary": "Dylan Patel is making a direct high-conviction bet that AI inference is becoming memory-bound enough for Positron’s memory-first architecture to create a major alternative accelerator platform by using commodity LPDDR5X to bypass HBM and advanced-packaging bottlenecks. Patel’s conviction is unusually explicit: SemiAnalysis Capital co-led Positron’s $875M financing, he is joining the board, and he says the architecture attacks the constraint that matters—memory—without depending on HBM or advanced packaging. He also points to the company’s first-generation deployment inside Oracle as evidence the team has already built real production experience rather than only a benchmark prototype.",
+      "summary": "Dylan Patel is making a direct high-conviction bet that AI inference is becoming memory-bound enough for Positron’s memory-first architecture to create a major alternative accelerator platform by using commodity LPDDR5X to bypass HBM and advanced-packaging bottlenecks.",
       "sourceUrls": [
         "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
         "https://www.positron.ai/about"
@@ -101,7 +111,7 @@
       "sourceDate": "2026-09-07",
       "company": "Alphabet / GOOGL",
       "bullishness": 5,
-      "summary": "Google’s merchant TPU/GCP thesis materially strengthens again: third-party InferenceX preview results now show TPUv7 Ironwood can beat Nvidia B200/B300 on modeled inference performance per dollar across meaningful FP8 operating points while Google rapidly externalizes its software stack, materially de-risking the technical foundation behind SemiAnalysis’s already-bullish external TPU/GCP revenue thesis. SemiAnalysis says TPU externalization is heading in the right direction and moving full steam ahead, expects Google’s decades of software-engineering and quality culture to mature the external stack rapidly, and now has public benchmark evidence that Ironwood’s lower TCO can offset lower raw throughput. This converts the prior GCP/TPU thesis from mostly backlog and commercialization evidence into direct third-party proof that outside customers can achieve compelling economics.",
+      "summary": "Google’s merchant TPU/GCP thesis materially strengthens again: third-party InferenceX preview results now show TPUv7 Ironwood can beat Nvidia B200/B300 on modeled inference performance per dollar across meaningful FP8 operating points while Google rapidly externalizes its software stack, materially de-risking the technical foundation behind SemiAnalysis’s already-bullish external TPU/GCP revenue thesis.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
         "https://newsletter.semianalysis.com/p/gemini-is-cooked-but-gcp-is-cooking",
@@ -113,7 +123,7 @@
       "sourceDate": "2026-09-05",
       "company": "OpenAI (private)",
       "bullishness": 5,
-      "summary": "OpenAI’s 5/5 thesis strengthens again: model-driven serving optimization is directly lowering inference cost while its custom-ASIC program has asymmetric strategic value—successful Jalapeño raises revenue per MW, while even failure can extract substantial Nvidia financing and backstops. SemiAnalysis says that at OpenAI’s serving scale even single-digit-percent kernel gains are worth hundreds of millions of dollars of compute, and reports that 5.6-sol rewrote a production kernel that produced 20% lower serving costs plus 15% better token-generation efficiency from improved speculative decoding, with savings passed into Luna/Terra price cuts. Separately, SemiAnalysis argues OpenAI wins strategically either way on Jalapeño: success improves revenue per MW; failure still pressures Nvidia to provide billions of dollars of financing/backstops.",
+      "summary": "OpenAI’s 5/5 thesis strengthens again: model-driven serving optimization is directly lowering inference cost while its custom-ASIC program has asymmetric strategic value—successful Jalapeño raises revenue per MW, while even failure can extract substantial Nvidia financing and backstops.",
       "sourceUrls": [
         "https://www.linkedin.com/company/semianalysis",
         "https://www.linkedin.com/posts/semianalysis_openainvidia-it-is-clearly-a-good-idea-activity-7501414047330787329-EZvJ",
@@ -126,7 +136,7 @@
       "sourceDate": "2026-08-25",
       "company": "Anthropic (private; prospective IPO)",
       "bullishness": 5,
-      "summary": "Anthropic’s thesis materially strengthens: SemiAnalysis expects Anthropic and OpenAI to absorb roughly half of incremental global AI compute by end-2027 and potentially 70–80% by 2028 because frontier-lab revenue per MW lets them economically outbid other buyers. Dylan Patel argues compute centralization is being driven by superior monetization, not merely capital access: Anthropic is already producing roughly $50M of revenue per MW and could move toward $100M/MW, supporting willingness to pay $25M–$50M/MW for scarce capacity while still earning attractive economics.",
+      "summary": "Anthropic’s thesis materially strengthens: SemiAnalysis expects Anthropic and OpenAI to absorb roughly half of incremental global AI compute by end-2027 and potentially 70–80% by 2028 because frontier-lab revenue per MW lets them economically outbid other buyers.",
       "sourceUrls": [
         "https://www.dwarkesh.com/p/dylan-patel-3",
         "https://newsletter.semianalysis.com/p/are-open-models-catching-up"
@@ -137,7 +147,7 @@
       "sourceDate": "2026-08-25",
       "company": "Broadcom / AVGO",
       "bullishness": 5,
-      "summary": "Broadcom’s custom-AI-silicon thesis materially strengthens because OpenAI’s first-generation Jalapeño ASIC, built with Broadcom, is already a credible high-volume Rubin-class inference competitor, validating Broadcom’s ability to monetize frontier labs’ shift from merchant GPUs toward custom accelerators. SemiAnalysis shows the OpenAI/Broadcom program moved from team formation to tape-out in roughly 16 months and produced unusually strong first-generation silicon. The economics explicitly benefit from replacing Nvidia’s high merchant margins with Broadcom’s lower but still high custom-silicon margins, while OpenAI’s rapid hardware/software co-design demonstrates that custom ASIC programs can work at frontier scale.",
+      "summary": "Broadcom’s custom-AI-silicon thesis materially strengthens because OpenAI’s first-generation Jalapeño ASIC, built with Broadcom, is already a credible high-volume Rubin-class inference competitor, validating Broadcom’s ability to monetize frontier labs’ shift from merchant GPUs toward custom accelerators.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
         "https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the"
@@ -148,7 +158,7 @@
       "sourceDate": "2026-08-19",
       "company": "Cerebras Systems / private",
       "bullishness": 4,
-      "summary": "Cerebras materially strengthens its ultra-low-latency inference proposition with CS-4, nearly doubling per-user token speed at roughly similar customer TCO while improving rack manufacturability and enabling heterogeneous disaggregated inference. SemiAnalysis calls the customer economics a “no-brainer”: CS-4 reuses WSE-3 silicon but doubles clock and memory bandwidth, translating into nearly 2x tokens/sec/user at around the same hardware spend, while a modular backpack design should improve deployment speed and manufacturability.",
+      "summary": "Cerebras materially strengthens its ultra-low-latency inference proposition with CS-4, nearly doubling per-user token speed at roughly similar customer TCO while improving rack manufacturability and enabling heterogeneous disaggregated inference.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/cerebrass-next-generation-cs-4-fast"
       ]
@@ -158,7 +168,7 @@
       "sourceDate": "2026-08-07",
       "company": "SpaceX / SPCX",
       "bullishness": 5,
-      "summary": "SemiAnalysis still believes SpaceX can scale AI compute toward 10GW by year-end 2027 and monetize scarce capacity at exceptional pricing, but its current published base case points to roughly $300B of ARR rather than the $500B figure previously captured in the ledger. The core thesis remains highly bullish: SemiAnalysis says the 10GW buildout is real, SpaceX can build faster than traditional operators, premium inference economics support unusually high $/MW pricing, and Microsoft is a plausible anchor offtaker. The correction narrows the quantified ARR case but does not change the scale or strategic logic.",
+      "summary": "SemiAnalysis still believes SpaceX can scale AI compute toward 10GW by year-end 2027 and monetize scarce capacity at exceptional pricing, but its current published base case points to roughly $300B of ARR rather than the $500B figure previously captured in the ledger.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/spacex-10gw-in-2027-why-its-real"
       ]
@@ -168,7 +178,7 @@
       "sourceDate": "2026-07-29",
       "company": "Vertiv / VRT",
       "bullishness": 4,
-      "summary": "Vertiv is positioned to roughly double its revenue content per datacenter megawatt as AI builders shift from component purchases toward integrated modular power, cooling and facility platforms that materially shorten construction schedules. SemiAnalysis identifies modularization as the default response to an emerging skilled-labor bottleneck and highlights Vertiv as a principal public beneficiary because its OneCore and MegaMod offerings let it capture the full power, thermal, cooling and infrastructure stack rather than selling individual components.",
+      "summary": "Vertiv is positioned to roughly double its revenue content per datacenter megawatt as AI builders shift from component purchases toward integrated modular power, cooling and facility platforms that materially shorten construction schedules.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/the-wild-wild-west-of-lego-datacenters"
       ]
@@ -178,7 +188,7 @@
       "sourceDate": "2026-07-24",
       "company": "ASML Holding / ASML",
       "bullishness": 4,
-      "summary": "ASML is entering a stronger multiyear wafer-fab-equipment upcycle, with improving visibility, pricing and installed-base economics creating upside to consensus revenue and likely long-term guidance. SemiAnalysis explicitly says the signals point to a stronger upcycle, sees upside to Street revenue forecasts and expects ASML to raise its long-term guidance.",
+      "summary": "ASML is entering a stronger multiyear wafer-fab-equipment upcycle, with improving visibility, pricing and installed-base economics creating upside to consensus revenue and likely long-term guidance.",
       "sourceUrls": [
         "https://www.linkedin.com/posts/semianalysis_asml-raised-fy26-guidance-for-the-second-activity-7486058059908173824-hwGa"
       ]
@@ -188,7 +198,7 @@
       "sourceDate": "2026-07-22",
       "company": "Meta Platforms / META",
       "bullishness": 4,
-      "summary": "Meta still has unusual advantages in data, talent, compute and distribution, but infrastructure politics and repeated hardware co-design failures materially reduce confidence that its enormous capex will translate efficiently into frontier-model and external-compute returns. SemiAnalysis remains optimistic about Meta Superintelligence Labs, but says Meta Infrastructure is bloated, political and over-engineered, and needs a cultural reset to serve MSL and external compute customers effectively.",
+      "summary": "Meta still has unusual advantages in data, talent, compute and distribution, but infrastructure politics and repeated hardware co-design failures materially reduce confidence that its enormous capex will translate efficiently into frontier-model and external-compute returns.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/metas-infrastructure-team-needs-a",
         "https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence",
@@ -200,7 +210,7 @@
       "sourceDate": "2026-07-02",
       "company": "CoreWeave / CRWV",
       "bullishness": 4,
-      "summary": "CoreWeave’s growth thesis remains intact because hyperscalers still need neocloud capacity and financing backstops expand the amount of deployable AI infrastructure. SemiAnalysis called the selloff based on Meta vertical integration erroneous, expects Meta’s capacity build to accelerate, and argues Meta can rationally pay neocloud margins for speed and flexibility.",
+      "summary": "CoreWeave’s growth thesis remains intact because hyperscalers still need neocloud capacity and financing backstops expand the amount of deployable AI infrastructure.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/meta-compute-200b-superintelligence"
       ]
@@ -210,7 +220,7 @@
       "sourceDate": "2026-03-12",
       "company": "TSMC / TSM",
       "bullishness": 5,
-      "summary": "TSMC’s advanced-node capacity is becoming the central AI-silicon bottleneck, supporting exceptional utilization, customer dependence and pricing power. SemiAnalysis identifies N3 capacity as one of the largest constraints in AI infrastructure and expects demand to exceed supply for at least two years despite heavy capital spending.",
+      "summary": "TSMC’s advanced-node capacity is becoming the central AI-silicon bottleneck, supporting exceptional utilization, customer dependence and pricing power.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/the-great-ai-silicon-shortage"
       ]
