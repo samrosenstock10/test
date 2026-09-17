@@ -406,7 +406,19 @@
         "lessons/041-02.tsfrag",
         "lessons/041-03.tsfrag"
       ]
+    },
+    {
+      "date": "2026-09-17",
+      "format": "lesson-ts",
+      "module": "Module 3: How an AI Accelerator Does Work",
+      "number": 42,
+      "parts": [
+        "lessons/042-01.tsfrag",
+        "lessons/042-02.tsfrag",
+        "lessons/042-03.tsfrag"
+      ],
+      "title": "Workload Case — When Does a Faster Accelerator Actually Cost Less?"
     }
   ],
-  "updatedAt": "2026-09-16T11:07:11.525Z"
+  "updatedAt": "2026-09-17T11:08:29.929Z"
 }
