@@ -1,0 +1,2 @@
+We will explain operations such as all-reduce and all-to-all, then show why the communication pattern can matter as much as link speed.`,
+} satisfies Lesson;
