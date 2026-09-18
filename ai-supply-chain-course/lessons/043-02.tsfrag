@@ -1,0 +1,58 @@
+Inside each rack, a scale-up fabric handles the most frequent and latency-sensitive exchanges. A network interface then connects that rack to the scale-out fabric, which moves data to other racks.
+
+Software tries to place the heaviest communication inside the faster local domain. Work that must span more accelerators crosses the scale-out network.
+
+The boundary matters. A workload that fits inside one scale-up domain may run differently from the same workload spread across several domains, even when the total accelerator count is identical.
+
+5. Quantitative case: when communication changes useful speed
+
+Assume an illustrative model iteration performs 0.40 seconds of computation and then must move 120 gigabytes before the next iteration can begin.
+
+Suppose the relevant scale-up path sustains 1,200 gigabytes per second, while the scale-out path sustains 200 gigabytes per second.
+
+Transfer time = data moved ÷ sustained bandwidth.
+
+The scale-up transfer takes 120 ÷ 1,200 = 0.10 seconds. Total iteration time is 0.40 + 0.10 = 0.50 seconds, or 2 iterations per second.
+
+The scale-out transfer takes 120 ÷ 200 = 0.60 seconds. Total iteration time is 0.40 + 0.60 = 1.00 second, or 1 iteration per second.
+
+The communication path is six times faster, but the entire workload is only twice as fast because computation still takes 0.40 seconds. These figures are teaching assumptions and ignore overlap, protocol overhead, latency and contention.
+
+Quick check — answer before reading on
+
+What happens if the iteration moves only 24 gigabytes while compute time stays at 0.40 seconds?
+
+Answer: scale-up communication takes 0.02 seconds, so the iteration takes 0.42 seconds. Scale-out communication takes 0.12 seconds, so the iteration takes 0.52 seconds. Scale-up now improves iteration throughput by about 24%, not 6×.
+
+The tempting wrong answer is that a six-times-faster link always makes the application six times faster. It does not; the result depends on how much data moves and how much time the rest of the workload consumes.
+
+6. The supply-chain consequence
+
+Scale-up growth creates demand for accelerator links, specialized switch silicon, dense copper connections and tightly engineered rack systems.
+
+Scale-out growth creates demand for network adapters, large switches, optical transceivers, fiber and network software.
+
+The useful economic question is not which layer has the largest advertised bandwidth. It is which combination delivers the required model performance, cluster size, reliability and cost per useful output.
+
+Remember these three things
+
+- Scale-up tightly connects a bounded group of accelerators so they can behave more like one large machine.
+
+- Scale-out connects servers and racks so the cluster can grow far beyond one tightly integrated domain.
+
+- Communication matters most when the workload moves large amounts of data frequently and cannot hide that movement behind useful computation.
+
+Sources
+
+NVIDIA, NVLink and NVLink Switch — scale-up GPU communication and rack-scale connectivity: https://www.nvidia.com/en-us/data-center/nvlink/
+
+NVIDIA, Quantum InfiniBand Platform — adapters, switches, routing and in-network computing for multi-node systems: https://www.nvidia.com/en-us/networking/products/infiniband/
+
+UALink Consortium — open accelerator-to-accelerator communication standard: https://ualinkconsortium.org/
+
+Ultra Ethernet Consortium — Ethernet architecture for AI and HPC scale-out networking: https://ultraethernet.org/
+
+Next lesson
+
+Lesson 044: Collective Communication — How Many Accelerators Combine and Share Data
+
