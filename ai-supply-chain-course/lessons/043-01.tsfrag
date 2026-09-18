@@ -1,0 +1,63 @@
+import type { Lesson } from "./lessons";
+
+export const lesson043 = {
+  number: 43,
+  module: "Module 4: Connecting Accelerators into a Cluster",
+  title: "Scale-Up Versus Scale-Out — Two Ways to Connect Accelerators",
+  date: "2026-09-18",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 038: Fast local memory reduces slow trips to HBM, so moving data can matter more than doing the arithmetic.
+
+Lesson 039: Using fewer bits can improve speed and memory efficiency as long as the model still meets its quality target.
+
+Lesson 040: GPUs offer flexibility across many workloads, while custom chips can be more efficient when their specialized design fits the job.
+
+Lesson 041: Compilers and kernels turn model operations into hardware work, so better software keeps more of the accelerator productive.
+
+Lesson 042: A faster accelerator costs less only when its extra useful output outweighs its higher hourly price under real deployment conditions.
+
+The big idea
+
+One accelerator can hold and process only so much. Larger AI workloads therefore divide work across many accelerators, which must exchange data quickly enough that communication does not leave expensive compute waiting.
+
+Scale-up and scale-out are two different ways to make that group larger.
+
+Scale-up creates a tightly connected group that behaves more like one large accelerator. Scale-out connects many servers or racks into a much larger cluster. Modern AI systems usually need both.
+
+Where we are
+
+one accelerator → scale-up domain → scale-out cluster → useful distributed AI work
+
+1. Why accelerators need to communicate
+
+A model can be divided in several ways. Different accelerators may hold different parts of the model, process different batches of data or operate different experts in a mixture-of-experts system.
+
+The accelerators then have to exchange items such as activations, gradients, updated parameters or expert tokens. If the next calculation depends on data from another accelerator, the receiving accelerator may sit idle until that data arrives.
+
+This creates a new bottleneck. Adding more compute helps only when the network can feed and coordinate it.
+
+2. Scale-up: make a small group act like one bigger machine
+
+A scale-up network connects accelerators over short distances, usually within a server or tightly integrated rack.
+
+Its job is to provide very high bandwidth and low latency among a bounded number of accelerators. Specialized links and switches can give many accelerators direct or nearly direct access to one another, which is useful when a model is split so finely that communication happens repeatedly during each step.
+
+NVIDIA describes NVLink and NVLink Switch as a scale-up fabric for high-bandwidth GPU-to-GPU communication. The UALink Consortium is developing an open accelerator-to-accelerator standard for the same general layer.
+
+The benefit is speed. The tradeoff is that short electrical reach, specialized switching, physical rack design, power and cooling limit how large one tightly connected domain can become.
+
+3. Scale-out: connect many machines into a larger cluster
+
+A scale-out network connects separate servers, racks or scale-up domains through network interface cards, switches and copper or optical links.
+
+InfiniBand and high-performance Ethernet are common examples. This layer can reach far more accelerators and lets an operator add capacity in repeatable server or rack units.
+
+That reach introduces more work. Data may cross network adapters and several switch hops while sharing paths with other traffic. Congestion, routing and slow outliers can matter, so achieved workload performance can be far below the sum of every link's headline bandwidth.
+
+Scale-out is therefore not simply inferior scale-up. It solves a different problem: growing from a tightly connected island into a large, manageable cluster.
+
+4. A real cluster uses both layers
+
+Picture a cluster made from many accelerator racks.
+
