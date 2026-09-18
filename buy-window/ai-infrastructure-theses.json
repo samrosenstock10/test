@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T12:31:34Z",
+  "updatedAt": "2026-09-18T12:42:10Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "sources": {
     "semianalysis": {
@@ -235,7 +235,7 @@
       "rows": [
         {
           "loggedDate": "2026-09-18",
-          "sourceDate": "2026-09-18",
+          "sourceDate": "2026-09-17",
           "company": "fal (private)",
           "bullishness": 4,
           "category": "Inference Infrastructure / Generative Media",
