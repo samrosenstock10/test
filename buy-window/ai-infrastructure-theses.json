@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T11:30:00Z",
+  "updatedAt": "2026-09-18T12:31:34Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "sources": {
     "semianalysis": {
@@ -233,6 +233,22 @@
     "a16z": {
       "label": "a16z Machine Age",
       "rows": [
+        {
+          "loggedDate": "2026-09-18",
+          "sourceDate": "2026-09-18",
+          "company": "fal (private)",
+          "bullishness": 4,
+          "category": "Inference Infrastructure / Generative Media",
+          "partner": "Jennifer Li",
+          "signalType": "Direct investment",
+          "summary": "a16z’s fal thesis strengthens into a Machine Age-relevant inference bet: multimodal generation can become a real-time computing workload when model post-training is co-designed with systems and hardware optimization, making the inference platform—not just the foundation model—a major performance and value layer.",
+          "sourceUrls": [
+            "https://podcasts.apple.com/gb/channel/a16z/id6442932622",
+            "https://a16z.com/announcement/investing-in-fal/",
+            "https://a16z.com/podcast/speed-performance-and-passion-fals-approach-to-ai-inference/",
+            "https://a16z.com/the-state-of-generative-media-2026/"
+          ]
+        },
         {
           "loggedDate": "2026-09-14",
           "sourceDate": "2026-09-13",
