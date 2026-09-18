@@ -418,7 +418,19 @@
         "lessons/042-02.tsfrag",
         "lessons/042-03.tsfrag"
       ]
+    },
+    {
+      "number": 43,
+      "module": "Module 4: Connecting Accelerators into a Cluster",
+      "title": "Scale-Up Versus Scale-Out — Two Ways to Connect Accelerators",
+      "date": "2026-09-18",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/043-01.tsfrag",
+        "lessons/043-02.tsfrag",
+        "lessons/043-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-17T11:08:29.929Z"
+  "updatedAt": "2026-09-18T11:07:31.558Z"
 }
