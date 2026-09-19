@@ -430,7 +430,19 @@
         "lessons/043-02.tsfrag",
         "lessons/043-03.tsfrag"
       ]
+    },
+    {
+      "number": 44,
+      "module": "Module 4: Connecting Accelerators into a Cluster",
+      "title": "Collective Communication — How Many Accelerators Combine and Share Data",
+      "date": "2026-09-19",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/044-01.tsfrag",
+        "lessons/044-02.tsfrag",
+        "lessons/044-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-18T11:07:31.558Z"
+  "updatedAt": "2026-09-19T11:04:48.366Z"
 }
