@@ -1,0 +1,2 @@
+We will follow one collective through accelerator links, PCIe, NICs and switches, then identify which component becomes the bottleneck.`,
+} satisfies Lesson;
