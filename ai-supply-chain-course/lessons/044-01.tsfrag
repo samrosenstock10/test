@@ -1,0 +1,65 @@
+import type { Lesson } from "./lessons";
+
+export const lesson044 = {
+  number: 44,
+  module: "Module 4: Connecting Accelerators into a Cluster",
+  title: "Collective Communication — How Many Accelerators Combine and Share Data",
+  date: "2026-09-19",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 039: Using fewer bits can improve speed and memory efficiency as long as the model still meets its quality target.
+
+Lesson 040: GPUs handle many workloads, while custom chips can be more efficient when their specialized design matches the job.
+
+Lesson 041: Compilers and kernels turn model operations into hardware work, so better software keeps more of the accelerator productive.
+
+Lesson 042: A faster accelerator costs less only when its extra useful output outweighs its higher hourly price in the real workload.
+
+Lesson 043: Scale-up tightly connects a limited group of accelerators, while scale-out links many servers and racks into a larger cluster.
+
+The big idea
+
+A cluster does not communicate through one giant conversation. Software repeatedly asks groups of accelerators to perform standard data-sharing patterns called collective operations.
+
+A collective specifies who contributes data, how it is combined and who receives the result. The pattern determines the demands placed on links, switches and synchronization.
+
+Where we are
+
+accelerator math → collective communication → scale-up or scale-out fabric → next round of useful work
+
+1. What makes communication collective?
+
+Each participating process gets a rank, simply its numbered place in the group. Every rank calls the same collective with compatible data, and the library schedules the transfers.
+
+NVIDIA’s NCCL is a widely used GPU collective library. Its documentation says every rank must use the same count and datatype; mismatches can cause hangs, crashes or corrupted data. A collective is therefore both data movement and coordination.
+
+2. Four patterns to recognize
+
+- Broadcast: one rank sends the same data to every other rank.
+
+- All-gather: every rank contributes a different chunk, and every rank finishes with all chunks.
+
+- Reduce-scatter: ranks combine matching values, such as by adding them, then divide the combined result so each rank keeps one chunk.
+
+- All-to-all: every rank sends a different chunk to every other rank and receives a different chunk from each one.
+
+All-reduce is especially important: every rank contributes values and receives the same combined result. In data-parallel training, model copies calculate gradients from different batches, then all-reduce lets them agree on the update.
+
+3. How a ring all-reduce moves data
+
+A ring implementation splits the tensor into equal chunks. During reduce-scatter, each rank sends chunks to one neighbor while receiving and combining chunks from another. Eventually, each rank owns one fully combined chunk.
+
+All-gather then circulates the finished chunks until every rank has the complete result. NVIDIA documents that reduce-scatter followed by all-gather equals all-reduce.
+
+For p ranks and a payload of S bytes per rank, this ring moves about 2 × (p − 1) ÷ p × S bytes through each rank. With eight ranks, that is 1.75 times the payload. Adding ranks does not multiply each rank’s byte count by eight, but it adds communication rounds and more chances to wait.
+
+4. The pattern can matter as much as the link
+
+All-reduce can stream chunks around a ring. All-to-all instead sends different data to every peer, creating many simultaneous paths through switches and making congestion more important.
+
+In a mixture-of-experts model, tokens travel to selected expert accelerators and return. If one expert receives too many, it becomes a straggler even when total bandwidth looks ample.
+
+Software therefore tries to keep frequent collectives inside a fast scale-up domain. Crossing racks can push the same collective through slower scale-out links and more switches.
+
+5. Quantitative case: turning bandwidth into step time
+
