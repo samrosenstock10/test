@@ -1,0 +1,50 @@
+Assume eight accelerators each all-reduce a 1-gigabyte gradient tensor after 45 milliseconds of computation. Use the ring estimate above and assume no communication overlaps with computation.
+
+Traffic per accelerator is 2 × 7 ÷ 8 × 1 GB = 1.75 GB.
+
+At an illustrative sustained bandwidth of 350 GB/s, communication takes 1.75 ÷ 350 = 0.005 seconds, or 5 milliseconds. The step takes 45 + 5 = 50 milliseconds, allowing 20 steps per second.
+
+If the collective crosses a path sustaining only 50 GB/s, communication takes 35 milliseconds. The step takes 80 milliseconds, allowing 12.5 steps per second.
+
+The first network has seven times the sustained bandwidth, but the workload is only 1.6 times faster because compute still consumes 45 milliseconds. These are teaching assumptions; real results also depend on latency, topology, software overhead, contention and how much communication overlaps with computation.
+
+Quick check — answer before reading on
+
+Suppose software compresses the communicated gradient from 1 GB to 0.5 GB on the 50 GB/s path, while compute remains 45 milliseconds. What is the new step time?
+
+Answer: ring traffic falls to 0.875 GB, so communication takes 17.5 milliseconds. Total step time becomes 62.5 milliseconds, or 16 steps per second.
+
+The tempting wrong answer is that halving communication doubles total speed. It does not, because the 45 milliseconds of compute did not shrink. Compression may also cost extra compute or reduce model quality, so the saved bytes must be worth those tradeoffs.
+
+6. The whole-stack consequence
+
+Collectives connect software choices to physical demand. Larger tensors increase traffic; lower precision reduces bytes; overlap can hide transfers; topology-aware placement keeps heavy exchanges local.
+
+The traffic pattern drives demand for accelerator links, switch silicon, NICs or DPUs, cables, optics and network software. Faster parts help only when the collective uses them and another stage is not limiting.
+
+What would test this claim?
+
+If communication is the limit, profiling should show accelerators waiting on collectives, and reducing message size or keeping the group inside a faster fabric should shorten step time. If neither change helps, compute, memory or load imbalance is probably the real constraint.
+
+Remember these three things
+
+- A collective is a standard group communication pattern, not merely a faster link.
+
+- All-reduce combines values from every rank and returns the same result to every rank.
+
+- Useful cluster speed depends on message size, pattern, topology, synchronization and overlap—not headline bandwidth alone.
+
+Sources
+
+NVIDIA, NCCL Collective Operations — definitions and semantics for all-reduce, all-gather, reduce-scatter and all-to-all: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage/collectives.html
+
+NVIDIA, NCCL documentation — topology-aware collective communication library and multi-machine use: https://docs.nvidia.com/deeplearning/nccl/
+
+PyTorch, Distributed Data Parallel — gradient buckets and asynchronous all-reduce during training: https://docs.pytorch.org/docs/stable/notes/ddp.html
+
+PyTorch, Distributed Communication — collective APIs, backends and profiling: https://docs.pytorch.org/docs/stable/distributed.html
+
+Next lesson
+
+Lesson 045: Switches and Network Interfaces — How Data Finds a Path Across the Cluster
+
