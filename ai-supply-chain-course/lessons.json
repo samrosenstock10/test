@@ -442,7 +442,19 @@
         "lessons/044-02.tsfrag",
         "lessons/044-03.tsfrag"
       ]
+    },
+    {
+      "number": 45,
+      "module": "Module 4: Connecting Accelerators into a Cluster",
+      "title": "Switches and Network Interfaces — How Data Finds a Path Across the Cluster",
+      "date": "2026-09-20",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/045-01.tsfrag",
+        "lessons/045-02.tsfrag",
+        "lessons/045-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-19T11:04:48.366Z"
+  "updatedAt": "2026-09-20T11:04:19.188Z"
 }
