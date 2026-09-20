@@ -26,13 +26,15 @@ Semantic no-op candidates are closed and their runtime branches deleted without 
 
 ```json
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "requestedAt": "2026-09-20T20:00:00Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "sources": [],
   "observations": [],
   "evidence": [],
   "rankings": [],
+  "rankingMethodology": {"returnMethod": {"years": 10}},
+  "valuationContext": {"basis": "ttm", "asOf": "2026-09-18", "observedAt": "2026-09-20T20:00:00Z", "companies": {}, "qqqMedianPE": {"value": null, "basis": "ttm", "status": "unavailable", "reason": "No verified median yet."}},
   "reviews": [],
   "coverage": {
     "asOf": "2026-09-20T20:00:00Z",
@@ -81,14 +83,14 @@ Every ranking needs at least one usable reviewed supporting source; this is a sc
 
 `priceSnapshot` may be null when no reliable quote is available. Dated quotes remain quotes; do not relabel an extended-hours print as an official close. Preserve currency, listing and ADR treatment in metadata.
 
-Each five-year return scenario contains `case` (`bear`, `base`, `bull`), `entryMultiple`, `epsGrowthPct`, `terminalMultiple`, `annualizedPriceReturnPct`, and a substantive `assumptionNote`. If `years` is included it must equal 5. A grid may include several assumed entry multiples, with all three cases for each distinct multiple. The validator recalculates:
+Each ten-year return scenario contains `case` (`bear`, `base`, `bull`), `entryMultiple`, `epsGrowthPct`, `terminalMultiple`, `annualizedPriceReturnPct`, and a substantive `assumptionNote`. `years: 10` is required for each current scenario. Historical schema 1.0.0 feeds remain readable with an omitted horizon interpreted as five years; current schema 1.1.0 cannot downgrade. A grid may include several assumed entry multiples, with all three cases for each distinct multiple. The validator recalculates:
 
 ```text
 annualizedPriceReturnPct =
-  ((1 + epsGrowthPct / 100) * (terminalMultiple / entryMultiple) ** (1 / 5) - 1) * 100
+  ((1 + epsGrowthPct / 100) * (terminalMultiple / entryMultiple) ** (1 / 10) - 1) * 100
 ```
 
-Only normal decimal rounding is tolerated. Growth is per-share earnings growth, so share-count changes are already incorporated. These are price returns before dividends, fees, taxes and currency effects, not total returns. Illustrative assumed entry multiples are not the stock's current multiple. Do not substitute a raw price or one unusually strong quarter for a verified normalized earnings baseline. State these distinctions in `rankingMethodology` and in the user-facing return view. Case labels do not imply probabilities.
+Only normal decimal rounding is tolerated. Growth is per-share earnings growth, so share-count changes are already incorporated. These are price returns before dividends, fees, taxes and currency effects, not total returns. Illustrative assumed entry multiples are not the stock's current multiple. Do not substitute a raw price or one unusually strong quarter for a verified normalized earnings baseline. Preserve these distinctions in `rankingMethodology`. The compact user-facing return view labels the scenarios Illustrative and labels the entry multiple as assumed. Case labels do not imply probabilities.
 
 ### Review history and coverage
 
@@ -109,3 +111,15 @@ node automation/ai-infrastructure-research.mjs prepare buy-window/inbox/ai-resea
 ```
 
 `prepare` writes only the research feed when its semantic content changes. Its GitHub output is `changed=true` or `changed=false`. Meaningful tests cover access-level admission, unsafe URLs, future dates, identity/reference integrity, recomputable returns, immutable review transitions, replay/no-op behavior and byte preservation of the two existing feeds.
+
+## Current valuation context (schema 1.1.0)
+
+`valuationContext` is required alongside the existing fields. It contains `basis: "ttm"`, `asOf` (last market date), `observedAt` (actual UTC check time), `companies` keyed by current ranking ticker, and `qqqMedianPE`. Store this complete object under the `valuationContext` key in Research Settings C.
+
+Each company record contains `value`, `basis: "ttm"`, `status: "verified"`, `asOf`, `observedAt`, `provider`, and a public `sourceUrl`. Optional `priceUsd`, `epsTtmUsd` and notes capture listing/currency and provider reconciliation. For unavailable data, set `value: null`, `status: "unavailable"`, and a specific `reason`; never substitute zero or a forward multiple. Previously verified data can be retained only with its original market date.
+
+`qqqMedianPE` uses the same fields. An exact median has `status: "verified"`, `method: "constituent-median"`, an identified `universe`, `notes`, and complete source-backed `constituents` entries `{id, pe}`. Record unprofitable or unavailable members with null P/E, exclude them from the positive-P/E median, consolidate duplicate share classes by company, exclude cash/derivatives, and verify the list against current QQQ holdings before calling it exact. The validator recomputes the median.
+
+If exact holdings cannot be reconciled, a separately verified Nasdaq-100 median may be used only as `status: "proxy"`, `method: "nasdaq100-median-proxy"`, with the actual provider universe and limitations. The UI visibly labels it Nasdaq-100 proxy. An index aggregate, fund harmonic/weighted P/E, forward P/E or historical median must never be labeled as the current constituent median.
+
+The 09:30 expert slot refreshes these ratios from the latest completed trading session even when no podcast is new and no score changes. Prefer consistent dated provider data; reconcile materially conflicting reports, especially ADR/currency treatment. Wall Street Numbers supplies the initial company TTM multiples; ChartRow supplies the explicitly labeled Nasdaq-100 median proxy. FactSet required reauthentication at setup; do not repeatedly call an unauthorized provider. Keep market dates distinct from check dates and log access gaps in Research Runs. A timestamp-only recheck must not republish. Valuation snapshots are current state; immutable research and dated conviction reviews remain protected.
