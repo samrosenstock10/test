@@ -1,0 +1,54 @@
+A switch may have enough internal capacity for every port to run at full rate, yet the wider network can still be oversubscribed. Oversubscription means downstream endpoints can collectively request more bandwidth than the shared uplinks provide.
+
+That is why port count, port speed and total switching capacity answer different questions. The topology and traffic pattern decide which capacity is actually reachable.
+
+4. A simple cut-throughput calculation
+
+Answer before reading: Eight servers each have one 400 Gb/s NIC. During a collective, every server must send 2 GB across the same rack boundary. The boundary has only 1.6 Tb/s of usable aggregate uplink bandwidth. Ignoring protocol overhead and assuming fair sharing, what is the best possible transfer time per server?
+
+First convert bits to bytes.
+
+400 Gb/s ÷ 8 = 50 GB/s per server.
+
+With no shared bottleneck, 2 GB ÷ 50 GB/s = 0.04 seconds, or 40 milliseconds.
+
+But eight servers demand 8 × 400 Gb/s = 3.2 Tb/s. The rack boundary supplies only 1.6 Tb/s, half as much. Fair sharing gives each server 200 Gb/s, or 25 GB/s.
+
+2 GB ÷ 25 GB/s = 0.08 seconds, or 80 milliseconds.
+
+The tempting wrong answer is 40 milliseconds because every NIC says 400 Gb/s. That ignores the shared cut. Real time will be longer because headers, routing, congestion and synchronization consume part of the ideal capacity.
+
+These are teaching assumptions, not a claim about a specific installed cluster.
+
+5. How to identify the limiting component
+
+Measure the path in order.
+
+If PCIe throughput near the source is low, a faster switch will not help. If the NIC port is full while switch uplinks are quiet, the endpoint is limiting. If many NICs are below line rate while shared uplinks are full, the network cut is limiting. If links are underused while queues and tail latency rise, traffic imbalance or congestion control may be the problem.
+
+Then change one thing. Place communicating accelerators closer together, reduce message bytes, add uplink capacity or spread traffic across paths. A real bottleneck should move or the collective should shorten.
+
+If none of those changes affects step time, Lesson 044's synchronization point may be exposing a different problem: slow compute, uneven work or software overhead.
+
+6. What this changes across the supply chain
+
+The physical path creates demand for several different products: GPU and PCIe interfaces, NIC or HCA silicon, switch chips, boards, connectors, cables or optical modules, and software that maps collectives onto the topology.
+
+A faster generation can also move the bottleneck. Doubling NIC speed may require more PCIe bandwidth, faster switch ports, more uplinks and links that can carry the signal reliably. Installing only one faster component can leave useful cluster throughput almost unchanged.
+
+NVIDIA's ConnectX-7 documentation provides a concrete example: listed cards support 400 Gb/s Ethernet or NDR InfiniBand and connect through PCIe x16. That is a manufacturer specification, not a guarantee that an application will sustain 400 Gb/s.
+
+The investment lesson is therefore disciplined: count complete, usable network paths, not isolated port speeds. Test whether the workload is communication-limited, whether the topology exposes the new capacity and whether another layer becomes the next constraint.
+
+Remember these three things
+
+- A NIC is the server endpoint that moves data between memory and the network.
+
+- A switch forwards many packet flows, but shared outputs and uplinks can create queues and oversubscription.
+
+- End-to-end collective speed is bounded by the narrowest usable part of the path.
+
+Sources
+
+NVIDIA, GPUDirect RDMA overview — direct data exchange between GPU memory and peer devices over PCI Express, plus topology limitations: https://docs.nvidia.com/cuda/gpudirect-rdma/
+
