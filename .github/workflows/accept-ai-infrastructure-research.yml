@@ -1,0 +1,162 @@
+name: Prepare and merge AI infrastructure research
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize, ready_for_review]
+    paths:
+      - 'buy-window/inbox/ai-research/*.json'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: ai-infrastructure-research-feed
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    if: >-
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      startsWith(github.head_ref, 'runtime/ai-research-') &&
+      github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out exact candidate revision
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Require one fresh candidate-only change
+        id: inbox
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          CANDIDATE_SHA: ${{ github.event.pull_request.head.sha }}
+          RUNTIME_BRANCH: ${{ github.event.pull_request.head.ref }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin main
+          test "$(git rev-parse origin/main)" = "$BASE_SHA"
+          test "$(git rev-parse HEAD)" = "$CANDIDATE_SHA"
+          git merge-base --is-ancestor "$BASE_SHA" HEAD
+          [[ "$RUNTIME_BRANCH" =~ ^runtime/ai-research-([0-9]{8}T[0-9]{6}Z)-([a-f0-9]{7,40})$ ]]
+          stamp="${BASH_REMATCH[1]}"
+          short_sha="${BASH_REMATCH[2]}"
+          [[ "$BASE_SHA" = "$short_sha"* ]]
+          test "$PR_TITLE" = "AI infrastructure research $stamp"
+          mapfile -t changes < <(git diff --name-status "$BASE_SHA"...HEAD)
+          test "${#changes[@]}" -eq 1
+          IFS=$'\t' read -r status path <<< "${changes[0]}"
+          test "$status" = "A"
+          test "$path" = "buy-window/inbox/ai-research/$stamp.json"
+          test -f "$path"
+          test ! -L "$path"
+          test "$(git ls-tree HEAD -- "$path" | cut -d ' ' -f 1)" = "100644"
+          test "$(wc -c < "$path")" -le 10000000
+          candidate_stamp="$(node -e 'const fs=require("node:fs"); const c=JSON.parse(fs.readFileSync(process.argv[1],"utf8")); process.stdout.write(new Date(c.requestedAt).toISOString().slice(0,19).replaceAll("-", "").replaceAll(":", "")+"Z")' "$path")"
+          test "$candidate_stamp" = "$stamp"
+          sha256sum buy-window/ai-infrastructure-theses.json buy-window/semi-analysis-theses.json > "$RUNNER_TEMP/legacy-feed-sha256"
+          echo "input=$path" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare canonical research feed
+        id: prepare
+        env:
+          INPUT: ${{ steps.inbox.outputs.input }}
+        run: node automation/ai-infrastructure-research.mjs prepare "$INPUT"
+
+      - name: Close a semantic no-op
+        if: steps.prepare.outputs.changed != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          CANDIDATE_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          test "$(gh pr view "$PR_URL" --json headRefOid --jq '.headRefOid')" = "$CANDIDATE_SHA"
+          gh pr close "$PR_URL" --delete-branch --comment "The research candidate matches the current semantic feed. No timestamp-only publication was created."
+
+      - name: Replace candidate with generated research feed
+        if: steps.prepare.outputs.changed == 'true'
+        env:
+          INPUT: ${{ steps.inbox.outputs.input }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha256sum --check "$RUNNER_TEMP/legacy-feed-sha256"
+          rm -- "$INPUT"
+          git config user.name "AI Infrastructure Research Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A -- "$INPUT" buy-window/ai-infrastructure-research.json
+          git commit -m "automation: prepare AI infrastructure research"
+          mapfile -t generated < <(git diff --name-only "$BASE_SHA"...HEAD)
+          test "${#generated[@]}" -eq 1
+          test "${generated[0]}" = "buy-window/ai-infrastructure-research.json"
+
+      - name: Validate generated research feed
+        if: steps.prepare.outputs.changed == 'true'
+        run: |
+          node --test automation/ai-infrastructure-research.node-test.mjs
+          node automation/ai-infrastructure-research.mjs validate
+
+      - name: Confirm main is still the validated base
+        if: steps.prepare.outputs.changed == 'true'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git fetch --no-tags origin main
+          test "$(git rev-parse origin/main)" = "$BASE_SHA"
+
+      - name: Push exact validated head
+        if: steps.prepare.outputs.changed == 'true'
+        env:
+          RUNTIME_BRANCH: ${{ github.event.pull_request.head.ref }}
+        run: git push origin "HEAD:$RUNTIME_BRANCH"
+
+      - name: Merge exact validated head
+        if: steps.prepare.outputs.changed == 'true'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          validated_head="$(git rev-parse HEAD)"
+          for attempt in {1..30}; do
+            current_head="$(gh pr view "$PR_URL" --json headRefOid --jq '.headRefOid')"
+            if [[ "$current_head" != "$validated_head" ]]; then
+              if [[ "$attempt" -eq 30 ]]; then
+                echo "ai_research_head_visibility_timeout:$current_head" >&2
+                exit 1
+              fi
+              sleep 2
+              continue
+            fi
+            mergeable="$(gh pr view "$PR_URL" --json mergeable --jq '.mergeable')"
+            if [[ "$mergeable" = "CONFLICTING" ]]; then
+              echo "ai_research_merge_conflict" >&2
+              exit 1
+            fi
+            if [[ "$mergeable" = "MERGEABLE" ]]; then
+              git fetch --no-tags origin main
+              test "$(git rev-parse origin/main)" = "$BASE_SHA"
+              if gh pr merge "$PR_URL" --squash --delete-branch --match-head-commit "$validated_head"; then
+                exit 0
+              fi
+            fi
+            if [[ "$attempt" -eq 30 ]]; then
+              echo "ai_research_merge_readiness_timeout:$mergeable" >&2
+              exit 1
+            fi
+            sleep 2
+          done
