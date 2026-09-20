@@ -193,3 +193,36 @@ test('CLI preparation leaves existing legacy bytes unchanged and no-op keeps out
     assert.equal(await readFile(combined, 'utf8'), '{"combined":"must remain byte identical"}\n');
   } finally { await rm(directory, { recursive: true, force: true }); }
 });
+
+function tenYearCandidate() {
+  const value = candidate();
+  value.schemaVersion = '1.1.0';
+  value.rankingMethodology = { returnMethod: { years: 10 } };
+  for (const row of value.rankings) for (const s of row.returnScenarios) { s.years = 10; s.annualizedPriceReturnPct = Math.round(annualizedPriceReturn(s)*10)/10; }
+  const pe = { value: 28.1, basis: 'ttm', status: 'verified', asOf: '2026-09-18', observedAt, sourceUrl: 'https://wallstreetnumbers.com/stocks/nvda/pe-ratio', provider: 'Wall Street Numbers' };
+  value.valuationContext = { basis: 'ttm', asOf: '2026-09-18', observedAt, companies: { NVDA: pe }, qqqMedianPE: { ...pe, value: 31.5, status: 'proxy', sourceUrl: 'https://chartrow.com/nasdaq-100/pe-ratio', provider: 'ChartRow', method: 'nasdaq100-median-proxy', universe: 'Tracked Nasdaq-100 members', notes: 'Explicitly labeled proxy, not an exact QQQ holding median.' } };
+  return value;
+}
+
+test('ten-year migration changes arithmetic while preserving existing five-year history', () => {
+  const next = tenYearCandidate();
+  const previous = feed();
+  assert.equal(prepareResearchCandidate(next, previous, options).changed, true);
+  const s = next.rankings[0].returnScenarios.find(s => s.case === 'base');
+  assert.equal(s.annualizedPriceReturnPct, 11.7);
+  s.annualizedPriceReturnPct = previous.rankings[0].returnScenarios.find(s => s.case === 'base').annualizedPriceReturnPct;
+  assert.throws(() => prepareResearchCandidate(next, previous, options), /return_formula_mismatch/);
+  const missing = tenYearCandidate(); delete missing.rankings[0].returnScenarios[0].years;
+  assert.throws(() => prepareResearchCandidate(missing, previous, options), /return_formula_mismatch|ten_year/);
+});
+
+test('valuation snapshots reject forward ratios, false medians and future dates', () => {
+  const fwd = tenYearCandidate(); fwd.valuationContext.companies.NVDA.basis = 'forward';
+  assert.throws(() => prepareResearchCandidate(fwd, null, options), /basis_must_be_ttm/);
+  const fakeMedian = tenYearCandidate(); fakeMedian.valuationContext.qqqMedianPE.method = 'fund-aggregate';
+  assert.throws(() => prepareResearchCandidate(fakeMedian, null, options), /median_method_invalid/);
+  const future = tenYearCandidate(); future.valuationContext.companies.NVDA.asOf = '2026-09-21';
+  assert.throws(() => prepareResearchCandidate(future, null, options), /future/);
+  const absent = tenYearCandidate(); absent.valuationContext.companies.NVDA = { value: null, basis: 'ttm', status: 'unavailable', reason: 'Current source unavailable.' };
+  assert.equal(prepareResearchCandidate(absent, null, options).changed, true);
+});

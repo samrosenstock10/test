@@ -5,7 +5,7 @@ import { SOURCE_SHEET } from './ai-infrastructure-feed.mjs';
 
 export { SOURCE_SHEET };
 export const RESEARCH_FEED = 'buy-window/ai-infrastructure-research.json';
-const VERSION = '1.0.0';
+const VERSIONS = new Set(['1.0.0', '1.1.0']);
 const ACCESS = new Set(['full-transcript', 'article', 'slides', 'notes-only', 'catalog-only']);
 const USABLE_ACCESS = new Set(['full-transcript', 'article', 'slides']);
 
@@ -121,7 +121,7 @@ function usableEvidence(item) {
 }
 
 export function annualizedPriceReturn(scenario) {
-  return ((1 + scenario.epsGrowthPct / 100) * (scenario.terminalMultiple / scenario.entryMultiple) ** (1 / 5) - 1) * 100;
+  return ((1 + scenario.epsGrowthPct / 100) * (scenario.terminalMultiple / scenario.entryMultiple) ** (1 / (scenario.years ?? 5)) - 1) * 100;
 }
 
 function validateRanking(row, path, evidence, ceiling) {
@@ -164,7 +164,7 @@ function validateRanking(row, path, evidence, ceiling) {
     invariant(Number.isFinite(scenario.entryMultiple) && scenario.entryMultiple > 0, `${scenarioPath}_entryMultiple_invalid`);
     invariant(Number.isFinite(scenario.terminalMultiple) && scenario.terminalMultiple > 0, `${scenarioPath}_terminalMultiple_invalid`);
     invariant(Number.isFinite(scenario.epsGrowthPct) && scenario.epsGrowthPct > -100, `${scenarioPath}_epsGrowthPct_invalid`);
-    invariant(scenario.years === undefined || scenario.years === 5, `${scenarioPath}_years_invalid`);
+    invariant(scenario.years === undefined || [5, 10].includes(scenario.years), `${scenarioPath}_years_invalid`);
     text(scenario.assumptionNote, `${scenarioPath}_assumptionNote`, 10);
     invariant(Number.isFinite(scenario.annualizedPriceReturnPct) && Math.abs(scenario.annualizedPriceReturnPct - annualizedPriceReturn(scenario)) <= 0.051, `${scenarioPath}_return_formula_mismatch`);
   }
@@ -245,9 +245,50 @@ function validateTransition(before, review, path) {
   invariant([...changes.keys()].every(ticker => beforeMap.has(ticker) || afterMap.has(ticker)), `${path}_unknown_changed_ticker`);
 }
 
+function validateValuationContext(context, rankings, ceiling) {
+  object(context, 'valuationContext');
+  invariant(context.basis === 'ttm', 'valuation_basis_must_be_ttm');
+  date(context.asOf, 'valuation_asOf', ceiling);
+  timestamp(context.observedAt, 'valuation_observedAt', ceiling);
+  object(context.companies, 'valuation_companies');
+  const validatePE = (item, path, benchmark = false) => {
+    object(item, path);
+    invariant(item.basis === 'ttm', `${path}_basis_must_be_ttm`);
+    invariant(['verified', 'unavailable', ...(benchmark ? ['proxy'] : [])].includes(item.status), `${path}_status_invalid`);
+    if (item.status === 'unavailable') {
+      invariant(item.value === null, `${path}_unavailable_value_must_be_null`);
+      text(item.reason, `${path}_unavailable_reason`);
+      return;
+    }
+    invariant(Number.isFinite(item.value) && item.value > 0, `${path}_value_invalid`);
+    date(item.asOf, `${path}_asOf`, ceiling);
+    timestamp(item.observedAt, `${path}_observedAt`, ceiling);
+    invariant(item.asOf <= item.observedAt.slice(0, 10), `${path}_date_after_observed`);
+    validatePublicUrl(item.sourceUrl, `${path}_sourceUrl`);
+    text(item.provider, `${path}_provider`);
+    if (benchmark) {
+      invariant(item.method === (item.status === 'proxy' ? 'nasdaq100-median-proxy' : 'constituent-median'), `${path}_median_method_invalid`);
+      text(item.universe, `${path}_universe`);
+      text(item.notes, `${path}_notes`);
+      if (item.status === 'verified') {
+        array(item.constituents, `${path}_constituents`);
+        invariant(item.constituents.length > 0, `${path}_constituents_empty`);
+        unique(item.constituents.map(c => c.id), `${path}_constituents`);
+        const values = item.constituents.filter(c => Number.isFinite(c.pe) && c.pe > 0).map(c => c.pe).sort((a,b) => a-b);
+        invariant(values.length > 0, `${path}_no_valid_constituents`);
+        const middle = Math.floor(values.length / 2);
+        const median = values.length % 2 ? values[middle] : (values[middle-1]+values[middle])/2;
+        invariant(Math.abs(item.value - median) <= 0.051, `${path}_median_mismatch`);
+      }
+    }
+  };
+  for (const row of rankings) validatePE(context.companies[row.ticker], `valuation_${row.ticker}`);
+  validatePE(context.qqqMedianPE, 'valuation_qqqMedianPE', true);
+}
+
 export function validateResearchFeed(feed, { now = Date.now() } = {}) {
   object(feed, 'research');
-  invariant(feed.schemaVersion === VERSION, 'research_schema_version_invalid');
+  invariant(VERSIONS.has(feed.schemaVersion), 'research_schema_version_invalid');
   timestamp(feed.updatedAt, 'research_updatedAt', now);
   const ceiling = Date.parse(feed.updatedAt);
   invariant(feed.sourceSheet === SOURCE_SHEET, 'research_source_sheet_invalid');
@@ -286,6 +327,11 @@ export function validateResearchFeed(feed, { now = Date.now() } = {}) {
     validateRanking(row, `ranking_${row.ticker}`, evidence, ceiling);
     invariant(row.rank === index + 1, 'rankings_not_contiguous_or_sorted');
     if (index > 0) invariant(feed.rankings[index - 1].thesisScore >= row.thesisScore, 'rankings_score_order_invalid');
+  }
+  if (feed.schemaVersion === '1.1.0') {
+    invariant(feed.rankings.every(row => row.returnScenarios.every(s => s.years === 10)), 'research_requires_ten_year_scenarios');
+    invariant(feed.rankingMethodology?.returnMethod?.years === 10, 'research_return_method_years_invalid');
+    validateValuationContext(feed.valuationContext, feed.rankings, ceiling);
   }
   ids(feed.reviews, 'reviews');
   for (const [index, review] of feed.reviews.entries()) {
@@ -331,6 +377,7 @@ export function prepareResearchCandidate(candidate, existing = null, options = {
   validateResearchFeed(feed, options);
   if (existing) {
     validateResearchFeed(existing, options);
+    if (existing.schemaVersion === '1.1.0') invariant(feed.schemaVersion === '1.1.0', 'candidate_schema_downgrade_forbidden');
     invariant(Date.parse(feed.updatedAt) >= Date.parse(existing.updatedAt), 'candidate_older_than_current');
     for (const field of ['sources', 'observations', 'evidence', 'reviews']) retainHistory(existing, feed, field);
     invariant(equal(feed.reviews.slice(0, existing.reviews.length), existing.reviews), 'reviews_history_reordered');
