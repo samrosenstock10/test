@@ -1,0 +1,51 @@
+name: Verify AI infrastructure research
+
+on:
+  pull_request:
+    paths:
+      - 'buy-window/ai-infrastructure-research.json'
+      - 'automation/ai-infrastructure-research.mjs'
+      - 'automation/ai-infrastructure-research.node-test.mjs'
+      - 'docs/automation/ai-infrastructure-research.md'
+      - '.github/workflows/verify-ai-infrastructure-research.yml'
+      - '.github/workflows/accept-ai-infrastructure-research.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'buy-window/ai-infrastructure-research.json'
+      - 'automation/ai-infrastructure-research.mjs'
+      - 'automation/ai-infrastructure-research.node-test.mjs'
+      - 'docs/automation/ai-infrastructure-research.md'
+      - '.github/workflows/verify-ai-infrastructure-research.yml'
+      - '.github/workflows/accept-ai-infrastructure-research.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Run research contract tests
+        run: node --test automation/ai-infrastructure-research.node-test.mjs
+      - name: Validate current research feed or confirm pre-bootstrap state
+        shell: bash
+        run: |
+          set -euo pipefail
+          feed="buy-window/ai-infrastructure-research.json"
+          if [[ -f "$feed" ]]; then
+            node automation/ai-infrastructure-research.mjs validate
+          else
+            git fetch --no-tags origin main
+            test -z "$(git rev-list -1 origin/main -- "$feed")"
+            test -z "$(git rev-list -1 HEAD -- "$feed")"
+            echo "Research pipeline is installed; the first protected candidate has not yet published its feed."
+          fi
