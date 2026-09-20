@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "sources": [
     {
@@ -38,6 +38,97 @@
       "priority": "selective"
     }
   ],
+  "rankingMethodology": {
+    "asOf": "2026-09-20",
+    "rankingBasis": "Our provisional long-term business-thesis preference for Sam's AI-infrastructure growth objective; not a current-price buy ranking or portfolio weight recommendation.",
+    "scoreDefinition": "Holistic thesis-strength judgment on a 0–100 scale in five-point steps. Not a probability, weighted formula, expected return or source-popularity score. Equal scores can have different preference ranks.",
+    "valuationStatus": "needs-normalized-baseline",
+    "valuationReason": "Verified quoted prices are available, but reliable comparable normalized earning bases were not established. Current-price return forecasts are intentionally absent.",
+    "fifthCompanyDecision": "None admitted in this baseline. No fifth candidate received enough comparative underwriting to satisfy the same standard; this is not a rejection of other companies.",
+    "returnMethod": {
+      "label": "Illustrative ten-year share-price return sensitivity",
+      "years": 10,
+      "formula": "annualizedPriceReturn = (1 + normalizedEPSGrowth) * (terminalPE / assumedEntryPE)^(1/10) - 1",
+      "entryMultiples": [
+        40,
+        50,
+        60
+      ],
+      "terminalMultiples": {
+        "bear": 20,
+        "base": 30,
+        "bull": 40
+      },
+      "normalization": "Baseline normalized diluted EPS is one arbitrary unit. Growth is per share, so dilution and buybacks must already be reflected; do not add buyback yield separately.",
+      "warning": "Assumed entry multiples are NOT the stocks' verified current multiples. Growth rates and terminal multiples are our illustrative assumptions, not management or analyst forecasts. These are share-price returns before dividends, fees, tax and currency effects, not expected total returns. Cases are not probability weighted.",
+      "baseCaseDisclaimer": "Base denotes a central illustrative scenario, not a statistical forecast or promised return."
+    },
+    "requiredGrowthHurdles": [
+      {
+        "assumedEntryMultiple": 40,
+        "terminalMultiple": 25,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredNormalizedEPSGrowthPct": 20.5
+      },
+      {
+        "assumedEntryMultiple": 40,
+        "terminalMultiple": 30,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredNormalizedEPSGrowthPct": 18.4
+      },
+      {
+        "assumedEntryMultiple": 40,
+        "terminalMultiple": 35,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredNormalizedEPSGrowthPct": 16.5
+      },
+      {
+        "assumedEntryMultiple": 50,
+        "terminalMultiple": 25,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredNormalizedEPSGrowthPct": 23.3
+      },
+      {
+        "assumedEntryMultiple": 50,
+        "terminalMultiple": 30,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredNormalizedEPSGrowthPct": 21
+      },
+      {
+        "assumedEntryMultiple": 50,
+        "terminalMultiple": 35,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredNormalizedEPSGrowthPct": 19.2
+      },
+      {
+        "assumedEntryMultiple": 60,
+        "terminalMultiple": 25,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredNormalizedEPSGrowthPct": 25.5
+      },
+      {
+        "assumedEntryMultiple": 60,
+        "terminalMultiple": 30,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredNormalizedEPSGrowthPct": 23.3
+      },
+      {
+        "assumedEntryMultiple": 60,
+        "terminalMultiple": 35,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredNormalizedEPSGrowthPct": 21.4
+      }
+    ],
+    "sourceCoverageLimitations": [
+      "No podcast speaker has endorsed this ranking; it is our analysis.",
+      "Strong issuer evidence is not independent evidence. Related releases share independence groups.",
+      "TSMC transcript accounting excerpt retrieved through search; full document retrieval failed.",
+      "Scores are starting judgments, not changes earned by a new episode.",
+      "No return number uses the verified quote prices because normalized earning bases remain unresolved.",
+      "TSMC and ASML now have explicit customer corroboration and documented business-thesis admission. Investment entry valuation remains unresolved for all four."
+    ],
+    "admissionReviewCompletedAt": "2026-09-20"
+  },
   "observations": [
     {
       "id": "expert-20260920-frye-utilization-lead",
@@ -327,48 +418,54 @@
           "entryMultiple": 40,
           "epsGrowthPct": 5,
           "terminalMultiple": 20,
-          "annualizedPriceReturnPct": -8.6,
-          "assumptionNote": "Demand grows but competition and margin normalization leave only modest per-share earnings growth."
+          "annualizedPriceReturnPct": -2,
+          "assumptionNote": "Demand grows but competition and margin normalization leave only modest per-share earnings growth.",
+          "years": 10
         },
         {
           "case": "bear",
           "entryMultiple": 50,
           "epsGrowthPct": 5,
           "terminalMultiple": 20,
-          "annualizedPriceReturnPct": -12.6,
-          "assumptionNote": "Demand grows but competition and margin normalization leave only modest per-share earnings growth."
+          "annualizedPriceReturnPct": -4.2,
+          "assumptionNote": "Demand grows but competition and margin normalization leave only modest per-share earnings growth.",
+          "years": 10
         },
         {
           "case": "bear",
           "entryMultiple": 60,
           "epsGrowthPct": 5,
           "terminalMultiple": 20,
-          "annualizedPriceReturnPct": -15.7,
-          "assumptionNote": "Demand grows but competition and margin normalization leave only modest per-share earnings growth."
+          "annualizedPriceReturnPct": -5.9,
+          "assumptionNote": "Demand grows but competition and margin normalization leave only modest per-share earnings growth.",
+          "years": 10
         },
         {
           "case": "base",
           "entryMultiple": 40,
           "epsGrowthPct": 20,
           "terminalMultiple": 30,
-          "annualizedPriceReturnPct": 13.3,
-          "assumptionNote": "Systems leadership persists as AI workloads expand; growth slows substantially from the latest quarter."
+          "annualizedPriceReturnPct": 16.6,
+          "assumptionNote": "Systems leadership persists as AI workloads expand; growth slows substantially from the latest quarter.",
+          "years": 10
         },
         {
           "case": "base",
           "entryMultiple": 50,
           "epsGrowthPct": 20,
           "terminalMultiple": 30,
-          "annualizedPriceReturnPct": 8.3,
-          "assumptionNote": "Systems leadership persists as AI workloads expand; growth slows substantially from the latest quarter."
+          "annualizedPriceReturnPct": 14,
+          "assumptionNote": "Systems leadership persists as AI workloads expand; growth slows substantially from the latest quarter.",
+          "years": 10
         },
         {
           "case": "base",
           "entryMultiple": 60,
           "epsGrowthPct": 20,
           "terminalMultiple": 30,
-          "annualizedPriceReturnPct": 4.5,
-          "assumptionNote": "Systems leadership persists as AI workloads expand; growth slows substantially from the latest quarter."
+          "annualizedPriceReturnPct": 12,
+          "assumptionNote": "Systems leadership persists as AI workloads expand; growth slows substantially from the latest quarter.",
+          "years": 10
         },
         {
           "case": "bull",
@@ -376,23 +473,26 @@
           "epsGrowthPct": 30,
           "terminalMultiple": 40,
           "annualizedPriceReturnPct": 30,
-          "assumptionNote": "Agentic inference and broader deployment sustain exceptional per-share earnings compounding."
+          "assumptionNote": "Agentic inference and broader deployment sustain exceptional per-share earnings compounding.",
+          "years": 10
         },
         {
           "case": "bull",
           "entryMultiple": 50,
           "epsGrowthPct": 30,
           "terminalMultiple": 40,
-          "annualizedPriceReturnPct": 24.3,
-          "assumptionNote": "Agentic inference and broader deployment sustain exceptional per-share earnings compounding."
+          "annualizedPriceReturnPct": 27.1,
+          "assumptionNote": "Agentic inference and broader deployment sustain exceptional per-share earnings compounding.",
+          "years": 10
         },
         {
           "case": "bull",
           "entryMultiple": 60,
           "epsGrowthPct": 30,
           "terminalMultiple": 40,
-          "annualizedPriceReturnPct": 19.9,
-          "assumptionNote": "Agentic inference and broader deployment sustain exceptional per-share earnings compounding."
+          "annualizedPriceReturnPct": 24.8,
+          "assumptionNote": "Agentic inference and broader deployment sustain exceptional per-share earnings compounding.",
+          "years": 10
         }
       ]
     },
@@ -447,48 +547,54 @@
           "entryMultiple": 40,
           "epsGrowthPct": 0,
           "terminalMultiple": 20,
-          "annualizedPriceReturnPct": -12.9,
-          "assumptionNote": "Customer pressure and program losses offset underlying AI growth."
+          "annualizedPriceReturnPct": -6.7,
+          "assumptionNote": "Customer pressure and program losses offset underlying AI growth.",
+          "years": 10
         },
         {
           "case": "bear",
           "entryMultiple": 50,
           "epsGrowthPct": 0,
           "terminalMultiple": 20,
-          "annualizedPriceReturnPct": -16.7,
-          "assumptionNote": "Customer pressure and program losses offset underlying AI growth."
+          "annualizedPriceReturnPct": -8.8,
+          "assumptionNote": "Customer pressure and program losses offset underlying AI growth.",
+          "years": 10
         },
         {
           "case": "bear",
           "entryMultiple": 60,
           "epsGrowthPct": 0,
           "terminalMultiple": 20,
-          "annualizedPriceReturnPct": -19.7,
-          "assumptionNote": "Customer pressure and program losses offset underlying AI growth."
+          "annualizedPriceReturnPct": -10.4,
+          "assumptionNote": "Customer pressure and program losses offset underlying AI growth.",
+          "years": 10
         },
         {
           "case": "base",
           "entryMultiple": 40,
           "epsGrowthPct": 22,
           "terminalMultiple": 30,
-          "annualizedPriceReturnPct": 15.2,
-          "assumptionNote": "Several custom-compute generations convert to profitable deployments alongside networking demand."
+          "annualizedPriceReturnPct": 18.5,
+          "assumptionNote": "Several custom-compute generations convert to profitable deployments alongside networking demand.",
+          "years": 10
         },
         {
           "case": "base",
           "entryMultiple": 50,
           "epsGrowthPct": 22,
           "terminalMultiple": 30,
-          "annualizedPriceReturnPct": 10.2,
-          "assumptionNote": "Several custom-compute generations convert to profitable deployments alongside networking demand."
+          "annualizedPriceReturnPct": 15.9,
+          "assumptionNote": "Several custom-compute generations convert to profitable deployments alongside networking demand.",
+          "years": 10
         },
         {
           "case": "base",
           "entryMultiple": 60,
           "epsGrowthPct": 22,
           "terminalMultiple": 30,
-          "annualizedPriceReturnPct": 6.2,
-          "assumptionNote": "Several custom-compute generations convert to profitable deployments alongside networking demand."
+          "annualizedPriceReturnPct": 13.8,
+          "assumptionNote": "Several custom-compute generations convert to profitable deployments alongside networking demand.",
+          "years": 10
         },
         {
           "case": "bull",
@@ -496,23 +602,26 @@
           "epsGrowthPct": 35,
           "terminalMultiple": 40,
           "annualizedPriceReturnPct": 35,
-          "assumptionNote": "Broadcom wins a disproportionate share of hyperscaler custom silicon while retaining strong unit economics."
+          "assumptionNote": "Broadcom wins a disproportionate share of hyperscaler custom silicon while retaining strong unit economics.",
+          "years": 10
         },
         {
           "case": "bull",
           "entryMultiple": 50,
           "epsGrowthPct": 35,
           "terminalMultiple": 40,
-          "annualizedPriceReturnPct": 29.1,
-          "assumptionNote": "Broadcom wins a disproportionate share of hyperscaler custom silicon while retaining strong unit economics."
+          "annualizedPriceReturnPct": 32,
+          "assumptionNote": "Broadcom wins a disproportionate share of hyperscaler custom silicon while retaining strong unit economics.",
+          "years": 10
         },
         {
           "case": "bull",
           "entryMultiple": 60,
           "epsGrowthPct": 35,
           "terminalMultiple": 40,
-          "annualizedPriceReturnPct": 24.5,
-          "assumptionNote": "Broadcom wins a disproportionate share of hyperscaler custom silicon while retaining strong unit economics."
+          "annualizedPriceReturnPct": 29.6,
+          "assumptionNote": "Broadcom wins a disproportionate share of hyperscaler custom silicon while retaining strong unit economics.",
+          "years": 10
         }
       ]
     },
@@ -569,48 +678,54 @@
           "entryMultiple": 40,
           "epsGrowthPct": 3,
           "terminalMultiple": 20,
-          "annualizedPriceReturnPct": -10.3,
-          "assumptionNote": "AI growth is largely absorbed by capital intensity, overseas costs and industry cyclicality."
+          "annualizedPriceReturnPct": -3.9,
+          "assumptionNote": "AI growth is largely absorbed by capital intensity, overseas costs and industry cyclicality.",
+          "years": 10
         },
         {
           "case": "bear",
           "entryMultiple": 50,
           "epsGrowthPct": 3,
           "terminalMultiple": 20,
-          "annualizedPriceReturnPct": -14.2,
-          "assumptionNote": "AI growth is largely absorbed by capital intensity, overseas costs and industry cyclicality."
+          "annualizedPriceReturnPct": -6,
+          "assumptionNote": "AI growth is largely absorbed by capital intensity, overseas costs and industry cyclicality.",
+          "years": 10
         },
         {
           "case": "bear",
           "entryMultiple": 60,
           "epsGrowthPct": 3,
           "terminalMultiple": 20,
-          "annualizedPriceReturnPct": -17.3,
-          "assumptionNote": "AI growth is largely absorbed by capital intensity, overseas costs and industry cyclicality."
+          "annualizedPriceReturnPct": -7.7,
+          "assumptionNote": "AI growth is largely absorbed by capital intensity, overseas costs and industry cyclicality.",
+          "years": 10
         },
         {
           "case": "base",
           "entryMultiple": 40,
           "epsGrowthPct": 16,
           "terminalMultiple": 30,
-          "annualizedPriceReturnPct": 9.5,
-          "assumptionNote": "Leading-edge manufacturing and packaging compound profitably across multiple architectures."
+          "annualizedPriceReturnPct": 12.7,
+          "assumptionNote": "Leading-edge manufacturing and packaging compound profitably across multiple architectures.",
+          "years": 10
         },
         {
           "case": "base",
           "entryMultiple": 50,
           "epsGrowthPct": 16,
           "terminalMultiple": 30,
-          "annualizedPriceReturnPct": 4.7,
-          "assumptionNote": "Leading-edge manufacturing and packaging compound profitably across multiple architectures."
+          "annualizedPriceReturnPct": 10.2,
+          "assumptionNote": "Leading-edge manufacturing and packaging compound profitably across multiple architectures.",
+          "years": 10
         },
         {
           "case": "base",
           "entryMultiple": 60,
           "epsGrowthPct": 16,
           "terminalMultiple": 30,
-          "annualizedPriceReturnPct": 1,
-          "assumptionNote": "Leading-edge manufacturing and packaging compound profitably across multiple architectures."
+          "annualizedPriceReturnPct": 8.2,
+          "assumptionNote": "Leading-edge manufacturing and packaging compound profitably across multiple architectures.",
+          "years": 10
         },
         {
           "case": "bull",
@@ -618,23 +733,26 @@
           "epsGrowthPct": 23,
           "terminalMultiple": 40,
           "annualizedPriceReturnPct": 23,
-          "assumptionNote": "AI wafer and packaging demand stays unusually strong while process leadership preserves pricing."
+          "assumptionNote": "AI wafer and packaging demand stays unusually strong while process leadership preserves pricing.",
+          "years": 10
         },
         {
           "case": "bull",
           "entryMultiple": 50,
           "epsGrowthPct": 23,
           "terminalMultiple": 40,
-          "annualizedPriceReturnPct": 17.6,
-          "assumptionNote": "AI wafer and packaging demand stays unusually strong while process leadership preserves pricing."
+          "annualizedPriceReturnPct": 20.3,
+          "assumptionNote": "AI wafer and packaging demand stays unusually strong while process leadership preserves pricing.",
+          "years": 10
         },
         {
           "case": "bull",
           "entryMultiple": 60,
           "epsGrowthPct": 23,
           "terminalMultiple": 40,
-          "annualizedPriceReturnPct": 13.4,
-          "assumptionNote": "AI wafer and packaging demand stays unusually strong while process leadership preserves pricing."
+          "annualizedPriceReturnPct": 18.1,
+          "assumptionNote": "AI wafer and packaging demand stays unusually strong while process leadership preserves pricing.",
+          "years": 10
         }
       ],
       "observedBearFacts": [
@@ -719,48 +837,54 @@
           "entryMultiple": 40,
           "epsGrowthPct": 0,
           "terminalMultiple": 20,
-          "annualizedPriceReturnPct": -12.9,
-          "assumptionNote": "Capacity and export pressures offset service growth."
+          "annualizedPriceReturnPct": -6.7,
+          "assumptionNote": "Capacity and export pressures offset service growth.",
+          "years": 10
         },
         {
           "case": "bear",
           "entryMultiple": 50,
           "epsGrowthPct": 0,
           "terminalMultiple": 20,
-          "annualizedPriceReturnPct": -16.7,
-          "assumptionNote": "Capacity and export pressures offset service growth."
+          "annualizedPriceReturnPct": -8.8,
+          "assumptionNote": "Capacity and export pressures offset service growth.",
+          "years": 10
         },
         {
           "case": "bear",
           "entryMultiple": 60,
           "epsGrowthPct": 0,
           "terminalMultiple": 20,
-          "annualizedPriceReturnPct": -19.7,
-          "assumptionNote": "Capacity and export pressures offset service growth."
+          "annualizedPriceReturnPct": -10.4,
+          "assumptionNote": "Capacity and export pressures offset service growth.",
+          "years": 10
         },
         {
           "case": "base",
           "entryMultiple": 40,
           "epsGrowthPct": 12,
           "terminalMultiple": 30,
-          "annualizedPriceReturnPct": 5.7,
-          "assumptionNote": "Advanced logic, memory and installed-base services generate steady per-share growth."
+          "annualizedPriceReturnPct": 8.8,
+          "assumptionNote": "Advanced logic, memory and installed-base services generate steady per-share growth.",
+          "years": 10
         },
         {
           "case": "base",
           "entryMultiple": 50,
           "epsGrowthPct": 12,
           "terminalMultiple": 30,
-          "annualizedPriceReturnPct": 1.1,
-          "assumptionNote": "Advanced logic, memory and installed-base services generate steady per-share growth."
+          "annualizedPriceReturnPct": 6.4,
+          "assumptionNote": "Advanced logic, memory and installed-base services generate steady per-share growth.",
+          "years": 10
         },
         {
           "case": "base",
           "entryMultiple": 60,
           "epsGrowthPct": 12,
           "terminalMultiple": 30,
-          "annualizedPriceReturnPct": -2.5,
-          "assumptionNote": "Advanced logic, memory and installed-base services generate steady per-share growth."
+          "annualizedPriceReturnPct": 4.5,
+          "assumptionNote": "Advanced logic, memory and installed-base services generate steady per-share growth.",
+          "years": 10
         },
         {
           "case": "bull",
@@ -768,23 +892,26 @@
           "epsGrowthPct": 20,
           "terminalMultiple": 40,
           "annualizedPriceReturnPct": 20,
-          "assumptionNote": "Rising lithography intensity and capacity additions support strong earnings expansion."
+          "assumptionNote": "Rising lithography intensity and capacity additions support strong earnings expansion.",
+          "years": 10
         },
         {
           "case": "bull",
           "entryMultiple": 50,
           "epsGrowthPct": 20,
           "terminalMultiple": 40,
-          "annualizedPriceReturnPct": 14.8,
-          "assumptionNote": "Rising lithography intensity and capacity additions support strong earnings expansion."
+          "annualizedPriceReturnPct": 17.4,
+          "assumptionNote": "Rising lithography intensity and capacity additions support strong earnings expansion.",
+          "years": 10
         },
         {
           "case": "bull",
           "entryMultiple": 60,
           "epsGrowthPct": 20,
           "terminalMultiple": 40,
-          "annualizedPriceReturnPct": 10.7,
-          "assumptionNote": "Rising lithography intensity and capacity additions support strong earnings expansion."
+          "annualizedPriceReturnPct": 15.2,
+          "assumptionNote": "Rising lithography intensity and capacity additions support strong earnings expansion.",
+          "years": 10
         }
       ],
       "observedBearFacts": [
@@ -813,97 +940,71 @@
       }
     }
   ],
-  "rankingMethodology": {
-    "asOf": "2026-09-20",
-    "rankingBasis": "Our provisional long-term business-thesis preference for Sam's AI-infrastructure growth objective; not a current-price buy ranking or portfolio weight recommendation.",
-    "scoreDefinition": "Holistic thesis-strength judgment on a 0–100 scale in five-point steps. Not a probability, weighted formula, expected return or source-popularity score. Equal scores can have different preference ranks.",
-    "valuationStatus": "needs-normalized-baseline",
-    "valuationReason": "Verified quoted prices are available, but reliable comparable normalized earning bases were not established. Current-price return forecasts are intentionally absent.",
-    "fifthCompanyDecision": "None admitted in this baseline. No fifth candidate received enough comparative underwriting to satisfy the same standard; this is not a rejection of other companies.",
-    "returnMethod": {
-      "label": "Illustrative five-year share-price return sensitivity",
-      "years": 5,
-      "formula": "annualizedPriceReturn = (1 + normalizedEPSGrowth) * (terminalPE / assumedEntryPE)^(1/5) - 1",
-      "entryMultiples": [
-        40,
-        50,
-        60
+  "reviews": [
+    {
+      "id": "review-20260920-initial",
+      "date": "2026-09-20",
+      "observedAt": "2026-09-20T20:54:35Z",
+      "status": "initialized",
+      "summary": "Started with four business theses: NVIDIA, Broadcom, TSMC and ASML. Customer evidence supports the shortlist; current-price return estimates remain open pending comparable earnings baselines. This is the first recorded ranking, so there is no prior score movement.",
+      "changes": [],
+      "rankingSnapshot": [
+        {
+          "ticker": "NVDA",
+          "rank": 1,
+          "thesisScore": 90
+        },
+        {
+          "ticker": "AVGO",
+          "rank": 2,
+          "thesisScore": 85
+        },
+        {
+          "ticker": "TSM",
+          "rank": 3,
+          "thesisScore": 85
+        },
+        {
+          "ticker": "ASML",
+          "rank": 4,
+          "thesisScore": 80
+        }
       ],
-      "terminalMultiples": {
-        "bear": 20,
-        "base": 30,
-        "bull": 40
-      },
-      "normalization": "Baseline normalized diluted EPS is one arbitrary unit. Growth is per share, so dilution and buybacks must already be reflected; do not add buyback yield separately.",
-      "warning": "Assumed entry multiples are NOT the stocks' verified current multiples. Growth rates and terminal multiples are our illustrative assumptions, not management or analyst forecasts. These are share-price returns before dividends, fees, tax and currency effects, not expected total returns. Cases are not probability weighted.",
-      "baseCaseDisclaimer": "Base denotes a central illustrative scenario, not a statistical forecast or promised return."
+      "nextReviewOn": "2026-09-27"
     },
-    "requiredGrowthHurdles": [
-      {
-        "assumedEntryMultiple": 40,
-        "terminalMultiple": 25,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredNormalizedEPSGrowthPct": 26.3
-      },
-      {
-        "assumedEntryMultiple": 40,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredNormalizedEPSGrowthPct": 21.8
-      },
-      {
-        "assumedEntryMultiple": 40,
-        "terminalMultiple": 35,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredNormalizedEPSGrowthPct": 18.1
-      },
-      {
-        "assumedEntryMultiple": 50,
-        "terminalMultiple": 25,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredNormalizedEPSGrowthPct": 32.1
-      },
-      {
-        "assumedEntryMultiple": 50,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredNormalizedEPSGrowthPct": 27.4
-      },
-      {
-        "assumedEntryMultiple": 50,
-        "terminalMultiple": 35,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredNormalizedEPSGrowthPct": 23.5
-      },
-      {
-        "assumedEntryMultiple": 60,
-        "terminalMultiple": 25,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredNormalizedEPSGrowthPct": 37
-      },
-      {
-        "assumedEntryMultiple": 60,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredNormalizedEPSGrowthPct": 32.1
-      },
-      {
-        "assumedEntryMultiple": 60,
-        "terminalMultiple": 35,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredNormalizedEPSGrowthPct": 28.1
-      }
-    ],
-    "sourceCoverageLimitations": [
-      "No podcast speaker has endorsed this ranking; it is our analysis.",
-      "Strong issuer evidence is not independent evidence. Related releases share independence groups.",
-      "TSMC transcript accounting excerpt retrieved through search; full document retrieval failed.",
-      "Scores are starting judgments, not changes earned by a new episode.",
-      "No return number uses the verified quote prices because normalized earning bases remain unresolved.",
-      "TSMC and ASML now have explicit customer corroboration and documented business-thesis admission. Investment entry valuation remains unresolved for all four."
-    ],
-    "admissionReviewCompletedAt": "2026-09-20"
-  },
+    {
+      "id": "review-20260920-ten-year-display",
+      "date": "2026-09-20",
+      "observedAt": "2026-09-20T22:04:29Z",
+      "status": "methodology-update",
+      "reviewType": "configuration",
+      "summary": "Changed the illustrative return horizon to ten years and added dated trailing P/E comparisons at the user's request. Existing per-year earnings-growth and terminal-multiple assumptions were retained. No thesis rank or confidence changed; this is a configuration update, not a new weekly investment review.",
+      "changes": [],
+      "rankingSnapshot": [
+        {
+          "ticker": "NVDA",
+          "rank": 1,
+          "thesisScore": 90
+        },
+        {
+          "ticker": "AVGO",
+          "rank": 2,
+          "thesisScore": 85
+        },
+        {
+          "ticker": "TSM",
+          "rank": 3,
+          "thesisScore": 85
+        },
+        {
+          "ticker": "ASML",
+          "rank": 4,
+          "thesisScore": 80
+        }
+      ],
+      "nextReviewOn": "2026-09-27"
+    }
+  ],
   "evidence": [
     {
       "id": "nvda-q2-2027",
@@ -1173,39 +1274,6 @@
       "status": "evidence"
     }
   ],
-  "reviews": [
-    {
-      "id": "review-20260920-initial",
-      "date": "2026-09-20",
-      "observedAt": "2026-09-20T20:54:35Z",
-      "status": "initialized",
-      "summary": "Started with four business theses: NVIDIA, Broadcom, TSMC and ASML. Customer evidence supports the shortlist; current-price return estimates remain open pending comparable earnings baselines. This is the first recorded ranking, so there is no prior score movement.",
-      "changes": [],
-      "rankingSnapshot": [
-        {
-          "ticker": "NVDA",
-          "rank": 1,
-          "thesisScore": 90
-        },
-        {
-          "ticker": "AVGO",
-          "rank": 2,
-          "thesisScore": 85
-        },
-        {
-          "ticker": "TSM",
-          "rank": 3,
-          "thesisScore": 85
-        },
-        {
-          "ticker": "ASML",
-          "rank": 4,
-          "thesisScore": 80
-        }
-      ],
-      "nextReviewOn": "2026-09-27"
-    }
-  ],
   "coverage": {
     "asOf": "2026-09-20T20:54:35Z",
     "kind": "targeted-initial-baseline",
@@ -1226,5 +1294,72 @@
       "This seed contains no current valuation work, financial model revisions, procurement verification, complete HBM/packaging survey, or confidence-score changes."
     ]
   },
-  "updatedAt": "2026-09-20T20:54:35Z"
+  "valuationContext": {
+    "basis": "ttm",
+    "asOf": "2026-09-18",
+    "observedAt": "2026-09-20T22:04:29Z",
+    "companies": {
+      "NVDA": {
+        "value": 28.1,
+        "basis": "ttm",
+        "status": "verified",
+        "asOf": "2026-09-18",
+        "observedAt": "2026-09-20T22:04:29Z",
+        "provider": "Wall Street Numbers",
+        "sourceUrl": "https://wallstreetnumbers.com/stocks/nvda/pe-ratio",
+        "priceUsd": 222.27,
+        "epsTtmUsd": 7.91,
+        "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios."
+      },
+      "AVGO": {
+        "value": 45.65,
+        "basis": "ttm",
+        "status": "verified",
+        "asOf": "2026-09-18",
+        "observedAt": "2026-09-20T22:04:29Z",
+        "provider": "Wall Street Numbers",
+        "sourceUrl": "https://wallstreetnumbers.com/stocks/avgo/pe-ratio",
+        "priceUsd": 357.61,
+        "epsTtmUsd": 7.83,
+        "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios."
+      },
+      "TSM": {
+        "value": 31.37,
+        "basis": "ttm",
+        "status": "verified",
+        "asOf": "2026-09-18",
+        "observedAt": "2026-09-20T22:04:29Z",
+        "provider": "Wall Street Numbers",
+        "sourceUrl": "https://wallstreetnumbers.com/stocks/tsm/pe-ratio",
+        "priceUsd": 434.67,
+        "epsTtmUsd": 13.86,
+        "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios."
+      },
+      "ASML": {
+        "value": 52.3,
+        "basis": "ttm",
+        "status": "verified",
+        "asOf": "2026-09-18",
+        "observedAt": "2026-09-20T22:04:29Z",
+        "provider": "Wall Street Numbers",
+        "sourceUrl": "https://wallstreetnumbers.com/stocks/asml/pe-ratio",
+        "priceUsd": 1679.92,
+        "epsTtmUsd": 32.12,
+        "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios."
+      }
+    },
+    "qqqMedianPE": {
+      "value": 31.5,
+      "basis": "ttm",
+      "status": "proxy",
+      "asOf": "2026-09-18",
+      "observedAt": "2026-09-20T22:04:29Z",
+      "provider": "ChartRow",
+      "sourceUrl": "https://chartrow.com/nasdaq-100/pe-ratio",
+      "method": "nasdaq100-median-proxy",
+      "universe": "Provider's tracked Nasdaq-100 members",
+      "notes": "Published median constituent trailing P/E, used as an explicitly labeled QQQ proxy. The provider describes 99 tracked members and 94% of index weight with valid trailing P/E; exact current QQQ constituent coverage and calculation were not independently reconciled. This is not the index aggregate P/E, fund harmonic P/E, or historical median."
+    }
+  },
+  "updatedAt": "2026-09-20T22:04:29Z"
 }
