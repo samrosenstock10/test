@@ -83,6 +83,20 @@ test('rejects stale selections, duplicate upstream IDs and missing snapshots', (
   delete input.source.Bottlenecks;
   assert.throws(() => planProjectHandoff(input), /Missing complete/);
 });
+test('independent resolution evidence is not deduped or attributed to the original promise', () => {
+  const input = fixture();
+  const first = planProjectHandoff({ ...input, decisions: [decision()] });
+  input.source.Claims[0]['Source URL'] = bottleneck['Source URL'];
+  input.source.Claims[0]['Resolution Source'] = 'https://auditor.com/results';
+  const d = decision(input.source.Claims[0], 'Claims');
+  d.evidence.independenceGroup = 'independent-auditor';
+  const result = planProjectHandoff({ ...input, feed: first.feed, decisions: [d] });
+  assert.equal(result.additions.length, 1);
+  assert.equal(result.additions[0].independenceGroup, 'independent-auditor');
+  assert.equal(result.additions[0].provenance.originalSourceUrl, bottleneck['Source URL']);
+  const linked = { ...d, action: 'link', existingEvidenceId: first.additions[0].id };
+  assert.throws(() => planProjectHandoff({ ...input, feed: first.feed, decisions: [linked] }), /same underlying source/);
+});
 test('rejects unsafe links, invalid dates and unsupported evidence status', () => {
   for (const change of [d => { d.evidence.publishedDate = '2030-01-01'; }, d => { d.evidence.contentAccess = 'notes-only'; }, d => { d.evidence.independenceGroup = 'ChatGPT'; }]) {
     const d = decision(); change(d); assert.throws(() => planProjectHandoff({ ...fixture(), decisions: [d] }));
