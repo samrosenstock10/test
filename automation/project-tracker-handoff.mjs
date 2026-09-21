@@ -45,11 +45,6 @@ function sourceRows(input) {
   }
   return rows;
 }
-function sourceUrls(record) {
-  const provenance = record.provenance;
-  return [record.url, provenance?.originalSourceUrl, provenance?.resolutionSourceUrl].filter(Boolean).map(canonicalSourceUrl);
-}
-
 export function planProjectHandoff({ source, feed, decisions = [], state = { version: 1, records: {} }, observedAt }) {
   check(typeof observedAt === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,3})?Z$/.test(observedAt) && Number.isFinite(Date.parse(observedAt)) && new Date(observedAt).toISOString().slice(0, 19) === observedAt.slice(0, 19), 'Invalid observedAt');
   check(Date.parse(observedAt) <= Date.now(), 'Future observedAt');
@@ -84,8 +79,10 @@ export function planProjectHandoff({ source, feed, decisions = [], state = { ver
     date(originalDate, 'original date', observedAt);
     const originalClaim = row[table === 'Claims' ? 'Original Claim' : 'Evidence Summary'];
     required(originalClaim, 'original claim');
-    const urls = [canonicalSourceUrl(row['Source URL'])];
-    if (table === 'Claims') urls.push(canonicalSourceUrl(row['Resolution Source']));
+    canonicalSourceUrl(row['Source URL']);
+    // A later resolution is evidence from its resolution source. The original
+    // promise is provenance, not grounds to absorb a new witness into its origin.
+    const evidenceUrl = canonicalSourceUrl(table === 'Claims' ? row['Resolution Source'] : row['Source URL']);
     const id = `project-${sourceId.toLowerCase()}-${version.slice(0, 16)}`;
     const all = [...existing, ...additions];
     const replay = all.find(record => record.id === id);
@@ -98,7 +95,7 @@ export function planProjectHandoff({ source, feed, decisions = [], state = { ver
       check(all.some(record => record.id === saved.evidenceId), 'State references missing evidence');
       save(key, version, saved.disposition, saved.evidenceId, saved.reason); continue;
     }
-    const related = all.filter(record => sourceUrls(record).some(url => urls.includes(url)));
+    const related = all.filter(record => canonicalSourceUrl(record.url) === evidenceUrl);
     if (decision.action === 'link') {
       check(related.some(record => record.id === decision.existingEvidenceId), 'Link must reference existing evidence with the same underlying source');
       save(key, version, 'linked', decision.existingEvidenceId, decision.reason); continue;
