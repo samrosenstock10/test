@@ -454,7 +454,19 @@
         "lessons/045-02.tsfrag",
         "lessons/045-03.tsfrag"
       ]
+    },
+    {
+      "number": 46,
+      "module": "Module 4: Connecting Accelerators into a Cluster",
+      "title": "Copper Versus Optical Links — How Distance Changes the Connection",
+      "date": "2026-09-21",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/046-01.tsfrag",
+        "lessons/046-02.tsfrag",
+        "lessons/046-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-20T11:04:19.188Z"
+  "updatedAt": "2026-09-21T11:06:44.210Z"
 }
