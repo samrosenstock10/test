@@ -26,13 +26,14 @@ Semantic no-op candidates are closed and their runtime branches deleted without 
 
 ```json
 {
-  "schemaVersion": "1.1.0",
+  "schemaVersion": "1.2.0",
   "requestedAt": "2026-09-20T20:00:00Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "sources": [],
   "observations": [],
   "evidence": [],
   "rankings": [],
+  "universe": [],
   "rankingMethodology": {"returnMethod": {"years": 10}},
   "valuationContext": {"basis": "ttm", "asOf": "2026-09-18", "observedAt": "2026-09-20T20:00:00Z", "companies": {}, "qqqMedianPE": {"value": null, "basis": "ttm", "status": "unavailable", "reason": "No verified median yet."}},
   "reviews": [],
@@ -123,3 +124,16 @@ Each company record contains `value`, `basis: "ttm"`, `status: "verified"`, `asO
 If exact holdings cannot be reconciled, a separately verified Nasdaq-100 median may be used only as `status: "proxy"`, `method: "nasdaq100-median-proxy"`, with the actual provider universe and limitations. The UI visibly labels it Nasdaq-100 proxy. An index aggregate, fund harmonic/weighted P/E, forward P/E or historical median must never be labeled as the current constituent median.
 
 The 09:30 expert slot refreshes these ratios from the latest completed trading session even when no podcast is new and no score changes. Prefer consistent dated provider data; reconcile materially conflicting reports, especially ADR/currency treatment. Wall Street Numbers supplies the initial company TTM multiples; ChartRow supplies the explicitly labeled Nasdaq-100 median proxy. FactSet required reauthentication at setup; do not repeatedly call an unauthorized provider. Keep market dates distinct from check dates and log access gaps in Research Runs. A timestamp-only recheck must not republish. Valuation snapshots are current state; immutable research and dated conviction reviews remain protected.
+
+
+## Schema 1.2.0: coverage universe, current P/E and weekly memory
+
+New publication candidates use 1.2.0. Versions 1.0.0 and 1.1.0 remain readable for immutable prior data; downgrade is prohibited.
+
+- `universe`: cumulative records with ticker, name, stage (unrated/scored/archived), immutable firstObservedAt, priority, nextQuestion and append-only sourceRefs. Each sourceRef has a stable id, safe public url and kind (source-thesis/inferred-readthrough/issuer-evidence); evidenceId, when present, must resolve. Every ranked company must have exactly one scored universe record. A registered lead has no numeric score. Archive rather than deleting coverage.
+- Each ranking additionally has `coreEligible`, `lastThesisReviewOn` and `returnAssumptions`. These model assumptions stay separate from quote refreshes. Use exported `currentPEScenarios(returnAssumptions, valuationContext.companies[ticker])` to generate returnScenarios. The validator requires exact derivation, ten-year arithmetic and complete case grids around rounded current TTM P/E minus 10 / center / plus 10. Omit nonpositive multiples. An unavailable positive P/E produces an empty scenario array; preserve the assumptions for later use. There is no common fixed 40/50/60 fallback.
+- The UI selects the rounded current multiple. This is a conditional TTM sensitivity, not a normalized expected-return forecast. The original source P/E retains its own date, precision and basis. Recompute the methodology's required-growth hurdles per ticker as anchors change.
+- Weekly reviews have `reviewType: weekly`, unique Sunday `logicalWeek`, actual review date/observedAt, full rankingSnapshot, full thesisSnapshots, valuationSnapshot, changes (possibly empty) and nextReviewOn. Event reviews have the same snapshot requirements without a weekly deduplication key. Old baseline reviews are retained without retroactive mutation. Configuration reviews are excluded from the graph and score-change calculation and cannot revise rankings/scores. Complete unchanged weekly reviews are real observations; quote-only updates are not.
+- All historical reviews and evidence remain immutable. Universe provenance and first-observed timestamps cannot be removed. Keeping failed and archived candidates avoids survivorship bias. The source task's admission and comparison judgment remains qualitative; the publishing validator checks integrity, not investment merit.
+
+Canonical Sheet mapping adds `Company Universe` Record JSON in G; read the complete tab with the existing research tabs and Settings before constructing a candidate. Keep the same one-candidate protected workflow and existing feeds, repositories, Sheet and task.

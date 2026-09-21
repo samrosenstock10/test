@@ -5,7 +5,7 @@ import { SOURCE_SHEET } from './ai-infrastructure-feed.mjs';
 
 export { SOURCE_SHEET };
 export const RESEARCH_FEED = 'buy-window/ai-infrastructure-research.json';
-const VERSIONS = new Set(['1.0.0', '1.1.0']);
+const VERSIONS = new Set(['1.0.0', '1.1.0', '1.2.0']);
 const ACCESS = new Set(['full-transcript', 'article', 'slides', 'notes-only', 'catalog-only']);
 const USABLE_ACCESS = new Set(['full-transcript', 'article', 'slides']);
 
@@ -122,6 +122,78 @@ function usableEvidence(item) {
 
 export function annualizedPriceReturn(scenario) {
   return ((1 + scenario.epsGrowthPct / 100) * (scenario.terminalMultiple / scenario.entryMultiple) ** (1 / (scenario.years ?? 5)) - 1) * 100;
+}
+
+// Quote refreshes change the sensitivity anchors, never the thesis assumptions.
+export function entryMultiples(pe) {
+  if (pe?.status !== 'verified' || !Number.isFinite(pe.value) || pe.value <= 0) return [];
+  const center = Math.round(pe.value);
+  if (center <= 0) return [];
+  return [center - 10, center, center + 10].filter(value => value > 0);
+}
+
+export function currentPEScenarios(cases, pe) {
+  return cases.flatMap(item => entryMultiples(pe).map(entryMultiple => {
+    const scenario = { ...item, years: 10, entryMultiple };
+    return { ...scenario, annualizedPriceReturnPct: Math.round(annualizedPriceReturn(scenario) * 10) / 10 };
+  }));
+}
+
+function validateUniverse(feed, ceiling, evidence) {
+  array(feed.universe, 'universe');
+  unique(feed.universe.map(row => row.ticker), 'universe_tickers');
+  for (const row of feed.universe) {
+    const path = `universe_${row.ticker}`;
+    invariant(/^[A-Z0-9][A-Z0-9.-]{0,11}$/.test(row.ticker), `${path}_ticker_invalid`);
+    text(row.name, `${path}_name`);
+    invariant(['scored', 'unrated', 'archived'].includes(row.stage), `${path}_stage_invalid`);
+    timestamp(row.firstObservedAt, `${path}_firstObservedAt`, ceiling);
+    text(row.nextQuestion, `${path}_nextQuestion`);
+    invariant(['high', 'normal', 'low'].includes(row.priority), `${path}_priority_invalid`);
+    array(row.sourceRefs, `${path}_sourceRefs`);
+    invariant(row.sourceRefs.length > 0, `${path}_missing_provenance`);
+    unique(row.sourceRefs.map(ref => ref.id), `${path}_sourceRefs`);
+    for (const ref of row.sourceRefs) {
+      text(ref.id, `${path}_ref_id`);
+      validatePublicUrl(ref.url, `${path}_ref_url`);
+      if (ref.evidenceId) invariant(evidence.has(ref.evidenceId), `${path}_unknown_evidence`);
+      invariant(['source-thesis', 'inferred-readthrough', 'issuer-evidence'].includes(ref.kind), `${path}_ref_kind_invalid`);
+    }
+    const ranked = feed.rankings.find(c => c.ticker === row.ticker);
+    invariant((row.stage === 'scored') === Boolean(ranked), `${path}_score_stage_mismatch`);
+  }
+  for (const row of feed.rankings) {
+    invariant(feed.universe.some(c => c.ticker === row.ticker), `ranking_${row.ticker}_missing_universe`);
+    invariant(typeof row.coreEligible === 'boolean', `ranking_${row.ticker}_core_eligibility_missing`);
+    date(row.lastThesisReviewOn, `ranking_${row.ticker}_lastThesisReviewOn`, ceiling);
+    const pe = feed.valuationContext.companies[row.ticker];
+    const expected = entryMultiples(pe);
+    array(row.returnAssumptions, `ranking_${row.ticker}_returnAssumptions`);
+    if (expected.length) invariant(equal(row.returnAssumptions.map(s=>s.case).sort(), ['base','bear','bull']), `ranking_${row.ticker}_return_assumptions_missing`);
+    invariant(equal(row.returnScenarios, currentPEScenarios(row.returnAssumptions, pe)), `ranking_${row.ticker}_derived_scenarios_mismatch`);
+    invariant(equal([...new Set(row.returnScenarios.map(s => s.entryMultiple))].sort((a,b)=>a-b), expected), `ranking_${row.ticker}_current_pe_anchor_mismatch`);
+    if (expected.length) {
+      for (const scenarioCase of ['bear', 'base', 'bull']) {
+        const cells = row.returnScenarios.filter(s => s.case === scenarioCase);
+        invariant(cells.length === expected.length && cells.every(s => s.epsGrowthPct === cells[0].epsGrowthPct && s.terminalMultiple === cells[0].terminalMultiple && s.assumptionNote === cells[0].assumptionNote), `ranking_${row.ticker}_sensitivity_assumptions_drift`);
+      }
+    }
+  }
+  const weeks = [];
+  for (const review of feed.reviews) {
+    if (review.reviewType === 'weekly') {
+      date(review.logicalWeek, `review_${review.id}_logicalWeek`, ceiling);
+      invariant(new Date(review.logicalWeek + 'T12:00:00Z').getUTCDay() === 0 && review.logicalWeek <= review.date, `review_${review.id}_logicalWeek_invalid`);
+      weeks.push(review.logicalWeek);
+    }
+    if (['weekly', 'event'].includes(review.reviewType)) {
+      array(review.thesisSnapshots, `review_${review.id}_thesisSnapshots`);
+      invariant(equal(snapshot(review.thesisSnapshots), snapshot(review.rankingSnapshot)), `review_${review.id}_thesis_snapshot_mismatch`);
+      for (const row of review.thesisSnapshots) validateRanking(row, `review_${review.id}_${row.ticker}`, evidence, ceiling);
+      validateValuationContext(review.valuationSnapshot, review.thesisSnapshots, ceiling);
+    }
+  }
+  unique(weeks, 'weekly_review');
 }
 
 function validateRanking(row, path, evidence, ceiling) {
@@ -328,16 +400,18 @@ export function validateResearchFeed(feed, { now = Date.now() } = {}) {
     invariant(row.rank === index + 1, 'rankings_not_contiguous_or_sorted');
     if (index > 0) invariant(feed.rankings[index - 1].thesisScore >= row.thesisScore, 'rankings_score_order_invalid');
   }
-  if (feed.schemaVersion === '1.1.0') {
+  if (feed.schemaVersion !== '1.0.0') {
     invariant(feed.rankings.every(row => row.returnScenarios.every(s => s.years === 10)), 'research_requires_ten_year_scenarios');
     invariant(feed.rankingMethodology?.returnMethod?.years === 10, 'research_return_method_years_invalid');
     validateValuationContext(feed.valuationContext, feed.rankings, ceiling);
   }
+  if (feed.schemaVersion === '1.2.0') validateUniverse(feed, ceiling, evidence);
   ids(feed.reviews, 'reviews');
   for (const [index, review] of feed.reviews.entries()) {
     validateReview(review, `review_${review.id}`, evidence, ceiling);
     if (index > 0) {
       invariant(Date.parse(review.observedAt) >= Date.parse(feed.reviews[index - 1].observedAt), 'reviews_not_chronological');
+      if (review.reviewType === 'configuration') invariant(review.changes.length === 0 && equal(review.rankingSnapshot, feed.reviews[index - 1].rankingSnapshot), 'configuration_cannot_change_scores');
       validateTransition(feed.reviews[index - 1].rankingSnapshot, review, `review_${review.id}`);
     }
   }
@@ -377,11 +451,17 @@ export function prepareResearchCandidate(candidate, existing = null, options = {
   validateResearchFeed(feed, options);
   if (existing) {
     validateResearchFeed(existing, options);
-    if (existing.schemaVersion === '1.1.0') invariant(feed.schemaVersion === '1.1.0', 'candidate_schema_downgrade_forbidden');
+    invariant([...VERSIONS].indexOf(feed.schemaVersion) >= [...VERSIONS].indexOf(existing.schemaVersion), 'candidate_schema_downgrade_forbidden');
     invariant(Date.parse(feed.updatedAt) >= Date.parse(existing.updatedAt), 'candidate_older_than_current');
     for (const field of ['sources', 'observations', 'evidence', 'reviews']) retainHistory(existing, feed, field);
+    for (const old of existing.universe || []) {
+      const next = feed.universe?.find(row => row.ticker === old.ticker);
+      invariant(next && next.firstObservedAt === old.firstObservedAt, `universe_history_removed:${old.ticker}`);
+      for (const ref of old.sourceRefs) invariant(next.sourceRefs.some(item => equal(ref, item)), `universe_provenance_removed:${old.ticker}`);
+    }
     invariant(equal(feed.reviews.slice(0, existing.reviews.length), existing.reviews), 'reviews_history_reordered');
     const firstNewReview = feed.reviews[existing.reviews.length];
+    if (feed.schemaVersion === '1.2.0') for (const review of feed.reviews.slice(existing.reviews.length)) invariant(['weekly','event','configuration'].includes(review.reviewType), 'new_review_type_required');
     if (firstNewReview) validateTransition(snapshot(existing.rankings), firstNewReview, 'candidate_first_review');
     else invariant(equal(snapshot(existing.rankings), snapshot(feed.rankings)), 'ranking_change_requires_new_review');
   }
