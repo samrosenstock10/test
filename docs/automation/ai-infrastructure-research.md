@@ -137,3 +137,13 @@ New publication candidates use 1.2.0. Versions 1.0.0 and 1.1.0 remain readable f
 - All historical reviews and evidence remain immutable. Universe provenance and first-observed timestamps cannot be removed. Keeping failed and archived candidates avoids survivorship bias. The source task's admission and comparison judgment remains qualitative; the publishing validator checks integrity, not investment merit.
 
 Canonical Sheet mapping adds `Company Universe` Record JSON in G; read the complete tab with the existing research tabs and Settings before constructing a candidate. Keep the same one-candidate protected workflow and existing feeds, repositories, Sheet and task.
+
+## Complete review storage without oversized cells
+
+New genuine weekly/event reviews use `Review Snapshots` in the same Sheet. A review with many company dossiers exceeds a single cell's text limit. Existing inline Ranking History records remain immutable and readable.
+
+- `Ranking History` A:F retains Review ID, Date, Status, Summary, Next review and Record JSON. For new weekly/event records, F holds all review metadata and `valuationSnapshot`, with `thesisSnapshotStorage: {"tab":"Review Snapshots","version":1,"count":N}` replacing only `thesisSnapshots`.
+- `Review Snapshots` A:F holds Review ID, Ticker, Rank, Thesis score, Review date and Record JSON. Each F record contains `{reviewId,ticker,rank,thesisScore,date,thesisSnapshot}` with the complete company record as reviewed then. The immutable key is `(reviewId,ticker)`. Append every scored company, including unchanged scores, once per genuine review.
+- Use `encodeReviewForSheet(review)` from `automation/ai-infrastructure-sheet-records.mjs` to prepare bounded cells. It refuses oversized records before writing. Write the history row and its snapshot rows together, then read back the complete exact ranges. Never reference a partially saved snapshot set.
+- Reconstruct all public reviews with `hydrateSheetReviews(historyRecords, snapshotRecords)`. Pass every Ranking History F object and every Review Snapshots F object, preserving inline old records. The helper rejects missing, duplicate, mismatched and orphan snapshots; it restores full `thesisSnapshots` and removes the storage marker from the public representation.
+- Validate the reconstructed full feed through the existing protected workflow. A storage change must never backfill hypothetical scores, rewrite old judgments or create an extra review. Keep the next regular Sunday date after a user-requested event review; the manual event does not claim a completed source scan or consume the future weekly review.
