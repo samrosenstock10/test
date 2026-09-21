@@ -2,6 +2,8 @@
 
 The existing Google Sheet is canonical for research and investment judgment. This additive feed publishes expert observations, public supporting evidence, a short company ranking, review history and coverage. It does not derive from, replace or modify either legacy thesis feed.
 
+D3 selectively brings Project Tracker Bottlenecks and resolved Claims into Evidence Register during the existing 09:30 expert slot. Follow [project-tracker-handoff.md](project-tracker-handoff.md) and its deterministic helper. Preserve provenance and immutable history; imported facts do not automatically alter conviction scores or count as independent corroboration.
+
 - Sheet: `https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit`
 - Production research feed: `buy-window/ai-infrastructure-research.json`
 - Existing combined feed: `buy-window/ai-infrastructure-theses.json`
