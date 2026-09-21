@@ -3019,6 +3019,80 @@
       "limitation": "Source-reported facts or claims; no implication of an independent stock endorsement.",
       "sourceDateLabel": "2026-09-21",
       "marketAsOf": "2026-09-21"
+    },
+    {
+      "id": "project-b-20260914-crusoe-mfgcap-001-d411a90f3327feac",
+      "title": "Crusoe expands Tulsa electrical-equipment manufacturing",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-opens-second-tulsa-factory-ai-infrastructure",
+      "kind": "project-bottleneck",
+      "independenceGroup": "crusoe",
+      "publishedDate": "2026-09-14",
+      "observedAt": "2026-09-21T22:17:55Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "Crusoe reports a second 400,000-square-foot Tulsa plant producing electrical equipment for AI data centers.",
+      "claim": "The company says its Tulsa operations employ over 300 craft workers and have delivered over 2,500 switchboards to Abilene.",
+      "interpretation": "Our inference: in-house supply could ease construction delays while shifting some equipment value capture toward integrated builders. This does not establish a public-company winner.",
+      "verification": "Read the official September 14 release. Factory, workforce and delivery figures are company disclosures; lead-time comparisons were not independently measured.",
+      "countercase": "Added floor space alone does not establish sustained output, margins or an industry-wide end to equipment shortages.",
+      "nextTest": "Check delivered output and dated third-party procurement lead times.",
+      "provenance": {
+        "tracker": "ai-project-tracker",
+        "finder": "ChatGPT AI Project Tracker",
+        "table": "Bottlenecks",
+        "sourceId": "B-20260914-CRUSOE-MFGCAP-001",
+        "sourceVersion": "d411a90f3327feacee83b880fd60208b6688f970e6e97eba2cd1e193d62377d4",
+        "projectIds": [
+          "P-20260914-CRUSOE-TULSA-MFG2"
+        ],
+        "originalSourceUrl": "https://www.crusoe.ai/resources/newsroom/crusoe-opens-second-tulsa-factory-ai-infrastructure",
+        "originalDate": "2026-09-14",
+        "originalClaim": "Crusoe opened a second 400,000-square-foot Tulsa factory to expand in-house production of switchgear, switchboards, controls and busbar that are directly required for AI data-center construction; the two Tulsa sites now employ more than 300 craft workers and have supplied more than 2,500 switchboards to the Abilene Stargate site.",
+        "originator": "Crusoe",
+        "sourceQuality": "5",
+        "notes": "Records an easing electrical-equipment manufacturing-capacity constraint through a live factory expansion. Crusoe's days-versus-months lead-time comparison is company-reported and not treated as an independently measured benchmark.",
+        "bottleneck": "Manufacturing Capacity",
+        "direction": "Easing"
+      },
+      "selectionReason": "Electrical equipment supply is a concrete AI construction constraint; in-house expansion informs supplier value-capture questions.",
+      "corroborationNote": "Reused Project Tracker evidence; the source and this handoff count once, not as independent corroboration."
+    },
+    {
+      "id": "project-b-20260903-qumulus-compute-001-81cdf6256a7e3c5d",
+      "title": "QumulusAI reports activated Blackwell capacity for Runpod",
+      "url": "https://www.qumulusai.com/articles/qumulusai-completes-deployment-of-all-616-nvidia-rtx-pro-6000-blackwell-gpus-for-runpod-weeks-ahead-of-schedule",
+      "kind": "project-bottleneck",
+      "independenceGroup": "qumulusai-runpod",
+      "publishedDate": "2026-09-03",
+      "observedAt": "2026-09-21T22:17:55Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "QumulusAI reports 616 RTX PRO 6000 Blackwell GPUs across 77 active nodes under reserved-capacity agreements with Runpod.",
+      "claim": "The issuer says activation finished in August 2026, before the September 1 target.",
+      "interpretation": "Our inference: the delivery supports a specific production-inference capacity expansion. It does not by itself establish NVIDIA earnings upside or durable demand across the market.",
+      "verification": "Read the official September 3 release, including its attributed Runpod comment. Both statements appear in one supplier release and are treated as one evidence origin.",
+      "countercase": "Reserved capacity and activation do not disclose realized utilization, customer profitability or returns on the hardware.",
+      "nextTest": "Look for dated utilization and realized customer economics after activation.",
+      "provenance": {
+        "tracker": "ai-project-tracker",
+        "finder": "ChatGPT AI Project Tracker",
+        "table": "Bottlenecks",
+        "sourceId": "B-20260903-QUMULUS-COMPUTE-001",
+        "sourceVersion": "81cdf6256a7e3c5d00de1bb84ddcdec72a2c7b5ca6a0a07beb95e8ba5ed63469",
+        "projectIds": [
+          "P-20260903-QUMULUSAI-RUNPOD-BLACKWELL"
+        ],
+        "originalSourceUrl": "https://www.qumulusai.com/articles/qumulusai-completes-deployment-of-all-616-nvidia-rtx-pro-6000-blackwell-gpus-for-runpod-weeks-ahead-of-schedule",
+        "originalDate": "2026-09-03",
+        "originalClaim": "QumulusAI activated all 616 contracted Blackwell GPUs across 77 nodes ahead of the Sept. 1 delivery target specifically to provide Runpod customers with additional production inference and agentic-workload capacity.",
+        "originator": "QumulusAI / Runpod",
+        "sourceQuality": "5",
+        "notes": "Compute is recorded as an easing gate because reserved accelerator capacity was delivered and activated. The disclosure does not establish utilization levels or imply that Runpod's broader compute demand is fully met.",
+        "bottleneck": "Compute",
+        "direction": "Easing"
+      },
+      "selectionReason": "Activated inference capacity is a deployment fact relevant to accelerator demand and the distinction between installed supply and utilization.",
+      "corroborationNote": "Reused Project Tracker evidence; the source and this handoff count once, not as independent corroboration."
     }
   ],
   "rankings": [
@@ -13294,5 +13368,5 @@
       "lastReviewedAt": "2026-09-21T01:34:53Z"
     }
   ],
-  "updatedAt": "2026-09-21T13:41:47.000Z"
+  "updatedAt": "2026-09-21T22:19:54Z"
 }
