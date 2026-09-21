@@ -1,0 +1,58 @@
+import type { Lesson } from "./lessons";
+
+export const lesson046 = {
+  number: 46,
+  module: "Module 4: Connecting Accelerators into a Cluster",
+  title: "Copper Versus Optical Links — How Distance Changes the Connection",
+  date: "2026-09-21",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 041: Compilers and kernels turn model code into hardware instructions, so software quality determines how much accelerator performance is actually usable.
+
+Lesson 042: A faster accelerator saves money only when shorter job time and higher utilization outweigh its higher hourly cost.
+
+Lesson 043: Scale-up links make a small accelerator group act like one machine, while scale-out networks connect many such groups.
+
+Lesson 044: Collective operations let accelerators exchange partial results, and slow communication can leave expensive compute units waiting.
+
+Lesson 045: Network interfaces inject data into the network, while switches choose its path, so both affect cluster speed and reliability.
+
+Copper Versus Optical Links — How Distance Changes the Connection
+
+The big idea
+
+Copper and optical links can carry the same nominal bit rate. The important difference is how far they can carry it with acceptable errors, power, density and cost.
+
+A short electrical cable may be the simplest connection inside a rack. Stretch the same connection across rows, and high-frequency signal loss can make equalization harder, increase errors or make the link impossible to qualify. Optical fiber moves the long-distance part of the path into light, but it requires conversion hardware at the ends.
+
+That makes media choice a physical design decision before it becomes a purchasing decision.
+
+1. What travels through copper?
+
+A copper link sends changing voltages and currents along conductors. The receiver must distinguish each symbol after the signal has been weakened and distorted by the cable, connectors and circuit-board traces.
+
+As lane rate and distance rise, several problems become harder:
+
+- Resistance and dielectric loss reduce high-frequency signal strength.
+- Nearby conductors create crosstalk.
+- Connectors and impedance changes reflect part of the signal.
+- Noise and temperature reduce the receiver's remaining margin.
+
+Transmitters use pre-emphasis, and receivers use equalization, to reconstruct the intended symbols. These techniques recover some margin, but they do not abolish physics.
+
+A passive direct-attach copper cable, or DAC, contains conductors and connectors without powered signal processing in the cable. It is short, inexpensive and low-power. An active copper cable adds electronics that condition the signal, buying more reach at the cost of power, heat and complexity.
+
+2. What travels through fiber?
+
+An optical link begins electrically at the network interface or switch. A transmitter converts the electrical data into modulated light, fiber guides that light, and a photodetector converts it back to an electrical signal at the far end.
+
+Fiber has much lower loss over useful data-center distances and does not suffer electrical crosstalk. It is also thinner and lighter than large bundles of high-speed copper. That helps when many links must pass through crowded racks and cable trays.
+
+But “fiber” is not just glass. The complete link may include lasers or optical modulators, photodetectors, control electronics, connectors and sometimes a digital signal processor. Those components consume power, generate heat and must be packaged and tested.
+
+An active optical cable, or AOC, permanently joins the optical ends to the fiber. Pluggable transceivers use removable optical modules and separate fiber. AOCs can simplify installation; pluggables can make module or fiber replacement easier. Neither form is automatically best.
+
+3. Distance changes the answer
+
+Imagine two 400 Gb/s links: one over a short DAC and one over optical fiber. Their advertised line rate is identical. Fiber has not made the bits intrinsically faster.
+
