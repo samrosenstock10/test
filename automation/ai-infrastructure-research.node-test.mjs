@@ -4,7 +4,7 @@ import { mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { SOURCE_SHEET, annualizedPriceReturn, prepareResearchCandidate, validateResearchFeed, validatePublicUrl } from './ai-infrastructure-research.mjs';
+import { SOURCE_SHEET, annualizedPriceReturn, entryMultiples, currentPEScenarios, prepareResearchCandidate, validateResearchFeed, validatePublicUrl } from './ai-infrastructure-research.mjs';
 
 const now = Date.parse('2026-09-20T23:59:59Z');
 const options = { now };
@@ -203,6 +203,44 @@ function tenYearCandidate() {
   value.valuationContext = { basis: 'ttm', asOf: '2026-09-18', observedAt, companies: { NVDA: pe }, qqqMedianPE: { ...pe, value: 31.5, status: 'proxy', sourceUrl: 'https://chartrow.com/nasdaq-100/pe-ratio', provider: 'ChartRow', method: 'nasdaq100-median-proxy', universe: 'Tracked Nasdaq-100 members', notes: 'Explicitly labeled proxy, not an exact QQQ holding median.' } };
   return value;
 }
+
+function universeCandidate() {
+  const value=tenYearCandidate();value.schemaVersion='1.2.0';
+  const row=value.rankings[0];row.coreEligible=true;row.lastThesisReviewOn='2026-09-20';
+  row.returnAssumptions=structuredClone(row.returnScenarios);
+  row.returnScenarios=currentPEScenarios(row.returnAssumptions,value.valuationContext.companies.NVDA);
+  value.universe=[{ticker:'NVDA',name:'NVIDIA',stage:'scored',firstObservedAt:observedAt,priority:'normal',nextQuestion:'Do independent customers confirm the system economics?',sourceRefs:[{id:'financial-1',evidenceId:'financial-1',kind:'issuer-evidence',url:'https://investor.nvidia.com/results'}]}, {ticker:'ANET',name:'Arista',stage:'unrated',firstObservedAt:observedAt,priority:'high',nextQuestion:'Does the networking profit mechanism persist?',sourceRefs:[{id:'lead',kind:'inferred-readthrough',url:'https://www.latent.space/p/operator'}]}];
+  return value;
+}
+
+test('current P/E anchors round per company and never invent invalid or unavailable options',()=>{
+  assert.deepEqual(entryMultiples({status:'verified',value:45.65}),[36,46,56]);
+  assert.deepEqual(entryMultiples({status:'verified',value:8.4}),[8,18]);
+  assert.deepEqual(entryMultiples({status:'unavailable',value:null}),[]);
+  const value=universeCandidate();const built=prepareResearchCandidate(value,null,options).feed;
+  assert.deepEqual([...new Set(built.rankings[0].returnScenarios.map(s=>s.entryMultiple))],[18,28,38]);
+  value.valuationContext.companies.NVDA.value=32;
+  assert.throws(()=>prepareResearchCandidate(value,null,options),/derived_scenarios_mismatch|current_pe_anchor_mismatch/);
+});
+
+test('unscored research stays separate and coverage provenance survives future candidates',()=>{
+  const value=universeCandidate(), existing=prepareResearchCandidate(value,null,options).feed;
+  const bad=structuredClone(value);bad.universe[1].stage='scored';
+  assert.throws(()=>prepareResearchCandidate(bad,existing,options),/score_stage_mismatch/);
+  const removed=structuredClone(value);removed.universe.pop();
+  assert.throws(()=>prepareResearchCandidate(removed,existing,options),/universe_history_removed/);
+  const noPE=structuredClone(value);noPE.valuationContext.companies.NVDA={value:null,basis:'ttm',status:'unavailable',reason:'Earnings are negative.'};noPE.rankings[0].returnScenarios=[];
+  assert.equal(prepareResearchCandidate(noPE,existing,options).changed,true);
+});
+
+test('weekly reviews preserve full thesis snapshots and reject duplicate logical weeks',()=>{
+  const value=universeCandidate();value.requestedAt='2026-09-28T12:00:00Z';
+  const weekly={...structuredClone(value.reviews[0]),id:'weekly-20260927',reviewType:'weekly',logicalWeek:'2026-09-27',date:'2026-09-27',observedAt:'2026-09-27T12:00:00Z',nextReviewOn:'2026-10-04',thesisSnapshots:structuredClone(value.rankings),valuationSnapshot:structuredClone(value.valuationContext)};
+  value.reviews.push(weekly);
+  assert.equal(prepareResearchCandidate(value,null,{now:Date.parse(value.requestedAt)}).changed,true);
+  value.reviews.push({...structuredClone(weekly),id:'duplicate'});
+  assert.throws(()=>prepareResearchCandidate(value,null,{now:Date.parse(value.requestedAt)}),/weekly_review_duplicate/);
+});
 
 test('ten-year migration changes arithmetic while preserving existing five-year history', () => {
   const next = tenYearCandidate();
