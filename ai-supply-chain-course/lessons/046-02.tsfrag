@@ -1,0 +1,48 @@
+The choice changes because the optical link can preserve adequate signal quality over a longer path. NVIDIA's current LinkX documentation spans passive and active copper, active optical cables and transceivers, with offered lengths from 0.5 meters to 10 kilometers. That range does not mean every product supports every distance. It shows why “400G” alone is not enough information: the exact media, form factor and qualified reach matter.
+
+At short reach, passive copper often wins on simplicity and power. As distance, lane rate or port density rises, the copper loss budget can run out. Active copper may extend the boundary. Beyond that, optics becomes the practical way to keep the same logical link rate.
+
+Engineers therefore qualify a complete channel, not merely a cable. They include board traces, cages, connectors, bends, temperature and the transmitter and receiver at both ends.
+
+4. A quantitative choice
+
+Answer before reading: A cluster needs 64 links, each rated at 400 Gb/s, between racks 18 meters apart. The approved passive copper cable reaches 3 meters. An approved AOC reaches 30 meters and, for this planning exercise, consumes 12 watts per cable. What media works, what aggregate line rate remains, and how much cable power is added?
+
+The 18-meter path is longer than the approved 3-meter copper reach, so the passive DAC does not work. The 30-meter AOC does.
+
+Aggregate line rate:
+
+64 × 400 Gb/s = 25,600 Gb/s = 25.6 Tb/s.
+
+Cable power:
+
+64 × 12 W = 768 W = 0.768 kW.
+
+Annual energy if continuously powered:
+
+0.768 kW × 8,760 hours = 6,728 kWh per year.
+
+The key result is that optical media adds reach, not line rate. The cluster still has 25.6 Tb/s of nominal capacity. It accepts 768 watts of cable power because the physical layout cannot be closed with the approved passive copper option.
+
+These are illustrative planning assumptions, not specifications for every product. In a real design, use vendor-qualified reach and measured power for the exact cable, transceiver, switch and network-interface combination.
+
+5. How to test the diagnosis
+
+Suppose long links show rising bit errors, retraining or intermittent loss of link as temperature increases.
+
+A useful test is to hold ports, protocol, routing and workload constant, then replace the suspect electrical channel with a qualified optical one. If link errors and retries fall while application throughput rises, signal reach was probably constraining useful bandwidth.
+
+If the link becomes clean but the job does not speed up, the limiting factor is elsewhere—perhaps collective scheduling, switch contention, software or computation. Clean signaling is necessary, but it cannot fix a different bottleneck.
+
+Propagation time over tens of meters is also rarely the main distinction. Serialization, switching, queuing and synchronization can dominate. Choose optics for signal integrity and reach, not because light is a magic latency shortcut.
+
+6. Supply-chain implications
+
+Copper links depend on high-quality conductors, shielding, connectors and precise cable assembly. Optical links add lasers or modulators, photodetectors, optical packaging, fiber, connectors and more specialized testing.
+
+A cluster builder must secure not only enough switches and network interfaces, but also the exact qualified cable or transceiver mix. A shortage of a small optical module can strand an otherwise complete rack. Conversely, choosing optics everywhere can add cost and power where short passive copper would have worked.
+
+The best architecture usually uses each medium where its physics is strongest: short electrical paths where possible, optical paths where reach and density require them.
+
+Remember
+
