@@ -6,6 +6,8 @@ on:
       - 'buy-window/ai-infrastructure-research.json'
       - 'automation/ai-infrastructure-research.mjs'
       - 'automation/ai-infrastructure-research.node-test.mjs'
+      - 'automation/ai-infrastructure-sheet-records.mjs'
+      - 'automation/ai-infrastructure-sheet-records.node-test.mjs'
       - 'docs/automation/ai-infrastructure-research.md'
       - '.github/workflows/verify-ai-infrastructure-research.yml'
       - '.github/workflows/accept-ai-infrastructure-research.yml'
@@ -15,6 +17,8 @@ on:
       - 'buy-window/ai-infrastructure-research.json'
       - 'automation/ai-infrastructure-research.mjs'
       - 'automation/ai-infrastructure-research.node-test.mjs'
+      - 'automation/ai-infrastructure-sheet-records.mjs'
+      - 'automation/ai-infrastructure-sheet-records.node-test.mjs'
       - 'docs/automation/ai-infrastructure-research.md'
       - '.github/workflows/verify-ai-infrastructure-research.yml'
       - '.github/workflows/accept-ai-infrastructure-research.yml'
@@ -35,7 +39,7 @@ jobs:
         with:
           node-version: '24'
       - name: Run research contract tests
-        run: node --test automation/ai-infrastructure-research.node-test.mjs
+        run: node --test automation/ai-infrastructure-research.node-test.mjs automation/ai-infrastructure-sheet-records.node-test.mjs
       - name: Validate current research feed or confirm pre-bootstrap state
         shell: bash
         run: |
