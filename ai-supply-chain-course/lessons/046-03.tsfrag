@@ -1,0 +1,18 @@
+- Copper carries electrical signals; fiber carries light between electrical endpoints.
+- Higher lane rates make copper loss and crosstalk harder to manage.
+- Passive copper is attractive at short reach because it is simple and low-power.
+- Optics extends reach and improves cable density, but adds conversion components, power and cost.
+- Compare qualified reach, errors, power and serviceability—not just the headline bit rate.
+
+Sources
+
+- NVIDIA, ConnectX-7 Adapter Card User Manual, updated August 12, 2026: https://networking-docs.nvidia.com/connectx7hw
+- NVIDIA, LinkX Cables and Transceivers: https://www.nvidia.com/en-us/networking/interconnect/
+- NVIDIA, DGX H100/H200 User Guide: https://docs.nvidia.com/dgx/dgxh100-user-guide/introduction-to-dgxh100.html
+
+Next lesson
+
+Lesson 047: Reliability and Synchronization — Why One Slow Component Can Stall the Cluster
+
+We will see how link errors, retries, stragglers and barriers turn small hardware problems into lost time across the whole cluster.`,
+} satisfies Lesson;
