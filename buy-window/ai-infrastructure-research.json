@@ -1550,6 +1550,69 @@
       "verification": "Relevant v1 paper sections read; experiments not reproduced, lecture not watched, later versions not reviewed.",
       "freshness": "historical-baseline",
       "itemId": "gpumode-lecture69-quartet-v1"
+    },
+    {
+      "id": "expert-20260921-noam-multiagent-compute",
+      "channel": "dwarkesh",
+      "sourceId": "dwarkesh",
+      "title": "Multi-agent systems trade more compute for lower latency",
+      "sourceTitle": "Noam Brown – Agent swarms, alignment, & recursive self-improvement",
+      "url": "https://www.dwarkesh.com/p/noam-brown",
+      "speaker": "Noam Brown",
+      "role": "OpenAI researcher and foundational reasoning-model contributor, as identified by the episode",
+      "publishedDate": "2026-09-17",
+      "observedAt": "2026-09-21T13:39:26Z",
+      "contentAccess": "full-transcript",
+      "independenceGroup": "OpenAI",
+      "summary": "Brown says multi-agent inference parallelizes test-time compute: in published tests, four agents can finish some tasks about twice as fast while costing about twice as much, with a similar but slightly less efficient pattern at sixteen agents.",
+      "claim": "An OpenAI researcher describes a direct latency-for-compute trade: more parallel agents can shorten completion time while increasing total inference cost. He also says the 10,000-agent Navier–Stokes run is only one data point and lacks a rigorous scaling ablation.",
+      "interpretation": "Our interpretation: useful agent workloads may consume substantially more inference compute when latency has economic value, but the demand read-through is broad and does not identify a winning accelerator or cloud.",
+      "beneficiaryTickers": [
+        "NVDA",
+        "GOOGL",
+        "AMD",
+        "CRWV"
+      ],
+      "countercase": "The economics are workload-dependent, parallel efficiency is sublinear, and OpenAI has not established that 10,000 agents were cost-optimal. Better models or orchestration could reduce compute per result.",
+      "nextTest": "Seek published cost, quality and wall-clock curves beyond sixteen agents plus production customer evidence showing that the faster answer is worth the added inference spend.",
+      "evidenceType": "firsthand-operator-claim",
+      "status": "evidence",
+      "location": "Transcript section 00:00:00–00:15:28, especially the discussion of four, sixteen and 10,000 agents",
+      "incentives": "OpenAI benefits from demand for its models and high-compute inference modes.",
+      "verification": "Relevant full-transcript passages were read. Claims were not independently reproduced; the result shares an origin with OpenAI's own product and research announcements.",
+      "freshness": "recent-episode",
+      "itemId": "dwarkesh-noam-brown-20260917"
+    },
+    {
+      "id": "expert-20260921-socher-kernel-automation",
+      "channel": "latent-space",
+      "sourceId": "latent-space",
+      "title": "AI may automate GPU-kernel optimization and lower inference cost",
+      "sourceTitle": "Humanity’s Last Invention — Richard Socher of Recursive",
+      "url": "https://www.latent.space/p/recursive",
+      "speaker": "Richard Socher",
+      "role": "Founder of Recursive and You.com; founder of AIX Ventures, as identified by the episode",
+      "publishedDate": "2026-09-14",
+      "observedAt": "2026-09-21T13:39:26Z",
+      "contentAccess": "full-transcript",
+      "independenceGroup": "Recursive",
+      "summary": "Socher says Recursive's system found improvements to NVIDIA GPU kernels without a team of deep CUDA specialists and that the company is prioritizing AI-for-AI work on training and inference efficiency.",
+      "claim": "A founder reports that an automated research system beat most entries in a GPU-kernel benchmark and can search for training and inference efficiencies.",
+      "interpretation": "Our interpretation: automated optimization can increase useful work per accelerator and reduce reliance on scarce kernel experts. This can expand viable workloads while also lowering hardware required per fixed task.",
+      "beneficiaryTickers": [
+        "NVDA",
+        "AMD",
+        "GOOGL"
+      ],
+      "countercase": "This is a company-reported benchmark, not an audited end-to-end workload result. No quality-matched TCO, production deployment or independent reproduction was reviewed, and the techniques may transfer across hardware vendors.",
+      "nextTest": "Review the released benchmark artifacts when available and seek independent end-to-end training or inference results under production load, not isolated-kernel wins.",
+      "evidenceType": "firsthand-founder-claim",
+      "status": "evidence",
+      "location": "Transcript sections 00:42:40–00:49:14 and 01:00:40–01:05:10",
+      "incentives": "Socher is promoting Recursive's research system and benefits from investor, customer and recruiting interest.",
+      "verification": "Relevant full-transcript passages were read. The underlying benchmark, code and production economics were not independently reviewed or reproduced.",
+      "freshness": "recent-episode",
+      "itemId": "latent-recursive-20260914"
     }
   ],
   "evidence": [
@@ -12011,42 +12074,27 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-09-21T01:34:53Z",
-    "kind": "manual-covered-universe-underwriting",
-    "completedChannels": [],
-    "partialChannels": [
-      "information-bottleneck",
+    "asOf": "2026-09-21T13:39:26Z",
+    "kind": "daily-expert-scan",
+    "completedChannels": [
       "latent-space",
       "ocp",
       "dwarkesh",
       "gpu-mode"
     ],
+    "partialChannels": [
+      "information-bottleneck"
+    ],
     "unavailableChannels": [],
     "limitations": [
-      "Prior baseline scope: The Information Bottleneck: official episode notes and chapters read, but no full transcript or audio reviewed. Its observation is a lead and cannot justify a conviction change.",
-      "Prior baseline scope: OCP: official session catalog read; linked slides and recordings were not reviewed. The session is a research lead, not evidence of deployment or market share.",
-      "Prior baseline scope: GPU MODE: Lecture 69's linked Quartet paper v1 was read in relevant sections. This is a May 2025 historical baseline; neither the lecture recording nor newer paper versions were reviewed.",
-      "Prior baseline scope: Latent Space and Dwarkesh: full transcript pages were available and relevant passages were read. Speakers' operational claims are correctly attributed but not independently measured.",
-      "Prior baseline scope: This seed contains no current valuation work, financial model revisions, procurement verification, complete HBM/packaging survey, or confidence-score changes.",
-      "This event reviewed the 14 unscored companies using historical notes plus primary financial/customer evidence. It was not a new full podcast-channel scan. Source access and dated accounting limitations are retained in the records."
-    ],
-    "reviewedTickers": [
-      "ANET",
-      "AMD",
-      "MRVL",
-      "000660.KS",
-      "MU",
-      "VRT",
-      "GEV",
-      "CAT",
-      "CMI",
-      "BE",
-      "GOOGL",
-      "META",
-      "SPCX",
-      "CRWV"
-    ],
-    "priorBaselineAsOf": "2026-09-20T20:54:35Z"
+      "The Information Bottleneck archive was checked through September 16. Official notes and chapters were available for the September 15–16 episodes, but no full transcript or audio was reviewed; efficiency-related items remain leads and were not admitted as evidence.",
+      "Latent Space's feed was checked through September 19. Aggregation-only AINews items were not treated as independent evidence; relevant sections of the September 14 Richard Socher transcript were read.",
+      "OCP's official blog was current through September 1 with no newer substantive technical publication. Catalog-only sessions remain leads until their primary slides or recordings are reviewed.",
+      "Dwarkesh's feed was checked through September 17 and relevant sections of the Noam Brown transcript were read. The claims remain attributable to OpenAI and the 10,000-agent result lacks a scaling ablation.",
+      "GPU MODE's latest repository commit remains the September 9 Lecture 114 addition; no newer primary artifact was found.",
+      "All ranked-company trailing P/E records and the labeled Nasdaq-100 median proxy already carry the latest completed market session, September 18. Same-session rechecks did not change valuation state.",
+      "No weekly conviction review was performed. The next regular logical week is September 27; scores, ranks and return assumptions were unchanged."
+    ]
   },
   "universe": [
     {
@@ -12963,6 +13011,22 @@
           "kind": "issuer-evidence",
           "publishedDate": "2026-05-06",
           "url": "https://www.anthropic.com/news/higher-limits-spacex"
+        },
+        {
+          "id": "expert-20260921-noam-multiagent-compute",
+          "sourceId": "dwarkesh",
+          "evidenceId": "expert-20260921-noam-multiagent-compute",
+          "kind": "inferred-readthrough",
+          "publishedDate": "2026-09-17",
+          "url": "https://www.dwarkesh.com/p/noam-brown"
+        },
+        {
+          "id": "expert-20260921-socher-kernel-automation",
+          "sourceId": "latent-space",
+          "evidenceId": "expert-20260921-socher-kernel-automation",
+          "kind": "inferred-readthrough",
+          "publishedDate": "2026-09-14",
+          "url": "https://www.latent.space/p/recursive"
         }
       ],
       "aliases": [],
@@ -13230,5 +13294,5 @@
       "lastReviewedAt": "2026-09-21T01:34:53Z"
     }
   ],
-  "updatedAt": "2026-09-21T01:34:53Z"
+  "updatedAt": "2026-09-21T13:41:47.000Z"
 }
