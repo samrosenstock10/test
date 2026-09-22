@@ -1,0 +1,57 @@
+import type { Lesson } from "./lessons";
+
+export const lesson047 = {
+  number: 47,
+  module: "Module 4: Connecting Accelerators into a Cluster",
+  title: "Reliability and Synchronization — Why One Slow Component Can Stall the Cluster",
+  date: "2026-09-22",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 042: A faster accelerator lowers cost only when the time it saves is worth more than its higher hourly price.
+
+Lesson 043: Scale-up links join nearby accelerators tightly, while scale-out networks connect many servers and racks into a larger cluster.
+
+Lesson 044: Collective operations combine data from many accelerators, so one delayed participant can make the whole group wait.
+
+Lesson 045: Network interfaces move data into and out of servers, while switches choose paths and can create shared bottlenecks.
+
+Lesson 046: Copper is simple for short connections, while optical links trade added power and components for longer reach and easier cable density.
+
+The big idea
+
+A synchronized cluster advances at the pace of the slowest required participant.
+
+That participant may be a slow accelerator, a congested link, a stalled software process or a failed server. Even when 1,023 accelerators are healthy, a job that requires all 1,024 may stop making useful progress.
+
+Reliability therefore means more than keeping individual parts alive. The system must detect problems, identify the affected participant, preserve completed work and restore a consistent group quickly.
+
+Where we are
+
+Compute on each accelerator → exchange partial results → wait for the required group → update the model → begin the next step.
+
+The waiting point connects hardware reliability to software synchronization.
+
+1. Why synchronization magnifies a small delay
+
+In synchronous training, each worker processes part of a batch and produces partial results such as gradients. A collective operation combines those results so every worker can apply a consistent model update.
+
+The collective acts like an implicit barrier: a worker cannot safely move into the next step using a result that the group has not finished producing.
+
+Suppose most workers finish their local computation in 900 milliseconds, but one takes 1,100 milliseconds. The step does not finish in 900 milliseconds. The other workers may spend roughly 200 milliseconds waiting, even though nothing is physically wrong with them.
+
+That slow worker is called a straggler. Causes include uneven work, a thermal slowdown, memory pressure, operating-system interruption, link retries, congestion or a software process that briefly stalls.
+
+Average component speed is therefore not enough. Tail latency—the time taken by the slowest required participants—can determine job throughput.
+
+2. A slowdown, a hang and a failure are different
+
+A slowdown still makes progress, just later than expected. The system should measure per-rank compute and communication time to locate the outlier.
+
+A hang makes no visible progress. One rank may call a different collective, use a mismatched tensor size, wait on another software layer or lose communication. Other ranks can then wait indefinitely unless a timeout or monitoring system exposes the problem.
+
+PyTorch's monitored barrier is designed to report which rank failed to acknowledge a synchronization point before a timeout. NVIDIA's NCCL reliability, availability and serviceability subsystem exchanges health information and keep-alive messages, helping operators detect unresponsive processes during a running job.
+
+A hard failure removes a participant: a process crashes, a GPU becomes unavailable, a server powers off or a network path is lost. The current collective group may no longer be valid. Recovery can require aborting communication, replacing the worker, rebuilding the group and loading a checkpoint.
+
+Detection, diagnosis and recovery are separate jobs. Fast detection does not restore lost model state, and redundant links do not replace a failed worker process.
+
