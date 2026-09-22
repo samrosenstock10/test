@@ -1,7 +1,18 @@
 {
-  "updatedAt": "2026-09-20T11:34:14Z",
+  "updatedAt": "2026-09-22T11:32:18Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "rows": [
+    {
+      "loggedDate": "2026-09-22",
+      "sourceDate": "2026-09-21",
+      "company": "TeRAM / private",
+      "bullishness": 4,
+      "summary": "TeRAM’s 3D-SRAM thesis materially strengthens at 4/5 because SemiAnalysis has now publicly argued that decode-expert workloads can gain dramatically from SRAM-resident weights and that fast, large 3D memory will be decisive for long-context inference efficiency—technical support that closely matches the architecture SemiAnalysis Capital recently backed.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/computation-and-data-movement-for",
+        "https://teram.com/teram-press-release/"
+      ]
+    },
     {
       "loggedDate": "2026-09-20",
       "sourceDate": "2026-09-18",
@@ -11,16 +22,6 @@
       "sourceUrls": [
         "https://ceointerviews.ai/interview/1972570/",
         "https://newsletter.semianalysis.com/p/meta-compute-200b-superintelligence"
-      ]
-    },
-    {
-      "loggedDate": "2026-09-17",
-      "sourceDate": "2026-09-14",
-      "company": "TeRAM / private",
-      "bullishness": 4,
-      "summary": "SemiAnalysis Capital’s decision to co-lead TeRAM’s $37M seed is a high-conviction bet that inference’s memory-bandwidth and power wall can support a new 3D SRAM memory layer integrated directly onto AI compute chips rather than relying only on larger HBM stacks.",
-      "sourceUrls": [
-        "https://teram.com/teram-press-release/"
       ]
     },
     {
@@ -81,7 +82,7 @@
         "https://newsletter.semianalysis.com/p/what-is-so-hard-about-behind-the",
         "https://newsletter.semianalysis.com/p/us-grid-constraints-towards-40gw",
         "https://www.linkedin.com/company/semianalysis",
-        "https://www.linkedin.com/posts/semianalysis_massive-delay_alert-to-oracles-stargate-activity-7484079629503246336-0llI"
+        "https://www.linkedin.com/posts/semianalysis_massive-delay-alert-to-oracles-stargate-activity-7484079629503246336-0llI"
       ]
     },
     {
