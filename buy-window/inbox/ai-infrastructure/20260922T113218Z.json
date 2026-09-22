@@ -119,8 +119,8 @@
           ]
         },
         {
-          "loggedDate": "46227",
-          "sourceDate": "46227",
+          "loggedDate": "2026-07-24",
+          "sourceDate": "2026-07-24",
           "company": "ASML Holding / ASML",
           "bullishness": 4,
           "summary": "ASML is entering a stronger multiyear wafer-fab-equipment upcycle, with improving visibility, pricing and installed-base economics creating upside to consensus revenue and likely long-term guidance.",
@@ -129,8 +129,8 @@
           ]
         },
         {
-          "loggedDate": "46225",
-          "sourceDate": "46225",
+          "loggedDate": "2026-07-22",
+          "sourceDate": "2026-07-22",
           "company": "Meta Platforms / META",
           "bullishness": 4,
           "summary": "Meta still has unusual advantages in data, talent, compute and distribution, but infrastructure politics and repeated hardware co-design failures materially reduce confidence that its enormous capex will translate efficiently into frontier-model and external-compute returns.",
@@ -176,8 +176,8 @@
           ]
         },
         {
-          "loggedDate": "46213",
-          "sourceDate": "46093",
+          "loggedDate": "2026-07-10",
+          "sourceDate": "2026-03-12",
           "company": "TSMC / TSM",
           "bullishness": 5,
           "summary": "TSMC’s advanced-node capacity is becoming the central AI-silicon bottleneck, supporting exceptional utilization, customer dependence and pricing power.",
