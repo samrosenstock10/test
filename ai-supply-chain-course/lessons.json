@@ -466,7 +466,19 @@
         "lessons/046-02.tsfrag",
         "lessons/046-03.tsfrag"
       ]
+    },
+    {
+      "number": 47,
+      "module": "Module 4: Connecting Accelerators into a Cluster",
+      "title": "Reliability and Synchronization — Why One Slow Component Can Stall the Cluster",
+      "date": "2026-09-22",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/047-01.tsfrag",
+        "lessons/047-02.tsfrag",
+        "lessons/047-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-21T11:06:44.210Z"
+  "updatedAt": "2026-09-22T11:03:52.209Z"
 }
