@@ -1613,6 +1613,33 @@
       "verification": "Relevant full-transcript passages were read. The underlying benchmark, code and production economics were not independently reviewed or reproduced.",
       "freshness": "recent-episode",
       "itemId": "latent-recursive-20260914"
+    },
+    {
+      "id": "expert-20260923-ocp-prototype-lineup-lead",
+      "channel": "ocp",
+      "sourceId": "ocp",
+      "title": "OCP prototype lineup broadens the full-stack infrastructure research queue",
+      "sourceTitle": "OCP Global Summit 2026: Innovation Village & Future Technologies Symposium (FTS) Demo Lineup",
+      "url": "https://www.opencompute.org/blog/ocp-global-summit-2026-innovation-village-and-future-technologies-symposium-fts-demo-lineup",
+      "speaker": "Rob Coyle",
+      "role": "OCP blog author",
+      "publishedDate": "2026-09-22",
+      "observedAt": "2026-09-23T12:41:07Z",
+      "contentAccess": "article",
+      "independenceGroup": "open-compute-project-community",
+      "summary": "OCP's official summit catalog lists working prototypes and live demonstrations across liquid cooling, power delivery, interconnects, chiplets, optical circuit switching and data-center robotics.",
+      "claim": "The source verifies the announced demo lineup and vendor-described prototype scope; it does not establish technical performance, customer adoption, supplier selection or economics.",
+      "interpretation": "Our lead: full-stack AI-infrastructure innovation is extending beyond accelerators, but direct technical artifacts and customer evidence are required before mapping investable beneficiaries.",
+      "beneficiaryTickers": [],
+      "countercase": "Event catalogs are promotional, demonstrations may not translate into production deployments, and the lineup does not compare vendors on normalized performance or cost.",
+      "nextTest": "Review primary demo artifacts and measured results for the most material cooling, interconnect and power prototypes, then seek independent operator adoption evidence.",
+      "evidenceType": "event-catalog-lead",
+      "status": "lead",
+      "location": "Official OCP blog sections: FTS Cooling, Interconnect, Power, DC Automation, IT Infra, Open Chiplet Economy and Optical Circuit Switching",
+      "incentives": "OCP and participating vendors benefit from summit attendance, ecosystem visibility and adoption of their proposed technologies.",
+      "verification": "The complete official OCP catalog article was read. Linked demonstrations were not observed, vendor claims were not independently tested, and no procurement evidence was reviewed.",
+      "freshness": "recent-official-catalog",
+      "itemId": "ocp-global-summit-2026-demo-lineup"
     }
   ],
   "evidence": [
@@ -12148,26 +12175,24 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-09-21T13:39:26Z",
-    "kind": "daily-expert-scan",
+    "asOf": "2026-09-23T12:41:07Z",
+    "kind": "builder-engineering-scan",
     "completedChannels": [
+      "information-bottleneck",
       "latent-space",
       "ocp",
       "dwarkesh",
       "gpu-mode"
     ],
-    "partialChannels": [
-      "information-bottleneck"
-    ],
+    "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "The Information Bottleneck archive was checked through September 16. Official notes and chapters were available for the September 15–16 episodes, but no full transcript or audio was reviewed; efficiency-related items remain leads and were not admitted as evidence.",
-      "Latent Space's feed was checked through September 19. Aggregation-only AINews items were not treated as independent evidence; relevant sections of the September 14 Richard Socher transcript were read.",
-      "OCP's official blog was current through September 1 with no newer substantive technical publication. Catalog-only sessions remain leads until their primary slides or recordings are reviewed.",
-      "Dwarkesh's feed was checked through September 17 and relevant sections of the Noam Brown transcript were read. The claims remain attributable to OpenAI and the 10,000-agent result lacks a scaling ablation.",
-      "GPU MODE's latest repository commit remains the September 9 Lecture 114 addition; no newer primary artifact was found.",
-      "All ranked-company trailing P/E records and the labeled Nasdaq-100 median proxy already carry the latest completed market session, September 18. Same-session rechecks did not change valuation state.",
-      "No weekly conviction review was performed. The next regular logical week is September 27; scores, ranks and return assumptions were unchanged."
+      "The Information Bottleneck official archive was checked through September 21; its newest item concerned medical AI and no new infrastructure episode required deeper review.",
+      "Latent Space's official archive/search surfaces exposed no new qualifying infrastructure item after the prior completed scan; aggregation-only items were not treated as independent evidence.",
+      "OCP's September 22 summit demo lineup was read in full. It is an event catalog, so the new record remains a lead; linked demonstrations and performance claims were not independently reviewed.",
+      "Dwarkesh's official feed showed no new infrastructure episode after the prior completed scan.",
+      "GPU MODE's lectures repository remained at the September 9 Lecture 114 update; no newer primary artifact was found.",
+      "This 08:30 engineering cycle did not perform the separately scheduled 09:30 valuation refresh or weekly conviction review."
     ]
   },
   "universe": [
@@ -13368,5 +13393,5 @@
       "lastReviewedAt": "2026-09-21T01:34:53Z"
     }
   ],
-  "updatedAt": "2026-09-21T22:19:54Z"
+  "updatedAt": "2026-09-23T12:45:08Z"
 }
