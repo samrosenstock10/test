@@ -1,0 +1,81 @@
+import type { Lesson } from "./lessons";
+
+export const lesson048 = {
+  number: 48,
+  module: "Module 4: Connecting Accelerators into a Cluster",
+  title: "Cluster Scaling Case — When Do More Accelerators Stop Helping?",
+  date: "2026-09-23",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 043: Scale-up links connect nearby accelerators tightly, while scale-out networks connect many systems so one job can use more chips.
+
+Lesson 044: Collective operations combine results from many accelerators, so communication time and the slowest worker can limit the whole job.
+
+Lesson 045: Network interfaces move data between servers, while switches choose shared paths that can either carry traffic smoothly or create bottlenecks.
+
+Lesson 046: Copper works well over short distances, while optical links trade extra components and power for longer reach and easier cabling.
+
+Lesson 047: A synchronized job waits for every required worker, so slow or failed components can waste time across the entire cluster.
+
+The big idea
+
+More accelerators divide the compute work, but they also create more communication, waiting and recovery overhead.
+
+Scaling stops being attractive when the extra hardware removes less compute time than the overhead it adds. The right denominator is therefore not installed accelerators or peak operations. It is useful work completed per unit of time and cost.
+
+Where we are
+
+One training step now has a complete physical path:
+
+Model work is divided across accelerators → each accelerator computes locally → partial results move through scale-up and scale-out links → collective operations combine them → synchronized workers begin the next step → checkpoints preserve progress if something fails.
+
+This lesson closes the cluster block by putting those pieces into one model.
+
+1. Strong scaling versus weak scaling
+
+Strong scaling asks what happens when the same fixed workload is divided across more accelerators. If one accelerator needs 64 seconds of local computation, ideal compute time becomes 8 seconds on 8 accelerators, 1 second on 64 and 0.125 second on 512.
+
+That ideal assumes perfectly divisible work and zero overhead. A real step also includes communication, synchronization, software launches and occasional recovery.
+
+Weak scaling asks a different question: if the workload grows with the cluster, can each accelerator keep doing roughly the same amount of work? A 512-accelerator system may be valuable because it fits a larger model or batch, even if it is not economical for a smaller fixed job.
+
+Never compare scaling claims until you know which workload stayed fixed.
+
+2. Build the step-time model
+
+For this illustrative fixed workload, define:
+
+Step time = local compute + collective communication + waiting.
+
+Use these teaching assumptions:
+
+- 8 accelerators: 8.00 seconds compute, 0.25 seconds communication and 0.05 seconds waiting.
+- 64 accelerators: 1.00 second compute, 0.55 seconds communication and 0.15 seconds waiting.
+- 512 accelerators: 0.125 second compute, 1.05 seconds communication and 0.325 second waiting.
+
+The communication term rises because more participants and paths must move and combine data. The waiting term rises because a larger synchronized group has more opportunities for a slow worker or congested path.
+
+The resulting step times are:
+
+- 8 accelerators: 8.30 seconds.
+- 64 accelerators: 1.70 seconds.
+- 512 accelerators: 1.50 seconds.
+
+Going from 8 to 64 accelerators cuts step time sharply. Going from 64 to 512 uses eight times as many accelerators but improves step time by only about 12%.
+
+3. Answer before reading
+
+Question: If ideal single-accelerator compute time is 64 seconds, what are the speedup and scaling efficiency at 64 and 512 accelerators?
+
+Speedup = single-accelerator time ÷ measured cluster step time.
+
+At 64 accelerators:
+
+64 ÷ 1.70 = about 37.6× speedup.
+
+Scaling efficiency compares that speedup with the ideal 64× result:
+
+37.6 ÷ 64 = about 58.8%.
+
+At 512 accelerators:
+
