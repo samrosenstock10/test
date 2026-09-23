@@ -1,0 +1,62 @@
+64 ÷ 1.50 = about 42.7× speedup.
+
+42.7 ÷ 512 = about 8.3% efficiency.
+
+The tempting wrong answer is that 512 accelerators must be eight times faster than 64 because there are eight times as many chips. That counts hardware rather than completed steps. At 512 accelerators, communication and waiting consume most of the step.
+
+4. Add reliability to get useful throughput
+
+Now include the fraction of wall time that produces lasting progress after failures, rollback and restart.
+
+Assume the 64-accelerator job is productive 98% of the time and the 512-accelerator job is productive 92% of the time. These are illustrative assumptions, not measured industry averages.
+
+Useful steps per hour are:
+
+64 accelerators: 3,600 × 0.98 ÷ 1.70 = about 2,075 steps.
+
+512 accelerators: 3,600 × 0.92 ÷ 1.50 = about 2,208 steps.
+
+The larger cluster now completes only about 6.4% more useful steps per hour.
+
+But accelerator-hours per 1,000 useful steps are:
+
+64 accelerators: 64 × 1,000 ÷ 2,075 = about 30.8 accelerator-hours.
+
+512 accelerators: 512 × 1,000 ÷ 2,208 = about 231.9 accelerator-hours.
+
+The 512-accelerator configuration uses roughly 7.5 times as many accelerator-hours per 1,000 useful steps for only a small throughput gain. If urgency is worth that premium, the larger cluster may still be rational. If cost per completed training step matters more, it is a poor choice for this workload.
+
+5. Find the real limiting term
+
+The model tells you what to measure next.
+
+If local compute dominates, adding accelerators or using faster chips may help.
+
+If collective communication dominates, examine tensor sizes, collective algorithms, network-interface throughput, switch contention and whether traffic stays on fast scale-up links or crosses the scale-out network.
+
+If waiting dominates, inspect per-rank timelines, workload balance, thermal throttling and tail latency.
+
+If recovery dominates, improve failure detection, checkpoint frequency, restart time and spare capacity.
+
+Software can also change the answer. Better overlap may hide communication behind compute. Gradient accumulation may reduce how often workers synchronize. A different parallelism plan may keep more traffic local. These changes can make existing hardware more useful without adding accelerators.
+
+6. What would falsify the conclusion?
+
+The conclusion is not “large clusters are bad.” It is “this fixed job does not use 512 accelerators efficiently under these assumptions.”
+
+The conclusion would change if measurement showed much lower communication time, tighter tail latency, better productive availability or a workload too large to run on 64 accelerators. It would also change if finishing sooner created enough economic value to justify the higher accelerator-hours.
+
+A scaling forecast should therefore state the workload, step-time components, useful availability and value of time. Peak bandwidth or accelerator count alone cannot answer the decision.
+
+7. Module 4 synthesis
+
+A cluster is one computer assembled from many failure-prone parts.
+
+Scale-up and scale-out define where data travels. Collective operations define which participants must exchange results. Network interfaces and switches carry the traffic. Copper and optical links trade distance, power and complexity. Synchronization makes slow components visible to the whole job, while checkpoints and recovery determine how much work survives.
+
+The cluster creates useful AI only when all of those layers complete work together.
+
+More accelerators also require more electrical power, denser racks and more heat removal. The next bottleneck is no longer only moving bits between chips. It is delivering energy to the system and removing the heat that energy becomes.
+
+Remember
+
