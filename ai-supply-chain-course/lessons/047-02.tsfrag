@@ -1,59 +1,67 @@
-3. Checkpoints convert failure into bounded lost work
+This commonly includes model parameters, meaning the learned weights; optimizer state, the information used to calculate weight updates; progress counters; and the position in the training data.
 
-A checkpoint saves enough training state to resume later: commonly model parameters, optimizer state, progress counters and information needed to reproduce the data position.
+Think of saving a document, with one extra requirement: the workers must restart from mutually consistent versions of the job.
 
-Checkpointing more frequently reduces the amount of work lost after a failure. But saving state consumes storage bandwidth, network capacity and time. Checkpointing too rarely makes each failure expensive; checkpointing too often can slow every healthy step.
+Frequent checkpoints reduce how much work must be repeated after a failure. But writing them uses storage and network bandwidth, and can delay training. Less frequent saves reduce that routine cost but make failures more expensive.
 
-Elastic launchers can restart workers, but elasticity is not magic continuation. PyTorch documents that worker failure can stop and restart the full worker group. Membership changes can also assign new ranks and a new world size. The training code must reload consistent state and avoid assuming that rank identities never change.
+Software called an elastic launcher can restart workers when a group changes. In PyTorch's torchrun, a worker failure can trigger a restart of the entire group. Ranks can change, as can world size—the number of workers.
 
-The useful question is not “Can the cluster restart?” It is “How long until the entire job resumes from a valid state?”
+The training program must reload valid saved state. Restarting the programs is not the same as instantly resuming useful work.
 
-4. A cluster-wide recovery calculation
+4. Calculate the cost of one failure
 
-Answer before reading: A synchronous job uses 1,024 accelerators and checkpoints every 30 minutes. A worker fails 15 minutes after the last checkpoint. Detecting the failure, replacing the worker and restarting from the checkpoint takes another 10 minutes. How much wall-clock work is lost, and how many accelerator-hours does the event consume?
+Try this: A job uses 1,024 accelerators and saves a checkpoint every 30 minutes. One worker fails 15 minutes after the last save. Detection, replacement and restart take another 10 minutes. The entire group must restart from that save. How much capacity is lost?
 
-Lost wall time:
+These are illustrative assumptions. Count elapsed time first:
 
-15 minutes of discarded work + 10 minutes of recovery = 25 minutes.
+15 minutes of work that must be repeated + 10 minutes of recovery = 25 minutes.
 
-Cluster-wide accelerator time:
+Now count the whole group. One accelerator-hour means occupying one accelerator for one hour. Here we measure capacity lost to the job, not electricity consumption.
 
 1,024 accelerators × 25/60 hours = about 426.7 accelerator-hours.
 
-If this illustrative event happens twice per day:
+If this happens twice a day:
 
-2 × 426.7 = about 853 accelerator-hours per day.
+2 × 426.7 = about 853 accelerator-hours lost per day.
 
-That is equivalent to keeping about 35.6 accelerators busy all day while producing no lasting progress:
+To understand that scale:
 
-853 ÷ 24 = 35.6.
+853 ÷ 24 = about 35.6 accelerators' full-day capacity.
 
-The tempting wrong answer is 25 accelerator-minutes because only one worker failed. Synchronization changes the denominator: the entire 1,024-accelerator job rolls back or waits.
+Only one worker failed, but the job lost time across all 1,024. Counting just the failed device would badly understate the effect.
 
-These are teaching assumptions. Real lost work depends on checkpoint timing, whether unaffected work can be preserved, restart design and how quickly the faulty component is isolated.
+Real losses depend on how much work can be preserved, checkpoint timing and restart design. Our example assumes the entire group rolls back and remains unavailable during recovery.
 
-5. Diagnose the layer before replacing hardware
+5. Find the layer causing the delay
 
-Begin with the job timeline. Did all ranks slow gradually, did one rank become an outlier, or did communication stop suddenly?
+Start with a timeline: did one worker slow down, did everyone slow down, or did progress stop suddenly?
 
-Then line up evidence across layers:
+Then connect the job's symptoms to component measurements:
 
-- Accelerator metrics show whether one device computed slowly or throttled.
-- Collective traces show which operation and rank stopped advancing.
-- Switch and network-interface counters reveal congestion, retries or link errors.
-- NCCL diagnostics and RAS status help narrow hangs and unresponsive processes.
-- Framework and scheduler logs show process exits, timeouts and restart behavior.
-- Checkpoint logs show how much valid work can be recovered.
+- GPU measurements show slow calculations or thermal throttling: slowing down to control temperature.
+- Communication traces record which exchange and worker stopped progressing.
+- NIC and switch counters record link errors, retries and crowded connections.
+- NCCL and framework logs help reveal communication or program mismatches.
+- Checkpoint logs show the most recent state the group can safely restore.
 
-Test one change at a time. Move the suspected worker, replace the link, reroute traffic, reduce checkpoint spacing or replay the same workload with detailed tracing. A correct diagnosis should move the outlier or reduce recovery loss.
+Test one change at a time, such as moving the worker to another server, replacing a suspect cable or shortening the checkpoint interval.
 
-If replacing a cable removes bit errors but the same rank remains slow, Lesson 046's physical link was not the whole problem. If all links are clean but ranks call collectives in different orders, faster hardware will not repair the software mismatch.
+If replacing a cable removes errors but the same worker stays slow, the cable was not the whole explanation. If workers call collectives in different orders, faster switches will not repair that software mismatch.
 
-6. What reliability changes economically
+6. Translate reliability into useful capacity
 
-A cluster's nameplate capacity counts installed accelerators. Useful capacity counts the work that survives synchronization, failures and recovery.
+Installed accelerator count tells you how much hardware exists. It does not tell you how much lasting work the system completes.
 
-This creates demand beyond accelerator chips: reliable power and cooling, network telemetry, spare servers and optics, checkpoint storage, schedulers, monitoring software and technicians who can replace failed components quickly.
+Useful capacity also depends on power and cooling, monitoring, spare components, checkpoint storage and the people or software that restore failed jobs.
 
-More redundancy is not automatically better. Spare paths and machines consume capital and power. The value comes from reducing expected lost job time by more than the redundancy costs.
+Redundancy means keeping extra capacity or alternative paths available. It costs money and sometimes power. It is valuable when the saved job time justifies that cost.
+
+Measure completed jobs, unusually slow steps, retries, time to detect problems, time to recover and the cost of saving checkpoints. Together, these explain more than a chip count alone.
+
+Remember
+
+- Synchronization makes healthy workers wait for required results.
+- A straggler is slow; a hang is stuck; a failure removes a participant.
+- Checkpoints reduce repeated work, but saving them also consumes resources.
+- Recovery cost can spread across the entire job.
 

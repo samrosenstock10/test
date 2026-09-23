@@ -1,23 +1,16 @@
-That is why buyers should ask for job completion rates, tail step time, retry counts, mean time to detect, mean time to recover and checkpoint overhead—not only accelerator count and peak bandwidth.
-
-Remember
-
-- Synchronous work advances only when every required participant reaches the same point.
-- A straggler can waste time across the entire group without fully failing.
-- Hangs need timeouts and rank-level diagnostics; failures need consistent recovery.
-- Checkpoints trade routine overhead for less lost work after an interruption.
-- Useful cluster capacity is nameplate capacity minus waiting, rollback and recovery.
-
 Sources
 
-- NVIDIA, NCCL RAS documentation: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/troubleshooting/ras.html
-- NVIDIA, NCCL troubleshooting guide: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/troubleshooting.html
-- PyTorch, torchrun elastic launch and failure modes: https://docs.pytorch.org/docs/stable/elastic/run.html
-- PyTorch, distributed communication and monitored barriers: https://docs.pytorch.org/docs/stable/distributed.html
+NVIDIA, NCCL RAS documentation: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/troubleshooting/ras.html
+
+NVIDIA, NCCL troubleshooting guide: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/troubleshooting.html
+
+PyTorch, torchrun elastic launch and failure modes: https://docs.pytorch.org/docs/stable/elastic/run.html
+
+PyTorch, distributed communication and monitored barriers: https://docs.pytorch.org/docs/stable/distributed.html
 
 Next lesson
 
 Lesson 048: Cluster Scaling Case — When Do More Accelerators Stop Helping?
 
-We will combine compute time, communication, stragglers and failures to calculate when a larger cluster produces less additional useful work than expected.`,
+We will combine calculation time, communication, waiting and recovery to see when adding more chips produces surprisingly little extra work.`,
 } satisfies Lesson;

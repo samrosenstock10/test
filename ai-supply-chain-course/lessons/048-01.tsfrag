@@ -7,75 +7,75 @@ export const lesson048 = {
   date: "2026-09-23",
   body: `Prior Lessons — 1-Sentence Recap
 
-Lesson 043: Scale-up links connect nearby accelerators tightly, while scale-out networks connect many systems so one job can use more chips.
+Lesson 043: Scale-up tightly connects nearby accelerators, while scale-out connects servers and racks so a job can use more chips.
 
-Lesson 044: Collective operations combine results from many accelerators, so communication time and the slowest worker can limit the whole job.
+Lesson 044: Collective operations share or combine accelerator results, and slow exchanges can make the whole group wait.
 
-Lesson 045: Network interfaces move data between servers, while switches choose shared paths that can either carry traffic smoothly or create bottlenecks.
+Lesson 045: Network interfaces and switches carry data between servers, but shared connections can limit how quickly it arrives.
 
-Lesson 046: Copper works well over short distances, while optical links trade extra components and power for longer reach and easier cabling.
+Lesson 046: Copper works well over short distances, while optics adds hardware and power to keep signals readable over longer paths.
 
-Lesson 047: A synchronized job waits for every required worker, so slow or failed components can waste time across the entire cluster.
+Lesson 047: A synchronized job needs every required worker, so one slow or failed participant can waste time across the group.
 
 The big idea
 
-More accelerators divide the compute work, but they also create more communication, waiting and recovery overhead.
+More accelerators can divide the calculation work. But coordinating more accelerators can also take more time.
 
-Scaling stops being attractive when the extra hardware removes less compute time than the overhead it adds. The right denominator is therefore not installed accelerators or peak operations. It is useful work completed per unit of time and cost.
+The question is simple: does the calculation time saved outweigh the extra communication and waiting?
 
-Where we are
+This lesson puts the cluster's parts into one example. We will keep the job fixed, add chips and measure both how quickly the job advances and how much hardware-time it consumes.
 
-One training step now has a complete physical path:
+1. First decide what stays the same
 
-Model work is divided across accelerators → each accelerator computes locally → partial results move through scale-up and scale-out links → collective operations combine them → synchronized workers begin the next step → checkpoints preserve progress if something fails.
+Strong scaling means using more accelerators for the same amount of work.
 
-This lesson closes the cluster block by putting those pieces into one model.
+Suppose one accelerator needs 64 seconds of calculation for one training step. With perfectly divided work and no coordination costs, 8 accelerators would need 8 seconds, 64 would need 1 second, and 512 would need 0.125 second.
 
-1. Strong scaling versus weak scaling
+Weak scaling asks a different question: can we grow the workload along with the cluster while keeping the work per accelerator roughly constant?
 
-Strong scaling asks what happens when the same fixed workload is divided across more accelerators. If one accelerator needs 64 seconds of local computation, ideal compute time becomes 8 seconds on 8 accelerators, 1 second on 64 and 0.125 second on 512.
+A larger cluster may be worthwhile because it fits a larger model, even if it is inefficient for a smaller job. So always ask whether a scaling comparison kept the workload fixed.
 
-That ideal assumes perfectly divisible work and zero overhead. A real step also includes communication, synchronization, software launches and occasional recovery.
+For the example below, every step processes the same training work. The 64-second single-accelerator baseline is an illustrative assumption, and we assume the job fits on one accelerator.
 
-Weak scaling asks a different question: if the workload grows with the cluster, can each accelerator keep doing roughly the same amount of work? A 512-accelerator system may be valuable because it fits a larger model or batch, even if it is not economical for a smaller fixed job.
+2. Add the time spent coordinating
 
-Never compare scaling claims until you know which workload stayed fixed.
+For our simple model:
 
-2. Build the step-time model
+Step time = calculation time + communication time + waiting time.
 
-For this illustrative fixed workload, define:
+Communication is time spent exchanging and combining results. Waiting is additional delay caused by uneven worker completion. We count them separately and assume no overlap, so the same delay is not counted twice.
 
-Step time = local compute + collective communication + waiting.
+Use these illustrative values:
 
-Use these teaching assumptions:
+- 8 accelerators: 8.00 seconds calculating + 0.25 communicating + 0.05 waiting = 8.30 seconds per step.
+- 64 accelerators: 1.00 second calculating + 0.55 communicating + 0.15 waiting = 1.70 seconds per step.
+- 512 accelerators: 0.125 second calculating + 1.05 communicating + 0.325 waiting = 1.50 seconds per step.
 
-- 8 accelerators: 8.00 seconds compute, 0.25 seconds communication and 0.05 seconds waiting.
-- 64 accelerators: 1.00 second compute, 0.55 seconds communication and 0.15 seconds waiting.
-- 512 accelerators: 0.125 second compute, 1.05 seconds communication and 0.325 second waiting.
+In this example, communication and waiting increase as the group grows. This can happen when data crosses more shared paths or more workers create opportunities for delay. It is an assumption to measure in practice, not a universal rule.
 
-The communication term rises because more participants and paths must move and combine data. The waiting term rises because a larger synchronized group has more opportunities for a slow worker or congested path.
+Going from 64 to 512 chips saves 0.875 second of calculation. But it adds 0.675 second of coordination. Only 0.20 second of the saving survives.
 
-The resulting step times are:
+Eight times as many chips therefore makes the step about 12% shorter.
 
-- 8 accelerators: 8.30 seconds.
-- 64 accelerators: 1.70 seconds.
-- 512 accelerators: 1.50 seconds.
+3. How much of the ideal speedup did we get?
 
-Going from 8 to 64 accelerators cuts step time sharply. Going from 64 to 512 uses eight times as many accelerators but improves step time by only about 12%.
+Try this before reading: The single-accelerator baseline is 64 seconds per step. The 64-chip group takes 1.70 seconds; the 512-chip group takes 1.50 seconds. How do their actual speedups compare with the ideal?
 
-3. Answer before reading
+Speedup means how many times faster the group completes the same step:
 
-Question: If ideal single-accelerator compute time is 64 seconds, what are the speedup and scaling efficiency at 64 and 512 accelerators?
+Speedup = baseline time ÷ group time.
 
-Speedup = single-accelerator time ÷ measured cluster step time.
+For 64 chips:
 
-At 64 accelerators:
+64 ÷ 1.70 = about 37.6 times faster.
 
-64 ÷ 1.70 = about 37.6× speedup.
-
-Scaling efficiency compares that speedup with the ideal 64× result:
+Perfect scaling would make 64 chips 64 times faster. Scaling efficiency compares the actual result with that ideal:
 
 37.6 ÷ 64 = about 58.8%.
 
-At 512 accelerators:
+For 512 chips:
+
+64 ÷ 1.50 = about 42.7 times faster.
+
+42.7 ÷ 512 = about 8.3% efficiency.
 

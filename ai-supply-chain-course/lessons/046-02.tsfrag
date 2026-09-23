@@ -1,48 +1,70 @@
-The choice changes because the optical link can preserve adequate signal quality over a longer path. NVIDIA's current LinkX documentation spans passive and active copper, active optical cables and transceivers, with offered lengths from 0.5 meters to 10 kilometers. That range does not mean every product supports every distance. It shows why “400G” alone is not enough information: the exact media, form factor and qualified reach matter.
+The complete link needs more than glass. Lasers produce light; modulators can encode data onto it; detectors read it. Control electronics and, in some designs, digital signal processors help operate the link and recover the data.
 
-At short reach, passive copper often wins on simplicity and power. As distance, lane rate or port density rises, the copper loss budget can run out. Active copper may extend the boundary. Beyond that, optics becomes the practical way to keep the same logical link rate.
+Those parts require power, cooling, packaging and testing.
 
-Engineers therefore qualify a complete channel, not merely a cable. They include board traces, cages, connectors, bends, temperature and the transmitter and receiver at both ends.
+An active optical cable, or AOC, has its optical ends permanently attached to the fiber. Pluggable transceivers are removable modules that send and receive light through separate fiber. An AOC is one assembly; pluggables allow a module or fiber to be replaced separately.
 
-4. A quantitative choice
+4. Same speed, different reach
 
-Answer before reading: A cluster needs 64 links, each rated at 400 Gb/s, between racks 18 meters apart. The approved passive copper cable reaches 3 meters. An approved AOC reaches 30 meters and, for this planning exercise, consumes 12 watts per cable. What media works, what aggregate line rate remains, and how much cable power is added?
+Imagine copper and optical links both rated at 400 Gb/s: 400 billion bits per second. Their advertised line rate—the rate of bits traveling over the link—is the same.
 
-The 18-meter path is longer than the approved 3-meter copper reach, so the passive DAC does not work. The 30-meter AOC does.
+Fiber's advantage here is maintaining a readable signal over a longer path. It does not automatically increase the data rate or make the application faster.
 
-Aggregate line rate:
+At short distances, passive copper often offers low cost and low power. Active copper can extend the workable distance. Optics becomes attractive when reach or cabling density makes copper impractical.
+
+There is no single distance cutoff for every product. The exact lane rate, cable, connectors and endpoint hardware determine the choice.
+
+5. Try a concrete design
+
+Question: A cluster needs 64 links over an 18-meter cable route. Each link is rated at 400 Gb/s. Approved passive copper reaches 3 meters; an approved AOC reaches 30 meters and uses 12 watts for both ends combined. Which works, and what power does it add?
+
+All numbers are teaching assumptions, not universal product specifications.
+
+The 18-meter route exceeds copper's approved 3-meter reach. The 30-meter AOC works.
+
+The combined line rate in one direction remains:
 
 64 × 400 Gb/s = 25,600 Gb/s = 25.6 Tb/s.
 
-Cable power:
+The cable assemblies consume:
 
 64 × 12 W = 768 W = 0.768 kW.
 
-Annual energy if continuously powered:
+If powered continuously for a 365-day year, their energy use is:
 
-0.768 kW × 8,760 hours = 6,728 kWh per year.
+0.768 kW × 8,760 hours = 6,728 kWh.
 
-The key result is that optical media adds reach, not line rate. The cluster still has 25.6 Tb/s of nominal capacity. It accepts 768 watts of cable power because the physical layout cannot be closed with the approved passive copper option.
+Watts measure how quickly energy is being used. Kilowatt-hours measure the total energy used over time.
 
-These are illustrative planning assumptions, not specifications for every product. In a real design, use vendor-qualified reach and measured power for the exact cable, transceiver, switch and network-interface combination.
+Optics makes these connections possible at the required distance. It does not increase their rated speed. The 768 watts excludes the rest of the network interfaces, switches and cooling.
 
-5. How to test the diagnosis
+6. Test whether the cable is the problem
 
-Suppose long links show rising bit errors, retraining or intermittent loss of link as temperature increases.
+Suppose long copper links show bit errors—received bits differ from those sent—or repeatedly disconnect as temperature rises.
 
-A useful test is to hold ports, protocol, routing and workload constant, then replace the suspect electrical channel with a qualified optical one. If link errors and retries fall while application throughput rises, signal reach was probably constraining useful bandwidth.
+Keep the workload and other hardware the same, then try a qualified optical connection. If errors fall and the job speeds up, the electrical signal path was likely part of the problem.
 
-If the link becomes clean but the job does not speed up, the limiting factor is elsewhere—perhaps collective scheduling, switch contention, software or computation. Clean signaling is necessary, but it cannot fix a different bottleneck.
+If errors disappear but the job stays slow, examine the next layer: crowded switch ports, poorly coordinated communication or slow computation.
 
-Propagation time over tens of meters is also rarely the main distinction. Serialization, switching, queuing and synchronization can dominate. Choose optics for signal integrity and reach, not because light is a magic latency shortcut.
+Light is not a magic shortcut for delay, either. Delay includes putting bits onto the link, traveling along it, passing through switches and waiting in queues.
 
-6. Supply-chain implications
+7. Why the choice matters beyond the cable
 
-Copper links depend on high-quality conductors, shielding, connectors and precise cable assembly. Optical links add lasers or modulators, photodetectors, optical packaging, fiber, connectors and more specialized testing.
+Copper requires good conductors, shielding, connectors and assembly. Optics adds specialized light-producing and light-detecting components, packaging and testing.
 
-A cluster builder must secure not only enough switches and network interfaces, but also the exact qualified cable or transceiver mix. A shortage of a small optical module can strand an otherwise complete rack. Conversely, choosing optics everywhere can add cost and power where short passive copper would have worked.
+A missing qualified optical module can prevent an otherwise ready rack from connecting to the cluster. Yet using optics on every short connection can add unnecessary cost and power.
 
-The best architecture usually uses each medium where its physics is strongest: short electrical paths where possible, optical paths where reach and density require them.
+Choose a reliable connection that meets the actual distance, speed and servicing requirements. NVIDIA's LinkX range includes several copper and optical options because one design does not fit every connection.
 
 Remember
+
+- Copper sends electrical signals; fiber carries light between electrical endpoints.
+- More distance and higher lane rates make copper signaling harder.
+- Optics adds reach and can ease cabling, while requiring conversion hardware and power.
+
+Sources
+
+NVIDIA, ConnectX-7 Adapter Card User Manual: https://networking-docs.nvidia.com/connectx7hw
+
+NVIDIA, LinkX Cables and Transceivers: https://www.nvidia.com/en-us/networking/interconnect/
 

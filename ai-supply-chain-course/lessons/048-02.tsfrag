@@ -1,62 +1,81 @@
-64 ÷ 1.50 = about 42.7× speedup.
+Here, efficiency describes how closely the job approaches ideal scaling. It is not a direct reading of GPU utilization or energy efficiency.
 
-42.7 ÷ 512 = about 8.3% efficiency.
+The tempting mistake is to assume eight times as many chips means eight times as much speed. At 512 chips, most of the step is spent coordinating them.
 
-The tempting wrong answer is that 512 accelerators must be eight times faster than 64 because there are eight times as many chips. That counts hardware rather than completed steps. At 512 accelerators, communication and waiting consume most of the step.
+4. Account for work lost to failures
 
-4. Add reliability to get useful throughput
+Lesson 047 showed that a completed calculation can still be lost if the job returns to an earlier checkpoint.
 
-Now include the fraction of wall time that produces lasting progress after failures, rollback and restart.
+Assume the 64-chip job retains 98% of the progress it could make at its normal step time. The 512-chip job retains 92%, after rollback and restart losses. These are teaching assumptions, not industry averages.
 
-Assume the 64-accelerator job is productive 98% of the time and the 512-accelerator job is productive 92% of the time. These are illustrative assumptions, not measured industry averages.
+Normal communication and waiting are already included in step time; the percentages account only for these additional reliability losses.
 
-Useful steps per hour are:
+Useful steps per hour = 3,600 seconds × retained fraction ÷ seconds per step.
 
-64 accelerators: 3,600 × 0.98 ÷ 1.70 = about 2,075 steps.
+For 64 chips:
 
-512 accelerators: 3,600 × 0.92 ÷ 1.50 = about 2,208 steps.
+3,600 × 0.98 ÷ 1.70 = about 2,075 useful steps per hour.
 
-The larger cluster now completes only about 6.4% more useful steps per hour.
+For 512 chips:
 
-But accelerator-hours per 1,000 useful steps are:
+3,600 × 0.92 ÷ 1.50 = 2,208 useful steps per hour.
 
-64 accelerators: 64 × 1,000 ÷ 2,075 = about 30.8 accelerator-hours.
+The larger group now completes only about 6.4% more useful work each hour.
 
-512 accelerators: 512 × 1,000 ÷ 2,208 = about 231.9 accelerator-hours.
+5. What does that speed cost?
 
-The 512-accelerator configuration uses roughly 7.5 times as many accelerator-hours per 1,000 useful steps for only a small throughput gain. If urgency is worth that premium, the larger cluster may still be rational. If cost per completed training step matters more, it is a poor choice for this workload.
+One accelerator-hour means using one accelerator for one hour. To complete 1,000 useful steps, first calculate elapsed hours, then multiply by the number of chips occupied.
 
-5. Find the real limiting term
+For 64 chips:
 
-The model tells you what to measure next.
+1,000 ÷ 2,075 ≈ 0.482 hours.
 
-If local compute dominates, adding accelerators or using faster chips may help.
+64 × 0.482 ≈ 30.8 accelerator-hours.
 
-If collective communication dominates, examine tensor sizes, collective algorithms, network-interface throughput, switch contention and whether traffic stays on fast scale-up links or crosses the scale-out network.
+For 512 chips:
 
-If waiting dominates, inspect per-rank timelines, workload balance, thermal throttling and tail latency.
+1,000 ÷ 2,208 ≈ 0.453 hours.
 
-If recovery dominates, improve failure detection, checkpoint frequency, restart time and spare capacity.
+512 × 0.453 ≈ 231.9 accelerator-hours.
 
-Software can also change the answer. Better overlap may hide communication behind compute. Gradient accumulation may reduce how often workers synchronize. A different parallelism plan may keep more traffic local. These changes can make existing hardware more useful without adding accelerators.
+The larger group uses about 7.5 times as many accelerator-hours for the same work.
 
-6. What would falsify the conclusion?
+With the same hourly price per chip, that implies about 7.5 times the accelerator charge. Full system cost also includes networking, storage, power and other expenses.
 
-The conclusion is not “large clusters are bad.” It is “this fixed job does not use 512 accelerators efficiently under these assumptions.”
+Finishing sooner could still justify the premium for an urgent job. The example shows the price of that small speed improvement.
 
-The conclusion would change if measurement showed much lower communication time, tighter tail latency, better productive availability or a workload too large to run on 64 accelerators. It would also change if finishing sooner created enough economic value to justify the higher accelerator-hours.
+6. What should we improve?
 
-A scaling forecast should therefore state the workload, step-time components, useful availability and value of time. Peak bandwidth or accelerator count alone cannot answer the decision.
+Look at the largest time component before changing hardware.
 
-7. Module 4 synthesis
+If calculation dominates, more or faster chips may help. If communication dominates, measure the data volume, network interfaces, shared switch connections and paths between servers.
 
-A cluster is one computer assembled from many failure-prone parts.
+If extra waiting dominates, inspect individual workers for uneven workloads or temperature-related slowdowns. If restart losses dominate, improve failure detection, checkpoints and recovery.
 
-Scale-up and scale-out define where data travels. Collective operations define which participants must exchange results. Network interfaces and switches carry the traffic. Copper and optical links trade distance, power and complexity. Synchronization makes slow components visible to the whole job, while checkpoints and recovery determine how much work survives.
+Software can also help:
 
-The cluster creates useful AI only when all of those layers complete work together.
+- Overlap means calculating while an independent transfer is running, so some communication adds no extra elapsed time.
+- Gradient accumulation means collecting results from several smaller batches before synchronizing, which can reduce exchange frequency.
+- A different parallelism plan changes how work is divided and can keep frequent exchanges on nearby, faster connections.
 
-More accelerators also require more electrical power, denser racks and more heat removal. The next bottleneck is no longer only moving bits between chips. It is delivering energy to the system and removing the heat that energy becomes.
+These changes must preserve the intended training work and results. Compare equivalent jobs.
+
+7. Close the cluster story
+
+A training step moves through several layers: GPUs calculate, collective operations combine results, NICs and switches carry packets, and copper or optical links carry the signals. Synchronization determines who waits. Checkpoints determine how much progress survives a failure.
+
+Our conclusion is specific: this fixed workload gains little from 512 chips under these assumptions.
+
+Lower communication time, fewer delayed workers, faster recovery or a larger workload could change the answer. The test is measured useful output and cost, rather than chip count alone.
+
+We will revisit detailed network topologies and collective algorithms later. For now, the next dependency is physical: more chips and links require more electricity and produce more heat.
 
 Remember
+
+- Keep the workload comparison clear: fixed work and growing work answer different questions.
+- Measure calculation, communication, waiting and recovery without counting losses twice.
+- Compare both time to finish and hardware-time consumed.
+- A bigger cluster helps only when the workload can use it well enough to justify the cost.
+
+Sources
 
