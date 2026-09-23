@@ -1,3 +1,10 @@
+- Keep the workload comparison clear: fixed work and growing work answer different questions.
+- Measure calculation, communication, waiting and recovery without counting losses twice.
+- Compare both time to finish and hardware-time consumed.
+- A bigger cluster helps only when the workload can use it well enough to justify the cost.
+
+Sources
+
 NVIDIA, NCCL collective operations: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage/collectives.html
 
 NVIDIA, NCCL RAS documentation: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/troubleshooting/ras.html

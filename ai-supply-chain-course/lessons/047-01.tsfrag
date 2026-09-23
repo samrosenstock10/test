@@ -23,11 +23,11 @@ When a training job needs results from every worker before continuing, one slow 
 
 A worker is a running copy of the training program, often assigned to one GPU. Synchronization means workers coordinate at required points so they use consistent results.
 
-Even if 1,023 GPUs are healthy, a job requiring all 1,024 may stop when one worker fails. Reliability therefore means keeping the job making progress, as well as keeping individual parts working.
+Even if 1,023 GPUs are healthy, a job requiring all 1,024 may stop when one worker fails. Reliability therefore means keeping the job making progress, as well as keeping individual parts working. This matters because a company pays for the whole group even while healthy GPUs wait. Preventing interruptions can let the same hardware finish more training work.
 
 1. Why a small delay spreads
 
-In synchronous training, workers process different pieces of a batch: a group of training examples. They calculate gradients, the numbers used to adjust the model's weights.
+In synchronous training, workers process different pieces of a batch: a group of training examples. They calculate gradients, the numbers used to adjust the model's learned settings, called weights.
 
 A collective combines their results. Each worker needs the combined answer before completing the model update and moving on.
 
@@ -45,15 +45,13 @@ A slowdown still makes progress, just later than expected. Measure each worker's
 
 A hang means no visible progress. For example, one worker may call a different collective operation from the others. They wait for an exchange that cannot complete as expected. Sending differently sized data arrays can also cause a mismatch.
 
-Each worker has an identifying number called a rank. Per-rank diagnostics simply means examining workers individually rather than looking only at a cluster average.
+Monitoring software helps operators see which worker stopped responding. Each worker has an identifying number, called a rank, so the software can point to a particular participant.
 
-A timeout flags an operation that has taken too long. PyTorch's monitored barrier can report which ranks did not acknowledge a waiting point in time. NVIDIA's NCCL communication library also has a RAS subsystem—reliability, availability and serviceability—which helps identify unresponsive processes.
+Tools in PyTorch, a framework used to build and train models, and NVIDIA's NCCL communication library help locate these problems. Their importance is practical: finding the stalled worker quickly reduces how long the rest of the group sits idle.
 
 A hard failure means a participant is no longer available: a program crashes, a GPU fails or a server loses power. Recovery may require stopping the current exchange, replacing the worker and restarting the group.
 
 These are separate jobs: notice the problem, find its cause, then restore the training job. Detecting a failure quickly does not by itself recover the work.
 
 3. A checkpoint is a saved restart point
-
-A checkpoint stores enough training state to resume later.
 

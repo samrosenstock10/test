@@ -1,52 +1,28 @@
-Here, efficiency describes how closely the job approaches ideal scaling. It is not a direct reading of GPU utilization or energy efficiency.
+The tempting mistake is to count the chips and assume output increases in the same proportion. The missing question is whether the job can keep those additional chips usefully occupied.
 
-The tempting mistake is to assume eight times as many chips means eight times as much speed. At 512 chips, most of the step is spent coordinating them.
+4. Reliability can shrink the benefit further
 
-4. Account for work lost to failures
+Lesson 047 showed that failures can force a job to repeat work from its last checkpoint.
 
-Lesson 047 showed that a completed calculation can still be lost if the job returns to an earlier checkpoint.
+Suppose our larger group also loses more time to failures and restarts. Its already small advantage can become smaller still: finishing a step quickly helps less if some progress must later be repeated.
 
-Assume the 64-chip job retains 98% of the progress it could make at its normal step time. The 512-chip job retains 92%, after rollback and restart losses. These are teaching assumptions, not industry averages.
+More components create more possible places for a problem, but a larger cluster is not automatically less reliable. Good monitoring, spare capacity and recovery software can reduce the impact.
 
-Normal communication and waiting are already included in step time; the percentages account only for these additional reliability losses.
+This is why completed, lasting work matters more than a speed measurement taken only while everything is running smoothly. Keep ordinary waiting and additional recovery losses separate when measuring them.
 
-Useful steps per hour = 3,600 seconds × retained fraction ÷ seconds per step.
+5. Why cost and urgency change the answer
 
-For 64 chips:
+In our example, the larger group occupies eight times as many chips for almost as long. If each chip has the same hourly price, the small reduction in job time is unlikely to offset that much larger bill.
 
-3,600 × 0.98 ÷ 1.70 = about 2,075 useful steps per hour.
+An accelerator-hour means using one accelerator for one hour. It gives the owner a way to compare both how many chips a job occupies and for how long. Full system cost also includes networking, storage and electricity.
 
-For 512 chips:
+Paying a premium can still make sense. Finishing a valuable training run sooner might be worth the extra cost. A model might also need more chips simply to hold its data in memory.
 
-3,600 × 0.92 ÷ 1.50 = 2,208 useful steps per hour.
-
-The larger group now completes only about 6.4% more useful work each hour.
-
-5. What does that speed cost?
-
-One accelerator-hour means using one accelerator for one hour. To complete 1,000 useful steps, first calculate elapsed hours, then multiply by the number of chips occupied.
-
-For 64 chips:
-
-1,000 ÷ 2,075 ≈ 0.482 hours.
-
-64 × 0.482 ≈ 30.8 accelerator-hours.
-
-For 512 chips:
-
-1,000 ÷ 2,208 ≈ 0.453 hours.
-
-512 × 0.453 ≈ 231.9 accelerator-hours.
-
-The larger group uses about 7.5 times as many accelerator-hours for the same work.
-
-With the same hourly price per chip, that implies about 7.5 times the accelerator charge. Full system cost also includes networking, storage, power and other expenses.
-
-Finishing sooner could still justify the premium for an urgent job. The example shows the price of that small speed improvement.
+The question is what the extra spending buys: a meaningful time saving, the ability to run a larger job, or very little improvement. There is no single best cluster size for every workload.
 
 6. What should we improve?
 
-Look at the largest time component before changing hardware.
+Look at where the job loses the most time before changing hardware. A bottleneck is the part currently limiting the whole job; improving something else may do little.
 
 If calculation dominates, more or faster chips may help. If communication dominates, measure the data volume, network interfaces, shared switch connections and paths between servers.
 
@@ -55,10 +31,12 @@ If extra waiting dominates, inspect individual workers for uneven workloads or t
 Software can also help:
 
 - Overlap means calculating while an independent transfer is running, so some communication adds no extra elapsed time.
-- Gradient accumulation means collecting results from several smaller batches before synchronizing, which can reduce exchange frequency.
+- Gradient accumulation means collecting results from several smaller batches of training examples before sharing them with the group, which can reduce how often workers communicate.
 - A different parallelism plan changes how work is divided and can keep frequent exchanges on nearby, faster connections.
 
 These changes must preserve the intended training work and results. Compare equivalent jobs.
+
+This connects to the supply chain: sometimes the valuable improvement is a faster chip; sometimes it is better networking, cooling or software. The component that removes the actual constraint can matter more than the one with the most impressive headline specification.
 
 7. Close the cluster story
 
@@ -71,11 +49,4 @@ Lower communication time, fewer delayed workers, faster recovery or a larger wor
 We will revisit detailed network topologies and collective algorithms later. For now, the next dependency is physical: more chips and links require more electricity and produce more heat.
 
 Remember
-
-- Keep the workload comparison clear: fixed work and growing work answer different questions.
-- Measure calculation, communication, waiting and recovery without counting losses twice.
-- Compare both time to finish and hardware-time consumed.
-- A bigger cluster helps only when the workload can use it well enough to justify the cost.
-
-Sources
 
