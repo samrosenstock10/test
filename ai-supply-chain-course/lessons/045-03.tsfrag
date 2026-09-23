@@ -1,10 +1,2 @@
-NVIDIA, ConnectX-7 Adapter Cards User Manual — documented 400 Gb/s Ethernet and NDR InfiniBand card configurations with PCIe x16 connectivity: https://networking-docs.nvidia.com/connectx7hw
-
-NVIDIA, NCCL documentation — topology-aware collective communication across GPUs and machines: https://docs.nvidia.com/deeplearning/nccl/
-
-Next lesson
-
-Lesson 046: Copper Versus Optical Links — How Distance Changes the Connection
-
-We will compare how electrical and optical links carry bits, then calculate when reach, power and signal loss force a cluster to change media.`,
+We have followed the data through interfaces and switches. Next, we will examine the cables between them: how copper and fiber carry the bits, and why distance changes the choice.`,
 } satisfies Lesson;

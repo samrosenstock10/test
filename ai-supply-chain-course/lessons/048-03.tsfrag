@@ -1,19 +1,14 @@
-- Strong scaling keeps the workload fixed; weak scaling grows the workload with the cluster.
-- Step time includes compute, communication and waiting.
-- Useful throughput must also account for rollback and recovery.
-- Scaling efficiency falls when overhead grows faster than compute time shrinks.
-- The best cluster size depends on both cost per useful step and the value of finishing sooner.
+NVIDIA, NCCL collective operations: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage/collectives.html
 
-Sources
+NVIDIA, NCCL RAS documentation: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/troubleshooting/ras.html
 
-- NVIDIA, NCCL collective operations: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage/collectives.html
-- NVIDIA, NCCL RAS documentation: https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/troubleshooting/ras.html
-- PyTorch, DistributedDataParallel documentation: https://docs.pytorch.org/docs/stable/generated/torch.nn.parallel.DistributedDataParallel.html
-- PyTorch, distributed communication documentation: https://docs.pytorch.org/docs/stable/distributed.html
+PyTorch, DistributedDataParallel documentation: https://docs.pytorch.org/docs/stable/generated/torch.nn.parallel.DistributedDataParallel.html
+
+PyTorch, distributed communication documentation: https://docs.pytorch.org/docs/stable/distributed.html
 
 Next lesson
 
 Lesson 049: Chip-to-Rack Power — Why More Compute Changes the Electrical System
 
-We will trace electricity from the facility connection to accelerator boards and explain why power delivery can limit installed compute.`,
+We will follow electricity from the facility connection to accelerator boards, then see why having enough chips does not guarantee that a data center can power them.`,
 } satisfies Lesson;
