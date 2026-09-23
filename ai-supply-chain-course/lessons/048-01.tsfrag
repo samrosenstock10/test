@@ -23,59 +23,42 @@ More accelerators can divide the calculation work. But coordinating more acceler
 
 The question is simple: does the calculation time saved outweigh the extra communication and waiting?
 
-This lesson puts the cluster's parts into one example. We will keep the job fixed, add chips and measure both how quickly the job advances and how much hardware-time it consumes.
+This matters because a larger cluster costs more to buy and operate. More chips are useful when they let the owner finish sooner, train a larger model or serve more demand. Simply owning them does not guarantee those benefits.
+
+This lesson keeps the same cluster story and uses one comparison to explain when adding hardware helps.
 
 1. First decide what stays the same
 
 Strong scaling means using more accelerators for the same amount of work.
 
-Suppose one accelerator needs 64 seconds of calculation for one training step. With perfectly divided work and no coordination costs, 8 accelerators would need 8 seconds, 64 would need 1 second, and 512 would need 0.125 second.
+Ideally, dividing a job across twice as many chips would halve the calculation time. In practice, dividing the work also creates a need to exchange results.
 
 Weak scaling asks a different question: can we grow the workload along with the cluster while keeping the work per accelerator roughly constant?
 
 A larger cluster may be worthwhile because it fits a larger model, even if it is inefficient for a smaller job. So always ask whether a scaling comparison kept the workload fixed.
 
-For the example below, every step processes the same training work. The 64-second single-accelerator baseline is an illustrative assumption, and we assume the job fits on one accelerator.
+That distinction matters when someone claims that a bigger cluster is better: does it finish the same job faster, or make a bigger job possible?
 
-2. Add the time spent coordinating
+2. Follow where the time goes
 
-For our simple model:
+A training step is one round of work that contributes to updating the model. It includes calculations, exchanges of results and any additional waiting.
 
-Step time = calculation time + communication time + waiting time.
+Imagine the same step running on two different groups. These are illustrative numbers, not measured product results:
 
-Communication is time spent exchanging and combining results. Waiting is additional delay caused by uneven worker completion. We count them separately and assume no overlap, so the same delay is not counted twice.
+- 64 accelerators complete it in 1.70 seconds.
+- 512 accelerators complete it in 1.50 seconds.
 
-Use these illustrative values:
+The larger group has eight times as many chips, yet each step takes only about 12% less time.
 
-- 8 accelerators: 8.00 seconds calculating + 0.25 communicating + 0.05 waiting = 8.30 seconds per step.
-- 64 accelerators: 1.00 second calculating + 0.55 communicating + 0.15 waiting = 1.70 seconds per step.
-- 512 accelerators: 0.125 second calculating + 1.05 communicating + 0.325 waiting = 1.50 seconds per step.
+Why? In this example, splitting the calculations across more chips saves time, but much of that saving is used up exchanging results and waiting for other workers. Adding workers has made the calculation part faster without greatly shortening the whole task.
 
-In this example, communication and waiting increase as the group grows. This can happen when data crosses more shared paths or more workers create opportunities for delay. It is an assumption to measure in practice, not a universal rule.
+Communication can sometimes happen while a GPU calculates. The important measurement is the delay that actually extends the step, rather than adding together activities that happened at the same time.
 
-Going from 64 to 512 chips saves 0.875 second of calculation. But it adds 0.675 second of coordination. Only 0.20 second of the saving survives.
+3. What scaling efficiency tells you
 
-Eight times as many chips therefore makes the step about 12% shorter.
+Try this before reading: If the 512-chip group finishes each step slightly sooner, is it automatically the better choice?
 
-3. How much of the ideal speedup did we get?
+No. It is faster for this example, but the small time saving has required a much larger group of expensive chips.
 
-Try this before reading: The single-accelerator baseline is 64 seconds per step. The 64-chip group takes 1.70 seconds; the 512-chip group takes 1.50 seconds. How do their actual speedups compare with the ideal?
-
-Speedup means how many times faster the group completes the same step:
-
-Speedup = baseline time ÷ group time.
-
-For 64 chips:
-
-64 ÷ 1.70 = about 37.6 times faster.
-
-Perfect scaling would make 64 chips 64 times faster. Scaling efficiency compares the actual result with that ideal:
-
-37.6 ÷ 64 = about 58.8%.
-
-For 512 chips:
-
-64 ÷ 1.50 = about 42.7 times faster.
-
-42.7 ÷ 512 = about 8.3% efficiency.
+Speedup describes how much faster the same work finishes. Scaling efficiency asks how close that improvement comes to what we would ideally expect from adding hardware. Low scaling efficiency means that much of the extra hardware is not translating into extra job speed. It does not by itself measure electricity efficiency or prove that individual GPUs are defective.
 
