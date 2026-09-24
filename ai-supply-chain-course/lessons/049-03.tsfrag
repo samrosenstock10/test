@@ -1,0 +1,2 @@
+We will move outward from the rack to the building's electrical path and explain how transformers, switchgear, backup systems and redundancy keep compute energized.`,
+} satisfies Lesson;
