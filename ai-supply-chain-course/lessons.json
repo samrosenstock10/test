@@ -490,7 +490,19 @@
         "lessons/048-02.tsfrag",
         "lessons/048-03.tsfrag"
       ]
+    },
+    {
+      "number": 49,
+      "module": "Module 5: Power, Cooling and Data Center Deployment",
+      "title": "Chip-to-Rack Power — Why More Compute Changes the Electrical System",
+      "date": "2026-09-24",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/049-01.tsfrag",
+        "lessons/049-02.tsfrag",
+        "lessons/049-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-23T19:11:26.731Z"
+  "updatedAt": "2026-09-24T11:07:03.801Z"
 }
