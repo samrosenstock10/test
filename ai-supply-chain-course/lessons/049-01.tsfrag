@@ -1,0 +1,61 @@
+import type { Lesson } from "./lessons";
+
+export const lesson049 = {
+  number: 49,
+  module: "Module 5: Power, Cooling and Data Center Deployment",
+  title: "Chip-to-Rack Power — Why More Compute Changes the Electrical System",
+  date: "2026-09-24",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 044: Collective operations share or combine accelerator results, so slow communication can leave the whole group waiting.
+
+Lesson 045: Network interfaces move data out of servers, while switches choose shared paths that can become bottlenecks.
+
+Lesson 046: Copper is efficient over short connections, while optics adds hardware and power to carry signals reliably over longer distances.
+
+Lesson 047: Synchronized workers depend on one another, so one slow or failed participant can waste time across an expensive cluster.
+
+Lesson 048: Adding accelerators helps only when the workload uses them well enough to justify the extra communication, waiting and cost.
+
+The big idea
+
+An AI chip cannot work unless electricity reaches it at the right voltage, in enough quantity and without interruption.
+
+Putting more accelerators into a rack concentrates more electrical demand in one place. That changes the cables, outlets, power-conversion equipment and cooling the rack needs.
+
+This matters because purchased chips are not useful capacity until the data center can power and cool them. A shortage of rack power can leave expensive accelerators waiting in boxes or force them to run below their intended speed.
+
+Where we are
+
+The last module connected accelerators so they could work together. We now follow another physical requirement:
+
+facility electricity → rack power distribution → server power supplies → lower-voltage electricity inside the server → GPUs, CPUs, memory and networking.
+
+This lesson focuses on the rack and server. Later lessons will move outward to the building, grid and cooling system.
+
+1. Power is a rate, not a quantity over time
+
+A watt measures power: how quickly electricity is being used at a moment. A kilowatt, or kW, is 1,000 watts.
+
+A kilowatt-hour, or kWh, measures energy used over time. A rack drawing 50 kW for one hour uses 50 kWh.
+
+Power determines whether cables and electrical equipment can safely carry the load right now. Energy helps determine the electricity bill over time. For deployment, the first question is often whether the rack can run without exceeding a power limit.
+
+2. Follow electricity through the rack
+
+A rack power distribution unit, or rack PDU, receives electricity and provides outlets for the installed equipment. It is built for data-center loads and may measure or remotely control each outlet.
+
+Power cords carry electricity from the rack PDU to each server. The server's power supply unit, or PSU, converts the incoming alternating current, called AC, into direct current, called DC. AC is convenient for distributing electricity through the building; electronic components use controlled DC voltages.
+
+Inside the server, additional circuits step that electricity down again to the low voltages required by GPUs, CPUs, memory and network cards.
+
+Every conversion loses some energy as heat. The rack therefore needs capacity for both the computing parts and the equipment that converts and distributes electricity.
+
+3. More powerful systems create denser racks
+
+NVIDIA specifies a maximum system power of 14.3 kW for one DGX B200 system containing eight B200 GPUs. It uses six power supplies in a 5+1 arrangement, meaning five can support normal operation while one provides redundancy.
+
+Consider a rack with four such systems. Using the maximum specification as a planning assumption, the systems alone could require up to 57.2 kW. Network switches and other rack equipment would add more.
+
+The rack would not always draw that amount. Demand changes with the workload, and a maximum specification is not measured average use. It shows the scale the design may need to support.
+
