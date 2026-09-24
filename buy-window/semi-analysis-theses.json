@@ -1,7 +1,52 @@
 {
-  "updatedAt": "2026-09-22T11:32:18Z",
+  "updatedAt": "2026-09-24T11:39:46Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "rows": [
+    {
+      "loggedDate": "2026-09-24",
+      "sourceDate": "2026-09-23",
+      "company": "Alphabet / GOOGL",
+      "bullishness": 5,
+      "summary": "Google’s AI-infrastructure thesis strengthens within 5/5 because SemiAnalysis now rates GCP a Gold managed-cluster provider while Google is simultaneously scaling external TPU sales and multibillion-dollar capacity commitments, showing the cloud and accelerator platform is becoming commercially credible rather than remaining an internal-only technical asset.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard",
+        "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
+        "https://newsletter.semianalysis.com/p/gemini-is-cooked-but-gcp-is-cooking",
+        "https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the"
+      ]
+    },
+    {
+      "loggedDate": "2026-09-24",
+      "sourceDate": "2026-09-23",
+      "company": "CoreWeave / CRWV",
+      "bullishness": 4,
+      "summary": "CoreWeave’s operating-moat thesis materially strengthens but remains 4/5: SemiAnalysis still rates it the industry’s leading Platinum neocloud, with best-in-class reliability and unusually deep hardware/software operations, while its debt and cost of capital increasingly push growth toward lower-margin, financeable bare-metal contracts.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard",
+        "https://ceointerviews.ai/interview/1972570/",
+        "https://newsletter.semianalysis.com/p/meta-compute-200b-superintelligence"
+      ]
+    },
+    {
+      "loggedDate": "2026-09-24",
+      "sourceDate": "2026-09-23",
+      "company": "Nebius / NBIS",
+      "bullishness": 5,
+      "summary": "Nebius enters the tracker at 5/5 because SemiAnalysis now rates it a Platinum neocloud and the default provider for frontier AI labs, combining premium managed-cluster execution, early next-generation GPU deployment and unusually strong revenue-per-MW economics with a credible multi-gigawatt expansion path.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard"
+      ]
+    },
+    {
+      "loggedDate": "2026-09-24",
+      "sourceDate": "2026-09-23",
+      "company": "Oracle / ORCL",
+      "bullishness": 4,
+      "summary": "Oracle enters the tracker at 4/5 because SemiAnalysis now rates OCI a Gold GPU-cloud provider, expects it to post the largest relative hyperscaler growth in 2027, and finds strong day-one GB300 cluster execution, while uneven AMD operations and concentrated capital commitments keep conviction below the leaders.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard"
+      ]
+    },
     {
       "loggedDate": "2026-09-22",
       "sourceDate": "2026-09-21",
@@ -11,17 +56,6 @@
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/computation-and-data-movement-for",
         "https://teram.com/teram-press-release/"
-      ]
-    },
-    {
-      "loggedDate": "2026-09-20",
-      "sourceDate": "2026-09-18",
-      "company": "CoreWeave / CRWV",
-      "bullishness": 4,
-      "summary": "CoreWeave’s neocloud thesis materially redirects but remains 4/5: falling cost per unit of intelligence can make deployed GPUs more economically valuable and premium software/reliability supports higher margins, but long-term winners must evolve from spot GPU rental toward optimized inference and token services.",
-      "sourceUrls": [
-        "https://ceointerviews.ai/interview/1972570/",
-        "https://newsletter.semianalysis.com/p/meta-compute-200b-superintelligence"
       ]
     },
     {
@@ -116,18 +150,6 @@
       "sourceUrls": [
         "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
         "https://www.positron.ai/about"
-      ]
-    },
-    {
-      "loggedDate": "2026-09-08",
-      "sourceDate": "2026-09-07",
-      "company": "Alphabet / GOOGL",
-      "bullishness": 5,
-      "summary": "Google’s merchant TPU/GCP thesis materially strengthens again: third-party InferenceX preview results now show TPUv7 Ironwood can beat Nvidia B200/B300 on modeled inference performance per dollar across meaningful FP8 operating points while Google rapidly externalizes its software stack, materially de-risking the technical foundation behind SemiAnalysis’s already-bullish external TPU/GCP revenue thesis.",
-      "sourceUrls": [
-        "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
-        "https://newsletter.semianalysis.com/p/gemini-is-cooked-but-gcp-is-cooking",
-        "https://newsletter.semianalysis.com/p/tpuv7-google-takes-a-swing-at-the"
       ]
     },
     {
