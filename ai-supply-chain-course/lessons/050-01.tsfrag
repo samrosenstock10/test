@@ -17,43 +17,45 @@ Lesson 048: More accelerators help only when their useful output justifies the e
 
 Lesson 049: Dense AI racks need enough electricity and cooling at every step, or expensive chips cannot run as intended.
 
-The big idea
+Two power feeds. One outage.
 
-A data center may have a large electricity agreement and still be unable to power another AI rack.
+An AI rack has two electrical feeds, labelled A and B. One morning, an upstream breaker opens and both feeds go dark. Nothing inside the servers has failed. Why did the backup disappear with the main supply?
 
-Electricity needs a complete, correctly sized path from the utility connection to the server. Transformers change the voltage, switchgear controls and protects the flow, backup systems cover interruptions, and cables or busways carry power toward the racks.
+In this illustrative incident, the two feeds share that breaker. There are two paths near the rack, but a common point of failure farther upstream. The labels describe the final connections; they do not prove independence.
 
-The capacity of the weakest necessary part limits the amount of compute that can run. That is why electrical distribution can delay useful AI capacity even after the building and chips are available.
+Lesson 049 followed electricity into the server. Now we work backward through the building to understand what makes that electricity available, controllable and resilient. The goal is to read a power-capacity claim and know what still needs checking.
 
-Where we are
+Start upstream of the rack
 
-Last lesson followed electricity through the rack and server. Now we move one level outward:
+Before electricity reaches a server, the facility must receive it, change voltage, distribute it and protect the equipment along the way. A transformer changes AC voltage. Switchgear contains switching and protective equipment. An uninterruptible power supply, or UPS, supports critical loads through interruptions.
 
-utility or on-site source → switchgear → transformer → building distribution → backup power → rack PDU → server power supply → chips.
+These are different jobs. Owning one component does not substitute for the others. Here is one simplified arrangement; real facilities vary in equipment order, voltage levels and the location of backup connections.
 
-Real facilities arrange these parts differently and may have several voltage changes or parallel paths. Power still must travel through a chain of equipment before reaching a GPU.
+Utility supply — brings electricity to the site
 
-1. Why voltage changes along the way
+↓
 
-Moving a large amount of power at a higher voltage requires less current, the flow of electric charge, than moving the same power at a lower voltage. Lower current can reduce energy losses and the amount of conductor material needed.
+Switchgear and transformers — protect circuits and change voltage
 
-That makes higher voltage useful for carrying substantial power through the grid and across a large site. Servers cannot use those high voltages directly.
+↓
 
-A transformer changes alternating-current voltage without changing the electricity into a different form. A data center can therefore receive power at a higher voltage, move it efficiently through part of the site, and step it down closer to the equipment that needs it.
+UPS and downstream distribution — bridge interruptions and carry power onward
 
-Voltage is chosen for each part of the journey. A transformer connects those parts, and its capacity can become a deployment limit.
+↓
 
-2. Switchgear makes the flow controllable
+Rack feeds and server supplies — deliver usable power to compute
 
-Switchgear is a group of switches, circuit breakers and protective controls. It connects sections of the electrical system and can disconnect them when something goes wrong.
+A generator can connect through transfer or paralleling equipment to support an appropriate upstream point. It is an alternative source, not a component that electricity must always pass through. The exact connections determine which failures the system can survive.
 
-A protective relay watches for abnormal conditions, such as excessive current caused by a fault. It can tell a circuit breaker to interrupt the flow. The goal is to isolate the affected section before damage spreads, while keeping healthy sections energized when the design allows it.
+The transformer solves a transport problem
 
-Switchgear also creates safe isolation points for maintenance. If technicians need to work on a transformer or cable, they need a dependable way to separate that equipment from live power.
+Large amounts of power are easier to move at higher voltage because the same power requires less current, other factors held constant. Lower current reduces conductor heating and can reduce the amount of conductor material needed. But equipment downstream has its own permitted input voltage.
 
-The equipment must interrupt large fault currents safely and coordinate with protection elsewhere. Detailed settings belong to specialists, but the consequence is clear: protection that is too slow risks equipment; protection that is too broad can turn one local problem into a larger outage.
+A transformer connects these requirements. Changing magnetic fields couple its windings, allowing it to change alternating-current voltage while keeping the electricity AC. It does not perform the AC-to-DC conversion that a conventional server power supply performs.
 
-3. A UPS covers the gap
+A facility can therefore move electricity at higher voltage and step it down closer to its users. The transformer still has a finite rating. A larger utility agreement cannot make an installed transformer carry unlimited load.
 
-Utility power can disappear or move outside the voltage range equipment can accept. An uninterruptible power supply, or UPS, provides immediate stored energy and conditions the power delivered to critical equipment.
+The breaker that stopped the job
+
+Switchgear lets operators connect, disconnect and isolate electrical circuits. Protective relays detect abnormal conditions and can command circuit breakers to interrupt fault currents. Opening a breaker may be the correct response to a fault; allowing current to continue could damage equipment.
 
