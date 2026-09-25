@@ -43,6 +43,13 @@
       "url": "https://www.exponentialview.co/",
       "kind": "economic-analysis",
       "priority": "weekly-supporting"
+    },
+    {
+      "id": "semianalysis",
+      "label": "SemiAnalysis",
+      "url": "https://semianalysis.com/",
+      "kind": "technical-analysis",
+      "priority": "principal-forecast-guide"
     }
   ],
   "observations": [
@@ -370,6 +377,35 @@
       "verification": "The complete official OCP catalog article was read. Linked demonstrations were not observed, vendor claims were not independently tested, and no procurement evidence was reviewed.",
       "freshness": "recent-official-catalog",
       "itemId": "ocp-global-summit-2026-demo-lineup"
+    },
+    {
+      "id": "expert-20260925-dylan-rack-value-density",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "title": "GB300 rack value density highlights Nvidia's growing rack-level economics",
+      "sourceTitle": "Fentanyl Grade Compute: Why a GB300 Rack Will Out-Price Blow by Weight in 2030",
+      "url": "https://x.com/dylan522p/status/2103225106512363902",
+      "speaker": "Dylan Patel",
+      "role": "Founder and chief analyst, SemiAnalysis",
+      "publishedDate": "2026-09-25",
+      "observedAt": "2026-09-25T12:37:27Z",
+      "contentAccess": "notes-only",
+      "independenceGroup": "SemiAnalysis",
+      "summary": "Patel reports recent purchase orders near $5 million for a roughly 1,580-kilogram GB300 NVL72 rack and argues that rack value density will keep rising into the Rubin era.",
+      "claim": "The indexed first-party post says a GB300 NVL72 rack is worth about $3,165 per kilogram today and projects far higher rack value density by 2030.",
+      "interpretation": "Our lead: Nvidia is capturing more system-level value through tightly integrated rack-scale compute, networking, memory and cooling. This supports the rack-level value-capture question but does not establish future margins, realized customer returns or the 2030 price forecast.",
+      "beneficiaryTickers": [
+        "NVDA"
+      ],
+      "countercase": "The purchase-order price, rack mass and 2030 extrapolation were not independently verified; system price includes non-GPU components, and higher rack ASP does not by itself imply better unit economics or durable margins.",
+      "nextTest": "Verify dated purchase-order pricing and rack configuration, then track Nvidia's share of rack bill of materials, system gross margin and customer revenue per deployed rack across GB300 and Rubin.",
+      "evidenceType": "analyst-estimate",
+      "status": "lead",
+      "location": "Indexed text from the author's public X post; full post retrieval returned access denied.",
+      "incentives": "Patel is promoting SemiAnalysis research and benefits from attention and subscriptions; no position disclosure was verified.",
+      "verification": "The exact author, title, URL and indexed first-party text were verified. Nvidia's official GB300 NVL72 configuration was cross-checked separately, but the purchase orders, rack weight and forecast were not independently confirmed.",
+      "freshness": "same-day-public-post",
+      "itemId": "dylan-fentanyl-grade-compute-20260925"
     }
   ],
   "evidence": [
@@ -13399,27 +13435,19 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-09-24T13:40:48Z",
-    "kind": "daily-expert-scan",
+    "asOf": "2026-09-25T12:37:27Z",
+    "kind": "semi-analysis-scan",
     "completedChannels": [
-      "information-bottleneck",
-      "ocp",
-      "gpu-mode"
+      "semianalysis"
     ],
-    "partialChannels": [
-      "latent-space",
-      "dwarkesh"
-    ],
+    "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "The Information Bottleneck official archive remained current through September 21; its newest item concerned medical AI and did not require infrastructure review.",
-      "Latent Space's official archive did not expose an item list and its XML feed remained inaccessible to the available reader. Bounded official-domain discovery found no newer qualifying item; completeness is not inferred.",
-      "OCP's newest technical item remained the September 22 summit demo catalog already recorded in engineering-20260923; no new primary slides, recording or measured deployment result was available.",
-      "Dwarkesh's official page and XML feed remained inaccessible to the available reader. Bounded official-domain discovery found no newer qualifying infrastructure episode; completeness is not inferred.",
-      "GPU MODE's lectures repository still topped out at Lecture 114; no newer primary artifact was visible.",
-      "All 18 current-company trailing P/E records and the labeled Nasdaq-100 proxy were refreshed to the latest completed session, September 23. SPCX and CRWV still lacked positive trailing P/E anchors.",
-      "No weekly conviction review was performed; the next regular logical week is September 27. Scores, ranks and return assumptions were unchanged."
+      "The official SemiAnalysis archive remained current through the September 23 ClusterMAX 3.0 article; that company-level evidence was already reconciled in the September 24 cycle.",
+      "Dylan Patel's September 25 public X post was available only through indexed first-party text. The exact post URL and title were verified, but the full post, purchase orders, rack mass and 2030 forecast were not independently confirmed; the item is therefore a notes-only lead.",
+      "Gmail contained no new direct or forwarded SemiAnalysis/Dylan Patel item requiring reconciliation.",
+      "No company-thesis, score, ranking, valuation or review change was made. The separately due builder-engineering lane is recorded in Research Runs and does not alter this publication snapshot's source coverage."
     ]
   },
-  "updatedAt": "2026-09-24T13:43:29Z"
+  "updatedAt": "2026-09-25T12:39:12Z"
 }
