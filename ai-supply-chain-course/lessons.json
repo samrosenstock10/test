@@ -502,7 +502,19 @@
         "lessons/049-02.tsfrag",
         "lessons/049-03.tsfrag"
       ]
+    },
+    {
+      "number": 50,
+      "module": "Module 5: Power, Cooling and Data Center Deployment",
+      "title": "Electrical Distribution — How Power Reaches the Rack Reliably",
+      "date": "2026-09-25",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/050-01.tsfrag",
+        "lessons/050-02.tsfrag",
+        "lessons/050-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-24T11:07:03.801Z"
+  "updatedAt": "2026-09-25T11:05:33.391Z"
 }
