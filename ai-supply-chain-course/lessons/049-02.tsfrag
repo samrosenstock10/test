@@ -1,3 +1,5 @@
+Return to our four servers. If their rack PDU or upstream circuit is the constraint, spare building capacity cannot bypass it. Installing a larger PDU alone also fails if the wiring feeding it remains undersized. The entire required path must support the load.
+
 Why density changes the hardware
 
 Putting more compute in one rack concentrates electrical demand. Voltage describes an electrical potential difference; current is the flow of charge. For a given delivered power, raising voltage allows less current, holding other relevant factors constant.
@@ -34,15 +36,11 @@ Answer: Not at their intended sustained load. We have moved the bottleneck. Heat
 
 The supply chain must deliver a working combination: power supplies, distribution units, conductors, connectors, monitoring and cooling. A supplier’s product matters when it removes the binding constraint reliably; rising rack power alone does not tell us who captures the profit.
 
-The durable lesson is that useful compute requires a complete operating path. Before accepting a capacity claim, ask where power is available, how much survives a failure, and whether cooling supports the same load.
+From hardware to useful compute → Enough power at every stage, enough capacity after the specified failure, and enough cooling at the rack.
+
+Before accepting a capacity claim, ask where power is available, how much survives a failure, and whether cooling supports the same load.
 
 Sources
 
 NVIDIA, DGX B200 User Guide — system and power specifications: https://docs.nvidia.com/dgx/dgxb200-user-guide/introduction-to-dgxb200.html
-
-NVIDIA, DGX B200 User Guide — managing power capping: https://docs.nvidia.com/dgx/dgxb200-user-guide/power-capping.html
-
-Eaton, rack power distribution units: https://www.eaton.com/us/en-us/products/backup-power-ups-surge-it-power-distribution/power-distribution-for-it-equipment/power-distribution-units-for-server-racks.html
-
-Next lesson
 

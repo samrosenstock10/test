@@ -23,6 +23,8 @@ An AI rack has two electrical feeds, labelled A and B. One morning, an upstream 
 
 In this illustrative incident, the two feeds share that breaker. There are two paths near the rack, but a common point of failure farther upstream. The labels describe the final connections; they do not prove independence.
 
+![In the upper arrangement, one breaker disconnects both feeds. In the lower arrangement, losing A leaves B available at the boundary shown. Follow every shared upstream point before calling the paths independent.](/lessons/050-shared-failure.svg)
+
 Lesson 049 followed electricity into the server. Now we work backward through the building to understand what makes that electricity available, controllable and resilient. The goal is to read a power-capacity claim and know what still needs checking.
 
 Start upstream of the rack
@@ -56,6 +58,4 @@ A transformer connects these requirements. Changing magnetic fields couple its w
 A facility can therefore move electricity at higher voltage and step it down closer to its users. The transformer still has a finite rating. A larger utility agreement cannot make an installed transformer carry unlimited load.
 
 The breaker that stopped the job
-
-Switchgear lets operators connect, disconnect and isolate electrical circuits. Protective relays detect abnormal conditions and can command circuit breakers to interrupt fault currents. Opening a breaker may be the correct response to a fault; allowing current to continue could damage equipment.
 
