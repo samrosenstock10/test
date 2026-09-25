@@ -1,0 +1,59 @@
+import type { Lesson } from "./lessons";
+
+export const lesson050 = {
+  number: 50,
+  module: "Module 5: Power, Cooling and Data Center Deployment",
+  title: "Electrical Distribution — How Power Reaches the Rack Reliably",
+  date: "2026-09-25",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 045: Network interfaces move data out of servers, while switches choose shared paths that can become bottlenecks.
+
+Lesson 046: Copper works well over short connections, while optics carries signals reliably over longer distances.
+
+Lesson 047: Synchronized workers depend on one another, so one slow or failed participant can waste time across the cluster.
+
+Lesson 048: More accelerators help only when their useful output justifies the extra communication, waiting and cost.
+
+Lesson 049: Dense AI racks need enough electricity and cooling at every step, or expensive chips cannot run as intended.
+
+The big idea
+
+A data center may have a large electricity agreement and still be unable to power another AI rack.
+
+Electricity needs a complete, correctly sized path from the utility connection to the server. Transformers change the voltage, switchgear controls and protects the flow, backup systems cover interruptions, and cables or busways carry power toward the racks.
+
+The capacity of the weakest necessary part limits the amount of compute that can run. That is why electrical distribution can delay useful AI capacity even after the building and chips are available.
+
+Where we are
+
+Last lesson followed electricity through the rack and server. Now we move one level outward:
+
+utility or on-site source → switchgear → transformer → building distribution → backup power → rack PDU → server power supply → chips.
+
+Real facilities arrange these parts differently and may have several voltage changes or parallel paths. Power still must travel through a chain of equipment before reaching a GPU.
+
+1. Why voltage changes along the way
+
+Moving a large amount of power at a higher voltage requires less current, the flow of electric charge, than moving the same power at a lower voltage. Lower current can reduce energy losses and the amount of conductor material needed.
+
+That makes higher voltage useful for carrying substantial power through the grid and across a large site. Servers cannot use those high voltages directly.
+
+A transformer changes alternating-current voltage without changing the electricity into a different form. A data center can therefore receive power at a higher voltage, move it efficiently through part of the site, and step it down closer to the equipment that needs it.
+
+Voltage is chosen for each part of the journey. A transformer connects those parts, and its capacity can become a deployment limit.
+
+2. Switchgear makes the flow controllable
+
+Switchgear is a group of switches, circuit breakers and protective controls. It connects sections of the electrical system and can disconnect them when something goes wrong.
+
+A protective relay watches for abnormal conditions, such as excessive current caused by a fault. It can tell a circuit breaker to interrupt the flow. The goal is to isolate the affected section before damage spreads, while keeping healthy sections energized when the design allows it.
+
+Switchgear also creates safe isolation points for maintenance. If technicians need to work on a transformer or cable, they need a dependable way to separate that equipment from live power.
+
+The equipment must interrupt large fault currents safely and coordinate with protection elsewhere. Detailed settings belong to specialists, but the consequence is clear: protection that is too slow risks equipment; protection that is too broad can turn one local problem into a larger outage.
+
+3. A UPS covers the gap
+
+Utility power can disappear or move outside the voltage range equipment can accept. An uninterruptible power supply, or UPS, provides immediate stored energy and conditions the power delivered to critical equipment.
+
