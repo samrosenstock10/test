@@ -1886,6 +1886,80 @@
       },
       "selectionReason": "Activated inference capacity is a deployment fact relevant to accelerator demand and the distinction between installed supply and utilization.",
       "corroborationNote": "Reused Project Tracker evidence; the source and this handoff count once, not as independent corroboration."
+    },
+    {
+      "id": "project-b-20260917-aws-duke-talent-001-49fc4442c38d94b0",
+      "title": "AWS and Duke apply agents to grid interconnection studies",
+      "url": "https://press.aboutamazon.com/aws/2026/9/aws-launches-agentic-grid-planning-program-to-accelerate-interconnection-studies",
+      "kind": "project-bottleneck",
+      "independenceGroup": "amazon-duke-energy",
+      "publishedDate": "2026-09-17",
+      "observedAt": "2026-09-25T13:48:57Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "AWS and Duke Energy report that specialized agents automate parts of utility interconnection-study preparation and coordination while engineers retain final decisions.",
+      "claim": "Duke says some data-preparation work fell from two weeks to hours; the release says study demand is outpacing qualified power-systems engineers.",
+      "interpretation": "Our inference: workflow automation may increase grid-planning capacity and help ease a non-hardware bottleneck to connecting new generation and large loads. It does not establish shorter end-to-end interconnection queues or identify a public infrastructure winner.",
+      "verification": "Read the full September 17 AWS release and the attributed Duke Energy statement. The timing improvement is a participant disclosure from one collaboration, not an independently audited throughput study.",
+      "countercase": "Faster preparation may not accelerate deterministic simulations, engineering review, permits, transmission construction or final interconnection; AWS and Duke benefit from promoting the program.",
+      "nextTest": "Look for completed-study throughput, queue-time and large-load connection results across multiple utilities.",
+      "provenance": {
+        "tracker": "ai-project-tracker",
+        "finder": "ChatGPT AI Project Tracker",
+        "table": "Bottlenecks",
+        "sourceId": "B-20260917-AWS-DUKE-TALENT-001",
+        "sourceVersion": "49fc4442c38d94b0558d89f08d8ca4c9d0b9c059f3b84fa58576226225757dd5",
+        "projectIds": [
+          "P-20260917-AWS-DUKE-GRID-AGENTS"
+        ],
+        "originalSourceUrl": "https://press.aboutamazon.com/aws/2026/9/aws-launches-agentic-grid-planning-program-to-accelerate-interconnection-studies",
+        "originalDate": "2026-09-17",
+        "originalClaim": "AWS says interconnection-study demand is outpacing the number of qualified power-systems engineers; Duke Energy is using specialized AI agents to automate data preparation, simulation execution and workflow coordination, reducing some data-preparation tasks from two weeks of manual work to hours.",
+        "originator": "AWS / Duke Energy",
+        "sourceQuality": "5",
+        "notes": "Talent is recorded as easing because the agents increase planner capacity while engineers retain final decisions. The disclosure does not show a completed-study throughput increase or downstream reduction in actual grid-interconnection wait times.",
+        "bottleneck": "Talent",
+        "direction": "Easing"
+      },
+      "selectionReason": "Concrete power-system engineering capacity is relevant to AI load interconnection; the source provides a bounded utility deployment result.",
+      "corroborationNote": "Reused Project Tracker evidence; the source and this handoff count once, not as independent corroboration."
+    },
+    {
+      "id": "project-b-20260917-gf-marvell-mfgcap-001-b395e0765dd81b5b",
+      "title": "GlobalFoundries and Marvell expand SiGe capacity for AI optics",
+      "url": "https://gf.com/news-and-events/news/globalfoundries-and-marvell-expand-collaboration-fornext-generation-optical-connectivity/",
+      "kind": "project-bottleneck",
+      "independenceGroup": "globalfoundries-marvell",
+      "publishedDate": "2026-09-17",
+      "observedAt": "2026-09-25T13:48:57Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "GlobalFoundries and Marvell expanded a multi-year agreement to add Burlington SiGe capacity for optical interconnect components.",
+      "claim": "The companies say the expansion builds on existing production and is expected to add significant capacity for pluggable optics, near-packaged optics and co-packaged optics, but disclose no quantity or delivery schedule.",
+      "interpretation": "Our inference: this is concrete supplier action to expand an enabling optical-connectivity manufacturing layer. It supports GFS and MRVL as named participants, but does not prove production delivery, pricing power, margins or share gains.",
+      "verification": "Read the full September 17 GlobalFoundries release. Capacity, demand and technology claims are joint company disclosures from economically interested parties and were not independently measured.",
+      "countercase": "Undisclosed capacity and timing may be immaterial, late or offset by competing technologies and suppliers; announced investment does not establish realized demand or economics.",
+      "nextTest": "Track qualified wafer output, customer shipments, disclosed capital intensity and optical revenue/margin contribution.",
+      "provenance": {
+        "tracker": "ai-project-tracker",
+        "finder": "ChatGPT AI Project Tracker",
+        "table": "Bottlenecks",
+        "sourceId": "B-20260917-GF-MARVELL-MFGCAP-001",
+        "sourceVersion": "b395e0765dd81b5b8dc0d3ecdf8e3f9514707b755568f8c667c8fde37444daf5",
+        "projectIds": [
+          "P-20260917-GF-MARVELL-SIGE-BURLINGTON"
+        ],
+        "originalSourceUrl": "https://gf.com/news-and-events/news/globalfoundries-and-marvell-expand-collaboration-fornext-generation-optical-connectivity/",
+        "originalDate": "2026-09-17",
+        "originalClaim": "GlobalFoundries and Marvell expanded their multi-year agreement specifically to increase Burlington SiGe manufacturing capacity for optical interconnect components as AI data-center bandwidth demand grows.",
+        "originator": "GlobalFoundries / Marvell",
+        "sourceQuality": "5",
+        "notes": "Manufacturing capacity is recorded as easing because the companies have committed to incremental production capacity on top of an existing manufacturing base. The amount and timing of the incremental capacity were not disclosed, so it should not be treated as already delivered.",
+        "bottleneck": "Manufacturing Capacity",
+        "direction": "Easing"
+      },
+      "selectionReason": "A concrete optical-interconnect capacity agreement is directly relevant to the AI infrastructure stack and named public suppliers.",
+      "corroborationNote": "Reused Project Tracker evidence; the source and this handoff count once, not as independent corroboration."
     }
   ],
   "rankings": [
@@ -1941,8 +2015,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Demand grows but competition and margin normalization leave only modest per-share earnings growth.",
           "years": 10,
-          "entryMultiple": 19,
-          "annualizedPriceReturnPct": 5.5
+          "entryMultiple": 18,
+          "annualizedPriceReturnPct": 6.1
         },
         {
           "case": "bear",
@@ -1950,8 +2024,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Demand grows but competition and margin normalization leave only modest per-share earnings growth.",
           "years": 10,
-          "entryMultiple": 29,
-          "annualizedPriceReturnPct": 1.2
+          "entryMultiple": 28,
+          "annualizedPriceReturnPct": 1.5
         },
         {
           "case": "bear",
@@ -1959,8 +2033,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Demand grows but competition and margin normalization leave only modest per-share earnings growth.",
           "years": 10,
-          "entryMultiple": 39,
-          "annualizedPriceReturnPct": -1.8
+          "entryMultiple": 38,
+          "annualizedPriceReturnPct": -1.5
         },
         {
           "case": "base",
@@ -1968,8 +2042,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Systems leadership persists as AI workloads expand; growth slows substantially from the latest quarter.",
           "years": 10,
-          "entryMultiple": 19,
-          "annualizedPriceReturnPct": 25.6
+          "entryMultiple": 18,
+          "annualizedPriceReturnPct": 26.3
         },
         {
           "case": "base",
@@ -1977,8 +2051,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Systems leadership persists as AI workloads expand; growth slows substantially from the latest quarter.",
           "years": 10,
-          "entryMultiple": 29,
-          "annualizedPriceReturnPct": 20.4
+          "entryMultiple": 28,
+          "annualizedPriceReturnPct": 20.8
         },
         {
           "case": "base",
@@ -1986,8 +2060,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Systems leadership persists as AI workloads expand; growth slows substantially from the latest quarter.",
           "years": 10,
-          "entryMultiple": 39,
-          "annualizedPriceReturnPct": 16.9
+          "entryMultiple": 38,
+          "annualizedPriceReturnPct": 17.2
         },
         {
           "case": "bull",
@@ -1995,8 +2069,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "Agentic inference and broader deployment sustain exceptional per-share earnings compounding.",
           "years": 10,
-          "entryMultiple": 19,
-          "annualizedPriceReturnPct": 40
+          "entryMultiple": 18,
+          "annualizedPriceReturnPct": 40.8
         },
         {
           "case": "bull",
@@ -2004,8 +2078,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "Agentic inference and broader deployment sustain exceptional per-share earnings compounding.",
           "years": 10,
-          "entryMultiple": 29,
-          "annualizedPriceReturnPct": 34.2
+          "entryMultiple": 28,
+          "annualizedPriceReturnPct": 34.7
         },
         {
           "case": "bull",
@@ -2013,8 +2087,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "Agentic inference and broader deployment sustain exceptional per-share earnings compounding.",
           "years": 10,
-          "entryMultiple": 39,
-          "annualizedPriceReturnPct": 30.3
+          "entryMultiple": 38,
+          "annualizedPriceReturnPct": 30.7
         }
       ],
       "returnAssumptions": [
@@ -2247,8 +2321,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "AI growth is largely absorbed by capital intensity, overseas costs and industry cyclicality.",
           "years": 10,
-          "entryMultiple": 22,
-          "annualizedPriceReturnPct": 2
+          "entryMultiple": 23,
+          "annualizedPriceReturnPct": 1.6
         },
         {
           "case": "bear",
@@ -2256,8 +2330,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "AI growth is largely absorbed by capital intensity, overseas costs and industry cyclicality.",
           "years": 10,
-          "entryMultiple": 32,
-          "annualizedPriceReturnPct": -1.7
+          "entryMultiple": 33,
+          "annualizedPriceReturnPct": -2
         },
         {
           "case": "bear",
@@ -2265,8 +2339,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "AI growth is largely absorbed by capital intensity, overseas costs and industry cyclicality.",
           "years": 10,
-          "entryMultiple": 42,
-          "annualizedPriceReturnPct": -4.4
+          "entryMultiple": 43,
+          "annualizedPriceReturnPct": -4.6
         },
         {
           "case": "base",
@@ -2274,8 +2348,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Leading-edge manufacturing and packaging compound profitably across multiple architectures.",
           "years": 10,
-          "entryMultiple": 22,
-          "annualizedPriceReturnPct": 19.7
+          "entryMultiple": 23,
+          "annualizedPriceReturnPct": 19.1
         },
         {
           "case": "base",
@@ -2283,8 +2357,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Leading-edge manufacturing and packaging compound profitably across multiple architectures.",
           "years": 10,
-          "entryMultiple": 32,
-          "annualizedPriceReturnPct": 15.3
+          "entryMultiple": 33,
+          "annualizedPriceReturnPct": 14.9
         },
         {
           "case": "base",
@@ -2292,8 +2366,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Leading-edge manufacturing and packaging compound profitably across multiple architectures.",
           "years": 10,
-          "entryMultiple": 42,
-          "annualizedPriceReturnPct": 12.2
+          "entryMultiple": 43,
+          "annualizedPriceReturnPct": 11.9
         },
         {
           "case": "bull",
@@ -2301,8 +2375,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "AI wafer and packaging demand stays unusually strong while process leadership preserves pricing.",
           "years": 10,
-          "entryMultiple": 22,
-          "annualizedPriceReturnPct": 30.6
+          "entryMultiple": 23,
+          "annualizedPriceReturnPct": 30
         },
         {
           "case": "bull",
@@ -2310,8 +2384,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "AI wafer and packaging demand stays unusually strong while process leadership preserves pricing.",
           "years": 10,
-          "entryMultiple": 32,
-          "annualizedPriceReturnPct": 25.8
+          "entryMultiple": 33,
+          "annualizedPriceReturnPct": 25.4
         },
         {
           "case": "bull",
@@ -2319,8 +2393,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "AI wafer and packaging demand stays unusually strong while process leadership preserves pricing.",
           "years": 10,
-          "entryMultiple": 42,
-          "annualizedPriceReturnPct": 22.4
+          "entryMultiple": 43,
+          "annualizedPriceReturnPct": 22.1
         }
       ],
       "observedBearFacts": [
@@ -3052,8 +3126,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Ethernet demand continues, but bundling/open alternatives reduce Arista share or margins; a slower-growing network supplier earns a mature multiple.",
           "years": 10,
-          "entryMultiple": 54,
-          "annualizedPriceReturnPct": -4.9
+          "entryMultiple": 55,
+          "annualizedPriceReturnPct": -5.1
         },
         {
           "case": "bear",
@@ -3061,8 +3135,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Ethernet demand continues, but bundling/open alternatives reduce Arista share or margins; a slower-growing network supplier earns a mature multiple.",
           "years": 10,
-          "entryMultiple": 64,
-          "annualizedPriceReturnPct": -6.5
+          "entryMultiple": 65,
+          "annualizedPriceReturnPct": -6.7
         },
         {
           "case": "bear",
@@ -3070,8 +3144,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Ethernet demand continues, but bundling/open alternatives reduce Arista share or margins; a slower-growing network supplier earns a mature multiple.",
           "years": 10,
-          "entryMultiple": 74,
-          "annualizedPriceReturnPct": -7.9
+          "entryMultiple": 75,
+          "annualizedPriceReturnPct": -8
         },
         {
           "case": "base",
@@ -3079,8 +3153,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Recurring AI and cloud deployments sustain growth with broadly durable system/software margins; EPS compounds slower than recent revenue. A premium remains for cash generation but falls from today.",
           "years": 10,
-          "entryMultiple": 54,
-          "annualizedPriceReturnPct": 8.4
+          "entryMultiple": 55,
+          "annualizedPriceReturnPct": 8.2
         },
         {
           "case": "base",
@@ -3088,8 +3162,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Recurring AI and cloud deployments sustain growth with broadly durable system/software margins; EPS compounds slower than recent revenue. A premium remains for cash generation but falls from today.",
           "years": 10,
-          "entryMultiple": 64,
-          "annualizedPriceReturnPct": 6.6
+          "entryMultiple": 65,
+          "annualizedPriceReturnPct": 6.4
         },
         {
           "case": "base",
@@ -3097,8 +3171,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Recurring AI and cloud deployments sustain growth with broadly durable system/software margins; EPS compounds slower than recent revenue. A premium remains for cash generation but falls from today.",
           "years": 10,
-          "entryMultiple": 74,
-          "annualizedPriceReturnPct": 5.1
+          "entryMultiple": 75,
+          "annualizedPriceReturnPct": 4.9
         },
         {
           "case": "bull",
@@ -3106,8 +3180,8 @@
           "terminalMultiple": 35,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Arista sustains a broad AI fabric franchise and healthy margins for a decade. This demands repeated production wins and high per-share cash growth; the terminal premium still compresses.",
           "years": 10,
-          "entryMultiple": 54,
-          "annualizedPriceReturnPct": 16.8
+          "entryMultiple": 55,
+          "annualizedPriceReturnPct": 16.6
         },
         {
           "case": "bull",
@@ -3115,8 +3189,8 @@
           "terminalMultiple": 35,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Arista sustains a broad AI fabric franchise and healthy margins for a decade. This demands repeated production wins and high per-share cash growth; the terminal premium still compresses.",
           "years": 10,
-          "entryMultiple": 64,
-          "annualizedPriceReturnPct": 14.9
+          "entryMultiple": 65,
+          "annualizedPriceReturnPct": 14.7
         },
         {
           "case": "bull",
@@ -3124,8 +3198,8 @@
           "terminalMultiple": 35,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Arista sustains a broad AI fabric franchise and healthy margins for a decade. This demands repeated production wins and high per-share cash growth; the terminal premium still compresses.",
           "years": 10,
-          "entryMultiple": 74,
-          "annualizedPriceReturnPct": 13.2
+          "entryMultiple": 75,
+          "annualizedPriceReturnPct": 13
         }
       ],
       "coreEligible": true,
@@ -3800,8 +3874,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. EPYC and selective Instinct adoption grow earnings slowly, while software costs, customer inducements and competition restrain per-share profit. Terminal valuation normalizes sharply.",
           "years": 10,
-          "entryMultiple": 148,
-          "annualizedPriceReturnPct": -14
+          "entryMultiple": 151,
+          "annualizedPriceReturnPct": -14.2
         },
         {
           "case": "bear",
@@ -3809,8 +3883,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. EPYC and selective Instinct adoption grow earnings slowly, while software costs, customer inducements and competition restrain per-share profit. Terminal valuation normalizes sharply.",
           "years": 10,
-          "entryMultiple": 158,
-          "annualizedPriceReturnPct": -14.6
+          "entryMultiple": 161,
+          "annualizedPriceReturnPct": -14.8
         },
         {
           "case": "bear",
@@ -3818,8 +3892,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. EPYC and selective Instinct adoption grow earnings slowly, while software costs, customer inducements and competition restrain per-share profit. Terminal valuation normalizes sharply.",
           "years": 10,
-          "entryMultiple": 168,
-          "annualizedPriceReturnPct": -15.1
+          "entryMultiple": 171,
+          "annualizedPriceReturnPct": -15.3
         },
         {
           "case": "base",
@@ -3827,8 +3901,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. AMD becomes a durable second compute platform with profitable repeated deployment; operating leverage and ROCm improve earnings after dilution. This requires substantial execution despite a lower terminal multiple.",
           "years": 10,
-          "entryMultiple": 148,
-          "annualizedPriceReturnPct": 2.3
+          "entryMultiple": 151,
+          "annualizedPriceReturnPct": 2.1
         },
         {
           "case": "base",
@@ -3836,8 +3910,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. AMD becomes a durable second compute platform with profitable repeated deployment; operating leverage and ROCm improve earnings after dilution. This requires substantial execution despite a lower terminal multiple.",
           "years": 10,
-          "entryMultiple": 158,
-          "annualizedPriceReturnPct": 1.6
+          "entryMultiple": 161,
+          "annualizedPriceReturnPct": 1.4
         },
         {
           "case": "base",
@@ -3845,8 +3919,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. AMD becomes a durable second compute platform with profitable repeated deployment; operating leverage and ROCm improve earnings after dilution. This requires substantial execution despite a lower terminal multiple.",
           "years": 10,
-          "entryMultiple": 168,
-          "annualizedPriceReturnPct": 1
+          "entryMultiple": 171,
+          "annualizedPriceReturnPct": 0.8
         },
         {
           "case": "bull",
@@ -3854,8 +3928,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Instinct/Helios achieves sustained large-scale adoption and stronger platform economics while EPYC remains differentiated. This is an aggressive decade-long compounding endpoint with a remaining premium valuation.",
           "years": 10,
-          "entryMultiple": 148,
-          "annualizedPriceReturnPct": 14.1
+          "entryMultiple": 151,
+          "annualizedPriceReturnPct": 13.8
         },
         {
           "case": "bull",
@@ -3863,8 +3937,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Instinct/Helios achieves sustained large-scale adoption and stronger platform economics while EPYC remains differentiated. This is an aggressive decade-long compounding endpoint with a remaining premium valuation.",
           "years": 10,
-          "entryMultiple": 158,
-          "annualizedPriceReturnPct": 13.3
+          "entryMultiple": 161,
+          "annualizedPriceReturnPct": 13.1
         },
         {
           "case": "bull",
@@ -3872,8 +3946,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Instinct/Helios achieves sustained large-scale adoption and stronger platform economics while EPYC remains differentiated. This is an aggressive decade-long compounding endpoint with a remaining premium valuation.",
           "years": 10,
-          "entryMultiple": 168,
-          "annualizedPriceReturnPct": 12.6
+          "entryMultiple": 171,
+          "annualizedPriceReturnPct": 12.4
         }
       ],
       "coreEligible": false,
@@ -4024,8 +4098,8 @@
           "terminalMultiple": 18,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Divestiture gains roll out and custom/optics economics disappoint after incentives, R&D and dilution. Lower recurring earnings and a mature-supplier valuation follow.",
           "years": 10,
-          "entryMultiple": 76,
-          "annualizedPriceReturnPct": -17.7
+          "entryMultiple": 75,
+          "annualizedPriceReturnPct": -17.6
         },
         {
           "case": "bear",
@@ -4033,8 +4107,8 @@
           "terminalMultiple": 18,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Divestiture gains roll out and custom/optics economics disappoint after incentives, R&D and dilution. Lower recurring earnings and a mature-supplier valuation follow.",
           "years": 10,
-          "entryMultiple": 86,
-          "annualizedPriceReturnPct": -18.8
+          "entryMultiple": 85,
+          "annualizedPriceReturnPct": -18.7
         },
         {
           "case": "bear",
@@ -4042,7 +4116,7 @@
           "terminalMultiple": 18,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Divestiture gains roll out and custom/optics economics disappoint after incentives, R&D and dilution. Lower recurring earnings and a mature-supplier valuation follow.",
           "years": 10,
-          "entryMultiple": 96,
+          "entryMultiple": 95,
           "annualizedPriceReturnPct": -19.6
         },
         {
@@ -4051,8 +4125,8 @@
           "terminalMultiple": 25,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. New recurring custom and connectivity profit replaces the divestiture contribution, then expands. Eight percent measured from inflated reported EPS implies stronger growth from a clean operating baseline; the exit multiple rewards quality without platform pricing.",
           "years": 10,
-          "entryMultiple": 76,
-          "annualizedPriceReturnPct": -3.4
+          "entryMultiple": 75,
+          "annualizedPriceReturnPct": -3.2
         },
         {
           "case": "base",
@@ -4060,8 +4134,8 @@
           "terminalMultiple": 25,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. New recurring custom and connectivity profit replaces the divestiture contribution, then expands. Eight percent measured from inflated reported EPS implies stronger growth from a clean operating baseline; the exit multiple rewards quality without platform pricing.",
           "years": 10,
-          "entryMultiple": 86,
-          "annualizedPriceReturnPct": -4.6
+          "entryMultiple": 85,
+          "annualizedPriceReturnPct": -4.4
         },
         {
           "case": "base",
@@ -4069,8 +4143,8 @@
           "terminalMultiple": 25,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. New recurring custom and connectivity profit replaces the divestiture contribution, then expands. Eight percent measured from inflated reported EPS implies stronger growth from a clean operating baseline; the exit multiple rewards quality without platform pricing.",
           "years": 10,
-          "entryMultiple": 96,
-          "annualizedPriceReturnPct": -5.6
+          "entryMultiple": 95,
+          "annualizedPriceReturnPct": -5.5
         },
         {
           "case": "bull",
@@ -4078,8 +4152,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Multiple custom programs and photonics transitions produce sustained per-share profit at improving margins. Acquisition and incentive costs are absorbed; the business still earns a lower multiple than a dominant platform.",
           "years": 10,
-          "entryMultiple": 76,
-          "annualizedPriceReturnPct": 7.5
+          "entryMultiple": 75,
+          "annualizedPriceReturnPct": 7.7
         },
         {
           "case": "bull",
@@ -4087,8 +4161,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Multiple custom programs and photonics transitions produce sustained per-share profit at improving margins. Acquisition and incentive costs are absorbed; the business still earns a lower multiple than a dominant platform.",
           "years": 10,
-          "entryMultiple": 86,
-          "annualizedPriceReturnPct": 6.2
+          "entryMultiple": 85,
+          "annualizedPriceReturnPct": 6.3
         },
         {
           "case": "bull",
@@ -4096,8 +4170,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Multiple custom programs and photonics transitions produce sustained per-share profit at improving margins. Acquisition and incentive costs are absorbed; the business still earns a lower multiple than a dominant platform.",
           "years": 10,
-          "entryMultiple": 96,
-          "annualizedPriceReturnPct": 5
+          "entryMultiple": 95,
+          "annualizedPriceReturnPct": 5.2
         }
       ],
       "coreEligible": false,
@@ -5417,7 +5491,16 @@
           "terminalMultiple": 15,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Fuel cells remain a niche and warranty/customer concessions prevent strong owner earnings; positive terminal EPS excludes a separate possible loss or failure outcome.",
           "years": 10,
-          "entryMultiple": 365,
+          "entryMultiple": 353,
+          "annualizedPriceReturnPct": -23.4
+        },
+        {
+          "case": "bear",
+          "epsGrowthPct": 5,
+          "terminalMultiple": 15,
+          "assumptionNote": "Illustrative endpoint stress, not a forecast. Fuel cells remain a niche and warranty/customer concessions prevent strong owner earnings; positive terminal EPS excludes a separate possible loss or failure outcome.",
+          "years": 10,
+          "entryMultiple": 363,
           "annualizedPriceReturnPct": -23.7
         },
         {
@@ -5426,17 +5509,17 @@
           "terminalMultiple": 15,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Fuel cells remain a niche and warranty/customer concessions prevent strong owner earnings; positive terminal EPS excludes a separate possible loss or failure outcome.",
           "years": 10,
-          "entryMultiple": 375,
+          "entryMultiple": 373,
           "annualizedPriceReturnPct": -23.9
         },
         {
-          "case": "bear",
-          "epsGrowthPct": 5,
-          "terminalMultiple": 15,
-          "assumptionNote": "Illustrative endpoint stress, not a forecast. Fuel cells remain a niche and warranty/customer concessions prevent strong owner earnings; positive terminal EPS excludes a separate possible loss or failure outcome.",
+          "case": "base",
+          "epsGrowthPct": 30,
+          "terminalMultiple": 25,
+          "assumptionNote": "Illustrative endpoint stress, not a forecast. Commercial scale eventually builds several times current owner earnings; the high CAGR reflects today’s tiny recently positive TTM base and is not a forecast.",
           "years": 10,
-          "entryMultiple": 385,
-          "annualizedPriceReturnPct": -24.1
+          "entryMultiple": 353,
+          "annualizedPriceReturnPct": -0.2
         },
         {
           "case": "base",
@@ -5444,8 +5527,8 @@
           "terminalMultiple": 25,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Commercial scale eventually builds several times current owner earnings; the high CAGR reflects today’s tiny recently positive TTM base and is not a forecast.",
           "years": 10,
-          "entryMultiple": 365,
-          "annualizedPriceReturnPct": -0.6
+          "entryMultiple": 363,
+          "annualizedPriceReturnPct": -0.5
         },
         {
           "case": "base",
@@ -5453,17 +5536,17 @@
           "terminalMultiple": 25,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Commercial scale eventually builds several times current owner earnings; the high CAGR reflects today’s tiny recently positive TTM base and is not a forecast.",
           "years": 10,
-          "entryMultiple": 375,
+          "entryMultiple": 373,
           "annualizedPriceReturnPct": -0.8
         },
         {
-          "case": "base",
-          "epsGrowthPct": 30,
-          "terminalMultiple": 25,
-          "assumptionNote": "Illustrative endpoint stress, not a forecast. Commercial scale eventually builds several times current owner earnings; the high CAGR reflects today’s tiny recently positive TTM base and is not a forecast.",
+          "case": "bull",
+          "epsGrowthPct": 40,
+          "terminalMultiple": 35,
+          "assumptionNote": "Illustrative endpoint stress, not a forecast. Bloom becomes a large permanent onsite-power platform with demonstrated uptime, service margins and controlled dilution; extraordinary execution is required.",
           "years": 10,
-          "entryMultiple": 385,
-          "annualizedPriceReturnPct": -1.1
+          "entryMultiple": 353,
+          "annualizedPriceReturnPct": 11.1
         },
         {
           "case": "bull",
@@ -5471,8 +5554,8 @@
           "terminalMultiple": 35,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Bloom becomes a large permanent onsite-power platform with demonstrated uptime, service margins and controlled dilution; extraordinary execution is required.",
           "years": 10,
-          "entryMultiple": 365,
-          "annualizedPriceReturnPct": 10.7
+          "entryMultiple": 363,
+          "annualizedPriceReturnPct": 10.8
         },
         {
           "case": "bull",
@@ -5480,17 +5563,8 @@
           "terminalMultiple": 35,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Bloom becomes a large permanent onsite-power platform with demonstrated uptime, service margins and controlled dilution; extraordinary execution is required.",
           "years": 10,
-          "entryMultiple": 375,
-          "annualizedPriceReturnPct": 10.4
-        },
-        {
-          "case": "bull",
-          "epsGrowthPct": 40,
-          "terminalMultiple": 35,
-          "assumptionNote": "Illustrative endpoint stress, not a forecast. Bloom becomes a large permanent onsite-power platform with demonstrated uptime, service margins and controlled dilution; extraordinary execution is required.",
-          "years": 10,
-          "entryMultiple": 385,
-          "annualizedPriceReturnPct": 10.2
+          "entryMultiple": 373,
+          "annualizedPriceReturnPct": 10.5
         }
       ],
       "coreEligible": false,
@@ -6946,66 +7020,66 @@
     "requiredGrowthHurdles": [
       {
         "ticker": "NVDA",
-        "assumedEntryMultiple": 19,
+        "assumedEntryMultiple": 18,
         "terminalMultiple": 20,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 13.8
+      },
+      {
+        "ticker": "NVDA",
+        "assumedEntryMultiple": 18,
+        "terminalMultiple": 30,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 9.3
+      },
+      {
+        "ticker": "NVDA",
+        "assumedEntryMultiple": 18,
+        "terminalMultiple": 40,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 6.2
+      },
+      {
+        "ticker": "NVDA",
+        "assumedEntryMultiple": 28,
+        "terminalMultiple": 20,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 18.9
+      },
+      {
+        "ticker": "NVDA",
+        "assumedEntryMultiple": 28,
+        "terminalMultiple": 30,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 14.2
+      },
+      {
+        "ticker": "NVDA",
+        "assumedEntryMultiple": 28,
+        "terminalMultiple": 40,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 11
+      },
+      {
+        "ticker": "NVDA",
+        "assumedEntryMultiple": 38,
+        "terminalMultiple": 20,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 22.6
+      },
+      {
+        "ticker": "NVDA",
+        "assumedEntryMultiple": 38,
+        "terminalMultiple": 30,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 17.8
+      },
+      {
+        "ticker": "NVDA",
+        "assumedEntryMultiple": 38,
+        "terminalMultiple": 40,
         "targetAnnualizedPriceReturnPct": 15,
         "requiredEPSGrowthPct": 14.4
-      },
-      {
-        "ticker": "NVDA",
-        "assumedEntryMultiple": 19,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 9.9
-      },
-      {
-        "ticker": "NVDA",
-        "assumedEntryMultiple": 19,
-        "terminalMultiple": 40,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 6.7
-      },
-      {
-        "ticker": "NVDA",
-        "assumedEntryMultiple": 29,
-        "terminalMultiple": 20,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 19.4
-      },
-      {
-        "ticker": "NVDA",
-        "assumedEntryMultiple": 29,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 14.6
-      },
-      {
-        "ticker": "NVDA",
-        "assumedEntryMultiple": 29,
-        "terminalMultiple": 40,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 11.4
-      },
-      {
-        "ticker": "NVDA",
-        "assumedEntryMultiple": 39,
-        "terminalMultiple": 20,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 22.9
-      },
-      {
-        "ticker": "NVDA",
-        "assumedEntryMultiple": 39,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 18.1
-      },
-      {
-        "ticker": "NVDA",
-        "assumedEntryMultiple": 39,
-        "terminalMultiple": 40,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 14.7
       },
       {
         "ticker": "AVGO",
@@ -7072,66 +7146,66 @@
       },
       {
         "ticker": "TSM",
-        "assumedEntryMultiple": 22,
+        "assumedEntryMultiple": 23,
         "terminalMultiple": 20,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 16.6
+      },
+      {
+        "ticker": "TSM",
+        "assumedEntryMultiple": 23,
+        "terminalMultiple": 30,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 12
+      },
+      {
+        "ticker": "TSM",
+        "assumedEntryMultiple": 23,
+        "terminalMultiple": 40,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 8.8
+      },
+      {
+        "ticker": "TSM",
+        "assumedEntryMultiple": 33,
+        "terminalMultiple": 20,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 20.9
+      },
+      {
+        "ticker": "TSM",
+        "assumedEntryMultiple": 33,
+        "terminalMultiple": 30,
         "targetAnnualizedPriceReturnPct": 15,
         "requiredEPSGrowthPct": 16.1
       },
       {
         "ticker": "TSM",
-        "assumedEntryMultiple": 22,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 11.5
-      },
-      {
-        "ticker": "TSM",
-        "assumedEntryMultiple": 22,
+        "assumedEntryMultiple": 33,
         "terminalMultiple": 40,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 8.3
+        "requiredEPSGrowthPct": 12.8
       },
       {
         "ticker": "TSM",
-        "assumedEntryMultiple": 32,
+        "assumedEntryMultiple": 43,
         "terminalMultiple": 20,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 20.5
+        "requiredEPSGrowthPct": 24.1
       },
       {
         "ticker": "TSM",
-        "assumedEntryMultiple": 32,
+        "assumedEntryMultiple": 43,
         "terminalMultiple": 30,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 15.7
+        "requiredEPSGrowthPct": 19.2
       },
       {
         "ticker": "TSM",
-        "assumedEntryMultiple": 32,
+        "assumedEntryMultiple": 43,
         "terminalMultiple": 40,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 12.5
-      },
-      {
-        "ticker": "TSM",
-        "assumedEntryMultiple": 42,
-        "terminalMultiple": 20,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 23.9
-      },
-      {
-        "ticker": "TSM",
-        "assumedEntryMultiple": 42,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 18.9
-      },
-      {
-        "ticker": "TSM",
-        "assumedEntryMultiple": 42,
-        "terminalMultiple": 40,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 15.6
+        "requiredEPSGrowthPct": 15.8
       },
       {
         "ticker": "ASML",
@@ -7324,66 +7398,66 @@
       },
       {
         "ticker": "ANET",
-        "assumedEntryMultiple": 54,
+        "assumedEntryMultiple": 55,
         "terminalMultiple": 20,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 27
+        "requiredEPSGrowthPct": 27.2
       },
       {
         "ticker": "ANET",
-        "assumedEntryMultiple": 54,
+        "assumedEntryMultiple": 55,
         "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 22
-      },
-      {
-        "ticker": "ANET",
-        "assumedEntryMultiple": 54,
-        "terminalMultiple": 35,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 20.1
-      },
-      {
-        "ticker": "ANET",
-        "assumedEntryMultiple": 64,
-        "terminalMultiple": 20,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 29.2
-      },
-      {
-        "ticker": "ANET",
-        "assumedEntryMultiple": 64,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 24.1
-      },
-      {
-        "ticker": "ANET",
-        "assumedEntryMultiple": 64,
-        "terminalMultiple": 35,
         "targetAnnualizedPriceReturnPct": 15,
         "requiredEPSGrowthPct": 22.2
       },
       {
         "ticker": "ANET",
-        "assumedEntryMultiple": 74,
-        "terminalMultiple": 20,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 31.1
-      },
-      {
-        "ticker": "ANET",
-        "assumedEntryMultiple": 74,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 25.9
-      },
-      {
-        "ticker": "ANET",
-        "assumedEntryMultiple": 74,
+        "assumedEntryMultiple": 55,
         "terminalMultiple": 35,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 23.9
+        "requiredEPSGrowthPct": 20.3
+      },
+      {
+        "ticker": "ANET",
+        "assumedEntryMultiple": 65,
+        "terminalMultiple": 20,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 29.4
+      },
+      {
+        "ticker": "ANET",
+        "assumedEntryMultiple": 65,
+        "terminalMultiple": 30,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 24.2
+      },
+      {
+        "ticker": "ANET",
+        "assumedEntryMultiple": 65,
+        "terminalMultiple": 35,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 22.3
+      },
+      {
+        "ticker": "ANET",
+        "assumedEntryMultiple": 75,
+        "terminalMultiple": 20,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 31.3
+      },
+      {
+        "ticker": "ANET",
+        "assumedEntryMultiple": 75,
+        "terminalMultiple": 30,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 26
+      },
+      {
+        "ticker": "ANET",
+        "assumedEntryMultiple": 75,
+        "terminalMultiple": 35,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 24.1
       },
       {
         "ticker": "VRT",
@@ -7513,129 +7587,129 @@
       },
       {
         "ticker": "AMD",
-        "assumedEntryMultiple": 148,
+        "assumedEntryMultiple": 151,
         "terminalMultiple": 20,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 40.5
+        "requiredEPSGrowthPct": 40.8
       },
       {
         "ticker": "AMD",
-        "assumedEntryMultiple": 148,
+        "assumedEntryMultiple": 151,
         "terminalMultiple": 30,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 34.9
+        "requiredEPSGrowthPct": 35.2
       },
       {
         "ticker": "AMD",
-        "assumedEntryMultiple": 148,
+        "assumedEntryMultiple": 151,
         "terminalMultiple": 40,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 31.1
+        "requiredEPSGrowthPct": 31.3
       },
       {
         "ticker": "AMD",
-        "assumedEntryMultiple": 158,
+        "assumedEntryMultiple": 161,
         "terminalMultiple": 20,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 41.4
+        "requiredEPSGrowthPct": 41.7
       },
       {
         "ticker": "AMD",
-        "assumedEntryMultiple": 158,
+        "assumedEntryMultiple": 161,
         "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 35.8
-      },
-      {
-        "ticker": "AMD",
-        "assumedEntryMultiple": 158,
-        "terminalMultiple": 40,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 31.9
-      },
-      {
-        "ticker": "AMD",
-        "assumedEntryMultiple": 168,
-        "terminalMultiple": 20,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 42.3
-      },
-      {
-        "ticker": "AMD",
-        "assumedEntryMultiple": 168,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 36.6
-      },
-      {
-        "ticker": "AMD",
-        "assumedEntryMultiple": 168,
-        "terminalMultiple": 40,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 32.7
-      },
-      {
-        "ticker": "MRVL",
-        "assumedEntryMultiple": 76,
-        "terminalMultiple": 18,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 32.8
-      },
-      {
-        "ticker": "MRVL",
-        "assumedEntryMultiple": 76,
-        "terminalMultiple": 25,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 28.5
-      },
-      {
-        "ticker": "MRVL",
-        "assumedEntryMultiple": 76,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 26.2
-      },
-      {
-        "ticker": "MRVL",
-        "assumedEntryMultiple": 86,
-        "terminalMultiple": 18,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 34.5
-      },
-      {
-        "ticker": "MRVL",
-        "assumedEntryMultiple": 86,
-        "terminalMultiple": 25,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 30.1
-      },
-      {
-        "ticker": "MRVL",
-        "assumedEntryMultiple": 86,
-        "terminalMultiple": 30,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 27.8
-      },
-      {
-        "ticker": "MRVL",
-        "assumedEntryMultiple": 96,
-        "terminalMultiple": 18,
         "targetAnnualizedPriceReturnPct": 15,
         "requiredEPSGrowthPct": 36
       },
       {
-        "ticker": "MRVL",
-        "assumedEntryMultiple": 96,
-        "terminalMultiple": 25,
+        "ticker": "AMD",
+        "assumedEntryMultiple": 161,
+        "terminalMultiple": 40,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 31.6
+        "requiredEPSGrowthPct": 32.2
+      },
+      {
+        "ticker": "AMD",
+        "assumedEntryMultiple": 171,
+        "terminalMultiple": 20,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 42.5
+      },
+      {
+        "ticker": "AMD",
+        "assumedEntryMultiple": 171,
+        "terminalMultiple": 30,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 36.9
+      },
+      {
+        "ticker": "AMD",
+        "assumedEntryMultiple": 171,
+        "terminalMultiple": 40,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 33
       },
       {
         "ticker": "MRVL",
-        "assumedEntryMultiple": 96,
+        "assumedEntryMultiple": 75,
+        "terminalMultiple": 18,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 32.6
+      },
+      {
+        "ticker": "MRVL",
+        "assumedEntryMultiple": 75,
+        "terminalMultiple": 25,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 28.4
+      },
+      {
+        "ticker": "MRVL",
+        "assumedEntryMultiple": 75,
         "terminalMultiple": 30,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 29.2
+        "requiredEPSGrowthPct": 26
+      },
+      {
+        "ticker": "MRVL",
+        "assumedEntryMultiple": 85,
+        "terminalMultiple": 18,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 34.3
+      },
+      {
+        "ticker": "MRVL",
+        "assumedEntryMultiple": 85,
+        "terminalMultiple": 25,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 30
+      },
+      {
+        "ticker": "MRVL",
+        "assumedEntryMultiple": 85,
+        "terminalMultiple": 30,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 27.6
+      },
+      {
+        "ticker": "MRVL",
+        "assumedEntryMultiple": 95,
+        "terminalMultiple": 18,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 35.8
+      },
+      {
+        "ticker": "MRVL",
+        "assumedEntryMultiple": 95,
+        "terminalMultiple": 25,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 31.4
+      },
+      {
+        "ticker": "MRVL",
+        "assumedEntryMultiple": 95,
+        "terminalMultiple": 30,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 29.1
       },
       {
         "ticker": "000660.KS",
@@ -7870,66 +7944,66 @@
       },
       {
         "ticker": "BE",
-        "assumedEntryMultiple": 365,
+        "assumedEntryMultiple": 353,
+        "terminalMultiple": 15,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 57.7
+      },
+      {
+        "ticker": "BE",
+        "assumedEntryMultiple": 353,
+        "terminalMultiple": 25,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 49.9
+      },
+      {
+        "ticker": "BE",
+        "assumedEntryMultiple": 353,
+        "terminalMultiple": 35,
+        "targetAnnualizedPriceReturnPct": 15,
+        "requiredEPSGrowthPct": 44.9
+      },
+      {
+        "ticker": "BE",
+        "assumedEntryMultiple": 363,
         "terminalMultiple": 15,
         "targetAnnualizedPriceReturnPct": 15,
         "requiredEPSGrowthPct": 58.2
       },
       {
         "ticker": "BE",
-        "assumedEntryMultiple": 365,
+        "assumedEntryMultiple": 363,
         "terminalMultiple": 25,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 50.4
+        "requiredEPSGrowthPct": 50.3
       },
       {
         "ticker": "BE",
-        "assumedEntryMultiple": 365,
+        "assumedEntryMultiple": 363,
         "terminalMultiple": 35,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 45.4
+        "requiredEPSGrowthPct": 45.3
       },
       {
         "ticker": "BE",
-        "assumedEntryMultiple": 375,
+        "assumedEntryMultiple": 373,
         "terminalMultiple": 15,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 58.7
+        "requiredEPSGrowthPct": 58.6
       },
       {
         "ticker": "BE",
-        "assumedEntryMultiple": 375,
+        "assumedEntryMultiple": 373,
         "terminalMultiple": 25,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 50.8
+        "requiredEPSGrowthPct": 50.7
       },
       {
         "ticker": "BE",
-        "assumedEntryMultiple": 375,
+        "assumedEntryMultiple": 373,
         "terminalMultiple": 35,
         "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 45.8
-      },
-      {
-        "ticker": "BE",
-        "assumedEntryMultiple": 385,
-        "terminalMultiple": 15,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 59.1
-      },
-      {
-        "ticker": "BE",
-        "assumedEntryMultiple": 385,
-        "terminalMultiple": 25,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 51.2
-      },
-      {
-        "ticker": "BE",
-        "assumedEntryMultiple": 385,
-        "terminalMultiple": 35,
-        "targetAnnualizedPriceReturnPct": 15,
-        "requiredEPSGrowthPct": 46.2
+        "requiredEPSGrowthPct": 45.7
       }
     ],
     "sourceCoverageLimitations": [
@@ -7967,104 +8041,104 @@
   },
   "valuationContext": {
     "basis": "ttm",
-    "asOf": "2026-09-23",
-    "observedAt": "2026-09-24T13:40:48Z",
+    "asOf": "2026-09-24",
+    "observedAt": "2026-09-25T13:48:57Z",
     "companies": {
       "NVDA": {
-        "value": 28.51,
+        "value": 28.39,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/nvda/pe-ratio",
-        "priceUsd": 225.51,
+        "priceUsd": 224.58,
         "epsTtmUsd": 7.91,
         "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
-        "price": 225.51,
+        "price": 224.58,
         "currency": "USD"
       },
       "AVGO": {
-        "value": 45.32,
+        "value": 44.73,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/avgo/pe-ratio",
-        "priceUsd": 354.99,
+        "priceUsd": 350.36,
         "epsTtmUsd": 7.83,
         "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
-        "price": 354.99,
+        "price": 350.36,
         "currency": "USD"
       },
       "TSM": {
-        "value": 32.23,
+        "value": 32.56,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/tsm/pe-ratio",
-        "priceUsd": 446.57,
+        "priceUsd": 451.15,
         "epsTtmUsd": 13.86,
         "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
-        "price": 446.57,
+        "price": 451.15,
         "currency": "USD"
       },
       "ASML": {
-        "value": 54.31,
+        "value": 53.63,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/asml/pe-ratio",
-        "priceUsd": 1744.61,
+        "priceUsd": 1722.5,
         "epsTtmUsd": 32.12,
         "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
-        "price": 1744.61,
+        "price": 1722.5,
         "currency": "USD"
       },
       "ANET": {
-        "value": 64.15,
+        "value": 64.85,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/anet/pe-ratio",
         "currency": "USD",
-        "price": 203.47,
-        "priceUsd": 203.47,
+        "price": 205.7,
+        "priceUsd": 205.7,
         "notes": "About 63x trailing earnings requires substantial future growth. Current-price attractiveness remains unscored. Cash advances boosted H1 cash flow; extrapolating that cash margin would overstate recurring economics.",
         "epsTtmUsd": 3.17
       },
       "AMD": {
-        "value": 157.73,
+        "value": 161.49,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/amd/pe-ratio",
         "currency": "USD",
-        "price": 614.61,
-        "priceUsd": 614.61,
+        "price": 629.26,
+        "priceUsd": 629.26,
         "notes": "Provider displays TTM EPS rounded to cents; do not recompute the stated ratio from rounded EPS or replace with forward/adjusted EPS. GAAP earnings include acquisition-amortization and investment effects, so ratio comparability is imperfect.",
         "epsTtmUsd": 3.9
       },
       "MRVL": {
-        "value": 85.91,
+        "value": 85.27,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/mrvl/pe-ratio",
         "currency": "USD",
-        "price": 260.9,
-        "priceUsd": 260.9,
+        "price": 258.95,
+        "priceUsd": 258.95,
         "notes": "Trailing income contains a major divestiture gain; current earnings also contain acquired-intangible amortization and contingent-consideration effects. Reconcile both directions before normalized valuation. Dividing rounded EPS need not reproduce provider P/E exactly.",
         "epsTtmUsd": 3.04
       },
@@ -8073,108 +8147,108 @@
         "basis": "ttm",
         "status": "verified",
         "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Stock Analysis (S&P Global)",
         "sourceUrl": "https://stockanalysis.com/quote/krx/000660/statistics/",
         "currency": "KRW",
         "price": 1862000,
-        "notes": "Company Q2 net margin118% demonstrates reported net profit cannot be extrapolated as operating economics. Did not verify precise non-operating-gain decomposition in primary filing; do not assert a specific gain amount."
+        "notes": "Company Q2 net margin118% demonstrates reported net profit cannot be extrapolated as operating economics. Did not verify precise non-operating-gain decomposition in primary filing; do not assert a specific gain amount. Latest available provider page remained dated September 23; no September 24 record was substituted."
       },
       "MU": {
-        "value": 24.27,
+        "value": 24.46,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/mu/pe-ratio",
         "currency": "USD",
-        "price": 1071.88,
-        "priceUsd": 1071.88,
+        "price": 1080.53,
+        "priceUsd": 1080.53,
         "notes": "Price divided by reported trailing EPS (not forward). Source identifies TTM EPS; quarter reported GAAP EPS cross-checked. Multiple is not normalized cycle earnings.",
         "epsTtmUsd": 44.17
       },
       "VRT": {
-        "value": 56.29,
+        "value": 55.51,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/vrt/pe-ratio",
         "currency": "USD",
-        "price": 248.78,
-        "priceUsd": 248.78,
+        "price": 245.3,
+        "priceUsd": 245.3,
         "notes": "Reported trailing GAAP multiple; not forward adjusted EPS. Current growth is fast, but margin expansion cannot compound indefinitely. High business score is not a current-price recommendation.",
         "epsTtmUsd": 4.42
       },
       "GEV": {
-        "value": 27.25,
+        "value": 27.34,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/gev/pe-ratio",
         "currency": "USD",
-        "price": 951.82,
-        "priceUsd": 951.82,
+        "price": 955.04,
+        "priceUsd": 955.04,
         "notes": "DO NOT treat26.92x as a normalized operating multiple. TTM includes large nonrecurring gains; Q2 release identifies~4bn Prolec remeasurement and330m Proficy gain inH1. A full trailing normalized tax-adjusted bridge is not completed.",
         "epsTtmUsd": 34.93
       },
       "CAT": {
-        "value": 34.93,
+        "value": 34.64,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/cat/pe-ratio",
         "currency": "USD",
-        "price": 812.02,
-        "priceUsd": 812.02,
+        "price": 805.25,
+        "priceUsd": 805.25,
         "notes": "Reported trailing earnings require normalization before a current-price investment conclusion.",
         "epsTtmUsd": 23.25
       },
       "CMI": {
-        "value": 26.81,
+        "value": 26.63,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/cmi/pe-ratio",
         "currency": "USD",
-        "price": 524.65,
-        "priceUsd": 524.65,
+        "price": 521.07,
+        "priceUsd": 521.07,
         "notes": "Reported trailing earnings require normalization before a current-price investment conclusion.",
         "epsTtmUsd": 19.57
       },
       "BE": {
-        "value": 374.97,
+        "value": 363.33,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/be/pe-ratio",
         "currency": "USD",
-        "price": 275.19,
-        "priceUsd": 275.19,
+        "price": 266.65,
+        "priceUsd": 266.65,
         "notes": "Reported trailing P/E on a newly positive and very small earnings base; not forward earnings. Large apparent EPS growth can be a base effect, and warranted/customer-consideration accounting complicates normalization.",
         "epsTtmUsd": 0.73
       },
       "GOOGL": {
-        "value": 16.97,
+        "value": 17.2,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "asOf": "2026-09-24",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/googl/pe-ratio",
         "currency": "USD",
-        "price": 337.83,
-        "priceUsd": 337.83,
+        "price": 342.36,
+        "priceUsd": 342.36,
         "notes": "The17.56x headline is not evidence of cheap recurring earnings. Q2 gains alone added$6.26/share; Q1 and earlier periods also contain investment gains. A consistent normalized TTM bridge was not rebuilt.",
         "epsTtmUsd": 19.91
       },
@@ -8183,13 +8257,13 @@
         "basis": "ttm",
         "status": "verified",
         "asOf": "2026-09-23",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "observedAt": "2026-09-25T13:48:57Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/meta/pe-ratio",
         "currency": "USD",
         "price": 744.1,
         "priceUsd": 744.1,
-        "notes": "Trailing earnings include discrete tax effects as well as legal/severance costs. EPS is not distributable cash: current capex and SBC materially affect owner economics. No complete normalized per-share earnings or FCF forecast was built.",
+        "notes": "Trailing earnings include discrete tax effects as well as legal/severance costs. EPS is not distributable cash: current capex and SBC materially affect owner economics. No complete normalized per-share earnings or FCF forecast was built. The provider had already moved to September 25 intraday data when checked; the September 23 verified record was retained rather than reverse-engineering a September 24 close.",
         "epsTtmUsd": 26.55
       },
       "SPCX": {
@@ -8197,7 +8271,7 @@
         "basis": "ttm",
         "status": "unavailable",
         "reason": "WSN has no P/E data and the company reports losses. No EPS-growth return model. A current fully diluted share count, acquisition-adjusted sum-of-parts and consolidated funding model are needed; do not use pre-IPO weighted-average shares as today's denominator.",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "observedAt": "2026-09-25T13:48:57Z",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/spcx/pe-ratio"
       },
       "CRWV": {
@@ -8205,21 +8279,21 @@
         "basis": "ttm",
         "status": "unavailable",
         "reason": "WSN supplies no P/E. Finance service displays a negative multiple; intentionally not used as a valuation anchor. Needs contract/cohort cashflow, full debt/leases and fully diluted equity bridge, not EPS CAGR or EBITDA alone.",
-        "observedAt": "2026-09-24T13:40:48Z",
+        "observedAt": "2026-09-25T13:48:57Z",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/crwv/pe-ratio"
       }
     },
     "qqqMedianPE": {
-      "value": 30.6,
+      "value": 30.7,
       "basis": "ttm",
       "status": "proxy",
-      "asOf": "2026-09-23",
-      "observedAt": "2026-09-24T13:40:48Z",
+      "asOf": "2026-09-24",
+      "observedAt": "2026-09-25T13:48:57Z",
       "provider": "ChartRow",
       "sourceUrl": "https://chartrow.com/nasdaq-100/pe-ratio",
       "method": "nasdaq100-median-proxy",
       "universe": "Provider's tracked Nasdaq-100 members",
-      "notes": "Published median constituent trailing P/E, used as an explicitly labeled QQQ proxy. The provider describes 99 tracked members and 92.3% of index weight with valid trailing P/E; exact current QQQ constituent coverage and calculation were not independently reconciled. This is not the index aggregate P/E, fund harmonic P/E, or historical median."
+      "notes": "Published median constituent trailing P/E, used as an explicitly labeled QQQ proxy. The provider describes 99 tracked members and 92.2% of index weight with valid trailing P/E; exact current QQQ constituent coverage and calculation were not independently reconciled. This is not the index aggregate P/E, fund harmonic P/E, or historical median."
     }
   },
   "reviews": [
@@ -13435,19 +13509,28 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-09-25T12:37:27Z",
-    "kind": "semi-analysis-scan",
+    "asOf": "2026-09-25T13:48:57Z",
+    "kind": "daily-expert-scan",
     "completedChannels": [
-      "semianalysis"
+      "information-bottleneck",
+      "gpu-mode"
     ],
-    "partialChannels": [],
+    "partialChannels": [
+      "latent-space",
+      "ocp",
+      "dwarkesh"
+    ],
     "unavailableChannels": [],
     "limitations": [
-      "The official SemiAnalysis archive remained current through the September 23 ClusterMAX 3.0 article; that company-level evidence was already reconciled in the September 24 cycle.",
-      "Dylan Patel's September 25 public X post was available only through indexed first-party text. The exact post URL and title were verified, but the full post, purchase orders, rack mass and 2030 forecast were not independently confirmed; the item is therefore a notes-only lead.",
-      "Gmail contained no new direct or forwarded SemiAnalysis/Dylan Patel item requiring reconciliation.",
-      "No company-thesis, score, ranking, valuation or review change was made. The separately due builder-engineering lane is recorded in Research Runs and does not alter this publication snapshot's source coverage."
+      "The Information Bottleneck official archive remained current through September 21; its newest item concerned medical AI and did not require infrastructure review.",
+      "Latent Space's official archive did not expose an item list and its XML feed remained inaccessible to the available reader. Bounded official-domain discovery found no newer qualifying item; completeness is not inferred.",
+      "OCP's homepage timed out during the bounded check. The newest verified technical item remains the September 22 summit demo catalog already recorded in engineering-20260923; no new primary slides or measured deployment result was available.",
+      "Dwarkesh's official page and XML feed remained inaccessible to the available reader. Bounded official-domain discovery found no newer qualifying infrastructure episode; completeness is not inferred.",
+      "GPU MODE's lectures repository remained at commit 77a8df418834e5789c12da23e7d2719e0efabef1 from September 9, with Lecture 114 still the newest primary artifact.",
+      "All 18 current-company trailing P/E records and the labeled Nasdaq-100 proxy were refreshed to the latest completed session, September 24, where a provider record was available. SK Hynix and Meta retain their September 23 verified records because the former remained stale and the latter had already moved to September 25 intraday data. SPCX and CRWV still lacked positive trailing P/E anchors.",
+      "No weekly conviction review was performed; the next regular logical week is September 27. Scores, ranks and return assumptions were unchanged.",
+      "Future Leaders work remained separate: FORM and GFS were published only as unranked leads, with no Infrastructure score or rank change."
     ]
   },
-  "updatedAt": "2026-09-25T12:39:12Z"
+  "updatedAt": "2026-09-25T13:48:57Z"
 }
