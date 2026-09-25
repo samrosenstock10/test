@@ -1,0 +1,8 @@
+Cummins, PowerCommand paralleling switchgear: https://www.cummins.com/en-na/generators/products/switchgear
+
+Next lesson
+
+Lesson 051: Grid Connection and Generation — Where Data Center Electricity Comes From
+
+We will move beyond the building to explain how utilities, substations and on-site generation determine when a data center can receive usable power.`,
+} satisfies Lesson;
