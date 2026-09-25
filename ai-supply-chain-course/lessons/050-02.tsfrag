@@ -1,3 +1,5 @@
+Switchgear lets operators connect, disconnect and isolate electrical circuits. Protective relays detect abnormal conditions and can command circuit breakers to interrupt fault currents. Opening a breaker may be the correct response to a fault; allowing current to continue could damage equipment.
+
 The engineering challenge is to disconnect the affected section while preserving healthy sections where the design permits. This coordination matters: protection that isolates too much can turn a local problem into a larger outage.
 
 Isolation also permits maintenance. Reliability includes the ability to work on equipment without losing the critical load, when the architecture is designed for that requirement. A second cable at the rack does not establish that capability.
@@ -32,15 +34,7 @@ Imagine a site permitted to draw 100 megawatts from the utility. One megawatt is
 
 Can it operate 100 MW of IT equipment? No. The usable limit is 70 MW or less at that point. Other electrical limits, redundancy reservations and cooling may reduce usable IT capacity further. Building overhead must also be accounted for at the relevant measurement boundary.
 
-Now imagine the operator orders another 30 MW of GPUs. What changes immediately?
-
-Answer: The equipment inventory increases; energized compute does not. The missing electrical capacity must be installed, integrated and tested, with adequate cooling, before the additional hardware becomes useful.
+Now imagine the operator orders GPUs with another 30 MW of electrical demand. A purchase order changes committed spending; delivery increases equipment inventory. Neither, by itself, increases energized compute. The missing electrical capacity must be installed, integrated and tested, with adequate cooling, before the additional hardware becomes useful.
 
 That is the supply-chain consequence. Transformers, switchgear, UPS equipment, batteries, generators, busways and cables must form a compatible system. A missing component or a failed acceptance test can delay the value of much more expensive computing equipment.
-
-When you read “power secured,” ask: secured where, deliverable when, and available under which failure conditions? Those questions turn an impressive headline into an engineering claim you can evaluate.
-
-Sources
-
-Schneider Electric, What is switchgear?: https://www.se.com/us/en/work/featured-articles/what-is-switchgear/
 

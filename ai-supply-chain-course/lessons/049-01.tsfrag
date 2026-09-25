@@ -23,7 +23,7 @@ Imagine four new AI servers arriving at a data center. There is space in the rac
 
 The problem is the final delivery path: the rack’s electrical equipment cannot carry their combined demand. This is an illustrative deployment, but it exposes a real distinction. Buying compute and making compute usable are separate achievements.
 
-After learning how accelerators communicate, we now follow what lets them operate at all: electricity. By the end, you should be able to distinguish a shortage of energy from a limit on power delivery—and explain why either can matter to AI economics.
+The servers are ready; their operating environment is not. To understand what is missing, follow the electricity from the building to the chips. That journey separates three constraints that are easy to confuse: electricity purchased over time, power delivered at an instant, and heat removed from the rack.
 
 A rack is also an electrical commitment
 
@@ -39,23 +39,9 @@ Follow the last few metres
 
 The following simplified path shows conventional rack distribution. Some systems use different arrangements, such as shared power shelves, but every design must distribute and convert electricity before the chips can use it.
 
-Building circuit — brings power to the rack
-
-↓
-
-Rack PDU — distributes it to equipment
-
-↓
-
-Server PSU — converts incoming AC to DC
-
-↓
-
-Board regulators — supply the chips’ low DC voltages
+![Follow the power from the building into the chips. A limit anywhere in this path can strand capacity elsewhere; cooling must remove the resulting heat.](/lessons/049-power-path.svg)
 
 A rack power distribution unit, or PDU, provides appropriately rated connections for the equipment and may monitor individual outlets. Cords carry power onward. A server power supply unit, or PSU, converts alternating current (AC) into direct current (DC). AC changes direction periodically; electronic components need controlled DC supplies.
 
 The conversion does not end at the server entrance. Circuits on the boards reduce the voltage further for GPUs, CPUs, memory and networking. Each conversion loses some energy as heat, so the electricity entering a server exceeds the electricity delivered to its chips.
-
-Return to our four servers. If their rack PDU or upstream circuit is the constraint, spare building capacity cannot bypass it. Installing a larger PDU alone also fails if the wiring feeding it remains undersized. The entire required path must support the load.
 

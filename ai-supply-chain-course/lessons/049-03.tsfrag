@@ -1,5 +1,12 @@
+NVIDIA, DGX B200 User Guide — managing power capping: https://docs.nvidia.com/dgx/dgxb200-user-guide/power-capping.html
+
+Eaton, rack power distribution units: https://www.eaton.com/us/en-us/products/backup-power-ups-surge-it-power-distribution/power-distribution-for-it-equipment/power-distribution-units-for-server-racks.html
+
+Next lesson
+
 Lesson 050: Electrical Distribution — How Power Reaches the Rack Reliably
 
 We will move outward from the rack to the building's electrical path and explain how transformers, switchgear, backup systems and redundancy keep compute energized.`,
 } satisfies Lesson;
+
 

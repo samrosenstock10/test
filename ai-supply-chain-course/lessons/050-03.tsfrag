@@ -1,3 +1,11 @@
+From announced power to operating capacity → Connection, installed equipment, a tested delivery path and adequate cooling.
+
+When you read “power secured,” ask: secured where, deliverable when, and available under which failure conditions? Those questions turn an impressive headline into an engineering claim you can evaluate.
+
+Sources
+
+Schneider Electric, What is switchgear?: https://www.se.com/us/en/work/featured-articles/what-is-switchgear/
+
 Eaton, Uninterruptible power supplies: https://www.eaton.com/us/en-us/products/backup-power-ups-surge-it-power-distribution/backup-power-ups.html
 
 Eaton, Transformers: https://www.eaton.com/us/en-us/products/medium-voltage-power-distribution-control-systems/transformers.html
@@ -10,4 +18,5 @@ Lesson 051: Grid Connection and Generation — Where Data Center Electricity Com
 
 We will move beyond the building to explain how utilities, substations and on-site generation determine when a data center can receive usable power.`,
 } satisfies Lesson;
+
 
