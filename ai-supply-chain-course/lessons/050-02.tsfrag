@@ -1,0 +1,60 @@
+The UPS is usually a bridge, not an unlimited source. Batteries or another storage method keep the load running while a longer-duration source starts, another feed takes over, or systems shut down safely. A generator can support the load for longer, but it takes time to start and depends on fuel, controls and maintenance.
+
+Those roles are different:
+
+- the UPS responds immediately and buys time;
+- the generator or alternate feed provides longer support;
+- transfer controls move the load between sources.
+
+A backup system works only when the whole sequence works. A full battery cannot help if the downstream path cannot carry the load.
+
+4. Redundancy needs independence
+
+Redundancy means adding capacity or a second path so one failure does not stop useful work. A design may include one extra UPS module, two utility feeds, duplicate switchgear sections, or separate A and B paths to a rack.
+
+The important question is not how many components appear on a diagram. It is whether the alternatives share a hidden point that can fail.
+
+Two rack feeds are not independent if both depend on the same upstream breaker. Redundancy is valuable only when the remaining path can carry the load and avoid the same cause of failure.
+
+Reserved backup capacity also cannot automatically be counted as spare capacity for new servers. If it is used during normal operation, it may no longer be available when a component fails.
+
+5. The complete path sets usable capacity
+
+Try this: a site has permission to draw 100 megawatts from the utility, but the installed transformers and switchgear can safely deliver only 70 megawatts to the data halls. Can the operator run 100 megawatts of IT equipment?
+
+No. The utility agreement is only the entrance capacity. Until every required section can carry more power, the installed path limits the data halls to 70 megawatts or less. Cooling and other building loads may reduce the amount available to IT further.
+
+This is why the word available needs a location. Available at the grid connection is not the same as available at the building, rack or chip.
+
+6. Electrical distribution is a supply-chain system
+
+Building the path requires transformers, switchgear, circuit breakers, relays, UPS equipment, batteries, generators, transfer controls, busways, cables and monitoring systems. These products must match the site's voltage, capacity, protection plan and physical layout.
+
+One missing high-capacity transformer can hold back equipment around it. Changing the design late may require new cables, protection studies and physical space.
+
+The valuable supplier does not merely deliver a component. It helps create a compatible, testable path whose capacity and failure behavior are understood.
+
+For AI infrastructure, ask four questions:
+
+- Where is the stated power capacity available?
+- Which component currently limits the complete path to the rack?
+- What happens when that component or its power source fails?
+- Can the remaining path carry the critical load without using capacity twice?
+
+Remember
+
+- Electricity must pass through a complete distribution path before it can power compute.
+- Transformers change voltage so power can be moved efficiently and used safely by downstream equipment.
+- Switchgear controls, protects and isolates sections of the electrical system.
+- A UPS supplies immediate backup while a longer-duration source or safe shutdown takes over.
+- Redundancy works only when the backup path has enough capacity and avoids the same failure.
+- Capacity at the utility connection is not necessarily capacity available at the rack.
+
+Sources
+
+Schneider Electric, What is switchgear?: https://www.se.com/us/en/work/featured-articles/what-is-switchgear/
+
+Eaton, Uninterruptible power supplies: https://www.eaton.com/us/en-us/products/backup-power-ups-surge-it-power-distribution/backup-power-ups.html
+
+Eaton, Transformers: https://www.eaton.com/us/en-us/products/medium-voltage-power-distribution-control-systems/transformers.html
+
