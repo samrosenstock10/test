@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "summaries": [
+    {
+      "number": 49,
+      "date": "2026-09-24",
+      "title": "Chip-to-Rack Power — Why More Compute Changes the Electrical System",
+      "bodySha256": "fe85e6d6da5033198c4c43f66e4b107d8a8d1656f31273b3d72c16e104086f46",
+      "body": "Lesson 049 explains why receiving GPUs does not mean a rack can run them. The building may have enough electricity overall while the rack’s distribution unit, wiring or server power supplies cannot deliver enough power to all the machines at once. Power in kilowatts is demand at a moment, while energy in kilowatt-hours is consumption over time, so cheap electricity does not solve a delivery limit. Electricity passes through rack connections, server power supplies and board circuits before reaching chips, and some is lost as heat along the way. Denser racks concentrate electrical demand and heat, so cables, voltage choices and cooling must match the equipment. Backup capacity also has a purpose: two 40-kilowatt feeds do not make an 80-kilowatt resilient rack if either one must support the full load after a failure. Software power caps may keep a rack within its limit, but they can reduce useful output, especially when a training job waits for its slowest workers. The practical question is whether the entire path can deliver enough power and remove enough heat in normal operation and under the failure the design is meant to survive."
+    },
+    {
+      "number": 50,
+      "date": "2026-09-25",
+      "title": "Electrical Distribution — How Power Reaches the Rack Reliably",
+      "bodySha256": "0ff10a45d53f987a81e7ac7ade293287bb0dd88f3505ff359352e52921b1477e",
+      "body": "Lesson 050 moves upstream from the rack to show how a data center receives, changes, protects and backs up electricity. A transformer changes alternating-current voltage so power can be moved efficiently and delivered at levels the equipment can use, but the transformer has a finite capacity. Switchgear and breakers isolate faults, yet one correctly operating breaker can shut down both A and B feeds if they share it. A UPS uses stored energy to keep critical equipment running through a short interruption while a generator starts or the system shuts down safely. A generator can provide longer backup only if it is connected through a working electrical path; it cannot bypass every downstream failure. Two feeds are truly useful as redundancy only for the failures their upstream paths separate, and the surviving path must carry enough load. A 100-megawatt utility agreement is not 100 megawatts of operating IT capacity if the installed distribution can deliver only 70, even before accounting for redundancy, building overhead and cooling. When assessing a data-center buildout, ask where electricity is available, what equipment has been installed and tested, and how much capacity remains after a specified outage."
+    }
+  ]
+}
