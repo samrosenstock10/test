@@ -1,2 +1,5 @@
+Lesson 050: Electrical Distribution — How Power Reaches the Rack Reliably
+
 We will move outward from the rack to the building's electrical path and explain how transformers, switchgear, backup systems and redundancy keep compute energized.`,
 } satisfies Lesson;
+

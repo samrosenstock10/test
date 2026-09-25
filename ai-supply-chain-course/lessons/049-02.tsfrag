@@ -1,46 +1,40 @@
-Adding four available servers may therefore require more than rack space. The PDU, cords, upstream wiring and cooling must all handle the denser load.
+Why density changes the hardware
 
-4. Voltage changes how difficult the delivery becomes
+Putting more compute in one rack concentrates electrical demand. Voltage describes an electrical potential difference; current is the flow of charge. For a given delivered power, raising voltage allows less current, holding other relevant factors constant.
 
-Voltage is the electrical push that moves current, the flow of electric charge. For roughly the same power, higher voltage allows lower current. Lower current can reduce losses and the conductor material needed to carry the load safely.
+That matters because current heats conductors. Lower current can reduce electrical losses and the conductor material required for a given design. This helps explain why dense AI systems require deliberate choices about voltage, connectors, cables and distribution—not simply more outlets.
 
-High-power systems therefore do not simply use many household outlets. The exact voltages and phases belong in the next lesson; for now, remember that concentrated compute needs a different physical delivery system.
+There is another physical bill to pay. Almost all electricity used by IT equipment ultimately becomes heat. A rack consuming around 50 kW therefore requires heat removal of roughly that scale. Electrical capacity and cooling capacity must be available at the same location.
 
-5. Redundancy protects useful work
+Keeping the rack alive when something fails
 
-AI jobs can occupy many servers for a long time, so a brief power interruption can waste work across the cluster.
+The equipment also has to work when conditions are imperfect. NVIDIA’s DGX B200 uses six power supplies in a 5+1 arrangement: one can fail without interrupting normal operation. Additional losses can reduce performance or cause shutdown, depending on how many supplies remain powered.
 
-Redundancy means providing an extra component or path so one failure does not stop the system. NVIDIA says a DGX B200 can keep operating after one power supply fails. Losing more supplies can reduce GPU power or shut the system down.
+Redundancy means providing an alternative component or path to survive a specified failure. It is capacity with a job already assigned to it.
 
-Racks may receive separate A and B feeds so equipment can continue when one path is unavailable. Some of that capacity is reserved for failure protection, so it cannot automatically be counted twice for new servers.
+Consider a separate illustrative rack with two independent 40 kW feeds. If either feed must carry the entire rack after the other fails, is this an 80 kW rack?
 
-Try this: A building has unused electricity, but a rack PDU and its upstream circuit cannot carry the load of another AI server. Can the operator use the new server at full power just because the building has spare capacity?
+Answer: It can support at most 40 kW under that requirement, before other limits and design margins. Loading it to 60 kW across both feeds may work normally, but one surviving feed cannot support that load. Adding the ratings has counted backup capacity as expansion capacity.
 
-No. Electricity must have a safe path all the way to the server. The narrowest part of that path is the current bottleneck.
+The failure requirement determines the usable capacity. The next lesson will examine whether those supposedly independent paths really are independent.
 
-6. Power limits can become performance limits
+Can software buy us room?
 
-Operators can cap, or limit, how much power a system may draw. This can keep a rack within its limit or preserve operation after a failure. The tradeoff is that a GPU with less available power may run more slowly, converting an electrical constraint into longer job time.
+Power capping limits how much a system may draw. It can help fit equipment within an electrical budget, but may reduce performance. The useful question is how completed work changes relative to power consumption.
 
-Measure completed training steps, useful tokens or other finished work per rack and per unit of electricity. A lower setting can be efficient if performance falls by less than power use. It is harmful if it leaves hardware underused without solving a real constraint.
+If power falls substantially while output falls only slightly, a cap may improve work per unit of electricity. If the workload slows sharply, it may simply turn an electrical constraint into a longer, more expensive job. Measure an equivalent workload; a lower power number alone proves little.
 
-Nearly all electricity used by computing equipment becomes heat inside the data center. Concentrating 50 kW in a rack therefore creates a heat-removal problem of similar scale. Power and cooling must be designed together.
+This connects back to Lesson 048. A synchronized training job can wait for its slowest required workers. Restricting one server’s power can therefore affect useful output beyond that server.
 
-7. What the supply chain must deliver
+What would actually solve the deployment?
 
-Useful AI capacity also needs power supplies, rack PDUs, upstream cables or busways, connectors, monitoring and cooling hardware.
+Suppose we upgrade the electrical path, but the rack’s cooling remains insufficient. Have we unlocked the four servers?
 
-The valuable supplier removes the actual constraint reliably. A better PDU matters when rack distribution limits deployment; a more efficient PSU matters when conversion losses or heat are important.
+Answer: Not at their intended sustained load. We have moved the bottleneck. Heat removal must improve, equipment must be spread across suitable racks, or operation must fit the remaining limits.
 
-Before declaring a power bottleneck, compare the server's maximum specification, measured peak and average demand, the capacity reserved for redundancy, and the cooling available at the same rack.
+The supply chain must deliver a working combination: power supplies, distribution units, conductors, connectors, monitoring and cooling. A supplier’s product matters when it removes the binding constraint reliably; rising rack power alone does not tell us who captures the profit.
 
-Remember
-
-- Power in kW measures the rate of electricity use; energy in kWh includes time.
-- Electricity passes through rack distribution and several conversions before reaching a GPU.
-- Higher compute density requires more capable power delivery in the same physical space.
-- Redundancy protects work but reserves capacity that cannot always be used twice.
-- Purchased chips become useful only when power and cooling let them run.
+The durable lesson is that useful compute requires a complete operating path. Before accepting a capacity claim, ask where power is available, how much survives a failure, and whether cooling supports the same load.
 
 Sources
 
@@ -51,6 +45,4 @@ NVIDIA, DGX B200 User Guide — managing power capping: https://docs.nvidia.com/
 Eaton, rack power distribution units: https://www.eaton.com/us/en-us/products/backup-power-ups-surge-it-power-distribution/power-distribution-for-it-equipment/power-distribution-units-for-server-racks.html
 
 Next lesson
-
-Lesson 050: Electrical Distribution — How Power Reaches the Rack Reliably
 

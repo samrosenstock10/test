@@ -17,45 +17,45 @@ Lesson 047: Synchronized workers depend on one another, so one slow or failed pa
 
 Lesson 048: Adding accelerators helps only when the workload uses them well enough to justify the extra communication, waiting and cost.
 
-The big idea
+The GPUs arrived. Why can’t we turn them on?
 
-An AI chip cannot work unless electricity reaches it at the right voltage, in enough quantity and without interruption.
+Imagine four new AI servers arriving at a data center. There is space in the rack, the network is ready, and the building has unused electricity. Yet the operator cannot run all four at full power.
 
-Putting more accelerators into a rack concentrates more electrical demand in one place. That changes the cables, outlets, power-conversion equipment and cooling the rack needs.
+The problem is the final delivery path: the rack’s electrical equipment cannot carry their combined demand. This is an illustrative deployment, but it exposes a real distinction. Buying compute and making compute usable are separate achievements.
 
-This matters because purchased chips are not useful capacity until the data center can power and cool them. A shortage of rack power can leave expensive accelerators waiting in boxes or force them to run below their intended speed.
+After learning how accelerators communicate, we now follow what lets them operate at all: electricity. By the end, you should be able to distinguish a shortage of energy from a limit on power delivery—and explain why either can matter to AI economics.
 
-Where we are
+A rack is also an electrical commitment
 
-The last module connected accelerators so they could work together. We now follow another physical requirement:
+NVIDIA specifies up to 14.3 kilowatts for a DGX B200 system containing eight GPUs. Four such systems would have a combined maximum specification of 57.2 kW, before additional rack networking. That is our planning example, not a measured operating load or a complete rack design.
 
-facility electricity → rack power distribution → server power supplies → lower-voltage electricity inside the server → GPUs, CPUs, memory and networking.
+A kilowatt is 1,000 watts. It measures power: the rate at which electricity is used. A kilowatt-hour measures energy over time. A rack drawing 50 kW steadily for one hour uses 50 kWh.
 
-This lesson focuses on the rack and server. Later lessons will move outward to the building, grid and cooling system.
+That distinction separates two questions: can the equipment carry the load at this moment, and how much electricity will we pay for over time? A cheap electricity contract does not increase the capacity of a cable.
 
-1. Power is a rate, not a quantity over time
+Maximum specifications help size infrastructure. Actual demand changes with the workload; measured peaks and averages answer different questions. Planning from the average alone can leave the system unable to handle a higher load.
 
-A watt measures power: how quickly electricity is being used at a moment. A kilowatt, or kW, is 1,000 watts.
+Follow the last few metres
 
-A kilowatt-hour, or kWh, measures energy used over time. A rack drawing 50 kW for one hour uses 50 kWh.
+The following simplified path shows conventional rack distribution. Some systems use different arrangements, such as shared power shelves, but every design must distribute and convert electricity before the chips can use it.
 
-Power determines whether cables and electrical equipment can safely carry the load right now. Energy helps determine the electricity bill over time. For deployment, the first question is often whether the rack can run without exceeding a power limit.
+Building circuit — brings power to the rack
 
-2. Follow electricity through the rack
+↓
 
-A rack power distribution unit, or rack PDU, receives electricity and provides outlets for the installed equipment. It is built for data-center loads and may measure or remotely control each outlet.
+Rack PDU — distributes it to equipment
 
-Power cords carry electricity from the rack PDU to each server. The server's power supply unit, or PSU, converts the incoming alternating current, called AC, into direct current, called DC. AC is convenient for distributing electricity through the building; electronic components use controlled DC voltages.
+↓
 
-Inside the server, additional circuits step that electricity down again to the low voltages required by GPUs, CPUs, memory and network cards.
+Server PSU — converts incoming AC to DC
 
-Every conversion loses some energy as heat. The rack therefore needs capacity for both the computing parts and the equipment that converts and distributes electricity.
+↓
 
-3. More powerful systems create denser racks
+Board regulators — supply the chips’ low DC voltages
 
-NVIDIA specifies a maximum system power of 14.3 kW for one DGX B200 system containing eight B200 GPUs. It uses six power supplies in a 5+1 arrangement, meaning five can support normal operation while one provides redundancy.
+A rack power distribution unit, or PDU, provides appropriately rated connections for the equipment and may monitor individual outlets. Cords carry power onward. A server power supply unit, or PSU, converts alternating current (AC) into direct current (DC). AC changes direction periodically; electronic components need controlled DC supplies.
 
-Consider a rack with four such systems. Using the maximum specification as a planning assumption, the systems alone could require up to 57.2 kW. Network switches and other rack equipment would add more.
+The conversion does not end at the server entrance. Circuits on the boards reduce the voltage further for GPUs, CPUs, memory and networking. Each conversion loses some energy as heat, so the electricity entering a server exceeds the electricity delivered to its chips.
 
-The rack would not always draw that amount. Demand changes with the workload, and a maximum specification is not measured average use. It shows the scale the design may need to support.
+Return to our four servers. If their rack PDU or upstream circuit is the constraint, spare building capacity cannot bypass it. Installing a larger PDU alone also fails if the wiring feeding it remains undersized. The entire required path must support the load.
 
