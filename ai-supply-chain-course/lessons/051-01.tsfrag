@@ -1,0 +1,53 @@
+import type { Lesson } from "./lessons";
+
+export const lesson051 = {
+  number: 51,
+  module: "Module 5: Power, Cooling and Data Center Deployment",
+  title: "Grid Connection and Generation — Where Data Center Electricity Comes From",
+  date: "2026-09-26",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 046: Copper works well over short connections, while optics carries signals reliably over longer distances.
+
+Lesson 047: Synchronized workers depend on one another, so one slow or failed participant can waste time across the cluster.
+
+Lesson 048: More accelerators help only when their useful output justifies the extra communication, waiting and cost.
+
+Lesson 049: Dense AI racks need enough electricity and cooling at every step, or expensive chips cannot run as intended.
+
+Lesson 050: A reliable power system needs independent, adequately sized paths from the grid connection through the building to each rack.
+
+The data center is finished. The grid is not ready.
+
+Imagine an operator has built a 120-megawatt AI data center beside a high-voltage transmission line. The servers, cooling equipment and internal electrical system are installed. The company has also signed a contract to buy electricity from a new power plant.
+
+Can it turn on 120 megawatts of equipment?
+
+Not necessarily. The site still needs a physical connection that can carry the load without making the wider grid unsafe. Electricity supply, delivery capacity and an operating data center are related, but they are not the same thing.
+
+This is an illustrative scenario. The real rules, study process and equipment depend on the utility and region.
+
+The grid is a shared system
+
+Most data centers do not receive a private wire from one named power plant. Generators put electricity onto an interconnected grid. High-voltage transmission lines move large amounts over long distances, substations change voltage and route power, and lower-voltage networks deliver it to customers.
+
+Generator → transmission network → utility substation → site connection → data-center electrical system
+
+Grid operators must keep total supply and demand balanced continuously. A new 120 MW load is therefore not only a customer order. It changes how much generation must be available and how electricity flows through shared lines and substations, including after another component fails.
+
+That shared-system view explains why a line running past the property does not prove that 120 MW is available there.
+
+What an interconnection study is trying to prevent
+
+Before energizing a large load, planners study how the network behaves with it connected. They may find that a transformer would exceed its rating, a transmission path would become overloaded, or voltage would fall outside acceptable limits. They also test contingencies: can the system remain reliable if an important line or generator is unexpectedly unavailable?
+
+The answer may require a new substation, larger transformers, another transmission path, protection changes or additional generation. Those upgrades take engineering, permits, equipment, construction and testing. The commercial questions—who pays, what service is promised and when the customer may connect—vary by region.
+
+This process is changing as data-center requests become larger. In June 2026, the Federal Energy Regulatory Commission directed six regional grid operators to justify or revise their approaches to large-load studies, cost transparency, flexible service and co-located generation. That action is evidence that “time to power” depends partly on rules and coordination, not just hardware.
+
+Three claims that sound similar but are different
+
+Consider three statements about the illustrative 120 MW project.
+
+“We bought 120 MW of electricity” may describe an energy contract or a claim on generation. It does not prove that the local network can deliver 120 MW at the site.
+
