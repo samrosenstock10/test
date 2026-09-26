@@ -406,6 +406,122 @@
       "verification": "The exact author, title, URL and indexed first-party text were verified. Nvidia's official GB300 NVL72 configuration was cross-checked separately, but the purchase orders, rack weight and forecast were not independently confirmed.",
       "freshness": "same-day-public-post",
       "itemId": "dylan-fentanyl-grade-compute-20260925"
+    },
+    {
+      "id": "expert-20260926-china-datacenter-model",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "China's AI data-center constraint is chips, not power or construction",
+      "sourceTitle": "The Chinese AI Infrastructure Boom: Introducing the SemiAnalysis China Datacenter Model",
+      "url": "https://newsletter.semianalysis.com/p/the-chinese-ai-infrastructure-boom",
+      "speaker": "Everlyn, Dylan Patel and Patrick Schaabi",
+      "role": "SemiAnalysis authors",
+      "publishedDate": "2026-09-25",
+      "observedAt": "2026-09-26T12:27:43Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis",
+      "summary": "SemiAnalysis's building-level model maps more than 1,000 Chinese facilities and argues that AI-ready wholesale capacity is expanding quickly even while legacy retail racks remain underused.",
+      "claim": "The public report says China has more than 24GW of delivered data-center capacity, ByteDance occupies roughly one fifth of it, GDS and VNET signed about 1.3GW of wholesale orders in 1H26, and China can deliver 100MW facilities in roughly 12 months; chips and export controls, rather than power or construction, are the binding constraint.",
+      "interpretation": "Our hypothesis: China can scale the physical AI-factory layer faster than Western power- and permitting-constrained markets, but value capture is fragmented across hyperscaler self-builds, state carriers and third-party wholesalers. The article is a sector mechanism, not a direct public-company endorsement.",
+      "beneficiaryTickers": [],
+      "countercase": "The model is proprietary SemiAnalysis research, the most detailed tenant-by-tenant work is paywalled, reported national overcapacity and price competition remain material, and faster construction does not establish attractive returns for any listed operator.",
+      "nextTest": "Check operator filings and state disclosures for delivered AI-ready MW, utilization, lease pricing, capex returns and chip availability; separate wholesale AI halls from obsolete retail capacity.",
+      "evidenceType": "first-party-industry-model",
+      "status": "evidence",
+      "location": "Public article sections: introduction; four-stage market history; Eastern Data, Western Compute; speed and cost.",
+      "incentives": "SemiAnalysis sells access to the China Datacenter Model and benefits from subscriptions.",
+      "verification": "Read the full public portion published September 25. Facility, capacity and tenant figures were not independently reproduced; cited company and government sources were noted.",
+      "freshness": "same-day-public-article",
+      "itemId": "semianalysis-china-datacenter-model-20260925"
+    },
+    {
+      "id": "expert-20260926-amd-mi355x-tilert",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "AMD's software stack can win a narrow ultra-low-latency benchmark",
+      "sourceTitle": "AMD MI355X becomes the first official TileRT result on AgentX",
+      "url": "https://www.linkedin.com/company/semianalysis",
+      "speaker": "SemiAnalysis",
+      "role": "AI infrastructure research team",
+      "publishedDate": "2026-09-25",
+      "observedAt": "2026-09-26T12:27:43Z",
+      "contentAccess": "notes-only",
+      "independenceGroup": "semianalysis",
+      "summary": "SemiAnalysis reports an eight-MI355X, disaggregated vLLM-plus-TileRT configuration at about 470 tokens per second on GLM-5.3, more than 40% faster in single-user decode than a cited GB300 TensorRT-LLM FP4 result.",
+      "claim": "The public update presents the result as AMD's first official TileRT AgentX submission and says P90 time-to-first-token remains high, leaving room for KV-transfer and paged-cache optimization.",
+      "interpretation": "Our lead: workload-specific software can close or reverse parts of AMD's measured inference gap without new silicon. That weakens a blanket software-lag claim, but one specialized result does not demonstrate repeated day-zero readiness, aggregate throughput or fleet economics.",
+      "beneficiaryTickers": [
+        "AMD"
+      ],
+      "countercase": "TileRT currently targets a specialized low-concurrency decode point; the post does not establish total tokens per dollar, utilization, networking cost or production reliability, and the result was not independently reproduced.",
+      "nextTest": "Compare matched-quality total throughput, TTFT, tokens per dollar and power at several concurrency points, then test whether AMD repeats the result across new frontier-model releases.",
+      "evidenceType": "public-benchmark-lead",
+      "status": "lead",
+      "location": "Public SemiAnalysis LinkedIn update; public InferenceX benchmark configuration for GLM-5.3 FP8 on MI355X.",
+      "incentives": "SemiAnalysis operates AgentX/InferenceX; TileRT and AMD benefit from promoting the result.",
+      "verification": "Read the public update and the public InferenceX configuration. The run output and economics were not independently reproduced.",
+      "freshness": "same-day-public-post",
+      "itemId": "semianalysis-amd-mi355x-tilert-20260925"
+    },
+    {
+      "id": "expert-20260926-nvidia-b200-engram",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "Engram offloading may raise revenue per constrained gigawatt",
+      "sourceTitle": "NVIDIA vLLM B200 DeepSeek V4.1 Flash economics update",
+      "url": "https://www.linkedin.com/company/semianalysis",
+      "speaker": "SemiAnalysis",
+      "role": "AI infrastructure research team",
+      "publishedDate": "2026-09-25",
+      "observedAt": "2026-09-26T12:27:43Z",
+      "contentAccess": "notes-only",
+      "independenceGroup": "semianalysis",
+      "summary": "SemiAnalysis models up to $15 billion of annual profit per gigawatt for B200 serving DeepSeek V4.1 Flash at its stated prices and interactivity, with Engram DRAM offloading increasing modeled revenue per gigawatt by 50%.",
+      "claim": "The indexed public update attributes the uplift to Engram offloading on NVIDIA vLLM under official model pricing and interactivity assumptions.",
+      "interpretation": "Our lead: memory offload can turn software and memory hierarchy into a material revenue-per-power lever. The result further supports Nvidia's full-stack economics, but it is a modeled endpoint rather than realized customer profit.",
+      "beneficiaryTickers": [
+        "NVDA"
+      ],
+      "countercase": "Revenue and profit depend on model pricing, utilization, demand, latency targets, hardware and power costs; official selling prices may not persist, and the calculation was not independently audited.",
+      "nextTest": "Verify the full benchmark configuration and cost stack, then compare realized provider pricing, occupancy, energy use and margins with and without Engram offloading.",
+      "evidenceType": "analyst-model-lead",
+      "status": "lead",
+      "location": "Public SemiAnalysis LinkedIn update; exact underlying model table was not independently retrieved.",
+      "incentives": "SemiAnalysis promotes its inference research and Nvidia ecosystem results.",
+      "verification": "Verified the public first-party update text. The modeled profit, cost assumptions and 50% uplift were not independently reproduced.",
+      "freshness": "same-day-public-post",
+      "itemId": "semianalysis-nvidia-b200-engram-20260925"
+    },
+    {
+      "id": "expert-20260926-china-wfe-localization",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "China's wafer-fab-equipment localization is broadening beyond lithography",
+      "sourceTitle": "SemiAnalysis CSEAC 2026 China WFE localization update",
+      "url": "https://www.linkedin.com/company/semianalysis",
+      "speaker": "SemiAnalysis",
+      "role": "AI infrastructure research team",
+      "publishedDate": "2026-09-25",
+      "observedAt": "2026-09-26T12:27:43Z",
+      "contentAccess": "notes-only",
+      "independenceGroup": "semianalysis",
+      "summary": "After attending CSEAC 2026, SemiAnalysis says it is more bullish on China's WFE localization and points to new AMEC etch, deposition and epitaxy tools plus Naura's supply-chain investments.",
+      "claim": "The public update says AMEC released six tools, including a 70–90:1 high-aspect-ratio etch system and a molybdenum-deposition tool, while Naura has invested in more than 60 component suppliers; process control and component localization still lag.",
+      "interpretation": "Our lead: localization is becoming a coordinated equipment-and-components ecosystem rather than a collection of isolated import substitutes. The post supports a theme and named diligence targets, not a scored company thesis.",
+      "beneficiaryTickers": [],
+      "countercase": "Conference announcements do not prove qualification, yield, uptime, service quality, share or margins; process control and components remain weak, and export restrictions can constrain advanced production.",
+      "nextTest": "Find dated tool qualifications, customer deployments, repeat orders, process results and segment economics for AMEC, Naura and relevant component suppliers.",
+      "evidenceType": "conference-fieldwork-lead",
+      "status": "lead",
+      "location": "Public SemiAnalysis LinkedIn update following CSEAC 2026 in Wuxi.",
+      "incentives": "SemiAnalysis sells a WFE Model and benefits from highlighting differentiated field research.",
+      "verification": "Verified the public first-party update text; underlying conference materials, customer qualifications and shipment data were not independently reviewed.",
+      "freshness": "same-day-public-post",
+      "itemId": "semianalysis-cseac-wfe-20260925"
     }
   ],
   "evidence": [
@@ -5906,6 +6022,14 @@
           "kind": "issuer-evidence",
           "url": "https://about.fb.com/news/2026/02/meta-amd-partner-longterm-ai-infrastructure-agreement/",
           "evidenceId": "dive-20260921-meta-customer"
+        },
+        {
+          "id": "expert-20260926-amd-mi355x-tilert",
+          "sourceId": "semianalysis",
+          "evidenceId": "expert-20260926-amd-mi355x-tilert",
+          "kind": "inferred-readthrough",
+          "publishedDate": "2026-09-25",
+          "url": "https://www.linkedin.com/company/semianalysis"
         }
       ],
       "aliases": [],
@@ -6733,6 +6857,14 @@
           "kind": "inferred-readthrough",
           "publishedDate": "2026-09-14",
           "url": "https://www.latent.space/p/recursive"
+        },
+        {
+          "id": "expert-20260926-nvidia-b200-engram",
+          "sourceId": "semianalysis",
+          "evidenceId": "expert-20260926-nvidia-b200-engram",
+          "kind": "inferred-readthrough",
+          "publishedDate": "2026-09-25",
+          "url": "https://www.linkedin.com/company/semianalysis"
         }
       ],
       "aliases": [],
@@ -13532,5 +13664,5 @@
       "Future Leaders work remained separate: FORM and GFS were published only as unranked leads, with no Infrastructure score or rank change."
     ]
   },
-  "updatedAt": "2026-09-25T13:48:57Z"
+  "updatedAt": "2026-09-26T12:27:43Z"
 }
