@@ -1,0 +1,42 @@
+“The utility approved the connection” may mean studies and agreements are complete. It does not prove every required substation, transformer and line has been built and commissioned.
+
+“The site is energized for 120 MW” means the operating path can deliver that amount under stated conditions. Even then, the facility must distribute the power and remove the resulting heat before the servers can use it.
+
+This is the same whole-stack logic we used for chips: a purchase, an installed component and useful output are different milestones.
+
+Firm power and flexible power
+
+Suppose the grid can support 80 MW continuously today. The remaining 40 MW might become available after an upgrade, or the operator might accept a flexible arrangement that reduces demand when the grid is stressed.
+
+Flexible load can improve time to connection because it gives the grid operator another way to maintain balance. But flexibility has a cost. Pausing a low-priority inference queue may be manageable; interrupting a tightly synchronized training job can waste work unless software checkpoints and operating plans limit the loss.
+
+The electrical agreement therefore reaches into cluster software and workload scheduling. A cheaper or faster flexible connection is valuable only if the computing work can tolerate its conditions.
+
+Can on-site generation skip the queue?
+
+On-site generators, batteries and microgrids can supply some or all of a facility’s power. A microgrid is a locally controlled electrical system that combines loads with generation or storage and may operate with or apart from the larger grid.
+
+This can provide backup, reduce peak grid demand or bridge a delayed grid expansion. It does not remove systems engineering. The operator still needs adequate fuel or stored energy, controls, emissions and land approvals, maintenance, cooling and safe switching between operating modes. If the microgrid remains connected to the wider network, the utility must understand how it will behave during disturbances.
+
+Co-locating beside a power plant can shorten the physical path, but it does not automatically make the data center invisible to the grid. The exact electrical boundary and operating rules matter.
+
+The career and investment question
+
+For an operator, “power secured” should trigger a milestone review: study complete, agreements signed, upgrades funded, long-lead equipment delivered, construction finished, tests passed and service conditions understood.
+
+For an investor, rising electricity demand can benefit generation, grid equipment and engineering suppliers, but demand growth does not guarantee profit capture. Regulated cost recovery, project timing, competition, equipment bottlenecks and customer obligations determine who earns attractive returns.
+
+Prediction check
+
+Two 100 MW projects have identical electricity-purchase contracts. Site A has completed its substation, network upgrades and commissioning. Site B is still waiting for a large transformer. Which site can produce useful AI work first?
+
+Answer: Site A. The energy contract may address where electricity is purchased, but only a completed and tested delivery path can carry it to operating servers. The tempting mistake is to treat contracted energy as energized capacity.
+
+When evaluating a data-center announcement, ask one causal question: what exact physical and contractual step still separates promised power from power the servers can use?
+
+Sources
+
+U.S. Energy Information Administration, Delivery to consumers: https://www.eia.gov/energyexplained/electricity/delivery-to-consumers.php
+
+Federal Energy Regulatory Commission, large-load integration fact sheet, June 18, 2026: https://www.ferc.gov/news-events/news/fact-sheet-ferc-takes-action-supercharge-americas-grid-efficiency-reliability-and
+
