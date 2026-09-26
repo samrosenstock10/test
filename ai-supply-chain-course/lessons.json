@@ -514,7 +514,19 @@
         "lessons/050-02.tsfrag",
         "lessons/050-03.tsfrag"
       ]
+    },
+    {
+      "number": 51,
+      "module": "Module 5: Power, Cooling and Data Center Deployment",
+      "title": "Grid Connection and Generation — Where Data Center Electricity Comes From",
+      "date": "2026-09-26",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/051-01.tsfrag",
+        "lessons/051-02.tsfrag",
+        "lessons/051-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-25T14:48:22.310Z"
+  "updatedAt": "2026-09-26T11:07:06.355Z"
 }
