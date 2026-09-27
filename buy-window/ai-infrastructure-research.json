@@ -3517,8 +3517,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. AI investment slows and open systems commoditize equipment; earnings still grow modestly, but valuation normalizes.",
           "years": 10,
-          "entryMultiple": 46,
-          "annualizedPriceReturnPct": -3.4
+          "entryMultiple": 47,
+          "annualizedPriceReturnPct": -3.6
         },
         {
           "case": "bear",
@@ -3526,8 +3526,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. AI investment slows and open systems commoditize equipment; earnings still grow modestly, but valuation normalizes.",
           "years": 10,
-          "entryMultiple": 56,
-          "annualizedPriceReturnPct": -5.3
+          "entryMultiple": 57,
+          "annualizedPriceReturnPct": -5.4
         },
         {
           "case": "bear",
@@ -3535,8 +3535,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. AI investment slows and open systems commoditize equipment; earnings still grow modestly, but valuation normalizes.",
           "years": 10,
-          "entryMultiple": 66,
-          "annualizedPriceReturnPct": -6.8
+          "entryMultiple": 67,
+          "annualizedPriceReturnPct": -7
         },
         {
           "case": "base",
@@ -3544,8 +3544,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Broad cooling/power scope and services sustain strong compounding after current growth moderates; no perpetual margin expansion.",
           "years": 10,
-          "entryMultiple": 46,
-          "annualizedPriceReturnPct": 10.2
+          "entryMultiple": 47,
+          "annualizedPriceReturnPct": 10
         },
         {
           "case": "base",
@@ -3553,8 +3553,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Broad cooling/power scope and services sustain strong compounding after current growth moderates; no perpetual margin expansion.",
           "years": 10,
-          "entryMultiple": 56,
-          "annualizedPriceReturnPct": 8
+          "entryMultiple": 57,
+          "annualizedPriceReturnPct": 7.9
         },
         {
           "case": "base",
@@ -3562,8 +3562,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Broad cooling/power scope and services sustain strong compounding after current growth moderates; no perpetual margin expansion.",
           "years": 10,
-          "entryMultiple": 66,
-          "annualizedPriceReturnPct": 6.3
+          "entryMultiple": 67,
+          "annualizedPriceReturnPct": 6.1
         },
         {
           "case": "bull",
@@ -3571,8 +3571,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Vertiv becomes a leading integrated global AI facility/service platform; sustained content/share gains support exceptional per-share growth.",
           "years": 10,
-          "entryMultiple": 46,
-          "annualizedPriceReturnPct": 20.3
+          "entryMultiple": 47,
+          "annualizedPriceReturnPct": 20
         },
         {
           "case": "bull",
@@ -3580,8 +3580,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Vertiv becomes a leading integrated global AI facility/service platform; sustained content/share gains support exceptional per-share growth.",
           "years": 10,
-          "entryMultiple": 56,
-          "annualizedPriceReturnPct": 18
+          "entryMultiple": 57,
+          "annualizedPriceReturnPct": 17.8
         },
         {
           "case": "bull",
@@ -3589,8 +3589,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Vertiv becomes a leading integrated global AI facility/service platform; sustained content/share gains support exceptional per-share growth.",
           "years": 10,
-          "entryMultiple": 66,
-          "annualizedPriceReturnPct": 16
+          "entryMultiple": 67,
+          "annualizedPriceReturnPct": 15.9
         }
       ],
       "coreEligible": true,
@@ -4018,8 +4018,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. EPYC and selective Instinct adoption grow earnings slowly, while software costs, customer inducements and competition restrain per-share profit. Terminal valuation normalizes sharply.",
           "years": 10,
-          "entryMultiple": 151,
-          "annualizedPriceReturnPct": -14.2
+          "entryMultiple": 152,
+          "annualizedPriceReturnPct": -14.3
         },
         {
           "case": "bear",
@@ -4027,7 +4027,7 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. EPYC and selective Instinct adoption grow earnings slowly, while software costs, customer inducements and competition restrain per-share profit. Terminal valuation normalizes sharply.",
           "years": 10,
-          "entryMultiple": 161,
+          "entryMultiple": 162,
           "annualizedPriceReturnPct": -14.8
         },
         {
@@ -4036,7 +4036,7 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. EPYC and selective Instinct adoption grow earnings slowly, while software costs, customer inducements and competition restrain per-share profit. Terminal valuation normalizes sharply.",
           "years": 10,
-          "entryMultiple": 171,
+          "entryMultiple": 172,
           "annualizedPriceReturnPct": -15.3
         },
         {
@@ -4045,8 +4045,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. AMD becomes a durable second compute platform with profitable repeated deployment; operating leverage and ROCm improve earnings after dilution. This requires substantial execution despite a lower terminal multiple.",
           "years": 10,
-          "entryMultiple": 151,
-          "annualizedPriceReturnPct": 2.1
+          "entryMultiple": 152,
+          "annualizedPriceReturnPct": 2
         },
         {
           "case": "base",
@@ -4054,7 +4054,7 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. AMD becomes a durable second compute platform with profitable repeated deployment; operating leverage and ROCm improve earnings after dilution. This requires substantial execution despite a lower terminal multiple.",
           "years": 10,
-          "entryMultiple": 161,
+          "entryMultiple": 162,
           "annualizedPriceReturnPct": 1.4
         },
         {
@@ -4063,7 +4063,7 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. AMD becomes a durable second compute platform with profitable repeated deployment; operating leverage and ROCm improve earnings after dilution. This requires substantial execution despite a lower terminal multiple.",
           "years": 10,
-          "entryMultiple": 171,
+          "entryMultiple": 172,
           "annualizedPriceReturnPct": 0.8
         },
         {
@@ -4072,7 +4072,7 @@
           "terminalMultiple": 40,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Instinct/Helios achieves sustained large-scale adoption and stronger platform economics while EPYC remains differentiated. This is an aggressive decade-long compounding endpoint with a remaining premium valuation.",
           "years": 10,
-          "entryMultiple": 151,
+          "entryMultiple": 152,
           "annualizedPriceReturnPct": 13.8
         },
         {
@@ -4081,8 +4081,8 @@
           "terminalMultiple": 40,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Instinct/Helios achieves sustained large-scale adoption and stronger platform economics while EPYC remains differentiated. This is an aggressive decade-long compounding endpoint with a remaining premium valuation.",
           "years": 10,
-          "entryMultiple": 161,
-          "annualizedPriceReturnPct": 13.1
+          "entryMultiple": 162,
+          "annualizedPriceReturnPct": 13
         },
         {
           "case": "bull",
@@ -4090,7 +4090,7 @@
           "terminalMultiple": 40,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Instinct/Helios achieves sustained large-scale adoption and stronger platform economics while EPYC remains differentiated. This is an aggressive decade-long compounding endpoint with a remaining premium valuation.",
           "years": 10,
-          "entryMultiple": 171,
+          "entryMultiple": 172,
           "annualizedPriceReturnPct": 12.4
         }
       ],
@@ -4242,8 +4242,8 @@
           "terminalMultiple": 18,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Divestiture gains roll out and custom/optics economics disappoint after incentives, R&D and dilution. Lower recurring earnings and a mature-supplier valuation follow.",
           "years": 10,
-          "entryMultiple": 75,
-          "annualizedPriceReturnPct": -17.6
+          "entryMultiple": 76,
+          "annualizedPriceReturnPct": -17.7
         },
         {
           "case": "bear",
@@ -4251,8 +4251,8 @@
           "terminalMultiple": 18,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Divestiture gains roll out and custom/optics economics disappoint after incentives, R&D and dilution. Lower recurring earnings and a mature-supplier valuation follow.",
           "years": 10,
-          "entryMultiple": 85,
-          "annualizedPriceReturnPct": -18.7
+          "entryMultiple": 86,
+          "annualizedPriceReturnPct": -18.8
         },
         {
           "case": "bear",
@@ -4260,7 +4260,7 @@
           "terminalMultiple": 18,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Divestiture gains roll out and custom/optics economics disappoint after incentives, R&D and dilution. Lower recurring earnings and a mature-supplier valuation follow.",
           "years": 10,
-          "entryMultiple": 95,
+          "entryMultiple": 96,
           "annualizedPriceReturnPct": -19.6
         },
         {
@@ -4269,8 +4269,8 @@
           "terminalMultiple": 25,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. New recurring custom and connectivity profit replaces the divestiture contribution, then expands. Eight percent measured from inflated reported EPS implies stronger growth from a clean operating baseline; the exit multiple rewards quality without platform pricing.",
           "years": 10,
-          "entryMultiple": 75,
-          "annualizedPriceReturnPct": -3.2
+          "entryMultiple": 76,
+          "annualizedPriceReturnPct": -3.4
         },
         {
           "case": "base",
@@ -4278,8 +4278,8 @@
           "terminalMultiple": 25,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. New recurring custom and connectivity profit replaces the divestiture contribution, then expands. Eight percent measured from inflated reported EPS implies stronger growth from a clean operating baseline; the exit multiple rewards quality without platform pricing.",
           "years": 10,
-          "entryMultiple": 85,
-          "annualizedPriceReturnPct": -4.4
+          "entryMultiple": 86,
+          "annualizedPriceReturnPct": -4.6
         },
         {
           "case": "base",
@@ -4287,8 +4287,8 @@
           "terminalMultiple": 25,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. New recurring custom and connectivity profit replaces the divestiture contribution, then expands. Eight percent measured from inflated reported EPS implies stronger growth from a clean operating baseline; the exit multiple rewards quality without platform pricing.",
           "years": 10,
-          "entryMultiple": 95,
-          "annualizedPriceReturnPct": -5.5
+          "entryMultiple": 96,
+          "annualizedPriceReturnPct": -5.6
         },
         {
           "case": "bull",
@@ -4296,8 +4296,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Multiple custom programs and photonics transitions produce sustained per-share profit at improving margins. Acquisition and incentive costs are absorbed; the business still earns a lower multiple than a dominant platform.",
           "years": 10,
-          "entryMultiple": 75,
-          "annualizedPriceReturnPct": 7.7
+          "entryMultiple": 76,
+          "annualizedPriceReturnPct": 7.5
         },
         {
           "case": "bull",
@@ -4305,8 +4305,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Multiple custom programs and photonics transitions produce sustained per-share profit at improving margins. Acquisition and incentive costs are absorbed; the business still earns a lower multiple than a dominant platform.",
           "years": 10,
-          "entryMultiple": 85,
-          "annualizedPriceReturnPct": 6.3
+          "entryMultiple": 86,
+          "annualizedPriceReturnPct": 6.2
         },
         {
           "case": "bull",
@@ -4314,8 +4314,8 @@
           "terminalMultiple": 30,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Multiple custom programs and photonics transitions produce sustained per-share profit at improving margins. Acquisition and incentive costs are absorbed; the business still earns a lower multiple than a dominant platform.",
           "years": 10,
-          "entryMultiple": 95,
-          "annualizedPriceReturnPct": 5.2
+          "entryMultiple": 96,
+          "annualizedPriceReturnPct": 5
         }
       ],
       "coreEligible": false,
@@ -5092,8 +5092,8 @@
           "terminalMultiple": 10,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Shortage pricing normalizes faster than protected products grow; new capacity and competition lower recurring EPS versus the current strong trailing year. Terminal valuation remains cyclical.",
           "years": 10,
-          "entryMultiple": 14,
-          "annualizedPriceReturnPct": -8.1
+          "entryMultiple": 15,
+          "annualizedPriceReturnPct": -8.8
         },
         {
           "case": "bear",
@@ -5101,8 +5101,8 @@
           "terminalMultiple": 10,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Shortage pricing normalizes faster than protected products grow; new capacity and competition lower recurring EPS versus the current strong trailing year. Terminal valuation remains cyclical.",
           "years": 10,
-          "entryMultiple": 24,
-          "annualizedPriceReturnPct": -13
+          "entryMultiple": 25,
+          "annualizedPriceReturnPct": -13.3
         },
         {
           "case": "bear",
@@ -5110,8 +5110,8 @@
           "terminalMultiple": 10,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Shortage pricing normalizes faster than protected products grow; new capacity and competition lower recurring EPS versus the current strong trailing year. Terminal valuation remains cyclical.",
           "years": 10,
-          "entryMultiple": 34,
-          "annualizedPriceReturnPct": -15.9
+          "entryMultiple": 35,
+          "annualizedPriceReturnPct": -16.2
         },
         {
           "case": "base",
@@ -5119,8 +5119,8 @@
           "terminalMultiple": 15,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. HBM mix and contracts offset substantial price normalization, with moderate long-run EPS improvement after manufacturing investment and dilution. Contract quality supports a premium but does not remove cycles.",
           "years": 10,
-          "entryMultiple": 14,
-          "annualizedPriceReturnPct": 3.7
+          "entryMultiple": 15,
+          "annualizedPriceReturnPct": 3
         },
         {
           "case": "base",
@@ -5128,8 +5128,8 @@
           "terminalMultiple": 15,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. HBM mix and contracts offset substantial price normalization, with moderate long-run EPS improvement after manufacturing investment and dilution. Contract quality supports a premium but does not remove cycles.",
           "years": 10,
-          "entryMultiple": 24,
-          "annualizedPriceReturnPct": -1.7
+          "entryMultiple": 25,
+          "annualizedPriceReturnPct": -2.1
         },
         {
           "case": "base",
@@ -5137,8 +5137,8 @@
           "terminalMultiple": 15,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. HBM mix and contracts offset substantial price normalization, with moderate long-run EPS improvement after manufacturing investment and dilution. Contract quality supports a premium but does not remove cycles.",
           "years": 10,
-          "entryMultiple": 34,
-          "annualizedPriceReturnPct": -5.1
+          "entryMultiple": 35,
+          "annualizedPriceReturnPct": -5.4
         },
         {
           "case": "bull",
@@ -5146,8 +5146,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. AI memory demand and differentiated HBM keep growing through successive cycles while take-or-pay protections and capacity discipline preserve economics. Sustained above-cycle profitability earns a higher multiple; this is explicitly an optimistic endpoint.",
           "years": 10,
-          "entryMultiple": 14,
-          "annualizedPriceReturnPct": 14
+          "entryMultiple": 15,
+          "annualizedPriceReturnPct": 13.2
         },
         {
           "case": "bull",
@@ -5155,8 +5155,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. AI memory demand and differentiated HBM keep growing through successive cycles while take-or-pay protections and capacity discipline preserve economics. Sustained above-cycle profitability earns a higher multiple; this is explicitly an optimistic endpoint.",
           "years": 10,
-          "entryMultiple": 24,
-          "annualizedPriceReturnPct": 8
+          "entryMultiple": 25,
+          "annualizedPriceReturnPct": 7.6
         },
         {
           "case": "bull",
@@ -5164,8 +5164,8 @@
           "terminalMultiple": 20,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. AI memory demand and differentiated HBM keep growing through successive cycles while take-or-pay protections and capacity discipline preserve economics. Sustained above-cycle profitability earns a higher multiple; this is explicitly an optimistic endpoint.",
           "years": 10,
-          "entryMultiple": 34,
-          "annualizedPriceReturnPct": 4.3
+          "entryMultiple": 35,
+          "annualizedPriceReturnPct": 4
         }
       ],
       "coreEligible": false,
@@ -5635,8 +5635,8 @@
           "terminalMultiple": 15,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Fuel cells remain a niche and warranty/customer concessions prevent strong owner earnings; positive terminal EPS excludes a separate possible loss or failure outcome.",
           "years": 10,
-          "entryMultiple": 353,
-          "annualizedPriceReturnPct": -23.4
+          "entryMultiple": 383,
+          "annualizedPriceReturnPct": -24.1
         },
         {
           "case": "bear",
@@ -5644,8 +5644,8 @@
           "terminalMultiple": 15,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Fuel cells remain a niche and warranty/customer concessions prevent strong owner earnings; positive terminal EPS excludes a separate possible loss or failure outcome.",
           "years": 10,
-          "entryMultiple": 363,
-          "annualizedPriceReturnPct": -23.7
+          "entryMultiple": 393,
+          "annualizedPriceReturnPct": -24.3
         },
         {
           "case": "bear",
@@ -5653,8 +5653,8 @@
           "terminalMultiple": 15,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Fuel cells remain a niche and warranty/customer concessions prevent strong owner earnings; positive terminal EPS excludes a separate possible loss or failure outcome.",
           "years": 10,
-          "entryMultiple": 373,
-          "annualizedPriceReturnPct": -23.9
+          "entryMultiple": 403,
+          "annualizedPriceReturnPct": -24.4
         },
         {
           "case": "base",
@@ -5662,8 +5662,8 @@
           "terminalMultiple": 25,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Commercial scale eventually builds several times current owner earnings; the high CAGR reflects today’s tiny recently positive TTM base and is not a forecast.",
           "years": 10,
-          "entryMultiple": 353,
-          "annualizedPriceReturnPct": -0.2
+          "entryMultiple": 383,
+          "annualizedPriceReturnPct": -1
         },
         {
           "case": "base",
@@ -5671,8 +5671,8 @@
           "terminalMultiple": 25,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Commercial scale eventually builds several times current owner earnings; the high CAGR reflects today’s tiny recently positive TTM base and is not a forecast.",
           "years": 10,
-          "entryMultiple": 363,
-          "annualizedPriceReturnPct": -0.5
+          "entryMultiple": 393,
+          "annualizedPriceReturnPct": -1.3
         },
         {
           "case": "base",
@@ -5680,8 +5680,8 @@
           "terminalMultiple": 25,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Commercial scale eventually builds several times current owner earnings; the high CAGR reflects today’s tiny recently positive TTM base and is not a forecast.",
           "years": 10,
-          "entryMultiple": 373,
-          "annualizedPriceReturnPct": -0.8
+          "entryMultiple": 403,
+          "annualizedPriceReturnPct": -1.6
         },
         {
           "case": "bull",
@@ -5689,8 +5689,8 @@
           "terminalMultiple": 35,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Bloom becomes a large permanent onsite-power platform with demonstrated uptime, service margins and controlled dilution; extraordinary execution is required.",
           "years": 10,
-          "entryMultiple": 353,
-          "annualizedPriceReturnPct": 11.1
+          "entryMultiple": 383,
+          "annualizedPriceReturnPct": 10.2
         },
         {
           "case": "bull",
@@ -5698,8 +5698,8 @@
           "terminalMultiple": 35,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Bloom becomes a large permanent onsite-power platform with demonstrated uptime, service margins and controlled dilution; extraordinary execution is required.",
           "years": 10,
-          "entryMultiple": 363,
-          "annualizedPriceReturnPct": 10.8
+          "entryMultiple": 393,
+          "annualizedPriceReturnPct": 9.9
         },
         {
           "case": "bull",
@@ -5707,8 +5707,8 @@
           "terminalMultiple": 35,
           "assumptionNote": "Illustrative endpoint stress, not a forecast. Bloom becomes a large permanent onsite-power platform with demonstrated uptime, service margins and controlled dilution; extraordinary execution is required.",
           "years": 10,
-          "entryMultiple": 373,
-          "annualizedPriceReturnPct": 10.5
+          "entryMultiple": 403,
+          "annualizedPriceReturnPct": 9.6
         }
       ],
       "coreEligible": false,
@@ -8201,237 +8201,234 @@
   },
   "valuationContext": {
     "basis": "ttm",
-    "asOf": "2026-09-24",
-    "observedAt": "2026-09-25T13:48:57Z",
+    "asOf": "2026-09-25",
+    "observedAt": "2026-09-27T01:04:35Z",
     "companies": {
       "NVDA": {
-        "value": 28.39,
+        "value": 28.45,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/nvda/pe-ratio",
-        "priceUsd": 224.58,
+        "priceUsd": 225.07,
         "epsTtmUsd": 7.91,
         "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
-        "price": 224.58,
+        "price": 225.07,
         "currency": "USD"
       },
       "AVGO": {
-        "value": 44.73,
+        "value": 45.04,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/avgo/pe-ratio",
-        "priceUsd": 350.36,
-        "epsTtmUsd": 7.83,
+        "priceUsd": 352.81,
+        "epsTtmUsd": 8.02,
         "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
-        "price": 350.36,
+        "price": 352.81,
         "currency": "USD"
       },
       "TSM": {
-        "value": 32.56,
+        "value": 32.52,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/tsm/pe-ratio",
-        "priceUsd": 451.15,
-        "epsTtmUsd": 13.86,
+        "priceUsd": 450.61,
         "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
-        "price": 451.15,
+        "price": 450.61,
         "currency": "USD"
       },
       "ASML": {
-        "value": 53.63,
+        "value": 54.29,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/asml/pe-ratio",
-        "priceUsd": 1722.5,
-        "epsTtmUsd": 32.12,
+        "priceUsd": 1743.94,
         "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
-        "price": 1722.5,
+        "price": 1743.94,
         "currency": "USD"
       },
       "ANET": {
-        "value": 64.85,
+        "value": 65.12,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/anet/pe-ratio",
         "currency": "USD",
-        "price": 205.7,
-        "priceUsd": 205.7,
+        "price": 206.55,
+        "priceUsd": 206.55,
         "notes": "About 63x trailing earnings requires substantial future growth. Current-price attractiveness remains unscored. Cash advances boosted H1 cash flow; extrapolating that cash margin would overstate recurring economics.",
-        "epsTtmUsd": 3.17
+        "epsTtmUsd": 3.21
       },
       "AMD": {
-        "value": 161.49,
+        "value": 161.84,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/amd/pe-ratio",
         "currency": "USD",
-        "price": 629.26,
-        "priceUsd": 629.26,
+        "price": 630.63,
+        "priceUsd": 630.63,
         "notes": "Provider displays TTM EPS rounded to cents; do not recompute the stated ratio from rounded EPS or replace with forward/adjusted EPS. GAAP earnings include acquisition-amortization and investment effects, so ratio comparability is imperfect.",
-        "epsTtmUsd": 3.9
+        "epsTtmUsd": 3.89
       },
       "MRVL": {
-        "value": 85.27,
+        "value": 86.25,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/mrvl/pe-ratio",
         "currency": "USD",
-        "price": 258.95,
-        "priceUsd": 258.95,
+        "price": 261.935,
+        "priceUsd": 261.935,
         "notes": "Trailing income contains a major divestiture gain; current earnings also contain acquired-intangible amortization and contingent-consideration effects. Reconcile both directions before normalized valuation. Dividing rounded EPS need not reproduce provider P/E exactly.",
-        "epsTtmUsd": 3.04
+        "epsTtmUsd": 3.02
       },
       "000660.KS": {
         "value": 8.18,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Stock Analysis (S&P Global)",
         "sourceUrl": "https://stockanalysis.com/quote/krx/000660/statistics/",
         "currency": "KRW",
-        "price": 1862000,
         "notes": "Company Q2 net margin118% demonstrates reported net profit cannot be extrapolated as operating economics. Did not verify precise non-operating-gain decomposition in primary filing; do not assert a specific gain amount. Latest available provider page remained dated September 23; no September 24 record was substituted."
       },
       "MU": {
-        "value": 24.46,
+        "value": 24.5,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/mu/pe-ratio",
         "currency": "USD",
-        "price": 1080.53,
-        "priceUsd": 1080.53,
+        "price": 1082.28,
+        "priceUsd": 1082.28,
         "notes": "Price divided by reported trailing EPS (not forward). Source identifies TTM EPS; quarter reported GAAP EPS cross-checked. Multiple is not normalized cycle earnings.",
         "epsTtmUsd": 44.17
       },
       "VRT": {
-        "value": 55.51,
+        "value": 57.31,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/vrt/pe-ratio",
         "currency": "USD",
-        "price": 245.3,
-        "priceUsd": 245.3,
+        "price": 253.28,
+        "priceUsd": 253.28,
         "notes": "Reported trailing GAAP multiple; not forward adjusted EPS. Current growth is fast, but margin expansion cannot compound indefinitely. High business score is not a current-price recommendation.",
         "epsTtmUsd": 4.42
       },
       "GEV": {
-        "value": 27.34,
+        "value": 27.41,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/gev/pe-ratio",
         "currency": "USD",
-        "price": 955.04,
-        "priceUsd": 955.04,
+        "price": 957.63,
+        "priceUsd": 957.63,
         "notes": "DO NOT treat26.92x as a normalized operating multiple. TTM includes large nonrecurring gains; Q2 release identifies~4bn Prolec remeasurement and330m Proficy gain inH1. A full trailing normalized tax-adjusted bridge is not completed.",
-        "epsTtmUsd": 34.93
+        "epsTtmUsd": 34.83
       },
       "CAT": {
-        "value": 34.64,
+        "value": 35.34,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/cat/pe-ratio",
         "currency": "USD",
-        "price": 805.25,
-        "priceUsd": 805.25,
+        "price": 821.58,
+        "priceUsd": 821.58,
         "notes": "Reported trailing earnings require normalization before a current-price investment conclusion.",
-        "epsTtmUsd": 23.25
+        "epsTtmUsd": 23.23
       },
       "CMI": {
-        "value": 26.63,
+        "value": 26.83,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/cmi/pe-ratio",
         "currency": "USD",
-        "price": 521.07,
-        "priceUsd": 521.07,
+        "price": 525.06,
+        "priceUsd": 525.06,
         "notes": "Reported trailing earnings require normalization before a current-price investment conclusion.",
-        "epsTtmUsd": 19.57
+        "epsTtmUsd": 19.55
       },
       "BE": {
-        "value": 363.33,
+        "value": 393.38,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/be/pe-ratio",
         "currency": "USD",
-        "price": 266.65,
-        "priceUsd": 266.65,
+        "price": 288.7,
+        "priceUsd": 288.7,
         "notes": "Reported trailing P/E on a newly positive and very small earnings base; not forward earnings. Large apparent EPS growth can be a base effect, and warranted/customer-consideration accounting complicates normalization.",
-        "epsTtmUsd": 0.73
+        "epsTtmUsd": 0.76
       },
       "GOOGL": {
-        "value": 17.2,
+        "value": 17.28,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-24",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/googl/pe-ratio",
         "currency": "USD",
-        "price": 342.36,
-        "priceUsd": 342.36,
+        "price": 343.92,
+        "priceUsd": 343.92,
         "notes": "The17.56x headline is not evidence of cheap recurring earnings. Q2 gains alone added$6.26/share; Q1 and earlier periods also contain investment gains. A consistent normalized TTM bridge was not rebuilt.",
         "epsTtmUsd": 19.91
       },
       "META": {
-        "value": 28.03,
+        "value": 28.31,
         "basis": "ttm",
         "status": "verified",
-        "asOf": "2026-09-23",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
         "provider": "Wall Street Numbers",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/meta/pe-ratio",
         "currency": "USD",
-        "price": 744.1,
-        "priceUsd": 744.1,
+        "price": 751.66,
+        "priceUsd": 751.66,
         "notes": "Trailing earnings include discrete tax effects as well as legal/severance costs. EPS is not distributable cash: current capex and SBC materially affect owner economics. No complete normalized per-share earnings or FCF forecast was built. The provider had already moved to September 25 intraday data when checked; the September 23 verified record was retained rather than reverse-engineering a September 24 close.",
-        "epsTtmUsd": 26.55
+        "epsTtmUsd": 26.54
       },
       "SPCX": {
         "value": null,
         "basis": "ttm",
         "status": "unavailable",
         "reason": "WSN has no P/E data and the company reports losses. No EPS-growth return model. A current fully diluted share count, acquisition-adjusted sum-of-parts and consolidated funding model are needed; do not use pre-IPO weighted-average shares as today's denominator.",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "observedAt": "2026-09-27T01:04:35Z",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/spcx/pe-ratio"
       },
       "CRWV": {
@@ -8439,7 +8436,7 @@
         "basis": "ttm",
         "status": "unavailable",
         "reason": "WSN supplies no P/E. Finance service displays a negative multiple; intentionally not used as a valuation anchor. Needs contract/cohort cashflow, full debt/leases and fully diluted equity bridge, not EPS CAGR or EBITDA alone.",
-        "observedAt": "2026-09-25T13:48:57Z",
+        "observedAt": "2026-09-27T01:04:35Z",
         "sourceUrl": "https://wallstreetnumbers.com/stocks/crwv/pe-ratio"
       }
     },
@@ -8448,7 +8445,7 @@
       "basis": "ttm",
       "status": "proxy",
       "asOf": "2026-09-24",
-      "observedAt": "2026-09-25T13:48:57Z",
+      "observedAt": "2026-09-27T01:04:35Z",
       "provider": "ChartRow",
       "sourceUrl": "https://chartrow.com/nasdaq-100/pe-ratio",
       "method": "nasdaq100-median-proxy",
@@ -13691,5 +13688,5 @@
       "This engineering cycle did not perform the separately scheduled 09:30 valuation refresh, D3 handoff, Grok intake, Future Leaders review or weekly conviction review."
     ]
   },
-  "updatedAt": "2026-09-26T13:29:00Z"
+  "updatedAt": "2026-09-27T01:12:29Z"
 }
