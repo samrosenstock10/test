@@ -550,6 +550,36 @@
       "verification": "Official OCP episode notes and chapter metadata read; YouTube retrieval was throttled, so audio/transcript and underlying customer data were not reviewed.",
       "freshness": "recent-episode",
       "itemId": "ocp-podcast-23-proteantecs-20260922"
+    },
+    {
+      "id": "expert-20260927-intel-panther-lake-18a",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "Intel 18A reaches shipped silicon, but not process leadership",
+      "sourceTitle": "Intel Panther Lake Teardown",
+      "url": "https://newsletter.semianalysis.com/p/intel-panther-lake-teardown",
+      "speaker": "SemiAnalysis STEEL team",
+      "role": "Independent semiconductor teardown and process-analysis team",
+      "publishedDate": "2026-09-26",
+      "observedAt": "2026-09-27T12:36:00Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis",
+      "summary": "SemiAnalysis's physical teardown finds Panther Lake is the first commercial implementation of backside power delivery and Intel's first shipped RibbonFET product, moving Intel 18A from roadmap claims into production silicon.",
+      "claim": "SemiAnalysis measures 18A compute-logic density near TSMC N3E while still behind TSMC N3P and N2 and Samsung SF2; Panther Lake's high-end GPU tile remains on TSMC N3E.",
+      "interpretation": "Our inference: Panther Lake materially de-risks Intel's ability to manufacture advanced GAA and backside-power silicon, but it does not establish process leadership, competitive yields, external foundry adoption or attractive returns on the capital base.",
+      "beneficiaryTickers": [
+        "INTC"
+      ],
+      "countercase": "A successfully shipped internal-client tile can coexist with weak external demand, low yields, delayed volume ramps or poor foundry economics. The continued use of TSMC N3E for the high-end GPU also limits the breadth of the proof point.",
+      "nextTest": "Track external Intel 18A customer silicon, defect density and yield disclosures, Panther Lake volume and mix, Intel Foundry utilization and gross margin, and execution on 18A-P and 14A.",
+      "evidenceType": "independent-teardown-analysis",
+      "status": "evidence",
+      "location": "Public article sections covering the compute-tile floorplan, PowerVia, RibbonFET and logic-density comparison",
+      "incentives": "SemiAnalysis sells semiconductor teardown and research services and uses the public article to promote its STEEL laboratory.",
+      "verification": "Read the full public September 26 article and its measurement discussion. The physical measurements are SemiAnalysis's analysis and were not independently reproduced.",
+      "freshness": "next-day-public-article",
+      "itemId": "semianalysis-intel-panther-lake-teardown-20260926"
     }
   ],
   "evidence": [
@@ -2104,6 +2134,27 @@
       },
       "selectionReason": "A concrete optical-interconnect capacity agreement is directly relevant to the AI infrastructure stack and named public suppliers.",
       "corroborationNote": "Reused Project Tracker evidence; the source and this handoff count once, not as independent corroboration."
+    },
+    {
+      "id": "semianalysis-intel-panther-lake-18a-20260926",
+      "title": "SemiAnalysis teardown verifies Intel 18A PowerVia and RibbonFET in Panther Lake",
+      "url": "https://newsletter.semianalysis.com/p/intel-panther-lake-teardown",
+      "kind": "independent-teardown-analysis",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-09-26",
+      "observedAt": "2026-09-27T12:36:00Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "SemiAnalysis's physical teardown finds Panther Lake is the first commercial implementation of backside power delivery and Intel's first shipped RibbonFET product.",
+      "claim": "The teardown measures Intel 18A compute-logic density near TSMC N3E, while still behind TSMC N3P and N2 and Samsung SF2; the high-end Panther Lake GPU tile is fabricated on TSMC N3E.",
+      "interpretation": "This de-risks Intel's manufacturing readiness without proving process leadership, external foundry adoption, yields or attractive economics.",
+      "verification": "Read the full public article. SemiAnalysis's laboratory measurements were not independently reproduced.",
+      "countercase": "Internal product shipment and density parity with an older TSMC node do not establish competitive yields, volume, customer wins or capital returns.",
+      "nextTest": "Seek external-customer 18A silicon, independent yield/defect evidence and reported foundry utilization and margins.",
+      "beneficiaryTickers": [
+        "INTC"
+      ],
+      "sourceObservationId": "expert-20260927-intel-panther-lake-18a"
     }
   ],
   "rankings": [
@@ -7158,6 +7209,27 @@
       "screeningStatus": "core-admitted",
       "screeningReason": "Best power/cooling expression here for concentrated AI growth: direct equipment content and service expansion, with actual profit capture. Kept at80, below NVDA90/AVGO85/TSM85, because competition and architecture changes weaken long-run pricing certainty; ASML has a stronger unique technical control point at the same broad score.",
       "lastReviewedAt": "2026-09-21T01:34:53Z"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "stage": "unrated",
+      "firstObservedAt": "2026-09-27T12:36:00Z",
+      "priority": "normal",
+      "nextQuestion": "Can Intel convert shipped 18A silicon into competitive yields, external foundry customers, sustained utilization and attractive owner economics versus TSMC N2/N3P?",
+      "sourceRefs": [
+        {
+          "id": "expert-20260927-intel-panther-lake-18a",
+          "sourceId": "semianalysis",
+          "evidenceId": "semianalysis-intel-panther-lake-18a-20260926",
+          "kind": "inferred-readthrough",
+          "publishedDate": "2026-09-26",
+          "url": "https://newsletter.semianalysis.com/p/intel-panther-lake-teardown"
+        }
+      ],
+      "aliases": [],
+      "screeningStatus": "unrated",
+      "screeningReason": "SemiAnalysis's teardown de-risks Intel 18A manufacturing readiness but does not establish leading density, external adoption, competitive yield or attractive foundry economics; no conviction score is assigned."
     }
   ],
   "rankingMethodology": {
@@ -13688,5 +13760,5 @@
       "This engineering cycle did not perform the separately scheduled 09:30 valuation refresh, D3 handoff, Grok intake, Future Leaders review or weekly conviction review."
     ]
   },
-  "updatedAt": "2026-09-27T01:12:29Z"
+  "updatedAt": "2026-09-27T12:40:00Z"
 }
