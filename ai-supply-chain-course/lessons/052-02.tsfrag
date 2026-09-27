@@ -1,0 +1,38 @@
+After air or coolant collects heat from the rack, facility equipment must reject it outdoors. Depending on the design and climate, that may involve chillers, cooling towers, dry coolers, pumps and heat exchangers.
+
+These choices change electricity use, water use and performance in hot weather. A system that works efficiently on a cool day may need mechanical cooling or additional water when outdoor conditions worsen. The measurement boundary matters: “120 kW of rack cooling” is incomplete unless we know the entering temperatures, flow conditions and what equipment is included.
+
+Capacity and efficiency are different claims. A more efficient cooling plant uses less extra electricity to remove a given amount of heat. It still needs enough heat-removal capacity for the load. Improving pump efficiency does not close a 30 kW cooling shortfall by itself.
+
+Cooling has its own reliability requirement
+
+A cooling design must survive the failures and maintenance events the operator promises to tolerate. Two pumps add little resilience if they share one failed power source. A 120 kW cooling loop may not support a 120 kW rack after one pump is unavailable.
+
+Liquid systems also require leak detection and coordinated responses. NVIDIA documents sensors at tray, rack and data-center levels for its DGX GB200 system. Controls must identify the affected area, protect equipment and preserve healthy capacity where the design allows.
+
+Before production use, operators commission the cooling path. They check flow, temperature, pressure, alarms, controls, leak detection and failure behavior under realistic load. Installed hardware becomes usable only after the combined system works as intended.
+
+Prediction check
+
+A hybrid-cooled rack sends 80% of its heat into liquid and 20% into room air. The liquid loop has enough capacity, but the room-air system can handle only 10% of the rack's total heat. Can the rack sustain full load?
+
+Answer: No. The uncovered air-cooled components still exceed the available air capacity. The operator must improve airflow, reduce load or change the cooling arrangement. The tempting mistake is to treat adequate liquid capacity as adequate total cooling.
+
+For an operator, the practical questions are: where does each watt of heat travel, what capacity survives a failure, and has the full path been tested? For an investor, denser compute can increase demand for cold plates, CDUs, pumps, heat exchangers and controls, but demand growth does not guarantee profit capture. Integration, qualification, service, competition and customer bargaining still determine economics.
+
+Power becomes useful compute only when the cooling system can move the resulting heat continuously from silicon to the outside environment.
+
+Sources
+
+NVIDIA, DGX GB Rack Scale Systems User Guide — rack power and hybrid cooling: https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html
+
+NVIDIA, DGX SuperPOD Data Center Design — airflow, containment and cooling capacity: https://docs.nvidia.com/dgx-superpod/design-guides/dgx-superpod-data-center-design-h100/latest/cooling.html
+
+U.S. Department of Energy, Best Practices Guide for Energy-Efficient Data Center Design: https://www.energy.gov/sites/default/files/2024-07/best-practice-guide-data-center-design_0.pdf
+
+Vertiv, Liquid Cooling Options for Data Centers — CDUs and facility loops: https://www.vertiv.com/en-asia/solutions/learn-about/liquid-cooling-options-for-data-centers/
+
+Next lesson
+
+Lesson 053: Commissioning and Server Integration — When Installed Equipment Becomes Usable
+

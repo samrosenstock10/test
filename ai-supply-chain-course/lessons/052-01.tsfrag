@@ -1,0 +1,53 @@
+import type { Lesson } from "./lessons";
+
+export const lesson052 = {
+  number: 52,
+  module: "Module 5: Power, Cooling and Data Center Deployment",
+  title: "Heat Removal — Why Electrical Power Becomes a Cooling Problem",
+  date: "2026-09-27",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 047: Synchronized workers depend on one another, so one slow or failed participant can waste time across the cluster.
+
+Lesson 048: More accelerators help only when their useful output justifies the extra communication, waiting and cost.
+
+Lesson 049: Dense AI racks need enough electricity and cooling at every step, or expensive chips cannot run as intended.
+
+Lesson 050: Reliable power needs independent, adequately sized paths from the grid connection through the building to each rack.
+
+Lesson 051: Buying electricity is not enough; a completed and tested grid connection must deliver it to the servers.
+
+The rack has power. Why does it slow down?
+
+Imagine an AI rack with an electrical path capable of delivering 120 kilowatts. The operator starts a demanding workload, but the cooling system serving that rack can remove only 90 kW of heat. The servers run at first, then temperatures rise and control systems reduce performance or shut equipment down.
+
+This is an illustrative mismatch, not a measured deployment. It shows why energized capacity is not the same as sustained compute. Cooling must continuously carry away the heat that computing creates.
+
+Follow the heat, not just the coolant
+
+Nearly all electricity used by computing equipment ultimately becomes heat inside the facility. NVIDIA documents approximate rack power consumption of 120 kW for its DGX GB rack system. If a rack operates near that level, the cooling system must remove heat on roughly the same scale while handling components that use different cooling methods.
+
+Heat moves through a chain:
+
+Chip → contact material → heat sink or cold plate → air or liquid → facility cooling system → outside environment
+
+A limit anywhere in that path can raise component temperature. A large chiller does not help if the rack cannot transfer heat into the facility loop. Cooling capacity must exist along the complete path, just as electrical capacity must.
+
+How air cooling carries heat away
+
+In an air-cooled server, fans move cooler air across heat sinks and other components. The air warms, exits the rack and must be separated from the cooler supply air. Data centers often arrange racks into cold aisles at their fronts and hot aisles at their backs.
+
+Containment limits hot-air recirculation. If hot exhaust returns to a server inlet, the entering air is warmer and has less ability to absorb more heat. Adding a fan cannot fully solve a room-level airflow problem when the facility cannot supply and remove enough air.
+
+Air remains important even in many liquid-cooled systems. NVIDIA's DGX GB rack guide says liquid cools the CPU and GPU cold plates, while fans cool components such as networking and storage. Calling a rack liquid-cooled therefore does not mean every watt of heat leaves through liquid.
+
+Why liquid reaches the densest heat sources
+
+A cold plate is a metal heat exchanger attached to a hot component. Coolant flows through internal channels, absorbs heat and returns warmer. Rack manifolds divide that flow among servers.
+
+A coolant distribution unit, or CDU, controls temperature and flow, filters the secondary loop and transfers heat to another cooling loop or to air. Separating loops helps the operator control fluid quality and pressure near expensive electronics.
+
+Liquid can move more heat through a compact path than practical airflow, making direct-to-chip cooling useful for dense GPUs and CPUs. But it introduces plumbing, pumps, seals, fluid compatibility and leak risk. The right question is which heat sources it serves, how much heat it removes and what new failure modes it creates.
+
+The heat still has to leave the building
+

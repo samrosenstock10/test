@@ -1,0 +1,2 @@
+We will follow a new data hall through installation and testing to see why delivered servers, power and cooling do not create useful compute until the whole system works together.`,
+} satisfies Lesson;
