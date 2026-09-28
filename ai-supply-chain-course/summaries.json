@@ -28,6 +28,13 @@
       "title": "Heat Removal — Why Electrical Power Becomes a Cooling Problem",
       "bodySha256": "c16a2ed913a40301471a32633db0d8faa3592edf7bbe3c1a9c7ec201fae39089",
       "body": "Lesson 052 explains why a powered AI rack cannot sustain full performance unless the cooling system removes heat as fast as the hardware creates it. Nearly all electricity used by computing equipment becomes heat, so a rack operating near 120 kW needs heat removal on roughly the same scale. Heat must pass through a complete path from the chip, through a heat sink or cold plate, into air or liquid, through facility equipment and finally outdoors. Air cooling uses fans and managed hot and cold aisles, while direct-to-chip liquid cooling carries heat from dense CPUs and GPUs through cold plates and rack manifolds. A coolant distribution unit controls flow and temperature and transfers heat to another loop, but many liquid-cooled racks still need air cooling for networking, storage and other parts. Cooling capacity is different from cooling efficiency: using less overhead power does not fix a system that simply cannot remove enough heat. The design must also survive pump failures, leaks and maintenance, which requires monitoring, backup capacity and commissioning under realistic load. The practical test is to trace every watt of heat to the outside environment and confirm that each step can support the rack's full operating conditions."
+    },
+    {
+      "number": 53,
+      "date": "2026-09-28",
+      "title": "Commissioning and Server Integration — When Installed Equipment Becomes Usable",
+      "bodySha256": "efe98c00cb32bf5738a99984f48f8e4bb177742c225dfff1cc1f59f86056b3a6",
+      "body": "Lesson 053 explains that installed AI equipment is not useful capacity until the whole system proves it can run its intended jobs reliably. Commissioning defines what “ready” means and tests the power, cooling, servers, network, storage and software against those requirements. Load banks can show that a facility handles a known electrical demand, but they cannot prove that the computing system works together. Servers also need consistent software settings and accurate records that connect each alert to the right physical equipment. Testing should move from individual components to small groups, then to the full cluster and the failures the design promises to survive. Passing local server checks is not enough if shared network or storage paths slow the complete workload. The handoff should preserve test results, performance baselines, alarm procedures and ownership of unresolved problems. This is why chip delivery and building energization can happen before dependable, revenue-producing compute is actually available."
     }
   ]
 }
