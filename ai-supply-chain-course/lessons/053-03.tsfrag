@@ -1,0 +1,4 @@
+Lesson 054: Energization Versus Chip Supply — What Actually Delays Useful AI Capacity?
+
+We will compare two data-center projects to see whether GPUs, grid power, building systems or integration sets the date when useful compute begins.`,
+} satisfies Lesson;
