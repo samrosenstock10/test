@@ -611,6 +611,34 @@
       "incentives": "Exponential View launched a paid AI Investment Brief using this analysis; the authors benefit from subscriptions.",
       "verification": "Read the accessible full excerpt on the official site. Aggregate percentages and examples are attributed to Exponential View's analysis; underlying earnings-call sample and each company statement were not independently re-audited.",
       "freshness": "weekly-supporting"
+    },
+    {
+      "id": "expert-20260928-runway-worlds2-runtime",
+      "channel": "latent-space",
+      "sourceId": "latent-space",
+      "sourceLane": "engineering",
+      "title": "Real-time world models shift bottlenecks to latency, error accumulation and memory",
+      "sourceTitle": "Runway’s WorldPrompt and the Engineering of Real-Time Worlds",
+      "url": "https://www.latent.space/p/runway",
+      "speaker": "Kamil Sindi, Robin Kahlow and Anastasis Germanidis",
+      "role": "Runway CTO, principal research scientist, and co-founder/co-CEO",
+      "publishedDate": "2026-09-25",
+      "observedAt": "2026-09-28T12:38:08Z",
+      "contentAccess": "full-transcript",
+      "independenceGroup": "runway",
+      "summary": "Runway’s builders describe converting a bidirectional diffusion model into an autoregressive, action-conditioned runtime and distilling it for continuous 720p video at 24 fps with synchronized audio.",
+      "claim": "The builders identify frame-by-frame causal generation and speed as the core runtime problems; error accumulation, context retention versus GPU memory, imperfect long-term memory, counterfactual correctness and complex-scene evaluation remain unresolved.",
+      "interpretation": "Our inference: world-model infrastructure is becoming a latency, memory-management and evaluation problem rather than only a model-quality problem. This is useful stack evidence, but Runway is private and the transcript does not establish a public-company beneficiary.",
+      "beneficiaryTickers": [],
+      "countercase": "The performance and correlation claims come from Runway, GWM Worlds 2 is a research preview, and no independently reproduced latency, quality, memory-footprint, cost or long-duration reliability benchmark was disclosed.",
+      "nextTest": "Compare duration-adjusted error, prompt adherence, action correctness, memory use and GPU-seconds per generated frame across GWM Worlds 2, Genie 3, Odyssey-2 Pro and World Labs RTFM, then look for named production deployments.",
+      "evidenceType": "firsthand-builder-interview",
+      "status": "evidence",
+      "location": "Sections “How a video model becomes a real-time runtime,” “The challenges of real-time generation,” “Causality and correctness,” and the Runway interview transcript.",
+      "incentives": "Runway is promoting its world-model platform and Latent Space benefits from audience growth; company-reported technical performance is economically interested.",
+      "verification": "Read the accessible full transcript and article on the official Latent Space page. The audio was not separately reviewed and Runway’s benchmarks and system claims were not independently reproduced.",
+      "freshness": "newly-surfaced-after-prior-cutoff",
+      "itemId": "latent-space-runway-worldprompt-20260925"
     }
   ],
   "evidence": [
@@ -2186,6 +2214,25 @@
         "INTC"
       ],
       "sourceObservationId": "expert-20260927-intel-panther-lake-18a"
+    },
+    {
+      "id": "latent-space-runway-worlds2-runtime-20260925",
+      "title": "Runway builders describe the systems bottlenecks in real-time world models",
+      "url": "https://www.latent.space/p/runway",
+      "kind": "firsthand-builder-interview",
+      "independenceGroup": "runway",
+      "publishedDate": "2026-09-25",
+      "observedAt": "2026-09-28T12:38:08Z",
+      "contentAccess": "full-transcript",
+      "status": "evidence",
+      "summary": "Runway’s builders describe autoregressive causal diffusion, step distillation and continuous-generation memory management as the enabling runtime stack for GWM Worlds 2.",
+      "claim": "Runway says the preview generates continuous 720p video at 24 fps with 48 kHz audio, while error accumulation, GPU-memory growth, long-term memory and causal evaluation remain open constraints.",
+      "interpretation": "The material supports a testable infrastructure thesis around low-latency diffusion serving, context management and evaluation; it does not establish a public-company winner or production economics.",
+      "verification": "Read the full official-page transcript. Company performance claims and the reported sim-to-real correlation were not independently reproduced.",
+      "countercase": "A research-preview demo can mask quality degradation, cost, hardware intensity and limited duration; competing systems may solve the same bottlenecks with different architectures.",
+      "nextTest": "Seek independent long-duration benchmarks and named customer deployments with measured latency, cost, control fidelity and failure rates.",
+      "beneficiaryTickers": [],
+      "sourceObservationId": "expert-20260928-runway-worlds2-runtime"
     }
   ],
   "rankings": [
@@ -13869,6 +13916,260 @@
         }
       ],
       "nextReviewOn": "2026-10-04",
+      "valuationSnapshot": {
+        "basis": "ttm",
+        "asOf": "2026-09-25",
+        "observedAt": "2026-09-27T01:04:35Z",
+        "companies": {
+          "NVDA": {
+            "value": 28.45,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/nvda/pe-ratio",
+            "priceUsd": 225.07,
+            "epsTtmUsd": 7.91,
+            "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
+            "price": 225.07,
+            "currency": "USD"
+          },
+          "AVGO": {
+            "value": 45.04,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/avgo/pe-ratio",
+            "priceUsd": 352.81,
+            "epsTtmUsd": 8.02,
+            "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
+            "price": 352.81,
+            "currency": "USD"
+          },
+          "TSM": {
+            "value": 32.52,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/tsm/pe-ratio",
+            "priceUsd": 450.61,
+            "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
+            "price": 450.61,
+            "currency": "USD"
+          },
+          "ASML": {
+            "value": 54.29,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/asml/pe-ratio",
+            "priceUsd": 1743.94,
+            "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
+            "price": 1743.94,
+            "currency": "USD"
+          },
+          "ANET": {
+            "value": 65.12,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/anet/pe-ratio",
+            "currency": "USD",
+            "price": 206.55,
+            "priceUsd": 206.55,
+            "notes": "About 63x trailing earnings requires substantial future growth. Current-price attractiveness remains unscored. Cash advances boosted H1 cash flow; extrapolating that cash margin would overstate recurring economics.",
+            "epsTtmUsd": 3.21
+          },
+          "AMD": {
+            "value": 161.84,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/amd/pe-ratio",
+            "currency": "USD",
+            "price": 630.63,
+            "priceUsd": 630.63,
+            "notes": "Provider displays TTM EPS rounded to cents; do not recompute the stated ratio from rounded EPS or replace with forward/adjusted EPS. GAAP earnings include acquisition-amortization and investment effects, so ratio comparability is imperfect.",
+            "epsTtmUsd": 3.89
+          },
+          "MRVL": {
+            "value": 86.25,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/mrvl/pe-ratio",
+            "currency": "USD",
+            "price": 261.935,
+            "priceUsd": 261.935,
+            "notes": "Trailing income contains a major divestiture gain; current earnings also contain acquired-intangible amortization and contingent-consideration effects. Reconcile both directions before normalized valuation. Dividing rounded EPS need not reproduce provider P/E exactly.",
+            "epsTtmUsd": 3.02
+          },
+          "000660.KS": {
+            "value": 8.18,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Stock Analysis (S&P Global)",
+            "sourceUrl": "https://stockanalysis.com/quote/krx/000660/statistics/",
+            "currency": "KRW",
+            "notes": "Company Q2 net margin118% demonstrates reported net profit cannot be extrapolated as operating economics. Did not verify precise non-operating-gain decomposition in primary filing; do not assert a specific gain amount. Latest available provider page remained dated September 23; no September 24 record was substituted."
+          },
+          "MU": {
+            "value": 24.5,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/mu/pe-ratio",
+            "currency": "USD",
+            "price": 1082.28,
+            "priceUsd": 1082.28,
+            "notes": "Price divided by reported trailing EPS (not forward). Source identifies TTM EPS; quarter reported GAAP EPS cross-checked. Multiple is not normalized cycle earnings.",
+            "epsTtmUsd": 44.17
+          },
+          "VRT": {
+            "value": 57.31,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/vrt/pe-ratio",
+            "currency": "USD",
+            "price": 253.28,
+            "priceUsd": 253.28,
+            "notes": "Reported trailing GAAP multiple; not forward adjusted EPS. Current growth is fast, but margin expansion cannot compound indefinitely. High business score is not a current-price recommendation.",
+            "epsTtmUsd": 4.42
+          },
+          "GEV": {
+            "value": 27.41,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/gev/pe-ratio",
+            "currency": "USD",
+            "price": 957.63,
+            "priceUsd": 957.63,
+            "notes": "DO NOT treat26.92x as a normalized operating multiple. TTM includes large nonrecurring gains; Q2 release identifies~4bn Prolec remeasurement and330m Proficy gain inH1. A full trailing normalized tax-adjusted bridge is not completed.",
+            "epsTtmUsd": 34.83
+          },
+          "CAT": {
+            "value": 35.34,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/cat/pe-ratio",
+            "currency": "USD",
+            "price": 821.58,
+            "priceUsd": 821.58,
+            "notes": "Reported trailing earnings require normalization before a current-price investment conclusion.",
+            "epsTtmUsd": 23.23
+          },
+          "CMI": {
+            "value": 26.83,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/cmi/pe-ratio",
+            "currency": "USD",
+            "price": 525.06,
+            "priceUsd": 525.06,
+            "notes": "Reported trailing earnings require normalization before a current-price investment conclusion.",
+            "epsTtmUsd": 19.55
+          },
+          "BE": {
+            "value": 393.38,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/be/pe-ratio",
+            "currency": "USD",
+            "price": 288.7,
+            "priceUsd": 288.7,
+            "notes": "Reported trailing P/E on a newly positive and very small earnings base; not forward earnings. Large apparent EPS growth can be a base effect, and warranted/customer-consideration accounting complicates normalization.",
+            "epsTtmUsd": 0.76
+          },
+          "GOOGL": {
+            "value": 17.28,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/googl/pe-ratio",
+            "currency": "USD",
+            "price": 343.92,
+            "priceUsd": 343.92,
+            "notes": "The17.56x headline is not evidence of cheap recurring earnings. Q2 gains alone added$6.26/share; Q1 and earlier periods also contain investment gains. A consistent normalized TTM bridge was not rebuilt.",
+            "epsTtmUsd": 19.91
+          },
+          "META": {
+            "value": 28.31,
+            "basis": "ttm",
+            "status": "verified",
+            "asOf": "2026-09-25",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "provider": "Wall Street Numbers",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/meta/pe-ratio",
+            "currency": "USD",
+            "price": 751.66,
+            "priceUsd": 751.66,
+            "notes": "Trailing earnings include discrete tax effects as well as legal/severance costs. EPS is not distributable cash: current capex and SBC materially affect owner economics. No complete normalized per-share earnings or FCF forecast was built. The provider had already moved to September 25 intraday data when checked; the September 23 verified record was retained rather than reverse-engineering a September 24 close.",
+            "epsTtmUsd": 26.54
+          },
+          "SPCX": {
+            "value": null,
+            "basis": "ttm",
+            "status": "unavailable",
+            "reason": "WSN has no P/E data and the company reports losses. No EPS-growth return model. A current fully diluted share count, acquisition-adjusted sum-of-parts and consolidated funding model are needed; do not use pre-IPO weighted-average shares as today's denominator.",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/spcx/pe-ratio"
+          },
+          "CRWV": {
+            "value": null,
+            "basis": "ttm",
+            "status": "unavailable",
+            "reason": "WSN supplies no P/E. Finance service displays a negative multiple; intentionally not used as a valuation anchor. Needs contract/cohort cashflow, full debt/leases and fully diluted equity bridge, not EPS CAGR or EBITDA alone.",
+            "observedAt": "2026-09-27T01:04:35Z",
+            "sourceUrl": "https://wallstreetnumbers.com/stocks/crwv/pe-ratio"
+          }
+        },
+        "qqqMedianPE": {
+          "value": 30.7,
+          "basis": "ttm",
+          "status": "proxy",
+          "asOf": "2026-09-24",
+          "observedAt": "2026-09-27T01:04:35Z",
+          "provider": "ChartRow",
+          "sourceUrl": "https://chartrow.com/nasdaq-100/pe-ratio",
+          "method": "nasdaq100-median-proxy",
+          "universe": "Provider's tracked Nasdaq-100 members",
+          "notes": "Published median constituent trailing P/E, used as an explicitly labeled QQQ proxy. The provider describes 99 tracked members and 92.2% of index weight with valid trailing P/E; exact current QQQ constituent coverage and calculation were not independently reconciled. This is not the index aggregate P/E, fund harmonic P/E, or historical median."
+        }
+      },
       "thesisSnapshots": [
         {
           "rank": 1,
@@ -17708,296 +18009,30 @@
             "assumptionInterpretation": "Scores assess the business thesis. Valuation arithmetic cannot raise conviction; source repetition and new share prices do not count as new thesis evidence."
           }
         }
-      ],
-      "valuationSnapshot": {
-        "basis": "ttm",
-        "asOf": "2026-09-25",
-        "observedAt": "2026-09-27T01:04:35Z",
-        "companies": {
-          "NVDA": {
-            "value": 28.45,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/nvda/pe-ratio",
-            "priceUsd": 225.07,
-            "epsTtmUsd": 7.91,
-            "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
-            "price": 225.07,
-            "currency": "USD"
-          },
-          "AVGO": {
-            "value": 45.04,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/avgo/pe-ratio",
-            "priceUsd": 352.81,
-            "epsTtmUsd": 8.02,
-            "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
-            "price": 352.81,
-            "currency": "USD"
-          },
-          "TSM": {
-            "value": 32.52,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/tsm/pe-ratio",
-            "priceUsd": 450.61,
-            "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
-            "price": 450.61,
-            "currency": "USD"
-          },
-          "ASML": {
-            "value": 54.29,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/asml/pe-ratio",
-            "priceUsd": 1743.94,
-            "notes": "Provider-reported trailing P/E for the US-listed security. Rounded displayed EPS can produce small calculation differences. This is reported earnings, not the normalized earnings assumed in illustrative scenarios.",
-            "price": 1743.94,
-            "currency": "USD"
-          },
-          "ANET": {
-            "value": 65.12,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/anet/pe-ratio",
-            "currency": "USD",
-            "price": 206.55,
-            "priceUsd": 206.55,
-            "notes": "About 63x trailing earnings requires substantial future growth. Current-price attractiveness remains unscored. Cash advances boosted H1 cash flow; extrapolating that cash margin would overstate recurring economics.",
-            "epsTtmUsd": 3.21
-          },
-          "AMD": {
-            "value": 161.84,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/amd/pe-ratio",
-            "currency": "USD",
-            "price": 630.63,
-            "priceUsd": 630.63,
-            "notes": "Provider displays TTM EPS rounded to cents; do not recompute the stated ratio from rounded EPS or replace with forward/adjusted EPS. GAAP earnings include acquisition-amortization and investment effects, so ratio comparability is imperfect.",
-            "epsTtmUsd": 3.89
-          },
-          "MRVL": {
-            "value": 86.25,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/mrvl/pe-ratio",
-            "currency": "USD",
-            "price": 261.935,
-            "priceUsd": 261.935,
-            "notes": "Trailing income contains a major divestiture gain; current earnings also contain acquired-intangible amortization and contingent-consideration effects. Reconcile both directions before normalized valuation. Dividing rounded EPS need not reproduce provider P/E exactly.",
-            "epsTtmUsd": 3.02
-          },
-          "000660.KS": {
-            "value": 8.18,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Stock Analysis (S&P Global)",
-            "sourceUrl": "https://stockanalysis.com/quote/krx/000660/statistics/",
-            "currency": "KRW",
-            "notes": "Company Q2 net margin118% demonstrates reported net profit cannot be extrapolated as operating economics. Did not verify precise non-operating-gain decomposition in primary filing; do not assert a specific gain amount. Latest available provider page remained dated September 23; no September 24 record was substituted."
-          },
-          "MU": {
-            "value": 24.5,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/mu/pe-ratio",
-            "currency": "USD",
-            "price": 1082.28,
-            "priceUsd": 1082.28,
-            "notes": "Price divided by reported trailing EPS (not forward). Source identifies TTM EPS; quarter reported GAAP EPS cross-checked. Multiple is not normalized cycle earnings.",
-            "epsTtmUsd": 44.17
-          },
-          "VRT": {
-            "value": 57.31,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/vrt/pe-ratio",
-            "currency": "USD",
-            "price": 253.28,
-            "priceUsd": 253.28,
-            "notes": "Reported trailing GAAP multiple; not forward adjusted EPS. Current growth is fast, but margin expansion cannot compound indefinitely. High business score is not a current-price recommendation.",
-            "epsTtmUsd": 4.42
-          },
-          "GEV": {
-            "value": 27.41,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/gev/pe-ratio",
-            "currency": "USD",
-            "price": 957.63,
-            "priceUsd": 957.63,
-            "notes": "DO NOT treat26.92x as a normalized operating multiple. TTM includes large nonrecurring gains; Q2 release identifies~4bn Prolec remeasurement and330m Proficy gain inH1. A full trailing normalized tax-adjusted bridge is not completed.",
-            "epsTtmUsd": 34.83
-          },
-          "CAT": {
-            "value": 35.34,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/cat/pe-ratio",
-            "currency": "USD",
-            "price": 821.58,
-            "priceUsd": 821.58,
-            "notes": "Reported trailing earnings require normalization before a current-price investment conclusion.",
-            "epsTtmUsd": 23.23
-          },
-          "CMI": {
-            "value": 26.83,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/cmi/pe-ratio",
-            "currency": "USD",
-            "price": 525.06,
-            "priceUsd": 525.06,
-            "notes": "Reported trailing earnings require normalization before a current-price investment conclusion.",
-            "epsTtmUsd": 19.55
-          },
-          "BE": {
-            "value": 393.38,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/be/pe-ratio",
-            "currency": "USD",
-            "price": 288.7,
-            "priceUsd": 288.7,
-            "notes": "Reported trailing P/E on a newly positive and very small earnings base; not forward earnings. Large apparent EPS growth can be a base effect, and warranted/customer-consideration accounting complicates normalization.",
-            "epsTtmUsd": 0.76
-          },
-          "GOOGL": {
-            "value": 17.28,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/googl/pe-ratio",
-            "currency": "USD",
-            "price": 343.92,
-            "priceUsd": 343.92,
-            "notes": "The17.56x headline is not evidence of cheap recurring earnings. Q2 gains alone added$6.26/share; Q1 and earlier periods also contain investment gains. A consistent normalized TTM bridge was not rebuilt.",
-            "epsTtmUsd": 19.91
-          },
-          "META": {
-            "value": 28.31,
-            "basis": "ttm",
-            "status": "verified",
-            "asOf": "2026-09-25",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "provider": "Wall Street Numbers",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/meta/pe-ratio",
-            "currency": "USD",
-            "price": 751.66,
-            "priceUsd": 751.66,
-            "notes": "Trailing earnings include discrete tax effects as well as legal/severance costs. EPS is not distributable cash: current capex and SBC materially affect owner economics. No complete normalized per-share earnings or FCF forecast was built. The provider had already moved to September 25 intraday data when checked; the September 23 verified record was retained rather than reverse-engineering a September 24 close.",
-            "epsTtmUsd": 26.54
-          },
-          "SPCX": {
-            "value": null,
-            "basis": "ttm",
-            "status": "unavailable",
-            "reason": "WSN has no P/E data and the company reports losses. No EPS-growth return model. A current fully diluted share count, acquisition-adjusted sum-of-parts and consolidated funding model are needed; do not use pre-IPO weighted-average shares as today's denominator.",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/spcx/pe-ratio"
-          },
-          "CRWV": {
-            "value": null,
-            "basis": "ttm",
-            "status": "unavailable",
-            "reason": "WSN supplies no P/E. Finance service displays a negative multiple; intentionally not used as a valuation anchor. Needs contract/cohort cashflow, full debt/leases and fully diluted equity bridge, not EPS CAGR or EBITDA alone.",
-            "observedAt": "2026-09-27T01:04:35Z",
-            "sourceUrl": "https://wallstreetnumbers.com/stocks/crwv/pe-ratio"
-          }
-        },
-        "qqqMedianPE": {
-          "value": 30.7,
-          "basis": "ttm",
-          "status": "proxy",
-          "asOf": "2026-09-24",
-          "observedAt": "2026-09-27T01:04:35Z",
-          "provider": "ChartRow",
-          "sourceUrl": "https://chartrow.com/nasdaq-100/pe-ratio",
-          "method": "nasdaq100-median-proxy",
-          "universe": "Provider's tracked Nasdaq-100 members",
-          "notes": "Published median constituent trailing P/E, used as an explicitly labeled QQQ proxy. The provider describes 99 tracked members and 92.2% of index weight with valid trailing P/E; exact current QQQ constituent coverage and calculation were not independently reconciled. This is not the index aggregate P/E, fund harmonic P/E, or historical median."
-        }
-      }
+      ]
     }
   ],
   "coverage": {
-    "asOf": "2026-09-27T13:36:36Z",
-    "kind": "daily-expert-scan",
+    "asOf": "2026-09-28T12:38:08Z",
+    "kind": "builder-engineering-scan",
     "completedChannels": [
       "information-bottleneck",
       "latent-space",
       "ocp",
       "dwarkesh",
-      "gpu-mode",
-      "exponential-view"
+      "gpu-mode"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "The 09:30 expert pass reused the same-day engineering reconciliation for originating-item deduplication and followed consequential gaps rather than repeating the 08:30 source scan.",
-      "Exponential View's September 21 quantified-adoption excerpt was retained as supporting economic analysis. Its September 27 issue was only partly accessible and did not expose a second qualifying infrastructure item; inaccessible paid substance was not inferred.",
-      "The full 18-company Sunday review used accumulated operator/customer, primary financial/deployment and disconfirming evidence. Scores, ranks and return assumptions were unchanged.",
-      "All 18 trailing P/E records and the labeled Nasdaq-100 proxy already reflect the latest completed market session, September 25, where available. Sunday had no newer completed session; SPCX and CRWV still lack positive trailing P/E anchors.",
-      "Project Tracker D3 preflight found no new or changed Bottlenecks/Claims source version since the prior verified handoff; the pending backlog remains 63 and no source row was imported, linked or skipped.",
-      "Future Leaders work is separately governed and does not complete or alter this source lane."
-    ],
-    "exponentialView": {
-      "logicalWeek": "2026-09-27",
-      "checkedAt": "2026-09-27T13:36:36Z",
-      "status": "complete",
-      "reviewedItemUrls": [
-        "https://www.exponentialview.co/p/monday-data-ai-investment-brief",
-        "https://www.exponentialview.co/p/ev-603"
-      ],
-      "gaps": [
-        "The September 27 issue's energy section was behind the paid boundary; no claim was inferred from its subtitle."
-      ]
-    }
+      "Latent Space’s official podcast archive surfaced the September 25 Runway transcript after the prior actual cutoff; its original publication date was preserved.",
+      "The Information Bottleneck official archive exposed no new qualifying infrastructure item beyond the previously reconciled September 21 material.",
+      "OCP’s newest verified technical item remained the September 22 proteanTecs episode already represented in the tracker.",
+      "Dwarkesh’s official discovery paths exposed no newer qualifying infrastructure interview after the previously reconciled September 17 Noam Brown episode; no claim was made about unreviewed audio.",
+      "GPU MODE’s lectures repository remained at commit 77a8df418834e5789c12da23e7d2719e0efabef1 from September 9.",
+      "Exact-source and substantive-claim searches in the Muse repository found no WorldPrompt, GWM Worlds 2 or Latent Space Runway overlap.",
+      "No score, rank, thesis or legacy a16z ledger change resulted from this independent engineering cycle."
+    ]
   },
-  "updatedAt": "2026-09-27T13:39:46Z"
+  "updatedAt": "2026-09-28T12:45:30Z"
 }
