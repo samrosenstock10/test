@@ -538,7 +538,19 @@
         "lessons/052-02.tsfrag",
         "lessons/052-03.tsfrag"
       ]
+    },
+    {
+      "number": 53,
+      "module": "Module 5: Power, Cooling and Data Center Deployment",
+      "title": "Commissioning and Server Integration — When Installed Equipment Becomes Usable",
+      "date": "2026-09-28",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/053-01.tsfrag",
+        "lessons/053-02.tsfrag",
+        "lessons/053-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-27T11:08:16.136Z"
+  "updatedAt": "2026-09-28T11:16:48.571Z"
 }
