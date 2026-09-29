@@ -667,6 +667,34 @@
       "verification": "Read the accessible September 28 article sections and public benchmark explanation; underlying proprietary cost-model inputs and run data were not independently reproduced.",
       "freshness": "next-day-public-article",
       "itemId": "semianalysis-glm53-sparse-attention-20260928"
+    },
+    {
+      "id": "expert-20260929-anthropic-organizational-harness-security",
+      "channel": "latent-space",
+      "sourceId": "latent-space",
+      "sourceLane": "engineering",
+      "title": "Enterprise agent harnesses trade higher token use for coordination—and widen the security perimeter",
+      "sourceTitle": "Claude Code’s Next Era — Thariq Shihipar, Anthropic",
+      "url": "https://www.latent.space/p/thariq",
+      "publishedDate": "2026-09-29",
+      "observedAt": "2026-09-29T12:32:57Z",
+      "contentAccess": "full-transcript",
+      "status": "evidence",
+      "summary": "Shihipar says projects, subagents and supervision consume more tokens but enable organizational agent harnesses; proactive agents require enterprise-data access, while external integrations expand prompt-injection and data-exfiltration risk.",
+      "claim": "Anthropic uses Claude Tag for background engineering workflows and described inference-time activation probes, classifiers and fallbacks that add speed and cost overhead but can be refined from live feedback.",
+      "interpretation": "Our inference: organizational agents add a coordination and security-control layer that can increase inference demand while creating new requirements for identity, permissions, sandboxing and monitoring. This does not establish a public-company beneficiary.",
+      "beneficiaryTickers": [],
+      "countercase": "The source is an Anthropic employee discussing Anthropic products; usage characterizations were not independently measured, and the transcript provides no controlled productivity, security-efficacy or deployment-economics study.",
+      "nextTest": "Seek named enterprise deployments reporting incremental token cost, task throughput, administrative overhead and prevented prompt-injection or data-exfiltration incidents.",
+      "verification": "Read the full accessible transcript on the official Latent Space page. Audio was not separately reviewed, and referenced external security incidents were not independently revalidated for this record.",
+      "speaker": "Thariq Shihipar",
+      "role": "Anthropic engineer and Claude Code team member, as described in the transcript",
+      "evidenceType": "firsthand-builder-interview",
+      "location": "Transcript sections “Projects, Local Hands, and Cloud-to-Local Handoffs,” “Proactive Agents and Enterprise Data Access,” and “External Evaluators and What Developers Should Advocate For” (about 00:48:36–00:55:36 and 01:17:17 onward).",
+      "incentives": "Anthropic sells Claude and Claude Code; Latent Space benefits from audience and event growth.",
+      "freshness": "same-day-public-transcript",
+      "itemId": "latent-space-thariq-claude-code-20260929",
+      "independenceGroup": "anthropic"
     }
   ],
   "evidence": [
@@ -2280,6 +2308,25 @@
       "nextTest": "Seek independent production benchmarks that disclose HBM, host-DRAM and NVMe use, time to first token, throughput, total cost and memory content per deployed system.",
       "beneficiaryTickers": [],
       "sourceObservationId": "expert-20260929-glm53-memory-hierarchy"
+    },
+    {
+      "id": "latent-space-anthropic-agent-harness-security-20260929",
+      "title": "Anthropic builder describes organizational agent-harness costs and security surface",
+      "url": "https://www.latent.space/p/thariq",
+      "kind": "firsthand-builder-interview",
+      "independenceGroup": "anthropic",
+      "publishedDate": "2026-09-29",
+      "observedAt": "2026-09-29T12:32:57Z",
+      "contentAccess": "full-transcript",
+      "status": "evidence",
+      "summary": "Shihipar says projects, subagents and supervision consume more tokens but enable organizational agent harnesses; proactive agents require enterprise-data access, while external integrations expand prompt-injection and data-exfiltration risk.",
+      "claim": "Anthropic uses Claude Tag for background engineering workflows and described inference-time activation probes, classifiers and fallbacks that add speed and cost overhead but can be refined from live feedback.",
+      "interpretation": "Our inference: organizational agents add a coordination and security-control layer that can increase inference demand while creating new requirements for identity, permissions, sandboxing and monitoring. This does not establish a public-company beneficiary.",
+      "verification": "Read the full accessible transcript on the official Latent Space page. Audio was not separately reviewed, and referenced external security incidents were not independently revalidated for this record.",
+      "countercase": "The source is an Anthropic employee discussing Anthropic products; usage characterizations were not independently measured, and the transcript provides no controlled productivity, security-efficacy or deployment-economics study.",
+      "nextTest": "Seek named enterprise deployments reporting incremental token cost, task throughput, administrative overhead and prevented prompt-injection or data-exfiltration incidents.",
+      "beneficiaryTickers": [],
+      "sourceObservationId": "expert-20260929-anthropic-organizational-harness-security"
     }
   ],
   "rankings": [
@@ -18060,19 +18107,27 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-09-29T11:34:13Z",
-    "kind": "semianalysis-scan",
+    "asOf": "2026-09-29T12:32:57Z",
+    "kind": "builder-engineering-scan",
     "completedChannels": [
-      "semianalysis"
+      "information-bottleneck",
+      "latent-space",
+      "ocp",
+      "dwarkesh",
+      "gpu-mode"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "This candidate covers the scheduled SemiAnalysis source lane only; other Infrastructure source lanes retain their separate completion keys.",
-      "No matching direct or forwarded SemiAnalysis/Dylan Patel source email was found in the actual rolling seven-day Gmail window.",
-      "SemiAnalysis's proprietary benchmark runs and cost-model inputs were not independently reproduced.",
-      "No score, rank, Company Universe admission or legacy thesis changed; Innovation Atlas normalization remains deferred to its 09:30 review."
+      "Latent Space published the September 29 Thariq Shihipar transcript after the prior completed cutoff; the full accessible transcript was reviewed and its original publication date was preserved.",
+      "The Information Bottleneck official archive exposed no newer qualifying infrastructure item after its September 21 healthcare episode.",
+      "OCP's newest verified technical material remained the September 22 summit/proteanTecs item already represented in the tracker; no newer measured engineering result surfaced in the bounded official-site check.",
+      "Dwarkesh's official feed remained current through the September 17 Noam Brown episode; no newer infrastructure interview was found.",
+      "GPU MODE's lectures repository remained at commit 77a8df418834e5789c12da23e7d2719e0efabef1 from September 9.",
+      "Exact-source and substantive-claim searches in the Muse repository found no Thariq Shihipar, Claude Tag or Latent Space source overlap.",
+      "The bounded undercovered-systems check produced one Atlas candidate tied to the same source revision; it does not complete Atlas normalization or publication.",
+      "No score, rank, thesis, Company Universe or legacy a16z ledger change resulted from this independent engineering cycle."
     ]
   },
-  "updatedAt": "2026-09-29T11:34:13Z"
+  "updatedAt": "2026-09-29T12:36:12Z"
 }
