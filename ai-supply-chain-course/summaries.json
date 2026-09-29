@@ -35,6 +35,13 @@
       "title": "Commissioning and Server Integration — When Installed Equipment Becomes Usable",
       "bodySha256": "efe98c00cb32bf5738a99984f48f8e4bb177742c225dfff1cc1f59f86056b3a6",
       "body": "Lesson 053 explains that installed AI equipment is not useful capacity until the whole system proves it can run its intended jobs reliably. Commissioning defines what “ready” means and tests the power, cooling, servers, network, storage and software against those requirements. Load banks can show that a facility handles a known electrical demand, but they cannot prove that the computing system works together. Servers also need consistent software settings and accurate records that connect each alert to the right physical equipment. Testing should move from individual components to small groups, then to the full cluster and the failures the design promises to survive. Passing local server checks is not enough if shared network or storage paths slow the complete workload. The handoff should preserve test results, performance baselines, alarm procedures and ownership of unresolved problems. This is why chip delivery and building energization can happen before dependable, revenue-producing compute is actually available."
+    },
+    {
+      "number": 54,
+      "date": "2026-09-29",
+      "title": "Energization Versus Chip Supply — What Actually Delays Useful AI Capacity?",
+      "bodySha256": "031e53b582f7ead00eed4581037c920b22be3ac4f11cf1966061d2b805406c9e",
+      "body": "Lesson 054 explains that useful AI capacity arrives only when every essential part of a project is ready at the same time. Energization means the electrical system can safely receive power, but powered empty racks cannot perform AI work. Chips alone are also insufficient if the site lacks enough tested power, cooling, networking, storage, software or commissioning. The critical path is the chain of dependent tasks that sets the earliest date the whole system can operate, so a delay on its latest unfinished step delays usable capacity. One project may be power-gated because its grid connection or transformers arrive last, while another may be chip-gated because complete accelerator systems, memory or networking arrive last. The binding constraint can change by location and time, and partial deliveries may support a smaller ramp without proving the full announced capacity. Operators should track dated acceptance criteria and plan staged commissioning around the real bottleneck, while investors should distinguish temporary scarcity from durable profit. The practical test is to name the intended workload, trace every required physical and software path, and identify the last dependency that has not yet been proven."
     }
   ]
 }
