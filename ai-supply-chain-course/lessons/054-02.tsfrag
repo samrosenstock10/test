@@ -1,0 +1,34 @@
+Power often becomes the constraint because electricity infrastructure moves more slowly than computing equipment. The International Energy Agency reported in 2025 that new U.S. grid infrastructure often takes five to fifteen years from planning to completion, while a data center may take three to six years. Local connection queues, transformers and transmission upgrades can therefore set the schedule even when financing and construction are ready.
+
+Chip supply can bind instead. An accelerator is not just a finished GPU die: it depends on wafer fabrication, advanced packaging, high-bandwidth memory, boards, server assembly and networking. NVIDIA's fiscal 2026 annual report describes dependence on outside foundries, memory makers, packaging and test providers, and notes that customers may delay new architectures when their data-center infrastructure is not ready. The constraint can move in either direction.
+
+A September 25, 2026 SemiAnalysis model illustrates that contrast. It characterizes much of the U.S. buildout as power-gated but China's as more chip-gated, arguing that some Chinese regions can permit and build facilities quickly while access to advanced accelerators is restricted. Treat that as the publisher's model, not a universal measurement: its national dataset is proprietary, regional projects differ and a powered legacy facility may not support modern AI rack density.
+
+Prediction check
+
+Project East has 100 megawatts of live power and enough floor space for 2,000 racks. Project North has all 2,000 planned racks installed but only 20 megawatts of tested power. Which project has more useful AI capacity?
+
+Answer: the description is insufficient. East may have no accelerators, while North may operate a smaller commissioned cluster. Compare actual working systems running the representative workload, not megawatts, rack positions or delivered components in isolation. The tempting mistake is to treat the largest visible resource as completed capacity.
+
+Manage the bottleneck, not the headline
+
+An operator should protect the critical path with dated acceptance criteria, alternate suppliers where practical, staged commissioning and an explicit plan for partial operation. A smaller first phase can create useful output while later power blocks or server batches arrive, but only if networking, software and operations can support that phase without expensive rework.
+
+For an investor, the binding constraint determines who has urgent demand, but not automatically who earns durable profits. Scarce transformers, cooling equipment, accelerators or integration labor can command attention. Value capture still depends on competition, contract terms, qualification barriers, manufacturing response and whether today's shortage persists after new supply arrives.
+
+Module 5 began at the chip and followed electricity, cooling and commissioning outward. Its reusable test is now simple: name the workload, trace every required path and identify the last unproven dependency. Useful AI capacity begins when the whole chain works together.
+
+Sources
+
+International Energy Agency, United States — World Energy Investment 2025 — grid and data-center development lead times: https://www.iea.org/reports/world-energy-investment-2025/united-states
+
+International Energy Agency, Energy and AI — data-center equipment, accelerated-server supply and energy-system timing: https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai
+
+NVIDIA, Fiscal 2026 Form 10-K — customer infrastructure readiness and manufacturing, packaging, memory and supply risks: https://investor.nvidia.com/files/doc_financials/2026/q4/10K-NVDA.pdf
+
+SemiAnalysis, The Chinese AI Infrastructure Boom, September 25, 2026 — industry model comparing power-gated and chip-gated deployment: https://newsletter.semianalysis.com/p/the-chinese-ai-infrastructure-boom
+
+Next lesson
+
+Lesson 055: Training Versus Inference — Two Different Ways AI Uses Compute
+
