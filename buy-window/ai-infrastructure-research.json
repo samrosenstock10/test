@@ -639,6 +639,34 @@
       "verification": "Read the accessible full transcript and article on the official Latent Space page. The audio was not separately reviewed and Runway’s benchmarks and system claims were not independently reproduced.",
       "freshness": "newly-surfaced-after-prior-cutoff",
       "itemId": "latent-space-runway-worldprompt-20260925"
+    },
+    {
+      "id": "expert-20260929-glm53-memory-hierarchy",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "Sparse attention shifts KV-cache pressure into a hierarchy, not away",
+      "sourceTitle": "How GLM5.3 Sparse Attention Affects HBM Memory Usage",
+      "url": "https://newsletter.semianalysis.com/p/sparse-savings-persistent-demand-inside-glm53",
+      "speaker": "Kimbo Chen, Alec Ibarra, Wenyao Gao, Pratt Bhatt, Bryan Shan and Dylan Patel",
+      "role": "SemiAnalysis authors and benchmark researchers",
+      "publishedDate": "2026-09-28",
+      "observedAt": "2026-09-29T11:34:13Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis",
+      "summary": "Sparse attention reduces the KV-cache bytes read by each attention operation, but SemiAnalysis argues full-context selection still leaves a capacity bottleneck; HiSparse shifts some cache to host DRAM and overlaps refetch.",
+      "claim": "HiSparse uses an HBM/host-DRAM hierarchy; SemiAnalysis's GLM-5.3 cost comparisons change with throughput and time-to-first-token constraints; and cited IndexShare research reports 75% lower indexer cache and FLOPs with 1.5–1.8x throughput.",
+      "interpretation": "Our inference: memory hierarchy and serving software remain important; sparse attention alone does not imply collapsed memory-capacity demand or a clear AMD-versus-NVIDIA winner.",
+      "beneficiaryTickers": [],
+      "countercase": "The results are model-, workload- and software-specific, much of the cost analysis is SemiAnalysis modeled data, and future kernels or hardware may change the balance. Bandwidth demand can still fall even if capacity persists.",
+      "nextTest": "Seek independent production benchmarks that disclose HBM, host-DRAM and NVMe use, time to first token, throughput, total cost and memory content per deployed system.",
+      "evidenceType": "independent-systems-analysis",
+      "status": "evidence",
+      "location": "Public sections “How Sparse Attention Affects DRAM/NAND Memory,” “GLM5.3 Agentic Inference Serving,” “DeepSeek Sparse Attention,” and “IndexShare.”",
+      "incentives": "SemiAnalysis sells access to inference benchmarks and research.",
+      "verification": "Read the accessible September 28 article sections and public benchmark explanation; underlying proprietary cost-model inputs and run data were not independently reproduced.",
+      "freshness": "next-day-public-article",
+      "itemId": "semianalysis-glm53-sparse-attention-20260928"
     }
   ],
   "evidence": [
@@ -2233,6 +2261,25 @@
       "nextTest": "Seek independent long-duration benchmarks and named customer deployments with measured latency, cost, control fidelity and failure rates.",
       "beneficiaryTickers": [],
       "sourceObservationId": "expert-20260928-runway-worlds2-runtime"
+    },
+    {
+      "id": "semianalysis-glm53-memory-hierarchy-20260928",
+      "title": "SemiAnalysis traces sparse-attention serving through HBM and host-memory tiers",
+      "url": "https://newsletter.semianalysis.com/p/sparse-savings-persistent-demand-inside-glm53",
+      "kind": "independent-systems-analysis",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-09-28",
+      "observedAt": "2026-09-29T11:34:13Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "Sparse attention reduces the KV-cache bytes read by each attention operation, but SemiAnalysis argues full-context selection still leaves a capacity bottleneck; HiSparse shifts some cache to host DRAM and overlaps refetch.",
+      "claim": "HiSparse uses an HBM/host-DRAM hierarchy; SemiAnalysis's GLM-5.3 cost comparisons change with throughput and time-to-first-token constraints; and cited IndexShare research reports 75% lower indexer cache and FLOPs with 1.5–1.8x throughput.",
+      "interpretation": "Our inference: memory hierarchy and serving software remain important; sparse attention alone does not imply collapsed memory-capacity demand or a clear AMD-versus-NVIDIA winner.",
+      "verification": "Read the accessible September 28 article sections and public benchmark explanation; underlying proprietary cost-model inputs and run data were not independently reproduced.",
+      "countercase": "The results are model-, workload- and software-specific, much of the cost analysis is SemiAnalysis modeled data, and future kernels or hardware may change the balance. Bandwidth demand can still fall even if capacity persists.",
+      "nextTest": "Seek independent production benchmarks that disclose HBM, host-DRAM and NVMe use, time to first token, throughput, total cost and memory content per deployed system.",
+      "beneficiaryTickers": [],
+      "sourceObservationId": "expert-20260929-glm53-memory-hierarchy"
     }
   ],
   "rankings": [
@@ -18013,26 +18060,19 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-09-28T12:38:08Z",
-    "kind": "builder-engineering-scan",
+    "asOf": "2026-09-29T11:34:13Z",
+    "kind": "semianalysis-scan",
     "completedChannels": [
-      "information-bottleneck",
-      "latent-space",
-      "ocp",
-      "dwarkesh",
-      "gpu-mode"
+      "semianalysis"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "Latent Space’s official podcast archive surfaced the September 25 Runway transcript after the prior actual cutoff; its original publication date was preserved.",
-      "The Information Bottleneck official archive exposed no new qualifying infrastructure item beyond the previously reconciled September 21 material.",
-      "OCP’s newest verified technical item remained the September 22 proteanTecs episode already represented in the tracker.",
-      "Dwarkesh’s official discovery paths exposed no newer qualifying infrastructure interview after the previously reconciled September 17 Noam Brown episode; no claim was made about unreviewed audio.",
-      "GPU MODE’s lectures repository remained at commit 77a8df418834e5789c12da23e7d2719e0efabef1 from September 9.",
-      "Exact-source and substantive-claim searches in the Muse repository found no WorldPrompt, GWM Worlds 2 or Latent Space Runway overlap.",
-      "No score, rank, thesis or legacy a16z ledger change resulted from this independent engineering cycle."
+      "This candidate covers the scheduled SemiAnalysis source lane only; other Infrastructure source lanes retain their separate completion keys.",
+      "No matching direct or forwarded SemiAnalysis/Dylan Patel source email was found in the actual rolling seven-day Gmail window.",
+      "SemiAnalysis's proprietary benchmark runs and cost-model inputs were not independently reproduced.",
+      "No score, rank, Company Universe admission or legacy thesis changed; Innovation Atlas normalization remains deferred to its 09:30 review."
     ]
   },
-  "updatedAt": "2026-09-28T12:45:30Z"
+  "updatedAt": "2026-09-29T11:34:13Z"
 }
