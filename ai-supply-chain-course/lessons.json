@@ -550,7 +550,19 @@
         "lessons/053-02.tsfrag",
         "lessons/053-03.tsfrag"
       ]
+    },
+    {
+      "number": 54,
+      "module": "Module 5: Power, Cooling and Data Center Deployment",
+      "title": "Energization Versus Chip Supply — What Actually Delays Useful AI Capacity?",
+      "date": "2026-09-29",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/054-01.tsfrag",
+        "lessons/054-02.tsfrag",
+        "lessons/054-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-28T11:16:48.571Z"
+  "updatedAt": "2026-09-29T11:02:09.682Z"
 }

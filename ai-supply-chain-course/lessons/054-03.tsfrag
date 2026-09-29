@@ -1,0 +1,2 @@
+We will compare building a model with serving it to users, then trace why the workloads place different demands on chips, memory and clusters.`,
+} satisfies Lesson;

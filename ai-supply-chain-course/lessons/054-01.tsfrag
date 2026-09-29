@@ -1,0 +1,51 @@
+import type { Lesson } from "./lessons";
+
+export const lesson054 = {
+  number: 54,
+  module: "Module 5: Power, Cooling and Data Center Deployment",
+  title: "Energization Versus Chip Supply — What Actually Delays Useful AI Capacity?",
+  date: "2026-09-29",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 049: Dense AI racks need enough electricity and cooling at every step, or expensive chips cannot run as intended.
+
+Lesson 050: Reliable building power needs independent, adequately sized paths from the site connection to each rack.
+
+Lesson 051: Contracted electricity becomes useful only after a completed and tested grid connection can deliver it to the servers.
+
+Lesson 052: Cooling must carry heat from each chip all the way outside, or powered equipment cannot sustain full performance.
+
+Lesson 053: Installed equipment becomes usable capacity only after the complete cluster passes realistic workload and failure tests.
+
+Two projects, two different bottlenecks
+
+Imagine two 100-megawatt AI data-center projects. These are illustrative comparisons, not reports of real facilities.
+
+Project North has its building, cooling and servers ready by April. Its utility connection will not deliver full power until December. Project East is energized in March, but its planned accelerators will not arrive until December. Both projects announce 100 megawatts. Neither can produce the intended AI work before its missing dependency arrives and the integrated system passes commissioning.
+
+This is the central lesson of deployment: the useful-capacity date is set by the last essential part of the system to become ready, not by the first impressive milestone.
+
+Energized does not mean productive
+
+Energization is the moment an electrical system can safely receive and distribute power at the approved boundary. It is important because servers cannot operate without it, but it proves only one section of the path.
+
+Project North can receive accelerator shipments before December, yet those machines may sit idle or run only in a small temporary environment. Project East can energize empty racks, operate network equipment and test cooling with simulated loads, yet it still lacks the processors that perform the intended work.
+
+The same distinction applies to other milestones. A completed building may lack a tested cooling loop. Delivered GPUs may lack high-bandwidth memory, network switches or compatible server systems. A working cluster may still lack the software and data needed for its workload. Each milestone removes one risk; none alone proves useful output.
+
+Find the critical path
+
+A critical path is the chain of dependent steps that determines the earliest possible completion date. If a task on that path slips by a month and nothing else changes, useful capacity also slips by a month. A late task outside the critical path may consume its schedule cushion without changing the final date.
+
+For each project, put the major readiness dates on one page:
+
+1. grid connection and internal power distribution;
+2. heat-removal capacity at the required rack density;
+3. complete server, memory, network and storage delivery;
+4. software configuration and workload availability; and
+5. integrated testing and operational handoff.
+
+Then ask which unfinished item has the latest credible completion date. Use a range, not a single optimistic promise. Project North is power-gated because the grid date is latest. Project East is chip-gated because the complete accelerator systems arrive last. If December power moves to February, North's critical path moves with it. If East receives half its servers in October, it can begin a partial ramp, but it still does not have the planned full capacity.
+
+Why the answer changes by place and time
+
