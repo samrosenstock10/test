@@ -1,0 +1,43 @@
+import type { Lesson } from "./lessons";
+
+export const lesson055 = {
+  number: 55,
+  module: "Module 6: Training, Inference and Useful AI Economics",
+  title: "Training Versus Inference — Two Different Ways AI Uses Compute",
+  date: "2026-09-30",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 050: Reliable building power needs independent, adequately sized paths from the site connection to each rack.
+
+Lesson 051: Contracted electricity becomes useful only after a completed and tested grid connection can deliver it to the servers.
+
+Lesson 052: Cooling must carry heat from each chip all the way outside, or powered equipment cannot sustain full performance.
+
+Lesson 053: Installed equipment becomes usable capacity only after the complete cluster passes realistic workload and failure tests.
+
+Lesson 054: Useful AI capacity arrives only when power, cooling, complete servers, software and testing are all ready together.
+
+The same accelerators, two very different jobs
+
+Imagine an AI company has one 256-accelerator cluster and two teams asking to use it. One team wants to build a new language model. The other wants to run an existing model for customers all day. This is an illustrative decision, not a real deployment.
+
+Both teams execute many of the matrix calculations introduced in Lesson 037. But the first team is training: it is changing the model so it performs better. The second is doing inference: it is using a trained model to produce an answer from a new input. That difference changes what the system must store, move, optimize and pay for.
+
+Training changes the model
+
+A model's parameters, often called weights, are numbers that shape how an input becomes an output. Training repeatedly adjusts those weights using examples.
+
+For one batch of examples, the system first makes predictions in a forward pass. It compares those predictions with the desired results and produces a loss, a number that represents error for the training objective. A backward pass then works through the calculation in reverse to find gradients. A gradient indicates how a small change in each weight would change the loss. An optimizer uses those gradients to update the weights.
+
+This cycle repeats across many batches. The exact method varies, and training a frontier language model is far more complex than this description, but the physical logic is consistent: read data, calculate outputs, measure error, carry correction information backward and update the model.
+
+Training therefore stores more than the weights. It may also retain intermediate results from the forward pass, gradients and optimizer information needed for updates. Those extra data structures consume memory. When the model spans many accelerators, the machines must also exchange updates so they continue training one model rather than drifting into incompatible copies.
+
+The operating goal is usually to reach an acceptable model result in a reasonable time. Accelerators sitting idle while they wait for data or for one another lengthen the run and raise its cost. Training teams therefore care about time to train, cluster utilization, network communication, checkpointing and the ability to recover from failures without losing too much work.
+
+Inference uses the model
+
+After training, a selected set of weights can be deployed for inference. The system loads those weights, receives a new input and performs a forward pass to produce a prediction or generated output. It does not normally calculate training gradients or update the model during that request.
+
+Removing the backward pass and weight-update machinery reduces work and memory compared with training the same model on the same input. PyTorch even provides an inference mode that disables gradient-related tracking when it is not needed. NVIDIA's TensorRT documentation likewise begins with a trained model and optimizes it for fast inference.
+

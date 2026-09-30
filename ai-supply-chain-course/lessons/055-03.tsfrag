@@ -1,0 +1,2 @@
+We will follow one prompt through the model to see why reading the input and generating the answer create different compute and memory demands.`,
+} satisfies Lesson;
