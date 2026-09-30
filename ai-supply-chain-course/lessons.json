@@ -562,7 +562,19 @@
         "lessons/054-02.tsfrag",
         "lessons/054-03.tsfrag"
       ]
+    },
+    {
+      "number": 55,
+      "module": "Module 6: Training, Inference and Useful AI Economics",
+      "title": "Training Versus Inference — Two Different Ways AI Uses Compute",
+      "date": "2026-09-30",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/055-01.tsfrag",
+        "lessons/055-02.tsfrag",
+        "lessons/055-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-29T11:02:09.682Z"
+  "updatedAt": "2026-09-30T11:06:38.471Z"
 }
