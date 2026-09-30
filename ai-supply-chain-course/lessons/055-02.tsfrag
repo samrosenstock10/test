@@ -1,0 +1,40 @@
+Inference still creates a different systems problem. A customer notices delay, so the service may need to begin responding quickly. Thousands of customers can arrive at uneven times, so the operator must balance response speed, total throughput and spare capacity for bursts or failures. A system tuned only to keep every accelerator busy can make each user wait too long.
+
+The same hardware can serve both jobs
+
+Training and inference are workload categories, not two completely separate kinds of machine. Google documents both training and serving on its TPUs, and GPUs can also perform both. The best setup depends on the model, traffic pattern and service target.
+
+Training often benefits from large, tightly connected clusters because one run may be divided across many devices. Inference can also require multiple devices when a model does not fit on one, but it may instead spread many independent requests across smaller groups. Training scheduling can be planned around a long job; online inference must keep serving despite changing demand and component failures.
+
+The economic consequence is easy to miss. Training can be a large, visible project, while inference is repeated every time the model is used. In an illustrative comparison, a training run that uses 100 accelerator-days ends after those 100 days of work. An inference service using 10 accelerators continuously consumes 3,650 accelerator-days over a year. These numbers are invented only to show the pattern: a smaller serving fleet can create more lifetime demand when usage repeats.
+
+Prediction check
+
+A company keeps the same model but its daily customer requests grow tenfold. Which workload grows directly: training or inference?
+
+Answer: inference grows directly because the deployed model must process more requests. Training may later grow if the company builds a new model, updates the old one or learns from new data, but user traffic alone does not require the weights to be retrained. The tempting mistake is to assume that more popular AI automatically means proportionally more training.
+
+Measure the job before valuing the hardware
+
+For an operator, “AI compute demand” is incomplete. Ask whether the workload is changing weights or using fixed weights, how large the model is, how quickly outputs must arrive, how much traffic varies and what failure tolerance is required.
+
+For an investor, training growth and inference growth can favor different combinations of accelerators, memory, networking and software. A supplier does not capture value merely because total AI usage rises; its product must remove the binding cost or performance constraint for the workload customers actually run.
+
+Training creates the model by repeatedly measuring error and changing weights. Inference turns those learned weights into useful outputs. The next lessons will split inference itself into stages and show why even one user request can stress memory and compute differently over time.
+
+Sources
+
+PyTorch, Autograd mechanics — recording calculations and computing gradients for training: https://docs.pytorch.org/docs/stable/notes/autograd.html
+
+PyTorch, Inference Mode — disabling gradient-related overhead when autograd is not needed: https://docs.pytorch.org/docs/stable/generated/torch.autograd.grad_mode.inference_mode.html
+
+NVIDIA, TensorRT Quick Start Guide — optimizing a trained model for inference: https://docs.nvidia.com/deeplearning/tensorrt/latest/getting-started/quick-start-guide.html
+
+Google Cloud, Training on TPU slices — distributed training, batches and scaling across devices: https://docs.cloud.google.com/tpu/docs/training-on-tpu-pods
+
+Google Cloud, Run inference on Cloud TPU — serving a trained model with latency objectives: https://docs.cloud.google.com/tpu/docs/tpu-inference
+
+Next lesson
+
+Lesson 056: Prefill, Decode and the KV Cache — Why One AI Response Has Two Workloads
+
