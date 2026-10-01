@@ -1,0 +1,2 @@
+We will compare two serving queues to see why combining requests improves hardware use but can make an individual user wait longer.`,
+} satisfies Lesson;
