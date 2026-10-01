@@ -50,6 +50,13 @@
       "url": "https://semianalysis.com/",
       "kind": "technical-analysis",
       "priority": "principal-forecast-guide"
+    },
+    {
+      "id": "synopsys",
+      "label": "Synopsys",
+      "url": "https://www.synopsys.com/newsroom.html",
+      "kind": "issuer-primary-source",
+      "priority": "targeted-primary-source"
     }
   ],
   "observations": [
@@ -676,25 +683,55 @@
       "title": "Enterprise agent harnesses trade higher token use for coordination—and widen the security perimeter",
       "sourceTitle": "Claude Code’s Next Era — Thariq Shihipar, Anthropic",
       "url": "https://www.latent.space/p/thariq",
+      "speaker": "Thariq Shihipar",
+      "role": "Anthropic engineer and Claude Code team member, as described in the transcript",
       "publishedDate": "2026-09-29",
       "observedAt": "2026-09-29T12:32:57Z",
       "contentAccess": "full-transcript",
-      "status": "evidence",
+      "independenceGroup": "anthropic",
       "summary": "Shihipar says projects, subagents and supervision consume more tokens but enable organizational agent harnesses; proactive agents require enterprise-data access, while external integrations expand prompt-injection and data-exfiltration risk.",
       "claim": "Anthropic uses Claude Tag for background engineering workflows and described inference-time activation probes, classifiers and fallbacks that add speed and cost overhead but can be refined from live feedback.",
       "interpretation": "Our inference: organizational agents add a coordination and security-control layer that can increase inference demand while creating new requirements for identity, permissions, sandboxing and monitoring. This does not establish a public-company beneficiary.",
       "beneficiaryTickers": [],
       "countercase": "The source is an Anthropic employee discussing Anthropic products; usage characterizations were not independently measured, and the transcript provides no controlled productivity, security-efficacy or deployment-economics study.",
       "nextTest": "Seek named enterprise deployments reporting incremental token cost, task throughput, administrative overhead and prevented prompt-injection or data-exfiltration incidents.",
-      "verification": "Read the full accessible transcript on the official Latent Space page. Audio was not separately reviewed, and referenced external security incidents were not independently revalidated for this record.",
-      "speaker": "Thariq Shihipar",
-      "role": "Anthropic engineer and Claude Code team member, as described in the transcript",
       "evidenceType": "firsthand-builder-interview",
+      "status": "evidence",
       "location": "Transcript sections “Projects, Local Hands, and Cloud-to-Local Handoffs,” “Proactive Agents and Enterprise Data Access,” and “External Evaluators and What Developers Should Advocate For” (about 00:48:36–00:55:36 and 01:17:17 onward).",
       "incentives": "Anthropic sells Claude and Claude Code; Latent Space benefits from audience and event growth.",
+      "verification": "Read the full accessible transcript on the official Latent Space page. Audio was not separately reviewed, and referenced external security incidents were not independently revalidated for this record.",
       "freshness": "same-day-public-transcript",
-      "itemId": "latent-space-thariq-claude-code-20260929",
-      "independenceGroup": "anthropic"
+      "itemId": "latent-space-thariq-claude-code-20260929"
+    },
+    {
+      "id": "expert-20261001-synopsys-gpt-model",
+      "channel": "synopsys",
+      "sourceId": "synopsys",
+      "sourceLane": "engineering",
+      "title": "GPT-Synopsys aims to make a frontier model a native operator of EDA tools",
+      "sourceTitle": "OpenAI and Synopsys Announce GPT-Synopsys: Frontier Intelligence to Revolutionize Chip Design",
+      "url": "https://investor.synopsys.com/news/news-details/2026/OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design/",
+      "speaker": "Sassine Ghazi and Greg Brockman",
+      "role": "Synopsys president and CEO; OpenAI president and co-founder",
+      "publishedDate": "2026-09-30",
+      "observedAt": "2026-10-01T12:38:01Z",
+      "contentAccess": "article",
+      "independenceGroup": "synopsys-openai",
+      "summary": "Synopsys and OpenAI announced a specialized model designed to operate Synopsys EDA tools, interpret outputs and iterate toward engineer-reviewed chip-design and verification outcomes.",
+      "claim": "The companies signed a multi-year preferred-partner agreement with shared revenue and joint go-to-market terms. They say the model will run on OpenAI-hosted infrastructure, interoperate with customer agent harnesses, bundle compute/model/licenses and is already in early technology engagements.",
+      "interpretation": "Our inference: frontier-model capability may become embedded inside ground-truth engineering tools, shifting part of chip-design competition toward tool-operating agents, proprietary design context and workflow integration. Synopsys is the named public beneficiary, but the release does not establish product performance, availability, adoption or incremental economics.",
+      "beneficiaryTickers": [
+        "SNPS"
+      ],
+      "countercase": "This is a joint commercial announcement from economically interested parties. No benchmark, customer identity, general-availability date, pricing, revenue contribution or first-pass-silicon result is disclosed; competing EDA vendors and customer-built harnesses may capture similar value.",
+      "nextTest": "Obtain a named customer pilot or independent benchmark showing PPA or verification-closure improvement, engineering time saved, failure rates, security controls and total bundled cost versus existing Synopsys Autopilot and competing flows.",
+      "evidenceType": "issuer-partnership-and-product-announcement",
+      "status": "evidence",
+      "location": "News highlights and sections describing tool operation, engineer review, infrastructure, early engagements and data controls.",
+      "incentives": "Synopsys and OpenAI are promoting a joint commercial offering with revenue sharing; neither is independent evidence of performance.",
+      "verification": "Read the full September 30 Synopsys investor-relations release. Agreement structure and stated architecture are verified as company disclosures; capabilities, customer engagements and benefits were not independently validated.",
+      "freshness": "new-after-prior-engineering-cutoff",
+      "itemId": "synopsys-gpt-synopsys-20260930"
     }
   ],
   "evidence": [
@@ -2327,6 +2364,27 @@
       "nextTest": "Seek named enterprise deployments reporting incremental token cost, task throughput, administrative overhead and prevented prompt-injection or data-exfiltration incidents.",
       "beneficiaryTickers": [],
       "sourceObservationId": "expert-20260929-anthropic-organizational-harness-security"
+    },
+    {
+      "id": "synopsys-gpt-model-20260930",
+      "title": "Synopsys and OpenAI define a specialized tool-operating model for chip design",
+      "url": "https://investor.synopsys.com/news/news-details/2026/OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design/",
+      "kind": "issuer-partnership-and-product-announcement",
+      "independenceGroup": "synopsys-openai",
+      "publishedDate": "2026-09-30",
+      "observedAt": "2026-10-01T12:38:01Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "The partners describe GPT-Synopsys as a specialized frontier model that can directly operate Synopsys EDA tools and iterate on design and verification objectives for engineer review.",
+      "claim": "The multi-year agreement includes Synopsys tool licensing to OpenAI, shared revenue, joint go-to-market, OpenAI-hosted infrastructure, customer-harness interoperability and early technology engagements.",
+      "interpretation": "This is concrete evidence of a new EDA-agent architecture and commercial arrangement, and it registers Synopsys as an unrated public-company lead. It does not prove technical superiority, adoption or attractive incremental returns.",
+      "verification": "Read the complete September 30 issuer release. No independent customer, benchmark or financial evidence was supplied.",
+      "countercase": "The announced system may remain pre-commercial, fail to outperform existing automation, face customer data-governance resistance or be matched by competitors and internal tools.",
+      "nextTest": "Seek named pilot results with PPA, closure time, error/failure rate, security and total-cost comparisons, plus disclosed pricing or revenue contribution.",
+      "beneficiaryTickers": [
+        "SNPS"
+      ],
+      "sourceObservationId": "expert-20261001-synopsys-gpt-model"
     }
   ],
   "rankings": [
@@ -7402,6 +7460,27 @@
       "aliases": [],
       "screeningStatus": "unrated",
       "screeningReason": "SemiAnalysis's teardown de-risks Intel 18A manufacturing readiness but does not establish leading density, external adoption, competitive yield or attractive foundry economics; no conviction score is assigned."
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys",
+      "stage": "unrated",
+      "firstObservedAt": "2026-10-01T12:38:01Z",
+      "priority": "normal",
+      "nextQuestion": "Can GPT-Synopsys produce repeatable customer-verified improvements in PPA, verification closure, engineering time and total cost—and can Synopsys retain attractive economics after OpenAI compute/model costs and revenue sharing?",
+      "sourceRefs": [
+        {
+          "id": "expert-20261001-synopsys-gpt-model",
+          "sourceId": "synopsys",
+          "evidenceId": "synopsys-gpt-model-20260930",
+          "kind": "issuer-evidence",
+          "publishedDate": "2026-09-30",
+          "url": "https://investor.synopsys.com/news/news-details/2026/OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design/"
+        }
+      ],
+      "aliases": [],
+      "screeningStatus": "unrated",
+      "screeningReason": "A concrete specialized-model architecture, tool integration and shared commercial framework make Synopsys a relevant public-company lead, but issuer-only forward-looking claims and absent benchmark, customer and unit-economic evidence do not justify a conviction score."
     }
   ],
   "rankingMethodology": {
@@ -18107,7 +18186,7 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-09-29T12:32:57Z",
+    "asOf": "2026-10-01T12:38:01Z",
     "kind": "builder-engineering-scan",
     "completedChannels": [
       "information-bottleneck",
@@ -18119,15 +18198,12 @@
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "Latent Space published the September 29 Thariq Shihipar transcript after the prior completed cutoff; the full accessible transcript was reviewed and its original publication date was preserved.",
-      "The Information Bottleneck official archive exposed no newer qualifying infrastructure item after its September 21 healthcare episode.",
-      "OCP's newest verified technical material remained the September 22 summit/proteanTecs item already represented in the tracker; no newer measured engineering result surfaced in the bounded official-site check.",
-      "Dwarkesh's official feed remained current through the September 17 Noam Brown episode; no newer infrastructure interview was found.",
-      "GPU MODE's lectures repository remained at commit 77a8df418834e5789c12da23e7d2719e0efabef1 from September 9.",
-      "Exact-source and substantive-claim searches in the Muse repository found no Thariq Shihipar, Claude Tag or Latent Space source overlap.",
-      "The bounded undercovered-systems check produced one Atlas candidate tied to the same source revision; it does not complete Atlas normalization or publication.",
-      "No score, rank, thesis, Company Universe or legacy a16z ledger change resulted from this independent engineering cycle."
+      "Incremental review after the September 30 engineering cutoff found one qualifying primary-source design item: the September 30 Synopsys–OpenAI GPT-Synopsys announcement.",
+      "The official release verifies the agreement and stated architecture but supplies no independent benchmark, named customer, general-availability date, pricing or realized economics.",
+      "GPU MODE lectures remains at commit 77a8df418834e5789c12da23e7d2719e0efabef1 from September 9; no newer primary artifact exists.",
+      "The second targeted design-family check, Cadence's official newsroom, produced no additional qualifying post-cutoff mechanism or event.",
+      "No score, rank, thesis, valuation or legacy a16z ledger change resulted; SNPS was added only as an unrated Company Universe lead."
     ]
   },
-  "updatedAt": "2026-09-29T12:36:12Z"
+  "updatedAt": "2026-10-01T12:38:01Z"
 }
