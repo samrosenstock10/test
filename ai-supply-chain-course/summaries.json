@@ -49,6 +49,13 @@
       "title": "Training Versus Inference — Two Different Ways AI Uses Compute",
       "bodySha256": "4bdd68cce5b99a04bcfa9ac5b1594f5e35bc70b9d07837a53ec589a4ac04201e",
       "body": "Lesson 055 explains that training and inference are two different jobs even when they use the same accelerators. Training changes a model’s weights by making predictions, measuring error, calculating how each weight contributed, and updating the numbers. Because it must keep extra intermediate results, gradients, and optimizer data, training uses substantial memory and often requires many accelerators to coordinate closely. Inference begins after training: it loads the chosen weights and uses them to answer a new request without normally calculating gradients or changing the model. That removes some work, but a serving system must still respond quickly, handle uneven traffic, and remain available when components fail. Training is usually judged by how efficiently it reaches an acceptable model, while inference is judged by response time, throughput, reliability, and cost per request. A large training run can end, but inference repeats whenever users call the model, so lifetime inference demand can exceed the original training demand. The practical takeaway is to ask whether a workload is changing weights or using fixed weights before deciding which hardware, memory, networking, and software constraints matter most."
+    },
+    {
+      "number": 56,
+      "date": "2026-10-01",
+      "title": "Prefill, Decode and the KV Cache — Why One AI Response Has Two Workloads",
+      "bodySha256": "c91671bb0672bb608132f38db95b006a065e9ee11a62f1bbc593cbbe541593ed",
+      "body": "Lesson 056 explains that a single AI response has two stages called prefill and decode. During prefill, the model reads the user's prompt in parallel and creates the first output token. It also creates a KV cache, which stores request-specific attention data so the model does not have to recalculate earlier tokens. During decode, the model writes the answer one token at a time and keeps adding to that cache. Because decode repeatedly reads the model weights and a growing cache, memory capacity and bandwidth can matter as much as raw computing power. A longer prompt usually increases the wait before the first token and begins decode with a larger cache, while a longer answer requires more sequential decode steps. Serving software can manage the cache more efficiently or reuse shared prompt prefixes, but these choices add scheduling and data-movement tradeoffs. The main consequence is that inference performance and cost depend on both prompt reading and answer generation, so operators must measure them separately."
     }
   ]
 }
