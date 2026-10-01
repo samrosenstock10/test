@@ -1,0 +1,38 @@
+Without a KV cache, each decode step would have to recompute key and value data for all earlier tokens. Saving those results avoids repeated work. The cost is memory capacity and bandwidth: the cache occupies space, grows with the sequence and must be read during generation.
+
+This tradeoff changes how many requests one accelerator can serve at once. If request caches fill device memory, the operator may have to reduce the batch, shorten allowed context, move cache data elsewhere or add hardware. A chip can have ample arithmetic capability and still serve fewer users because request state consumes its memory.
+
+Serving software attacks this problem in different ways. vLLM's PagedAttention stores cache data in blocks so variable-length requests waste less memory, borrowing an idea from virtual-memory paging. NVIDIA's serving systems can split prefill and decode across different workers, but then the KV cache must travel between them. Prefix caching can reuse cache blocks when requests share an identical prompt prefix, avoiding repeated prefill work. Each approach removes one cost while adding scheduling, transfer or memory-management complexity.
+
+Prediction check
+
+Suppose the prompt doubles from 1,000 to 2,000 tokens while the requested answer stays at 200 tokens. What changes first?
+
+Answer: prefill has more input to process, so time to the first token generally rises, and the request enters decode with a larger KV cache. Each later decode step may also move more cached data because it must attend over a longer sequence. The tempting mistake is to count only the unchanged 200 output tokens and conclude that serving cost stays the same.
+
+Two metrics reveal two customer experiences
+
+Time to first token measures the wait before the response begins and is heavily influenced by queueing and prefill. Time per output token, or inter-token latency, measures how quickly the answer continues and is heavily influenced by decode. Throughput measures how much total work the service completes across users.
+
+An operator cannot optimize only one number. Packing more requests together may improve throughput but delay an individual response. Reserving more capacity for bursts may improve latency but leave expensive accelerators underused. The right design depends on prompt length, output length, traffic variability and the service promise.
+
+For an investor or operator, “inference demand” is still too broad. A workload dominated by long prompts can value prefill compute and cache creation differently from one dominated by long generated answers. The model, memory system, interconnect and serving software jointly determine useful output and cost.
+
+One AI response is a pipeline: prefill reads the prompt and creates request memory; decode repeatedly uses and extends that memory to write the answer. The KV cache saves computation, but turns memory capacity, bandwidth and data movement into central inference constraints.
+
+Sources
+
+NVIDIA, Mastering LLM Techniques: Inference Optimization — decode and KV caching: https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/
+
+NVIDIA, TensorRT-LLM Chunked Prefill — different resource use during prefill and decode: https://developer.nvidia.com/blog/streamlining-ai-inference-performance-and-deployment-with-nvidia-tensorrt-llm-chunked-prefill/
+
+Google Cloud, Five Techniques to Reach the Efficient Frontier of LLM Inference — prefill, decode and serving tradeoffs: https://cloud.google.com/blog/topics/developers-practitioners/five-techniques-to-reach-the-efficient-frontier-of-llm-inference
+
+Kwon et al., Efficient Memory Management for Large Language Model Serving with PagedAttention — KV-cache memory management and vLLM: https://arxiv.org/abs/2309.06180
+
+vLLM, Automatic Prefix Caching — reusing KV-cache blocks for shared prompt prefixes: https://docs.vllm.ai/en/stable/design/prefix_caching/
+
+Next lesson
+
+Lesson 057: Batching and Latency — Why Full Accelerators Can Still Deliver Slow Answers
+

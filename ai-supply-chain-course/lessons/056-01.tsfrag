@@ -1,0 +1,47 @@
+import type { Lesson } from "./lessons";
+
+export const lesson056 = {
+  number: 56,
+  module: "Module 6: Training, Inference and Useful AI Economics",
+  title: "Prefill, Decode and the KV Cache — Why One AI Response Has Two Workloads",
+  date: "2026-10-01",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 051: Contracted electricity becomes useful only after a completed and tested grid connection can deliver it to the servers.
+
+Lesson 052: Cooling must carry heat from each chip all the way outside, or powered equipment cannot sustain full performance.
+
+Lesson 053: Installed equipment becomes usable capacity only after the complete cluster passes realistic workload and failure tests.
+
+Lesson 054: Useful AI capacity arrives only when power, cooling, complete servers, software and testing are all ready together.
+
+Lesson 055: Training changes a model's weights, while inference uses fixed weights to answer requests, so the two jobs stress systems differently.
+
+Why does an AI answer arrive in two rhythms?
+
+Imagine a user sends a language model a 1,000-token prompt and asks for a 200-token answer. A token is a small piece of text, not necessarily a whole word. These numbers are illustrative, and real requests vary widely.
+
+The user first waits while the model reads the prompt. Then the answer begins appearing one token at a time. That visible change reflects two different stages inside the same inference request: prefill and decode.
+
+Prefill reads the prompt
+
+During prefill, the model processes the input tokens and builds the information needed to begin answering. Modern accelerators can handle many prompt-token calculations in parallel, so this stage often uses their matrix-compute capacity effectively.
+
+The result is the first output token and a set of intermediate attention data called the key-value cache, or KV cache. In the model's attention layers, each token produces key and value tensors. These are numerical representations that help later tokens determine which earlier parts of the sequence matter.
+
+The KV cache is not another copy of the model and it is not a plain-text summary of the conversation. It is request-specific working memory. The model weights remain the learned rules; the cache stores intermediate results for the particular sequence being served.
+
+For the illustrative 1,000-token prompt, prefill creates cache entries for those input tokens across the model's attention layers. A longer prompt normally means more prefill work, more time before the first token and a larger starting cache. The exact relationship depends on the model architecture, serving software, batch size and hardware.
+
+Decode writes the answer step by step
+
+Decode begins after prefill. To produce the next token, the model uses its fixed weights, the latest token and the cached keys and values from the sequence so far. It then adds new key-value data for the token it just produced.
+
+This stage is sequential: token 102 of the answer cannot be generated until token 101 exists. The system can batch steps from different users together, but one user's answer still advances one generated token at a time.
+
+That changes the bottleneck. Each decode step performs less parallel work for one request than prefill, while repeatedly reading model weights and an expanding KV cache. Decode is therefore often limited by memory movement rather than raw arithmetic capacity. This is a useful rule of thumb, not a universal law; large batches, unusual models and different hardware can shift the balance.
+
+The 200-token answer adds 200 more positions to the cache. It also requires roughly 200 sequential generation steps. A short prompt with a long answer can therefore feel fast at first but continue slowly, while a long prompt with a short answer can make the user wait longer before any text appears.
+
+The cache trades computation for memory
+
