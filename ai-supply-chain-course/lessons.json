@@ -574,7 +574,19 @@
         "lessons/055-02.tsfrag",
         "lessons/055-03.tsfrag"
       ]
+    },
+    {
+      "number": 56,
+      "module": "Module 6: Training, Inference and Useful AI Economics",
+      "title": "Prefill, Decode and the KV Cache — Why One AI Response Has Two Workloads",
+      "date": "2026-10-01",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/056-01.tsfrag",
+        "lessons/056-02.tsfrag",
+        "lessons/056-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-09-30T11:06:38.471Z"
+  "updatedAt": "2026-10-01T11:07:13.751Z"
 }
