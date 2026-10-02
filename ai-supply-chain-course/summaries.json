@@ -56,6 +56,13 @@
       "title": "Prefill, Decode and the KV Cache — Why One AI Response Has Two Workloads",
       "bodySha256": "c91671bb0672bb608132f38db95b006a065e9ee11a62f1bbc593cbbe541593ed",
       "body": "Lesson 056 explains that a single AI response has two stages called prefill and decode. During prefill, the model reads the user's prompt in parallel and creates the first output token. It also creates a KV cache, which stores request-specific attention data so the model does not have to recalculate earlier tokens. During decode, the model writes the answer one token at a time and keeps adding to that cache. Because decode repeatedly reads the model weights and a growing cache, memory capacity and bandwidth can matter as much as raw computing power. A longer prompt usually increases the wait before the first token and begins decode with a larger cache, while a longer answer requires more sequential decode steps. Serving software can manage the cache more efficiently or reuse shared prompt prefixes, but these choices add scheduling and data-movement tradeoffs. The main consequence is that inference performance and cost depend on both prompt reading and answer generation, so operators must measure them separately."
+    },
+    {
+      "number": 57,
+      "date": "2026-10-02",
+      "title": "Batching and Latency — Why Full Accelerators Can Still Deliver Slow Answers",
+      "bodySha256": "742f4c34cfd33ece2f2af0f936e2b8d71b5cbba867b01d8d6690fdaf4bd03bad",
+      "body": "Lesson 057 explains why keeping an accelerator busy does not guarantee fast answers for each user. Batching groups several requests so the model can process them together, which usually raises total tokens per second and lowers cost per token. The tradeoff is that the server may wait to form a batch, and each user may receive tokens more slowly as more requests share the machine. Static batches waste capacity when short requests finish before long ones, because the empty places may stay unused while new requests wait. Continuous batching improves this by removing finished requests and adding waiting ones after each generation step. Even then, large batches consume more KV-cache memory and can slow each step or create queues when demand exceeds capacity. Operators therefore track time to first token, time between tokens, total response time and overall throughput separately. The main consequence is that serving software must balance hardware efficiency against user latency instead of maximizing accelerator utilization alone."
     }
   ]
 }
