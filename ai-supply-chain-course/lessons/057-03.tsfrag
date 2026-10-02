@@ -1,0 +1,2 @@
+We will compare dense and mixture-of-experts models to see how architecture changes computation, memory movement and serving cost.`,
+} satisfies Lesson;
