@@ -586,7 +586,19 @@
         "lessons/056-02.tsfrag",
         "lessons/056-03.tsfrag"
       ]
+    },
+    {
+      "number": 57,
+      "module": "Module 6: Training, Inference and Useful AI Economics",
+      "title": "Batching and Latency — Why Full Accelerators Can Still Deliver Slow Answers",
+      "date": "2026-10-02",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/057-01.tsfrag",
+        "lessons/057-02.tsfrag",
+        "lessons/057-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-01T11:07:13.751Z"
+  "updatedAt": "2026-10-02T11:03:51.350Z"
 }

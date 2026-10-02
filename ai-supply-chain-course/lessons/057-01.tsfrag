@@ -1,0 +1,45 @@
+import type { Lesson } from "./lessons";
+
+export const lesson057 = {
+  number: 57,
+  module: "Module 6: Training, Inference and Useful AI Economics",
+  title: "Batching and Latency — Why Full Accelerators Can Still Deliver Slow Answers",
+  date: "2026-10-02",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 052: Cooling must carry heat from each chip all the way outside, or powered equipment cannot sustain full performance.
+
+Lesson 053: Installed equipment becomes usable capacity only after the complete cluster passes realistic workload and failure tests.
+
+Lesson 054: Useful AI capacity arrives only when power, cooling, complete servers, software and testing are all ready together.
+
+Lesson 055: Training changes a model's weights, while inference uses fixed weights to answer requests, so the two jobs stress systems differently.
+
+Lesson 056: An AI response first reads the prompt, then generates tokens one by one while keeping request-specific working data in a KV cache.
+
+The accelerator is full. Why are users still waiting?
+
+Imagine an AI service running one model on one accelerator. Eight users send requests within a few milliseconds. These users want quick responses, while the operator wants the expensive accelerator to complete as many useful tokens as possible. This is an illustrative case; the timing numbers below are invented to explain the tradeoff.
+
+If the server handles one request at a time, each user can move quickly once admitted. But one decode step for one request may not use all of the accelerator's parallel capacity. The other seven requests sit in a queue while hardware is available for more simultaneous work.
+
+Batching fills the machine
+
+A batch combines several requests so the model can process work for them together. Instead of reading the weights once for one user's next token, the accelerator can use that pass to advance several users. This often raises throughput, meaning the total tokens completed by the service each second.
+
+Suppose one decode step takes 4 milliseconds for a batch of one and produces one token. That is 250 tokens per second across the service. Now suppose a batch of eight takes 12 milliseconds and produces eight tokens. Total throughput rises to about 667 tokens per second, even though each user receives a new token every 12 milliseconds rather than every 4. The larger batch uses the accelerator better, but each individual stream advances more slowly. Actual results depend on the model, sequence lengths, hardware and serving software.
+
+The server may also wait briefly before launching work so more requests can join a batch. NVIDIA Triton calls this delayed dynamic batching and lets an operator set a maximum queue delay. Waiting can improve the chance of forming an efficient batch, but the waiting time is added directly to a user's latency.
+
+This is the central distinction: a full accelerator measures how much work the machine is carrying, not how quickly one person receives an answer.
+
+Static batches create empty seats
+
+Generative requests do not all finish together. One user may need 20 output tokens while another needs 200. In a rigid request-level batch, a short request can finish while the long request keeps the batch occupied. New requests may remain outside, and the finished request leaves an empty seat that produces nothing.
+
+The long request also creates head-of-line blocking: other work waits because it was placed behind a request that takes much longer. The problem resembles Lesson 047's synchronized cluster. Healthy resources can sit underused or useful work can wait because scheduling ties progress to the slowest participant.
+
+Continuous batching changes the group each step
+
+Modern language-model servers often use continuous batching, also called in-flight or iteration-level batching. After each generation step, the scheduler removes finished requests and can admit waiting requests. The active group changes while the model keeps running.
+
