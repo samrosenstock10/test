@@ -1,0 +1,38 @@
+The Orca research system described iteration-level scheduling, NVIDIA TensorRT-LLM supports in-flight batching, and vLLM supports continuous batching. They are different systems, but the shared mechanism is simple: do not freeze one group until every answer ends.
+
+Continuous batching reduces empty seats, but it does not erase tradeoffs. Every active request needs KV-cache memory. A very large batch can run out of cache capacity, lengthen each generation step or force the scheduler to pause work. A long prompt entering prefill can also delay active decode requests unless the software splits or prioritizes that work carefully.
+
+Why latency rises near saturation
+
+Four measurements tell different stories. Time to first token includes queueing and prompt processing. Time between tokens measures the pace of the visible answer. End-to-end latency measures the whole request. Throughput measures total output across all users.
+
+When demand approaches the server's maximum sustainable throughput, even a small burst can build a queue faster than the accelerator clears it. Utilization may look excellent while waiting time rises sharply. Operators therefore need spare capacity, admission limits or more replicas if they promise a latency target. Keeping every accelerator full at all times is not automatically the right objective.
+
+Prediction check
+
+Two configurations use the same model and hardware. Configuration A keeps batches small. Configuration B waits longer and serves larger batches. Which one is likely to have lower cost per token, and which one is likely to begin an individual answer sooner?
+
+Answer: B will often have lower cost per token because it completes more total work with the same hardware. A will often begin an answer sooner because it adds less batching and queue delay. The result can reverse if A wastes so much hardware that requests form a long backlog, which is why operators measure the complete system rather than assuming one batch size is always best.
+
+What this means across the stack
+
+Better scheduling can turn the same accelerators, HBM and power into more useful output, so software changes the amount of physical infrastructure needed for a given traffic load. But higher utilization can also worsen the user's experience if the service optimizes only total tokens per second.
+
+For an operator or investor, the useful question is not simply whether accelerators are busy. Ask what latency target the service promises, how traffic arrives, how much KV-cache memory requests consume, what scheduling policy is used and how throughput behaves at the target latency. Google Cloud describes this as an efficient frontier: for a fixed hardware budget, the operator chooses among different combinations of latency and throughput.
+
+Sources
+
+NVIDIA Triton Inference Server, Batchers — dynamic batching and maximum queue delay: https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/batcher.html
+
+NVIDIA TensorRT-LLM documentation — in-flight batching and optimized LLM inference: https://docs.nvidia.com/tensorrt-llm/
+
+Yu et al., Orca: A Distributed Serving System for Transformer-Based Generative Models — iteration-level scheduling: https://www.usenix.org/conference/osdi22/presentation/yu
+
+vLLM documentation — continuous batching and serving features: https://docs.vllm.ai/en/latest/
+
+Google Cloud, Five Techniques to Reach the Efficient Frontier of LLM Inference — latency, throughput and cost tradeoffs: https://cloud.google.com/blog/topics/developers-practitioners/five-techniques-to-reach-the-efficient-frontier-of-llm-inference
+
+Next lesson
+
+Lesson 058: Model Architecture and Serving Efficiency — Why Some Models Need Less Work per Answer
+
