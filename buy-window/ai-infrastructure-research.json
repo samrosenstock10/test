@@ -732,6 +732,35 @@
       "verification": "Read the full September 30 Synopsys investor-relations release. Agreement structure and stated architecture are verified as company disclosures; capabilities, customer engagements and benefits were not independently validated.",
       "freshness": "new-after-prior-engineering-cutoff",
       "itemId": "synopsys-gpt-synopsys-20260930"
+    },
+    {
+      "id": "expert-20261002-rlm-harness-routing",
+      "channel": "latent-space",
+      "sourceId": "latent-space",
+      "sourceLane": "engineering",
+      "title": "Recursive language-model harnesses trade context reach for extra inference work",
+      "sourceTitle": "Academia is for Ambition — Alex Zhang, MIT",
+      "url": "https://www.latent.space/p/rlm",
+      "speaker": "Alex Zhang",
+      "role": "MIT PhD researcher and first author of the Recursive Language Models paper",
+      "publishedDate": "2026-10-02",
+      "observedAt": "2026-10-02T12:44:10Z",
+      "contentAccess": "full-transcript",
+      "independenceGroup": "mit-rlm-research-team",
+      "summary": "Zhang describes an RLM harness that keeps long context in an external code environment, lets the model inspect it programmatically and permits recursive calls to subagents.",
+      "claim": "The interview and linked paper report that this harness can extend usable context and improve selected long-context benchmarks, while agent swarms can consume materially more messages and tokens and are not appropriate for every task.",
+      "interpretation": "Our inference: harness and routing design can expand useful model capability without changing model weights, but the infrastructure demand and economic value depend on selecting tasks where quality gains exceed extra recursive inference, tool execution and coordination cost.",
+      "beneficiaryTickers": [],
+      "countercase": "The benchmark gains are author-reported, not an independent production reproduction. Recursive calls and swarms can be expensive or wasteful, convergence is task-dependent, and better base models or simpler compaction may erase the advantage.",
+      "nextTest": "Run matched production tasks across RLM, compaction and swarm approaches while measuring completion quality, wall-clock latency, total tokens and messages, tool time, failure/convergence rate and total cost.",
+      "evidenceType": "firsthand-researcher-explanation",
+      "status": "evidence",
+      "location": "Transcript sections on the RLM harness, externalized context, recursive subagents, swarm token use and speculative tool calls; linked arXiv abstract.",
+      "incentives": "Zhang is describing research he authored; the interview and paper are not independent validation.",
+      "verification": "Read the full Latent Space transcript and the linked arXiv record. Harness architecture and reported benchmark claims are verified as author disclosures; results were not reproduced and no production economics were independently validated.",
+      "freshness": "new-after-prior-engineering-cutoff",
+      "itemId": "latent-space-rlm-20261002",
+      "paperUrl": "https://arxiv.org/abs/2512.24601"
     }
   ],
   "evidence": [
@@ -2385,6 +2414,26 @@
         "SNPS"
       ],
       "sourceObservationId": "expert-20261001-synopsys-gpt-model"
+    },
+    {
+      "id": "rlm-harness-routing-20261002",
+      "title": "RLM harness externalizes context and recursively invokes models",
+      "url": "https://www.latent.space/p/rlm",
+      "kind": "researcher-interview-and-primary-paper",
+      "independenceGroup": "mit-rlm-research-team",
+      "publishedDate": "2026-10-02",
+      "observedAt": "2026-10-02T12:44:10Z",
+      "contentAccess": "full-transcript",
+      "status": "evidence",
+      "summary": "The RLM authors describe a harness that stores the prompt in an external environment, uses code to inspect it and allows recursive subagent calls.",
+      "claim": "The linked paper reports improvements on selected long-context benchmarks at comparable cost to several baselines, while the interview stresses that large swarms can be costly and require routing and convergence design.",
+      "interpretation": "This is concrete mechanism evidence for long-context and agent orchestration, but not proof of broad production advantage or a public-company beneficiary.",
+      "verification": "Full interview transcript and arXiv abstract were reviewed. Performance claims remain author-reported and were not independently reproduced.",
+      "countercase": "Results may depend on benchmark selection, model choice, task decomposability and implementation; extra inference and tool calls can offset quality gains.",
+      "nextTest": "Seek independent, quality-matched production measurements of task success, latency, token/message volume, tool runtime and total cost against compaction and non-recursive agents.",
+      "beneficiaryTickers": [],
+      "sourceObservationId": "expert-20261002-rlm-harness-routing",
+      "paperUrl": "https://arxiv.org/abs/2512.24601"
     }
   ],
   "rankings": [
@@ -18186,7 +18235,7 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-01T12:38:01Z",
+    "asOf": "2026-10-02T12:44:10Z",
     "kind": "builder-engineering-scan",
     "completedChannels": [
       "information-bottleneck",
@@ -18198,12 +18247,12 @@
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "Incremental review after the September 30 engineering cutoff found one qualifying primary-source design item: the September 30 Synopsys–OpenAI GPT-Synopsys announcement.",
-      "The official release verifies the agreement and stated architecture but supplies no independent benchmark, named customer, general-availability date, pricing or realized economics.",
-      "GPU MODE lectures remains at commit 77a8df418834e5789c12da23e7d2719e0efabef1 from September 9; no newer primary artifact exists.",
-      "The second targeted design-family check, Cadence's official newsroom, produced no additional qualifying post-cutoff mechanism or event.",
-      "No score, rank, thesis, valuation or legacy a16z ledger change resulted; SNPS was added only as an unrated Company Universe lead."
+      "Incremental review after the October 1 engineering cutoff found one qualifying primary-source item: the October 2 Latent Space interview with Recursive Language Models first author Alex Zhang and its linked paper.",
+      "The harness architecture and reported benchmark results are author disclosures; no independent production reproduction or realized economics were available.",
+      "The power-family primary-source check reviewed the September 30 OCP power-track program and current Schneider Electric and Vertiv official materials but found no new qualifying deployed mechanism or milestone.",
+      "No additional qualifying post-cutoff item was found in the bounded Information Bottleneck, OCP, Dwarkesh or GPU MODE checks.",
+      "No score, rank, thesis, valuation, Company Universe or legacy a16z ledger change resulted."
     ]
   },
-  "updatedAt": "2026-10-01T12:38:01Z"
+  "updatedAt": "2026-10-02T12:44:10Z"
 }
