@@ -63,6 +63,13 @@
       "title": "Batching and Latency — Why Full Accelerators Can Still Deliver Slow Answers",
       "bodySha256": "742f4c34cfd33ece2f2af0f936e2b8d71b5cbba867b01d8d6690fdaf4bd03bad",
       "body": "Lesson 057 explains why keeping an accelerator busy does not guarantee fast answers for each user. Batching groups several requests so the model can process them together, which usually raises total tokens per second and lowers cost per token. The tradeoff is that the server may wait to form a batch, and each user may receive tokens more slowly as more requests share the machine. Static batches waste capacity when short requests finish before long ones, because the empty places may stay unused while new requests wait. Continuous batching improves this by removing finished requests and adding waiting ones after each generation step. Even then, large batches consume more KV-cache memory and can slow each step or create queues when demand exceeds capacity. Operators therefore track time to first token, time between tokens, total response time and overall throughput separately. The main consequence is that serving software must balance hardware efficiency against user latency instead of maximizing accelerator utilization alone."
+    },
+    {
+      "number": 58,
+      "date": "2026-10-03",
+      "title": "Model Architecture and Serving Efficiency — Why Some Models Need Less Work per Answer",
+      "bodySha256": "8b642332941ab9a5d1970d72dafee8163853401c21571e47c807ea5be15bed63",
+      "body": "Lesson 058 explains why a model can do less work for each token even when it contains more total weights. A dense model uses the same full path for every token. A mixture-of-experts model uses a router to send each token through only a few expert sections. This can reduce the arithmetic needed for an answer. However, all experts still need to be stored and available, so memory needs do not fall as much as computation. If experts sit on different accelerators, token routing also adds communication and can leave some devices busier than others. The practical lesson is to judge models by answer quality, latency, throughput, memory, accelerator count and power together, not by active parameter count alone."
     }
   ]
 }
