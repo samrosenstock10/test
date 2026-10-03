@@ -1,0 +1,4 @@
+Lesson 059: Cost per Useful Output — Why the Cheapest Token Is Not Always the Best Deal
+
+We will combine hardware use, latency and answer quality to see why a low cost per generated token can still produce an expensive customer result.`,
+} satisfies Lesson;
