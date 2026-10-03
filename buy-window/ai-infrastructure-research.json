@@ -2469,6 +2469,43 @@
       "beneficiaryTickers": [],
       "sourceObservationId": "expert-20261002-rlm-harness-routing",
       "paperUrl": "https://arxiv.org/abs/2512.24601"
+    },
+    {
+      "id": "project-b-20261001-jera-chiba-power-001-35edc829e244b5af",
+      "title": "JERA proposes power-station-adjacent AI data-center model in Chiba",
+      "url": "https://www.reuters.com/business/energy/jera-teams-up-with-dell-rhaelm-ai-infrastructure-development-japan-2026-10-01/",
+      "kind": "project-bottleneck",
+      "independenceGroup": "jera-rhaelm-dell",
+      "publishedDate": "2026-10-01",
+      "observedAt": "2026-10-03T13:51:12Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "Reuters reports company statements that JERA, RHAELM and Dell signed an MOU for a planned 400 MW-class Chiba AI data center beside a JERA thermal power station.",
+      "claim": "JERA is expected to supply 400 MW for 15–25 years; phased operation is expected in 2028 and full operation in 2029.",
+      "interpretation": "Our inference: coordinating land, generation access, development and rack design could shorten speed-to-power in fuel-constrained markets. It does not establish permitting, financing, construction, energized capacity or attractive public-equity economics.",
+      "verification": "Read the full October 1 Reuters report carrying company statements. A bounded search did not locate an original company release; the 400 MW, term and schedule remain participant claims relayed by Reuters.",
+      "countercase": "The MOU may not convert to a financed and permitted project, generation proximity may not remove transmission or fuel constraints, and the standardized model may not produce repeatable economics.",
+      "nextTest": "Look for signed financing, permits, interconnection and fuel arrangements, construction start, and a named energized-capacity milestone.",
+      "provenance": {
+        "tracker": "ai-project-tracker",
+        "finder": "ChatGPT AI Project Tracker",
+        "table": "Bottlenecks",
+        "sourceId": "B-20261001-JERA-CHIBA-POWER-001",
+        "sourceVersion": "35edc829e244b5af984f7c29d64a8ea96149224a255c0bded80e33b7f2e72fc2",
+        "projectIds": [
+          "P-20261001-JERA-RHAELM-CHIBA"
+        ],
+        "originalSourceUrl": "https://www.reuters.com/business/energy/jera-teams-up-with-dell-rhaelm-ai-infrastructure-development-japan-2026-10-01/",
+        "originalDate": "2026-10-01",
+        "originalClaim": "The planned Chiba data center is sited beside JERA's thermal power station, with JERA expected to supply 400 MW for 15–25 years; the partners explicitly frame the standardized model as a way to reduce long AI-data-center lead times in a fuel-constrained market.",
+        "originator": "JERA / RHAELM / Dell",
+        "sourceQuality": "4",
+        "notes": "Easing is prospective: the long-term power plan is part of an MOU and does not prove that the site is permitted, financed, built or energized.",
+        "bottleneck": "Power",
+        "direction": "Easing"
+      },
+      "selectionReason": "Power-station-adjacent siting is a concrete speed-to-power mechanism directly relevant to AI infrastructure, while the MOU-stage limitations are material.",
+      "corroborationNote": "Reused Project Tracker evidence; Reuters relays participant statements and the handoff does not create independent corroboration."
     }
   ],
   "rankings": [
@@ -18270,7 +18307,7 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-03T01:00:04Z",
+    "asOf": "2026-10-03T13:51:12Z",
     "kind": "daily-expert-scan",
     "completedChannels": [
       "information-bottleneck",
@@ -18283,14 +18320,13 @@
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "The same-day builder lane and its RLM record were reused for deduplication and not rescanned or counted as independent support.",
-      "The September 27 Information Bottleneck Chris Manning episode was screened at the official page; its accessible description concerns language, pragmatics and representations and did not expose a new decision-relevant AI-infrastructure mechanism for this lane.",
-      "The September 30 OCP summit-track post was an event-program announcement, not qualifying operating or technical evidence. Latent Space, Dwarkesh and GPU MODE yielded no additional qualifying post-cutoff item in the bounded incremental check.",
-      "The September 28 a16z essay supplied one qualifying forward-looking value-capture thesis about private OpenAI; no public-company beneficiary, adoption proof or investment recommendation was inferred.",
+      "The expert pass reused the same-day builder reconciliation; no source was counted twice.",
+      "No additional qualifying post-cutoff original item appeared in the bounded Information Bottleneck, Latent Space, OCP, Dwarkesh, GPU MODE or a16z checks.",
       "The weekly thesis review review-20260927-weekly remains complete and is next due 2026-10-04. Valuation was not refreshed because no decision-relevant company evaluation required it.",
-      "Project Tracker D3 read all 68 Bottlenecks and 26 Claims. The added claim is Open, so it is not resolved evidence; no eligible source version changed, the pending backlog remains 63, and no row was imported, linked or skipped.",
+      "Project Tracker D3 read all 69 Bottlenecks and 27 Claims. One new Bottleneck source version was imported as company-statement evidence; the new Claim remains Open and was not treated as resolved evidence.",
+      "No original JERA/RHAELM/Dell release was located in the bounded check; Reuters carried the participant statements. The Project Tracker and Infrastructure record count as one evidence origin.",
       "Future Leaders, Grok intake, Innovation Atlas and Conviction remain separate preflights."
     ]
   },
-  "updatedAt": "2026-10-03T01:00:04Z"
+  "updatedAt": "2026-10-03T13:55:00Z"
 }
