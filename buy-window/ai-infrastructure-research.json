@@ -57,6 +57,13 @@
       "url": "https://www.synopsys.com/newsroom.html",
       "kind": "issuer-primary-source",
       "priority": "targeted-primary-source"
+    },
+    {
+      "id": "a16z",
+      "label": "a16z",
+      "url": "https://a16z.com/",
+      "kind": "investor-research",
+      "priority": "core"
     }
   ],
   "observations": [
@@ -761,6 +768,34 @@
       "freshness": "new-after-prior-engineering-cutoff",
       "itemId": "latent-space-rlm-20261002",
       "paperUrl": "https://arxiv.org/abs/2512.24601"
+    },
+    {
+      "id": "expert-20261002-a16z-openai-platform-distribution",
+      "channel": "a16z",
+      "sourceId": "a16z",
+      "sourceLane": "expert",
+      "title": "a16z argues AI value will accrue to behavior-creating platforms, not interchangeable models",
+      "sourceTitle": "OpenAI Understands Something Important and Rare",
+      "url": "https://a16z.com/openai-understands-something-important-and-rare/",
+      "speaker": "David George",
+      "role": "General partner, Andreessen Horowitz Growth",
+      "publishedDate": "2026-09-28",
+      "observedAt": "2026-10-03T01:00:04Z",
+      "contentAccess": "article",
+      "independenceGroup": "andreessen-horowitz",
+      "summary": "George argues that frontier models are unusually substitutable and that durable advantage will come from creating new customer behavior, broad distribution and a programmable platform that learns which primitives users value.",
+      "claim": "The essay forecasts that OpenAI is more likely to keep leading because its distribution and platform strategy create feedback about user behavior, while model quality, chips and cost performance remain necessary but insufficient and switching costs at the model layer remain weak.",
+      "interpretation": "This is a consequential value-capture hypothesis for the AI stack: the scarce asset may shift from raw model capability toward agent runtimes, security constraints, workflow primitives and distribution. OpenAI is private, and the article does not establish a public-equity beneficiary.",
+      "beneficiaryTickers": [],
+      "countercase": "The thesis is an investor opinion about a private company, not independent operating evidence. Competing labs, hyperscalers and application vendors can imitate platform features; OpenAI's capital intensity, pricing power, governance and eventual public-market economics are unresolved.",
+      "nextTest": "Track whether third-party builders adopt persistent OpenAI runtime primitives, whether workloads resist model substitution, and whether gross-margin and retention evidence shows platform economics rather than temporary distribution lead.",
+      "evidenceType": "investor-forward-looking-thesis",
+      "status": "evidence",
+      "location": "Sections 'True platforms are rare but worth it' and 'In a world of abundance, the causality goes backwards.'",
+      "incentives": "David George leads a16z Growth; a16z discloses that personnel views are investment-related opinions and may involve portfolio interests. The essay does not disclose a direct OpenAI holding.",
+      "verification": "Read the full September 28 a16z article. The thesis and quoted platform reasoning are verified as George's published view; competitive outcomes and economics were not independently validated.",
+      "freshness": "new-after-prior-expert-cutoff",
+      "itemId": "a16z-openai-platform-20260928"
     }
   ],
   "evidence": [
@@ -18235,24 +18270,27 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-02T12:44:10Z",
-    "kind": "builder-engineering-scan",
+    "asOf": "2026-10-03T01:00:04Z",
+    "kind": "daily-expert-scan",
     "completedChannels": [
       "information-bottleneck",
       "latent-space",
       "ocp",
       "dwarkesh",
-      "gpu-mode"
+      "gpu-mode",
+      "a16z"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "Incremental review after the October 1 engineering cutoff found one qualifying primary-source item: the October 2 Latent Space interview with Recursive Language Models first author Alex Zhang and its linked paper.",
-      "The harness architecture and reported benchmark results are author disclosures; no independent production reproduction or realized economics were available.",
-      "The power-family primary-source check reviewed the September 30 OCP power-track program and current Schneider Electric and Vertiv official materials but found no new qualifying deployed mechanism or milestone.",
-      "No additional qualifying post-cutoff item was found in the bounded Information Bottleneck, OCP, Dwarkesh or GPU MODE checks.",
-      "No score, rank, thesis, valuation, Company Universe or legacy a16z ledger change resulted."
+      "The same-day builder lane and its RLM record were reused for deduplication and not rescanned or counted as independent support.",
+      "The September 27 Information Bottleneck Chris Manning episode was screened at the official page; its accessible description concerns language, pragmatics and representations and did not expose a new decision-relevant AI-infrastructure mechanism for this lane.",
+      "The September 30 OCP summit-track post was an event-program announcement, not qualifying operating or technical evidence. Latent Space, Dwarkesh and GPU MODE yielded no additional qualifying post-cutoff item in the bounded incremental check.",
+      "The September 28 a16z essay supplied one qualifying forward-looking value-capture thesis about private OpenAI; no public-company beneficiary, adoption proof or investment recommendation was inferred.",
+      "The weekly thesis review review-20260927-weekly remains complete and is next due 2026-10-04. Valuation was not refreshed because no decision-relevant company evaluation required it.",
+      "Project Tracker D3 read all 68 Bottlenecks and 26 Claims. The added claim is Open, so it is not resolved evidence; no eligible source version changed, the pending backlog remains 63, and no row was imported, linked or skipped.",
+      "Future Leaders, Grok intake, Innovation Atlas and Conviction remain separate preflights."
     ]
   },
-  "updatedAt": "2026-10-02T12:44:10Z"
+  "updatedAt": "2026-10-03T01:00:04Z"
 }
