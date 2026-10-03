@@ -598,7 +598,19 @@
         "lessons/057-02.tsfrag",
         "lessons/057-03.tsfrag"
       ]
+    },
+    {
+      "number": 58,
+      "module": "Module 6: Training, Inference and Useful AI Economics",
+      "title": "Model Architecture and Serving Efficiency — Why Some Models Need Less Work per Answer",
+      "date": "2026-10-03",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/058-01.tsfrag",
+        "lessons/058-02.tsfrag",
+        "lessons/058-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-02T11:03:51.350Z"
+  "updatedAt": "2026-10-03T11:13:01.611Z"
 }
