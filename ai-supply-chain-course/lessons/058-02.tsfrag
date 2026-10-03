@@ -1,0 +1,36 @@
+If the full sparse model fits on one accelerator, the system can keep every expert there. If it does not, the experts must be divided across several accelerators or moved from slower memory. NVIDIA's TensorRT-LLM documentation describes expert parallelism: each device holds some experts, and token data is sent to the device holding the selected expert before the result returns.
+
+That connects architecture to the network lessons. The router saves computation, but it can create communication. A token assigned to a remote expert must cross an interconnect, and synchronized layers may wait for the slowest exchange. Fast local HBM, GPU-to-GPU links and serving software jointly determine whether sparse arithmetic becomes lower latency.
+
+Routing can also make a batch uneven. Suppose 100 tokens reach a layer and half are sent to one popular expert while other experts receive only a few. The busy device becomes the bottleneck even though the cluster has idle expert capacity elsewhere. Training techniques encourage balanced routing, and serving systems can distribute experts carefully, but the workload's actual token choices still matter.
+
+This is why active parameter count is not a bill. The Mixtral paper explicitly notes that active parameters track inference computation more closely, while memory cost follows the larger total parameter count and hardware utilization adds another constraint.
+
+Which architecture serves more efficiently?
+
+Return to the two candidate models. The sparse model can win if its lower computation per token produces the required answer quality with high throughput and if batches keep experts busy. It can lose if total weights force the service onto more accelerators, routing adds too much communication or small batches leave expert hardware poorly used.
+
+The dense model may therefore be the better low-latency choice on a compact system even though it activates more of its weights. The sparse model may be the better high-throughput choice on a well-connected cluster. Architecture names alone do not settle the comparison.
+
+Prediction check
+
+Two models each activate 20 billion parameters per token. Model A has 20 billion total parameters; Model B has 100 billion total parameters spread across experts. Must they have the same serving cost?
+
+Answer: No. Their arithmetic per token may be closer than their total sizes suggest, but Model B needs access to far more stored weights and may require more accelerators and inter-device routing. Model quality, batch size, cache use, precision and software efficiency can widen the difference further. The tempting mistake is to compare only active parameters.
+
+For an operator, the useful test is a representative workload at the promised latency: measure answer quality, tokens per second, time between tokens, memory footprint, accelerator count, power and routing balance. For an investor, sparse models can shift value toward memory capacity, fast interconnects and optimized serving software even while reducing arithmetic per token.
+
+Dense models apply one shared path to every token. Mixture-of-experts models choose among several paths, trading lower active computation for more stored weights, routing and possible communication. Serving efficiency is the result of that whole system, not the parameter count printed beside the model name.
+
+Sources
+
+Fedus, Zoph and Shazeer, Switch Transformers — sparse activation, routing and communication costs: https://jmlr.org/papers/v23/21-0998.html
+
+Jiang et al., Mixtral of Experts — total versus active parameters, routing, memory cost and hardware utilization: https://arxiv.org/abs/2401.04088
+
+NVIDIA, TensorRT-LLM Expert Parallelism — distributing experts and token data across GPUs: https://nvidia.github.io/TensorRT-LLM/advanced/expert-parallelism.html
+
+Rajbhandari et al., DeepSpeed-MoE — systems challenges and inference design for large mixture-of-experts models: https://arxiv.org/abs/2201.05596
+
+Next lesson
+

@@ -1,0 +1,45 @@
+import type { Lesson } from "./lessons";
+
+export const lesson058 = {
+  number: 58,
+  module: "Module 6: Training, Inference and Useful AI Economics",
+  title: "Model Architecture and Serving Efficiency — Why Some Models Need Less Work per Answer",
+  date: "2026-10-03",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 053: Installed equipment becomes usable capacity only after the complete cluster passes realistic workload and failure tests.
+
+Lesson 054: Useful AI capacity arrives only when power, cooling, complete servers, software and testing are all ready together.
+
+Lesson 055: Training changes a model's weights, while inference uses fixed weights to answer requests, so the two jobs stress systems differently.
+
+Lesson 056: An AI response first reads the prompt, then generates tokens one by one while keeping request-specific working data in a KV cache.
+
+Lesson 057: Batching lets one accelerator serve several requests together, raising total output but sometimes making each user wait longer.
+
+The smaller workload needs the larger machine
+
+Imagine an AI service choosing between two language models that produce equally useful answers for its customers. Model Dense uses the same large set of calculations for every token. Model Sparse contains more total weights, but sends each token through only a few selected sections. The sparse model performs less arithmetic per token, yet requires more accelerator memory to hold its weights.
+
+This is an illustrative comparison, not a benchmark of named models. It exposes the central architectural tradeoff: the amount of a model stored and the amount activated for one token are different quantities.
+
+Dense models use the same path
+
+A transformer repeatedly applies attention and feed-forward blocks as tokens move through its layers. In a dense model, every token uses the same feed-forward block in a given layer. If that block contains a weight, the model uses it for every token passing through.
+
+This regularity is valuable. The serving system knows which weights it needs, can arrange large matrix operations predictably and does not have to route tokens among alternative blocks. But making the dense model wider or deeper generally increases the calculations required for every token.
+
+That matters during decode. Lesson 056 showed that generation advances one token at a time and often spends much of each step moving weights and request data through memory. More weights used per token means more arithmetic and usually more weight data to read during each step.
+
+Mixture-of-experts models choose a path
+
+A sparse mixture-of-experts model replaces some dense feed-forward blocks with several alternatives called experts. A small router examines each token's current numerical representation and selects a limited number of experts to process it. Other experts in that layer do no calculation for that token.
+
+Mixtral 8x7B provides a concrete published example. Each mixture layer has eight experts, and the router selects two for each token. The model has about 47 billion total parameters but uses about 13 billion active parameters for one token because shared parts of the model still run alongside the selected experts. Those figures describe that model, not every mixture-of-experts design.
+
+The general mechanism is conditional computation: store many possible sets of weights, then use only the selected subset for each token. This can give a model more capacity without making every token pay for every expert.
+
+An illustrative eight-expert layer makes the intuition simpler. Suppose its experts are the same size and the router selects two. The expert portion performs roughly one quarter of the arithmetic it would perform if all eight experts ran. But the service still needs access to all eight expert weight sets because the next token may choose any of them. Fewer active experts reduces computation; it does not shrink stored weights to one quarter.
+
+Memory and communication collect the bill
+
