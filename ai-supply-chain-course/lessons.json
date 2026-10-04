@@ -610,7 +610,18 @@
         "lessons/058-02.tsfrag",
         "lessons/058-03.tsfrag"
       ]
+    },
+    {
+      "number": 59,
+      "module": "Module 6: Training, Inference and Useful AI Economics",
+      "title": "Cost per Useful Output — Why the Cheapest Token Is Not Always the Best Deal",
+      "date": "2026-10-04",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/059-01.tsfrag",
+        "lessons/059-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-03T11:13:01.611Z"
+  "updatedAt": "2026-10-04T11:11:49.526Z"
 }
