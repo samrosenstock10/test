@@ -1,0 +1,41 @@
+Why token cost can point the wrong way
+
+Tokens remain useful for measuring work, but they do not all create equal customer value. A long prompt adds prefill work and a larger KV cache. A long answer adds repeated decode steps. One model may need more tokens, retries or tool calls to finish the same task.
+
+Batching creates another trap. Lesson 057 showed that a larger batch can lower hardware cost per token by raising throughput. If the added queue delay breaks the response-time promise, some of those cheaper tokens no longer belong in the useful-output denominator. Google Cloud describes an inference efficient frontier: for a fixed compute budget, operators trade latency against throughput unless better hardware, algorithms or scheduling move the frontier outward.
+
+Model architecture changes both sides of the fraction. A sparse model may use less arithmetic for each token, as Lesson 058 explained, yet require more accelerators to hold its experts or more communication to route tokens. A smaller model may cost less to run but fail more tasks. A larger model may be cheaper per successful task if its higher acceptance rate avoids retries and review. None of these outcomes is automatic; they must be measured on the same workload.
+
+Prediction check
+
+System A lowers cost per token by 30%, but users ask it to retry twice as often. Has cost per useful output improved?
+
+Answer: Not enough information. We need tokens per attempt, acceptance rates after retries, latency and the full cost boundary. The tempting mistake is to treat a cheaper unit of computation as a cheaper completed job. If extra attempts consume more tokens or still fail the acceptance rule, the product may cost more despite the lower token price.
+
+Measure the complete service
+
+An operator can compare systems in five steps: choose a representative workload; define quality and latency requirements; run each candidate at realistic traffic; count accepted outputs; and divide fully loaded cost by that count. Report quality, tail latency and throughput beside the cost so a team can see which constraint changed.
+
+For an investor, falling cost per token can expand AI usage, but it can also reduce the hardware required for one task. Total infrastructure demand depends on both effects: resources per useful output multiplied by the number of useful outputs customers want. Suppliers capture value when they remove a binding constraint in that equation and retain bargaining power, not merely when their component appears in every server.
+
+The reusable rule is simple: measure the result the customer accepts, then trace every model, software and physical-system cost required to produce it.
+
+Sources
+
+Google Cloud, Five Techniques to Reach the Efficient Frontier of LLM Inference — latency, throughput and compute-budget tradeoffs: https://cloud.google.com/blog/topics/developers-practitioners/five-techniques-to-reach-the-efficient-frontier-of-llm-inference
+
+Google Cloud, Selecting GPUs for LLM Serving on GKE — serving throughput within a latency bound: https://cloud.google.com/blog/products/ai-machine-learning/selecting-gpus-for-llm-serving-on-gke/
+
+MLCommons, MLPerf Inference documentation — accuracy, performance scenarios and latency constraints: https://docs.mlcommons.org/inference/
+
+OpenAI, Evaluation Best Practices — task-specific evaluations and representative test data: https://developers.openai.com/api/docs/guides/evaluation-best-practices
+
+Liang et al., Holistic Evaluation of Language Models — multi-scenario, multi-metric model evaluation: https://arxiv.org/abs/2211.09110
+
+Next lesson
+
+Lesson 060: Cross-Stack Economics Case — What Actually Lowers the Cost of a Useful AI Service?
+
+We will compare two complete serving systems and trace how model choice, accelerators, memory, networking, power and software combine into one operating result.`,
+} satisfies Lesson;
+
