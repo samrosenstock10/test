@@ -1,0 +1,47 @@
+import type { Lesson } from "./lessons";
+
+export const lesson059 = {
+  number: 59,
+  module: "Module 6: Training, Inference and Useful AI Economics",
+  title: "Cost per Useful Output — Why the Cheapest Token Is Not Always the Best Deal",
+  date: "2026-10-04",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 054: An AI site becomes useful only when the final missing requirement—chips, power, cooling, software or testing—is ready.
+
+Lesson 055: Training changes model weights, while inference uses fixed weights to answer people, so each job needs a different operating plan.
+
+Lesson 056: A response reads the prompt first, then writes tokens one by one while storing request-specific data in the KV cache.
+
+Lesson 057: Batching raises total output by serving several requests together, but larger batches and queues can make each user wait longer.
+
+Lesson 058: Sparse models may calculate with only part of their stored weights, but they can need more memory and communication to serve efficiently.
+
+The cheaper model produces the more expensive result
+
+Imagine a company uses an AI model to extract fields from 1,000 invoices. Configuration Fast costs $4 to run and produces 1,000 answers, but only 700 meet the company’s accuracy, format and response-time requirements. Configuration Reliable costs $5 and produces 1,000 answers, of which 950 pass.
+
+These are illustrative numbers, not a benchmark of named systems. Fast costs less per attempted answer: $0.004 versus $0.005. But divide by accepted results and the order reverses. Fast costs about $0.0057 per useful output, while Reliable costs about $0.0053. Correcting errors or rerunning failed tasks would widen the difference if those costs were included.
+
+The example reveals the denominator that matters. A generated token is physical work performed. A useful output is work that satisfies the purpose for which the service exists.
+
+Define “useful” before measuring cost
+
+For invoice extraction, usefulness might mean that required fields are correct, the response follows a machine-readable format and it arrives within five seconds. A coding assistant, search system and customer-support tool need different tests. There is no universal useful-output metric.
+
+The service therefore needs a task-specific acceptance rule. It should be tested on representative inputs, including the difficult cases users actually send. OpenAI’s evaluation guidance similarly recommends task-specific evaluations that reflect real-world input distributions. Human review, fixed-answer checks or model-based graders may help, but each can make mistakes and should be validated for the job.
+
+Performance benchmarks use the same underlying discipline. MLPerf Inference reports system performance only under defined model, accuracy and latency requirements. Driving more queries through a system does not create a valid result if the run misses its latency constraint. The lesson is broader than that benchmark: throughput counts only inside the boundary that makes the output usable.
+
+Choose the cost boundary
+
+The numerator also needs a boundary. For a rented serving system, an operator might begin with accelerator, CPU, memory and networking charges. An owned system must allocate equipment cost over its useful life and include power, cooling, maintenance and operations. Either approach should account for idle capacity reserved to handle traffic bursts or failures.
+
+The product-level boundary can be wider. Retrieval, storage, tool calls, safety checks, retries and human review may cost more than the model call. Comparing one vendor’s token price with another system’s fully loaded cost would mix boundaries and produce a false conclusion.
+
+A practical definition is:
+
+Cost per useful output = total cost inside the stated boundary ÷ outputs that pass the stated acceptance rule
+
+State the time period, workload and service target beside the result. Otherwise a precise-looking number may describe an experiment that the real product never runs.
+
