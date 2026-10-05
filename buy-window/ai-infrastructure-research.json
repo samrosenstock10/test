@@ -2506,6 +2506,41 @@
       },
       "selectionReason": "Power-station-adjacent siting is a concrete speed-to-power mechanism directly relevant to AI infrastructure, while the MOU-stage limitations are material.",
       "corroborationNote": "Reused Project Tracker evidence; Reuters relays participant statements and the handoff does not create independent corroboration."
+    },
+    {
+      "id": "project-b-20260825-figure-data-001-c7803dd3d211637d",
+      "title": "Figure Index proprietary physical-data pipeline",
+      "url": "https://www.figure.ai/news/introducing-index",
+      "kind": "project-bottleneck",
+      "independenceGroup": "figure-ai",
+      "publishedDate": "2026-08-25",
+      "observedAt": "2026-10-05T13:34:30Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "Figure says it built an exclusive human-video pipeline for Helix after outside vendors failed its throughput, diversity and quality requirements; the system combines automated filtering, human fraud review, embedding-based deduplication and rebalancing, task quotas and hierarchical captions.",
+      "claim": "Figure reports 264,000 downloads, 44,000 weekly active users, 16 million uploaded videos and collection of about 30 minutes of video per second, alongside a commitment to spend more than $1 billion on data and compute over the following 12 months.",
+      "interpretation": "Our inference: proprietary collection, curation and task-balancing can ease the physical-data bottleneck for humanoid learning. The disclosure does not establish better robot task performance, production reliability or attractive economics.",
+      "verification": "Read the full August 25 Figure article. All scale, quality and spending claims are company-reported and were not independently reproduced.",
+      "countercase": "Large upload volume can contain low-value or biased data; creator incentives, filtering and captions may not translate into better policies, safer deployment or durable advantage, while the spending commitment may raise capital intensity.",
+      "nextTest": "Seek independent Helix benchmark or deployment results that connect Index-sourced data to task success, error rates, iteration speed and cost versus external or synthetic-data alternatives.",
+      "provenance": {
+        "tracker": "ai-project-tracker",
+        "finder": "ChatGPT AI Project Tracker",
+        "table": "Bottlenecks",
+        "sourceId": "B-20260825-FIGURE-DATA-001",
+        "sourceVersion": "c7803dd3d211637db98dad507f2e2ce713de0bff3fea94ddf913be08db4bb7ec",
+        "projectIds": [],
+        "originalSourceUrl": "https://www.figure.ai/news/introducing-index",
+        "originalDate": "2026-08-25",
+        "originalClaim": "Figure says prior vendors missed Helix's throughput, diversity and quality requirements, so it built an exclusive creator pipeline with automated filtering, human fraud review, embedding-based deduplication and rebalancing, task quotas and hierarchical captions.",
+        "originator": "Figure AI",
+        "sourceQuality": "5",
+        "notes": "Company operating disclosure; no independent evidence yet links the reported dataset scale to robot performance or economics.",
+        "bottleneck": "Data",
+        "direction": "Easing"
+      },
+      "selectionReason": "The pipeline is a concrete mechanism for addressing embodied-AI data scarcity, but the issuer-reported scale and performance link require independent validation.",
+      "corroborationNote": "Reused Project Tracker evidence; the handoff and Figure article are the same company-originated source and do not create independent corroboration."
     }
   ],
   "rankings": [
@@ -22504,38 +22539,27 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-04T13:30:48Z",
+    "asOf": "2026-10-05T13:34:30Z",
     "kind": "daily-expert-scan",
     "completedChannels": [
-      "information-bottleneck",
-      "latent-space",
       "ocp",
-      "dwarkesh",
       "gpu-mode",
       "a16z"
     ],
-    "partialChannels": [],
+    "partialChannels": [
+      "information-bottleneck",
+      "latent-space",
+      "dwarkesh"
+    ],
     "unavailableChannels": [],
-    "exponentialView": {
-      "logicalWeek": "2026-10-04",
-      "checkedAt": "2026-10-04T13:30:48Z",
-      "status": "complete",
-      "reviewedItemUrls": [
-        "https://www.exponentialview.co/p/ev-603"
-      ],
-      "gaps": [
-        "Authorized Gmail search found no newer Exponential View newsletter after 2026-09-26; the latest identifiable issue remained the already-reviewed 2026-09-27 edition."
-      ]
-    },
     "limitations": [
-      "The same-day builder lane and prior originating items were reused for deduplication and were not rescanned or counted as independent support.",
-      "Bounded official-source checks found no qualifying post-cutoff item from The Information Bottleneck, Latent Space, Dwarkesh, GPU MODE, Open Compute Project or a16z.",
-      "Muse's Oracle/Vantage Wisconsin memo repeated the existing Project Lighthouse lead through The Register/Aterio. The underlying Wisconsin regulatory docket was not retrieved, so it remained pending source verification and was not added as a new originating observation.",
-      "The Sunday review assessed all 18 scored companies. No new evidence met the threshold for a score, rank, thesis, core-eligibility or valuation-assumption change.",
-      "Valuation was not refreshed because no decision-relevant company evaluation required it; all prior valuation and price source dates remain unchanged.",
-      "Project Tracker D3 re-read the 69 Bottlenecks and 27 Claims state. No eligible source version changed; the JERA bottleneck and claim remain Reuters-sourced at current canonical quality, so no row was re-imported or upgraded.",
-      "Future Leaders, Grok intake, Innovation Atlas and Conviction are governed by separate preflights and do not complete this source lane."
+      "The Information Bottleneck published an October 5 Yuandong Tian episode, but only the official summary and timeline were accessible; no transcript or audio passage was available, so no expert-opinion observation was created.",
+      "Latent Space and Dwarkesh exposed no usable post-cutoff archive item in the bounded check. Open Compute Project's newest visible September 30 program and September 22 demo-catalog posts predated the expert cutoff and did not add deployed evidence.",
+      "GPU MODE had no commit after the October 3 cutoff. a16z's October 2 manufacturing essay did not supply a new decision-relevant AI-infrastructure mechanism for this lane.",
+      "The October 4 weekly thesis review is already complete and was not repeated. Valuation was not refreshed because no decision-relevant company evaluation required it.",
+      "Project Tracker D3 read 70 Bottlenecks and 27 Claims and imported one new source version as limited Figure company-statement evidence. No score, rank, thesis, valuation or Company Universe change resulted.",
+      "Future Leaders, Grok intake, Innovation Atlas and Conviction remain separate preflights."
     ]
   },
-  "updatedAt": "2026-10-04T13:30:48Z"
+  "updatedAt": "2026-10-05T13:34:30Z"
 }
