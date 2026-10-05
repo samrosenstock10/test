@@ -77,6 +77,13 @@
       "title": "Cost per Useful Output — Why the Cheapest Token Is Not Always the Best Deal",
       "bodySha256": "8dd23977efe62c50b624b9ff9c3d5b07e645da6250aa7b8ff2da8615f2cf322e",
       "body": "Lesson 059 explains why the cheapest token does not always produce the cheapest useful result. A useful output must meet the actual task’s quality, format and response-time requirements. If a cheaper model makes more mistakes, needs more retries or responds too slowly, its low token price can be misleading. The right calculation divides all costs inside a clearly stated boundary by the number of outputs that actually pass the acceptance rule. Those costs may include accelerators, memory, networking, power, cooling, spare capacity, software, retries and human review. Operators should compare systems on representative traffic while measuring quality, latency, throughput and fully loaded cost together. The key principle is to price the completed job the customer accepts, not just the computation used to attempt it."
+    },
+    {
+      "number": 60,
+      "date": "2026-10-05",
+      "title": "Cross-Stack Economics Case — What Actually Lowers the Cost of a Useful AI Service?",
+      "bodySha256": "76fb6daca43cc648a220ae8cef52cc8dbf62d802134ade3c25b81fd1414d54fe",
+      "body": "Lesson 060 compares two complete AI services instead of judging only their models or accelerators. A smaller system can cost less for each attempt but still cost more for the finished job if too many answers fail and need human review. A larger system may use more memory, networking, power and cooling, yet produce more accepted results and use its hardware more effectively. Model design decides how much calculation, memory movement and communication each attempt requires. Scheduling software also matters because it controls how much installed hardware completes useful work without breaking the response-time promise. An improvement lowers cost only when it removes the actual bottleneck, whether that is computation, memory, networking, queueing, power, cooling or answer quality. The main lesson is to divide all physical and operating costs by completed results that meet the customer’s requirements."
     }
   ]
 }
