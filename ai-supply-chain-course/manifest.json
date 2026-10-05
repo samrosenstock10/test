@@ -610,7 +610,30 @@
         "lessons/058-02.tsfrag",
         "lessons/058-03.tsfrag"
       ]
+    },
+    {
+      "number": 59,
+      "module": "Module 6: Training, Inference and Useful AI Economics",
+      "title": "Cost per Useful Output — Why the Cheapest Token Is Not Always the Best Deal",
+      "date": "2026-10-04",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/059-01.tsfrag",
+        "lessons/059-02.tsfrag"
+      ]
+    },
+    {
+      "number": 60,
+      "module": "Module 6: Training, Inference and Useful AI Economics",
+      "title": "Cross-Stack Economics Case — What Actually Lowers the Cost of a Useful AI Service?",
+      "date": "2026-10-05",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/060-01.tsfrag",
+        "lessons/060-02.tsfrag",
+        "lessons/060-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-03T11:06:03.150Z"
+  "updatedAt": "2026-10-05T11:27:00.000Z"
 }
