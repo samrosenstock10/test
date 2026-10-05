@@ -1,0 +1,51 @@
+import type { Lesson } from "./lessons";
+
+export const lesson060 = {
+  number: 60,
+  module: "Module 6: Training, Inference and Useful AI Economics",
+  title: "Cross-Stack Economics Case — What Actually Lowers the Cost of a Useful AI Service?",
+  date: "2026-10-05",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 055: Training changes model weights, while inference uses fixed weights to answer people, so each job needs a different operating plan.
+
+Lesson 056: A response reads the prompt first, then writes tokens one by one while storing request-specific data in the KV cache.
+
+Lesson 057: Batching raises total output by serving several requests together, but larger batches and queues can make each user wait longer.
+
+Lesson 058: Sparse models may calculate with only part of their stored weights, but they can need more memory and communication to serve efficiently.
+
+Lesson 059: A cheap token can still produce an expensive result if too few answers meet the customer's quality and response-time requirements.
+
+The cheaper accelerator creates the more expensive service
+
+A company needs an AI service to review 1,000 support tickets during a busy hour. An answer is useful only if it chooses the correct action, follows the required format and arrives within four seconds.
+
+The team is choosing between two complete systems. System Compact uses a smaller dense model on two lower-cost accelerators. System Capable uses a larger mixture-of-experts model on four newer accelerators connected by fast links. Compact looks cheaper by every obvious hardware measure.
+
+These are illustrative systems and numbers, not benchmarks of named products. Follow them all the way to the completed job.
+
+Start with the model's physical work
+
+Compact's model fits in each accelerator's high-bandwidth memory, so each replica can answer independently. It uses fewer total weights and avoids sending tokens between expert devices. But it needs longer prompts and more generated tokens to reach the required quality, and difficult tickets often need a second attempt.
+
+Capable stores its experts across four accelerators. Each token activates only some experts, reducing arithmetic relative to using every stored weight. The serving system must still keep the full model available and route token data across the interconnect.
+
+Work per attempt is not determined by the accelerator alone. Model architecture, prompt length, output length, precision, KV-cache size and routing decide how much computation and data movement the hardware performs.
+
+Then ask whether the hardware stays useful
+
+Compact receives requests unevenly. To protect the four-second limit, its scheduler uses small batches and keeps spare capacity for bursts. Across the hour, its two accelerators average only 45% useful utilization. Some capacity is idle by design; removing it would allow queues to grow.
+
+Capable uses continuous batching. When one request finishes, another can join the running work instead of waiting for an entire batch to end. Its four accelerators average 70% useful utilization while meeting the latency target. Fast links matter because expert routing would otherwise leave devices waiting.
+
+Higher utilization means a larger share of installed capacity completes work inside the service target. Software has changed the economics of the physical system.
+
+Trace the operating bill
+
+Assume Compact's fully loaded cost for the hour is $18. That includes accelerators, host processors, memory, networking, electricity, cooling and reserved capacity. Capable costs $28 on the same boundary.
+
+Compact is cheaper per attempted ticket: 1.8 cents versus 2.8 cents.
+
+But only 700 Compact answers pass the quality, format and latency rule. Capable passes 950. Compact therefore costs about 2.6 cents per accepted AI output, while Capable costs about 2.9 cents. Compact is still slightly cheaper on this measure, although it leaves 250 more tickets unresolved.
+

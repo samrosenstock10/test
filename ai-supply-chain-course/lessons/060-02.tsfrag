@@ -1,0 +1,38 @@
+Now include the next required step. Failed tickets go to human review at an illustrative cost of 20 cents each. Compact sends 300 tickets to review, adding $60. Capable sends 50, adding $10. After review completes every ticket, Compact costs $78, or 7.8 cents per completed ticket. Capable costs $38, or 3.8 cents. The apparently expensive system is cheaper for the finished business process.
+
+This result depends on the stated boundary. If failures may be discarded without consequence, human review does not belong in the numerator. If review is required, excluding it hides real work.
+
+Where power and cooling enter
+
+Suppose Capable's accelerators draw more power at full load. That does not automatically make the service less efficient. Energy per useful output depends on power multiplied by time, then divided by accepted work. A faster system may use high power for fewer accelerator-hours; a slower one may draw less power but occupy hardware and cooling capacity longer.
+
+Peak demand creates a separate constraint. The facility must reserve enough instantaneous electrical and cooling capacity even if average energy use is modest. If Capable needs four tightly connected accelerators and the site lacks suitable rack power, cooling or network ports, its spreadsheet result is not deployable. Compact may win on time-to-capacity because it can run on available equipment.
+
+Which intervention actually lowers cost?
+
+Imagine an engineer reduces Capable's expert-routing traffic by 20%. Has the cost of useful output fallen?
+
+Answer: only if communication was limiting useful work. If accelerators were waiting for routed token data, the change can shorten service time and reduce accelerator-hours per useful output. If the bottleneck was model quality, memory capacity, queue delay or power availability, lower network traffic may not change the customer result.
+
+The same rule applies across the stack. Faster memory helps when weight or KV-cache movement is limiting. Better batching helps when idle hardware is limiting, but not if added queue time breaks the latency promise. A smaller model helps when reduced work outweighs lower acceptance. Better cooling can release facility capacity, but it does not repair poor scheduling.
+
+For an operator, compare representative traffic at the promised quality and tail latency. Record tokens per request, accelerator-hours, memory footprint, network traffic, energy, reserved capacity, retries and downstream review. Then divide the same cost boundary by the same accepted-output rule.
+
+For an investor, ask which supplier removes the binding constraint and whether the saving survives at the customer level. A component can improve its own benchmark while value moves to memory, networking, software, power equipment or human operations.
+
+The cross-stack lesson is simple: useful AI cost falls when less total physical and operational work is required for each accepted customer result, without violating the constraints that make the service usable.
+
+Sources
+
+Google Cloud, Five Techniques to Reach the Efficient Frontier of LLM Inference — latency, throughput and cost tradeoffs: https://cloud.google.com/blog/topics/developers-practitioners/five-techniques-to-reach-the-efficient-frontier-of-llm-inference
+
+NVIDIA Triton Inference Server, Batchers — dynamic batching and queue-delay controls: https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/user_guide/batcher.html
+
+NVIDIA TensorRT-LLM, Expert Parallelism — distributing experts and token data across GPUs: https://nvidia.github.io/TensorRT-LLM/advanced/expert-parallelism.html
+
+MLCommons, MLPerf Inference documentation — measuring performance under defined accuracy and latency constraints: https://docs.mlcommons.org/inference/
+
+OpenAI, Evaluation Best Practices — task-specific evaluations and representative test data: https://developers.openai.com/api/docs/guides/evaluation-best-practices
+
+Next lesson
+

@@ -1,0 +1,4 @@
+Lesson 061: Workload-to-Chip Requirements — How an AI Job Becomes a Chip Design Target
+
+We will begin the chip-design block by translating workload needs into targets for computation, memory, communication, power and cost.`,
+} satisfies Lesson;
