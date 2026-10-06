@@ -633,7 +633,19 @@
         "lessons/060-02.tsfrag",
         "lessons/060-03.tsfrag"
       ]
+    },
+    {
+      "number": 61,
+      "module": "Module 7: Designing Chips and Reading the Supply Chain",
+      "title": "Workload-to-Chip Requirements — How an AI Job Becomes a Chip Design Target",
+      "date": "2026-10-06",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/061-01.tsfrag",
+        "lessons/061-02.tsfrag",
+        "lessons/061-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-05T11:27:00.000Z"
+  "updatedAt": "2026-10-06T12:03:34.000Z"
 }
