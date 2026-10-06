@@ -84,6 +84,13 @@
       "title": "Cross-Stack Economics Case — What Actually Lowers the Cost of a Useful AI Service?",
       "bodySha256": "76fb6daca43cc648a220ae8cef52cc8dbf62d802134ade3c25b81fd1414d54fe",
       "body": "Lesson 060 compares two complete AI services instead of judging only their models or accelerators. A smaller system can cost less for each attempt but still cost more for the finished job if too many answers fail and need human review. A larger system may use more memory, networking, power and cooling, yet produce more accepted results and use its hardware more effectively. Model design decides how much calculation, memory movement and communication each attempt requires. Scheduling software also matters because it controls how much installed hardware completes useful work without breaking the response-time promise. An improvement lowers cost only when it removes the actual bottleneck, whether that is computation, memory, networking, queueing, power, cooling or answer quality. The main lesson is to divide all physical and operating costs by completed results that meet the customer’s requirements."
+    },
+    {
+      "number": 61,
+      "date": "2026-10-06",
+      "title": "Workload-to-Chip Requirements — How an AI Job Becomes a Chip Design Target",
+      "bodySha256": "919d088e235d56f8e29cd397a5ee871c090285e2255d7ace5a93041a7cf079ef",
+      "body": "Lesson 061 explains that a chip cannot be designed well from a vague request to make AI “faster.” The team must first define the customer result, such as answer quality, response time, number of users, reliability, power and cost. It then translates the AI workload into the amount of calculation, data storage, data movement and communication the hardware must support. The most important limit may be computation, memory or connections between chips, so adding more arithmetic units does not always improve the service. A workload that is waiting for model weights may benefit more from memory bandwidth or better data reuse. Designers turn these needs into tradeoffs among power, performance and chip area, while also considering packaging, software, yield and system cost. Every improvement uses something else: more memory consumes chip area, faster links use power and specialized units may be less useful when workloads change. The practical rule is to start with the accepted customer result, identify the binding physical constraint and only then decide what the chip should contain."
     }
   ]
 }
