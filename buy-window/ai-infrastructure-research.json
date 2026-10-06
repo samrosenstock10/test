@@ -796,6 +796,34 @@
       "verification": "Read the full September 28 a16z article. The thesis and quoted platform reasoning are verified as George's published view; competitive outcomes and economics were not independently validated.",
       "freshness": "new-after-prior-expert-cutoff",
       "itemId": "a16z-openai-platform-20260928"
+    },
+    {
+      "id": "expert-20261006-subscription-tokenomics",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "Subscription limits materially reshape AI-lab inference economics",
+      "sourceTitle": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+      "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+      "speaker": "Andrew Megalaa, Max Kan and Dylan Patel",
+      "role": "SemiAnalysis tokenomics researchers",
+      "publishedDate": "2026-10-05",
+      "observedAt": "2026-10-06T11:35:16Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis",
+      "summary": "SemiAnalysis reports that subscription plans can consume a disproportionate share of inference while compressing revenue per megawatt, and its metering tests found materially different value across providers and model tiers.",
+      "claim": "SemiAnalysis estimates subscriptions are about 10% of Anthropic revenue but consume over 40% of inference compute and lower blended revenue per megawatt by about $36 million. Its credit-meter experiments found Anthropic's mid-tier plans offered roughly five times OpenAI's API-equivalent value for the tested agentic workload, while OpenAI had halved token allowances on its $200 plan.",
+      "interpretation": "Our inference: AI-lab value capture depends on subscription throttling, workload mix, cache economics and willingness to trade margin for customer acquisition. This strengthens the need to model token economics and revenue per megawatt, but does not identify a public-company beneficiary or prove customer retention.",
+      "beneficiaryTickers": [],
+      "countercase": "API-equivalent value relies on list prices and an assumed workload, not actual user utility or audited lab economics. The revenue and margin estimates use proprietary models; providers can change limits dynamically, and the tests capture a dated snapshot.",
+      "nextTest": "Track independent repeat tests, actual utilization and churn after limit changes, provider gross-margin disclosures, and whether subscription mix materially changes inference demand or accelerator procurement.",
+      "evidenceType": "independent-metering-analysis",
+      "status": "evidence",
+      "location": "Public sections through “Two different approaches to increasing subscription margins,” especially methodology, OpenAI versus Anthropic and subscription-margin sections.",
+      "incentives": "SemiAnalysis sells access to its Tokenomics Model and Subscriptions Dashboard; the public article promotes those paid products.",
+      "verification": "Read the accessible October 5 article and experimental-method description. Anthropic independently announced increased five-hour usage limits with Opus 5.5, but SemiAnalysis's credit-meter results and lab financial estimates were not independently reproduced.",
+      "freshness": "same-day-public-article",
+      "itemId": "semianalysis-subscription-tokenomics-20261005"
     }
   ],
   "evidence": [
@@ -2541,6 +2569,24 @@
       },
       "selectionReason": "The pipeline is a concrete mechanism for addressing embodied-AI data scarcity, but the issuer-reported scale and performance link require independent validation.",
       "corroborationNote": "Reused Project Tracker evidence; the handoff and Figure article are the same company-originated source and do not create independent corroboration."
+    },
+    {
+      "id": "semianalysis-subscription-tokenomics-20261005",
+      "title": "SemiAnalysis measures subscription limits and their inference-economics impact",
+      "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+      "kind": "independent-analysis",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-10-05",
+      "observedAt": "2026-10-06T11:35:16Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "SemiAnalysis reports that subscription plans can consume a disproportionate share of inference while compressing revenue per megawatt, and its metering tests found materially different value across providers and model tiers.",
+      "claim": "SemiAnalysis estimates subscriptions are about 10% of Anthropic revenue but consume over 40% of inference compute and lower blended revenue per megawatt by about $36 million. Its credit-meter experiments found Anthropic's mid-tier plans offered roughly five times OpenAI's API-equivalent value for the tested agentic workload, while OpenAI had halved token allowances on its $200 plan.",
+      "interpretation": "Our inference: AI-lab value capture depends on subscription throttling, workload mix, cache economics and willingness to trade margin for customer acquisition. This strengthens the need to model token economics and revenue per megawatt, but does not identify a public-company beneficiary or prove customer retention.",
+      "verification": "Read the accessible October 5 article and experimental-method description. Anthropic independently announced increased five-hour usage limits with Opus 5.5, but SemiAnalysis's credit-meter results and lab financial estimates were not independently reproduced.",
+      "countercase": "API-equivalent value relies on list prices and an assumed workload, not actual user utility or audited lab economics. The revenue and margin estimates use proprietary models; providers can change limits dynamically, and the tests capture a dated snapshot.",
+      "nextTest": "Track independent repeat tests, actual utilization and churn after limit changes, provider gross-margin disclosures, and whether subscription mix materially changes inference demand or accelerator procurement.",
+      "corroborationNote": "The observation and evidence record are two canonical representations of the same SemiAnalysis origin and do not constitute independent corroboration."
     }
   ],
   "rankings": [
@@ -22539,27 +22585,21 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-05T13:34:30Z",
-    "kind": "daily-expert-scan",
+    "asOf": "2026-10-06T11:35:16Z",
+    "kind": "semianalysis-daily-scan",
     "completedChannels": [
-      "ocp",
-      "gpu-mode",
-      "a16z"
+      "semianalysis"
     ],
-    "partialChannels": [
-      "information-bottleneck",
-      "latent-space",
-      "dwarkesh"
-    ],
+    "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "The Information Bottleneck published an October 5 Yuandong Tian episode, but only the official summary and timeline were accessible; no transcript or audio passage was available, so no expert-opinion observation was created.",
-      "Latent Space and Dwarkesh exposed no usable post-cutoff archive item in the bounded check. Open Compute Project's newest visible September 30 program and September 22 demo-catalog posts predated the expert cutoff and did not add deployed evidence.",
-      "GPU MODE had no commit after the October 3 cutoff. a16z's October 2 manufacturing essay did not supply a new decision-relevant AI-infrastructure mechanism for this lane.",
-      "The October 4 weekly thesis review is already complete and was not repeated. Valuation was not refreshed because no decision-relevant company evaluation required it.",
-      "Project Tracker D3 read 70 Bottlenecks and 27 Claims and imported one new source version as limited Figure company-statement evidence. No score, rank, thesis, valuation or Company Universe change resulted.",
-      "Future Leaders, Grok intake, Innovation Atlas and Conviction remain separate preflights."
+      "The official SemiAnalysis archive added the October 5 subscription-tokenomics article after the prior source cutoff; its accessible methodology and public sections were reviewed.",
+      "The article's credit-meter results and lab financial estimates are SemiAnalysis analyses and were not independently reproduced. Anthropic independently announced higher five-hour limits with Opus 5.5.",
+      "The official weekly page still exposed the October 2 Engrams episode; inconsistent indexed references to a later episode were not treated as verified source coverage.",
+      "No matching direct or forwarded SemiAnalysis or Dylan Patel source email appeared in the seven-day Gmail search.",
+      "No qualifying legacy company thesis, public-company beneficiary, Company Universe admission, score, rank, weekly review or valuation change resulted.",
+      "The Project Tracker October 5 cycle remained independently complete."
     ]
   },
-  "updatedAt": "2026-10-05T13:34:30Z"
+  "updatedAt": "2026-10-06T11:35:16Z"
 }
