@@ -1,0 +1,2 @@
+We will follow a chip requirement through design software, reusable building blocks and verification to see why a correct idea is not yet manufacturable silicon.`,
+} satisfies Lesson;
