@@ -1,0 +1,38 @@
+This reconnects to Lesson 038: useful processor speed depends on feeding the arithmetic units. A benchmark must also preserve the real constraint. MLPerf Inference separates deployment scenarios and requires results to meet defined accuracy and latency rules. A chip target should state the workload and service limit beside any throughput number.
+
+The target becomes a set of tradeoffs
+
+Chip designers often summarize implementation goals as power, performance and area, or PPA. Performance must mean the relevant workload result, not only clock speed. Power affects heat, board design and how many accelerators a rack can support. Area is the amount of silicon used; a larger die can hold more compute and memory, but it generally yields fewer potential chips per wafer and exposes more area to defects.
+
+The full product target is wider than PPA. It can include memory, packaging, links, reliability, software compatibility, yield, launch date and system cost.
+
+These goals conflict. More on-chip memory reduces external transfers but consumes area. Wider links reduce communication delays but use power and silicon. Specialized units can make one operation efficient yet sit unused when models change.
+
+Prediction check
+
+A new model needs twice as much memory capacity but performs the same operations per token. Should the next chip automatically double its arithmetic units?
+
+Answer: no. The immediate requirement is to hold and feed the larger model. Extra arithmetic helps only if the compute units become the limiting resource. The more direct responses may be additional memory capacity, higher bandwidth, a different package, more chips working together or a software change that reduces memory use. The tempting mistake is to treat every larger model as primarily a compute problem.
+
+From requirement to a design that can be tested
+
+Before committing to silicon, teams model candidate architectures and run representative software. They estimate whether each design meets latency and throughput targets within power, area and cost limits. Verification must later prove that the implementation behaves correctly; tomorrow’s lesson follows that process.
+
+For an operator, this explains why similar peak specifications can produce different service results. For an investor, it prevents a shortcut from workload growth to supplier revenue. Value may move to compute, memory, links, packaging, design software or power depending on the binding requirement and supplier bargaining power.
+
+The reusable principle is simple: begin with the accepted customer result, translate it into operations and data movement, identify the binding constraint, and only then decide what the chip must contain.
+
+Sources
+
+Google Research, In-Datacenter Performance Analysis of a Tensor Processing Unit — production workloads, response-time requirements and workload-driven specialization: https://research.google/pubs/in-datacenter-performance-analysis-of-a-tensor-processing-unit/
+
+Synopsys, What Is Power, Performance and Area? — PPA definitions and design tradeoffs: https://www.synopsys.com/glossary/what-is-power-performance-area-ppa.html
+
+MLCommons, MLPerf Inference Benchmark Suite — deployment scenarios and performance measurement under defined constraints: https://github.com/mlcommons/inference
+
+NVIDIA, Hopper Architecture In-Depth — examples of compute, memory and interconnect features designed for AI and HPC workloads: https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/
+
+Next lesson
+
+Lesson 062: EDA, IP and Verification — How a Chip Design Becomes Something a Factory Can Build
+

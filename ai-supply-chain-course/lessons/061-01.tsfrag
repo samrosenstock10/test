@@ -1,0 +1,55 @@
+import type { Lesson } from "./lessons";
+
+export const lesson061 = {
+  number: 61,
+  module: "Module 7: Designing Chips and Reading the Supply Chain",
+  title: "Workload-to-Chip Requirements — How an AI Job Becomes a Chip Design Target",
+  date: "2026-10-06",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 056: An AI response first reads the prompt, then writes tokens one by one while keeping request data in the KV cache.
+
+Lesson 057: Batching lets one accelerator serve more requests together, but waiting for a larger batch can make each user wait longer.
+
+Lesson 058: Sparse models can reduce calculation per token, but they may need more memory and communication to keep all their experts available.
+
+Lesson 059: A cheap token can still produce an expensive result when too few answers meet the customer’s quality and response-time requirements.
+
+Lesson 060: The lowest-cost AI service is the system that completes useful customer work with the least total hardware and operational effort.
+
+A faster chip that misses the job
+
+Imagine a chip team receives a simple instruction: design an accelerator that makes an AI support assistant twice as fast.
+
+That instruction is not yet a chip requirement. “Faster” could mean shorter wait before the first token, more answers per hour, a shorter complete response or faster model training. A design that doubles peak arithmetic may improve one measure while leaving the customer’s actual delay unchanged.
+
+This is an illustrative design decision, not a specification for a named product. The chip team must translate the service into physical work before deciding what silicon to build.
+
+Start with the result the system must deliver
+
+Suppose the assistant must answer within four seconds, handle 10,000 simultaneous users, pass a quality test and fit inside available racks. Those requirements set boundaries for latency, throughput, accuracy, reliability, power and cost.
+
+The workload then describes prompt and answer lengths, model size, numerical precision, traffic patterns and how often accelerators must cooperate. Training would create a different workload because it also calculates and coordinates weight updates.
+
+A chip target therefore begins outside the chip: what job must finish, under what conditions and at what scale?
+
+Translate software into physical work
+
+The model turns each request into operations and data movement. Matrix multiplications create much of the arithmetic. Model weights, activations and the KV cache must move through registers, on-chip memory, high-bandwidth memory and sometimes links to other accelerators.
+
+Three questions reveal the pressure points:
+
+How much calculation must happen? This shapes computing units and supported numerical formats.
+
+How much data must be stored and moved? This shapes on-chip and external memory.
+
+How much work crosses a chip boundary? This shapes links and how several devices cooperate.
+
+Google’s original data-center TPU shows this translation. Google studied production inference workloads and emphasized predictable response time, matrix multiplication and energy efficiency. Its designers used a large matrix unit and software-managed memory instead of copying every feature of a general-purpose processor. Workload evidence justified what they emphasized and omitted.
+
+Find the binding constraint before adding hardware
+
+Return to the support assistant. Assume, illustratively, that its compute units spend much of their time waiting for model weights to arrive from memory. Doubling the number of arithmetic units could double the chip’s advertised peak operations, yet the added units would often remain idle.
+
+More memory bandwidth, better data reuse or a model that moves fewer bytes could help more. Additional arithmetic helps when computation is the limit; if several chips are waiting on one another, it can worsen the imbalance.
+
