@@ -2,6 +2,71 @@
   "schemaVersion": "1.2.0",
   "requestedAt": "2026-10-06T11:35:16Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
+  "sources": [
+    {
+      "id": "information-bottleneck",
+      "label": "The Information Bottleneck",
+      "url": "https://www.the-information-bottleneck.com/",
+      "kind": "podcast",
+      "priority": "core"
+    },
+    {
+      "id": "latent-space",
+      "label": "Latent Space",
+      "url": "https://www.latent.space/",
+      "kind": "podcast",
+      "priority": "core"
+    },
+    {
+      "id": "ocp",
+      "label": "Open Compute Project",
+      "url": "https://www.opencompute.org/",
+      "kind": "technical-talks",
+      "priority": "core"
+    },
+    {
+      "id": "dwarkesh",
+      "label": "Dwarkesh Podcast",
+      "url": "https://www.dwarkesh.com/",
+      "kind": "podcast",
+      "priority": "selective"
+    },
+    {
+      "id": "gpu-mode",
+      "label": "GPU MODE",
+      "url": "https://github.com/gpu-mode/lectures",
+      "kind": "technical-lectures",
+      "priority": "selective"
+    },
+    {
+      "id": "exponential-view",
+      "label": "Exponential View",
+      "url": "https://www.exponentialview.co/",
+      "kind": "economic-analysis",
+      "priority": "weekly-supporting"
+    },
+    {
+      "id": "semianalysis",
+      "label": "SemiAnalysis",
+      "url": "https://semianalysis.com/",
+      "kind": "technical-analysis",
+      "priority": "principal-forecast-guide"
+    },
+    {
+      "id": "synopsys",
+      "label": "Synopsys",
+      "url": "https://www.synopsys.com/newsroom.html",
+      "kind": "issuer-primary-source",
+      "priority": "targeted-primary-source"
+    },
+    {
+      "id": "a16z",
+      "label": "a16z",
+      "url": "https://a16z.com/",
+      "kind": "investor-research",
+      "priority": "core"
+    }
+  ],
   "observations": [
     {
       "id": "expert-20260920-frye-utilization-lead",
