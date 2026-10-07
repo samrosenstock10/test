@@ -1,0 +1,42 @@
+Functional verification tries to expose errors like this before manufacturing. Simulation runs test cases. Formal methods can prove specified properties across defined conditions. Equivalence checking tests whether a transformed design still matches its intended behavior.
+
+Physical signoff asks different questions. Can every critical signal arrive before its deadline? Do power and heat assumptions remain acceptable? Does the layout obey spacing and geometry rules for the selected manufacturing process? Does the physical layout match the intended circuit?
+
+A design can behave correctly in simulation yet miss timing after its wires are placed. It can meet timing but violate a foundry spacing rule. Verification is not one final test; it accumulates evidence across layers.
+
+The foundry process must be part of the design
+
+A factory cannot manufacture an abstract “advanced chip.” Each process has specific device models, allowed layers, geometries and design rules. The foundry provides design information that lets EDA tools evaluate the layout against that process.
+
+TSMC’s Open Innovation Platform illustrates the coordination required. It brings together foundry technology, certified EDA tools and process-specific IP so customers can produce files the fabrication process can build.
+
+This is why a new manufacturing node creates work beyond installing equipment. Tools, models, libraries and IP must be qualified for the process, and customer designs must close against its rules.
+
+The decision before tapeout
+
+Tapeout releases final design data for mask preparation and manufacturing. Errors found afterward may require changed design work, new masks and another manufacturing cycle.
+
+Suppose our accelerator passes synthesis and uses licensed, silicon-proven IP. Is it ready for tapeout?
+
+Answer: not necessarily. The integrated chip must still pass functional, timing, power and physical checks for its actual configuration and foundry process. The strongest evidence about each block does not automatically prove the assembled system.
+
+This creates an important business distinction. Synopsys, Cadence and Siemens EDA sell tools used throughout the flow; Arm and specialists license reusable IP; foundries supply process technology and design enablement. As chips and packages become harder to integrate, verified compatibility can become more valuable.
+
+Yet rising complexity does not guarantee equal economics for every supplier. Customers may build internal tools, negotiate broad licenses, use competing point products or adopt open-source components. Revenue depends on where a supplier is difficult to replace, how much risk it removes and how value is shared with customers.
+
+For an operator, a promising architecture is only the beginning of execution risk. For an investor, follow the dependency: which tools, IP and process files must work together before a wafer becomes a sellable product?
+
+Sources
+
+Synopsys, What Is Electronic Design Automation? — the design flow from hardware description and synthesis through place-and-route, verification and manufacturing checks: https://www.synopsys.com/glossary/what-is-electronic-design-automation.html
+
+TSMC, Open Innovation Platform — the foundry’s process, EDA, IP and design-service ecosystem: https://www.tsmc.com/english/dedicatedFoundry/oip
+
+Cadence, Conformal Technologies — equivalence checking and digital signoff: https://www.cadence.com/en_US/home/tools/digital-design-and-signoff/conformal-technologies.html
+
+Arm, Architecture and Licensing — processor architecture, IP products and licensing models for custom silicon: https://www.arm.com/architecture
+
+Next lesson
+
+Lesson 063: Design-to-Volume Timelines — Why a Finished Chip Design Still Takes Time to Reach Customers
+

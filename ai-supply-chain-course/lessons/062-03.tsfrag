@@ -1,0 +1,2 @@
+We will follow a design from tapeout through masks, wafer fabrication, packaging, testing and qualification to see why a finished design does not immediately become available product.`,
+} satisfies Lesson;
