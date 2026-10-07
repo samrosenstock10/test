@@ -91,6 +91,13 @@
       "title": "Workload-to-Chip Requirements — How an AI Job Becomes a Chip Design Target",
       "bodySha256": "919d088e235d56f8e29cd397a5ee871c090285e2255d7ace5a93041a7cf079ef",
       "body": "Lesson 061 explains that a chip cannot be designed well from a vague request to make AI “faster.” The team must first define the customer result, such as answer quality, response time, number of users, reliability, power and cost. It then translates the AI workload into the amount of calculation, data storage, data movement and communication the hardware must support. The most important limit may be computation, memory or connections between chips, so adding more arithmetic units does not always improve the service. A workload that is waiting for model weights may benefit more from memory bandwidth or better data reuse. Designers turn these needs into tradeoffs among power, performance and chip area, while also considering packaging, software, yield and system cost. Every improvement uses something else: more memory consumes chip area, faster links use power and specialized units may be less useful when workloads change. The practical rule is to start with the accepted customer result, identify the binding physical constraint and only then decide what the chip should contain."
+    },
+    {
+      "number": 62,
+      "date": "2026-10-07",
+      "title": "EDA, IP and Verification — How a Chip Design Becomes Something a Factory Can Build",
+      "bodySha256": "79c721d0b12fc76775dc0fb0a353ce48c0e89097a26e27e411bdc49d1d902e07",
+      "body": "Lesson 062 explains why a promising chip architecture is not yet a design a factory can build. EDA software turns engineers’ behavior descriptions into gates, places those gates, routes their wires, and checks the result against timing, power, and manufacturing rules. Reusable IP is a pre-designed block, such as a processor core or memory interface, that saves work but still must be integrated with the rest of the chip. Verification checks that the design behaves correctly, that transformed versions still match the intent, and that the physical layout can operate and be manufactured. A block that worked before can still fail when combined with new clocks, power, packaging, or neighboring logic. The foundry’s process models and design rules must therefore work with the chosen tools and IP before the final files are released at tapeout. The practical lesson is that tools, reusable blocks, verification, and foundry information must all fit together before an architecture can become sellable silicon."
     }
   ]
 }
