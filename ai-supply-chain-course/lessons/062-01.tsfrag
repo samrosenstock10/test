@@ -1,0 +1,53 @@
+import type { Lesson } from "./lessons";
+
+export const lesson062 = {
+  number: 62,
+  module: "Module 7: Designing Chips and Reading the Supply Chain",
+  title: "EDA, IP and Verification — How a Chip Design Becomes Something a Factory Can Build",
+  date: "2026-10-07",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 057: Batching lets an accelerator serve more requests together, but waiting for a larger batch can make each user wait longer.
+
+Lesson 058: Sparse models can use less calculation per token, but memory and communication can still limit their speed and cost.
+
+Lesson 059: A cheap token is not valuable if too few answers meet the customer’s quality and response-time needs.
+
+Lesson 060: The best AI system completes useful customer work with the least total hardware and operating effort.
+
+Lesson 061: A chip team should start with the customer result, find the physical bottleneck and then choose what the chip must contain.
+
+A correct idea is not yet a buildable chip
+
+Imagine the team from Lesson 061 has settled on an AI accelerator with a matrix engine, on-chip memory, a high-bandwidth memory interface and a chip-to-chip link. Models predict that it can meet the target workload.
+
+Can the team now send that architecture to a foundry?
+
+No. The architecture says what the chip should do. A foundry needs a precise physical layout that its process can manufacture. Between those points sits a chain of design software, reusable building blocks and checks. A mistake can turn an excellent architecture into unusable silicon.
+
+This is an illustrative design flow. Real flows differ by chip type, foundry process and company method.
+
+EDA turns intent into an implementation
+
+Electronic design automation, or EDA, is the software used to describe, transform and check a chip design. Engineers first express much of a digital design in a hardware description language. This register-transfer-level description, usually called RTL, specifies how data moves and how logic behaves over clock cycles.
+
+The description is still not a transistor map. Logic synthesis converts RTL into a network of gates. Physical-design tools place those gates and route their wires. Other tools estimate timing and power and check the foundry’s manufacturing rules.
+
+In simplified form:
+
+Architecture → RTL → gate network → placed and routed layout → verified tapeout files
+
+The arrows are not one-way handoffs. If the memory controller misses timing, wiring is too congested or power exceeds the package limit, the team may revise the layout, RTL or architecture. EDA makes this search manageable.
+
+IP saves work, but it does not remove integration risk
+
+The team probably will not design every block from scratch. Semiconductor intellectual property, or IP, is a reusable design block supplied with the information needed to integrate it. A team might license a processor core, memory interface or PCIe controller while designing its own matrix engine.
+
+This avoids repeated design and verification work. Arm, for example, licenses processor and system IP so customers can build custom silicon without creating a new CPU implementation for every product.
+
+But “verified IP” does not mean “verified chip.” A memory interface proven in one process or configuration must still work with this chip’s clocking, power plan, package and neighboring logic. Two blocks can each be correct and still fail at their boundary. The value of reusable IP comes from reducing known work, not from eliminating system responsibility.
+
+Verification asks whether the design is actually correct
+
+Return to the accelerator. A reset signal reaches the matrix engine one clock cycle later than its controller expects. Most simulations still look normal, but a rare restart sequence can corrupt a request.
+
