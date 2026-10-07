@@ -71,6 +71,13 @@
       "url": "https://sequoiacap.com/podcasts",
       "kind": "investor-podcast",
       "priority": "selective"
+    },
+    {
+      "id": "650-group",
+      "label": "650 Group",
+      "url": "https://650group.com/",
+      "kind": "industry-analyst-research",
+      "priority": "selective"
     }
   ],
   "observations": [
@@ -859,6 +866,36 @@
       "verification": "Read the official Sequoia full transcript and confirmed the episode in Sequoia's current podcast catalog. Audio/video was not separately reviewed, the page did not expose a reliable publication date in the reviewed rendering, and operational claims were not independently audited.",
       "freshness": "newly-surfaced-after-prior-cutoff",
       "itemId": "sequoia-google-ai-infrastructure-amin-vahdat"
+    },
+    {
+      "id": "expert-20261007-marvell-npo-cpo-sequence",
+      "channel": "650-group",
+      "sourceId": "650-group",
+      "sourceLane": "expert",
+      "title": "Scale-up optics may commercialize through NPO before CPO",
+      "sourceTitle": "Marvell Investor Day – The Path to Multi-Trillion CAPEX and Tokenomics",
+      "url": "https://650group.com/blog/marvell-investor-day-the-path-to-multi-trillion-capex-and-tokenomics/",
+      "speaker": "Alan Weckel",
+      "role": "650 Group industry analyst",
+      "publishedDate": "2026-10-06",
+      "observedAt": "2026-10-07T13:39:16Z",
+      "contentAccess": "article",
+      "independenceGroup": "650-group-marvell-investor-day",
+      "summary": "650 Group says some scale-up customers are using near-packaged optics as an interim step, while co-packaged optics is the volume-enabling path to multi-rack systems.",
+      "claim": "The analyst expects scale-up networking to exceed $100 billion by decade-end and argues the systems opportunity across scale-in, scale-up, scale-out and scale-across exceeds $300 billion, with AI networking above $1 trillion in the early 2030s.",
+      "interpretation": "Our inference: optical value capture may stage through module-level NPO before migrating further into CPO, so timing matters more than treating CPO as an immediate all-at-once replacement. Marvell is the named event subject, but the note does not justify a score, rank, valuation or allocation change.",
+      "beneficiaryTickers": [
+        "MRVL"
+      ],
+      "countercase": "The note summarizes a Marvell investor day and relies heavily on company framing. It names no scale-up customer, shipped system, yield, qualification result or realized optics revenue; market-size figures are forecasts.",
+      "nextTest": "Seek a named module or accelerator customer confirming a production NPO design win, or a Marvell filing that separately reports scale-up-optics revenue and margins.",
+      "evidenceType": "industry-analyst-event-note",
+      "status": "evidence",
+      "location": "Article sections covering scale-in, scale-up, scale-out, scale-across and the aggregate systems opportunity.",
+      "incentives": "650 Group sells market-intelligence research; the article benefits from attention to its forecasts and reflects management material presented at Marvell's investor day.",
+      "verification": "Read the full October 6 article on 650 Group's official site. The Marvell transcript body and event video were not independently reviewed, and forecasts were not independently validated.",
+      "freshness": "new-after-prior-expert-cutoff",
+      "itemId": "650-group-marvell-investor-day-20261006"
     }
   ],
   "evidence": [
@@ -22620,28 +22657,23 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-07T12:40:30Z",
-    "kind": "builder-engineering-scan",
+    "asOf": "2026-10-07T13:39:16Z",
+    "kind": "daily-expert-scan",
     "completedChannels": [
-      "ocp",
-      "gpu-mode",
-      "sequoia"
+      "a16z",
+      "650-group"
     ],
-    "partialChannels": [
-      "information-bottleneck",
-      "latent-space",
-      "dwarkesh"
-    ],
+    "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "Incremental review used the prior builder cutoff, 2026-10-06T12:40:44Z; completed source work was not repeated.",
-      "The official Sequoia page and current podcast catalog exposed a full original interview transcript with Amin Vahdat. Relevant sections on agent orchestration, CPU/memory/storage/networking demand, power and asset life were read.",
-      "Bounded official-source checks found no qualifying post-cutoff item from The Information Bottleneck, Latent Space, Open Compute Project, Dwarkesh or GPU MODE. GPU MODE still topped out at commit 77a8df418834e5789c12da23e7d2719e0efabef1 from 2026-09-09.",
-      "The Sequoia page did not expose a reliable publication date in the reviewed rendering, so the observation preserves publishedDate as null rather than importing private peer metadata.",
-      "Vahdat's statements are first-party Google operator evidence, not audited fleet or supplier data. No independent component-demand or utilization measurement was found in this bounded pass.",
-      "D4 matched the Muse lead to the same Sequoia originating item and counted it once; the peer summary was not treated as independent corroboration.",
+      "Incremental expert review used the prior completed expert cutoff, 2026-10-06T13:34:07Z; completed SemiAnalysis and engineering cycles were not repeated.",
+      "Bounded official a16z searches found no qualifying new or materially changed AI-infrastructure or physical-AI investor thesis after the cutoff.",
+      "The October 6 650 Group note was read in full. Its NPO-before-CPO sequence is a specialist-analyst interpretation of Marvell's investor day; named customer, shipment, yield, transcript and realized-revenue evidence remain absent.",
+      "Muse and Grok surfaced the same 650 Group item. It is counted once as one originating source, not as independent corroboration.",
+      "The October 4 weekly thesis review remains complete; the next review is due October 11. No decision-relevant valuation refresh was required.",
+      "Project Tracker D3 re-read 70 Bottlenecks and 27 Claims; no eligible source version changed, so no row was imported or upgraded.",
       "No score, rank, thesis, valuation, Company Universe or legacy a16z ledger change resulted."
     ]
   },
-  "updatedAt": "2026-10-07T12:40:30Z"
+  "updatedAt": "2026-10-07T13:39:16Z"
 }
