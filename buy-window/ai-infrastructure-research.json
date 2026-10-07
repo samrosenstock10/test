@@ -64,6 +64,13 @@
       "url": "https://a16z.com/",
       "kind": "investor-research",
       "priority": "core"
+    },
+    {
+      "id": "sequoia",
+      "label": "Sequoia Capital",
+      "url": "https://sequoiacap.com/podcasts",
+      "kind": "investor-podcast",
+      "priority": "selective"
     }
   ],
   "observations": [
@@ -824,6 +831,34 @@
       "verification": "Read the accessible October 5 article and experimental-method description. Anthropic independently announced increased five-hour usage limits with Opus 5.5, but SemiAnalysis's credit-meter results and lab financial estimates were not independently reproduced.",
       "freshness": "same-day-public-article",
       "itemId": "semianalysis-subscription-tokenomics-20261005"
+    },
+    {
+      "id": "expert-20261007-vahdat-agent-infrastructure",
+      "channel": "sequoia",
+      "sourceId": "sequoia",
+      "sourceLane": "engineering",
+      "title": "Long-horizon agents expand infrastructure demand beyond accelerators",
+      "sourceTitle": "Google's AI Infrastructure Chief, Amin Vahdat, on the Physics & Economics of Frontier AI",
+      "url": "https://sequoiacap.com/podcast/google-s-ai-infrastructure-chief-amin-vahdat-on-the-physics-economics-of-frontier-ai",
+      "speaker": "Amin Vahdat",
+      "role": "Google chief technologist for AI infrastructure",
+      "publishedDate": null,
+      "observedAt": "2026-10-07T12:40:30Z",
+      "contentAccess": "full-transcript",
+      "independenceGroup": "google",
+      "summary": "Vahdat says long-horizon agents remove human pacing and add CPU-side parsing, orchestration and state retrieval from DRAM, SSD and HDD, while accelerated-compute, networking and storage demand also rises.",
+      "claim": "Google's AI-infrastructure chief says agent workloads are pushing CPU, networking and storage demand higher alongside accelerators; he calls power the most fundamental binding constraint and says seven- and eight-year-old TPUs remain at 100% utilization.",
+      "interpretation": "Our inference: agentic inference may broaden data-center demand beyond accelerators and lengthen the useful life of older hardware. The interview does not identify a public supplier winner or justify a score, rank, valuation or allocation change.",
+      "beneficiaryTickers": [],
+      "countercase": "These are Google operator statements, not audited fleet data. The transcript provides no quantified incremental agent workload, component mix, capex split, supplier share, or external-customer economics.",
+      "nextTest": "Seek hyperscaler disclosures or supplier backlog data that quantify CPU, memory, storage and networking growth per incremental agent workload, separating replacement demand from net additions.",
+      "evidenceType": "firsthand-hyperscaler-operator-interview",
+      "status": "evidence",
+      "location": "Official transcript sections on long-horizon agents (CPU, DRAM, SSD/HDD and networking), power constraints, and hardware lifecycle; page lines 177–190, 215–232 and 242–260 in the reviewed rendering.",
+      "incentives": "Google promotes Google Cloud and its TPU infrastructure; Sequoia benefits from attention to its AI portfolio and research platform.",
+      "verification": "Read the official Sequoia full transcript and confirmed the episode in Sequoia's current podcast catalog. Audio/video was not separately reviewed, the page did not expose a reliable publication date in the reviewed rendering, and operational claims were not independently audited.",
+      "freshness": "newly-surfaced-after-prior-cutoff",
+      "itemId": "sequoia-google-ai-infrastructure-amin-vahdat"
     }
   ],
   "evidence": [
@@ -22585,21 +22620,28 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-06T11:35:16Z",
-    "kind": "semianalysis-daily-scan",
+    "asOf": "2026-10-07T12:40:30Z",
+    "kind": "builder-engineering-scan",
     "completedChannels": [
-      "semianalysis"
+      "ocp",
+      "gpu-mode",
+      "sequoia"
     ],
-    "partialChannels": [],
+    "partialChannels": [
+      "information-bottleneck",
+      "latent-space",
+      "dwarkesh"
+    ],
     "unavailableChannels": [],
     "limitations": [
-      "The official SemiAnalysis archive added the October 5 subscription-tokenomics article after the prior source cutoff; its accessible methodology and public sections were reviewed.",
-      "The article's credit-meter results and lab financial estimates are SemiAnalysis analyses and were not independently reproduced. Anthropic independently announced higher five-hour limits with Opus 5.5.",
-      "The official weekly page still exposed the October 2 Engrams episode; inconsistent indexed references to a later episode were not treated as verified source coverage.",
-      "No matching direct or forwarded SemiAnalysis or Dylan Patel source email appeared in the seven-day Gmail search.",
-      "No qualifying legacy company thesis, public-company beneficiary, Company Universe admission, score, rank, weekly review or valuation change resulted.",
-      "The Project Tracker October 5 cycle remained independently complete."
+      "Incremental review used the prior builder cutoff, 2026-10-06T12:40:44Z; completed source work was not repeated.",
+      "The official Sequoia page and current podcast catalog exposed a full original interview transcript with Amin Vahdat. Relevant sections on agent orchestration, CPU/memory/storage/networking demand, power and asset life were read.",
+      "Bounded official-source checks found no qualifying post-cutoff item from The Information Bottleneck, Latent Space, Open Compute Project, Dwarkesh or GPU MODE. GPU MODE still topped out at commit 77a8df418834e5789c12da23e7d2719e0efabef1 from 2026-09-09.",
+      "The Sequoia page did not expose a reliable publication date in the reviewed rendering, so the observation preserves publishedDate as null rather than importing private peer metadata.",
+      "Vahdat's statements are first-party Google operator evidence, not audited fleet or supplier data. No independent component-demand or utilization measurement was found in this bounded pass.",
+      "D4 matched the Muse lead to the same Sequoia originating item and counted it once; the peer summary was not treated as independent corroboration.",
+      "No score, rank, thesis, valuation, Company Universe or legacy a16z ledger change resulted."
     ]
   },
-  "updatedAt": "2026-10-06T11:35:16Z"
+  "updatedAt": "2026-10-07T12:40:30Z"
 }
