@@ -98,6 +98,13 @@
       "title": "EDA, IP and Verification — How a Chip Design Becomes Something a Factory Can Build",
       "bodySha256": "79c721d0b12fc76775dc0fb0a353ce48c0e89097a26e27e411bdc49d1d902e07",
       "body": "Lesson 062 explains why a promising chip architecture is not yet a design a factory can build. EDA software turns engineers’ behavior descriptions into gates, places those gates, routes their wires, and checks the result against timing, power, and manufacturing rules. Reusable IP is a pre-designed block, such as a processor core or memory interface, that saves work but still must be integrated with the rest of the chip. Verification checks that the design behaves correctly, that transformed versions still match the intent, and that the physical layout can operate and be manufactured. A block that worked before can still fail when combined with new clocks, power, packaging, or neighboring logic. The foundry’s process models and design rules must therefore work with the chosen tools and IP before the final files are released at tapeout. The practical lesson is that tools, reusable blocks, verification, and foundry information must all fit together before an architecture can become sellable silicon."
+    },
+    {
+      "number": 63,
+      "date": "2026-10-08",
+      "title": "Design-to-Volume Timelines — Why a Finished Chip Design Still Takes Time to Reach Customers",
+      "bodySha256": "2ec5c0b714b524fe105f9085602e4109500cf5f9553fce310fe3863bdb826642",
+      "body": "Lesson 063 explains why tapeout does not mean a chip is ready to ship. Tapeout releases final design files so masks and manufacturing instructions can be prepared, but wafers still need to pass through many fabrication steps over several weeks. The first completed chips must be tested because real silicon can reveal design or manufacturing problems that simulations missed. A working first chip is not the same as volume production, since the process must repeatedly produce acceptable dies at a stable yield. Good dies then need packaging, memory, substrates, thermal parts and final testing, which create another chain of capacity and failure risks. Qualification adds evidence that the chip and its production process can operate reliably in the intended system. The practical lesson is to separate tapeout, first silicon, qualification and volume because each milestone proves something different."
     }
   ]
 }
