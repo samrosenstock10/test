@@ -1,0 +1,47 @@
+import type { Lesson } from "./lessons";
+
+export const lesson063 = {
+  number: 63,
+  module: "Module 7: Designing Chips and Reading the Supply Chain",
+  title: "Design-to-Volume Timelines — Why a Finished Chip Design Still Takes Time to Reach Customers",
+  date: "2026-10-08",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 058: Sparse models can reduce calculation, but keeping many possible experts ready can still require substantial memory and communication.
+
+Lesson 059: A low token price matters only when the service reliably produces answers that meet the customer’s quality and speed requirements.
+
+Lesson 060: The cheapest useful AI service minimizes total hardware and operating effort, not merely the price of one accelerator.
+
+Lesson 061: Chip requirements should begin with the customer result and the physical bottleneck, then determine what the silicon must contain.
+
+Lesson 062: Design tools, reusable IP, verification and foundry rules must work together before a chip idea becomes manufacturable.
+
+Tapeout is a starting gun, not a finish line
+
+Imagine our accelerator team completes verification on Friday and releases the final design files to the foundry. Sales has customers waiting. Can finished accelerators ship the following week?
+
+No. Tapeout means the design is ready to enter manufacturing. It does not mean a product exists. The design still has to become masks, patterned wafers, working dies, assembled packages and qualified systems. Each stage adds physical work, waiting time and another chance to discover a problem.
+
+This is a simplified flow. Exact steps and timing vary by process, package, product and company.
+
+The design must become manufacturing instructions
+
+At tapeout, the final layout is used to create the photomasks that guide lithography. A mask is a precisely patterned plate that transfers one layer of the chip design onto a wafer. Modern chips require many patterned layers, so the manufacturing system needs a coordinated mask set rather than one picture of the whole chip.
+
+The foundry also prepares the production route: which process steps, tools and checks each wafer lot will follow. A late design correction can require changed mask data and new checks. That is why the signoff discipline from Lesson 062 matters even after the architecture is settled.
+
+Wafers spend weeks as work in process
+
+A wafer does not move through one machine and emerge as a chip. It repeatedly travels through deposition, lithography, etch, cleaning, implantation, heat treatment and measurement. Intel describes a wafer’s fabrication journey as weekslong and involving thousands of processing steps.
+
+Much of the elapsed time is not a machine actively changing the wafer. Lots wait for the next tool, measurement result, engineering review or rework decision. A tool can be busy, a chamber can be down or a process-control check can hold the lot before more value is added.
+
+This creates work in process, or WIP: partially completed wafers moving through the factory. Starting more wafers today increases future output only after they clear the full route. If the fab is already constrained at a critical tool or inspection step, extra starts can create a longer queue rather than faster shipments.
+
+The first wafer is evidence, not volume
+
+When the first completed wafers return, the team tests individual dies. Some fail because of manufacturing defects. Others may reveal a design weakness that pre-silicon verification did not expose under real voltage, temperature or workload conditions.
+
+Engineers call the first examination of real chips silicon bring-up. They check whether the device starts, communicates, runs software and meets power and performance targets. A serious error may require a new design revision, another tapeout and another trip through fabrication. A smaller issue may be managed with software, test screening or a manufacturing adjustment.
+
