@@ -1,0 +1,38 @@
+Even a working first chip does not prove that thousands can be produced economically. The team must learn the yield: the share of potential dies and packages that become acceptable products. Stable volume requires repeatable results across wafers, lots and factories, not one successful sample.
+
+Packaging and test create another production chain
+
+Good dies are then separated from the wafer and assembled into packages. For an AI accelerator, that may mean combining the compute die with high-bandwidth memory, an interposer or other dies, a substrate and a heat-spreading structure.
+
+Assembly introduces new interfaces and failure points. Intel’s assembly-and-test flow includes attaching dies, sealing the package, adding thermal hardware, stressing parts with heat and voltage, electrical testing and platform validation. A known-good die can still become a bad package if bonding, power delivery, memory connections or thermal behavior fail.
+
+This is why wafer capacity alone does not determine accelerator shipments. Package capacity, memory availability, substrates and test equipment must be ready at the same time.
+
+Qualification asks whether the product can be trusted
+
+A chip that works once must still prove it can operate reliably in its intended environment. Qualification uses defined stresses and operating conditions to look for early failures and long-term weaknesses. The required evidence is more demanding for products such as vehicles or industrial systems than for some consumer uses.
+
+TSMC describes quality and reliability controls that extend from technology development through wafer manufacturing, probing, bumping and testing, with release criteria before mass production. The chip company and its customers may also qualify the packaged device, board, server and software stack.
+
+Qualification is therefore not ceremonial paperwork after manufacturing. It is evidence that the design and production process repeatedly create a product suitable for real use.
+
+Prediction check
+
+Suppose a company reports successful first silicon but its advanced-package yield remains unstable. Should you expect immediate high-volume customer shipments?
+
+Answer: no. First silicon proves that at least some dies work. Shipment volume still depends on repeatable wafer yield, package assembly, memory and substrate supply, final testing, qualification and customer-system readiness. The tempting mistake is to treat a technical milestone as if it were completed production capacity.
+
+Read the timeline as a chain of commitments
+
+For an operator, schedule risk should be tracked stage by stage: mask readiness, wafer starts, fab cycle time, first-silicon results, package inputs, test capacity, qualification and customer deployment. One promised launch date hides several dependent queues.
+
+For an investor, supplier demand can appear before product revenue. The chip company may reserve wafer, memory and packaging capacity well ahead of customer shipments. But a reservation is not the same as consumed volume, and rising component demand does not guarantee equal profit capture. Yield problems, redesigns, excess inventory, customer bargaining and added capacity can change the economics.
+
+The reusable principle is to separate a design milestone from a manufacturing milestone and a volume milestone. Tapeout says the files are ready. First silicon says some physical chips exist. Qualification says the product has passed defined evidence. Volume says the whole chain can repeat the result at useful scale.
+
+Sources
+
+Synopsys, What Is a System on a Chip? — tapeout generates the final files used to create photomasks for production: https://www.synopsys.com/glossary/what-is-system-on-chip.html
+
+Intel, Global Manufacturing — masks convert chip-design drawings into templates, and wafers follow a weekslong fabrication journey: https://www.intel.com/content/www/us/en/newsroom/resources/global-manufacturing.html
+
