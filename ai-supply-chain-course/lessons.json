@@ -657,7 +657,19 @@
         "lessons/062-02.tsfrag",
         "lessons/062-03.tsfrag"
       ]
+    },
+    {
+      "number": 63,
+      "module": "Module 7: Designing Chips and Reading the Supply Chain",
+      "title": "Design-to-Volume Timelines — Why a Finished Chip Design Still Takes Time to Reach Customers",
+      "date": "2026-10-08",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/063-01.tsfrag",
+        "lessons/063-02.tsfrag",
+        "lessons/063-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-07T11:10:00.000Z"
+  "updatedAt": "2026-10-08T11:07:17.055Z"
 }
