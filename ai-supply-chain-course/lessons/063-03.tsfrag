@@ -1,0 +1,10 @@
+Intel, How Silicon Die Become Chip Packages — assembly, heat and voltage stress, electrical test and platform validation before shipment: https://www.intel.com/content/www/us/en/newsroom/tech101/manufacturing/how-silicon-die-become-chip-packages.html
+
+TSMC, Quality and Reliability — qualification and quality controls from technology development through wafer manufacturing, probing, bumping and testing: https://www.tsmc.com/english/aboutTSMC/quality_and_reliability
+
+Next lesson
+
+Lesson 064: Equipment and Materials Demand — How a Chip Ramp Creates Orders Across the Supply Chain
+
+We will trace how wafer starts, process complexity, packaging and yield learning translate into demand for tools, materials and services without assuming every supplier benefits equally.`,
+} satisfies Lesson;
