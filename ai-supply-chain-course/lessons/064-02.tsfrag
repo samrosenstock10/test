@@ -1,0 +1,38 @@
+KLA describes process-control systems as helping manufacturers reach target yield from research and development through volume production. That explains why measurement demand can appear before full volume: the factory needs evidence about the process before it confidently commits more wafers.
+
+The relationship is not automatic. Better sampling plans or more capable tools can reduce the number of checks required. A difficult process can also need greater measurement intensity. The correct question is which uncertainty must be removed, not whether every advanced chip simply needs more inspection.
+
+Materials and services follow different clocks
+
+Gases, chemicals, photoresist, polishing supplies and packaging inputs are consumed as production runs. Their demand usually follows wafer movement and step count more closely than equipment orders do.
+
+Equipment demand is lumpier. A customer may order a tool months before a planned capacity increase, delay delivery if construction slips or raise output through upgrades instead of a new machine. An order, shipment, installation and revenue recognition are separate milestones.
+
+Service demand continues after installation. ASML reported that 2025 service and field-option growth reflected a larger installed base, higher use at some customers and upgrades. Lam separates new systems from customer support revenue such as service, spare parts and upgrades. A growing installed base can support recurring work, but low factory utilization may reduce parts use or postpone upgrades.
+
+Prediction check
+
+A foundry announces 20% more wafer starts using the same process in a factory that is operating at 70% of practical capacity. Should you assume an immediate 20% increase in new tool purchases?
+
+Answer: no. The factory may absorb much of the ramp with installed equipment, added shifts, maintenance improvements or targeted upgrades. Materials and parts consumption could rise sooner because more wafers are moving. New systems become necessary where utilization, throughput or process capability reaches a real bottleneck. The tempting mistake is to translate output growth directly into identical capital spending.
+
+Read demand through the physical bottleneck
+
+For an operator, map wafer starts × process steps × time per step against usable capacity in each tool group, then add packaging and test. The bottleneck determines what must be purchased.
+
+For an investor, ask whether the supplier serves the expanding step, is difficult to replace, faces spare customer capacity or competitors, and is pulling future orders forward. More chip output can coexist with weak profits if pricing falls or too much capacity arrives.
+
+The reusable principle is that a chip ramp does not spread evenly across the supply chain. Volume determines how much product moves. Process complexity determines how much work each wafer requires. Installed capacity determines when new equipment is needed. Yield learning, materials and service create their own demand clocks.
+
+Sources
+
+Applied Materials, Form 10-Q for the quarter ended April 27, 2025 — equipment categories across deposition, etch, thermal processing, polishing, inspection, metrology, implantation and advanced packaging: https://ir.appliedmaterials.com/node/28226/xbrl-viewer
+
+ASML, 2025 Annual Report — wafer-capacity and lithography-intensity drivers, system productivity and installed-base service demand: https://www.asml.com/en/investors/annual-report/2025
+
+KLA, Fiscal 2026 Form 10-K — process control from development through volume production, advanced-node intensity and installed-base service: https://ir.kla.com/sec-filings/annual-reports/content/0000319201-26-000027/klac-20260630.htm
+
+Lam Research, Fiscal 2026 Form 10-K — new deposition, etch and clean systems versus service, spares and upgrades for the installed base: https://investor.lamresearch.com/sec-filings?action=view&filer=Ticker%3ALRCX&item=1023799&pagetemplate=basic
+
+Next lesson
+
