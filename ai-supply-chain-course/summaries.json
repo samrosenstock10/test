@@ -105,6 +105,13 @@
       "title": "Design-to-Volume Timelines — Why a Finished Chip Design Still Takes Time to Reach Customers",
       "bodySha256": "2ec5c0b714b524fe105f9085602e4109500cf5f9553fce310fe3863bdb826642",
       "body": "Lesson 063 explains why tapeout does not mean a chip is ready to ship. Tapeout releases final design files so masks and manufacturing instructions can be prepared, but wafers still need to pass through many fabrication steps over several weeks. The first completed chips must be tested because real silicon can reveal design or manufacturing problems that simulations missed. A working first chip is not the same as volume production, since the process must repeatedly produce acceptable dies at a stable yield. Good dies then need packaging, memory, substrates, thermal parts and final testing, which create another chain of capacity and failure risks. Qualification adds evidence that the chip and its production process can operate reliably in the intended system. The practical lesson is to separate tapeout, first silicon, qualification and volume because each milestone proves something different."
+    },
+    {
+      "number": 64,
+      "date": "2026-10-09",
+      "title": "Equipment and Materials Demand — How a Chip Ramp Creates Orders Across the Supply Chain",
+      "bodySha256": "c8386af5e02016a5f6f033971009f0c583e422a1699288a455e62553dd2c33fc",
+      "body": "A chip ramp does not create equal demand for every supplier. Wafer starts show how many wafers enter production, but the work suppliers see also depends on how many times each wafer must visit a particular process. A more complex process can increase deposition, etch, lithography, inspection or packaging work faster than wafer volume itself. New machines are needed only when installed tools lack enough throughput or capability, so a factory with spare capacity may ramp output without buying proportionally more equipment. Consumable materials usually rise more directly with actual production, while equipment orders are larger, earlier and less regular. Inspection and measurement can be especially important early in a ramp because engineers need to find defects and improve yield before trusting high-volume production. Service, spare-parts and upgrade demand follows the installed base and how heavily tools are used. The practical consequence is to identify the physical bottleneck and supplier position before assuming that more chip output will produce equal orders or profits across the supply chain."
     }
   ]
 }
