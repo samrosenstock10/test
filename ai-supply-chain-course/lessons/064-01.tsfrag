@@ -1,0 +1,47 @@
+import type { Lesson } from "./lessons";
+
+export const lesson064 = {
+  number: 64,
+  module: "Module 7: Designing Chips and Reading the Supply Chain",
+  title: "Equipment and Materials Demand — How a Chip Ramp Creates Orders Across the Supply Chain",
+  date: "2026-10-09",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 059: A low token price matters only when the service reliably produces answers that meet the customer’s quality and speed requirements.
+
+Lesson 060: The cheapest useful AI service minimizes total hardware and operating effort, not merely the price of one accelerator.
+
+Lesson 061: Chip requirements should begin with the customer result and the physical bottleneck, then determine what the silicon must contain.
+
+Lesson 062: Design tools, reusable IP, verification and foundry rules must work together before a chip idea becomes manufacturable.
+
+Lesson 063: Tapeout starts a chain of fabrication, packaging, testing and qualification that must repeat reliably before customers receive volume.
+
+One ramp, several different demand signals
+
+Imagine a foundry expects monthly output for a new AI chip to rise from 10,000 wafer starts to 11,500. A wafer start means one new wafer enters fabrication. Should every equipment and material supplier expect 15% more demand?
+
+No. A production ramp creates several demand paths, and they behave differently. Some factories can produce more by running existing tools more often. A new process may require extra deposition, etch or inspection steps even before wafer volume rises. Materials are consumed as wafers move, while equipment is bought in large additions and then serviced for years. The same chip ramp can therefore create smooth demand for one supplier, a delayed order for another and no benefit for a third.
+
+Wafer starts create work, not a shopping list
+
+Each wafer repeatedly visits tools that deposit, pattern, etch, clean, inspect and measure material.
+
+The useful demand measure is not merely wafers. It is wafers multiplied by the relevant steps each wafer must visit.
+
+Consider an illustrative factory in which 10,000 monthly wafer starts require 100 visits to a selected group of process tools. That creates one million wafer-step visits. If wafer starts rise 15% and the new design needs 10% more visits, the workload becomes about 1.265 million visits, an increase of 26.5%.
+
+That does not mean the factory needs 26.5% more machines. Throughput, downtime and current utilization determine whether existing capacity can absorb the work. A nearly full inspection group may need tools while an etch group with spare time does not.
+
+Complexity can raise demand before volume does
+
+A technology transition changes the manufacturing recipe. Smaller features, new transistor structures, more wiring layers or more difficult materials can add steps or make existing steps harder. Applied Materials groups its equipment around materials-engineering functions including deposition, etch, thermal processing, polishing, inspection, metrology, implantation and advanced packaging. A change that adds one type of layer can help a deposition or etch supplier without producing the same benefit across every tool category.
+
+Lithography shows the same distinction. ASML explains that simple chips can use mature lithography, while the most complex chips require newer systems. Demand therefore depends on both wafer capacity and lithography intensity: how many important patterning exposures are needed and which machines can perform them.
+
+Advanced packaging creates another route after fabrication. Bonding compute, memory and substrates requires capacity not captured by front-end wafer starts, so packaging can constrain a ramp even when the fab has enough tools.
+
+Yield learning changes the order of demand
+
+Early in a ramp, the factory does not yet know whether the process will repeatedly produce enough good dies. Process control uses inspection, measurement and analysis to find where defects or variation enter the flow.
+
