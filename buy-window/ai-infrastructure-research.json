@@ -896,6 +896,62 @@
       "verification": "Read the full October 6 article on 650 Group's official site. The Marvell transcript body and event video were not independently reviewed, and forecasts were not independently validated.",
       "freshness": "new-after-prior-expert-cutoff",
       "itemId": "650-group-marvell-investor-day-20261006"
+    },
+    {
+      "id": "expert-20261008-ocp-ospa-switch-platform",
+      "channel": "ocp",
+      "sourceId": "ocp",
+      "sourceLane": "engineering",
+      "title": "OCP draft targets the last fragmented switch-platform management layer",
+      "sourceTitle": "Introducing OSPA: Unifying the Switch Platform Layer for Open Networking",
+      "url": "https://www.opencompute.org/news/introducing-ospa-unifying-the-switch-platform-layer-for-open-networking/",
+      "speaker": "Tao Ren",
+      "role": "Meta; OSPA article author",
+      "publishedDate": "2026-10-08",
+      "observedAt": "2026-10-09T13:25:37Z",
+      "contentAccess": "article",
+      "independenceGroup": "ocp-ospa-contributors",
+      "summary": "OCP's draft OSPA contribution defines a vendor-neutral switch platform-management architecture spanning power, hardware access and inventory, environment controls, firmware recovery, debugging and security.",
+      "claim": "Meta, Microsoft and Alibaba initiated the draft with input from switch and networking vendors; OCP says reusable interfaces and hardware patterns can reduce per-SKU platform reimplementation and speed onboarding.",
+      "interpretation": "Our inference: accepted and adopted platform-layer standards could lower switch integration friction and broaden interoperability, but a draft contribution and contributor list do not establish deployment, cycle-time savings or a public-company winner.",
+      "beneficiaryTickers": [],
+      "countercase": "The specification remains under Foundation review. No production switch, qualification, measured onboarding reduction, cost saving, market share or commercial outcome is disclosed.",
+      "nextTest": "Track acceptance of the specification, a named production platform, supplier or operator adoption, and measured onboarding-cycle, reliability or support-cost changes.",
+      "evidenceType": "open-standards-architecture",
+      "status": "evidence",
+      "location": "Official OCP article sections on Why OSPA, seven functional areas, focus areas, scope and initial contributors.",
+      "incentives": "OCP and the named contributors benefit from wider adoption of the proposed architecture; participation does not prove implementation or economic benefit.",
+      "verification": "Read the full official OCP article and checked the linked draft status. D4 repository search found no matching OSPA title or source in the Muse inbox; deployment and economic claims were not independently validated.",
+      "freshness": "new-after-prior-engineering-cutoff",
+      "itemId": "ocp-ospa-20261008"
+    },
+    {
+      "id": "expert-20261008-periodic-semiconductor-lab-loop",
+      "channel": "latent-space",
+      "sourceId": "latent-space",
+      "sourceLane": "engineering",
+      "title": "AI-guided materials loops depend on automated characterization and custom lab hardware",
+      "sourceTitle": "Synthesis Superintelligence: from Semiconductors to Superconductors — Periodic Labs’ Liam Fedus and Ekin Dogus Cubuk",
+      "url": "https://www.latent.space/p/periodic",
+      "speaker": "Liam Fedus and Ekin Doğuş Çubuk",
+      "role": "Periodic Labs co-founders",
+      "publishedDate": "2026-10-08",
+      "observedAt": "2026-10-09T13:25:37Z",
+      "contentAccess": "full-transcript",
+      "independenceGroup": "periodic-labs",
+      "summary": "Periodic's founders describe automated characterization as a central bottleneck in closed-loop materials research, with AI choosing experiments and analysis while custom instruments and contamination-aware robotics handle physical execution.",
+      "claim": "They say characterization shifted materially from human-driven toward AI-driven work and that Periodic plans to deploy AI and computational tools onsite with semiconductor partners, using local inference and training for secure customer data and potentially outcome-based pricing.",
+      "interpretation": "Our inference: applied AI could compress semiconductor materials and process experimentation, but Periodic is private and the interview provides no verified public-company beneficiary, customer outcome or contract economics.",
+      "beneficiaryTickers": [],
+      "countercase": "These are promotional founder statements. No semiconductor partner, production benchmark, yield or cycle-time improvement, recurring revenue or independent replication is disclosed.",
+      "nextTest": "Seek a named partner, measured process-development speed or yield impact, recurring outcome-priced revenue, and an independent replication of the closed-loop workflow.",
+      "evidenceType": "builder-interview",
+      "status": "evidence",
+      "location": "Official transcript, approximately 01:03:22–01:18:03, on characterization, semiconductor DOE, lab hardware, customer-zero deployment and onsite partner tools.",
+      "incentives": "The speakers are founders promoting a private company; Latent Space benefits from attention to its interview platform. The interview is not independent validation.",
+      "verification": "Read the full official Latent Space transcript. D4 repository search found no matching Periodic episode title in the Muse inbox; technical and commercial outcomes were not independently reproduced.",
+      "freshness": "new-after-prior-engineering-cutoff",
+      "itemId": "latent-space-periodic-20261008"
     }
   ],
   "evidence": [
@@ -2659,6 +2715,46 @@
       "countercase": "API-equivalent value relies on list prices and an assumed workload, not actual user utility or audited lab economics. The revenue and margin estimates use proprietary models; providers can change limits dynamically, and the tests capture a dated snapshot.",
       "nextTest": "Track independent repeat tests, actual utilization and churn after limit changes, provider gross-margin disclosures, and whether subscription mix materially changes inference demand or accelerator procurement.",
       "corroborationNote": "The observation and evidence record are two canonical representations of the same SemiAnalysis origin and do not constitute independent corroboration."
+    },
+    {
+      "id": "ocp-ospa-switch-platform-20261008",
+      "title": "OCP proposes a vendor-neutral switch platform-management architecture",
+      "url": "https://www.opencompute.org/news/introducing-ospa-unifying-the-switch-platform-layer-for-open-networking/",
+      "kind": "draft-open-standards-contribution",
+      "independenceGroup": "ocp-ospa-contributors",
+      "publishedDate": "2026-10-08",
+      "observedAt": "2026-10-09T13:25:37Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "The draft OSPA architecture standardizes power, hardware access and inventory, environmental controls, firmware recovery, debugging and security for switch platforms.",
+      "claim": "The contributors propose reusable platform interfaces and design patterns to replace per-SKU reimplementation and simplify onboarding.",
+      "interpretation": "This is mechanism evidence for switch-platform standardization, not adoption or public-equity winner evidence.",
+      "verification": "Full official OCP article reviewed; the specification remains under Foundation review and no production deployment or measured economics were supplied.",
+      "countercase": "The specification remains under Foundation review. No production switch, qualification, measured onboarding reduction, cost saving, market share or commercial outcome is disclosed.",
+      "nextTest": "Track acceptance of the specification, a named production platform, supplier or operator adoption, and measured onboarding-cycle, reliability or support-cost changes.",
+      "beneficiaryTickers": [],
+      "sourceObservationId": "expert-20261008-ocp-ospa-switch-platform",
+      "corroborationNote": "This record and the linked observation are two representations of the same OCP-originated disclosure and are not independent corroboration."
+    },
+    {
+      "id": "periodic-semiconductor-lab-loop-20261008",
+      "title": "Periodic describes AI-driven characterization and onsite semiconductor-partner tooling",
+      "url": "https://www.latent.space/p/periodic",
+      "kind": "founder-interview",
+      "independenceGroup": "periodic-labs",
+      "publishedDate": "2026-10-08",
+      "observedAt": "2026-10-09T13:25:37Z",
+      "contentAccess": "full-transcript",
+      "status": "evidence",
+      "summary": "Periodic's founders describe AI-guided characterization, custom experimental hardware and onsite secure tooling for semiconductor partners.",
+      "claim": "They say characterization has shifted materially toward AI-driven work and that local inference, training and outcome-based pricing may support partner deployments.",
+      "interpretation": "The mechanism could shorten semiconductor materials and process experimentation, but no customer result or public-company beneficiary is verified.",
+      "verification": "Full official transcript reviewed; founder claims were not independently reproduced and no named partner or measured outcome was disclosed.",
+      "countercase": "These are promotional founder statements. No semiconductor partner, production benchmark, yield or cycle-time improvement, recurring revenue or independent replication is disclosed.",
+      "nextTest": "Seek a named partner, measured process-development speed or yield impact, recurring outcome-priced revenue, and an independent replication of the closed-loop workflow.",
+      "beneficiaryTickers": [],
+      "sourceObservationId": "expert-20261008-periodic-semiconductor-lab-loop",
+      "corroborationNote": "This record and the linked observation are two representations of the same Periodic-originated interview and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -22657,23 +22753,24 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-07T13:39:16Z",
-    "kind": "daily-expert-scan",
+    "asOf": "2026-10-09T13:25:37Z",
+    "kind": "builder-engineering-scan",
     "completedChannels": [
-      "a16z",
-      "650-group"
+      "ocp",
+      "latent-space",
+      "gpu-mode"
     ],
-    "partialChannels": [],
+    "partialChannels": [
+      "information-bottleneck",
+      "dwarkesh"
+    ],
     "unavailableChannels": [],
     "limitations": [
-      "Incremental expert review used the prior completed expert cutoff, 2026-10-06T13:34:07Z; completed SemiAnalysis and engineering cycles were not repeated.",
-      "Bounded official a16z searches found no qualifying new or materially changed AI-infrastructure or physical-AI investor thesis after the cutoff.",
-      "The October 6 650 Group note was read in full. Its NPO-before-CPO sequence is a specialist-analyst interpretation of Marvell's investor day; named customer, shipment, yield, transcript and realized-revenue evidence remain absent.",
-      "Muse and Grok surfaced the same 650 Group item. It is counted once as one originating source, not as independent corroboration.",
-      "The October 4 weekly thesis review remains complete; the next review is due October 11. No decision-relevant valuation refresh was required.",
-      "Project Tracker D3 re-read 70 Bottlenecks and 27 Claims; no eligible source version changed, so no row was imported or upgraded.",
+      "The current logical cycle began only after the delayed October 8 cycle was repaired from canonical state; the two October 8 originating items were not counted again.",
+      "Bounded incremental checks through the run cutoff found no additional qualifying October 9 original engineering item.",
+      "GPU MODE had no post-cutoff commit. Current Schneider Electric and Vertiv cooling items surfaced by the bounded check predated the prior cutoff.",
       "No score, rank, thesis, valuation, Company Universe or legacy a16z ledger change resulted."
     ]
   },
-  "updatedAt": "2026-10-07T13:39:16Z"
+  "updatedAt": "2026-10-09T13:25:37Z"
 }
