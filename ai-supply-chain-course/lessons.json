@@ -669,7 +669,19 @@
         "lessons/063-02.tsfrag",
         "lessons/063-03.tsfrag"
       ]
+    },
+    {
+      "number": 64,
+      "module": "Module 7: Designing Chips and Reading the Supply Chain",
+      "title": "Equipment and Materials Demand — How a Chip Ramp Creates Orders Across the Supply Chain",
+      "date": "2026-10-09",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/064-01.tsfrag",
+        "lessons/064-02.tsfrag",
+        "lessons/064-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-08T11:07:17.055Z"
+  "updatedAt": "2026-10-09T11:04:44.416Z"
 }
