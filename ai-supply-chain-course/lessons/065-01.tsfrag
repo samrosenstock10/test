@@ -1,0 +1,45 @@
+import type { Lesson } from "./lessons";
+
+export const lesson065 = {
+  number: 65,
+  module: "Module 7: Designing Chips and Reading the Supply Chain",
+  title: "Supplier Economics and Capacity Cycles — Why Strong Chip Demand Can Still Produce Weak Returns",
+  date: "2026-10-10",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 060: The cheapest useful AI service minimizes total hardware and operating effort, not merely the price of one accelerator.
+
+Lesson 061: Chip requirements should begin with the customer result and the physical bottleneck, then determine what the silicon must contain.
+
+Lesson 062: Design tools, reusable IP, verification and foundry rules must work together before a chip idea becomes manufacturable.
+
+Lesson 063: Tapeout starts a chain of fabrication, packaging, testing and qualification that must repeat reliably before customers receive volume.
+
+Lesson 064: A chip ramp helps suppliers unevenly because orders depend on process steps, spare factory capacity and where the real bottleneck sits.
+
+A full backlog can still end badly
+
+Imagine an equipment supplier reports record orders from AI-chip manufacturers. Its backlog—the value of accepted orders not yet recognized as revenue—jumps 40%. Management hires technicians, reserves scarce components and asks vendors to expand. It looks like profit should follow automatically.
+
+Then customers delay several factory openings. The orders may still exist, but installations move out, acceptance moves out and revenue moves out. The supplier is left carrying more inventory, people and supplier commitments while fewer completed tools turn into sales.
+
+That is the central problem of supplier economics: physical demand matters, but profit depends on when demand becomes revenue, what it costs to serve and how much capacity the industry builds in response.
+
+Orders are not revenue
+
+A large production tool passes through several business stages. A customer forecasts a need, places an order, waits for the tool to be built, receives it, installs it and may need to accept its performance before the supplier recognizes revenue. Backlog sits between the order and the completed sale.
+
+Backlog is useful because it shows work already requested. It is not the same as guaranteed future revenue. KLA reported that its backlog rose from $7.86 billion in June 2025 to $12.57 billion in June 2026 amid AI-infrastructure demand. The same filing warns that fab readiness, project timing, delivery, installation, regulation and supply constraints can move revenue, while orders can be modified, postponed or canceled.
+
+The lesson is not that backlog is meaningless. It is that backlog quality matters. Ask when the customer needs the tool, whether the site and utilities are ready, how easily the order can move, whether a deposit protects the supplier, and whether the customer is ordering for a real bottleneck or merely reserving scarce capacity.
+
+Why profit moves faster than revenue
+
+Equipment suppliers must fund engineers, factories, service organizations and research before every tool ships. Many of those costs do not fall quickly when revenue slows.
+
+Consider an illustrative supplier. It sells 100 tools at $10 million each, so revenue is $1 billion. Assume direct manufacturing and installation cost is $6 million per tool, leaving $400 million before $250 million of relatively fixed operating costs. Operating profit is then $150 million.
+
+If shipments fall 25% to 75 tools, revenue becomes $750 million. Direct cost falls to $450 million, but the $250 million operating base remains. Profit falls to $50 million—a 67% decline from only a 25% revenue decline.
+
+This simplified example ignores product mix, service and accounting details, but it shows operating leverage: profit can change faster than sales because some costs remain. KLA similarly states that many expenses are relatively fixed in the short term, so a revenue shortfall can immediately hurt operating results.
+

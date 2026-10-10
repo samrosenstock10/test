@@ -1,0 +1,8 @@
+ASML, 2025 Annual Report — bookings, backlog, installed-base services and the distinction between demand, shipment and recognized sales: https://www.asml.com/en/investors/annual-report/2025
+
+Next lesson
+
+Lesson 066: Independent Supply-Chain Analysis — How to Test an AI Buildout Claim From Evidence
+
+We will combine workload demand, chip design, manufacturing, equipment, capacity and supplier economics into a sourced analysis that separates facts, assumptions and conclusions.`,
+} satisfies Lesson;
