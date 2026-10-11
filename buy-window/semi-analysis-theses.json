@@ -1,7 +1,20 @@
 {
-  "updatedAt": "2026-09-24T11:39:46Z",
+  "updatedAt": "2026-10-11T11:46:00Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "rows": [
+    {
+      "loggedDate": "2026-10-11",
+      "sourceDate": "2026-10-10",
+      "company": "Nvidia / NVDA",
+      "bullishness": 5,
+      "summary": "Nvidia remains a 5/5 SemiAnalysis thesis because a new vLLM Rubin preview points to substantially higher profit per constrained gigawatt while its expanding financing and reassignment backstops can accelerate ecosystem demand, albeit with materially larger contingent credit and utilization risk.",
+      "sourceUrls": [
+        "https://www.linkedin.com/posts/semianalysis_nvidia-in-its-most-recent-10q-disclosed-activity-7514490217039306753-pui9",
+        "https://www.linkedin.com/posts/semianalysis_the-lambdaanthropic-deal-is-really-a-four-party-activity-7514822424509673472-k6Xs",
+        "https://www.linkedin.com/posts/semianalysis_holy-alert-nvidia-vllm-inference-rubin-activity-7514370006059720704-3x9V",
+        "https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference"
+      ]
+    },
     {
       "loggedDate": "2026-09-24",
       "sourceDate": "2026-09-23",
@@ -56,23 +69,6 @@
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/computation-and-data-movement-for",
         "https://teram.com/teram-press-release/"
-      ]
-    },
-    {
-      "loggedDate": "2026-09-15",
-      "sourceDate": "2026-09-14",
-      "company": "Nvidia / NVDA",
-      "bullishness": 5,
-      "summary": "Nvidia’s platform thesis re-strengthens to 5/5 because Rubin’s first verified agentic-inference results show a large next-generation performance/TCO and power-efficiency lead while Nvidia’s day-zero model support continues to demonstrate the practical CUDA/software moat that competitors still struggle to match.",
-      "sourceUrls": [
-        "https://newsletter.semianalysis.com/p/vera-rubin-nvl72-agentic-inference",
-        "https://www.linkedin.com/company/semianalysis",
-        "https://newsletter.semianalysis.com/p/nvidias-backstop-universe-heads-i",
-        "https://newsletter.semianalysis.com/p/where-does-a-robot-think-on-device",
-        "https://newsletter.semianalysis.com/p/tpu-inferencex-full-steam",
-        "https://newsletter.semianalysis.com/p/koreas-trillion-dollar-sovereign",
-        "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
-        "https://newsletter.semianalysis.com/p/ultra-high-interactivity-on-nvidia"
       ]
     },
     {
