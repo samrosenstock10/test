@@ -1,0 +1,30 @@
+Fourth, translate component demand into factory load. More good chips may require more wafer starts, better yield or both. A foundry with spare capacity can raise output without building another fab. A process transition may require more inspection or deposition steps per wafer even if wafer starts grow slowly. The right driver is therefore tool-specific: capacity gap multiplied by process intensity, not simply end-market growth.
+
+Fifth, translate factory plans into supplier revenue. An equipment order becomes revenue only after manufacturing, delivery, installation and sometimes customer acceptance. KLA’s fiscal 2026 filing says AI-related investment can be delayed, reduced or canceled; elevated backlog can remain even when customers reschedule orders. ASML ended 2025 with €38.8 billion of backlog, while separately reporting installed-base service sales. Backlog, new-system revenue and recurring service are different signals about different periods.
+
+Sixth, translate revenue into profit and return. Product mix, pricing, installation cost, customer concentration, fixed expenses and the supplier’s own capacity spending determine how much value remains. A scarce tool with few qualified substitutes may keep attractive economics. A supplier that expands into a temporary shortage can see profit fall faster than revenue when the cycle turns.
+
+What would change the answer?
+
+The illustrative 6% system-growth result is not a forecast. It is a transparent bridge. If software gains reach only 5%, system demand rises much more. If useful demand doubles, installed capacity is already full and new chips offer little improvement, hardware demand could track the service increase more closely. If better models reduce work per successful answer, hardware demand could grow more slowly.
+
+That sensitivity test is the heart of independent analysis. Identify the two or three assumptions that control the conclusion, then state what evidence would falsify them. For this claim, watch measured useful throughput, fleet utilization, complete-system shipments, foundry loading, supplier bookings, backlog timing and margins. Do not use one strong signal to stand in for the whole chain.
+
+Transfer question
+
+An inspection-tool supplier reports rising bookings while its customers report flat wafer starts. Is that a contradiction?
+
+Answer: no. Inspection demand can rise because a new process needs more measurements per wafer, customers are preparing future capacity or existing tools are being upgraded. It could also reflect orders placed early because of long lead times. To decide which explanation is strongest, compare process transitions, tool utilization, delivery dates, cancellation terms and customer capital plans.
+
+The Module 7 conclusion
+
+Supply-chain analysis is a sequence of conversions: useful demand to systems, systems to components, components to factory load, factory load to supplier orders, and orders to durable profit. The analyst’s job is to expose each conversion, source what can be observed, label what must be assumed and test how the answer changes. That method is more valuable than any single forecast because it can be reused across every company and architecture in the Innovation Atlas.
+
+Sources
+
+International Energy Agency, Energy and AI — demand scenarios, infrastructure constraints and the High Efficiency Case: https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai
+
+MLCommons, MLPerf Inference documentation — performance measured under defined accuracy and latency constraints: https://docs.mlcommons.org/inference/
+
+KLA, Fiscal 2026 Form 10-K — AI-related demand uncertainty, backlog rescheduling, cyclicality and relatively fixed short-term expenses: https://ir.kla.com/sec-filings/annual-reports/content/0000319201-26-000027/klac-20260630.htm
+
