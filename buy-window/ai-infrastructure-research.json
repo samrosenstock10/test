@@ -952,6 +952,94 @@
       "verification": "Read the full official Latent Space transcript. D4 repository search found no matching Periodic episode title in the Muse inbox; technical and commercial outcomes were not independently reproduced.",
       "freshness": "new-after-prior-engineering-cutoff",
       "itemId": "latent-space-periodic-20261008"
+    },
+    {
+      "id": "expert-20261008-semianalysis-hbm-hybrid-bonding",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "HBM roadmaps may delay die-to-wafer hybrid bonding",
+      "sourceTitle": "Accelerator HBM model update",
+      "url": "https://www.linkedin.com/posts/semianalysis_accelerator-hbm-model-activity-7514045701090369537-uVvm",
+      "speaker": "SemiAnalysis",
+      "role": "AI infrastructure research team",
+      "publishedDate": "2026-10-08",
+      "observedAt": "2026-10-11T11:34:08Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis",
+      "summary": "SemiAnalysis says accelerator buyers are prioritizing HBM bandwidth over maximum stack capacity, while SK Hynix describes 16-high HBM as difficult and Samsung is pursuing a separate wafer-to-wafer process.",
+      "claim": "The post argues die-to-wafer hybrid bonding for HBM has shifted from an expected timing question to an adoption question, and that Samsung's distinct D0a wafer-to-wafer work is not evidence for a BESI die-to-wafer equipment thesis.",
+      "interpretation": "Our inference: shorter bandwidth-optimized HBM stacks can preserve memory-supplier economics while delaying one expected advanced-packaging equipment catalyst. This is a process-roadmap challenge, not a broad bearish call on HBM demand.",
+      "beneficiaryTickers": [],
+      "countercase": "The public post does not include the underlying supplier transcript, qualification data or production roadmap. Higher stacks, logic stacking or other products could still require die-to-wafer bonding, and customer priorities can change.",
+      "nextTest": "Track supplier roadmaps for 16-high HBM, named die-to-wafer production qualifications, logic-stacking ramps, Samsung D0a process details and equipment orders tied to commercial volume.",
+      "evidenceType": "specialist-analyst-roadmap-view",
+      "status": "evidence",
+      "location": "Full official SemiAnalysis LinkedIn post published October 8, 2026.",
+      "incentives": "SemiAnalysis sells related research and benefits from attention to its semiconductor analysis.",
+      "verification": "Read the full attributable public post. The reported SK Hynix and Samsung positions and the equipment read-through were not independently verified against primary supplier materials.",
+      "freshness": "sunday-gap-recovery",
+      "itemId": "semianalysis-hbm-hybrid-bonding-20261008"
+    },
+    {
+      "id": "expert-20261009-semianalysis-rubin-vllm-preview",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "Rubin vLLM preview points to higher profit per constrained gigawatt",
+      "sourceTitle": "NVIDIA vLLM Inference Rubin preview",
+      "url": "https://www.linkedin.com/posts/semianalysis_holy-alert-nvidia-vllm-inference-rubin-activity-7514370006059720704-3x9V",
+      "speaker": "SemiAnalysis",
+      "role": "AI infrastructure research team",
+      "publishedDate": "2026-10-09",
+      "observedAt": "2026-10-11T11:34:08Z",
+      "contentAccess": "notes-only",
+      "independenceGroup": "semianalysis",
+      "summary": "SemiAnalysis reports a preview vLLM submission for Vera Rubin NVL72 with 3.2 times modeled profit per gigawatt and up to 10 times performance per dollar versus GB300 NVL72.",
+      "claim": "Its Agentic Inference Profit Calculator estimates roughly $39 billion of annual profit per utility gigawatt for MiniMax M3 under the preview assumptions.",
+      "interpretation": "Our lead: a production-oriented vLLM path could extend NVIDIA's rack-level economics under power constraints, but the public submission, matched assumptions and reproducible benchmark are not yet available.",
+      "beneficiaryTickers": [
+        "NVDA"
+      ],
+      "countercase": "This is explicitly a preview, not a full public InferenceX submission. Model, interactivity, utilization, pricing, TCO and software maturity can drive headline multiples, and modeled profit is not realized customer profit.",
+      "nextTest": "Review the full public vLLM and SGLang Rubin submissions, reproduce matched GB300 comparisons, and track rental pricing, utilization, tokens per megawatt and realized customer economics.",
+      "evidenceType": "benchmark-preview",
+      "status": "lead",
+      "location": "Full official SemiAnalysis LinkedIn post published October 9, 2026.",
+      "incentives": "SemiAnalysis operates the InferenceX benchmark and profit-calculator products and benefits from attention to new submissions.",
+      "verification": "Read the full attributable public post. The underlying full public submission was still pending, so the headline benchmark and profit estimate remain unverified preview claims.",
+      "freshness": "sunday-gap-recovery",
+      "itemId": "semianalysis-rubin-vllm-preview-20261009"
+    },
+    {
+      "id": "expert-20261010-semianalysis-nvidia-credit-backstops",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "NVIDIA's balance sheet is becoming an AI-infrastructure credit layer",
+      "sourceTitle": "NVIDIA off-balance-sheet guarantees and Lambda–Anthropic financing posts",
+      "url": "https://www.linkedin.com/posts/semianalysis_nvidia-in-its-most-recent-10q-disclosed-activity-7514490217039306753-pui9",
+      "speaker": "SemiAnalysis",
+      "role": "AI infrastructure research team",
+      "publishedDate": "2026-10-10",
+      "observedAt": "2026-10-11T11:34:08Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis",
+      "summary": "SemiAnalysis says NVIDIA disclosed about $530 billion of gross off-balance-sheet guarantees across six line items, up from about $184 billion in the prior quarter, while the Lambda–Anthropic transaction shows NVIDIA-supported commitments helping fund Rubin capacity.",
+      "claim": "The posts describe supply commitments, AI-cloud agreements, data-center leases and reassignment backstops; in the related Lambda transaction, Hut 8 financed one long lease with $4.25 billion of Baa2 notes at 6.129% and NVIDIA carries $19.6 billion of leases for reassignment.",
+      "interpretation": "Our inference: NVIDIA is using supplier scale and balance-sheet capacity to accelerate ecosystem demand and lower the cost of capital for new AI capacity. That can reinforce platform share, but it also concentrates credit, utilization and residual-value risk inside the ecosystem.",
+      "beneficiaryTickers": [
+        "NVDA"
+      ],
+      "countercase": "The figures are gross commitments rather than expected losses, several obligations may be offset or reassigned, and NVIDIA's cash generation can absorb substantial support. Conversely, a synchronized utilization or pricing shock could make contingent commitments more correlated than current markets assume.",
+      "nextTest": "Reconcile the six commitment categories to NVIDIA filings, track funded versus contingent exposure, counterparty concentration, reassignment performance, utilization and rental pricing, and whether third-party lenders finance the remaining buildout without expanding NVIDIA support.",
+      "evidenceType": "specialist-analyst-financing-thesis",
+      "status": "evidence",
+      "location": "Two full official SemiAnalysis LinkedIn posts published October 9–10, 2026; related transaction post: https://www.linkedin.com/posts/semianalysis_the-lambdaanthropic-deal-is-really-a-four-party-activity-7514822424509673472-k6Xs",
+      "incentives": "SemiAnalysis sells related compute-capital-markets research and benefits from attention to its analysis.",
+      "verification": "Read both attributable public posts. The underlying NVIDIA filing, Hut 8 lease documents and bond terms were not independently reconciled in this bounded source cycle.",
+      "freshness": "new-after-prior-cutoff",
+      "itemId": "semianalysis-nvidia-credit-backstops-20261010"
     }
   ],
   "evidence": [
@@ -2755,6 +2843,70 @@
       "beneficiaryTickers": [],
       "sourceObservationId": "expert-20261008-periodic-semiconductor-lab-loop",
       "corroborationNote": "This record and the linked observation are two representations of the same Periodic-originated interview and are not independent corroboration."
+    },
+    {
+      "id": "20261008-semianalysis-hbm-hybrid-bonding",
+      "title": "HBM roadmaps may delay die-to-wafer hybrid bonding",
+      "url": "https://www.linkedin.com/posts/semianalysis_accelerator-hbm-model-activity-7514045701090369537-uVvm",
+      "kind": "specialist-analyst-roadmap-view",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-10-08",
+      "observedAt": "2026-10-11T11:34:08Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "SemiAnalysis says accelerator buyers are prioritizing HBM bandwidth over maximum stack capacity, while SK Hynix describes 16-high HBM as difficult and Samsung is pursuing a separate wafer-to-wafer process.",
+      "claim": "The post argues die-to-wafer hybrid bonding for HBM has shifted from an expected timing question to an adoption question, and that Samsung's distinct D0a wafer-to-wafer work is not evidence for a BESI die-to-wafer equipment thesis.",
+      "interpretation": "Our inference: shorter bandwidth-optimized HBM stacks can preserve memory-supplier economics while delaying one expected advanced-packaging equipment catalyst. This is a process-roadmap challenge, not a broad bearish call on HBM demand.",
+      "verification": "Read the full attributable public post. The reported SK Hynix and Samsung positions and the equipment read-through were not independently verified against primary supplier materials.",
+      "countercase": "The public post does not include the underlying supplier transcript, qualification data or production roadmap. Higher stacks, logic stacking or other products could still require die-to-wafer bonding, and customer priorities can change.",
+      "nextTest": "Track supplier roadmaps for 16-high HBM, named die-to-wafer production qualifications, logic-stacking ramps, Samsung D0a process details and equipment orders tied to commercial volume.",
+      "beneficiaryTickers": [],
+      "sourceObservationId": "expert-20261008-semianalysis-hbm-hybrid-bonding",
+      "corroborationNote": "This record and the linked observation are two representations of the same SemiAnalysis-originated post and are not independent corroboration."
+    },
+    {
+      "id": "20261009-semianalysis-rubin-vllm-preview",
+      "title": "Rubin vLLM preview points to higher profit per constrained gigawatt",
+      "url": "https://www.linkedin.com/posts/semianalysis_holy-alert-nvidia-vllm-inference-rubin-activity-7514370006059720704-3x9V",
+      "kind": "benchmark-preview",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-10-09",
+      "observedAt": "2026-10-11T11:34:08Z",
+      "contentAccess": "notes-only",
+      "status": "lead",
+      "summary": "SemiAnalysis reports a preview vLLM submission for Vera Rubin NVL72 with 3.2 times modeled profit per gigawatt and up to 10 times performance per dollar versus GB300 NVL72.",
+      "claim": "Its Agentic Inference Profit Calculator estimates roughly $39 billion of annual profit per utility gigawatt for MiniMax M3 under the preview assumptions.",
+      "interpretation": "Our lead: a production-oriented vLLM path could extend NVIDIA's rack-level economics under power constraints, but the public submission, matched assumptions and reproducible benchmark are not yet available.",
+      "verification": "Read the full attributable public post. The underlying full public submission was still pending, so the headline benchmark and profit estimate remain unverified preview claims.",
+      "countercase": "This is explicitly a preview, not a full public InferenceX submission. Model, interactivity, utilization, pricing, TCO and software maturity can drive headline multiples, and modeled profit is not realized customer profit.",
+      "nextTest": "Review the full public vLLM and SGLang Rubin submissions, reproduce matched GB300 comparisons, and track rental pricing, utilization, tokens per megawatt and realized customer economics.",
+      "beneficiaryTickers": [
+        "NVDA"
+      ],
+      "sourceObservationId": "expert-20261009-semianalysis-rubin-vllm-preview",
+      "corroborationNote": "This record and the linked observation are two representations of the same SemiAnalysis-originated post and are not independent corroboration."
+    },
+    {
+      "id": "20261010-semianalysis-nvidia-credit-backstops",
+      "title": "NVIDIA's balance sheet is becoming an AI-infrastructure credit layer",
+      "url": "https://www.linkedin.com/posts/semianalysis_nvidia-in-its-most-recent-10q-disclosed-activity-7514490217039306753-pui9",
+      "kind": "specialist-analyst-financing-thesis",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-10-10",
+      "observedAt": "2026-10-11T11:34:08Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "SemiAnalysis says NVIDIA disclosed about $530 billion of gross off-balance-sheet guarantees across six line items, up from about $184 billion in the prior quarter, while the Lambda–Anthropic transaction shows NVIDIA-supported commitments helping fund Rubin capacity.",
+      "claim": "The posts describe supply commitments, AI-cloud agreements, data-center leases and reassignment backstops; in the related Lambda transaction, Hut 8 financed one long lease with $4.25 billion of Baa2 notes at 6.129% and NVIDIA carries $19.6 billion of leases for reassignment.",
+      "interpretation": "Our inference: NVIDIA is using supplier scale and balance-sheet capacity to accelerate ecosystem demand and lower the cost of capital for new AI capacity. That can reinforce platform share, but it also concentrates credit, utilization and residual-value risk inside the ecosystem.",
+      "verification": "Read both attributable public posts. The underlying NVIDIA filing, Hut 8 lease documents and bond terms were not independently reconciled in this bounded source cycle.",
+      "countercase": "The figures are gross commitments rather than expected losses, several obligations may be offset or reassigned, and NVIDIA's cash generation can absorb substantial support. Conversely, a synchronized utilization or pricing shock could make contingent commitments more correlated than current markets assume.",
+      "nextTest": "Reconcile the six commitment categories to NVIDIA filings, track funded versus contingent exposure, counterparty concentration, reassignment performance, utilization and rental pricing, and whether third-party lenders finance the remaining buildout without expanding NVIDIA support.",
+      "beneficiaryTickers": [
+        "NVDA"
+      ],
+      "sourceObservationId": "expert-20261010-semianalysis-nvidia-credit-backstops",
+      "corroborationNote": "This record and the linked observation are two representations of the same SemiAnalysis-originated post and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -22772,5 +22924,5 @@
       "No score, rank, thesis, valuation, Company Universe or legacy a16z ledger change resulted."
     ]
   },
-  "updatedAt": "2026-10-09T13:25:37Z"
+  "updatedAt": "2026-10-11T11:42:00Z"
 }
