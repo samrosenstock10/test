@@ -1,0 +1,41 @@
+import type { Lesson } from "./lessons";
+
+export const lesson066 = {
+  number: 66,
+  module: "Module 7: Designing Chips and Reading the Supply Chain",
+  title: "Independent Supply-Chain Analysis — How to Test an AI Buildout Claim From Evidence",
+  date: "2026-10-11",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 061: Chip requirements should begin with the customer result and the physical bottleneck, then determine what the silicon must contain.
+
+Lesson 062: Design tools, reusable IP, verification and foundry rules must work together before a chip idea becomes manufacturable.
+
+Lesson 063: Tapeout starts a chain of fabrication, packaging, testing and qualification that must repeat reliably before customers receive volume.
+
+Lesson 064: A chip ramp helps suppliers unevenly because orders depend on process steps, spare capacity and where the real bottleneck sits.
+
+Lesson 065: Strong demand does not guarantee strong supplier returns because timing, fixed costs and capacity additions can amplify the cycle.
+
+The claim sounds obvious—and may still be wrong
+
+Imagine an investment committee hears this claim: “Demand for useful AI services will grow 40%, so accelerator shipments, semiconductor-equipment sales and supplier profits should also grow about 40%.”
+
+The first number could be correct while the conclusion is badly wrong. Each step between a customer request and supplier profit contains a conversion factor. Software can make installed hardware more productive. Better chips can do more work per system. Spare factory capacity can absorb extra wafer demand. A bottleneck in memory or packaging can stop complete accelerators from shipping. Equipment already ordered can arrive before new orders are needed.
+
+Independent analysis means rebuilding that chain rather than accepting or rejecting the headline.
+
+Separate facts, estimates, assumptions and conclusions
+
+A fact is directly observed: a company reported revenue, installed tools or measured benchmark results. An estimate applies a method to incomplete evidence, such as projected AI-service demand. An assumption fills a value the analyst cannot observe, such as future utilization. A conclusion combines them.
+
+Keep those labels visible. The International Energy Agency’s Energy and AI report, for example, models several scenarios rather than presenting one certain future. Its High Efficiency Case supplies the same level of digital and AI services with more than 15% less data-center electricity in 2035 than its base case. That is not a chip-shipment forecast. It is evidence that service demand and physical infrastructure demand need not move one-for-one.
+
+Walk the claim through six gates
+
+First, define the customer outcome. “AI demand” could mean prompts, tokens, paying users or answers that meet a quality and latency target. Only the last measure is close to useful output. MLPerf Inference similarly requires systems to meet accuracy and latency constraints; raw computation without those conditions is not a valid result.
+
+Second, translate useful output into deployed systems. Use an illustrative fleet of 100 systems, each completing 10 useful jobs per hour, for 1,000 jobs total. Demand rises 40% to 1,400. Suppose software and scheduling raise output per system 20%, while new hardware raises it another 10%. Each system can now complete 13.2 jobs per hour. The service needs about 106 systems, not 140. Forty percent more useful demand produces roughly 6% system growth under these assumptions.
+
+Third, translate systems into components. The extra systems need accelerators, memory, networking, servers, power and cooling together. If high-bandwidth memory or packaging is short, ordering more processor dies does not create usable systems. If customers already own idle hardware, higher utilization may satisfy demand before new purchases begin.
+

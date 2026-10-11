@@ -693,7 +693,19 @@
         "lessons/065-02.tsfrag",
         "lessons/065-03.tsfrag"
       ]
+    },
+    {
+      "number": 66,
+      "module": "Module 7: Designing Chips and Reading the Supply Chain",
+      "title": "Independent Supply-Chain Analysis — How to Test an AI Buildout Claim From Evidence",
+      "date": "2026-10-11",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/066-01.tsfrag",
+        "lessons/066-02.tsfrag",
+        "lessons/066-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-10T11:04:07.191Z"
+  "updatedAt": "2026-10-11T11:03:37.763Z"
 }
