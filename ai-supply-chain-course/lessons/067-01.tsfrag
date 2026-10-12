@@ -1,0 +1,39 @@
+import type { Lesson } from "./lessons";
+
+export const lesson067 = {
+  number: 67,
+  module: "Module 8: AI Supply Chain Innovation Atlas",
+  title: "The Foundry Business Model — Why Manufacturing Neutrality Changed the Chip Industry",
+  date: "2026-10-12",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 062: Design tools, reusable IP, verification and foundry rules must work together before a chip idea becomes manufacturable.
+
+Lesson 063: Tapeout starts a chain of fabrication, packaging, testing and qualification that must repeat reliably before customers receive volume.
+
+Lesson 064: A chip ramp helps suppliers unevenly because orders depend on process steps, spare capacity and where the real bottleneck sits.
+
+Lesson 065: Strong demand does not guarantee strong supplier returns because timing, fixed costs and capacity additions can amplify the cycle.
+
+Lesson 066: Independent analysis traces demand through each conversion to supplier profit and tests the assumptions that control the result.
+
+The factory that promised not to become your rival
+
+Imagine you have designed a better accelerator in 1987. The design is valuable only if someone can manufacture it, but an advanced wafer factory costs far more than your young company can afford. The established chipmakers own factories—and they also sell their own chips. Handing one your design can feel like asking a competitor to make your product.
+
+TSMC changed that decision by offering a different bargain: it would manufacture customers’ designs without selling a competing chip under its own brand. TSMC says it pioneered this pure-play foundry model in 1987. The important innovation was not a new transistor. It was organizational neutrality: separating chip design from factory ownership so each side could specialize.
+
+What a foundry actually sells
+
+A foundry is a manufacturing service for semiconductors. A customer supplies a chip design that follows the foundry’s process rules. The foundry turns that design into patterned wafers, tests the manufacturing process and helps the customer move from early samples to repeatable volume.
+
+The physical work is still extraordinarily demanding. A leading process requires hundreds of tightly controlled steps, expensive tools, clean facilities, process recipes, defect learning and enough volume to improve yield. The business-model change did not remove those requirements. It let many customers share them.
+
+That sharing creates a reinforcing loop. More customers bring more designs and wafer volume. Greater volume helps spread fixed costs and produces more manufacturing data. Better yield, broader design support and continued process investment can attract still more customers. The customer does not need to finance an entire fab, while the foundry can operate one manufacturing platform across many product companies.
+
+Why neutrality changes the design market
+
+An integrated device manufacturer, or IDM, designs and sells chips while also operating factories. Integration can be powerful: product designers and manufacturing engineers can optimize together, internal products can provide baseline factory volume, and the company controls more of the schedule.
+
+But an external customer must ask an additional question: will the manufacturer prioritize, learn from or eventually compete with my product? A pure-play foundry reduces that specific conflict because its success depends on customers succeeding. TSMC’s older company materials described the company as a partner rather than a competitor; its current profile still defines the model as exclusively manufacturing customers’ products.
+
