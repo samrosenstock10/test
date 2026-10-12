@@ -645,7 +645,19 @@
         "lessons/061-02.tsfrag",
         "lessons/061-03.tsfrag"
       ]
+    },
+    {
+      "number": 67,
+      "module": "Module 8: AI Supply Chain Innovation Atlas",
+      "title": "The Foundry Business Model — Why Manufacturing Neutrality Changed the Chip Industry",
+      "date": "2026-10-12",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/067-01.tsfrag",
+        "lessons/067-02.tsfrag",
+        "lessons/067-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-06T12:03:34.000Z"
+  "updatedAt": "2026-10-12T11:08:45.000Z"
 }
