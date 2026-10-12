@@ -126,6 +126,13 @@
       "title": "Independent Supply-Chain Analysis — How to Test an AI Buildout Claim From Evidence",
       "bodySha256": "ce7d1ffc099ec5e09d34e37c8c29e98e8134eb2d40dde1753623259430a6529d",
       "body": "This lesson explains why a forecast for more AI use does not translate directly into equal growth in chips, equipment sales, or supplier profits. An analyst should separate observed facts, estimates, assumptions, and conclusions, then trace the claim through each physical and economic step. Useful demand first becomes a need for deployed systems, but software, scheduling, utilization, and better hardware can let existing systems do more work. Any added systems then require all their components together, while spare factory capacity, yield gains, and process complexity determine how much new manufacturing equipment is actually needed. Equipment orders become revenue only after production, delivery, installation, and sometimes customer acceptance, so backlog does not guarantee timing or completion. Revenue also does not guarantee profit because pricing, product mix, fixed costs, customer concentration, and supplier capacity spending can amplify the cycle. The main consequence is that a strong analysis exposes the few assumptions driving the result, identifies evidence that could disprove them, and follows the full chain from useful customer output to durable supplier profit."
+    },
+    {
+      "number": 67,
+      "date": "2026-10-12",
+      "title": "The Foundry Business Model — Why Manufacturing Neutrality Changed the Chip Industry",
+      "bodySha256": "92abd8e02a3f312870a3fcd43405abdd9a56d02cac67cd1b280a134667ce518d",
+      "body": "This lesson explains how TSMC’s pure-play foundry model changed the chip industry by separating chip design from factory ownership. A foundry manufactures customer designs, allowing many companies to share the enormous cost and difficulty of advanced chip fabrication. TSMC’s promise not to sell competing chips reduced a conflict that customers faced when relying on an integrated manufacturer. That neutrality helped fabless chip companies focus their capital on design, software and customers instead of building entire factories. The model can create a reinforcing loop because more customers bring more volume and manufacturing data, which can support better yield, design tools and future investment. Neutrality alone is not enough, because a foundry still needs competitive process technology, yield, packaging, delivery, design support and customer trust. The main consequence is that a business-model innovation can reorganize an industry by changing who can enter, what each company must own and which shared resource becomes the control point."
     }
   ]
 }
