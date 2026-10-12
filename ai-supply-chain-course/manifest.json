@@ -647,6 +647,66 @@
       ]
     },
     {
+      "number": 62,
+      "module": "Module 7: Designing Chips and Reading the Supply Chain",
+      "title": "EDA, IP and Verification — How a Chip Design Becomes Something a Factory Can Build",
+      "date": "2026-10-07",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/062-01.tsfrag",
+        "lessons/062-02.tsfrag",
+        "lessons/062-03.tsfrag"
+      ]
+    },
+    {
+      "number": 63,
+      "module": "Module 7: Designing Chips and Reading the Supply Chain",
+      "title": "Design-to-Volume Timelines — Why a Finished Chip Design Still Takes Time to Reach Customers",
+      "date": "2026-10-08",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/063-01.tsfrag",
+        "lessons/063-02.tsfrag",
+        "lessons/063-03.tsfrag"
+      ]
+    },
+    {
+      "number": 64,
+      "module": "Module 7: Designing Chips and Reading the Supply Chain",
+      "title": "Equipment and Materials Demand — How a Chip Ramp Creates Orders Across the Supply Chain",
+      "date": "2026-10-09",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/064-01.tsfrag",
+        "lessons/064-02.tsfrag",
+        "lessons/064-03.tsfrag"
+      ]
+    },
+    {
+      "number": 65,
+      "module": "Module 7: Designing Chips and Reading the Supply Chain",
+      "title": "Supplier Economics and Capacity Cycles — Why Strong Chip Demand Can Still Produce Weak Returns",
+      "date": "2026-10-10",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/065-01.tsfrag",
+        "lessons/065-02.tsfrag",
+        "lessons/065-03.tsfrag"
+      ]
+    },
+    {
+      "number": 66,
+      "module": "Module 7: Designing Chips and Reading the Supply Chain",
+      "title": "Independent Supply-Chain Analysis — How to Test an AI Buildout Claim From Evidence",
+      "date": "2026-10-11",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/066-01.tsfrag",
+        "lessons/066-02.tsfrag",
+        "lessons/066-03.tsfrag"
+      ]
+    },
+    {
       "number": 67,
       "module": "Module 8: AI Supply Chain Innovation Atlas",
       "title": "The Foundry Business Model — Why Manufacturing Neutrality Changed the Chip Industry",
@@ -659,5 +719,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-10-12T11:08:45.000Z"
+  "updatedAt": "2026-10-12T11:17:30.000Z"
 }
