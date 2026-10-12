@@ -1,0 +1,20 @@
+That is the standard for a supply-chain innovation. Ask not only whether a component is faster, but whether a new organization changes who can enter, what each participant must own and which shared resource becomes the control point.
+
+Sources
+
+TSMC, Company Profile — current description of its 1987 pure-play model and exclusive focus on manufacturing customer products: https://www.tsmc.com/english/aboutTSMC/company_profile
+
+TSMC, 1997 Company Profile — early description of the foundry as a partner rather than a competitor to customers: https://investor.tsmc.com/static/annualReports/1997/company1.html
+
+TSMC, 2025 Annual Report — customer trust, manufacturing excellence and competition in the dedicated-foundry business: https://investor.tsmc.com/static/annualReports/2025/english/index.html
+
+Intel, 2025 Form 10-K — internal versus external foundry activity, external revenue and the customer condition attached to future leading-edge investment: https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm
+
+Samsung Semiconductor, Foundry Overview — process, design ecosystem and integrated packaging claims: https://semiconductor.samsung.com/foundry/
+
+Next lesson
+
+Lesson 068: Foundry Strategy — When Integration Helps and When It Repels Customers
+
+We will compare how TSMC, Samsung and Intel combine process technology, internal scale, packaging and customer relationships—and identify the evidence that separates a roadmap from a durable manufacturing franchise.`,
+} satisfies Lesson;
