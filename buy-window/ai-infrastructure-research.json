@@ -1154,6 +1154,34 @@
       "verification": "The post attribution was verified; the full teardown and underlying yield or tool evidence were not available in this bounded scan.",
       "freshness": "new-after-prior-cutoff",
       "itemId": "semianalysis-intel-18a-bspd-teardown-20261013"
+    },
+    {
+      "id": "expert-20261013-ocp-open-data-center-power-stack",
+      "channel": "ocp",
+      "sourceId": "ocp",
+      "sourceLane": "engineering",
+      "title": "OCP facilities standards converge around high-voltage AI data-center power",
+      "sourceTitle": "Realizing the OCP Open Data Center Ecosystem Vision",
+      "url": "https://www.opencompute.org/news/realizing-the-ocp-open-data-center-ecosystem-vision/",
+      "speaker": "James Kelly, Cliff Grossner, and Zane Ball",
+      "role": "OCP market intelligence, innovation, and technology leaders",
+      "publishedDate": "2026-10-12",
+      "observedAt": "2026-10-13T12:34:15Z",
+      "contentAccess": "article",
+      "independenceGroup": "ocp",
+      "summary": "OCP reports a facilities standards stack for high-density AI data centers: a path toward 1 MW racks, 800 VDC distribution evolving toward 1,500 VDC, energy-storage safety guidance, solid-state-transformer requirements and grid-disturbance performance specifications, while several rack and busway designs remain incomplete.",
+      "claim": "OCP's October 12 summary says its community has published or advanced facility-roadmap, direct-current architecture, energy-storage, telemetry, medium-voltage-to-800-VDC conversion and grid ride-through contributions; it also says 800-VDC busway/layout and scale-ready cluster practices remain unfinished.",
+      "interpretation": "Our inference: AI data-center power is becoming a coordinated standards-and-integration problem rather than a single-equipment bottleneck, raising the value of validated power conversion, storage, controls, grid-interface engineering and interoperability. This source does not identify a public-company winner.",
+      "beneficiaryTickers": [],
+      "countercase": "This is an OCP organizational progress summary, not independent deployment evidence. Specifications, forecasts and a stated path to 1 MW racks do not prove safe field operation, adoption, supplier qualification, pricing power or project economics.",
+      "nextTest": "Read the linked specifications, map named contributors and qualified implementations, and track operating 800-VDC or higher-voltage deployments, ride-through results, safety incidents, lead times and supplier economics.",
+      "evidenceType": "industry-standards-progress",
+      "status": "evidence",
+      "location": "Full official OCP article dated October 12, 2026, newly visible after the prior engineering cutoff.",
+      "incentives": "OCP promotes its open standards, community progress and ecosystem reach; its summary is authoritative for OCP activity but not independent proof of adoption or economics.",
+      "verification": "Read the full official OCP article and its specific contribution list. Linked specifications, contributor rosters and field deployments were not individually re-audited in this bounded cycle.",
+      "freshness": "newly-visible-after-prior-cutoff",
+      "itemId": "ocp-open-data-center-power-stack-20261012"
     }
   ],
   "evidence": [
@@ -3103,6 +3131,26 @@
       "beneficiaryTickers": [],
       "sourceObservationId": "expert-20261013-semianalysis-intel-18a-bspd-teardown",
       "corroborationNote": "This record and the linked observation are two representations of the same SemiAnalysis-originated post and are not independent corroboration."
+    },
+    {
+      "id": "20261012-ocp-open-data-center-power-stack",
+      "title": "OCP facilities standards converge around high-voltage AI data-center power",
+      "url": "https://www.opencompute.org/news/realizing-the-ocp-open-data-center-ecosystem-vision/",
+      "kind": "industry-standards-progress",
+      "independenceGroup": "ocp",
+      "publishedDate": "2026-10-12",
+      "observedAt": "2026-10-13T12:34:15Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "OCP reports a facilities standards stack for high-density AI data centers: a path toward 1 MW racks, 800 VDC distribution evolving toward 1,500 VDC, energy-storage safety guidance, solid-state-transformer requirements and grid-disturbance performance specifications, while several rack and busway designs remain incomplete.",
+      "claim": "OCP's October 12 summary says its community has published or advanced facility-roadmap, direct-current architecture, energy-storage, telemetry, medium-voltage-to-800-VDC conversion and grid ride-through contributions; it also says 800-VDC busway/layout and scale-ready cluster practices remain unfinished.",
+      "interpretation": "Our inference: AI data-center power is becoming a coordinated standards-and-integration problem rather than a single-equipment bottleneck, raising the value of validated power conversion, storage, controls, grid-interface engineering and interoperability. This source does not identify a public-company winner.",
+      "verification": "Read the full official OCP article and its specific contribution list. Linked specifications, contributor rosters and field deployments were not individually re-audited in this bounded cycle.",
+      "countercase": "This is an OCP organizational progress summary, not independent deployment evidence. Specifications, forecasts and a stated path to 1 MW racks do not prove safe field operation, adoption, supplier qualification, pricing power or project economics.",
+      "nextTest": "Read the linked specifications, map named contributors and qualified implementations, and track operating 800-VDC or higher-voltage deployments, ride-through results, safety incidents, lead times and supplier economics.",
+      "beneficiaryTickers": [],
+      "sourceObservationId": "expert-20261013-ocp-open-data-center-power-stack",
+      "corroborationNote": "This record and the linked observation are two representations of the same OCP-originated article and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -27310,17 +27358,26 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-13T11:33:31Z",
-    "kind": "semianalysis-daily-scan",
-    "completedChannels": [],
+    "asOf": "2026-10-13T12:34:15Z",
+    "kind": "builder-engineering-scan",
+    "completedChannels": [
+      "information-bottleneck",
+      "ocp",
+      "gpu-mode"
+    ],
     "partialChannels": [
-      "semianalysis"
+      "latent-space",
+      "dwarkesh"
     ],
     "unavailableChannels": [],
     "limitations": [
-      "Official SemiAnalysis newsletter, X and LinkedIn discovery was completed through the cutoff. Direct or forwarded Gmail source material was not checked in this source cycle.",
-      "The AMD vLLM and Intel 18A items remain notes-only leads because the exact upstream merge/performance evidence and full teardown were not independently available."
+      "Incremental review used the completed builder cutoff 2026-10-12T12:37:02Z; the completed October 13 SemiAnalysis source cycle was not repeated.",
+      "OCP's official news archive exposed an October 12 technical summary that was not visible at the prior cutoff. Its facilities contribution list was recorded once with the October 12 source date and the actual October 13 observation time.",
+      "The Information Bottleneck archive newly exposed an October 10 climate-and-science episode, but its discussion did not add a qualifying AI-infrastructure supply-chain mechanism. GPU MODE had no commit after the prior cutoff.",
+      "Latent Space and Dwarkesh exposed no verifiable post-cutoff original in the bounded current check and remain partial rather than inferred complete.",
+      "The Innovation Atlas power-family check used Siemens Energy and Hitachi Energy official press pages; access limits prevented a complete current release list and no separate qualifying milestone was verified.",
+      "The OCP article is standards evidence, not a deployment, supplier-selection or economics result. No score, rank, thesis, valuation or universe change resulted."
     ]
   },
-  "updatedAt": "2026-10-13T11:44:30Z"
+  "updatedAt": "2026-10-13T12:34:15Z"
 }
