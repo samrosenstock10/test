@@ -1,0 +1,43 @@
+import type { Lesson } from "./lessons";
+
+export const lesson068 = {
+  number: 68,
+  module: "Module 8: Competing Technologies & Business Models",
+  title: "Foundry Strategy — When Integration Helps and When It Repels Customers",
+  date: "2026-10-13",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 063: Tapeout begins a long chain of fabrication, packaging, testing and qualification before a chip can ship at scale.
+
+Lesson 064: A chip ramp helps suppliers unevenly because orders depend on process steps, spare capacity and the location of the real bottleneck.
+
+Lesson 065: Strong demand does not guarantee strong supplier returns because fixed costs, timing and new capacity can amplify the cycle.
+
+Lesson 066: Independent analysis follows demand through each conversion to profit and tests the assumptions that control the result.
+
+Lesson 067: A neutral foundry lets many chip designers share advanced factories without asking a direct product competitor to manufacture their designs.
+
+The customer choosing more than a process node
+
+Imagine an AI-chip company choosing a foundry for its next accelerator. All three candidates claim competitive transistor technology. One is a manufacturing specialist. Another also makes memory and consumer electronics. The third designs processors while rebuilding an external foundry business.
+
+The decision is not simply “which node is fastest?” The customer is choosing an operating relationship that may last through design, wafer production, packaging and several product generations.
+
+Integration can make that relationship stronger. It can also create the fear that the manufacturer has conflicting priorities. The same corporate structure can therefore be an advantage in the factory and a disadvantage in the sales meeting.
+
+Where integration creates real operating advantages
+
+An integrated device manufacturer, or IDM, designs chips and operates factories inside one company. Intel and Samsung are examples, although both also offer manufacturing services to outside customers.
+
+Internal products can provide a foundry with baseline volume. That matters because an advanced process improves through repeated production: engineers find defects, adjust recipes and learn which design choices produce reliable yield. A large internal chip program can begin that learning before external customers are ready to commit.
+
+Integration can also shorten some feedback loops. If a processor team sees that a design choice creates difficult wiring or poor yield, it can work directly with the process team. Manufacturing rules, chip architecture and package design can be changed together rather than negotiated across separate companies.
+
+Samsung adds another kind of integration. The wider Samsung group participates in logic manufacturing, memory and advanced packaging. Its foundry materials present these capabilities as a connected service. For an AI accelerator that needs logic dies, high-bandwidth memory and a complex package, fewer organizational handoffs could make planning easier—if the promised pieces are available at the right performance, volume and schedule.
+
+Intel is pursuing a related but different model. Its own processors remain major internal users of Intel Foundry, while the company seeks outside wafer and packaging customers. Internal demand can support factories and process learning. External customers, however, are the test of whether the manufacturing platform is competitive beyond Intel's own product roadmap.
+
+Why the same integration can repel a customer
+
+Return to the AI-chip company. It must disclose sensitive information years before launch: architecture choices, expected volumes, schedule priorities and likely package design. If the manufacturer or its corporate siblings sell competing processors, memory or finished products, the customer must trust both technical security and business behavior.
+
