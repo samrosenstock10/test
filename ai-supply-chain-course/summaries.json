@@ -133,6 +133,13 @@
       "title": "The Foundry Business Model — Why Manufacturing Neutrality Changed the Chip Industry",
       "bodySha256": "92abd8e02a3f312870a3fcd43405abdd9a56d02cac67cd1b280a134667ce518d",
       "body": "This lesson explains how TSMC’s pure-play foundry model changed the chip industry by separating chip design from factory ownership. A foundry manufactures customer designs, allowing many companies to share the enormous cost and difficulty of advanced chip fabrication. TSMC’s promise not to sell competing chips reduced a conflict that customers faced when relying on an integrated manufacturer. That neutrality helped fabless chip companies focus their capital on design, software and customers instead of building entire factories. The model can create a reinforcing loop because more customers bring more volume and manufacturing data, which can support better yield, design tools and future investment. Neutrality alone is not enough, because a foundry still needs competitive process technology, yield, packaging, delivery, design support and customer trust. The main consequence is that a business-model innovation can reorganize an industry by changing who can enter, what each company must own and which shared resource becomes the control point."
+    },
+    {
+      "number": 68,
+      "date": "2026-10-13",
+      "title": "Foundry Strategy — When Integration Helps and When It Repels Customers",
+      "bodySha256": "adb5b39f6032a8a836b4846a5da702ba71e21da3ee3abe625cd5160555c05c2f",
+      "body": "This lesson explains why a foundry’s corporate structure can help manufacturing while also making outside chip designers cautious. Intel and Samsung can use internal products to fill factories, learn faster and coordinate chip, process, memory or packaging work across one company. Those same internal businesses can worry customers because they may compete for sensitive information, engineering attention or scarce factory capacity. TSMC’s pure-play model reduces that conflict because it manufactures customer designs without selling a competing branded processor. Neutrality still does not guarantee good technology, yield, price or enough demand, just as internal scale does not prove that outside customers will choose a process. A customer should therefore test three things separately: physical capability, alignment with the customer’s success and proof from important external products that reached production and returned for another generation. The main consequence is that a durable foundry needs both excellent manufacturing and an operating structure that customers trust for years."
     }
   ]
 }
