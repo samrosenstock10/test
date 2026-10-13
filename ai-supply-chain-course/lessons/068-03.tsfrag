@@ -1,0 +1,12 @@
+TSMC, 2025 Annual Report — customer trust, manufacturing execution, capacity investment and competition in the dedicated-foundry business: https://investor.tsmc.com/static/annualReports/2025/english/index.html
+
+Samsung Semiconductor, Foundry Overview — Samsung's account of its process, design ecosystem and integrated advanced-packaging service: https://semiconductor.samsung.com/foundry/
+
+Intel, 2025 Form 10-K — Intel Foundry's internal and external activity, manufacturing strategy and dependence on winning significant external customers: https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm
+
+Next lesson
+
+Lesson 069: Leading Edge or Specialty — Two Different Ways to Build a Foundry Franchise
+
+We will compare factories that pursue the newest logic processes with foundries that concentrate on mature and specialty technologies, and see why an older node can still be strategically valuable.`,
+} satisfies Lesson;

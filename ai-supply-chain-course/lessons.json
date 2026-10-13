@@ -717,7 +717,19 @@
         "lessons/067-02.tsfrag",
         "lessons/067-03.tsfrag"
       ]
+    },
+    {
+      "number": 68,
+      "module": "Module 8: Competing Technologies & Business Models",
+      "title": "Foundry Strategy — When Integration Helps and When It Repels Customers",
+      "date": "2026-10-13",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/068-01.tsfrag",
+        "lessons/068-02.tsfrag",
+        "lessons/068-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-12T14:06:44.139Z"
+  "updatedAt": "2026-10-13T11:12:00.000Z"
 }
