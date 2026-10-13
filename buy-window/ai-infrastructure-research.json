@@ -1068,6 +1068,92 @@
       "verification": "Read the full official article and preserved its cited figures as the author's sourced synthesis. The underlying ERCOT, regulatory and company records were not independently re-audited in this bounded expert cycle.",
       "freshness": "sunday-30-day-reconciliation",
       "itemId": "a16z-texas-time-to-power-20261007"
+    },
+    {
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "speaker": "SemiAnalysis",
+      "role": "AI infrastructure research team",
+      "observedAt": "2026-10-13T11:33:31Z",
+      "independenceGroup": "semianalysis",
+      "incentives": "SemiAnalysis sells specialist research and datasets and benefits from attention to its analysis.",
+      "id": "expert-20261013-semianalysis-abf-substrate-size-pricing",
+      "title": "ABF substrate pricing divergence reveals a large size-driven value component",
+      "sourceTitle": "Japan versus Taiwan substrate ASP measurement",
+      "url": "https://www.linkedin.com/company/semianalysis",
+      "publishedDate": "2026-10-13",
+      "contentAccess": "article",
+      "summary": "SemiAnalysis says Taiwan’s per-piece substrate price index has tripled since mid-2025 while Japan’s per-square-meter series rose much less, because accelerator substrates are both more complex and far larger than memory or mobile substrates.",
+      "claim": "The post says 100x100 mm-plus accelerator substrates have 20–50 times the area of typical memory or mobile substrates even though value per square meter is only roughly 1.5–2 times higher.",
+      "interpretation": "Our inference: accelerator substrate value growth is being driven by package body size as well as complexity, so per-area statistics alone can understate total substrate content per accelerator.",
+      "beneficiaryTickers": [],
+      "countercase": "The country series may differ in product mix, sample construction and currency; higher industry value does not establish supplier share, yield, margins or durable pricing power.",
+      "nextTest": "Trace the Japan and Taiwan source series, normalize currency and mix, and map large-body ABF exposure, yield and pricing to named suppliers.",
+      "evidenceType": "specialist-analyst-data-methodology",
+      "status": "evidence",
+      "location": "Full attributable post on the official SemiAnalysis LinkedIn company feed, observed October 13, 2026.",
+      "verification": "Read the full official post. The underlying national statistics and company-level economics were not independently reconciled in this bounded source cycle.",
+      "freshness": "new-after-prior-cutoff",
+      "itemId": "semianalysis-abf-substrate-size-pricing-20261013"
+    },
+    {
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "speaker": "SemiAnalysis",
+      "role": "AI infrastructure research team",
+      "observedAt": "2026-10-13T11:33:31Z",
+      "independenceGroup": "semianalysis",
+      "incentives": "SemiAnalysis sells specialist research and datasets and benefits from attention to its analysis.",
+      "id": "expert-20261013-semianalysis-amd-vllm-megakernel",
+      "title": "AMD reached upstream vLLM megakernel decode support before NVIDIA",
+      "sourceTitle": "AMD vLLM megakernel decode support",
+      "url": "https://x.com/SemiAnalysis_/status/2109841575547211955",
+      "publishedDate": "2026-10-12",
+      "contentAccess": "notes-only",
+      "summary": "SemiAnalysis reports that AMD landed megakernel decode support in upstream vLLM before NVIDIA, describing it as a rare major vLLM feature supported on ROCm but not yet CUDA.",
+      "claim": "The attributable post makes a narrow software-feature timing claim; no matched performance or production-adoption evidence was provided.",
+      "interpretation": "Our lead: if verified, this is an early sign that ROCm can occasionally lead on an important low-latency inference feature rather than merely follow CUDA.",
+      "beneficiaryTickers": [
+        "AMD"
+      ],
+      "countercase": "One upstream feature does not establish performance, compatibility, developer adoption, durable software leadership or accelerator share.",
+      "nextTest": "Locate the exact vLLM commit or pull request, reproduce it on comparable AMD and NVIDIA systems, and measure latency, throughput, model coverage and production adoption.",
+      "evidenceType": "software-ecosystem-lead",
+      "status": "lead",
+      "location": "Attributable SemiAnalysis X post surfaced through the official social feed and indexed snippet; direct X open returned 403.",
+      "verification": "The post attribution was verified, but the exact upstream vLLM merge and benchmark were not located in this bounded scan.",
+      "freshness": "new-after-prior-cutoff",
+      "itemId": "semianalysis-amd-vllm-megakernel-20261012"
+    },
+    {
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "speaker": "SemiAnalysis",
+      "role": "AI infrastructure research team",
+      "observedAt": "2026-10-13T11:33:31Z",
+      "independenceGroup": "semianalysis",
+      "incentives": "SemiAnalysis sells specialist research and datasets and benefits from attention to its analysis.",
+      "id": "expert-20261013-semianalysis-intel-18a-bspd-teardown",
+      "title": "Intel 18A backside power shifts yield and inspection problems",
+      "sourceTitle": "Wildcat Lake Intel 18A BSPD teardown",
+      "url": "https://x.com/SemiAnalysis_/status/2109720997888655601",
+      "publishedDate": "2026-10-13",
+      "contentAccess": "notes-only",
+      "summary": "SemiAnalysis says backside power delivery changes the established yield-learning, fault-isolation and inspection toolbox and points to a Wildcat Lake Intel 18A teardown.",
+      "claim": "The attributable post identifies process-control difficulty around backside power but does not expose defect, yield, tool or production-economics data.",
+      "interpretation": "Our lead: backside power may create new process-control and metrology needs, but the public-company value chain cannot be assigned from this teaser alone.",
+      "beneficiaryTickers": [],
+      "countercase": "The post is a teardown teaser with a recruiting component and lacks defect rates, yield comparisons, tool requirements and production economics.",
+      "nextTest": "Review the full teardown, compare defect modes and yields with frontside power, and identify which inspection, e-beam and metrology steps change and which vendors supply them.",
+      "evidenceType": "process-technology-lead",
+      "status": "lead",
+      "location": "Attributable SemiAnalysis X post surfaced through the official social feed and indexed snippet; direct X open returned 403.",
+      "verification": "The post attribution was verified; the full teardown and underlying yield or tool evidence were not available in this bounded scan.",
+      "freshness": "new-after-prior-cutoff",
+      "itemId": "semianalysis-intel-18a-bspd-teardown-20261013"
     }
   ],
   "evidence": [
@@ -2955,6 +3041,68 @@
       "beneficiaryTickers": [],
       "sourceObservationId": "expert-20261011-a16z-texas-time-to-power-flexibility",
       "corroborationNote": "This record and the linked observation are two representations of the same a16z article and are not independent corroboration."
+    },
+    {
+      "id": "20261013-semianalysis-abf-substrate-size-pricing",
+      "title": "ABF substrate pricing divergence reveals a large size-driven value component",
+      "url": "https://www.linkedin.com/company/semianalysis",
+      "kind": "specialist-analyst-data-methodology",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-10-13",
+      "observedAt": "2026-10-13T11:33:31Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "SemiAnalysis says Taiwan’s per-piece substrate price index has tripled since mid-2025 while Japan’s per-square-meter series rose much less, because accelerator substrates are both more complex and far larger than memory or mobile substrates.",
+      "claim": "The post says 100x100 mm-plus accelerator substrates have 20–50 times the area of typical memory or mobile substrates even though value per square meter is only roughly 1.5–2 times higher.",
+      "interpretation": "Our inference: accelerator substrate value growth is being driven by package body size as well as complexity, so per-area statistics alone can understate total substrate content per accelerator.",
+      "verification": "Read the full official post. The underlying national statistics and company-level economics were not independently reconciled in this bounded source cycle.",
+      "countercase": "The country series may differ in product mix, sample construction and currency; higher industry value does not establish supplier share, yield, margins or durable pricing power.",
+      "nextTest": "Trace the Japan and Taiwan source series, normalize currency and mix, and map large-body ABF exposure, yield and pricing to named suppliers.",
+      "beneficiaryTickers": [],
+      "sourceObservationId": "expert-20261013-semianalysis-abf-substrate-size-pricing",
+      "corroborationNote": "This record and the linked observation are two representations of the same SemiAnalysis-originated post and are not independent corroboration."
+    },
+    {
+      "id": "20261013-semianalysis-amd-vllm-megakernel",
+      "title": "AMD reached upstream vLLM megakernel decode support before NVIDIA",
+      "url": "https://x.com/SemiAnalysis_/status/2109841575547211955",
+      "kind": "software-ecosystem-lead",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-10-12",
+      "observedAt": "2026-10-13T11:33:31Z",
+      "contentAccess": "notes-only",
+      "status": "lead",
+      "summary": "SemiAnalysis reports that AMD landed megakernel decode support in upstream vLLM before NVIDIA, describing it as a rare major vLLM feature supported on ROCm but not yet CUDA.",
+      "claim": "The attributable post makes a narrow software-feature timing claim; no matched performance or production-adoption evidence was provided.",
+      "interpretation": "Our lead: if verified, this is an early sign that ROCm can occasionally lead on an important low-latency inference feature rather than merely follow CUDA.",
+      "verification": "The post attribution was verified, but the exact upstream vLLM merge and benchmark were not located in this bounded scan.",
+      "countercase": "One upstream feature does not establish performance, compatibility, developer adoption, durable software leadership or accelerator share.",
+      "nextTest": "Locate the exact vLLM commit or pull request, reproduce it on comparable AMD and NVIDIA systems, and measure latency, throughput, model coverage and production adoption.",
+      "beneficiaryTickers": [
+        "AMD"
+      ],
+      "sourceObservationId": "expert-20261013-semianalysis-amd-vllm-megakernel",
+      "corroborationNote": "This record and the linked observation are two representations of the same SemiAnalysis-originated post and are not independent corroboration."
+    },
+    {
+      "id": "20261013-semianalysis-intel-18a-bspd-teardown",
+      "title": "Intel 18A backside power shifts yield and inspection problems",
+      "url": "https://x.com/SemiAnalysis_/status/2109720997888655601",
+      "kind": "process-technology-lead",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-10-13",
+      "observedAt": "2026-10-13T11:33:31Z",
+      "contentAccess": "notes-only",
+      "status": "lead",
+      "summary": "SemiAnalysis says backside power delivery changes the established yield-learning, fault-isolation and inspection toolbox and points to a Wildcat Lake Intel 18A teardown.",
+      "claim": "The attributable post identifies process-control difficulty around backside power but does not expose defect, yield, tool or production-economics data.",
+      "interpretation": "Our lead: backside power may create new process-control and metrology needs, but the public-company value chain cannot be assigned from this teaser alone.",
+      "verification": "The post attribution was verified; the full teardown and underlying yield or tool evidence were not available in this bounded scan.",
+      "countercase": "The post is a teardown teaser with a recruiting component and lacks defect rates, yield comparisons, tool requirements and production economics.",
+      "nextTest": "Review the full teardown, compare defect modes and yields with frontside power, and identify which inspection, e-beam and metrology steps change and which vendors supply them.",
+      "beneficiaryTickers": [],
+      "sourceObservationId": "expert-20261013-semianalysis-intel-18a-bspd-teardown",
+      "corroborationNote": "This record and the linked observation are two representations of the same SemiAnalysis-originated post and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -27162,40 +27310,17 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-11T13:34:42Z",
-    "kind": "daily-expert-scan",
-    "completedChannels": [
-      "a16z",
-      "ocp",
-      "dwarkesh"
-    ],
+    "asOf": "2026-10-13T11:33:31Z",
+    "kind": "semianalysis-daily-scan",
+    "completedChannels": [],
     "partialChannels": [
-      "information-bottleneck",
-      "latent-space",
-      "gpu-mode",
-      "exponential-view"
+      "semianalysis"
     ],
     "unavailableChannels": [],
-    "exponentialView": {
-      "logicalWeek": "2026-10-11",
-      "checkedAt": "2026-10-11T13:34:42Z",
-      "status": "complete-with-access-limit",
-      "reviewedItemUrls": [
-        "https://intelligence.exponentialview.co/"
-      ],
-      "gaps": [
-        "The public newsletter homepage exposed no issue archive text; the accessible June 2026 State of the AI Economy report was already outside the new-item window. No paywalled substance was inferred."
-      ]
-    },
     "limitations": [
-      "Sunday used the source's 30-day reconciliation window and reused completed October 11 SemiAnalysis and builder-engineering evidence without rescanning or counting duplicate origins.",
-      "The full official a16z Texas article was read. TypeSafe AI and Preference Model were screened and did not add a decision-relevant physical AI-infrastructure mechanism.",
-      "OCP's official news page showed the October 12–15 summit as upcoming; no new post-scan deployment result was available. Dwarkesh's official archive showed no new infrastructure episode after the prior relevant cutoff.",
-      "Information Bottleneck, Latent Space and GPU MODE yielded no qualifying new original in the bounded reconciliation and remain partial rather than fabricated complete coverage.",
-      "The Sunday review assessed all 18 scored companies. No score, rank, thesis, core-eligibility or valuation-assumption change resulted.",
-      "Project Tracker D3 read 71 Bottlenecks and 27 Claims. The sole new source version, AT&T LegalEdge reliability governance, was skipped as outside AI-infrastructure investment scope; 63 older records remain pending.",
-      "Future Leaders, Grok intake, Innovation Atlas and downstream Conviction retain independent completion state."
+      "Official SemiAnalysis newsletter, X and LinkedIn discovery was completed through the cutoff. Direct or forwarded Gmail source material was not checked in this source cycle.",
+      "The AMD vLLM and Intel 18A items remain notes-only leads because the exact upstream merge/performance evidence and full teardown were not independently available."
     ]
   },
-  "updatedAt": "2026-10-11T13:34:42Z"
+  "updatedAt": "2026-10-13T11:44:30Z"
 }
