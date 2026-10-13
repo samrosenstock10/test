@@ -1,0 +1,36 @@
+The concern is broader than deliberate copying. Capacity might be allocated first to internal products during a shortage. A process delay might be managed around the manufacturer's own launch calendar. Design support could be optimized for internal needs. Even if none of these problems occurs, the possibility raises the evidence a customer needs before committing.
+
+TSMC's pure-play model removes much of this particular conflict. TSMC does not sell a branded processor that competes with its customers. Its business depends on serving many outside chip companies, so customer success, confidentiality and dependable capacity are central to the model.
+
+That neutrality has a cost as well as a benefit. TSMC cannot rely on a captive processor division to fill a new process. It must persuade customers to adopt the node, bring their designs through its tools and commit enough volume to justify enormous capital spending. Neutrality improves alignment; it does not manufacture demand or yield.
+
+The decision framework: capability, alignment and proof
+
+Our illustrative customer should separate three questions.
+
+First, capability: can the foundry repeatedly manufacture the chip at the required performance, power, yield and volume? A roadmap date or a working test chip is not the same as stable customer production.
+
+Second, alignment: does the foundry's structure make the customer's success its priority? Pure-play neutrality is strong evidence of alignment, but hybrid foundries can improve trust through information barriers, clear capacity agreements and a record of serving external designs.
+
+Third, proof: have important outside customers committed products, reached production and returned for another generation? Internal volume proves that factories can run. External repeat business shows that unrelated customers accept the tools, economics, support and conflict protections.
+
+These tests explain why integration is not simply good or bad. A captive product can accelerate learning but hide whether the process is attractive to outsiders. A broad internal supply chain can reduce handoffs but increase perceived conflicts. A neutral supplier can win trust yet still lose if its technology, yield or price is weak.
+
+What the business model changes economically
+
+Foundries carry enormous fixed costs. Baseline internal volume can reduce the risk that an expensive factory sits underused, but captive volume is not automatically profitable: weak yields or uncompetitive products can still destroy value.
+
+External customers diversify demand and can spread process investment across more designs. They also have alternatives and negotiating power. The strongest franchise therefore needs both physical execution and a structure customers are willing to depend on.
+
+For a chip company, switching foundries is not like changing an office-software vendor. Designs use process-specific rules, reusable IP, verification flows and package choices. Moving can require substantial engineering work and a new qualification cycle. That makes the initial trust decision unusually consequential.
+
+The central takeaway
+
+Integration helps when shared product, process, memory and packaging teams reduce real coordination costs or create useful manufacturing volume. It repels when customers believe those same internal businesses may compete for information, engineering attention or capacity.
+
+TSMC, Samsung and Intel represent different answers, not a permanent ranking. The evidence that matters is measured manufacturing performance, successful external products, reliable delivery and repeat commitments—not the breadth of a corporate diagram or the ambition of a roadmap.
+
+Sources
+
+TSMC, Company Profile — TSMC's description of its pure-play foundry model and exclusive focus on manufacturing customer products: https://www.tsmc.com/english/aboutTSMC/company_profile
+
