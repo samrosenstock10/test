@@ -1,0 +1,38 @@
+These requirements can favor mature geometries, different wafer materials or customized device structures. The customer's decision is not “How small are the transistors?” It is “Does this process give my product the voltage, noise, frequency, reliability and cost profile it needs?”
+
+GlobalFoundries describes platforms spanning radio frequency, power, feature-rich and ultra-low-power processes, including RF SOI, silicon germanium, gallium nitride and silicon photonics. Tower Semiconductor focuses on analog-intensive specialty technologies such as power management, RF, image sensors and silicon photonics. Their competitive claim is not that they will beat the smallest logic node. It is that their process is unusually useful for a chosen function.
+
+Specialty manufacturing creates a different learning loop
+
+Leading-edge learning often centers on shrinking features, controlling difficult patterning and raising yield on a new node. Specialty learning can accumulate through device models, reliability data, customer-specific process options and years of production in one application.
+
+Consider the vehicle power chip. Once it is designed into a car platform, qualified and proven reliable, changing foundries can force redesign and another lengthy qualification. The process may remain in production for many years because the vehicle maker values continuity more than a rapid node change.
+
+That can create durable customer relationships. It can also produce complexity. A specialty foundry may support many process variants across different factories and wafer sizes. Low-volume customization can be valuable, but too many variants can reduce manufacturing efficiency.
+
+The economics are different, not automatically easier
+
+A leading-edge franchise seeks very large pools of high-value digital demand. Its upside can be enormous when a node wins major accelerators, processors and smartphones. Its capital and execution risk are also enormous because technology and factories must advance together.
+
+A specialty franchise can avoid the most expensive shrinking race and serve markets with long product lives. It may earn attractive economics when its process is difficult to substitute and deeply qualified into customer systems. Yet mature-node capacity can become commoditized when several foundries offer similar processes. Automotive or industrial demand can weaken. A differentiated label does not guarantee pricing power.
+
+Wafer size matters too. A 300-millimeter wafer offers more area than a 200-millimeter wafer, which can lower cost per die when volume and process equipment justify it. But moving a specialty process to larger wafers requires new tools, process development and customer qualification. The theoretically cheaper wafer is not automatically the cheapest transition.
+
+How to judge which franchise is stronger
+
+Return to the two customers.
+
+For the AI accelerator, ask whether the foundry has measured performance, power, yield, packaging capacity and enough production scale at the required node. Roadmaps are not proof.
+
+For the power-management chip, ask whether the process solves the electrical and reliability problem, whether it has been qualified in the target market, how many credible alternatives exist and whether the foundry will support it for the product's lifetime.
+
+For either strategy, three questions matter:
+
+1. What customer problem is the process uniquely good at solving?
+2. What evidence shows that the advantage survives volume production?
+3. Does the expected demand justify the capital and process complexity required to serve it?
+
+The central takeaway
+
+Leading edge and specialty are not rungs on one ladder. They are different ways to turn manufacturing knowledge into a customer advantage.
+
