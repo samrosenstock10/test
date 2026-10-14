@@ -1,0 +1,16 @@
+TSMC demonstrates the scale and reinvestment loop available when advanced logic wins enormous demand. GlobalFoundries and Tower show how a foundry can instead concentrate on functions that do not require the smallest transistor. A strong franchise begins by choosing the dimension of performance that customers actually pay for, then building the process, capacity and trust to deliver it repeatedly.
+
+Sources
+
+TSMC, 2025 Annual Report — advanced-process revenue mix, technology investment and the economics of manufacturing leadership: https://investor.tsmc.com/sites/ir/annual-report/2025/2025%20Annual%20Report_E.pdf
+
+GlobalFoundries, 2025 Form 20-F discussion reproduced in its 2025–2026 filings — feature-rich, ultra-low-power, RF, power and silicon-photonics platforms: https://investors.gf.com/static-files/91ba4eed-72c2-4f46-bb47-ce07b757c5a6
+
+Tower Semiconductor, 2025 Form 20-F — specialty process technologies, including analog, RF, power management, imaging and silicon photonics: https://ir.towersemi.com/static-files/2bd7b050-4b74-4c20-893a-2a9274e86ecb
+
+Next lesson
+
+Lesson 070: Geography, Capacity and New Manufacturing Models — Why Location Changes the Foundry Race
+
+We will examine how subsidies, customer proximity, supply security and new manufacturing projects change the cost and strategic value of where a foundry builds.`,
+} satisfies Lesson;

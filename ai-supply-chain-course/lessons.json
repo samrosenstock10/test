@@ -729,7 +729,19 @@
         "lessons/068-02.tsfrag",
         "lessons/068-03.tsfrag"
       ]
+    },
+    {
+      "number": 69,
+      "module": "Module 8: Competing Technologies & Business Models",
+      "title": "Leading Edge or Specialty — Two Different Ways to Build a Foundry Franchise",
+      "date": "2026-10-14",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/069-01.tsfrag",
+        "lessons/069-02.tsfrag",
+        "lessons/069-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-13T11:12:00.000Z"
+  "updatedAt": "2026-10-14T11:12:03.407Z"
 }
