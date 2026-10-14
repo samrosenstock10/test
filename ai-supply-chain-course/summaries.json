@@ -140,6 +140,13 @@
       "title": "Foundry Strategy — When Integration Helps and When It Repels Customers",
       "bodySha256": "adb5b39f6032a8a836b4846a5da702ba71e21da3ee3abe625cd5160555c05c2f",
       "body": "This lesson explains why a foundry’s corporate structure can help manufacturing while also making outside chip designers cautious. Intel and Samsung can use internal products to fill factories, learn faster and coordinate chip, process, memory or packaging work across one company. Those same internal businesses can worry customers because they may compete for sensitive information, engineering attention or scarce factory capacity. TSMC’s pure-play model reduces that conflict because it manufactures customer designs without selling a competing branded processor. Neutrality still does not guarantee good technology, yield, price or enough demand, just as internal scale does not prove that outside customers will choose a process. A customer should therefore test three things separately: physical capability, alignment with the customer’s success and proof from important external products that reached production and returned for another generation. The main consequence is that a durable foundry needs both excellent manufacturing and an operating structure that customers trust for years."
+    },
+    {
+      "number": 69,
+      "date": "2026-10-14",
+      "title": "Leading Edge or Specialty — Two Different Ways to Build a Foundry Franchise",
+      "bodySha256": "42f84e25de61ee8c8dfba82b8b6fc91cdc37ee0f55c130d6cb2b8ea7c0b43a10",
+      "body": "Lesson 069 explains that a foundry can compete by pushing the smallest logic processes or by making chips especially good at a particular job. Leading-edge manufacturing helps dense digital chips such as AI accelerators fit more computing into a limited power budget, but it requires huge spending, fast yield improvement and enough volume to support the next process generation. Specialty manufacturing focuses instead on needs such as high voltage, radio signals, analog control, image sensing or moving data with light. TSMC shows the scale and reinvestment loop of leading-edge logic, while GlobalFoundries and Tower Semiconductor illustrate specialty strategies. A larger transistor size is not automatically worse when the process gives a power, radio or automotive chip the reliability and electrical behavior it needs. Specialty processes can create long customer relationships, but they can also become complex or face price competition when several foundries offer similar capabilities. The main consequence is that a strong foundry must choose the kind of customer problem it can solve unusually well and prove that advantage in reliable volume production."
     }
   ]
 }
