@@ -1,0 +1,47 @@
+import type { Lesson } from "./lessons";
+
+export const lesson069 = {
+  number: 69,
+  module: "Module 8: Competing Technologies & Business Models",
+  title: "Leading Edge or Specialty — Two Different Ways to Build a Foundry Franchise",
+  date: "2026-10-14",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 064: A chip ramp helps suppliers unevenly because orders depend on process steps, spare capacity and the location of the real bottleneck.
+
+Lesson 065: Strong demand does not guarantee strong supplier returns because fixed costs, timing and new capacity can amplify the cycle.
+
+Lesson 066: Independent analysis follows demand through each conversion to profit and tests the assumptions that control the result.
+
+Lesson 067: A neutral foundry lets many chip designers share advanced factories without asking a direct product competitor to manufacture their designs.
+
+Lesson 068: A foundry's structure can improve coordination while still worrying customers about competition for information, support or factory capacity.
+
+Two customers, two definitions of advanced
+
+Imagine that two chip companies need a foundry.
+
+The first is designing an AI accelerator. It wants more computing in a fixed power budget, so smaller and faster transistors can materially improve the product.
+
+The second is designing a power-management chip for an electric vehicle. It must handle voltage efficiently, tolerate heat, operate reliably for years and remain available through a long vehicle program. Making every transistor as small as possible may add cost without solving the main problem.
+
+Both customers need advanced manufacturing. They simply need advancement along different dimensions.
+
+That distinction creates two foundry strategies. A leading-edge foundry repeatedly pushes the smallest logic processes. A specialty foundry concentrates on process features that improve a particular function—such as radio frequency, analog precision, high voltage, image sensing or silicon photonics—even when the transistor dimensions are larger.
+
+What the leading edge is built to win
+
+Leading-edge logic is optimized for dense digital computation. Smaller transistors can place more logic in a given area and, when the design and process work together, improve performance or reduce energy per operation.
+
+But each new generation requires a large coordinated system. The foundry needs new process recipes, expensive tools, design rules, verified intellectual property and customers willing to risk important products on an immature process. Early yield—the share of dies that work—can be low. Engineers must find defects and variation fast enough to turn a promising process into repeatable volume.
+
+This model rewards scale. A successful node can spread research, factory and ecosystem costs across enormous wafer demand. TSMC reported that processes at 7 nanometers and below produced 74% of its 2025 wafer revenue, showing how heavily its business now depends on advanced logic. That revenue base also helps finance the next generation.
+
+The risk is that the race does not pause. A foundry can spend heavily on one node while already funding the next. If yield improves late, customers delay adoption or a rival process is better, expensive capacity can be underused. Leadership must therefore be renewed rather than owned permanently.
+
+Why an older node can still be the better product
+
+“Older” describes transistor size, not economic usefulness.
+
+A specialty process changes the manufacturing platform around the job the chip must perform. Power chips may need structures that tolerate higher voltages. Radio-frequency chips need devices and materials that preserve signal quality. Analog chips must measure or control continuously varying signals. Silicon-photonics processes integrate optical functions that move information using light.
+
