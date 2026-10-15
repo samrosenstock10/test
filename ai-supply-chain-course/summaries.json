@@ -147,6 +147,13 @@
       "title": "Leading Edge or Specialty — Two Different Ways to Build a Foundry Franchise",
       "bodySha256": "42f84e25de61ee8c8dfba82b8b6fc91cdc37ee0f55c130d6cb2b8ea7c0b43a10",
       "body": "Lesson 069 explains that a foundry can compete by pushing the smallest logic processes or by making chips especially good at a particular job. Leading-edge manufacturing helps dense digital chips such as AI accelerators fit more computing into a limited power budget, but it requires huge spending, fast yield improvement and enough volume to support the next process generation. Specialty manufacturing focuses instead on needs such as high voltage, radio signals, analog control, image sensing or moving data with light. TSMC shows the scale and reinvestment loop of leading-edge logic, while GlobalFoundries and Tower Semiconductor illustrate specialty strategies. A larger transistor size is not automatically worse when the process gives a power, radio or automotive chip the reliability and electrical behavior it needs. Specialty processes can create long customer relationships, but they can also become complex or face price competition when several foundries offer similar capabilities. The main consequence is that a strong foundry must choose the kind of customer problem it can solve unusually well and prove that advantage in reliable volume production."
+    },
+    {
+      "number": 70,
+      "date": "2026-10-15",
+      "title": "Geography, Capacity and New Manufacturing Models — Why Location Changes the Foundry Race",
+      "bodySha256": "770ee14c96aa825736c1006c4a536f715da8782dce4175ec712fd3aec6ce240e",
+      "body": "Lesson 070 explains that moving chip production to a new country requires much more than constructing a factory. A useful regional manufacturing system also needs trained engineers, tool support, materials, packaging, customers and enough production volume to improve yield. TSMC's Arizona fab shows one approach: copy a proven process and operating model into a new location. Rapidus is at an earlier stage, using a pilot line to test a different way of learning from each wafer before mass production. Terafab is earlier still because its large integrated factory remains a plan rather than proven chip output. Government subsidies can reduce the cost of building a fab, but they cannot create manufacturing skill, customer demand or good yield by themselves. Regional capacity can still be worth paying for when it reduces dependence on one place or provides a credible second source. The main consequence is that new capacity should be judged by repeatable qualified production and its surrounding supply system, not by the size of an announcement or building."
     }
   ]
 }
