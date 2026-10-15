@@ -1,0 +1,49 @@
+import type { Lesson } from "./lessons";
+
+export const lesson070 = {
+  number: 70,
+  module: "Module 8: Competing Technologies & Business Models",
+  title: "Geography, Capacity and New Manufacturing Models — Why Location Changes the Foundry Race",
+  date: "2026-10-15",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 065: Strong demand does not guarantee strong supplier returns because fixed costs, timing and new capacity can amplify the cycle.
+
+Lesson 066: Independent analysis follows demand through each conversion to profit and tests the assumptions that control the result.
+
+Lesson 067: A neutral foundry lets many chip designers share advanced factories without asking a direct product competitor to manufacture their designs.
+
+Lesson 068: A foundry's structure can improve coordination while still worrying customers about competition for information, support or factory capacity.
+
+Lesson 069: Leading-edge and specialty foundries win by optimizing different kinds of performance for different customer needs.
+
+A domestic fab is not just a distant fab moved closer
+
+Imagine that an AI-chip designer wants less dependence on one manufacturing region. It can keep using a proven Asian fab, reserve capacity in a U.S. plant run by an established foundry, or support a new local manufacturing model.
+
+All three choices can improve supply security. They do not provide the same manufacturing capability.
+
+A fab's location changes exposure to earthquakes, trade restrictions and government policy. It also changes access to engineers, suppliers and advanced packaging. But geography cannot be separated from the operating system that turns thousands of process steps into good chips.
+
+The central question is when regional capacity becomes a real substitute for an established cluster rather than an expensive backup.
+
+Capacity is a chain, not a building
+
+A factory needs many tools, plus spare parts, chemicals and engineers who can diagnose small deviations. It must exchange design rules with customers, improve yield and connect finished wafers to packaging and test.
+
+The building is one link. Useful capacity means the chain can produce qualified chips repeatedly at the required volume, cost and schedule.
+
+This explains why copying an established process can be more credible than starting from a blank sheet. TSMC's first Arizona fab entered volume production using 4-nanometer technology in the fourth quarter of 2024. It extends a platform proven elsewhere. A U.S. subsidy helped fund the expansion, but it did not create the recipe, yield learning or customer trust. TSMC still had to transfer those capabilities into a new workforce and supplier environment.
+
+Replication has costs. It can reduce concentration risk while fragmenting demand and duplicating support systems. A regional fab with weak utilization may carry higher cost per wafer than a densely loaded cluster. Packaging or materials may still come from another region.
+
+Three evidence stages
+
+Current projects show why “new capacity” needs a precise label.
+
+First is production. TSMC Arizona is making commercial wafers, so delivery can be judged from operating results even while its broader U.S. cluster expands.
+
+Second is a pilot line. Rapidus began operating IIM-1 in Hokkaido in April 2025 and reported working 2-nanometer transistors in July. It uses single-wafer processing to collect data wafer by wafer and aims to shorten the learning cycle for customized chips. That is technical evidence, but not yet proof of its targeted 2027 mass production, competitive yield or customer volume.
+
+Third is an announced system. SpaceX and Tesla said in August 2026 that they would initially invest $16.8 billion in Terafab, a Texas complex intended to combine logic, memory, packaging and test. Integration could reduce coordination delays and give anchor customers more control. It also requires several difficult manufacturing businesses to work together.
+

@@ -1,0 +1,39 @@
+The boundary is fluid. On October 15, 2026, TSMC said it was evaluating Texas investment and discussing Terafab cooperation, while insisting that any plant using TSMC technology would be operated by TSMC. Capital and land matter, but process control matters more.
+
+Why governments and customers still pay for geography
+
+Regional manufacturing can have value even when it costs more. Governments may pay to preserve defense access or reduce exposure to one region. Customers may accept a premium for a credible second source.
+
+But subsidies change who bears the upfront cost; they do not guarantee demand. Healthy economics still require enough qualified products to keep expensive tools productive. A government cannot make a new node yield well.
+
+The practical test is broader than announced capacity:
+
+1. What process is actually running, at what yield and customer qualification stage?
+2. Which suppliers, packaging steps and skills are local, and which dependencies merely moved?
+3. Who provides enough committed volume to keep the factory learning and utilized?
+4. What strategic risk is the extra cost buying down?
+
+The biggest takeaway
+
+Geography changes foundry competition because resilience is partly regional. Yet a flag on a factory does not create a franchise. TSMC carries a proven model into Arizona. Rapidus is testing a faster-learning process. Terafab proposes tighter integration around captive demand. The evidence ranges from commercial output to pilot devices to a plan.
+
+The project most likely to matter is the one that assembles process knowledge, suppliers, customers and sustained utilization into repeatable production.
+
+Sources
+
+TSMC, 2025 Annual Report — Arizona Fab 1 volume production, global capacity strategy and manufacturing risks: https://investor.tsmc.com/sites/ir/annual-report/2025/2025%20Annual%20Report_E.pdf
+
+U.S. Department of Commerce, November 15, 2024 — final CHIPS incentives award for TSMC Arizona: https://www.commerce.gov/news/press-releases/2024/11/biden-harris-administration-announces-chips-incentives-award-tsmc
+
+Rapidus, July 11 and July 18, 2025 — single-wafer processing model and 2-nanometer GAA pilot milestone: https://www.rapidus.inc/en/tech/te0001/ and https://www.rapidus.inc/en/news_topics/information/rapidus-achieves-significant-milestone-at-its-state-of-the-art-foundry-with-prototyping-of-leading-edge-2nm-gaa-transistors/
+
+Reuters, August 6, 2026 — Terafab's initial investment, intended integration and project status: https://www.reuters.com/business/media-telecom/spacex-says-terafab-be-built-texas-with-initial-investment-168-billion-2026-08-06/
+
+Associated Press, October 15, 2026 — TSMC's Texas evaluation and Terafab discussions: https://apnews.com/article/d1fbfb0bec8a914b0365996b39ecc138
+
+Next lesson
+
+Lesson 071: Patterning, Deposition and Etch — Why Different Tools Control Different Steps
+
+We will map the core wafer-fabrication tool categories and see why equipment companies that serve the same fab can possess very different technical roles and competitive advantages.`,
+} satisfies Lesson;
