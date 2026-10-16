@@ -3,7 +3,7 @@ import type { Lesson } from "./lessons";
 export const lesson071 = {
   number: 71,
   module: "Module 9: Wafer-Fab Equipment & Test",
-  title: "Patterning, Deposition and Etch — Why Different Tools Control Different Steps",
+  title: "Choosing a Process Tool — Why the Better Machine Can Lose a Fab Slot",
   date: "2026-10-16",
   body: `Prior Lessons — 1-Sentence Recap
 
@@ -17,31 +17,27 @@ Lesson 069: Leading-edge and specialty foundries win by optimizing different kin
 
 Lesson 070: A regional fab becomes useful capacity only when process knowledge, suppliers, customers and enough production volume work together.
 
-A chip layer is built with three different verbs
+The hardest sale happens inside the fab
 
-Imagine making one gate-all-around transistor, the three-dimensional switch now entering advanced logic production. It contains extremely thin sheets of semiconductor material, insulating layers, metal gates and contacts. Each material must appear in the right place, with the right shape and thickness.
+Suppose a foundry is preparing a new gate-all-around transistor process. Several suppliers offer machines capable of handling one difficult step. One has the fastest advertised throughput. Another has better laboratory precision. A third already works reliably with the foundry's neighboring machines.
 
-No single machine can create that structure. The fab repeatedly adds material, draws a map and removes selected material. Those three jobs are deposition, lithography and etch.
+Which wins?
 
-The central problem is that every step changes what the next tool must handle. A perfect pattern on the wrong film is useless. A perfect film that is etched too deeply is also useless. Advanced manufacturing therefore depends on a linked process, not one miraculous machine.
+We learned the physical jobs of lithography, deposition and etch in Lessons 005–007. The new question is how a fab chooses *whose* machine to install. Unlike buying an interchangeable commodity, adopting a process tool can change the factory's chemistry, defect rates, production schedule and final chip performance. That creates a very different competitive market.
 
-Deposition builds the stack
+What the customer actually qualifies
 
-Deposition puts a thin film onto the wafer. Chemical vapor deposition introduces gases that react at the surface. Physical vapor deposition moves material from a source to the wafer. Atomic layer deposition uses self-limiting surface reactions to build a film in extremely small increments.
+A supplier first demonstrates a process on test wafers. Engineers check whether its output meets a narrow specification—for example, removing a temporary material while preserving the transistor channel immediately beside it.
 
-The important question is not simply whether material lands on the wafer. Engineers care about thickness, composition, electrical properties and whether the film coats the sides and bottoms of narrow three-dimensional features.
+But a successful demonstration is only the beginning. The process must keep working across thousands of wafers, different chambers, maintenance cycles and small variations in incoming material. Engineers call the allowable range of conditions the **process window**. A tool that works only at one perfectly tuned setting may be less valuable than a slightly slower tool that works reliably across normal production variation.
 
-For a gate-all-around transistor, the fab can deposit alternating layers that will later become conducting channels and sacrificial material. The thickness of those layers helps determine the final transistor's dimensions before any pattern is cut.
+Qualification also asks whether the tool damages a later step. An invisible surface change can disrupt the next deposited film. A tiny increase in defective chips may outweigh a saving in processing time. The customer's real output is good chips, not completed tool cycles.
 
-Lithography places the map
+Three suppliers, three distinct bets
 
-Lithography does not normally carve silicon directly. It projects a pattern onto light-sensitive photoresist. ASML's systems use optics, wafer stages and light to place that pattern repeatedly across the wafer.
+Consider three current approaches to the transition from older FinFET transistors to gate-all-around designs, which put several thin conducting channels under one surrounding gate.
 
-Shorter-wavelength EUV light and higher numerical aperture can resolve smaller features. But resolution is only part of the job. Each new layer must align with structures already buried below it. A narrow line printed in the wrong place can connect the wrong components or ruin the device.
+**Lam Research — selective removal.** In one critical operation, a manufacturer must remove a temporary silicon-germanium layer from between silicon channels without eating away the channels. Lam markets selective-etch tools designed to remove material laterally and with high precision. This is not simply faster drilling: the value is removing one material while leaving its neighbor intact.
 
-This is why lithography can reduce work without replacing the other tools. ASML says its 0.55-NA High-NA EUV platform can move some layers from multiple patterning toward a single exposure. Fewer exposures can also eliminate associated deposition and etch steps. The economic benefit is a shorter, less failure-prone process sequence—not a fab that no longer needs deposition or etch.
-
-Etch transfers the map into matter
-
-After lithography defines protected and exposed regions, etch removes selected material. Plasma etch can drive reactive ions toward the wafer to cut mostly downward. Selective etch is designed to remove one material while leaving a neighboring material largely intact.
+**ASM International — selective growth.** Its epitaxy equipment grows carefully controlled crystalline semiconductor material in specified locations, including regions that supply current to a transistor. Growing the right material with the right crystalline quality is a different challenge from removing it. The supplier's expertise lies in growth chemistry, surface preparation and uniformity.
 
