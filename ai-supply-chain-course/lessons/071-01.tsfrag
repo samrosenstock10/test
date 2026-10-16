@@ -1,0 +1,47 @@
+import type { Lesson } from "./lessons";
+
+export const lesson071 = {
+  number: 71,
+  module: "Module 9: Wafer-Fab Equipment & Test",
+  title: "Patterning, Deposition and Etch — Why Different Tools Control Different Steps",
+  date: "2026-10-16",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 066: Independent analysis follows demand through each conversion to profit and tests the assumptions that control the result.
+
+Lesson 067: A neutral foundry lets many chip designers share advanced factories without asking a direct product competitor to manufacture their designs.
+
+Lesson 068: A foundry's structure can improve coordination while still worrying customers about competition for information, support or factory capacity.
+
+Lesson 069: Leading-edge and specialty foundries win by optimizing different kinds of performance for different customer needs.
+
+Lesson 070: A regional fab becomes useful capacity only when process knowledge, suppliers, customers and enough production volume work together.
+
+A chip layer is built with three different verbs
+
+Imagine making one gate-all-around transistor, the three-dimensional switch now entering advanced logic production. It contains extremely thin sheets of semiconductor material, insulating layers, metal gates and contacts. Each material must appear in the right place, with the right shape and thickness.
+
+No single machine can create that structure. The fab repeatedly adds material, draws a map and removes selected material. Those three jobs are deposition, lithography and etch.
+
+The central problem is that every step changes what the next tool must handle. A perfect pattern on the wrong film is useless. A perfect film that is etched too deeply is also useless. Advanced manufacturing therefore depends on a linked process, not one miraculous machine.
+
+Deposition builds the stack
+
+Deposition puts a thin film onto the wafer. Chemical vapor deposition introduces gases that react at the surface. Physical vapor deposition moves material from a source to the wafer. Atomic layer deposition uses self-limiting surface reactions to build a film in extremely small increments.
+
+The important question is not simply whether material lands on the wafer. Engineers care about thickness, composition, electrical properties and whether the film coats the sides and bottoms of narrow three-dimensional features.
+
+For a gate-all-around transistor, the fab can deposit alternating layers that will later become conducting channels and sacrificial material. The thickness of those layers helps determine the final transistor's dimensions before any pattern is cut.
+
+Lithography places the map
+
+Lithography does not normally carve silicon directly. It projects a pattern onto light-sensitive photoresist. ASML's systems use optics, wafer stages and light to place that pattern repeatedly across the wafer.
+
+Shorter-wavelength EUV light and higher numerical aperture can resolve smaller features. But resolution is only part of the job. Each new layer must align with structures already buried below it. A narrow line printed in the wrong place can connect the wrong components or ruin the device.
+
+This is why lithography can reduce work without replacing the other tools. ASML says its 0.55-NA High-NA EUV platform can move some layers from multiple patterning toward a single exposure. Fewer exposures can also eliminate associated deposition and etch steps. The economic benefit is a shorter, less failure-prone process sequence—not a fab that no longer needs deposition or etch.
+
+Etch transfers the map into matter
+
+After lithography defines protected and exposed regions, etch removes selected material. Plasma etch can drive reactive ions toward the wafer to cut mostly downward. Selective etch is designed to remove one material while leaving a neighboring material largely intact.
+

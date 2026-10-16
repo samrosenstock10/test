@@ -1,0 +1,34 @@
+That distinction is essential in a nanosheet transistor. The fab may need to remove sacrificial layers from between thin silicon sheets without damaging the sheets themselves. It also has to cut deep, narrow spaces with nearly vertical walls. Too little removal leaves residue; too much changes dimensions or attacks a layer meant to remain.
+
+As structures become taller and more three-dimensional, etch must control direction, selectivity and damage at close to atomic scale. Deposition then has to coat surfaces that the etch exposed. The tools alternate because each creates the starting condition for the next.
+
+Current products show the bottleneck moving
+
+Two 2026 supplier announcements illustrate this shift, while remaining company claims rather than proof of customer yield.
+
+In February, Applied Materials introduced deposition, etch and materials-modification systems aimed at gate-all-around logic at 2 nanometers and beyond. In April, Lam Research described rising demand for atomic-layer deposition and atomic-layer etch as logic, DRAM and NAND structures move further into three dimensions.
+
+The common signal is not that lithography matters less. It is that smaller patterns alone cannot form complex vertical structures. More of the manufacturing difficulty moves into controlling material interfaces and removing one layer without harming another.
+
+The biggest takeaway
+
+Patterning, deposition and etch are complements with different physical jobs. ASML controls the optical map. Applied Materials, Lam Research and other process-tool suppliers compete across the steps that build films and transfer patterns into real structures. Their moats therefore come from different knowledge: optics and precision motion in lithography; chemistry, plasma control, chamber design and process recipes in deposition and etch.
+
+The winning tool is not simply the one attached to the smallest node label. It is the one that performs its specific step repeatedly, aligns with the surrounding process and helps the whole flow produce good chips.
+
+Sources
+
+ASML, Lithography Principles — how optical patterning projects a reticle image onto photoresist: https://www.asml.com/en/technology/lithography-principles
+
+ASML, 2025 Annual Report — High-NA EUV, single-patterning potential and the process steps avoided when multi-patterning is reduced: https://www.asml.com/en/investors/annual-report/2025/strategy-and-stories
+
+Applied Materials, February 10, 2026 — company announcement of deposition, etch and materials-modification systems for gate-all-around logic: https://www.appliedmaterials.com/us/en/newsroom/press-releases/021026-applied-materials-unveils-transistor-wiring-innovations-faster-ai-chips.html
+
+Lam Research, April 14, 2026 — company explanation of deposition and etch requirements as logic and memory move further into three dimensions: https://newsroom.lamresearch.com/how-deposition-and-etch-are-reshaping-chips-for-the-ai-era
+
+Next lesson
+
+Lesson 072: Inspection and Metrology — Why Fabs Pay to Find Tiny Mistakes Early
+
+We will see how fabs measure patterns and defects before small errors multiply across hundreds of later process steps.`,
+} satisfies Lesson;
