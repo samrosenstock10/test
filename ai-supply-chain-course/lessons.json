@@ -756,14 +756,15 @@
     {
       "number": 71,
       "module": "Module 9: Wafer-Fab Equipment & Test",
-      "title": "Patterning, Deposition and Etch — Why Different Tools Control Different Steps",
+      "title": "Choosing a Process Tool — Why the Better Machine Can Lose a Fab Slot",
       "date": "2026-10-16",
       "format": "lesson-ts",
       "parts": [
         "lessons/071-01.tsfrag",
-        "lessons/071-02.tsfrag"
+        "lessons/071-02.tsfrag",
+        "lessons/071-03.tsfrag"
       ]
     }
   ],
-  "updatedAt": "2026-10-16T11:12:59.733Z"
+  "updatedAt": "2026-10-16T15:14:45.104Z"
 }
