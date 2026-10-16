@@ -717,7 +717,54 @@
         "lessons/067-02.tsfrag",
         "lessons/067-03.tsfrag"
       ]
+    },
+    {
+      "number": 68,
+      "module": "Module 8: Competing Technologies & Business Models",
+      "title": "Foundry Strategy — When Integration Helps and When It Repels Customers",
+      "date": "2026-10-13",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/068-01.tsfrag",
+        "lessons/068-02.tsfrag",
+        "lessons/068-03.tsfrag"
+      ]
+    },
+    {
+      "number": 69,
+      "module": "Module 8: Competing Technologies & Business Models",
+      "title": "Leading Edge or Specialty — Two Different Ways to Build a Foundry Franchise",
+      "date": "2026-10-14",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/069-01.tsfrag",
+        "lessons/069-02.tsfrag",
+        "lessons/069-03.tsfrag"
+      ]
+    },
+    {
+      "number": 70,
+      "module": "Module 8: Competing Technologies & Business Models",
+      "title": "Geography, Capacity and New Manufacturing Models — Why Location Changes the Foundry Race",
+      "date": "2026-10-15",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/070-01.tsfrag",
+        "lessons/070-02.tsfrag"
+      ]
+    },
+    {
+      "number": 71,
+      "module": "Module 9: Wafer-Fab Equipment & Test",
+      "title": "Choosing a Process Tool — Why the Better Machine Can Lose a Fab Slot",
+      "date": "2026-10-16",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/071-01.tsfrag",
+        "lessons/071-02.tsfrag",
+        "lessons/071-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-12T11:17:30.000Z"
+  "updatedAt": "2026-10-16T14:51:26.409Z"
 }
