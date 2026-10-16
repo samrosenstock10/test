@@ -752,7 +752,18 @@
         "lessons/070-01.tsfrag",
         "lessons/070-02.tsfrag"
       ]
+    },
+    {
+      "number": 71,
+      "module": "Module 9: Wafer-Fab Equipment & Test",
+      "title": "Patterning, Deposition and Etch — Why Different Tools Control Different Steps",
+      "date": "2026-10-16",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/071-01.tsfrag",
+        "lessons/071-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-15T11:09:30.000Z"
+  "updatedAt": "2026-10-16T11:12:59.733Z"
 }
