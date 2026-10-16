@@ -1,34 +1,32 @@
-That distinction is essential in a nanosheet transistor. The fab may need to remove sacrificial layers from between thin silicon sheets without damaging the sheets themselves. It also has to cut deep, narrow spaces with nearly vertical walls. Too little removal leaves residue; too much changes dimensions or attacks a layer meant to remain.
+**Applied Materials — integrated materials engineering.** Its approach can bring preparation, modification, deposition and etch operations into coordinated process solutions. On February 10, 2026, Applied announced gate-all-around tools addressing nanosheet treatment, precision trenches and lower-resistance contacts, and said multiple leading foundry-logic manufacturers were using them.
 
-As structures become taller and more three-dimensional, etch must control direction, selectivity and damage at close to atomic scale. Deposition then has to coat surfaces that the etch exposed. The tools alternate because each creates the starting condition for the next.
+These companies are not necessarily bidding for the identical tool slot. They illustrate why a single node transition can create different opportunities: selective removal, precisely controlled growth and coordinated treatment of sensitive interfaces. Applied's announced customer use is stronger evidence than a mere product concept, but the release does not disclose comparative yields, revenue contribution or durable market share.
 
-Current products show the bottleneck moving
+Why switching suppliers is difficult—but not impossible
 
-Two 2026 supplier announcements illustrate this shift, while remaining company claims rather than proof of customer yield.
+After qualification, a fab has recipes, technicians, spare parts, maintenance procedures and years of defect-learning built around a tool. Replacing it means proving that the alternative works with upstream and downstream steps, not just matching one laboratory metric. Losing yield during the transition may cost more than the purchase-price saving.
 
-In February, Applied Materials introduced deposition, etch and materials-modification systems aimed at gate-all-around logic at 2 nanometers and beyond. In April, Lam Research described rising demand for atomic-layer deposition and atomic-layer etch as logic, DRAM and NAND structures move further into three dimensions.
+This creates **switching costs**: the effort and risk of changing a supplier. But do not mistake qualification for permanent monopoly power. A rival can win at the next process generation, especially if its approach removes several steps, widens the process window or delivers lower cost per good wafer. Foundries also have incentives to qualify alternative suppliers where practical.
 
-The common signal is not that lithography matters less. It is that smaller patterns alone cannot form complex vertical structures. More of the manufacturing difficulty moves into controlling material interfaces and removing one layer without harming another.
+A practical buying test
 
-The biggest takeaway
+Imagine Tool A processes 60 wafers per hour and Tool B processes 50. A looks 20% faster. Yet if B has fewer defects, better uptime or removes the need for another operation, it may deliver more good wafers per day at lower total cost. These are illustrative numbers, not vendor measurements.
 
-Patterning, deposition and etch are complements with different physical jobs. ASML controls the optical map. Applied Materials, Lam Research and other process-tool suppliers compete across the steps that build films and transfer patterns into real structures. Their moats therefore come from different knowledge: optics and precision motion in lithography; chemistry, plasma control, chamber design and process recipes in deposition and etch.
+The key questions for a fab are: does this process reliably make the intended structure; does it improve the *entire* sequence; can it operate at required volume; and how hard would switching become after qualification?
 
-The winning tool is not simply the one attached to the smallest node label. It is the one that performs its specific step repeatedly, aligns with the surrounding process and helps the whole flow produce good chips.
+The same questions help explain vendor economics. A valuable equipment moat is built not merely on a patent or an advanced machine, but on a hard-to-replace process that repeatedly improves customers' usable output.
 
 Sources
 
-ASML, Lithography Principles — how optical patterning projects a reticle image onto photoresist: https://www.asml.com/en/technology/lithography-principles
+Applied Materials, February 10, 2026 — announced gate-all-around process systems and reported use by multiple leading foundry-logic makers: https://www.appliedmaterials.com/us/en/newsroom/press-releases/021026-applied-materials-unveils-transistor-and-wiring-innovations-faster-ai-chips.html
 
-ASML, 2025 Annual Report — High-NA EUV, single-patterning potential and the process steps avoided when multi-patterning is reduced: https://www.asml.com/en/investors/annual-report/2025/strategy-and-stories
+Lam Research, selective-etch product family — capabilities and applications including selective silicon-germanium removal: https://www.lamresearch.com/product/selective-etch-product-family/
 
-Applied Materials, February 10, 2026 — company announcement of deposition, etch and materials-modification systems for gate-all-around logic: https://www.appliedmaterials.com/us/en/newsroom/press-releases/021026-applied-materials-unveils-transistor-wiring-innovations-faster-ai-chips.html
+ASM International, Epitaxy — selective growth, surface preparation and transistor applications: https://www.asm.com/our-technology-products/epitaxy
 
-Lam Research, April 14, 2026 — company explanation of deposition and etch requirements as logic and memory move further into three dimensions: https://newsroom.lamresearch.com/how-deposition-and-etch-are-reshaping-chips-for-the-ai-era
+Applied Materials, Advanced Logic — integrated materials solutions and complementary transistor processes: https://www.appliedmaterials.com/us/en/semiconductor/markets-and-inflections/advanced-logic.html
 
 Next lesson
 
-Lesson 072: Inspection and Metrology — Why Fabs Pay to Find Tiny Mistakes Early
+Lesson 072: Inspection Tradeoffs — When Should a Fab Measure Every Wafer?
 
-We will see how fabs measure patterns and defects before small errors multiply across hundreds of later process steps.`,
-} satisfies Lesson;
