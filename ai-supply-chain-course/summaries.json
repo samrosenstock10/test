@@ -154,6 +154,13 @@
       "title": "Geography, Capacity and New Manufacturing Models — Why Location Changes the Foundry Race",
       "bodySha256": "770ee14c96aa825736c1006c4a536f715da8782dce4175ec712fd3aec6ce240e",
       "body": "Lesson 070 explains that moving chip production to a new country requires much more than constructing a factory. A useful regional manufacturing system also needs trained engineers, tool support, materials, packaging, customers and enough production volume to improve yield. TSMC's Arizona fab shows one approach: copy a proven process and operating model into a new location. Rapidus is at an earlier stage, using a pilot line to test a different way of learning from each wafer before mass production. Terafab is earlier still because its large integrated factory remains a plan rather than proven chip output. Government subsidies can reduce the cost of building a fab, but they cannot create manufacturing skill, customer demand or good yield by themselves. Regional capacity can still be worth paying for when it reduces dependence on one place or provides a credible second source. The main consequence is that new capacity should be judged by repeatable qualified production and its surrounding supply system, not by the size of an announcement or building."
+    },
+    {
+      "number": 71,
+      "date": "2026-10-16",
+      "title": "Patterning, Deposition and Etch — Why Different Tools Control Different Steps",
+      "bodySha256": "c0cbf016e64f88630b63729b9093d598dea9009b7c9cfd44bcc6762271d7e82e",
+      "body": "Lesson 071 explains why an advanced transistor cannot be made by one all-purpose machine. Deposition adds carefully controlled films to the wafer and must coat narrow three-dimensional surfaces evenly. Lithography places a pattern in light-sensitive material so later steps know where to work. Etch removes selected material and must stop without damaging nearby layers that should remain. In a gate-all-around transistor, these steps repeat because each one creates the starting surface or shape for the next. ASML specializes in placing the optical pattern, while companies such as Applied Materials and Lam Research supply tools that build films or transfer patterns into real structures. As chip structures become smaller and more three-dimensional, controlling materials and removing one layer without harming another becomes more important alongside better lithography. The main consequence is that a useful fab process depends on several complementary tools working together repeatedly, not on a single machine with the smallest node label."
     }
   ]
 }
