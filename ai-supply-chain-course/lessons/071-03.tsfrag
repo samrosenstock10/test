@@ -1,0 +1,2 @@
+We already covered what inspection and metrology do in Lesson 008. Next we will examine the harder decision: which defects justify slower, more detailed measurement, and how that information changes tool recipes during a production ramp.`,
+} satisfies Lesson;
