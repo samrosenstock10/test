@@ -1,0 +1,34 @@
+Third, higher-resolution inspection investigates the defects that matter most. Electron-beam tools trade wider coverage for finer detail. ASML’s 2025 annual report describes its 25-beam eScan 1100 as an attempt to increase e-beam coverage and throughput. That is a supplier capability claim, not proof that every fab should use the same sampling plan.
+
+KLA’s inspection and software portfolio plays a broader role across processes: find defects, classify spatial patterns, identify excursions and connect the signal to a likely tool or recipe. The economic value comes from shortening the time between “the process changed” and “production responded.”
+
+Sampling changes during a ramp
+
+During development, engineers inspect many wafers and locations because they are still learning which defects matter. During the early ramp, sampling remains dense around steps causing yield loss. Once the process is stable, the fab may reduce expensive measurements while continuing fast monitors and periodic checks.
+
+Sampling should rise again after maintenance, a recipe change, a new material batch or unexplained yield movement. The plan is adaptive: stable history earns less intrusive monitoring; new uncertainty spends that trust.
+
+Measurement throughput can therefore matter as much as ultimate resolution. ASML says the YieldStar 1390 increases post-etch overlay throughput so fabs can measure more wafers and device structures at lower control cost. Faster measurement expands the situations in which dense sampling makes sense. Whether it improves yield still depends on how the customer uses the data.
+
+What the fab is optimizing
+
+The wrong objective is the most measurements. Another wrong objective is the fewest inspection minutes.
+
+The fab wants the highest flow of good wafers while keeping the probability and size of an undetected excursion inside an acceptable limit. That requires a hierarchy: cheap signals on nearly everything, precise measurements where risk is concentrated, and slow failure analysis when engineers need to understand the mechanism.
+
+For equipment suppliers, a durable advantage comes from improving this information-to-action loop. Seeing smaller defects matters; delivering trustworthy data soon enough to alter production can matter more.
+
+Sources
+
+ASML, 2025 Annual Report — wafer-by-wafer metrology feedback, faster YieldStar 1390 post-etch control and the 25-beam eScan 1100: https://www.sec.gov/Archives/edgar/data/937966/000162828026011377/asml-2025xannualxreportx.htm
+
+ASML, Measuring accuracy — optical metrology, e-beam inspection, wafer mapping and feedback across the lithography system: https://www.asml.com/en/technology/lithography-principles/measuring-accuracy
+
+KLA, Fiscal 2026 Form 10-K — inspection, metrology and software for excursion identification, process correction and yield learning: https://ir.kla.com/sec-filings/annual-reports/content/0000319201-26-000027/klac-20260630.htm
+
+Onto Innovation, 2025 Form 10-K — optical metrology, wafer inspection, macro-defect inspection and process-control software: https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm
+
+Next lesson
+
+Lesson 073: Cleaning and Surface Preparation — Why Removing Almost Everything Is Not Enough
+

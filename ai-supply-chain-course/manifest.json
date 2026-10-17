@@ -764,7 +764,19 @@
         "lessons/071-02.tsfrag",
         "lessons/071-03.tsfrag"
       ]
+    },
+    {
+      "number": 72,
+      "module": "Module 9: Wafer-Fab Equipment & Test",
+      "title": "Inspection Tradeoffs — When Should a Fab Measure Every Wafer?",
+      "date": "2026-10-17",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/072-01.tsfrag",
+        "lessons/072-02.tsfrag",
+        "lessons/072-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-16T14:51:26.409Z"
+  "updatedAt": "2026-10-17T11:06:04.300Z"
 }

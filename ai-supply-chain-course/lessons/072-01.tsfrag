@@ -1,0 +1,57 @@
+import type { Lesson } from "./lessons";
+
+export const lesson072 = {
+  number: 72,
+  module: "Module 9: Wafer-Fab Equipment & Test",
+  title: "Inspection Tradeoffs — When Should a Fab Measure Every Wafer?",
+  date: "2026-10-17",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 067: A neutral foundry lets many chip designers share advanced factories without asking a direct product competitor to manufacture their designs.
+
+Lesson 068: A foundry’s structure can improve coordination while still worrying customers about competition for information, support or factory capacity.
+
+Lesson 069: Leading-edge and specialty foundries win by optimizing different kinds of performance for different customer needs.
+
+Lesson 070: A regional fab becomes useful capacity only when process knowledge, suppliers, customers and enough production volume work together.
+
+Lesson 071: A process-tool supplier wins when its machine improves reliable good-wafer output across the full recipe, not simply one peak specification.
+
+The measurement that can slow production—or save it
+
+A new transistor process has entered pilot production. One etch chamber begins drifting, but the change is small enough that finished structures still look normal at a few measured locations. Should the fab inspect every wafer after that step?
+
+Measuring more often could catch the drift sooner. It also consumes tool time and adds queues. The real decision is which information must arrive soon enough to prevent a small process change from becoming many expensive bad wafers.
+
+Lesson 008 introduced inspection, metrology and sampling. Lessons 020–022 showed how measurements close the patterning loop. Today’s question is operational: how should a fab choose the frequency, location and sensitivity of those measurements?
+
+Every wafer is not every feature
+
+A 300-millimeter wafer can contain billions of structures. “Measure every wafer” usually means measuring selected targets or fields on every wafer—not checking every transistor.
+
+The fab chooses along three dimensions:
+
+- **Coverage:** how many wafers and locations to inspect.
+- **Sensitivity:** how small or subtle a defect the method can detect.
+- **Feedback time:** how quickly the result can change a recipe or stop a tool.
+
+Those goals compete. Optical systems can collect dense production data, while slower electron-beam systems reveal finer defects over smaller areas. Sensitivity matters only if useful results arrive before more wafers pass through the risky step.
+
+Use the cost of a missed signal
+
+Consider an illustrative 25-wafer lot after a critical etch. A slow inspection takes 20 minutes per wafer. Measuring all 25 would occupy more than eight hours; inspecting one wafer could miss a defect limited to one chamber condition or wafer position.
+
+The fab should compare that burden with the expected loss from delayed detection:
+
+**escape risk × wafers processed before detection × value already added to each wafer**
+
+A new process with unstable recipes deserves denser sampling than a mature process with months of stable control data. The defect’s behavior matters too. A random particle may affect one location. A chamber drift can repeat across every wafer until maintenance or a recipe change stops it. Systematic excursions justify faster feedback because the loss compounds with time.
+
+Build layers of evidence
+
+A modern fab does not rely on one inspection tool.
+
+First, process equipment records signals such as pressure, temperature, power and timing while each wafer runs. These signals can flag an unusual chamber condition quickly, but they do not prove that the wafer structure is correct.
+
+Second, fast optical metrology can measure many production targets. ASML’s YieldStar systems monitor overlay and focus, while lithography scanners collect high-density wafer mapping data. Combining those signals can support wafer-by-wafer adjustments without sending every wafer through the slowest measurement.
+
