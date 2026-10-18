@@ -1,0 +1,41 @@
+import type { Lesson } from "./lessons";
+
+export const lesson073 = {
+  number: 73,
+  module: "Module 9: Wafer-Fab Equipment & Test",
+  title: "Cleaning and Surface Preparation — Why Removing Almost Everything Is Not Enough",
+  date: "2026-10-18",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 068: A foundry’s structure can improve coordination while still worrying customers about competition for information, support or factory capacity.
+
+Lesson 069: Leading-edge and specialty foundries win by optimizing different kinds of performance for different customer needs.
+
+Lesson 070: A regional fab becomes useful capacity only when process knowledge, suppliers, customers and enough production volume work together.
+
+Lesson 071: A process-tool supplier wins when its machine improves reliable good-wafer output across the full recipe, not simply one peak specification.
+
+Lesson 072: A fab should concentrate its slowest measurements where an undetected process change could destroy the most value.
+
+The surface that survives the clean
+
+An etch step has opened a tiny contact hole. The unwanted residue is almost gone, but the silicon at the bottom begins growing a thin native oxide while the wafer waits in air. If metal is deposited on top, that invisible interface can add resistance or weaken adhesion.
+
+The question is therefore not simply, “Is the wafer clean?” It is, “Is the surface in the right chemical and physical state for the next step—and will it stay that way until the next film arrives?”
+
+Lesson 012 explained particles, metals, organic residue and the basic cleaning toolbox. Today’s issue is the handoff between process steps: how a fab chooses where cleaning occurs, how aggressive it can be, and whether the prepared surface travels through air or remains inside a controlled tool.
+
+Removal and preparation are different jobs
+
+A cleaning recipe may have several targets at once. It can lift particles, dissolve organic residue, remove trace metals, strip a damaged surface layer or take off native oxide. But success on one target can create a problem elsewhere. Strong chemistry can roughen a surface, attack exposed materials or leave its own residue. High mechanical force can clean quickly but damage fragile features. Even a chemically perfect result can decay after the wafer leaves the chamber.
+
+Surface preparation adds a positive requirement: leave the surface ready for a particular reaction. Before metal deposition, the aim may be an oxide-free contact. Before bonding, it may be a surface with controlled activation and low particle count. Before epitaxy, it may be an ordered crystal surface with minimal carbon and oxygen.
+
+That is why “99.9% removed” can still be the wrong answer. The remaining fraction matters when it sits at a critical electrical or mechanical interface.
+
+Three architectures, three kinds of control
+
+A batch wet clean processes many wafers together and can be economical for established recipes. A single-wafer wet tool gives tighter control over spray, spin, temperature and wafer position, and can isolate wafers from one another. Tokyo Electron’s NS300 series, for example, combines deionized-water brush cleaning with atomized spray and bevel-cleaning options. ACM Research focuses on wet-processing equipment and markets specialized single-wafer approaches for advanced devices.
+
+Wet cleaning is powerful, but the wafer usually must be rinsed, dried and transported. During that interval, air exposure can regrow oxide or add moisture and airborne contamination. The queue between tools becomes part of the process recipe.
+
