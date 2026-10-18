@@ -1,0 +1,2 @@
+We will follow electrical test from wafer probe to final test and see how coverage, test time and the cost of downstream packaging shape the test plan.`,
+} satisfies Lesson;
