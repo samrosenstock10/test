@@ -1,0 +1,36 @@
+An integrated dry preclean takes a different approach. A plasma or reactive gas removes a thin unwanted layer inside a vacuum platform immediately before deposition. Keeping the wafer under controlled atmosphere can reduce the time available for recontamination. The tradeoff is that plasma exposure can also change or damage sensitive surfaces, while the integrated platform costs more and may be harder to balance for throughput.
+
+The key is not that one architecture always wins. It is that the best architecture moves the cleanliness boundary to the point where the next film is most sensitive.
+
+Fragile structures change the physics
+
+As features become taller, narrower and more three-dimensional, cleaning gets harder. Liquid trapped between close structures creates capillary forces during drying; those forces can bend or collapse weak features. A high-energy jet that removes a particle from a flat wafer may break a narrow line. A recipe that is safe for silicon may attack a newly exposed metal or dielectric.
+
+Suppliers therefore compete on more than removal rate. They tune droplet size, acoustic energy, chemical concentration, temperature, drying method, edge treatment and chamber cleanliness. A useful tool must remove the target contaminant while preserving every material already on the wafer.
+
+This also makes the tool itself part of the contamination system. Deposits inside a chamber, worn seals, chemical-delivery lines and wafer-handling surfaces can become recurring sources. Cleaning the wafer without controlling the tool merely resets the problem temporarily.
+
+The economics of the handoff
+
+Suppose a stand-alone clean has lower cost per wafer, but wafers wait 30 minutes before deposition. If a small share regrows enough oxide to raise contact resistance, the cheap clean may create an expensive yield loss. An integrated preclean may cost more and reduce flexibility, yet protect the highest-value interfaces.
+
+Fabs therefore evaluate the entire sequence: chemical consumption, tool uptime, queue time, defectivity, material loss, throughput and the probability that a prepared surface changes before the next step. The surface has a clock.
+
+Current supplier investment reflects this integration problem. Applied Materials opened its EPIC Center in October 2026 around faster joint development of process modules and manufacturing-ready flows. That announcement does not prove a specific cleaning recipe will work, but it shows why equipment makers and chipmakers increasingly test connected process steps rather than optimize each chamber alone.
+
+The biggest takeaway is simple: cleaning is not a reset to a neutral wafer. It is an engineered transition from one surface state to the next. The winning process removes enough, damages little, and controls the time and environment before the following film. As devices add more materials and fragile three-dimensional structures, that handoff becomes a larger source of both yield risk and supplier differentiation.
+
+Sources
+
+Tokyo Electron, NS300 Series — single-wafer scrubber architecture, deionized-water brush cleaning, atomized spray and bevel cleaning: https://www.tel.com/product/ns.html
+
+ACM Research, Corporate Overview — wet-processing equipment and advanced-device cleaning focus: https://ir.acmrcsh.com/
+
+Applied Materials, EPIC Center — October 2026 opening and the company’s stated goal of shortening development from process technology to manufacturing: https://www.appliedmaterials.com/us/en/epic.html
+
+U.S. Environmental Protection Agency, Profile of the Semiconductor Industry — overview of wet chemical cleaning, rinsing and process-related waste streams: https://www.epa.gov/sites/default/files/2016-11/documents/semiconductor.pdf
+
+Next lesson
+
+Lesson 074: Test Economics — Why Finding a Bad Die Earlier Can Save More Than Testing It Better
+
