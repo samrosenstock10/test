@@ -776,7 +776,19 @@
         "lessons/072-02.tsfrag",
         "lessons/072-03.tsfrag"
       ]
+    },
+    {
+      "number": 73,
+      "module": "Module 9: Wafer-Fab Equipment & Test",
+      "title": "Cleaning and Surface Preparation — Why Removing Almost Everything Is Not Enough",
+      "date": "2026-10-18",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/073-01.tsfrag",
+        "lessons/073-02.tsfrag",
+        "lessons/073-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-17T11:06:04.300Z"
+  "updatedAt": "2026-10-18T11:08:00.000Z"
 }
