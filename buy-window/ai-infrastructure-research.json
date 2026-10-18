@@ -1346,6 +1346,39 @@
       "verification": "Read the full official Wiwynn release. Muse independently reviewed the same originating item, so the peer memo and this tracker record are not independent corroboration. Grok's Sivers attribution was not supported by the retrieved original and is excluded.",
       "freshness": "new-after-prior-cutoff",
       "itemId": "wiwynn-ayar-guc-cpo-demo-20261013"
+    },
+    {
+      "id": "expert-20261018-semianalysis-asml-hybrid-bonder",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "ASML hybrid-bonder patents point to a possible advanced-packaging expansion",
+      "sourceTitle": "ASML Is Building a Hybrid Bonding Tool!",
+      "url": "https://newsletter.semianalysis.com/p/asml-is-building-a-hybrid-bonding",
+      "speaker": "SemiAnalysis",
+      "role": "AI infrastructure research team",
+      "publishedDate": "2026-10-15",
+      "observedAt": "2026-10-18T11:34:04Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis",
+      "summary": "SemiAnalysis argues that ASML is developing a die-to-wafer hybrid-bonding tool whose track architecture could reuse ASML strengths in alignment, motion and particle control, potentially extending its customer integration into advanced packaging.",
+      "claim": "The source expects advanced logic to adopt first, sees the prospective product as a natural vertical-integration extension for ASML, and views it as a competitive threat to BESI's current die-to-wafer position. It expects HBM die-to-wafer adoption no earlier than 2029, if at all.",
+      "interpretation": "Our inference: ASML may be able to expand its process-control moat beyond lithography into hybrid bonding, increasing tool content and customer workflow integration. This is an option-value thesis, not evidence of a shipped or qualified commercial bonder.",
+      "beneficiaryTickers": [
+        "ASML"
+      ],
+      "counterTickers": [
+        "BESI.AS"
+      ],
+      "countercase": "ASML has not announced a commercial hybrid bonder. Patent ownership and a roadmap do not establish a working tool, customer qualification, throughput, yield, pricing or revenue. Feed-forward metrology, die contact, non-bonding stations and contamination remain unresolved, while BESI is the incumbent volume supplier and HBM adoption timing is uncertain.",
+      "nextTest": "Track an ASML product announcement, named TSMC or Intel qualification, demonstrated placement accuracy and throughput, commercial shipments and pricing; separately test BESI logic-tool orders and any HBM qualification against the expected 2029-or-later timeline.",
+      "evidenceType": "specialist-analyst-product-roadmap-view",
+      "status": "evidence",
+      "location": "Public portion of the October 15 SemiAnalysis article; ASML-assigned patent WO2025201788A1 independently checked.",
+      "incentives": "SemiAnalysis sells semiconductor equipment research and benefits from attention to its company and process analysis.",
+      "verification": "Read the attributable SemiAnalysis article and the ASML-assigned patent. The patent confirms a track-based multi-station semiconductor bonding system and die-to-wafer embodiments; it does not confirm a product launch, customer qualification or commercial economics.",
+      "freshness": "sunday-gap-recovery",
+      "itemId": "semianalysis-asml-hybrid-bonder-20261015"
     }
   ],
   "evidence": [
@@ -3425,6 +3458,32 @@
       ],
       "sourceObservationId": "expert-20261015-wiwynn-ayar-guc-cpo",
       "corroborationNote": "This evidence row, the linked observation and Muse F-2026-10-15-01 all represent the same Wiwynn-originated item and are not independent corroboration."
+    },
+    {
+      "id": "20261018-semianalysis-asml-hybrid-bonder",
+      "title": "ASML hybrid-bonder patents point to a possible advanced-packaging expansion",
+      "url": "https://newsletter.semianalysis.com/p/asml-is-building-a-hybrid-bonding",
+      "kind": "specialist-analyst-product-roadmap-view",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-10-15",
+      "observedAt": "2026-10-18T11:34:04Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "SemiAnalysis argues that ASML is developing a die-to-wafer hybrid-bonding tool whose track architecture could reuse ASML strengths in alignment, motion and particle control, potentially extending its customer integration into advanced packaging.",
+      "claim": "The source expects advanced logic to adopt first, sees the prospective product as a natural vertical-integration extension for ASML, and views it as a competitive threat to BESI's current die-to-wafer position. It expects HBM die-to-wafer adoption no earlier than 2029, if at all.",
+      "interpretation": "Our inference: ASML may be able to expand its process-control moat beyond lithography into hybrid bonding, increasing tool content and customer workflow integration. This is an option-value thesis, not evidence of a shipped or qualified commercial bonder.",
+      "verification": "Read the attributable SemiAnalysis article and the ASML-assigned patent. The patent confirms a track-based multi-station semiconductor bonding system and die-to-wafer embodiments; it does not confirm a product launch, customer qualification or commercial economics.",
+      "countercase": "ASML has not announced a commercial hybrid bonder. Patent ownership and a roadmap do not establish a working tool, customer qualification, throughput, yield, pricing or revenue. Feed-forward metrology, die contact, non-bonding stations and contamination remain unresolved, while BESI is the incumbent volume supplier and HBM adoption timing is uncertain.",
+      "nextTest": "Track an ASML product announcement, named TSMC or Intel qualification, demonstrated placement accuracy and throughput, commercial shipments and pricing; separately test BESI logic-tool orders and any HBM qualification against the expected 2029-or-later timeline.",
+      "beneficiaryTickers": [
+        "ASML"
+      ],
+      "counterTickers": [
+        "BESI.AS"
+      ],
+      "sourceObservationId": "expert-20261018-semianalysis-asml-hybrid-bonder",
+      "supportingPrimaryUrl": "https://patents.google.com/patent/WO2025201788A1/en",
+      "corroborationNote": "This evidence row and the linked observation represent the same SemiAnalysis-originated article and are not independent corroboration. The ASML patent verifies the disclosed system design and assignee, not SemiAnalysis's commercial or competitive forecast."
     }
   ],
   "rankings": [
@@ -7548,6 +7607,14 @@
           "kind": "issuer-evidence",
           "publishedDate": "2026-09-08",
           "url": "https://pr.cld.tsmc.com/english/news/3338"
+        },
+        {
+          "id": "expert-20261018-semianalysis-asml-hybrid-bonder",
+          "sourceId": "semianalysis",
+          "evidenceId": "20261018-semianalysis-asml-hybrid-bonder",
+          "kind": "source-thesis",
+          "publishedDate": "2026-10-15",
+          "url": "https://newsletter.semianalysis.com/p/asml-is-building-a-hybrid-bonding"
         }
       ],
       "aliases": [],
@@ -8553,6 +8620,30 @@
       "aliases": [],
       "screeningStatus": "unrated",
       "screeningReason": "A concrete specialized-model architecture, tool integration and shared commercial framework make Synopsys a relevant public-company lead, but issuer-only forward-looking claims and absent benchmark, customer and unit-economic evidence do not justify a conviction score."
+    },
+    {
+      "ticker": "BESI.AS",
+      "name": "BE Semiconductor Industries",
+      "stage": "unrated",
+      "firstObservedAt": "2026-10-18T11:34:04Z",
+      "priority": "normal",
+      "nextQuestion": "Can BESI defend die-to-wafer hybrid-bonding qualifications, throughput and economics in advanced logic, and secure a real HBM ramp, before ASML or Korean challengers qualify competing systems?",
+      "sourceRefs": [
+        {
+          "id": "expert-20261018-semianalysis-asml-hybrid-bonder",
+          "sourceId": "semianalysis",
+          "evidenceId": "20261018-semianalysis-asml-hybrid-bonder",
+          "kind": "source-thesis",
+          "publishedDate": "2026-10-15",
+          "url": "https://newsletter.semianalysis.com/p/asml-is-building-a-hybrid-bonding"
+        }
+      ],
+      "aliases": [
+        "BESI",
+        "BE Semiconductor Industries"
+      ],
+      "screeningStatus": "unrated",
+      "screeningReason": "SemiAnalysis presents a specific competitive threat to BESI's logic hybrid-bonding position and pushes expected HBM die-to-wafer adoption to 2029 or later. ASML has not announced or qualified a commercial tool, so this is a research lead and countercase rather than a scored bearish conclusion."
     }
   ],
   "rankingMethodology": {
@@ -27664,7 +27755,7 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-17T13:34:08Z",
+    "asOf": "2026-10-18T11:40:14Z",
     "kind": "daily-expert-scan",
     "completedChannels": [
       "a16z"
@@ -27678,5 +27769,5 @@
       "D3 re-read 74 Bottlenecks and 29 Claims from current canonical state. No source version changed after the repaired handoff; zero records were selected and older pending records were preserved."
     ]
   },
-  "updatedAt": "2026-10-17T17:52:37Z"
+  "updatedAt": "2026-10-18T11:40:14Z"
 }
