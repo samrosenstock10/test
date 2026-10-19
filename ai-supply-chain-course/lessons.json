@@ -788,7 +788,19 @@
         "lessons/073-02.tsfrag",
         "lessons/073-03.tsfrag"
       ]
+    },
+    {
+      "number": 74,
+      "module": "Module 9: Wafer-Fab Equipment & Test",
+      "title": "Test Economics — Why Finding a Bad Die Earlier Can Save More Than Testing It Better",
+      "date": "2026-10-19",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/074-01.tsfrag",
+        "lessons/074-02.tsfrag",
+        "lessons/074-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-18T11:08:00.000Z"
+  "updatedAt": "2026-10-19T11:09:00.000Z"
 }

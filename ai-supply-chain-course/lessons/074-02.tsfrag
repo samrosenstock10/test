@@ -1,0 +1,30 @@
+Suppliers compete on this balance: pin density, signal integrity, power delivery, measurement accuracy, pattern memory, software and the ability to run many sites without degrading results. Advantest’s V93000 EXA Scale emphasizes a scalable platform spanning engineering, wafer sort and final test; its compatibility claims matter because probe interfaces, test programs and engineer training can be reused. Teradyne’s UltraFLEXplus follows a similar platform logic around instruments and its IG-XL software environment. Those accumulated test programs and qualified interfaces create switching friction, although a better competitor can still win at a new device generation.
+
+AI devices are increasing the burden
+
+AI chips combine high pin counts, extreme current, fast interfaces and large test-data volumes. Test content can rise while high-value packaging makes an escaped defect more expensive.
+
+In June 2026, Teradyne and Tokyo Electron announced a test cell that pairs UltraFLEXplus with TEL’s singulated-device prober for screening individual AI dies before advanced packaging. In September, Teradyne introduced instruments for deeper pattern memory, PCIe 6 testing and very high current. These are supplier claims, not independent proof of superior yield, but they show where customers are pushing the test boundary: earlier known-good-die confidence, more power, faster interfaces and more data.
+
+Advantest describes similar pressures for V93000: exploding scan-data volumes, extreme power, high pin count and high-multisite configurations. Winning requires more than a capable box; the tester must work with the prober or handler, probe card or socket, thermal controls and a qualified program at production speed.
+
+What matters most
+
+Test creates no functioning transistor, but it decides which devices deserve more capital. Wafer sort protects downstream packaging, final test checks the completed product, and system-level test trades more time for behavior closer to real use.
+
+The durable bottleneck is proving complex, expensive devices good without letting test cost erase their value. Suppliers gain leverage when hardware, software and interfaces raise confidence per second—and when customers can reuse that qualified ecosystem across product generations.
+
+Sources
+
+Advantest, V93000 EXA Scale — platform scope, scan-data, power, pin-count and multisite test challenges: https://www.advantest.com/en/products/semiconductor-test-system/soc/v93000/
+
+Teradyne, UltraFLEXplus instruments for AI and data-center devices — September 2026 product specifications and stated test goals: https://investors.teradyne.com/news-events/press-releases/detail/447/teradyne-launches-advanced-ultraflexplus-instruments-engineered-for-ai-and-data-center-computing-devices
+
+Teradyne and Tokyo Electron, integrated known-good-die test cell — June 8, 2026: https://investors.teradyne.com/news-events/press-releases/detail/443/teradyne-introduces-integrated-test-solution-for-ai-and-data-center-devices-in-collaboration-with-tokyo-electron
+
+Teradyne 2025 Form 10-K — semiconductor-test applications, wafer/package/system-level stages and AI-related demand: https://www.sec.gov/Archives/edgar/data/97210/000119312526059002/ter-20251231.htm
+
+Next lesson
+
+Lesson 075: Advanced Packaging Strategies — Where Compute, Memory and Interconnect Become One System
+

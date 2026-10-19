@@ -1,0 +1,2 @@
+We will begin Topic 10 by comparing where integration occurs, why interfaces become bottlenecks and how packaging choices redistribute value across foundries, OSATs and suppliers.`,
+} satisfies Lesson;

@@ -1,0 +1,47 @@
+import type { Lesson } from "./lessons";
+
+export const lesson074 = {
+  number: 74,
+  module: "Module 9: Wafer-Fab Equipment & Test",
+  title: "Test Economics — Why Finding a Bad Die Earlier Can Save More Than Testing It Better",
+  date: "2026-10-19",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 069: Leading-edge and specialty foundries win by optimizing different kinds of performance for different customer needs.
+
+Lesson 070: A regional fab becomes useful capacity only when process knowledge, suppliers, customers and enough production volume work together.
+
+Lesson 071: A process-tool supplier wins when its machine improves reliable good-wafer output across the full recipe, not simply one peak specification.
+
+Lesson 072: A fab should concentrate its slowest measurements where an undetected process change could destroy the most value.
+
+Lesson 073: Cleaning must leave the right surface for the next step and protect it from damage or recontamination during the handoff.
+
+The bad die that becomes an expensive package
+
+A finished wafer can contain hundreds of dies. If a bad one is found on the wafer, the manufacturer loses that die. If it is found after combination with HBM, an interposer, a substrate and other good dies, the failure can waste a much more valuable assembly.
+
+The central question is how much testing now will avoid larger losses later.
+
+Lesson 035 introduced known-good die and package yield. Lesson 063 followed qualification from design to volume. Today is narrower: the economics and physical sequence of production test, where Advantest and Teradyne sell automatic test equipment, or ATE, that applies electrical patterns and measures whether each device responds correctly.
+
+One chip can face several test insertions
+
+At wafer sort, probe-card needles touch tiny pads while a prober moves across the wafer. The tester supplies signals and power, checks responses and maps which dies should continue. This catches failures before packaging, but cooling, contact geometry and test access limit what can be exercised.
+
+After packaging, final test uses a handler and socket to test the device across specified temperatures and interfaces. Packaging may introduce new failures, but every rejected part has already absorbed packaging cost.
+
+System-level test operates the packaged device closer to real use. It can catch subtle interactions that electrical screening misses, but usually takes longer. Early tests remove obvious failures cheaply; later tests examine behavior that cannot be observed earlier.
+
+Coverage is purchased with seconds
+
+ATE delivers precise power, sends pattern sets through many pins, measures timing and voltage, and records which subtests failed. More patterns can raise coverage, but they consume tester time. The relevant output is reliably good devices per hour at an acceptable escape rate—the share of bad parts incorrectly shipped as good.
+
+Imagine 100 dies reaching wafer sort. A short program takes 20 seconds per die and misses several defects that later destroy expensive packages. Adding 10 seconds may lower tester throughput by one-third, yet still improve total economics if it prevents enough bad dies from consuming scarce HBM and advanced-packaging capacity. The answer reverses for a cheap, mature device when downstream loss is small and the extra test rarely changes the result.
+
+The best test plan therefore depends on what comes next, not only on the tester.
+
+Parallelism helps, until devices interact
+
+Testers often contact several devices at once. Four sites can share equipment time, but the tester still needs enough channels, power and measurement resources for each. Probe cards and sockets become harder to design, heat rises, and one unstable contact can hold up the group.
+
