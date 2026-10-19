@@ -168,6 +168,13 @@
       "title": "Inspection Tradeoffs — When Should a Fab Measure Every Wafer?",
       "bodySha256": "3922925134f1ce270559b3cd78d6c82ef7d7b3d04aecdac5b00ead6c6b2a0ac9",
       "body": "Lesson 072 explains why a chip factory cannot simply measure every feature on every wafer. Each inspection plan trades off coverage, ability to see tiny defects, and how quickly results can change production. Fast equipment signals and optical measurements can watch many wafers, while slower electron-beam tools examine smaller areas in greater detail. The right sampling rate depends on the damage a missed problem could cause: how likely it is to escape, how many wafers pass before detection, and how much value is already in them. New processes, recent maintenance, recipe changes, and unexplained yield moves call for denser checks because uncertainty is higher. Stable processes can use lighter routine sampling as long as fast monitors and periodic checks remain. The best system layers cheap broad signals with targeted high-resolution review, then feeds useful results back before more wafers are harmed. The goal is not the most measurements or the fewest inspection minutes, but the highest flow of good wafers with controlled excursion risk."
+    },
+    {
+      "number": 73,
+      "date": "2026-10-18",
+      "title": "Cleaning and Surface Preparation — Why Removing Almost Everything Is Not Enough",
+      "bodySha256": "86b3906482b9218341084d8c21b9c1d3a86ec6388e9757af71d3bec9e5f36ba6",
+      "body": "Lesson 073 explains that wafer cleaning is not only about removing dirt; it must leave the surface in the right condition for the next manufacturing step. A nearly clean contact can still fail if a thin native oxide grows before metal is deposited. Batch and single-wafer wet tools can be efficient and precisely controlled, but rinsing, drying, transport and queue time create opportunities for damage or recontamination. Integrated dry precleans can prepare a surface immediately before deposition under controlled atmosphere, although they cost more and can expose delicate materials to plasma damage. Taller, narrower structures make cleaning harder because liquids and mechanical forces can bend or collapse fragile features. Tool suppliers therefore compete on particle removal, material selectivity, drying, edge treatment, chamber cleanliness and how well their equipment fits the next process step. Fabs must compare the whole sequence, including chemicals, uptime, queue time, defects, material loss and throughput. The central idea is that the surface has a clock: the best process removes enough, damages little and protects the prepared state until the following film arrives."
     }
   ]
 }
