@@ -1379,6 +1379,39 @@
       "verification": "Read the attributable SemiAnalysis article and the ASML-assigned patent. The patent confirms a track-based multi-station semiconductor bonding system and die-to-wafer embodiments; it does not confirm a product launch, customer qualification or commercial economics.",
       "freshness": "sunday-gap-recovery",
       "itemId": "semianalysis-asml-hybrid-bonder-20261015"
+    },
+    {
+      "id": "expert-20261019-semianalysis-datacenter-acceleration",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "SemiAnalysis forecasts a 2027 datacenter acceleration and supplier order surge",
+      "sourceTitle": "Datacenters 2027: The Year of Acceleration, +50GW in a Single Year",
+      "url": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration",
+      "speaker": "Jeremie Eliahou Ontiveros, Reyk Knuhtsen and Dylan Patel",
+      "role": "SemiAnalysis research team",
+      "publishedDate": "2026-10-19",
+      "observedAt": "2026-10-19T11:34:10Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis",
+      "summary": "SemiAnalysis forecasts roughly 50 GW of global datacenter capacity additions in 2027, supported by construction and lease indicators, and explicitly identifies Vertiv, ABB and Sterling Infrastructure among suppliers positioned for an order surge.",
+      "claim": "The public portion reports more than 24 GW in advanced construction across 40 campuses, over $1 trillion of 2026 year-to-date lease value, and a broader forecast of roughly 50 GW added in 2027. It argues modular designs and prefabrication are shortening construction cycles and reducing onsite labor, while logic and memory could become the next binding constraints.",
+      "interpretation": "Our inference: the evidence strengthens the near-term volume and order-visibility case for datacenter electrical, cooling and construction suppliers, particularly Vertiv's existing modular-platform thesis. It does not establish supplier-specific margins, market share, realized revenue, or long-run returns.",
+      "beneficiaryTickers": [
+        "VRT",
+        "ABB",
+        "STRL"
+      ],
+      "counterTickers": [],
+      "countercase": "The forecast relies substantially on SemiAnalysis proprietary tracking; the public article does not expose the full site list or model. Signed leases and construction starts may slip, financing and rates may tighten, power/labor/chip bottlenecks may delay delivery, and later oversupply or competition may prevent named suppliers from capturing durable economics.",
+      "nextTest": "Track delivered versus forecast 2027 capacity, conversion of leases into funded construction and commissioned MW, and VRT/ABB/STRL backlog, organic growth, margins and cash conversion; test whether chip and memory supply rather than buildings becomes the binding constraint.",
+      "evidenceType": "specialist-analyst-capacity-forecast",
+      "status": "evidence",
+      "location": "Public portion of the October 19 SemiAnalysis article through the paid cutoff.",
+      "incentives": "SemiAnalysis sells proprietary datacenter, industrials, energy and capital-markets research tied to the forecast.",
+      "verification": "Read the attributable public article portion and official archive listing. The capacity, lease and construction figures are SemiAnalysis estimates from proprietary models, not independently audited outcomes.",
+      "freshness": "incremental",
+      "itemId": "semianalysis-datacenter-acceleration-20261019"
     }
   ],
   "evidence": [
@@ -3484,6 +3517,31 @@
       "sourceObservationId": "expert-20261018-semianalysis-asml-hybrid-bonder",
       "supportingPrimaryUrl": "https://patents.google.com/patent/WO2025201788A1/en",
       "corroborationNote": "This evidence row and the linked observation represent the same SemiAnalysis-originated article and are not independent corroboration. The ASML patent verifies the disclosed system design and assignee, not SemiAnalysis's commercial or competitive forecast."
+    },
+    {
+      "id": "20261019-semianalysis-datacenter-acceleration",
+      "title": "SemiAnalysis forecasts a 2027 datacenter acceleration and supplier order surge",
+      "url": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration",
+      "kind": "specialist-analyst-capacity-forecast",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-10-19",
+      "observedAt": "2026-10-19T11:34:10Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "SemiAnalysis forecasts roughly 50 GW of global datacenter capacity additions in 2027, supported by construction and lease indicators, and explicitly identifies Vertiv, ABB and Sterling Infrastructure among suppliers positioned for an order surge.",
+      "claim": "The public portion reports more than 24 GW in advanced construction across 40 campuses, over $1 trillion of 2026 year-to-date lease value, and a broader forecast of roughly 50 GW added in 2027. It argues modular designs and prefabrication are shortening construction cycles and reducing onsite labor, while logic and memory could become the next binding constraints.",
+      "interpretation": "Our inference: the evidence strengthens the near-term volume and order-visibility case for datacenter electrical, cooling and construction suppliers, particularly Vertiv's existing modular-platform thesis. It does not establish supplier-specific margins, market share, realized revenue, or long-run returns.",
+      "verification": "Read the attributable public article portion and official archive listing. The capacity, lease and construction figures are SemiAnalysis estimates from proprietary models, not independently audited outcomes.",
+      "countercase": "The forecast relies substantially on SemiAnalysis proprietary tracking; the public article does not expose the full site list or model. Signed leases and construction starts may slip, financing and rates may tighten, power/labor/chip bottlenecks may delay delivery, and later oversupply or competition may prevent named suppliers from capturing durable economics.",
+      "nextTest": "Track delivered versus forecast 2027 capacity, conversion of leases into funded construction and commissioned MW, and VRT/ABB/STRL backlog, organic growth, margins and cash conversion; test whether chip and memory supply rather than buildings becomes the binding constraint.",
+      "beneficiaryTickers": [
+        "VRT",
+        "ABB",
+        "STRL"
+      ],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261019-semianalysis-datacenter-acceleration",
+      "corroborationNote": "This evidence row and the linked observation represent the same SemiAnalysis-originated report and are not independent corroboration. The report's construction and lease figures remain proprietary forecast inputs until verified by commissioning and supplier financial results."
     }
   ],
   "rankings": [
@@ -8572,6 +8630,14 @@
           "kind": "issuer-evidence",
           "url": "https://nvidianews.nvidia.com/news/nvidia-releases-vera-rubin-dsx-ai-factory-reference-design-and-omniverse-dsx-digital-twin-blueprint-with-broad-industry-support",
           "evidenceId": "dive-20260921-nvidia-dsx"
+        },
+        {
+          "id": "expert-20261019-semianalysis-datacenter-acceleration",
+          "sourceId": "semianalysis",
+          "evidenceId": "20261019-semianalysis-datacenter-acceleration",
+          "kind": "source-thesis",
+          "publishedDate": "2026-10-19",
+          "url": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration"
         }
       ],
       "aliases": [],
@@ -8644,6 +8710,48 @@
       ],
       "screeningStatus": "unrated",
       "screeningReason": "SemiAnalysis presents a specific competitive threat to BESI's logic hybrid-bonding position and pushes expected HBM die-to-wafer adoption to 2029 or later. ASML has not announced or qualified a commercial tool, so this is a research lead and countercase rather than a scored bearish conclusion."
+    },
+    {
+      "ticker": "ABB",
+      "name": "ABB Ltd",
+      "stage": "unrated",
+      "firstObservedAt": "2026-10-19T11:34:10Z",
+      "priority": "normal",
+      "nextQuestion": "How much of ABB's 2027 datacenter order growth converts into sustained electrification revenue, margin and cash flow, and which products or hyperscaler programs drive it?",
+      "sourceRefs": [
+        {
+          "id": "expert-20261019-semianalysis-datacenter-acceleration",
+          "sourceId": "semianalysis",
+          "evidenceId": "20261019-semianalysis-datacenter-acceleration",
+          "kind": "source-thesis",
+          "publishedDate": "2026-10-19",
+          "url": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration"
+        }
+      ],
+      "aliases": [],
+      "screeningStatus": "unrated",
+      "screeningReason": "SemiAnalysis names ABB among industrial suppliers positioned for the forecast datacenter order surge, but the public report provides no ABB-specific backlog, share, margin or customer evidence. This is a source-backed lead, not an admitted thesis."
+    },
+    {
+      "ticker": "STRL",
+      "name": "Sterling Infrastructure",
+      "stage": "unrated",
+      "firstObservedAt": "2026-10-19T11:34:10Z",
+      "priority": "normal",
+      "nextQuestion": "How much of the forecast datacenter construction surge converts into STRL backlog, revenue, margin and repeat hyperscaler awards without eroding returns through labor or project risk?",
+      "sourceRefs": [
+        {
+          "id": "expert-20261019-semianalysis-datacenter-acceleration",
+          "sourceId": "semianalysis",
+          "evidenceId": "20261019-semianalysis-datacenter-acceleration",
+          "kind": "source-thesis",
+          "publishedDate": "2026-10-19",
+          "url": "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration"
+        }
+      ],
+      "aliases": [],
+      "screeningStatus": "unrated",
+      "screeningReason": "SemiAnalysis names Sterling Infrastructure among suppliers positioned for the forecast datacenter order surge, but the public report provides no STRL-specific contract economics or competitive evidence. This is a source-backed lead, not an admitted thesis."
     }
   ],
   "rankingMethodology": {
@@ -31977,5 +32085,5 @@
       "D3 re-read 74 Bottlenecks and 29 Claims. No eligible source version changed after the repaired handoff; older pending records were preserved."
     ]
   },
-  "updatedAt": "2026-10-18T13:49:12Z"
+  "updatedAt": "2026-10-19T11:41:00Z"
 }
