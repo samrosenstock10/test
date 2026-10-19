@@ -1,7 +1,28 @@
 {
-  "updatedAt": "2026-10-11T11:46:00Z",
+  "updatedAt": "2026-10-19T11:43:00Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "rows": [
+    {
+      "loggedDate": "2026-10-19",
+      "sourceDate": "2026-10-19",
+      "company": "Vertiv / VRT",
+      "bullishness": 4,
+      "summary": "Vertiv's 4/5 modular-datacenter thesis materially strengthens because SemiAnalysis now forecasts roughly 50 GW of global capacity additions in 2027 and explicitly identifies Vertiv among industrial suppliers positioned for an order surge, while durable margin capture remains unproven.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/the-wild-wild-west-of-lego-datacenters",
+        "https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration"
+      ]
+    },
+    {
+      "loggedDate": "2026-10-18",
+      "sourceDate": "2026-10-15",
+      "company": "ASML Holding / ASML",
+      "bullishness": 4,
+      "summary": "ASML's possible entry into die-to-wafer hybrid bonding could extend its alignment, motion and particle-control advantages into advanced packaging, add tool content and deepen customer integration if it converts patents into a qualified commercial product.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/asml-is-building-a-hybrid-bonding"
+      ]
+    },
     {
       "loggedDate": "2026-10-11",
       "sourceDate": "2026-10-10",
@@ -201,26 +222,6 @@
       "summary": "SemiAnalysis still believes SpaceX can scale AI compute toward 10GW by year-end 2027 and monetize scarce capacity at exceptional pricing, but its current published base case points to roughly $300B of ARR rather than the $500B figure previously captured in the ledger.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/spacex-10gw-in-2027-why-its-real"
-      ]
-    },
-    {
-      "loggedDate": "2026-08-01",
-      "sourceDate": "2026-07-29",
-      "company": "Vertiv / VRT",
-      "bullishness": 4,
-      "summary": "Vertiv is positioned to roughly double its revenue content per datacenter megawatt as AI builders shift from component purchases toward integrated modular power, cooling and facility platforms that materially shorten construction schedules.",
-      "sourceUrls": [
-        "https://newsletter.semianalysis.com/p/the-wild-wild-west-of-lego-datacenters"
-      ]
-    },
-    {
-      "loggedDate": "2026-07-24",
-      "sourceDate": "2026-07-24",
-      "company": "ASML Holding / ASML",
-      "bullishness": 4,
-      "summary": "ASML is entering a stronger multiyear wafer-fab-equipment upcycle, with improving visibility, pricing and installed-base economics creating upside to consensus revenue and likely long-term guidance.",
-      "sourceUrls": [
-        "https://www.linkedin.com/posts/semianalysis_asml-raised-fy26-guidance-for-the-second-activity-7486058059908173824-hwGa"
       ]
     },
     {
