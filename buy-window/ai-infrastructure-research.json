@@ -1412,6 +1412,67 @@
       "verification": "Read the attributable public article portion and official archive listing. The capacity, lease and construction figures are SemiAnalysis estimates from proprietary models, not independently audited outcomes.",
       "freshness": "incremental",
       "itemId": "semianalysis-datacenter-acceleration-20261019"
+    },
+    {
+      "id": "expert-20261020-semianalysis-rubin-agentx-1m",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "Vera Rubin advances from preview to a one-million-context AgentX result",
+      "sourceTitle": "Vera Rubin NVL72 one-million-context AgentX result",
+      "url": "https://x.com/SemiAnalysis_/status/2112379877621919877",
+      "speaker": "SemiAnalysis",
+      "role": "AI infrastructure research team",
+      "publishedDate": "2026-10-20",
+      "observedAt": "2026-10-20T11:33:36Z",
+      "contentAccess": "notes-only",
+      "independenceGroup": "semianalysis",
+      "summary": "SemiAnalysis reports that Vera Rubin NVL72 delivers up to 7.3 times the performance per dollar of GB300 NVL72 on a one-million-context-length AgentX inference workload.",
+      "claim": "The attributable post says the advantage is measured against GB300 NVL72 on a one-million-context-length agentic workload. NVIDIA's earlier technical disclosure described its Vera Rubin AgentX results as vendor-measured and pending SemiAnalysis review.",
+      "interpretation": "Our inference: Rubin's larger-memory, rack-scale co-design appears capable of converting long-context agentic workloads into a material next-generation cost advantage, supporting NVIDIA's platform durability rather than merely a chip-level speedup.",
+      "beneficiaryTickers": [
+        "NVDA"
+      ],
+      "countercase": "The exact run artifact, configuration, TCO inputs and full curve were not publicly traceable in this bounded scan. The result remains benchmark-specific, NVIDIA supplied earlier preview measurements, and it does not establish production reliability, utilization, pricing, customer economics or realized margins.",
+      "nextTest": "Trace the exact public AgentX run and cost assumptions; reproduce matched Rubin and GB300 configurations across models, context lengths and interactivity targets; then track external deployments, utilization, rental pricing and customer cost savings.",
+      "evidenceType": "benchmark-result",
+      "status": "lead",
+      "location": "Official SemiAnalysis X/LinkedIn post indexed after the prior cutoff; NVIDIA's August 24 AgentX technical disclosure reviewed for methodology and vendor-measured-preview status.",
+      "incentives": "SemiAnalysis operates AgentX/InferenceX and sells related research; NVIDIA benefits from promoting Rubin preview performance.",
+      "verification": "Verified the attributable SemiAnalysis post and the earlier official NVIDIA AgentX methodology disclosure. The exact updated 7.3x run artifact was not independently reproduced or fully exposed.",
+      "freshness": "new-after-prior-cutoff",
+      "itemId": "semianalysis-rubin-agentx-1m-20261020"
+    },
+    {
+      "id": "expert-20261020-semianalysis-sglang-nvidia-megakernel",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "SGLang merges an experimental NVIDIA megakernel integration path",
+      "sourceTitle": "SGLang NVIDIA megakernel support and AgentX performance update",
+      "url": "https://x.com/SemiAnalysis_/status/2112347284713148746",
+      "speaker": "SemiAnalysis",
+      "role": "AI infrastructure research team",
+      "publishedDate": "2026-10-20",
+      "observedAt": "2026-10-20T11:33:36Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis",
+      "summary": "SemiAnalysis reports that SGLang merged NVIDIA megakernel support and is approaching 1,000 tokens per second per user on GB300 NVL72 AgentX; the upstream merge independently verifies an experimental NVIDIA megakernel integration layer, not the performance claim.",
+      "claim": "SemiAnalysis says the new path is nearing 1,000 tokens per second per user on GB300 NVL72 AgentX. Upstream SGLang commit 722669e adds --enable-nvidia-megakernel, an out-of-tree plugin layer and guarded experimental dispatch for supported decode and verify steps.",
+      "interpretation": "Our inference: NVIDIA's inference advantage is being reinforced through open serving frameworks and fused whole-step kernels, narrowing the significance of AMD's earlier upstream megakernel timing lead. The performance and production-readiness conclusion remains unproven.",
+      "beneficiaryTickers": [
+        "NVDA"
+      ],
+      "countercase": "The upstream feature is explicitly experimental, requires a separate plugin and supported configurations, and falls back for unsupported steps. The code merge does not verify SemiAnalysis's throughput figure, broad model coverage, reliability, adoption or customer economics.",
+      "nextTest": "Inspect the public AgentX run, benchmark the merged SGLang path against standard SGLang/vLLM and AMD alternatives on matched hardware, and track model coverage, stability, upstream maintenance and production deployments.",
+      "evidenceType": "software-ecosystem-evidence",
+      "status": "evidence",
+      "location": "Official SemiAnalysis X post plus upstream SGLang commit 722669e6066fec2266e8a7e2f6bb738709a2f53f merged October 19, 2026.",
+      "incentives": "SemiAnalysis operates AgentX/InferenceX; NVIDIA and SGLang contributors benefit from adoption of the optimized path.",
+      "verification": "Verified the SGLang upstream merge, feature flag, plugin architecture and experimental guards directly in the commit. The near-1,000-tokens-per-second result was not independently reproduced.",
+      "freshness": "new-after-prior-cutoff",
+      "itemId": "semianalysis-sglang-nvidia-megakernel-20261020",
+      "primarySourceUrl": "https://github.com/sgl-project/sglang/commit/722669e6066fec2266e8a7e2f6bb738709a2f53f"
     }
   ],
   "evidence": [
@@ -3542,6 +3603,51 @@
       "counterTickers": [],
       "sourceObservationId": "expert-20261019-semianalysis-datacenter-acceleration",
       "corroborationNote": "This evidence row and the linked observation represent the same SemiAnalysis-originated report and are not independent corroboration. The report's construction and lease figures remain proprietary forecast inputs until verified by commissioning and supplier financial results."
+    },
+    {
+      "id": "20261020-semianalysis-rubin-agentx-1m",
+      "title": "Vera Rubin advances from preview to a one-million-context AgentX result",
+      "url": "https://x.com/SemiAnalysis_/status/2112379877621919877",
+      "kind": "benchmark-result",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-10-20",
+      "observedAt": "2026-10-20T11:33:36Z",
+      "contentAccess": "notes-only",
+      "status": "lead",
+      "summary": "SemiAnalysis reports that Vera Rubin NVL72 delivers up to 7.3 times the performance per dollar of GB300 NVL72 on a one-million-context-length AgentX inference workload.",
+      "claim": "The attributable post says the advantage is measured against GB300 NVL72 on a one-million-context-length agentic workload. NVIDIA's earlier technical disclosure described its Vera Rubin AgentX results as vendor-measured and pending SemiAnalysis review.",
+      "interpretation": "Our inference: Rubin's larger-memory, rack-scale co-design appears capable of converting long-context agentic workloads into a material next-generation cost advantage, supporting NVIDIA's platform durability rather than merely a chip-level speedup.",
+      "verification": "Verified the attributable SemiAnalysis post and the earlier official NVIDIA AgentX methodology disclosure. The exact updated 7.3x run artifact was not independently reproduced or fully exposed.",
+      "countercase": "The exact run artifact, configuration, TCO inputs and full curve were not publicly traceable in this bounded scan. The result remains benchmark-specific, NVIDIA supplied earlier preview measurements, and it does not establish production reliability, utilization, pricing, customer economics or realized margins.",
+      "nextTest": "Trace the exact public AgentX run and cost assumptions; reproduce matched Rubin and GB300 configurations across models, context lengths and interactivity targets; then track external deployments, utilization, rental pricing and customer cost savings.",
+      "beneficiaryTickers": [
+        "NVDA"
+      ],
+      "sourceObservationId": "expert-20261020-semianalysis-rubin-agentx-1m",
+      "corroborationNote": "This record and the linked observation are two representations of the same SemiAnalysis-originated item and are not independent corroboration."
+    },
+    {
+      "id": "20261020-semianalysis-sglang-nvidia-megakernel",
+      "title": "SGLang merges an experimental NVIDIA megakernel integration path",
+      "url": "https://x.com/SemiAnalysis_/status/2112347284713148746",
+      "kind": "software-ecosystem-evidence",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-10-20",
+      "observedAt": "2026-10-20T11:33:36Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "SemiAnalysis reports that SGLang merged NVIDIA megakernel support and is approaching 1,000 tokens per second per user on GB300 NVL72 AgentX; the upstream merge independently verifies an experimental NVIDIA megakernel integration layer, not the performance claim.",
+      "claim": "SemiAnalysis says the new path is nearing 1,000 tokens per second per user on GB300 NVL72 AgentX. Upstream SGLang commit 722669e adds --enable-nvidia-megakernel, an out-of-tree plugin layer and guarded experimental dispatch for supported decode and verify steps.",
+      "interpretation": "Our inference: NVIDIA's inference advantage is being reinforced through open serving frameworks and fused whole-step kernels, narrowing the significance of AMD's earlier upstream megakernel timing lead. The performance and production-readiness conclusion remains unproven.",
+      "verification": "Verified the SGLang upstream merge, feature flag, plugin architecture and experimental guards directly in the commit. The near-1,000-tokens-per-second result was not independently reproduced.",
+      "countercase": "The upstream feature is explicitly experimental, requires a separate plugin and supported configurations, and falls back for unsupported steps. The code merge does not verify SemiAnalysis's throughput figure, broad model coverage, reliability, adoption or customer economics.",
+      "nextTest": "Inspect the public AgentX run, benchmark the merged SGLang path against standard SGLang/vLLM and AMD alternatives on matched hardware, and track model coverage, stability, upstream maintenance and production deployments.",
+      "beneficiaryTickers": [
+        "NVDA"
+      ],
+      "sourceObservationId": "expert-20261020-semianalysis-sglang-nvidia-megakernel",
+      "corroborationNote": "This record and the linked observation are two representations of the same SemiAnalysis-originated item and are not independent corroboration.",
+      "primarySourceUrl": "https://github.com/sgl-project/sglang/commit/722669e6066fec2266e8a7e2f6bb738709a2f53f"
     }
   ],
   "rankings": [
@@ -8363,6 +8469,22 @@
           "kind": "inferred-readthrough",
           "publishedDate": "2026-10-14",
           "url": "https://x.com/SemiAnalysis_/status/2110496505031192895"
+        },
+        {
+          "id": "expert-20261020-semianalysis-rubin-agentx-1m",
+          "sourceId": "semianalysis",
+          "evidenceId": "20261020-semianalysis-rubin-agentx-1m",
+          "kind": "inferred-readthrough",
+          "publishedDate": "2026-10-20",
+          "url": "https://x.com/SemiAnalysis_/status/2112379877621919877"
+        },
+        {
+          "id": "expert-20261020-semianalysis-sglang-nvidia-megakernel",
+          "sourceId": "semianalysis",
+          "evidenceId": "20261020-semianalysis-sglang-nvidia-megakernel",
+          "kind": "inferred-readthrough",
+          "publishedDate": "2026-10-20",
+          "url": "https://x.com/SemiAnalysis_/status/2112347284713148746"
         }
       ],
       "aliases": [],
@@ -32085,5 +32207,5 @@
       "D3 re-read 74 Bottlenecks and 29 Claims. No eligible source version changed after the repaired handoff; older pending records were preserved."
     ]
   },
-  "updatedAt": "2026-10-19T11:41:00Z"
+  "updatedAt": "2026-10-20T11:42:00Z"
 }
