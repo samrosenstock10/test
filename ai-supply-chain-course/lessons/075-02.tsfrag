@@ -1,0 +1,26 @@
+A proprietary interface lets one company optimize the electrical link and software together. An open interface such as Universal Chiplet Interconnect Express, or UCIe, aims to let dies from different suppliers communicate through a shared on-package standard. UCIe 3.0, released in August 2025, added 48 and 64 gigatransfers-per-second modes plus manageability features.
+
+A standard does not make chiplets plug-and-play. Designers still must match packaging type, channel reach, power, timing, security, thermal behavior and test. The specification can reduce one layer of incompatibility, but qualified manufacturing and software remain sources of switching cost.
+
+Scale is advancing, but announcements are not output
+
+In April 2026, TSMC said it was producing 5.5-reticle-size CoWoS and planned a 14-reticle version for 2028 that could integrate roughly ten large compute dies and twenty HBM stacks. The current production claim and the future roadmap should be treated differently. Intel lists several Foveros 2.5D options, with some variants marked production-ready later than others. These roadmaps show the direction—larger systems, denser links and more vertical integration—but not guaranteed customer yield or volume.
+
+The biggest takeaway is that packaging is becoming a system architecture decision. A full interposer maximizes dense connectivity, bridges place expensive wiring only where needed, and 3D bonding shortens links further while intensifying heat and yield risk. The winning method is the one that delivers the most useful compute per package after assembly yield, memory, power, cooling, test and manufacturing capacity are counted together.
+
+Sources
+
+TSMC, CoWoS — 2.5D variants, interposer scale and AI/HPC integration: https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
+
+TSMC, 2026 North America Technology Symposium — current 5.5-reticle CoWoS production and the stated 2028 roadmap: https://pr.tsmc.com/english/news/3302
+
+Intel Foundry, Advanced Packaging — Foveros and 2.5D integration options with stated readiness: https://www.intel.com/content/www/us/en/foundry/packaging.html
+
+UCIe Consortium, UCIe 3.0 — August 5, 2025 data-rate and manageability update: https://www.uciexpress.org/post/ucie-3-0-specification-redefining-chiplet-interconnects
+
+Next lesson
+
+Lesson 076: HBM4 Integration — Why the Memory Stack, Base Die and Package Must Be Designed Together
+
+We will follow data from compute into the memory stack, compare supplier integration choices and identify where bandwidth, yield and thermal limits move the bottleneck.`,
+} satisfies Lesson;
