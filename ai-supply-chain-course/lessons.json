@@ -800,6 +800,17 @@
         "lessons/074-02.tsfrag",
         "lessons/074-03.tsfrag"
       ]
+    },
+    {
+      "number": 75,
+      "module": "Module 10: Packaging, Memory & Materials",
+      "title": "Advanced Packaging Strategies — Where Compute, Memory and Interconnect Become One System",
+      "date": "2026-10-20",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/075-01.tsfrag",
+        "lessons/075-02.tsfrag"
+      ]
     }
   ],
   "updatedAt": "2026-10-19T11:09:00.000Z"
