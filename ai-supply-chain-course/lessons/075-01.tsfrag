@@ -1,0 +1,43 @@
+import type { Lesson } from "./lessons";
+
+export const lesson075 = {
+  number: 75,
+  module: "Module 10: Packaging, Memory & Materials",
+  title: "Advanced Packaging Strategies — Where Compute, Memory and Interconnect Become One System",
+  date: "2026-10-20",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 070: A regional fab becomes useful capacity only when process knowledge, suppliers, customers and enough production volume work together.
+
+Lesson 071: A process-tool supplier wins when its machine improves reliable good-wafer output across the full recipe, not simply one peak specification.
+
+Lesson 072: A fab should concentrate its slowest measurements where an undetected process change could destroy the most value.
+
+Lesson 073: Cleaning must leave the right surface for the next step and protect it from damage or recontamination during the handoff.
+
+Lesson 074: Testing creates value when it rejects bad dies before they absorb more expensive packaging, memory and assembly.
+
+The package is now part of the computer
+
+Lesson 032 introduced advanced packaging as the way compute dies and high-bandwidth memory become one product. The deeper decision is where to place the connections. Every boundary has a physical cost: wires consume energy, add delay, occupy area and can limit how much data moves each second.
+
+A conventional organic substrate is relatively inexpensive and can connect large components, but its wiring and contact pitch are too coarse for the densest die-to-die links. Advanced packaging inserts a finer connection layer or stacks dies vertically. The result can behave more like one large chip without forcing every function onto one enormous, low-yield die.
+
+The important question is not whether a package is “advanced.” It is which integration boundary best balances bandwidth, power, heat, yield, cost and supplier flexibility.
+
+Three places to build the connection
+
+In a 2.5D design, compute dies and HBM stacks sit side by side above a dense interconnect layer. TSMC's CoWoS-S uses a large silicon interposer; CoWoS-L combines local silicon bridges with redistribution layers, while CoWoS-R relies more heavily on redistribution wiring. Silicon can support fine, efficient connections, but a very large interposer consumes expensive processed wafer area and creates manufacturing challenges as packages grow.
+
+A bridge places small pieces of silicon only beneath the edges that need dense links. Intel's EMIB follows this logic. It can avoid a full-size silicon interposer, but each bridge, die edge and substrate must align and communicate reliably. The economic gain is less silicon devoted to wiring; the systems challenge is coordinating more interfaces.
+
+In 3D integration, one die is placed directly above another. Hybrid bonding joins copper connections at extremely fine pitch without large solder bumps, shortening the path and raising bandwidth density. TSMC's SoIC and Intel's Foveros Direct pursue this route. The penalty is thermal and manufacturing coupling: a hot upper die can make cooling harder, and one bad bond or die can reduce the value of the whole stack.
+
+Pitch moves the bottleneck
+
+Pitch is the spacing between neighboring connections. Smaller pitch can fit more links along a die edge or across its surface. More links allow wide parallel data movement at lower speed per wire, which can reduce energy per bit. But finer pitch demands flatter surfaces, cleaner bonding and tighter alignment.
+
+That is why packaging strategy reaches backward into wafer fabrication, inspection and test. Dies must be known good before assembly, surfaces must be prepared, and warpage must stay controlled across large packages. It also reaches forward into cooling, power delivery and system software. A fast internal link is not useful if the package cannot remove heat or the software cannot treat the chiplets as one coherent device.
+
+Standards can widen choice without erasing qualification
+
