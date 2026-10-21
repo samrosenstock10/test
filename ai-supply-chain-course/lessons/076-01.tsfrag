@@ -1,0 +1,39 @@
+import type { Lesson } from "./lessons";
+
+export const lesson076 = {
+  number: 76,
+  module: "Module 10: Packaging, Memory & Materials",
+  title: "HBM4 Integration — Why the Memory Stack, Base Die and Package Must Be Designed Together",
+  date: "2026-10-21",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 071: A process-tool supplier wins when its machine improves reliable good-wafer output across the full recipe, not simply one peak specification.
+
+Lesson 072: A fab should concentrate its slowest measurements where an undetected process change could destroy the most value.
+
+Lesson 073: Cleaning must leave the right surface for the next step and protect it from damage or recontamination during the handoff.
+
+Lesson 074: Testing creates value when it rejects bad dies before they absorb more expensive packaging, memory and assembly.
+
+Lesson 075: Packaging strategy chooses where to place dense connections while balancing bandwidth, power, heat, yield, cost and supplier flexibility.
+
+HBM4 changes the boundary between memory and logic
+
+High-bandwidth memory, or HBM, is a stack of memory dies placed beside an accelerator so thousands of short connections can move data in parallel. Lesson 033 explained why this helps feed a GPU. HBM4 changes a deeper design choice: the bottom die in the stack is no longer just a simple wiring floor. It can be an advanced logic chip designed around the accelerator, the memory dies and the package.
+
+That bottom layer is called the base die. Data traveling from the upper memory dies passes vertically through tiny connections called through-silicon vias, reaches the base die, then crosses the package into the accelerator. If any part of that route is too narrow, power-hungry or difficult to manufacture, the headline memory speed cannot become useful system bandwidth.
+
+A wider road needs a better interchange
+
+HBM4 doubles the external interface from HBM3-generation products to 2,048 data connections. A wider interface can move more bits at once without requiring every connection to run at an extreme speed. That can improve bandwidth and energy per bit, but it also creates more signals that must be routed, timed, powered and tested across the base die and package.
+
+The base die is the interchange between the vertical memory stack and this wide horizontal interface. Building it on a more advanced logic process allows denser wiring and more sophisticated control than a conventional memory process. Designers can use that logic to manage signal timing, repair weak paths, monitor temperature or power and, in customized versions, better match a particular accelerator.
+
+Customization is valuable because an AI accelerator does not consume memory as an abstract pool. Its compute units, cache hierarchy, data formats and software schedule determine when and how data is requested. The accelerator designer, memory supplier, foundry and packaging partner therefore have to agree on the interface, floorplan, power delivery and test plan much earlier.
+
+The package becomes part of memory design
+
+Widening the interface does not help if the package cannot carry those connections. Thousands of signals must cross a silicon interposer or another fine-wiring layer with controlled length and electrical behavior. The HBM stacks also compete with the accelerator for package area, power and cooling.
+
+Heat illustrates the coupling. Faster data movement consumes power in the memory dies, the base die and the accelerator's interface circuits. The memory stack is tall and harder to cool directly than the large compute die. A temperature rise can reduce safe operating speed or require the system to move less data. Package layout, cooling hardware and controller behavior must therefore be designed together rather than optimized separately.
+
