@@ -1,0 +1,26 @@
+Yield is coupled too. A finished module combines expensive accelerator dies, several HBM stacks, a large connection layer and thousands of bonds. A defect in one stack or interface can reduce the value of the entire assembly. Suppliers need known-good components, repair features, precise placement and system-level testing before volume economics are attractive.
+
+Production evidence versus a roadmap
+
+The transition is no longer only an announcement. Samsung said in February 2026 that it had begun HBM4 mass production using a 4-nanometer logic base die, while Micron said in March 2026 that its 36-gigabyte, 12-high HBM4 was in high-volume production for NVIDIA's Vera Rubin platform. Micron reported more than 2.8 terabytes per second per stack. These are supplier claims, but they are materially different from a future target because they identify production status and a named platform.
+
+SK hynix had supplied 12-layer HBM4 samples in March 2025 and has emphasized collaboration with TSMC on base-die logic and package-level verification. Sampling proves that customers can begin qualification; it does not prove final yield, approved volume or equal performance across suppliers. HBM4E and taller 16-layer stacks remain a further step, with more capacity but tighter thermal, thickness and bonding constraints.
+
+The biggest takeaway is that HBM4 is not simply faster memory. Its wider interface turns the base die, package and accelerator into one jointly engineered data path. The supplier that wins must deliver qualified system bandwidth—not just good DRAM cells—after logic-process yield, stacking, packaging, heat, power and customer software are all counted.
+
+Sources
+
+Micron, March 16, 2026 — HBM4 high-volume production for NVIDIA Vera Rubin and stated bandwidth: https://investors.micron.com/news/press-release/2026/Micron-in-High-Volume-Production-of-HBM4-Designed-for-NVIDIA-Vera-Rubin-PCIe-Gen6-SSD-and-SOCAMM2-03-16-2026/default.aspx
+
+Samsung, February 12, 2026 — commercial HBM4 shipment, 4-nanometer logic base die and production status: https://news.samsung.com/global/samsung-ships-industry-first-commercial-hbm4-with-ultimate-performance-for-ai-computing
+
+SK hynix, June 5, 2025 — 12-layer HBM4 sampling and base-die development: https://news.skhynix.com/en/sk-hynix-showcases-hbm4-next-gen-ai-memory-at-computex-taipei-2025/
+
+SK hynix, September 26, 2024 — base logic die, stack-height and package-level verification work with TSMC: https://news.skhynix.com/en/sk-hynix-spotlights-ai-memory-solutions-industry-collaboration-at-tsmc-oip-ecosystem-forum-2024/
+
+Next lesson
+
+Lesson 077: Substrates and Glass Cores — Why the Layer Beneath the Package Can Limit AI Scale
+
+We will examine how organic and glass-core substrates route power and signals, control warpage and determine how large an advanced package can become.`,
+} satisfies Lesson;
