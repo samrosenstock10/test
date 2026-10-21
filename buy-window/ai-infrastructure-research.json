@@ -1473,6 +1473,35 @@
       "freshness": "new-after-prior-cutoff",
       "itemId": "semianalysis-sglang-nvidia-megakernel-20261020",
       "primarySourceUrl": "https://github.com/sgl-project/sglang/commit/722669e6066fec2266e8a7e2f6bb738709a2f53f"
+    },
+    {
+      "id": "expert-20261020-a16z-eka-dexterity",
+      "channel": "a16z",
+      "sourceId": "a16z",
+      "sourceLane": "expert",
+      "title": "a16z frames touch-aware dexterity as the next general robotics capability",
+      "sourceTitle": "Investing in Eka Robotics",
+      "url": "https://a16z.com/announcement/investing-in-eka-robotics/",
+      "speaker": "Raghu Raghuram and Yoko Li",
+      "role": "a16z managing partner and partner",
+      "publishedDate": "2026-10-20",
+      "observedAt": "2026-10-21T01:04:00Z",
+      "contentAccess": "article",
+      "independenceGroup": "a16z",
+      "summary": "a16z argues that generalizable robotic dexterity depends on combining modern vision and world models with touch-aware physical control, so robots can adapt during contact rather than relying on rigid, task-specific fixtures.",
+      "claim": "The authors forecast that economically meaningful robotics expansion beyond structured automation requires machines that can sense and adapt after contact begins. They present generalizable dexterity—rather than vision or planning alone—as the key capability that could unlock variable assembly, logistics and food-production tasks.",
+      "interpretation": "Our inference: if contact-rich manipulation becomes reusable rather than re-engineered task by task, value may shift toward integrated sensing/control platforms and away from fixed automation cells. The article does not establish Eka's technical advantage, customer adoption, unit economics or a public-equity beneficiary.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "countercase": "This is a financing announcement from the lead investor. It discloses no benchmark, customer, deployment, reliability, cycle time, hardware cost, gross margin or comparison with incumbent robotics and automation vendors.",
+      "nextTest": "Look for named production deployments with intervention rate, cycle time, uptime, task-transfer performance and cost per successful operation versus fixed automation and human labor.",
+      "evidenceType": "investor-forecast",
+      "status": "lead",
+      "location": "Official a16z investment announcement published October 20, 2026.",
+      "incentives": "a16z led Eka Robotics' Series A and benefits from the company's success; the authors are investors, not independent technical validators.",
+      "verification": "Read the complete official a16z article. Its mechanism and forecast are attributable; technical and commercial performance are not independently demonstrated.",
+      "freshness": "new-after-prior-cutoff",
+      "itemId": "a16z-eka-robotics-dexterity-20261020"
     }
   ],
   "evidence": [
@@ -3648,6 +3677,27 @@
       "sourceObservationId": "expert-20261020-semianalysis-sglang-nvidia-megakernel",
       "corroborationNote": "This record and the linked observation are two representations of the same SemiAnalysis-originated item and are not independent corroboration.",
       "primarySourceUrl": "https://github.com/sgl-project/sglang/commit/722669e6066fec2266e8a7e2f6bb738709a2f53f"
+    },
+    {
+      "id": "20261020-a16z-eka-dexterity",
+      "title": "a16z frames touch-aware dexterity as the next general robotics capability",
+      "url": "https://a16z.com/announcement/investing-in-eka-robotics/",
+      "kind": "investor-forecast",
+      "independenceGroup": "a16z",
+      "publishedDate": "2026-10-20",
+      "observedAt": "2026-10-21T01:04:00Z",
+      "contentAccess": "article",
+      "status": "lead",
+      "summary": "a16z argues that generalizable robotic dexterity depends on combining modern vision and world models with touch-aware physical control, so robots can adapt during contact rather than relying on rigid, task-specific fixtures.",
+      "claim": "The authors forecast that economically meaningful robotics expansion beyond structured automation requires machines that can sense and adapt after contact begins. They present generalizable dexterity—rather than vision or planning alone—as the key capability that could unlock variable assembly, logistics and food-production tasks.",
+      "interpretation": "Our inference: if contact-rich manipulation becomes reusable rather than re-engineered task by task, value may shift toward integrated sensing/control platforms and away from fixed automation cells. The article does not establish Eka's technical advantage, customer adoption, unit economics or a public-equity beneficiary.",
+      "verification": "Read the complete official a16z article. Its mechanism and forecast are attributable; technical and commercial performance are not independently demonstrated.",
+      "countercase": "This is a financing announcement from the lead investor. It discloses no benchmark, customer, deployment, reliability, cycle time, hardware cost, gross margin or comparison with incumbent robotics and automation vendors.",
+      "nextTest": "Look for named production deployments with intervention rate, cycle time, uptime, task-transfer performance and cost per successful operation versus fixed automation and human labor.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261020-a16z-eka-dexterity",
+      "corroborationNote": "This evidence row and the linked observation represent the same a16z-originated investment thesis and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -32207,5 +32257,5 @@
       "D3 re-read 74 Bottlenecks and 29 Claims. No eligible source version changed after the repaired handoff; older pending records were preserved."
     ]
   },
-  "updatedAt": "2026-10-20T11:42:00Z"
+  "updatedAt": "2026-10-21T01:08:00Z"
 }
