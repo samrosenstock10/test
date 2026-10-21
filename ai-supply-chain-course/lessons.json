@@ -811,7 +811,18 @@
         "lessons/075-01.tsfrag",
         "lessons/075-02.tsfrag"
       ]
+    },
+    {
+      "number": 76,
+      "module": "Module 10: Packaging, Memory & Materials",
+      "title": "HBM4 Integration — Why the Memory Stack, Base Die and Package Must Be Designed Together",
+      "date": "2026-10-21",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/076-01.tsfrag",
+        "lessons/076-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-19T11:09:00.000Z"
+  "updatedAt": "2026-10-21T12:07:34.973Z"
 }
