@@ -1502,6 +1502,36 @@
       "verification": "Read the complete official a16z article. Its mechanism and forecast are attributable; technical and commercial performance are not independently demonstrated.",
       "freshness": "new-after-prior-cutoff",
       "itemId": "a16z-eka-robotics-dexterity-20261020"
+    },
+    {
+      "id": "expert-20261021-deepseek-deepinfer",
+      "channel": "latent-space",
+      "sourceId": "latent-space",
+      "sourceLane": "engineering",
+      "title": "DeepSeek releases a production-derived inference core while withholding the distributed service layer",
+      "sourceTitle": "DeepInfer: High-Throughput Inference Engine for DeepSeek-V4.1-Flash",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "speaker": "DeepSeek AI",
+      "role": "AI model and inference systems developer",
+      "publishedDate": "2026-10-20",
+      "observedAt": "2026-10-21T13:34:56Z",
+      "contentAccess": "article",
+      "independenceGroup": "deepseek",
+      "summary": "DeepSeek open-sourced the offline inference core used for DeepSeek-V4.1-Flash, including specialized kernels, expert/context parallelism, asynchronous scheduling, speculative decoding, sliding-window attention replay, deterministic sampling and structured outputs for NVIDIA SM100 and Huawei Ascend 950.",
+      "claim": "The repository and maintainer Q&A describe an offline-only, single-model inference engine derived from DeepSeek's production architecture. DeepSeek says its production service handles about 155 trillion tokens per day and uses roughly 100 PiB of SSD-backed KV cache with disaggregated verification, prefill and decode, but the open release omits the production KV-cache service, disaggregation, load balancing and other online-service components.",
+      "interpretation": "Our inference: inference advantage is shifting toward tightly co-designed serving systems that combine kernels, parallelism, scheduling, speculative decoding and memory hierarchy across accelerator vendors. The release exposes useful mechanism evidence but not the full production moat or an independently measured cost advantage.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "countercase": "The throughput and fleet-scale figures are company-reported; the open repository supports only DeepSeek-V4.1-Flash and omits the distributed production services that may contain much of the operational advantage. No independent matched benchmark, reliability study, adoption evidence or public-equity beneficiary is established.",
+      "nextTest": "Reproduce throughput, latency, determinism and memory behavior on supported NVIDIA and Ascend systems; compare matched SGLang and vLLM configurations; then track multi-model support, external deployments and whether the omitted service layer becomes reproducible.",
+      "evidenceType": "open-source-inference-systems-evidence",
+      "status": "evidence",
+      "location": "Official DeepSeek repository README and maintainer Q&A; initial repository commit dated October 20, 2026.",
+      "incentives": "DeepSeek benefits from model and ecosystem adoption; the production-scale claims are self-reported.",
+      "verification": "Inspected the official repository, source tree, initial commit and maintainer Q&A. Code verifies the disclosed offline mechanisms and explicit omissions, not the production-scale metrics or comparative economics.",
+      "freshness": "new-after-prior-cutoff",
+      "itemId": "deepseek-deepinfer-20261020",
+      "primarySourceUrl": "https://github.com/deepseek-ai/DeepInfer"
     }
   ],
   "evidence": [
@@ -3698,6 +3728,28 @@
       "counterTickers": [],
       "sourceObservationId": "expert-20261020-a16z-eka-dexterity",
       "corroborationNote": "This evidence row and the linked observation represent the same a16z-originated investment thesis and are not independent corroboration."
+    },
+    {
+      "id": "20261021-deepseek-deepinfer",
+      "title": "DeepSeek releases a production-derived inference core while withholding the distributed service layer",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "kind": "open-source-inference-systems-evidence",
+      "independenceGroup": "deepseek",
+      "publishedDate": "2026-10-20",
+      "observedAt": "2026-10-21T13:34:56Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "DeepSeek open-sourced the offline inference core used for DeepSeek-V4.1-Flash, including specialized kernels, expert/context parallelism, asynchronous scheduling, speculative decoding, sliding-window attention replay, deterministic sampling and structured outputs for NVIDIA SM100 and Huawei Ascend 950.",
+      "claim": "The repository and maintainer Q&A describe an offline-only, single-model inference engine derived from DeepSeek's production architecture. DeepSeek says its production service handles about 155 trillion tokens per day and uses roughly 100 PiB of SSD-backed KV cache with disaggregated verification, prefill and decode, but the open release omits the production KV-cache service, disaggregation, load balancing and other online-service components.",
+      "interpretation": "Our inference: inference advantage is shifting toward tightly co-designed serving systems that combine kernels, parallelism, scheduling, speculative decoding and memory hierarchy across accelerator vendors. The release exposes useful mechanism evidence but not the full production moat or an independently measured cost advantage.",
+      "verification": "Inspected the official repository, source tree, initial commit and maintainer Q&A. Code verifies the disclosed offline mechanisms and explicit omissions, not the production-scale metrics or comparative economics.",
+      "countercase": "The throughput and fleet-scale figures are company-reported; the open repository supports only DeepSeek-V4.1-Flash and omits the distributed production services that may contain much of the operational advantage. No independent matched benchmark, reliability study, adoption evidence or public-equity beneficiary is established.",
+      "nextTest": "Reproduce throughput, latency, determinism and memory behavior on supported NVIDIA and Ascend systems; compare matched SGLang and vLLM configurations; then track multi-model support, external deployments and whether the omitted service layer becomes reproducible.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261021-deepseek-deepinfer",
+      "corroborationNote": "This evidence row and linked observation are two representations of the same DeepSeek-originated release and are not independent corroboration. Production-scale metrics remain company-reported.",
+      "primarySourceUrl": "https://github.com/deepseek-ai/DeepInfer"
     }
   ],
   "rankings": [
@@ -32242,20 +32294,20 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-18T13:32:56Z",
-    "kind": "daily-expert-scan-and-weekly-review",
+    "asOf": "2026-10-21T13:34:56Z",
+    "kind": "daily-engineering-and-expert-scan",
     "completedChannels": [
-      "a16z",
-      "exponential-view"
+      "latent-space",
+      "a16z"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "Incremental expert review began after the October 17 cutoff. Completed October 18 SemiAnalysis and builder-engineering source cycles were not repeated.",
-      "Official a16z and Exponential View public indexes exposed no qualifying new AI-infrastructure or physical-AI investor thesis through the run cutoff.",
-      "The scheduled Sunday full-universe review completed with no score, rank, thesis, core-eligibility or valuation-assumption change. Valuation inputs retain their actual last-verified dates.",
-      "D3 re-read 74 Bottlenecks and 29 Claims. No eligible source version changed after the repaired handoff; older pending records were preserved."
+      "The engineering index was checked incrementally after its prior cutoff and surfaced DeepInfer; the official repository and maintainer Q&A were then reviewed directly.",
+      "The expert lane was checked independently after the October 21 a16z/Eka item already recorded and produced no additional qualifying evidence.",
+      "Completed October 21 SemiAnalysis research was not repeated; the current weekly thesis review remains due October 25.",
+      "D3 re-read 74 Bottlenecks and 30 Claims; no eligible source version changed, so canonical handoff state was preserved."
     ]
   },
-  "updatedAt": "2026-10-21T01:08:00Z"
+  "updatedAt": "2026-10-21T13:45:00Z"
 }
