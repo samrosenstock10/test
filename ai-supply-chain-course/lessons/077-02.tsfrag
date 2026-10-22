@@ -1,0 +1,36 @@
+A glass core can remain flatter and more dimensionally stable than an organic core as temperature and humidity change. Its properties can support tighter layer-to-layer alignment, finer wiring and larger package sizes. Electrical paths can pass through holes in the glass called through-glass vias, while build-up layers still provide detailed routing above and below the core.
+
+Intel said in 2023 that its test glass substrates showed lower pattern distortion and the potential for much higher interconnect density than organic substrates. In 2026, Intel continued to describe glass cores as a next-generation platform for large AI and high-performance-computing packages.
+
+Those are meaningful development signals, not proof of broad high-volume economics. Glass is brittle. Manufacturers must form and metallize large numbers of reliable holes, keep copper attached, handle panels without edge damage and prove that the structure survives assembly and repeated thermal cycling. A flatter material does not automatically produce higher yield if the new process introduces different defects.
+
+Capacity announcements need a technology label
+
+The current bottleneck is not simply “substrate capacity.” Organic FC-BGA substrates already serve advanced processors, while glass-core manufacturing is at an earlier commercialization stage.
+
+Advanced Substrate Technologies, a Broadcom–TOPPAN venture, opened a high-end FC-BGA substrate facility in Singapore in September 2026 to serve AI demand. That is evidence of new physical organic-substrate capacity. It does not establish qualified output, yield or utilization, and it is not evidence that glass has displaced organic cores.
+
+Absolics is building a U.S. glass-substrate manufacturing base with support from the CHIPS program. Government funding and factory equipment show commitment; customer qualification and repeatable shipped volume will determine whether the technology becomes an actual supply alternative.
+
+The biggest takeaway
+
+As AI packages grow, the substrate must route more connections, deliver more power and resist greater mechanical stress across a larger area. Organic ABF substrates are the production foundation today, but their warpage and feature-size limits become harder to manage at extreme scale. Glass cores offer a plausible path to flatter, denser and larger packages, while introducing a new manufacturing and qualification chain.
+
+Judge the transition in stages: test structures, customer samples, qualification, repeatable yield and named volume production. The limiting resource is not announced panel area. It is the number of substrates that stay flat, connect correctly and survive assembly around expensive compute and memory.
+
+Sources
+
+Ajinomoto, ABF technology overview — build-up insulation, laser processing, copper plating and substrate routing: https://www.ajinomoto.com/innovation/our_innovation/buildupfilm
+
+Intel, September 18, 2023 — glass-substrate properties, test units and stated commercialization roadmap: https://www.intel.com/content/www/us/en/newsroom/news/intel-unveils-industry-leading-glass-substrates.html
+
+Intel Foundry, Packaging and Test Research — current glass-core-substrate research for AI and HPC: https://www.intel.com/content/www/us/en/foundry/research/packaging-and-test.html
+
+Broadcom, September 29, 2026 — opening of the AST high-end FC-BGA substrate facility in Singapore: https://www.broadcom.com/company/news/releases/ast-broadcom-toppan-open-substrate-facility
+
+U.S. Department of Commerce, January 16, 2025 — final CHIPS award supporting Absolics glass-substrate manufacturing development: https://www.commerce.gov/news/press-releases/2025/01/us-department-commerce-announces-14-billion-final-awards-support-next
+
+Next lesson
+
+Lesson 078: Integrated Packaging Supply — When Owning More Steps Improves the Finished System
+

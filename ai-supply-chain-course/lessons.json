@@ -822,7 +822,19 @@
         "lessons/076-01.tsfrag",
         "lessons/076-02.tsfrag"
       ]
+    },
+    {
+      "number": 77,
+      "module": "Module 10: Packaging, Memory & Materials",
+      "title": "Substrates and Glass Cores — Why the Layer Beneath the Package Can Limit AI Scale",
+      "date": "2026-10-22",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/077-01.tsfrag",
+        "lessons/077-02.tsfrag",
+        "lessons/077-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-21T12:07:34.973Z"
+  "updatedAt": "2026-10-22T11:06:42.272Z"
 }
