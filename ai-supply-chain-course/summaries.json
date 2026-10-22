@@ -196,6 +196,14 @@
       "title": "HBM4 Integration — Why the Memory Stack, Base Die and Package Must Be Designed Together",
       "bodySha256": "c2fee5619d46c0efe8394826acb3534ac36f36f52f616fc695882d3e331dcd77",
       "body": "Lesson 076 explains that HBM4 turns memory, its logic base die, the package and the accelerator into one jointly engineered data path. HBM moves data through stacked memory dies and vertical connections into a base die before crossing the package to the accelerator. HBM4 widens the external interface to 2,048 data connections, which can increase bandwidth and improve energy efficiency but also makes routing, timing, power and testing harder. An advanced logic-process base die can manage this wider interface and add control, repair and monitoring functions that better match a particular accelerator. The package must carry thousands of signals while giving the accelerator and memory enough area, power and cooling. Heat, component quality and assembly yield are coupled because one weak stack, connection or die can reduce the value of the finished module. Supplier samples allow customer qualification, while named high-volume production is stronger evidence that a design has moved beyond a roadmap. The central lesson is that HBM4's useful performance depends on the whole qualified system, not memory speed viewed by itself."
+    },
+    {
+      "number": 77,
+      "date": "2026-10-22",
+      "title": "Substrates and Glass Cores — Why the Layer Beneath the Package Can Limit AI Scale",
+      "bodySha256": "386ac4c2e864129b50ce273d69b1f2ca97a237142d4d4d7f0f3c4c561147775d",
+      "body": "Lesson 077 explains that the package substrate is the multilayer platform connecting fine chip and memory contacts to the larger connections on a server board. Organic substrates use a stiff core with insulating and copper build-up layers, including widely used ABF material, to route signals and distribute power. As AI packages grow, differences in how silicon, copper and resin expand during heating can bend the assembly, a problem called warpage. Warpage can disrupt alignment, solder contact and assembly yield, especially near the edges of a large package. Glass cores can stay flatter and more dimensionally stable, allowing tighter alignment, finer wiring and potentially larger packages. Glass also introduces new difficulties, including brittleness, reliable through-glass vias, copper adhesion, edge handling and long qualification cycles. A new organic FC-BGA factory proves that physical capacity is being added, while glass test units, funding and factories do not yet prove broad high-volume output. The main lesson is to judge substrates by qualified good units that remain flat, route correctly and survive assembly—not by announced factory area or material claims alone."
     }
-  ]
+  ],
+  "updatedAt": "2026-10-22T11:08:21.402Z"
 }
