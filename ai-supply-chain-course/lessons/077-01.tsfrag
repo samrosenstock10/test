@@ -1,0 +1,45 @@
+import type { Lesson } from "./lessons";
+
+export const lesson077 = {
+  number: 77,
+  module: "Module 10: Packaging, Memory & Materials",
+  title: "Substrates and Glass Cores — Why the Layer Beneath the Package Can Limit AI Scale",
+  date: "2026-10-22",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 072: A fab should concentrate its slowest measurements where an undetected process change could destroy the most value.
+
+Lesson 073: Cleaning must leave the right surface for the next step and protect it from damage or recontamination during the handoff.
+
+Lesson 074: Testing creates value when it rejects bad dies before they absorb more expensive packaging, memory and assembly.
+
+Lesson 075: Packaging strategy chooses where to place dense connections while balancing bandwidth, power, heat, yield, cost and supplier flexibility.
+
+Lesson 076: HBM4 makes memory, its logic base die, the package and the accelerator one jointly engineered data path.
+
+The layer that has to stay flat
+
+An AI package may hold a large accelerator, several high-bandwidth-memory stacks and thousands of electrical connections. All of that sits above a package substrate: a multilayer platform that carries signals and power from the fine connections near the dies to the much larger contacts on a server board.
+
+Lesson 032 distinguished the substrate from the interposer, and Lesson 075 compared interposers, bridges and vertical stacking. The substrate performs a different translation. It must fan microscopic connections outward, distribute high current, support a large assembly and remain sufficiently flat while dissimilar materials heat and cool.
+
+A package can have excellent dies and an advanced interposer yet still fail if the substrate bends, cracks or cannot route enough power and signals.
+
+How an organic substrate works
+
+Most high-performance flip-chip ball-grid-array substrates use an organic core for stiffness, with alternating insulating and copper build-up layers on each side. Tiny holes called vias connect one copper layer to another. Ajinomoto Build-up Film, or ABF, is a widely used insulating film in these layers. Its surface can be laser-drilled and copper-plated to form dense wiring.
+
+Near the chip, the substrate needs fine lines and closely spaced connections. Toward the motherboard, those connections spread into a coarser grid of solder balls. More layers and finer features can increase routing capacity, but they also add processing steps, alignment demands and opportunities for defects.
+
+Power is part of the same problem. A large accelerator can draw enormous current at low voltage. The substrate must provide low-resistance paths and enough ground connections while leaving room for data signals. Poor power delivery creates voltage drops and noise before electricity even reaches the transistors.
+
+Why large packages warp
+
+Silicon, copper, resin and the substrate core expand by different amounts when temperature changes. During manufacturing, soldering and operation, one layer can try to expand more than another. The package then bows like a board heated unevenly.
+
+This bending is called warpage. A small amount can become serious across a large AI package because the outer edges travel farther from a flat reference plane. Warpage can prevent solder connections from touching evenly, disturb alignment, stress fragile interfaces or reduce assembly yield.
+
+Designers can change layer thickness, copper balance, materials and processing temperatures to control it. Those choices interact with routing and power. Adding stiffness may help flatness but complicate drilling or raise cost. Adding copper can improve power delivery while making thermal behavior less symmetrical. The best substrate is therefore a balanced mechanical and electrical system, not merely a larger circuit board.
+
+What glass changes
+
