@@ -92,6 +92,13 @@
       "url": "https://www.gevernova.com/electrification",
       "kind": "issuer-primary-source",
       "priority": "targeted-primary-source"
+    },
+    {
+      "id": "nvidia",
+      "label": "NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/",
+      "kind": "issuer-primary-source",
+      "priority": "targeted-primary-source"
     }
   ],
   "observations": [
@@ -1586,6 +1593,38 @@
       "evidenceType": "expert-forecast",
       "status": "lead",
       "verification": "Full official article reviewed. The author and publisher have investment incentives; no independent adoption or commercial evidence was supplied."
+    },
+    {
+      "id": "expert-20261023-nvidia-capacity-reservations",
+      "channel": "nvidia",
+      "sourceId": "nvidia",
+      "sourceLane": "expert",
+      "title": "NVIDIA prepays a multivendor expansion across substrates, packaging, test and CPO optical engines",
+      "sourceTitle": "NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure Buildout",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+      "speaker": "Jensen Huang and NVIDIA supply-chain partners",
+      "role": "AI platform buyer and manufacturing partners",
+      "publishedDate": "2026-10-21",
+      "observedAt": "2026-10-23T13:34:00Z",
+      "contentAccess": "article",
+      "independenceGroup": "nvidia-capacity-expansion-20261021",
+      "summary": "NVIDIA disclosed quantified, multi-year capacity agreements spanning the main AI back-end constraints: 2.5x aggregate substrate capacity over three years, more than 300% Amkor interposer-wafer capacity by end-2028, a $1.1 billion KYEC U.S. test-capacity advance, and a 15x SPIL CPO optical-engine target by mid-2027 with another doubling aimed by end-2028.",
+      "claim": "NVIDIA says customer-funded reservations and new facilities with IBIDEN, Samsung Electro-Mechanics, Unimicron, Amkor, KYEC and SPIL will expand substrate, advanced-packaging, test and optical-engine capacity for current and next-generation platforms. The underlying targets are plans, not delivered output.",
+      "interpretation": "Our inference: NVIDIA is treating back-end manufacturing as a binding, persistent constraint and using prepayments to secure redundancy across several layers. That strengthens demand visibility for qualified suppliers—most directly Amkor among currently tracked U.S.-listed names—but durable shareholder returns still depend on contract pricing, yield, utilization, capex burden and post-ramp industry supply.",
+      "beneficiaryTickers": [
+        "AMKR"
+      ],
+      "counterTickers": [],
+      "countercase": "The source is NVIDIA's own announcement and the capacity figures are forward targets. Customer advances can subsidize large builds without guaranteeing supplier margins or returns; simultaneous expansion across vendors could ease scarcity and create overcapacity after the current cycle. No realized yield, pricing, utilization or return-on-capital data is disclosed.",
+      "nextTest": "Track contractual revenue conversion, capex and prepayment accounting, qualified production starts, yield, utilization, margins and return on invested capital at Amkor and other named suppliers through 2027-2028.",
+      "evidenceType": "customer-capacity-commitment",
+      "status": "evidence",
+      "location": "Official NVIDIA Newsroom release dated October 21, 2026.",
+      "incentives": "NVIDIA benefits from signaling supply security and its partners benefit from customer-backed expansion. The release is primary evidence of the agreements and stated targets, not independent evidence that the ramps or economics will succeed.",
+      "verification": "Read the complete official NVIDIA release. The named partners, capacity targets, timing and $1.1 billion KYEC advance are verified as NVIDIA's statements; delivered capacity, yields and supplier economics remain unverified.",
+      "freshness": "new-after-prior-cutoff",
+      "itemId": "nvidia-supply-chain-capacity-20261021",
+      "primarySourceUrl": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout"
     }
   ],
   "evidence": [
@@ -3845,6 +3884,29 @@
       "beneficiaryTickers": [],
       "countercase": "Forecast may overstate the speed of model progress and understate automation or vertical integration in manufacturing.",
       "nextTest": "Dated customer or manufacturing evidence connects faster AI-assisted design cycles to repeat demand and economics for a specific public supplier."
+    },
+    {
+      "id": "20261023-nvidia-capacity-reservations",
+      "title": "NVIDIA commits customer funding to expand multiple AI back-end constraints",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+      "kind": "customer-capacity-commitment",
+      "independenceGroup": "nvidia-capacity-expansion-20261021",
+      "publishedDate": "2026-10-21",
+      "observedAt": "2026-10-23T13:34:00Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "NVIDIA disclosed quantified, multi-year capacity agreements spanning the main AI back-end constraints: 2.5x aggregate substrate capacity over three years, more than 300% Amkor interposer-wafer capacity by end-2028, a $1.1 billion KYEC U.S. test-capacity advance, and a 15x SPIL CPO optical-engine target by mid-2027 with another doubling aimed by end-2028.",
+      "claim": "NVIDIA says customer-funded reservations and new facilities with IBIDEN, Samsung Electro-Mechanics, Unimicron, Amkor, KYEC and SPIL will expand substrate, advanced-packaging, test and optical-engine capacity for current and next-generation platforms. The underlying targets are plans, not delivered output.",
+      "interpretation": "Our inference: NVIDIA is treating back-end manufacturing as a binding, persistent constraint and using prepayments to secure redundancy across several layers. That strengthens demand visibility for qualified suppliers—most directly Amkor among currently tracked U.S.-listed names—but durable shareholder returns still depend on contract pricing, yield, utilization, capex burden and post-ramp industry supply.",
+      "verification": "Read the complete official NVIDIA release. The named partners, capacity targets, timing and $1.1 billion KYEC advance are verified as NVIDIA's statements; delivered capacity, yields and supplier economics remain unverified.",
+      "countercase": "The source is NVIDIA's own announcement and the capacity figures are forward targets. Customer advances can subsidize large builds without guaranteeing supplier margins or returns; simultaneous expansion across vendors could ease scarcity and create overcapacity after the current cycle. No realized yield, pricing, utilization or return-on-capital data is disclosed.",
+      "nextTest": "Track contractual revenue conversion, capex and prepayment accounting, qualified production starts, yield, utilization, margins and return on invested capital at Amkor and other named suppliers through 2027-2028.",
+      "beneficiaryTickers": [
+        "AMKR"
+      ],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261023-nvidia-capacity-reservations",
+      "corroborationNote": "This evidence row and the linked observation represent the same NVIDIA-originated release and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -32389,21 +32451,23 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-23T00:56:14Z",
-    "kind": "daily-engineering-and-expert-scan",
+    "asOf": "2026-10-23T13:34:00Z",
+    "kind": "daily-expert-scan",
+    "incrementalAfter": "2026-10-23T00:56:14Z",
     "completedChannels": [
-      "latent-space",
-      "a16z"
+      "a16z",
+      "nvidia"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "The engineering index was checked incrementally after its prior cutoff and surfaced DeepInfer; the official repository and maintainer Q&A were then reviewed directly.",
-      "The expert lane was checked independently after the October 21 a16z/Eka item already recorded and produced no additional qualifying evidence.",
-      "Completed October 21 SemiAnalysis research was not repeated; the current weekly thesis review remains due October 25.",
-      "D3 re-read 74 Bottlenecks and 30 Claims; no eligible source version changed, so canonical handoff state was preserved.",
-      "The October 20 a16z item is an investor-authored forecast with disclosed incentives and no independent adoption, revenue or public-company winner evidence."
+      "The official a16z surface was screened after the completed October 22 expert cutoff and exposed no new qualifying post-cutoff forecast.",
+      "A new Grok pointer and Muse discovery memo surfaced NVIDIA's October 21 supply-chain announcement. The complete official NVIDIA release was read directly; repeated peer summaries were treated as one origin.",
+      "The agreement is primary evidence of planned customer-funded capacity, not realized production, yield, supplier margins or return on capital.",
+      "Exponential View is a once-per-Sunday supplement and was not due. The weekly thesis review completed October 18 and is next due October 25.",
+      "D3 re-read 74 Project Tracker Bottlenecks and 30 Claims. Their section identities were unchanged; the October 22 Project run added a roadmap update, not an eligible Bottleneck or resolved Claim.",
+      "No decision-relevant valuation refresh was required."
     ]
   },
-  "updatedAt": "2026-10-23T00:56:14Z"
+  "updatedAt": "2026-10-23T13:35:00Z"
 }
