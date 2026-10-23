@@ -834,7 +834,19 @@
         "lessons/077-02.tsfrag",
         "lessons/077-03.tsfrag"
       ]
+    },
+    {
+      "number": 78,
+      "module": "Module 10: Packaging, Memory & Materials",
+      "title": "Integrated Packaging Supply — When Owning More Steps Improves the Finished System",
+      "date": "2026-10-23",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/078-01.tsfrag",
+        "lessons/078-02.tsfrag",
+        "lessons/078-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-22T11:06:42.272Z"
+  "updatedAt": "2026-10-23T12:03:11.195Z"
 }
