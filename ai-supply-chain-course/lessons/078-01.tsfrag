@@ -1,0 +1,43 @@
+import type { Lesson } from "./lessons";
+
+export const lesson078 = {
+  number: 78,
+  module: "Module 10: Packaging, Memory & Materials",
+  title: "Integrated Packaging Supply — When Owning More Steps Improves the Finished System",
+  date: "2026-10-23",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 073: Cleaning creates value only when it leaves the right surface for the next step and protects it through the handoff.
+
+Lesson 074: Testing should remove bad dies before they absorb scarce packaging, memory and assembly capacity.
+
+Lesson 075: Packaging topology chooses where to place dense connections while balancing bandwidth, power, heat, yield and supplier flexibility.
+
+Lesson 076: HBM4 turns memory, its logic base die, the package and the accelerator into one jointly engineered data path.
+
+Lesson 077: The substrate beneath an AI package must route signals and power while staying flat enough for thousands of connections to form reliably.
+
+The product crosses several factories
+
+An advanced AI package can combine a logic die from a foundry, HBM stacks from a memory supplier, an interposer or bridge, an organic substrate and final assembly and test. Each component can pass its own specification yet the finished package can still miss yield, power or performance targets.
+
+That happens because the interfaces are physical and statistical, not just contractual. Microbump pitch affects alignment margin. Die thickness changes mechanical stress. HBM behavior affects signal timing and heat. Substrate warpage changes whether outer solder joints connect. Test coverage determines whether a weak die is discovered before or after expensive parts are joined.
+
+Integrated packaging supply means putting more of those linked decisions under one operating system. Sometimes one company owns multiple steps. Sometimes a foundry coordinates external memory and outsourced assembly partners through shared design rules, data and capacity commitments. The important question is not the logo on every factory. It is whether the organizations can close the learning loop around the finished system.
+
+How integration improves yield
+
+Suppose final test shows intermittent failures on one edge of a package. The cause could be a logic-die pad, a bonding process, interposer routing, substrate flatness or a thermal stress interaction. In a fragmented chain, each supplier may see only its own measurements and defend its own yield. Engineers lose time reproducing the failure, agreeing on data formats and deciding who pays for experiments.
+
+An integrated flow can connect wafer maps, known-good-die results, assembly settings and final-test failures by serial number. If defects cluster around one wafer region or one bonding tool, the team can change the responsible process faster. It can also co-optimize tolerances: a modest improvement in die flatness may be cheaper than demanding an extreme assembly margin, while better pre-bond test may prevent valuable HBM from being attached to weak logic.
+
+This is the real operational benefit. Ownership by itself does not create yield. Shared traceability, common models, fast experiments and authority to change several steps together do.
+
+Scheduling is part of the mechanism
+
+Advanced packages are assembled from components with different cycle times and yields. A missing HBM stack can idle a packaging line. A substrate delay can strand tested logic dies. If planners release every component independently, inventory accumulates at the wrong interfaces.
+
+A coordinated supplier can reserve compatible capacity across wafer fabrication, packaging and test, then sequence lots so the parts arrive together. That can reduce work in process and shorten recovery when demand changes. It can also make customer qualification easier because the customer validates a defined end-to-end flow rather than reconstructing one from several vendors.
+
+The economic trade is flexibility
+
