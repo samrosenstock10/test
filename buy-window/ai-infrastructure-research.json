@@ -1563,6 +1563,29 @@
       "verification": "Read the attributable October 21 SemiAnalysis article and checked the public TileLang repository, which independently lists official Ascend 950 support from September 30 with native code generation, scheduling and synchronization. The broader SemiAnalysis microbenchmarks, production economics and 2027-2028 adoption forecast were not independently reproduced.",
       "freshness": "new-after-prior-cutoff",
       "itemId": "semianalysis-huawei-deepseek-symbiosis-20261021"
+    },
+    {
+      "id": "expert-20261022-a16z-hardware-physical-interface",
+      "sourceId": "a16z",
+      "sourceLane": "expert",
+      "itemId": "superhuman-hardware-design-is-the-easy-part",
+      "title": "Superhuman Hardware Design Is The Easy Part",
+      "url": "https://a16z.com/superhuman-hardware-design-is-the-easy-part/",
+      "speaker": "Christian Keil",
+      "role": "author",
+      "publishedDate": "2026-10-20",
+      "observedAt": "2026-10-23T00:56:14Z",
+      "contentAccess": "article",
+      "independenceGroup": "a16z-christian-keil",
+      "summary": "A forecast that AI may rapidly improve digital hardware design while manufacturing, design-for-manufacture, procurement, physical test, process knowledge and iteration remain real-world bottlenecks.",
+      "claim": "If models become superhuman at digital hardware design, scarce value and cycle time shift toward physical execution: manufacturing, tooling, components, metrology, test and autonomous labs.",
+      "interpretation": "Useful mechanism-level forecast for where infrastructure constraints may migrate, but it does not identify a public-company winner or verify adoption and revenue.",
+      "beneficiaryTickers": [],
+      "countercase": "AI-assisted design may diffuse without materially shifting supplier economics; simulation, standardization and incumbent integration could reduce rather than deepen physical bottlenecks.",
+      "nextTest": "Named production programs show AI-designed hardware reaching fabrication faster while disclosing which manufacturing, metrology, test or lab providers capture repeat revenue.",
+      "evidenceType": "expert-forecast",
+      "status": "lead",
+      "verification": "Full official article reviewed. The author and publisher have investment incentives; no independent adoption or commercial evidence was supplied."
     }
   ],
   "evidence": [
@@ -3805,6 +3828,23 @@
       "sourceObservationId": "expert-20261022-semianalysis-huawei-deepseek-symbiosis",
       "corroborationNote": "This evidence row and the linked observation represent the same SemiAnalysis-originated report and are not independent corroboration. The TileLang repository verifies backend availability, not the article's benchmark or adoption forecast.",
       "primarySourceUrl": "https://github.com/tile-ai/tilelang"
+    },
+    {
+      "id": "20261022-a16z-hardware-physical-interface",
+      "title": "AI hardware-design gains may move bottlenecks to physical execution",
+      "url": "https://a16z.com/superhuman-hardware-design-is-the-easy-part/",
+      "kind": "expert-forecast",
+      "independenceGroup": "a16z-christian-keil",
+      "publishedDate": "2026-10-20",
+      "observedAt": "2026-10-23T00:56:14Z",
+      "contentAccess": "article",
+      "status": "lead",
+      "summary": "Investor-authored forecast that manufacturing, DFM, procurement, metrology, test and physical iteration remain harder constraints even if digital hardware design becomes superhuman.",
+      "claim": "Physical-world execution layers may gain relative importance as design intelligence improves.",
+      "interpretation": "Lead only; no public-company beneficiary, customer adoption, revenue or economics verified.",
+      "beneficiaryTickers": [],
+      "countercase": "Forecast may overstate the speed of model progress and understate automation or vertical integration in manufacturing.",
+      "nextTest": "Dated customer or manufacturing evidence connects faster AI-assisted design cycles to repeat demand and economics for a specific public supplier."
     }
   ],
   "rankings": [
@@ -32349,7 +32389,7 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-21T13:34:56Z",
+    "asOf": "2026-10-23T00:56:14Z",
     "kind": "daily-engineering-and-expert-scan",
     "completedChannels": [
       "latent-space",
@@ -32361,8 +32401,9 @@
       "The engineering index was checked incrementally after its prior cutoff and surfaced DeepInfer; the official repository and maintainer Q&A were then reviewed directly.",
       "The expert lane was checked independently after the October 21 a16z/Eka item already recorded and produced no additional qualifying evidence.",
       "Completed October 21 SemiAnalysis research was not repeated; the current weekly thesis review remains due October 25.",
-      "D3 re-read 74 Bottlenecks and 30 Claims; no eligible source version changed, so canonical handoff state was preserved."
+      "D3 re-read 74 Bottlenecks and 30 Claims; no eligible source version changed, so canonical handoff state was preserved.",
+      "The October 20 a16z item is an investor-authored forecast with disclosed incentives and no independent adoption, revenue or public-company winner evidence."
     ]
   },
-  "updatedAt": "2026-10-22T12:27:00Z"
+  "updatedAt": "2026-10-23T00:56:14Z"
 }
