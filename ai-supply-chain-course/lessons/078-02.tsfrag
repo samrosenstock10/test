@@ -1,0 +1,28 @@
+Integration can lower transaction costs, accelerate yield learning and give a customer one accountable counterparty. It may also let the supplier capture more value from the completed system instead of selling one interchangeable step.
+
+But the same arrangement can create concentration risk. A customer may have fewer substitutes if design files, package rules and qualification data are specific to one platform. A vertically integrated supplier may favor its own memory, foundry process or packaging capacity even when an external component is better. Neutral outsourced semiconductor assembly and test companies can preserve choice by combining dies and memory from multiple vendors.
+
+Scale matters too. An independent specialist can spread equipment and process learning across many customers. A captive line may coordinate beautifully but run below efficient utilization. The best boundary therefore depends on product complexity, volumes, data-sharing needs, qualification cost and how valuable multi-sourcing is.
+
+Current industry moves show several models
+
+TSMC sells an integrated 3DFabric platform, while Intel Foundry describes both turnkey assembly-and-test services and support for customers that use outside assembly partners. Samsung has promoted a combined foundry, memory and advanced-packaging offering. These are operating models, not guarantees that every project will yield better or arrive sooner. Samsung's claim that its integrated AI solution can improve turnaround time is a supplier estimate whose result will depend on the specific design and capacity situation.
+
+Integration can also be created by contract rather than acquisition. On June 16, 2026, TSMC and Amkor announced a ten-year agreement under which TSMC intends to procure advanced packaging and test services from Amkor. The companies framed it as part of a U.S. chain from wafer fabrication through tested packaged devices. That is evidence of a long-term coordination commitment, not proof that all planned capacity is already qualified or producing.
+
+Amkor's September 8, 2026 announcement for a second Arizona phase makes the timing distinction clearer. The company described a planned campus with wafer bump, probe, assembly and test, with construction anticipated to begin in late 2027 and completion targeted for the end of 2029. Customer commitments and capital plans can improve future coordination, but they are not current output. Actual supply will still depend on construction, equipment installation, process qualification, yield and demand.
+
+The biggest takeaway
+
+Integrated packaging works when it shortens the feedback loop around the finished package. The scarce capability is not simply owning more factories; it is joining design rules, traceability, capacity planning and failure analysis across them. That coordination can improve yield and delivery, but it must be weighed against supplier lock-in, lower neutrality and a larger blast radius when one network has a problem.
+
+Watch the evidence in order: a service announcement, a signed capacity agreement, installed tools, customer qualification and then repeatable shipped volume. The strongest supply chain may be vertically owned, contractually integrated or deliberately modular. What matters is whether the boundary helps engineers solve system-level problems without destroying the customer's ability to adapt.
+
+Sources
+
+TSMC, June 16, 2026 — ten-year Amkor agreement and the intended U.S. packaging-and-test supply chain: https://pr.tsmc.com/english/news/3344
+
+Intel Foundry — advanced packaging and test services, including turnkey and outside-partner models: https://www.intel.com/content/www/us/en/foundry/packaging.html
+
+Samsung, June 12, 2024 — integrated foundry, memory and advanced-package offering and stated turnaround-time claim: https://news.samsung.com/global/samsung-electronics-unveils-turnkey-semiconductor-solutions-for-ai-era-at-samsung-foundry-forum-2024
+
