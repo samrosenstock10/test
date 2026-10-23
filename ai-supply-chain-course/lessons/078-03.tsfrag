@@ -1,0 +1,8 @@
+Amkor, September 8, 2026 — planned Arizona phase two, functions and construction timeline: https://ir.amkor.com/news-releases/news-release-details/amkor-technology-announces-second-phase-its-semiconductor
+
+Next lesson
+
+Lesson 079: GPUs and Custom Silicon — Why Flexibility and Efficiency Pull in Different Directions
+
+We will compare general-purpose accelerators with workload-specific chips and ask when software flexibility outweighs specialized efficiency.`,
+} satisfies Lesson;
