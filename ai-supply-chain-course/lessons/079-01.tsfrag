@@ -1,0 +1,43 @@
+import type { Lesson } from "./lessons";
+
+export const lesson079 = {
+  number: 79,
+  module: "Module 11: Compute Architectures & Custom Silicon",
+  title: "GPUs and Custom Silicon — Why Flexibility and Efficiency Pull in Different Directions",
+  date: "2026-10-24",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 074: Testing creates value when it finds weak devices before they consume more expensive packaging and system capacity.
+
+Lesson 075: Packaging topology decides where dense connections belong while balancing bandwidth, heat, yield and supplier flexibility.
+
+Lesson 076: HBM4 makes memory, its logic base die, the package and the accelerator one jointly engineered data path.
+
+Lesson 077: A package substrate must translate fine die connections into board-level power and signals without warping.
+
+Lesson 078: Integrated supply improves a package only when shared data and authority shorten the learning loop across factories.
+
+The hardware decision is also a bet on future software
+
+Lesson 040 introduced the basic tradeoff: a GPU keeps more programmable machinery, while a custom ASIC can remove generality and devote more silicon to expected work. The harder decision is how much confidence a buyer should place in tomorrow's workload.
+
+A GPU is not general-purpose in the same sense as a CPU. It is already built for parallel work, with matrix engines, high-bandwidth memory and fast links. Its flexibility comes from a broad execution model and mature libraries that let developers map many models onto the same fleet. If attention patterns, numerical formats or serving methods change, software can often adapt without replacing the chip.
+
+That adaptability consumes area and power, but it has option value. A fleet bought for one model can be reassigned to another, training can share capacity with inference, and a new kernel can improve old hardware. The owner pays for capabilities that some workloads never use in exchange for being less wrong when the workload changes.
+
+Custom silicon narrows the promise
+
+A custom accelerator can choose a tighter set of operations, data types, memory paths and communication patterns. Removing unused flexibility leaves more budget for the work that matters. An inference chip might emphasize low-precision math, large on-chip memory or data-movement engines that keep fixed model weights flowing efficiently.
+
+But specialization is not merely a faster matrix unit. The compiler must recognize supported operations, the runtime must schedule them, the memory system must feed them and the interconnect must scale them. An unsupported operator can force a slow fallback or a software rewrite. The custom chip wins only when the full workload repeatedly follows the path the system was designed to accelerate.
+
+The economic threshold is fleet scale
+
+Custom silicon carries costs before the first useful token: architecture, EDA, verification, masks, packaging, system software and several years of engineering risk. A hyperscaler can spread those fixed costs across an enormous internal fleet and can shape both the chip and the workload. A smaller buyer usually cannot.
+
+Suppose a custom platform costs $600 million more to design and support than buying an established platform but saves $1.20 per accelerator-hour when productively used. It needs 500 million productive accelerator-hours to recover that difference before financing, delays and technical risk. If utilization is weak or the model changes before that point, the apparent efficiency never becomes an economic advantage.
+
+This is why utilization and stability matter together. A narrow chip running a stable service near capacity can compound small savings across billions of requests. The same chip sitting idle, waiting for ported software or serving a changing research workload can lose to a more expensive GPU.
+
+Current systems show a portfolio, not a clean replacement
+
