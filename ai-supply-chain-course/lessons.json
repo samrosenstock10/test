@@ -846,7 +846,18 @@
         "lessons/078-02.tsfrag",
         "lessons/078-03.tsfrag"
       ]
+    },
+    {
+      "number": 79,
+      "module": "Module 11: Compute Architectures & Custom Silicon",
+      "title": "GPUs and Custom Silicon — Why Flexibility and Efficiency Pull in Different Directions",
+      "date": "2026-10-24",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/079-01.tsfrag",
+        "lessons/079-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-23T12:03:11.195Z"
+  "updatedAt": "2026-10-24T11:09:00Z"
 }
