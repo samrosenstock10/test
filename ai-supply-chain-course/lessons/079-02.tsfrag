@@ -1,0 +1,28 @@
+Microsoft introduced Maia 200 on January 26, 2026 as an inference accelerator with native FP8 and FP4 tensor cores, 216 gigabytes of HBM3e and dedicated data-movement engines. Those choices illustrate specialization around token generation. The announcement establishes Microsoft's intended architecture; it does not by itself disclose fleet utilization, customer migration cost or realized cost per useful token.
+
+Meta described the same boundary explicitly on April 14, 2026: it said it takes a portfolio approach, using MTIA for inference and recommendation while matching other accelerators to other workloads. Its Broadcom partnership is evidence of a continuing custom-silicon program, not proof that custom chips have displaced GPUs across Meta's fleet.
+
+Meanwhile NVIDIA said on March 16, 2026 that its Vera Rubin platform's seven chips were in full production and positioned the system across pretraining, post-training, test-time scaling and inference. That breadth is the GPU platform's advantage, although a supplier's production and performance claims still require customer deployment evidence.
+
+The biggest takeaway
+
+GPUs sell adaptability across uncertain workloads; custom silicon sells efficiency where workload, software and fleet scale are sufficiently controlled. The decision is not GPU or ASIC forever. It is which work is stable enough to specialize now, which work still needs flexibility, and whether the savings can repay the design and software burden before the workload moves again.
+
+Sources
+
+Microsoft, January 26, 2026 — Maia 200 architecture and inference focus: https://blogs.microsoft.com/blog/2026/01/26/maia-200-the-ai-accelerator-built-for-inference/
+
+Meta, April 14, 2026 — portfolio approach and Broadcom custom-silicon partnership: https://about.fb.com/news/2026/04/meta-partners-with-broadcom-to-co-develop-custom-ai-silicon/
+
+NVIDIA, March 16, 2026 — Vera Rubin production status and workload breadth: https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform
+
+NVIDIA, CUDA-X Libraries — software-library breadth across AI and accelerated computing: https://developer.nvidia.com/cuda/cuda-x-libraries
+
+The design cost, hourly savings and break-even calculation are illustrative teaching assumptions, not vendor economics.
+
+Next lesson
+
+Lesson 080: Hyperscaler Silicon — When Fleet Scale Changes the Make-or-Buy Decision
+
+We will compare internal chip programs with merchant accelerators and ask when control of workloads, software and procurement justifies owning the design.`,
+} satisfies Lesson;
