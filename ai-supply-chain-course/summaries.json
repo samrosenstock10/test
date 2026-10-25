@@ -217,7 +217,14 @@
       "title": "GPUs and Custom Silicon — Why Flexibility and Efficiency Pull in Different Directions",
       "bodySha256": "86100054fbc87b480df12e4d120ba7e70b07c7640902c3f35a059d9c49eb958a",
       "body": "Lesson 079 explains that choosing an AI accelerator is also a bet on how stable future workloads will be. A GPU is already specialized for parallel computing, but its broad programming model and mature libraries let one fleet adapt to many models and changing methods. That flexibility uses some chip area and power, yet it has option value because software can redirect the hardware when the workload changes. A custom ASIC narrows the operations, number formats, memory paths and communication patterns it supports so more of the system can be optimized for expected work. Its advantage depends on the entire stack—compiler, runtime, memory, interconnect and supported operators—not merely a faster matrix unit. Custom silicon also carries large design and software costs, so the savings matter only when a large, stable and highly utilized fleet can spread those costs across enough productive hours. Microsoft Maia, Meta MTIA and NVIDIA Rubin illustrate a market where specialized and flexible accelerators coexist, while announcements, partnerships and production claims provide different levels of evidence. The central decision is which workloads are stable enough to specialize now and whether the efficiency gain will repay the development burden before those workloads change again."
+    },
+    {
+      "number": 80,
+      "date": "2026-10-25",
+      "title": "Hyperscaler Silicon — When Fleet Scale Changes the Make-or-Buy Decision",
+      "bodySha256": "b03c2f445bf86a794462c5e717e6805cc3b4ea33d7c73d1ce9df4fb52cd213a4",
+      "body": "Lesson 080 explains why a hyperscaler’s chip decision is about which architectural choices to own, not whether to manufacture every component itself. An internal accelerator still depends on licensed IP, EDA tools, foundries, HBM, substrates, packaging and testing. Hyperscalers can justify owning more of the design because they control enormous demand, observe their workloads directly, can change the software stack and operate the surrounding data-center system. Those advantages create a learning loop in which fleet telemetry can shape the next chip generation. Small savings per productive accelerator-hour can become strategically large across a huge, well-utilized fleet, but delays, weak software and low utilization can erase that advantage. Custom silicon also retains the same physical supply bottlenecks and consumes engineering talent that could be used elsewhere. Merchant accelerators remain valuable because their broader software ecosystems, portable customer code and ready roadmaps hedge the risk of an internal program. AWS’s operating Trainium deployment and Google’s generally available Ironwood service provide stronger evidence than announcements alone, while realized workload utilization and migration costs still decide the economics."
     }
   ],
-  "updatedAt": "2026-10-23T12:08:15.352Z"
+  "updatedAt": "2026-10-25T11:15:00.000Z"
 }
