@@ -1,0 +1,43 @@
+import type { Lesson } from "./lessons";
+
+export const lesson080 = {
+  number: 80,
+  module: "Module 11: Compute Architectures & Custom Silicon",
+  title: "Hyperscaler Silicon — When Fleet Scale Changes the Make-or-Buy Decision",
+  date: "2026-10-25",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 075: Packaging topology determines where dense connections belong while balancing bandwidth, heat, yield and supplier flexibility.
+
+Lesson 076: HBM4 makes memory, its logic base die, the package and the accelerator one jointly engineered data path.
+
+Lesson 077: A package substrate translates fine die connections into board-level power and signals while resisting warpage.
+
+Lesson 078: Integrated supply helps only when shared information and authority shorten learning loops across factories.
+
+Lesson 079: GPUs preserve option value across uncertain workloads, while custom silicon earns its efficiency only at stable, utilized scale.
+
+The make-or-buy decision is really a boundary decision
+
+A hyperscaler that designs an accelerator does not manufacture an entire computer alone. It may choose the instruction set, data formats, memory hierarchy and interconnect, while licensing IP, using EDA software, hiring a design partner, buying HBM and substrates, and paying a foundry and packaging network to build the system. “Make” means owning the architectural decisions that matter most, not owning every factory.
+
+That boundary is attractive only when the buyer has unusual control over demand. A cloud company sees years of internal workload traces, can reserve enormous fleets for its own services, and can expose the same hardware to outside customers. It can change compilers, frameworks and models alongside the chip. Most companies cannot coordinate all of those layers or guarantee enough demand before tapeout.
+
+Four forms of control create the advantage
+
+First is volume certainty. A merchant accelerator supplier must forecast demand across many customers. A hyperscaler can begin with committed internal workloads and a few large external users, giving the design team a clearer deployment floor.
+
+Second is workload visibility. The operator can observe which kernels dominate, where memory stalls occur and how often expensive flexibility goes unused. Those traces can become design requirements for the next generation.
+
+Third is software authority. If an internal model uses an unsupported operation, the same organization may change the compiler, runtime or model. An outside chip vendor must support a much wider customer base without controlling its code.
+
+Fourth is deployment control. The hyperscaler chooses server, network, cooling and scheduling policies. A chip-level efficiency gain can therefore be captured at cluster scale rather than lost in a mismatched system.
+
+Scale turns small savings into strategic money
+
+Suppose a company expects to deploy 800,000 accelerators at 65% productive utilization for three years. That is about 13.7 billion productive accelerator-hours. Saving even $0.15 per productive hour would represent roughly $2.0 billion before design cost, financing, yield risk and software migration. The same design at 25% utilization would spread its fixed cost across far fewer useful hours.
+
+The calculation explains why fleet scale matters, but it does not prove that internal silicon is cheaper. A delayed tapeout can miss a model generation. Weak software can leave nominally efficient chips idle. Buying HBM, packaging and foundry capacity still exposes the hyperscaler to shared physical bottlenecks. And the engineering team has an opportunity cost: every specialist assigned to silicon is unavailable for models, products or infrastructure.
+
+Merchant silicon still provides a powerful hedge
+
