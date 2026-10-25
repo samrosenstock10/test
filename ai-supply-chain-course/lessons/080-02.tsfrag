@@ -1,0 +1,32 @@
+NVIDIA or AMD can spread research and software investment across many customers and workloads. Their broad installed base gives them different feedback: less depth inside one buyer, but more evidence across industries. A merchant roadmap also lets a cloud provider add capacity without waiting for its own next tapeout and gives customers a familiar platform they can run elsewhere.
+
+That portability matters economically. A cloud customer may accept a proprietary accelerator when the savings are large and the software path is mature, but resist rewriting code that increases switching costs. The hyperscaler must decide whether to keep the chip as an internal advantage, sell it as a cloud service, or make enough of the stack portable to attract outside demand.
+
+Current deployments show what stronger evidence looks like
+
+AWS said in June 2025 that Project Rainier was already in use with Anthropic on Trainium2. That is stronger evidence than a chip announcement because it connects silicon to a named workload and operating cluster. AWS now offers Trainium3 UltraServers and describes scale-out to much larger UltraClusters. The availability claim is concrete; AWS's performance and cost comparisons remain vendor claims until customers publish comparable workload results.
+
+Google's Cloud TPU release notes marked TPU7x, the first Ironwood release, generally available on March 31, 2026. Google also publishes Ironwood configurations and hourly pricing. That moves the evidence from roadmap to a service customers can procure, while actual customer utilization and migration effort still determine whether the economics beat merchant GPUs.
+
+The biggest takeaway
+
+Hyperscaler silicon works when the owner can turn fleet demand, workload data, software authority and deployment control into a faster learning loop than a merchant supplier can provide. Scale does not eliminate the supply chain or make every internal chip economical. It changes which architectural decisions are worth owning and makes a portfolio—internal accelerators plus merchant GPUs—a rational operating strategy rather than a temporary compromise.
+
+Sources
+
+AWS, June 24, 2025 — Project Rainier operating deployment with Anthropic: https://www.aboutamazon.com/news/aws/aws-project-rainier-ai-trainium-chips-compute-cluster
+
+AWS Trainium — current Trainium3 UltraServer and UltraCluster availability: https://aws.amazon.com/ai/machine-learning/trainium/
+
+Google Cloud TPU release notes — TPU7x Ironwood generally available March 31, 2026: https://docs.cloud.google.com/tpu/docs/release-notes
+
+Google Cloud TPU pricing — current Ironwood service pricing and commitment options: https://cloud.google.com/tpu/pricing
+
+The fleet size, utilization, savings and break-even figures are illustrative teaching assumptions, not disclosed company economics.
+
+Next lesson
+
+Lesson 081: Alternative Accelerator Architectures — When Changing Data Movement Changes the Machine
+
+We will compare wafer-scale, dataflow and analog approaches and ask which bottleneck each architecture removes—and which new constraint it creates.`,
+} satisfies Lesson;
