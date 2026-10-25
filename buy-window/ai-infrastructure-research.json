@@ -99,6 +99,13 @@
       "url": "https://nvidianews.nvidia.com/",
       "kind": "issuer-primary-source",
       "priority": "targeted-primary-source"
+    },
+    {
+      "id": "umc",
+      "label": "United Microelectronics Corporation",
+      "url": "https://www.umc.com/en/News/press_release",
+      "kind": "issuer-primary-source",
+      "priority": "targeted-primary-source"
     }
   ],
   "observations": [
@@ -1654,6 +1661,67 @@
       "freshness": "same-day-public-transcript",
       "itemId": "semianalysis-caspa-substrate-bottleneck-20261023",
       "eventUrl": "https://caspaceosummit.com/agenda"
+    },
+    {
+      "id": "expert-20261025-latent-modal-elastic-gpu-demand",
+      "channel": "latent-space",
+      "sourceId": "latent-space",
+      "sourceLane": "engineering",
+      "title": "Modal CEO explains why elastic GPU aggregation can outperform fixed capacity reservations",
+      "sourceTitle": "Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO",
+      "url": "https://latent.space/p/modal-d/",
+      "speaker": "Erik Bernhardsson",
+      "role": "Founder and CEO, Modal",
+      "publishedDate": "2026-10-22",
+      "observedAt": "2026-10-25T13:26:58Z",
+      "contentAccess": "full-transcript",
+      "independenceGroup": "modal-elastic-gpu-demand-20261022",
+      "summary": "Modal CEO Erik Bernhardsson says fixed-duration, fixed-quantity GPU reservations are poorly matched to bursty AI workloads; Modal aggregates demand across thousands of customers and uses fast-start sandboxes and snapshots to sell finer-grained elastic compute.",
+      "claim": "Bernhardsson describes Modal as reserving GPU capacity ahead of demand, then pooling variable customer workloads to improve utilization and reduce the operational cost of burst capacity. He says sandboxes contribute roughly one-third of revenue and were growing about 30% monthly at the time of the interview.",
+      "interpretation": "Our inference: workload aggregation and fast isolation can move value from raw reserved capacity toward orchestration and utilization software. The model also embeds commodity-price and utilization risk because the platform is effectively long pre-purchased GPU capacity.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "countercase": "The transcript is an automatically generated interview with a private-company CEO and the growth and revenue-mix figures are company-reported, unaudited and not tied to public-company unit economics. A sharp fall in GPU prices, weak utilization or hyperscaler-native substitutes could compress the advantage.",
+      "nextTest": "Seek independent customer retention, workload-latency, utilization, gross-margin and reservation-liability data, plus evidence that elastic GPU aggregation creates durable pricing power rather than temporary scarcity arbitrage.",
+      "evidenceType": "builder-operator-interview",
+      "status": "evidence",
+      "location": "Official Latent Space episode page and transcript published October 22, 2026.",
+      "incentives": "Modal sells serverless compute and benefits from presenting aggregation, sandboxes and snapshots as differentiated infrastructure.",
+      "verification": "Read the official episode transcript and checked the attributed operating claims in context. The transcript is automatic and the private-company metrics were not independently audited.",
+      "freshness": "delayed-gap-recovery-after-20261022-cutoff",
+      "itemId": "latent-modal-rectangular-compute-20261022"
+    },
+    {
+      "id": "expert-20261025-umc-apmemory-silicon-capacitor",
+      "channel": "umc",
+      "sourceId": "umc",
+      "sourceLane": "engineering",
+      "title": "UMC and AP Memory validate a discrete silicon capacitor for advanced AI-package power delivery",
+      "sourceTitle": "UMC and AP Memory Announce Tape-Out and Initial Validation of S-SiCap Gen2D",
+      "url": "https://www.umc.com/en/News/press_release/Content/technology_related/20261022",
+      "speaker": "GC Hung and Ivan Hong",
+      "role": "UMC Senior Vice President of Research and Development; AP Memory President",
+      "publishedDate": "2026-10-22",
+      "observedAt": "2026-10-25T13:26:58Z",
+      "contentAccess": "article",
+      "independenceGroup": "umc-apmemory-ssicap-gen2d-20261022",
+      "summary": "UMC and AP Memory report tape-out and initial functional validation of a Gen2D discrete silicon capacitor that moves capacitance closer to the compute die, shortening the power-delivery path for high-performance packages.",
+      "claim": "The companies say the S-SiCap Gen2D device used UMC deep-trench-capacitor technology and completed tape-out plus initial functional validation in Q3 2026. The next step is system-level performance and reliability testing in substrate packages.",
+      "interpretation": "Our inference: if system qualification succeeds, integrated silicon capacitors could become an enabling power-integrity component for denser AI packages and create a new specialty-foundry and memory-design revenue pool. The announcement establishes technical progress, not commercial adoption or attractive returns.",
+      "beneficiaryTickers": [
+        "UMC",
+        "6531.TW"
+      ],
+      "counterTickers": [],
+      "countercase": "This is a joint issuer release at an early validation stage. It names no customer, production volume, performance delta, yield, pricing, margin, shipment date or design win, and system-level reliability testing remains ahead.",
+      "nextTest": "Track system-level qualification, named customer design-ins, reliability and yield data, production timing, volume, pricing, margins and incremental return on invested capital.",
+      "evidenceType": "issuer-technical-milestone",
+      "status": "evidence",
+      "location": "Official UMC press release dated October 22, 2026; AP Memory published the same joint release.",
+      "incentives": "Both issuers benefit from signaling technical progress and future product relevance; the joint announcement is not independent commercial validation.",
+      "verification": "Read the official UMC release and cross-checked the joint announcement on AP Memory's official site. Tape-out and initial validation are verified as issuer statements; system performance, reliability and economics remain unverified.",
+      "freshness": "delayed-gap-recovery-after-20261022-cutoff",
+      "itemId": "umc-apmemory-ssicap-gen2d-20261022"
     }
   ],
   "evidence": [
@@ -3957,6 +4025,51 @@
       "sourceObservationId": "expert-20261025-semianalysis-caspa-substrate-bottleneck",
       "corroborationNote": "This evidence row and the linked observation are two representations of the same SemiAnalysis-originated panel statement and are not independent corroboration.",
       "eventUrl": "https://caspaceosummit.com/agenda"
+    },
+    {
+      "id": "20261025-latent-modal-elastic-gpu-demand",
+      "title": "Modal CEO describes elastic GPU aggregation as an antidote to fixed-capacity mismatch",
+      "url": "https://latent.space/p/modal-d/",
+      "kind": "builder-operator-interview",
+      "independenceGroup": "modal-elastic-gpu-demand-20261022",
+      "publishedDate": "2026-10-22",
+      "observedAt": "2026-10-25T13:26:58Z",
+      "contentAccess": "full-transcript",
+      "status": "evidence",
+      "summary": "Modal CEO Erik Bernhardsson says fixed-duration, fixed-quantity GPU reservations are poorly matched to bursty AI workloads; Modal aggregates demand across thousands of customers and uses fast-start sandboxes and snapshots to sell finer-grained elastic compute.",
+      "claim": "Bernhardsson describes Modal as reserving GPU capacity ahead of demand, then pooling variable customer workloads to improve utilization and reduce the operational cost of burst capacity. He says sandboxes contribute roughly one-third of revenue and were growing about 30% monthly at the time of the interview.",
+      "interpretation": "Our inference: workload aggregation and fast isolation can move value from raw reserved capacity toward orchestration and utilization software. The model also embeds commodity-price and utilization risk because the platform is effectively long pre-purchased GPU capacity.",
+      "verification": "Read the official episode transcript and checked the attributed operating claims in context. The transcript is automatic and the private-company metrics were not independently audited.",
+      "countercase": "The transcript is an automatically generated interview with a private-company CEO and the growth and revenue-mix figures are company-reported, unaudited and not tied to public-company unit economics. A sharp fall in GPU prices, weak utilization or hyperscaler-native substitutes could compress the advantage.",
+      "nextTest": "Seek independent customer retention, workload-latency, utilization, gross-margin and reservation-liability data, plus evidence that elastic GPU aggregation creates durable pricing power rather than temporary scarcity arbitrage.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261025-latent-modal-elastic-gpu-demand",
+      "corroborationNote": "This evidence row and linked observation represent the same Latent Space interview and are not independent corroboration."
+    },
+    {
+      "id": "20261025-umc-apmemory-silicon-capacitor",
+      "title": "UMC and AP Memory report initial validation of S-SiCap Gen2D",
+      "url": "https://www.umc.com/en/News/press_release/Content/technology_related/20261022",
+      "kind": "issuer-technical-milestone",
+      "independenceGroup": "umc-apmemory-ssicap-gen2d-20261022",
+      "publishedDate": "2026-10-22",
+      "observedAt": "2026-10-25T13:26:58Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "UMC and AP Memory report tape-out and initial functional validation of a Gen2D discrete silicon capacitor that moves capacitance closer to the compute die, shortening the power-delivery path for high-performance packages.",
+      "claim": "The companies say the S-SiCap Gen2D device used UMC deep-trench-capacitor technology and completed tape-out plus initial functional validation in Q3 2026. The next step is system-level performance and reliability testing in substrate packages.",
+      "interpretation": "Our inference: if system qualification succeeds, integrated silicon capacitors could become an enabling power-integrity component for denser AI packages and create a new specialty-foundry and memory-design revenue pool. The announcement establishes technical progress, not commercial adoption or attractive returns.",
+      "verification": "Read the official UMC release and cross-checked the joint announcement on AP Memory's official site. Tape-out and initial validation are verified as issuer statements; system performance, reliability and economics remain unverified.",
+      "countercase": "This is a joint issuer release at an early validation stage. It names no customer, production volume, performance delta, yield, pricing, margin, shipment date or design win, and system-level reliability testing remains ahead.",
+      "nextTest": "Track system-level qualification, named customer design-ins, reliability and yield data, production timing, volume, pricing, margins and incremental return on invested capital.",
+      "beneficiaryTickers": [
+        "UMC",
+        "6531.TW"
+      ],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261025-umc-apmemory-silicon-capacitor",
+      "corroborationNote": "This evidence row and linked observation represent the same joint issuer release and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -9183,6 +9296,52 @@
       "aliases": [],
       "screeningStatus": "unrated",
       "screeningReason": "SemiAnalysis names Sterling Infrastructure among suppliers positioned for the forecast datacenter order surge, but the public report provides no STRL-specific contract economics or competitive evidence. This is a source-backed lead, not an admitted thesis."
+    },
+    {
+      "ticker": "UMC",
+      "name": "United Microelectronics",
+      "stage": "unrated",
+      "firstObservedAt": "2026-10-25T13:26:58Z",
+      "priority": "normal",
+      "nextQuestion": "Can UMC convert S-SiCap Gen2D from system qualification into named customer design-ins, volume production, strong yields and attractive incremental margins and returns?",
+      "sourceRefs": [
+        {
+          "id": "expert-20261025-umc-apmemory-silicon-capacitor",
+          "sourceId": "umc",
+          "evidenceId": "20261025-umc-apmemory-silicon-capacitor",
+          "kind": "issuer-evidence",
+          "publishedDate": "2026-10-22",
+          "url": "https://www.umc.com/en/News/press_release/Content/technology_related/20261022"
+        }
+      ],
+      "aliases": [
+        "United Microelectronics Corporation"
+      ],
+      "screeningStatus": "unrated",
+      "screeningReason": "The joint release establishes a technical milestone in advanced-package power delivery but lacks system qualification, customer adoption, production, yield, pricing, margin and return evidence. No conviction score is assigned."
+    },
+    {
+      "ticker": "6531.TW",
+      "name": "AP Memory Technology",
+      "stage": "unrated",
+      "firstObservedAt": "2026-10-25T13:26:58Z",
+      "priority": "normal",
+      "nextQuestion": "Can AP Memory turn S-SiCap Gen2D into qualified customer programs and volume revenue with defensible performance, pricing and economics?",
+      "sourceRefs": [
+        {
+          "id": "expert-20261025-umc-apmemory-silicon-capacitor",
+          "sourceId": "umc",
+          "evidenceId": "20261025-umc-apmemory-silicon-capacitor",
+          "kind": "issuer-evidence",
+          "publishedDate": "2026-10-22",
+          "url": "https://www.umc.com/en/News/press_release/Content/technology_related/20261022"
+        }
+      ],
+      "aliases": [
+        "AP Memory"
+      ],
+      "screeningStatus": "unrated",
+      "screeningReason": "The joint release establishes initial functional validation but not system qualification, customer adoption, volume production or investable economics. No conviction score is assigned."
     }
   ],
   "rankingMethodology": {
@@ -32501,18 +32660,24 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-25T11:34:40Z",
-    "kind": "semianalysis-sunday-reconciliation",
+    "asOf": "2026-10-25T13:26:58Z",
+    "kind": "builder-engineering-scan",
     "completedChannels": [
-      "semianalysis"
+      "information-bottleneck",
+      "ocp",
+      "gpu-mode",
+      "latent-space",
+      "umc"
     ],
-    "partialChannels": [],
+    "partialChannels": [
+      "dwarkesh"
+    ],
     "unavailableChannels": [],
     "limitations": [
-      "The public CASPA transcript and official agenda were reviewed; the panel video was not independently transcribed.",
-      "The underlying SemiAnalysis supply and datacenter-capacity models were not independently reproduced.",
-      "No matching direct or forwarded SemiAnalysis/Dylan Patel email appeared after the prior completed cutoff."
+      "The delayed cycle was independently preflighted after the October 23 gap-recovery records were reconciled; no additional qualifying engineering evidence was verified for this logical date.",
+      "Completed source research was not repeated, and the October 22 Modal and UMC/AP Memory records were not duplicated.",
+      "No decision-relevant valuation refresh was required."
     ]
   },
-  "updatedAt": "2026-10-25T11:34:40Z"
+  "updatedAt": "2026-10-25T13:35:00Z"
 }
