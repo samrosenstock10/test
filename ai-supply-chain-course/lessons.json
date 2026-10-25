@@ -857,7 +857,18 @@
         "lessons/079-01.tsfrag",
         "lessons/079-02.tsfrag"
       ]
+    },
+    {
+      "number": 80,
+      "module": "Module 11: Compute Architectures & Custom Silicon",
+      "title": "Hyperscaler Silicon — When Fleet Scale Changes the Make-or-Buy Decision",
+      "date": "2026-10-25",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/080-01.tsfrag",
+        "lessons/080-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-24T11:09:00Z"
+  "updatedAt": "2026-10-25T11:12:00Z"
 }
