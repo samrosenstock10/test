@@ -1625,6 +1625,35 @@
       "freshness": "new-after-prior-cutoff",
       "itemId": "nvidia-supply-chain-capacity-20261021",
       "primarySourceUrl": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout"
+    },
+    {
+      "id": "expert-20261025-semianalysis-caspa-substrate-bottleneck",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "Patel ranks substrates as the largest near-term AI supply-chain bottleneck",
+      "sourceTitle": "My Conversation with Dylan Patel and Stacy Rasgon",
+      "url": "https://newsletter.chipstrat.com/p/my-conversation-with-dylan-patel",
+      "speaker": "Dylan Patel",
+      "role": "CEO and Chief Analyst, SemiAnalysis",
+      "publishedDate": "2026-10-25",
+      "observedAt": "2026-10-25T11:34:03.516Z",
+      "contentAccess": "full-transcript",
+      "independenceGroup": "semianalysis",
+      "summary": "In the public CASPA semiconductor-outlook transcript, Dylan Patel ranks substrates and PCB materials as the largest near-term AI supply-chain bottleneck, ahead of memory and optics, while arguing that on-site generation and geographic dispersion make power comparatively more tractable.",
+      "claim": "Patel says conservative Japanese materials supply chains were severely underinvested, constraining accelerator and CPU substrates over the next two years. He places memory next and flags lasers and fiber attach as limits on scaling co-packaged or near-package optics; he also cites nearly 50 GW of data centers being built globally for 2027, roughly 35 GW in the United States and 7–8 GW in China.",
+      "interpretation": "Our inference: specialist conviction now converges with recent substrate-maker evidence that packaging materials may bind AI-system growth even as customers fund new capacity. This strengthens the substrate-bottleneck mechanism but does not identify which listed supplier will convert scarcity into durable margins or attractive long-term returns.",
+      "beneficiaryTickers": [],
+      "countercase": "The transcript reflects Patel's specialist model and panel judgment, not audited shipment, yield, utilization, pricing or margin data. Capacity additions, redesigns and supplier qualification could ease shortages; the cited gigawatt totals and relative bottleneck ranking were not independently reproduced.",
+      "nextTest": "Track substrate-material lead times, booked and delivered capacity, qualification yields, customer prepayments, realized supplier pricing and margins, and whether CPO laser and fiber-attach capacity or memory overtakes substrates as the binding constraint.",
+      "evidenceType": "specialist-panel-transcript",
+      "status": "evidence",
+      "location": "Public transcript section on semiconductor bottlenecks following the October 23 CASPA Semiconductor Industry Outlook Panel.",
+      "incentives": "SemiAnalysis sells AI-infrastructure and semiconductor research and models; Patel was speaking as a specialist analyst.",
+      "verification": "Read the public Chipstrat transcript containing Patel's answer and confirmed the CASPA agenda, panel title, date and participants on the official event site. The panel video itself was not independently transcribed, and the underlying SemiAnalysis capacity model was not reproduced.",
+      "freshness": "same-day-public-transcript",
+      "itemId": "semianalysis-caspa-substrate-bottleneck-20261023",
+      "eventUrl": "https://caspaceosummit.com/agenda"
     }
   ],
   "evidence": [
@@ -3907,6 +3936,27 @@
       "counterTickers": [],
       "sourceObservationId": "expert-20261023-nvidia-capacity-reservations",
       "corroborationNote": "This evidence row and the linked observation represent the same NVIDIA-originated release and are not independent corroboration."
+    },
+    {
+      "id": "20261025-semianalysis-caspa-substrate-bottleneck",
+      "title": "Patel ranks substrates ahead of memory, optics and power as the near-term AI bottleneck",
+      "url": "https://newsletter.chipstrat.com/p/my-conversation-with-dylan-patel",
+      "kind": "specialist-bottleneck-forecast",
+      "independenceGroup": "semianalysis",
+      "publishedDate": "2026-10-25",
+      "observedAt": "2026-10-25T11:34:03.516Z",
+      "contentAccess": "full-transcript",
+      "status": "evidence",
+      "summary": "In the public CASPA semiconductor-outlook transcript, Dylan Patel ranks substrates and PCB materials as the largest near-term AI supply-chain bottleneck, ahead of memory and optics, while arguing that on-site generation and geographic dispersion make power comparatively more tractable.",
+      "claim": "Patel says conservative Japanese materials supply chains were severely underinvested, constraining accelerator and CPU substrates over the next two years. He places memory next and flags lasers and fiber attach as limits on scaling co-packaged or near-package optics; he also cites nearly 50 GW of data centers being built globally for 2027, roughly 35 GW in the United States and 7–8 GW in China.",
+      "interpretation": "Our inference: specialist conviction now converges with recent substrate-maker evidence that packaging materials may bind AI-system growth even as customers fund new capacity. This strengthens the substrate-bottleneck mechanism but does not identify which listed supplier will convert scarcity into durable margins or attractive long-term returns.",
+      "verification": "Read the public transcript and confirmed the panel provenance against the official CASPA agenda. The underlying supply and datacenter models were not independently reproduced.",
+      "countercase": "The transcript reflects Patel's specialist model and panel judgment, not audited shipment, yield, utilization, pricing or margin data. Capacity additions, redesigns and supplier qualification could ease shortages; the cited gigawatt totals and relative bottleneck ranking were not independently reproduced.",
+      "nextTest": "Track substrate-material lead times, booked and delivered capacity, qualification yields, customer prepayments, realized supplier pricing and margins, and whether CPO laser and fiber-attach capacity or memory overtakes substrates as the binding constraint.",
+      "beneficiaryTickers": [],
+      "sourceObservationId": "expert-20261025-semianalysis-caspa-substrate-bottleneck",
+      "corroborationNote": "This evidence row and the linked observation are two representations of the same SemiAnalysis-originated panel statement and are not independent corroboration.",
+      "eventUrl": "https://caspaceosummit.com/agenda"
     }
   ],
   "rankings": [
@@ -32451,23 +32501,18 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-23T13:34:00Z",
-    "kind": "daily-expert-scan",
-    "incrementalAfter": "2026-10-23T00:56:14Z",
+    "asOf": "2026-10-25T11:34:40Z",
+    "kind": "semianalysis-sunday-reconciliation",
     "completedChannels": [
-      "a16z",
-      "nvidia"
+      "semianalysis"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "The official a16z surface was screened after the completed October 22 expert cutoff and exposed no new qualifying post-cutoff forecast.",
-      "A new Grok pointer and Muse discovery memo surfaced NVIDIA's October 21 supply-chain announcement. The complete official NVIDIA release was read directly; repeated peer summaries were treated as one origin.",
-      "The agreement is primary evidence of planned customer-funded capacity, not realized production, yield, supplier margins or return on capital.",
-      "Exponential View is a once-per-Sunday supplement and was not due. The weekly thesis review completed October 18 and is next due October 25.",
-      "D3 re-read 74 Project Tracker Bottlenecks and 30 Claims. Their section identities were unchanged; the October 22 Project run added a roadmap update, not an eligible Bottleneck or resolved Claim.",
-      "No decision-relevant valuation refresh was required."
+      "The public CASPA transcript and official agenda were reviewed; the panel video was not independently transcribed.",
+      "The underlying SemiAnalysis supply and datacenter-capacity models were not independently reproduced.",
+      "No matching direct or forwarded SemiAnalysis/Dylan Patel email appeared after the prior completed cutoff."
     ]
   },
-  "updatedAt": "2026-10-23T13:35:00Z"
+  "updatedAt": "2026-10-25T11:34:40Z"
 }
