@@ -1722,6 +1722,33 @@
       "verification": "Read the official UMC release and cross-checked the joint announcement on AP Memory's official site. Tape-out and initial validation are verified as issuer statements; system performance, reliability and economics remain unverified.",
       "freshness": "delayed-gap-recovery-after-20261022-cutoff",
       "itemId": "umc-apmemory-ssicap-gen2d-20261022"
+    },
+    {
+      "id": "expert-20261026-ocp-thermal-boundaries",
+      "sourceId": "ocp",
+      "sourceLane": "engineering",
+      "title": "OCP frames cooling commissioning as a new AI-infrastructure bottleneck",
+      "url": "https://www.opencompute.org/wp-content/uploads/2026/10/Thermal-Boundaries-in-AI-Infrastructure.pdf",
+      "speaker": "Rolf Brink, Mohan J. Kumar, Steve Mills and Kelley Mullick",
+      "role": "OCP whitepaper authors from Promersion, Oracle, Meta and Avayla",
+      "publishedDate": "2026-10-12",
+      "observedAt": "2026-10-26T12:30:53Z",
+      "contentAccess": "article",
+      "independenceGroup": "ocp-thermal-boundaries-20261012",
+      "summary": "An OCP whitepaper by authors from Promersion, Oracle, Meta and Avayla argues that cooling is now a first-order compute constraint; no single method wins across physics, economics and efficiency, and multi-vendor commissioning is becoming a distinct schedule bottleneck.",
+      "claim": "The authors expect AI infrastructure to require a toolbox of air, single-phase cold-plate and immersion methods matched to heat shape and site conditions. They argue adoption follows the least-disruption path until the incumbent fails, while interoperability, supply-chain readiness and commissioning procedures must be prepared before the next power-density transition.",
+      "interpretation": "Our inference: cooling value capture may shift from a single winning technology toward system integration, standardized interfaces, telemetry and commissioning capability. That makes the bottleneck durable at the ecosystem level but does not yet establish a public-company winner or durable supplier margin.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "countercase": "This is an OCP framework and engineering model, not fleet-wide independent deployment evidence. Several cost and reliability inputs are assumptions, author assessments or placeholders, and open standards may commoditize components even as integration complexity rises.",
+      "nextTest": "Track fleet-scale reliability, commissioning time and failure data across multi-technology racks; adoption of OCP thermal interfaces and acceptance procedures; qualified production volumes; and whether integrators earn durable margins or standards erode pricing power.",
+      "evidenceType": "builder-technical-whitepaper",
+      "status": "evidence",
+      "location": "Abstract, adoption-law framework, Sections 9–12 and Appendices B–C of the October 12, 2026 OCP whitepaper.",
+      "incentives": "OCP promotes open, interoperable infrastructure standards; the authors and reviewers include participants in cloud, data-center and cooling ecosystems. The paper is designed to shape shared engineering practice.",
+      "verification": "Read the official OCP published-version metadata, abstract, cost/toolbox conclusions, commissioning sections and methodological appendix passages. Verified the attribution and framework; did not treat modeled costs, reliability brackets or author assessments as independently measured fleet data.",
+      "itemId": "ocp-thermal-boundaries-ai-infrastructure-20261012",
+      "primarySourceUrl": "https://www.opencompute.org/wp-content/uploads/2026/10/Thermal-Boundaries-in-AI-Infrastructure.pdf"
     }
   ],
   "evidence": [
@@ -4070,6 +4097,27 @@
       "counterTickers": [],
       "sourceObservationId": "expert-20261025-umc-apmemory-silicon-capacitor",
       "corroborationNote": "This evidence row and linked observation represent the same joint issuer release and are not independent corroboration."
+    },
+    {
+      "id": "20261026-ocp-thermal-boundaries",
+      "title": "OCP identifies multi-vendor cooling commissioning as a first-order deployment constraint",
+      "url": "https://www.opencompute.org/wp-content/uploads/2026/10/Thermal-Boundaries-in-AI-Infrastructure.pdf",
+      "kind": "builder-technical-whitepaper",
+      "independenceGroup": "ocp-thermal-boundaries-20261012",
+      "publishedDate": "2026-10-12",
+      "observedAt": "2026-10-26T12:30:53Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "An OCP whitepaper by authors from Promersion, Oracle, Meta and Avayla argues that cooling is now a first-order compute constraint; no single method wins across physics, economics and efficiency, and multi-vendor commissioning is becoming a distinct schedule bottleneck.",
+      "claim": "The authors expect AI infrastructure to require a toolbox of air, single-phase cold-plate and immersion methods matched to heat shape and site conditions. They argue adoption follows the least-disruption path until the incumbent fails, while interoperability, supply-chain readiness and commissioning procedures must be prepared before the next power-density transition.",
+      "interpretation": "Our inference: cooling value capture may shift from a single winning technology toward system integration, standardized interfaces, telemetry and commissioning capability. That makes the bottleneck durable at the ecosystem level but does not yet establish a public-company winner or durable supplier margin.",
+      "verification": "Read the official OCP published-version metadata, abstract, cost/toolbox conclusions, commissioning sections and methodological appendix passages. Verified the attribution and framework; did not treat modeled costs, reliability brackets or author assessments as independently measured fleet data.",
+      "countercase": "This is an OCP framework and engineering model, not fleet-wide independent deployment evidence. Several cost and reliability inputs are assumptions, author assessments or placeholders, and open standards may commoditize components even as integration complexity rises.",
+      "nextTest": "Track fleet-scale reliability, commissioning time and failure data across multi-technology racks; adoption of OCP thermal interfaces and acceptance procedures; qualified production volumes; and whether integrators earn durable margins or standards erode pricing power.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261026-ocp-thermal-boundaries",
+      "corroborationNote": "This evidence row and the linked observation represent the same OCP whitepaper and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -32660,24 +32708,25 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-25T13:26:58Z",
+    "asOf": "2026-10-26T12:30:53Z",
     "kind": "builder-engineering-scan",
     "completedChannels": [
       "information-bottleneck",
       "ocp",
       "gpu-mode",
-      "latent-space",
-      "umc"
+      "latent-space"
     ],
     "partialChannels": [
       "dwarkesh"
     ],
     "unavailableChannels": [],
     "limitations": [
-      "The delayed cycle was independently preflighted after the October 23 gap-recovery records were reconciled; no additional qualifying engineering evidence was verified for this logical date.",
-      "Completed source research was not repeated, and the October 22 Modal and UMC/AP Memory records were not duplicated.",
+      "No post-cutoff qualifying item appeared on the current Information Bottleneck, Latent Space or GPU MODE surfaces; Dwarkesh remained a bounded partial index check.",
+      "The OCP October 12 published whitepaper was reviewed as the explicitly queued undercovered cooling-family item. Its original publication date is preserved; it is not relabeled as new October 26 news.",
+      "The paper's engineering framework and modeled cost/reliability ranges are not fleet-wide independent deployment data.",
+      "D4 found no matching peer record for the original whitepaper title, URL or commissioning claim.",
       "No decision-relevant valuation refresh was required."
     ]
   },
-  "updatedAt": "2026-10-25T13:35:00Z"
+  "updatedAt": "2026-10-26T12:34:41Z"
 }
