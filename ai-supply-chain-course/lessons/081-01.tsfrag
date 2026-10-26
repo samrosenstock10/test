@@ -1,0 +1,41 @@
+import type { Lesson } from "./lessons";
+
+export const lesson081 = {
+  number: 81,
+  module: "Module 11: Compute Architectures & Custom Silicon",
+  title: "Alternative Accelerator Architectures — When Changing Data Movement Changes the Machine",
+  date: "2026-10-26",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 076: HBM4 makes memory, its logic base die, the package and the accelerator one jointly engineered data path.
+
+Lesson 077: A package substrate translates fine die connections into board-level power and signals while resisting warpage.
+
+Lesson 078: Integrated supply helps only when shared information and authority shorten learning loops across factories.
+
+Lesson 079: GPUs preserve option value across uncertain workloads, while custom silicon earns its efficiency only at stable, utilized scale.
+
+Lesson 080: Hyperscaler silicon works when fleet demand, workload data, software authority and deployment control justify owning architectural decisions.
+
+Alternative architectures begin with a movement problem
+
+An accelerator spends energy not only on arithmetic but also moving weights, activations and intermediate results among storage levels and processors. A conventional GPU is deliberately flexible: many programmable cores, a memory hierarchy and a broad software stack can serve changing workloads. That flexibility is valuable, but it also means some silicon, bandwidth and scheduling machinery may be poorly matched to a narrow job.
+
+Alternative architectures make a sharper bargain. They remove a particular movement or coordination cost by fixing more of the machine around it. The important comparison is therefore not “new chip versus GPU” in the abstract. It is: which bottleneck disappears, which workload fits, and which new constraint takes its place?
+
+Wafer scale replaces many package boundaries with one large fabric
+
+A wafer-scale processor keeps an unusually large mesh of compute and memory on one silicon wafer. Instead of cutting the wafer into many dies, packaging those dies separately and connecting servers through board and network links, the design lets data travel across a dense on-wafer fabric. More model state can remain close to compute, and communication that would cross slow boundaries can stay inside the machine.
+
+Cerebras says its WSE-3 Turbo contains 900,000 AI cores and 44 gigabytes of on-chip SRAM. In August 2026 the company announced CS-4, built from three of those wafer-scale engines. That is evidence of a current product announcement, not proof that every workload achieves the company's advertised performance comparisons.
+
+The removed constraint is inter-chip communication. The new constraints are formidable: defect tolerance across a huge wafer, power delivery, cooling, workload placement and specialized software. A large physical fabric creates value only when the compiler can keep it productively occupied.
+
+Deterministic execution trades general scheduling for predictable flow
+
+A second approach organizes the machine around a known stream of operations. Groq describes its LPU as software-scheduled and deterministic: the compiler decides where operations and data will be at specific times, while on-chip SRAM supplies predictable access. Removing dynamic scheduling hardware can reduce latency variation and make token generation behave more like a pipeline than a collection of competing queues.
+
+The removed constraint is runtime coordination overhead and uncertainty. The new constraint is dependence on compilation and mapping. Models must be partitioned across finite local memory, communication must be planned, and unsupported patterns cannot rely on the same broad ecosystem that has grown around GPUs. Predictability can be extremely valuable for latency-sensitive inference, but it does not automatically make the design best for training or rapidly changing operations.
+
+Analog in-memory compute changes arithmetic into device physics
+

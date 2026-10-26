@@ -788,7 +788,18 @@
         "lessons/073-02.tsfrag",
         "lessons/073-03.tsfrag"
       ]
+    },
+    {
+      "number": 81,
+      "module": "Module 11: Compute Architectures & Custom Silicon",
+      "title": "Alternative Accelerator Architectures — When Changing Data Movement Changes the Machine",
+      "date": "2026-10-26",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/081-01.tsfrag",
+        "lessons/081-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-18T11:08:00.000Z"
+  "updatedAt": "2026-10-26T12:05:35.856Z"
 }

@@ -1,0 +1,32 @@
+Digital processors normally fetch numbers, multiply them and write results back. Analog in-memory compute tries to perform multiply-accumulate operations where weights are stored. In a resistive crossbar, electrical conductance can encode weights; applied voltages and summed currents then approximate matrix-vector multiplication in parallel. The promise is to cut the repeated movement between memory and arithmetic that dominates many neural-network operations.
+
+IBM Research reported in January 2025 on analog in-memory hardware for transformer inference, and its researchers continue to publish on resistive-memory training and device behavior. This remains research evidence, not volume-production evidence. Noise, limited precision, device-to-device variation, endurance and weight-update accuracy can turn an elegant physical mechanism into a difficult systems problem. Digital conversion and calibration can also consume part of the theoretical energy advantage.
+
+Economics follow workload fit, not architectural novelty
+
+Each architecture moves cost to a different layer. Wafer scale concentrates risk in manufacturing, cooling and system utilization. Deterministic dataflow concentrates it in compilers, model mapping and software compatibility. Analog compute concentrates it in devices, calibration and precision management. All three can look superior on a selected benchmark while losing once utilization, migration labor, yield, serviceability and customer switching costs are included.
+
+That is why production evidence should be ranked carefully. A purchasable system and named workload are stronger than a tapeout; repeat deployments and customer measurements are stronger than vendor comparisons. Announcements reveal direction, but they do not establish durable supply, utilization or economics.
+
+The biggest takeaway
+
+Alternative accelerators are not simply faster versions of the same machine. They redraw the boundary between compute, memory and communication. The best design is the one whose removed bottleneck matters more than the constraint it creates—and whose software and supply chain can keep the hardware useful after the demonstration ends.
+
+Sources
+
+Cerebras WSE-3 Turbo — current architecture specifications: https://www.cerebras.ai/chip
+
+Cerebras, August 18, 2026 — CS-4 product announcement: https://www.cerebras.ai/press-release/cerebras-introduces-cs-4-the-worlds-fastest-ai-inference-system
+
+Groq, March 7, 2025 — LPU architecture and deterministic execution: https://groq.com/blog/inside-the-lpu-deconstructing-the-groq-lpu
+
+IBM Research, January 29, 2025 — analog in-memory computing for transformer models: https://research.ibm.com/blog/analog-ai-transformers
+
+IBM Research — resistive-memory training and device-variation research: https://research.ibm.com/publications/analog-in-memory-training-on-resistive-memory-arrays-with-compensation-for-update-asymmetry
+
+Next lesson
+
+Lesson 082: Accelerator Ecosystems — Why the Best Chip Can Still Lose
+
+We will examine compilers, libraries, developer habits and portability, and why software adoption can outweigh a hardware benchmark.`,
+} satisfies Lesson;
