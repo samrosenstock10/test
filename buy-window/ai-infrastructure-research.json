@@ -36920,9 +36920,7 @@
     "asOf": "2026-10-26T13:33:00Z",
     "kind": "expert-investor-scan",
     "completedChannels": [
-      "a16z",
-      "project-tracker-d3",
-      "peer-dedupe"
+      "a16z"
     ],
     "partialChannels": [
       "exponential-view"
