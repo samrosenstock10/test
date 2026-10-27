@@ -1749,6 +1749,72 @@
       "verification": "Read the official OCP published-version metadata, abstract, cost/toolbox conclusions, commissioning sections and methodological appendix passages. Verified the attribution and framework; did not treat modeled costs, reliability brackets or author assessments as independently measured fleet data.",
       "itemId": "ocp-thermal-boundaries-ai-infrastructure-20261012",
       "primarySourceUrl": "https://www.opencompute.org/wp-content/uploads/2026/10/Thermal-Boundaries-in-AI-Infrastructure.pdf"
+    },
+    {
+      "id": "expert-20261027-ocp-fast-switching-ocs",
+      "channel": "ocp",
+      "sourceId": "ocp",
+      "sourceLane": "engineering",
+      "title": "OCP frames fast optical switching as an end-to-end AI-fabric coordination problem",
+      "sourceTitle": "FAST-SWITCHING OCS: BENEFITS, TECHNOLOGIES, SYSTEM-LEVEL CONSIDERATIONS, AND EMERGING APPLICATIONS FOR DYNAMIC AI FABRICS",
+      "url": "https://www.opencompute.org/wp-content/uploads/2026/10/OCP-OCS__Fast_Switching_OCS_October-19-2026_Final.pdf",
+      "speaker": "Iwan Kartawira, Michael DeMerchant, Swapna Nannapaneni, Spencer Giacalone, Shawn Chen, James Burch, Seema Mehta and Zibo Hu",
+      "role": "OCP whitepaper authors from iPronics, Lumentum, Ciena, Carnegie Mellon University/AMD, Lumotive, Intel and Triple-Stone",
+      "publishedDate": "2026-10-19",
+      "observedAt": "2026-10-27T12:33:15Z",
+      "contentAccess": "article",
+      "independenceGroup": "ocp-fast-switching-ocs-20261019",
+      "summary": "An OCP multi-organization whitepaper argues that useful fast optical-circuit switching depends on end-to-end reconfiguration latency across the scheduler, control plane, switch, transceiver and host—not switch actuation alone.",
+      "claim": "The authors distinguish production millisecond-scale OCS from mostly prototype or simulated microsecond and nanosecond designs. They argue that workload-aware topology can improve AI collectives, mixture-of-experts traffic and failure recovery, but high radix, insertion loss, transceiver recovery, synchronization, control-plane latency, standards, manufacturability, reliability and deployment economics remain open.",
+      "interpretation": "Our inference: optical switching can become a useful fabric layer only if vendors solve a full-stack coordination problem. That creates potential value in system integration and control software as well as photonics, but the paper does not establish a durable public-company winner or deployment economics.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "countercase": "This is a synthesis paper from ecosystem participants, not a vendor-neutral production benchmark. Many benefits come from prior studies, models or prototypes; production deployments remain millisecond-scale, and higher-speed system economics, reliability and interoperability are not proven.",
+      "nextTest": "Track multi-vendor production benchmarks for end-to-end reconfiguration, transceiver recovery, job-completion time, failure recovery, insertion loss, reliability, power and total cost; require named deployments and measured economics before attributing durable value capture.",
+      "evidenceType": "builder-technical-whitepaper",
+      "status": "evidence",
+      "location": "Official OCP October 19, 2026 whitepaper, especially the performance taxonomy, system-level latency decomposition, deployment table and conclusion.",
+      "incentives": "OCP promotes open infrastructure standards; authors include optical-component, networking, semiconductor and academic participants with incentives to accelerate ecosystem adoption.",
+      "verification": "Read the official OCP paper and checked its technology taxonomy, production-versus-prototype distinctions, system-level latency framework and conclusion. Treated cited deployment metrics as attributed prior work rather than independent validation by this paper.",
+      "freshness": "undercovered-family-backfill-published-20261019",
+      "itemId": "ocp-fast-switching-ocs-20261019",
+      "primarySourceUrl": "https://www.opencompute.org/wp-content/uploads/2026/10/OCP-OCS__Fast_Switching_OCS_October-19-2026_Final.pdf"
+    },
+    {
+      "id": "expert-20261027-dwarkesh-intel-tool-chain",
+      "channel": "dwarkesh",
+      "sourceId": "dwarkesh",
+      "sourceLane": "engineering",
+      "title": "Intel operator says leading-edge wafer capacity is constrained by the exact upstream tool chain",
+      "sourceTitle": "What will computer chips look like in 2045?",
+      "url": "https://www.dwarkesh.com/p/intel-tour",
+      "speaker": "Pushkar Ranade",
+      "role": "Intel Chief Technology Officer and Senior Vice President, Technology Development",
+      "publishedDate": "2026-10-22",
+      "observedAt": "2026-10-27T12:33:15Z",
+      "contentAccess": "full-transcript",
+      "independenceGroup": "intel-leading-edge-capacity-20261022",
+      "summary": "Intel CTO Pushkar Ranade said the current global stock of semiconductor tools could support roughly twice—not ten times—today's leading-edge wafer output, because process lock-in makes exact tools and suppliers nonfungible and the whole upstream chain must expand.",
+      "claim": "Ranade described leading-edge capacity as a synchronized tool-and-supplier problem rather than a fab-shell problem: a specific qualified process cannot freely substitute different equipment, and memory supply is currently under greater pressure than compute. Intel leaders also emphasized yield, schedule, utilization and scale as the production priorities.",
+      "interpretation": "Our inference: sustained AI semiconductor expansion can transmit demand through a narrow, process-qualified equipment and supplier chain, supporting durable bottleneck value only where suppliers retain qualification moats and pricing power. The interview does not quantify supplier economics or prove stock-specific upside.",
+      "beneficiaryTickers": [
+        "ASML",
+        "AMAT",
+        "LRCX",
+        "KLAC",
+        "INTC"
+      ],
+      "counterTickers": [],
+      "countercase": "This is an Intel executive interview with strategic and promotional incentives, not an audited industry capacity study. The roughly-two-times estimate is qualitative, omits time horizon and supplier-level data, and does not show that equipment scarcity converts into attractive incremental returns for any named company.",
+      "nextTest": "Compare the claim with supplier backlogs, lead times, capacity plans, foundry capex, memory utilization, shipment data and return-on-invested-capital; require independent evidence before changing a company thesis or valuation.",
+      "evidenceType": "builder-operator-interview",
+      "status": "evidence",
+      "location": "Official Dwarkesh Podcast transcript published October 22, 2026, in the manufacturing-capacity and tool-availability discussion.",
+      "incentives": "Intel benefits from presenting manufacturing scale and supply-chain depth as strategic advantages; the host is an interviewer rather than an independent capacity auditor.",
+      "verification": "Read the official full transcript and preserved the speaker's qualitative estimate and caveats. Did not convert the claim into audited capacity, timing or supplier economics.",
+      "freshness": "incremental-gap-repair-after-partial-20261026-channel-check",
+      "itemId": "dwarkesh-intel-tour-20261022",
+      "primarySourceUrl": "https://www.dwarkesh.com/p/intel-tour"
     }
   ],
   "evidence": [
@@ -4118,6 +4184,54 @@
       "counterTickers": [],
       "sourceObservationId": "expert-20261026-ocp-thermal-boundaries",
       "corroborationNote": "This evidence row and the linked observation represent the same OCP whitepaper and are not independent corroboration."
+    },
+    {
+      "id": "20261027-ocp-fast-switching-ocs",
+      "title": "OCP decomposes fast optical-switching performance into end-to-end AI-fabric latency",
+      "url": "https://www.opencompute.org/wp-content/uploads/2026/10/OCP-OCS__Fast_Switching_OCS_October-19-2026_Final.pdf",
+      "kind": "builder-technical-whitepaper",
+      "independenceGroup": "ocp-fast-switching-ocs-20261019",
+      "publishedDate": "2026-10-19",
+      "observedAt": "2026-10-27T12:33:15Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "An OCP multi-organization whitepaper argues that useful fast optical-circuit switching depends on end-to-end reconfiguration latency across the scheduler, control plane, switch, transceiver and host—not switch actuation alone.",
+      "claim": "The authors distinguish production millisecond-scale OCS from mostly prototype or simulated microsecond and nanosecond designs. They argue that workload-aware topology can improve AI collectives, mixture-of-experts traffic and failure recovery, but high radix, insertion loss, transceiver recovery, synchronization, control-plane latency, standards, manufacturability, reliability and deployment economics remain open.",
+      "interpretation": "Our inference: optical switching can become a useful fabric layer only if vendors solve a full-stack coordination problem. That creates potential value in system integration and control software as well as photonics, but the paper does not establish a durable public-company winner or deployment economics.",
+      "verification": "Read the official OCP paper and checked its technology taxonomy, production-versus-prototype distinctions, system-level latency framework and conclusion. Treated cited deployment metrics as attributed prior work rather than independent validation by this paper.",
+      "countercase": "This is a synthesis paper from ecosystem participants, not a vendor-neutral production benchmark. Many benefits come from prior studies, models or prototypes; production deployments remain millisecond-scale, and higher-speed system economics, reliability and interoperability are not proven.",
+      "nextTest": "Track multi-vendor production benchmarks for end-to-end reconfiguration, transceiver recovery, job-completion time, failure recovery, insertion loss, reliability, power and total cost; require named deployments and measured economics before attributing durable value capture.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261027-ocp-fast-switching-ocs",
+      "corroborationNote": "This evidence row and the linked observation represent the same primary source and are not independent corroboration."
+    },
+    {
+      "id": "20261027-dwarkesh-intel-tool-chain",
+      "title": "Intel CTO describes the exact tool chain as a leading-edge wafer-capacity constraint",
+      "url": "https://www.dwarkesh.com/p/intel-tour",
+      "kind": "builder-operator-interview",
+      "independenceGroup": "intel-leading-edge-capacity-20261022",
+      "publishedDate": "2026-10-22",
+      "observedAt": "2026-10-27T12:33:15Z",
+      "contentAccess": "full-transcript",
+      "status": "evidence",
+      "summary": "Intel CTO Pushkar Ranade said the current global stock of semiconductor tools could support roughly twice—not ten times—today's leading-edge wafer output, because process lock-in makes exact tools and suppliers nonfungible and the whole upstream chain must expand.",
+      "claim": "Ranade described leading-edge capacity as a synchronized tool-and-supplier problem rather than a fab-shell problem: a specific qualified process cannot freely substitute different equipment, and memory supply is currently under greater pressure than compute. Intel leaders also emphasized yield, schedule, utilization and scale as the production priorities.",
+      "interpretation": "Our inference: sustained AI semiconductor expansion can transmit demand through a narrow, process-qualified equipment and supplier chain, supporting durable bottleneck value only where suppliers retain qualification moats and pricing power. The interview does not quantify supplier economics or prove stock-specific upside.",
+      "verification": "Read the official full transcript and preserved the speaker's qualitative estimate and caveats. Did not convert the claim into audited capacity, timing or supplier economics.",
+      "countercase": "This is an Intel executive interview with strategic and promotional incentives, not an audited industry capacity study. The roughly-two-times estimate is qualitative, omits time horizon and supplier-level data, and does not show that equipment scarcity converts into attractive incremental returns for any named company.",
+      "nextTest": "Compare the claim with supplier backlogs, lead times, capacity plans, foundry capex, memory utilization, shipment data and return-on-invested-capital; require independent evidence before changing a company thesis or valuation.",
+      "beneficiaryTickers": [
+        "ASML",
+        "AMAT",
+        "LRCX",
+        "KLAC",
+        "INTC"
+      ],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261027-dwarkesh-intel-tool-chain",
+      "corroborationNote": "This evidence row and the linked observation represent the same primary source and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -36917,50 +37031,24 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-26T13:33:00Z",
-    "kind": "expert-investor-scan",
+    "asOf": "2026-10-27T12:33:15Z",
+    "kind": "builder-engineering-scan",
     "completedChannels": [
-      "a16z"
+      "information-bottleneck",
+      "ocp",
+      "gpu-mode",
+      "latent-space",
+      "dwarkesh"
     ],
-    "partialChannels": [
-      "exponential-view"
-    ],
+    "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "The official a16z surface remained unchanged from the last completed expert scan; no unchanged item was re-summarized.",
-      "Exponential View's October 25 public issue summary did not contain a qualifying infrastructure demand/economics item; paid or preview-only substance was not inferred.",
-      "The TrendForce/Unimicron substrate report was used for the shared material-question verification and treated as secondary coverage of Unimicron remarks, not independent company admission evidence.",
+      "No post-cutoff qualifying item appeared on the current Information Bottleneck, Latent Space or GPU MODE surfaces; unchanged items were not repeated.",
+      "The Dwarkesh channel's prior partial check was repaired by reading the official October 22 full transcript; the Intel capacity estimate remains an attributed operator claim, not audited industry data.",
+      "The OCP October 19 paper was reviewed as the explicitly queued undercovered networking-family item; its original publication date is preserved.",
+      "OCP's framework does not provide a vendor-neutral production benchmark or durable public-company winner.",
       "No decision-relevant valuation refresh was required."
-    ],
-    "exponentialView": {
-      "logicalWeek": "2026-10-25",
-      "checkedAt": "2026-10-26T13:33:00Z",
-      "status": "partial",
-      "reviewedItemUrls": [
-        "https://www.exponentialview.co/",
-        "https://www.exponentialview.co/p/the-internet-under-attack"
-      ],
-      "gaps": [
-        "Public summaries were screened; inaccessible newsletter substance was not inferred and no claim was promoted."
-      ]
-    },
-    "d3": {
-      "bottlenecks": {
-        "blobSha": "7860aa262e43aadbcaae188dba96a9f171596203",
-        "records": 75,
-        "status": "unchanged"
-      },
-      "claims": {
-        "blobSha": "b87aaffeb7d78dd51b4959c6636b26e26883cf64",
-        "records": 31,
-        "status": "changed-one-open-claim"
-      },
-      "selected": [
-        "C-20261020-AGCO-DIGIT-PILOT-2027"
-      ],
-      "imported": [],
-      "reason": "Only the new AGCO/Agility claim was Open; D3 imports resolved claims only."
-    }
+    ]
   },
-  "updatedAt": "2026-10-26T13:33:00Z"
+  "updatedAt": "2026-10-27T12:40:00Z"
 }
