@@ -799,7 +799,19 @@
         "lessons/081-01.tsfrag",
         "lessons/081-02.tsfrag"
       ]
+    },
+    {
+      "number": 82,
+      "module": "Module 11: Compute Architectures & Custom Silicon",
+      "title": "Accelerator Ecosystems — Why the Best Chip Can Still Lose",
+      "date": "2026-10-27",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/082-01.tsfrag",
+        "lessons/082-02.tsfrag",
+        "lessons/082-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-26T12:05:35.856Z"
+  "updatedAt": "2026-10-27T11:09:03.767Z"
 }

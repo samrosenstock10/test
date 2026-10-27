@@ -1,0 +1,41 @@
+import type { Lesson } from "./lessons";
+
+export const lesson082 = {
+  number: 82,
+  module: "Module 11: Compute Architectures & Custom Silicon",
+  title: "Accelerator Ecosystems — Why the Best Chip Can Still Lose",
+  date: "2026-10-27",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 077: A package substrate translates fine die connections into board-level power and signals while resisting warpage.
+
+Lesson 078: Integrated supply helps only when shared information and authority shorten learning loops across factories.
+
+Lesson 079: GPUs preserve option value across uncertain workloads, while custom silicon earns its efficiency only at stable, utilized scale.
+
+Lesson 080: Hyperscaler silicon works when fleet demand, workload data, software authority and deployment control justify owning architectural decisions.
+
+Lesson 081: Alternative accelerators remove particular data-movement or coordination bottlenecks by accepting new manufacturing, compiler or device constraints.
+
+A chip becomes useful through a translation chain
+
+A model author usually writes operations in a framework such as PyTorch. Those operations must be captured as a graph, lowered into an intermediate representation, optimized, translated into device instructions, scheduled across memory and compute, connected through communication libraries, and observed with debuggers and profilers. Kernels for attention, matrix multiplication and collective communication must be correct and fast across many shapes and data types.
+
+The hardware can execute only the final instructions, but users experience the whole chain. If one link is missing, they may rewrite code, wait for a compiler update, accept slower fallback operations or stay on a familiar platform. That is why a benchmark can demonstrate silicon capability without proving ecosystem readiness.
+
+Libraries turn transistors into reusable work
+
+A compiler can generate instructions, but mature libraries package years of specialized work into routines developers can call repeatedly. They cover dense and sparse math, attention, quantization, data loading, networking and monitoring. A good library also selects among kernels for different tensor shapes, precisions and hardware generations.
+
+This accumulated software is an economic asset. It reduces migration labor, shortens debugging time and lets a team reuse people and code across projects. NVIDIA's CUDA advantage is therefore not one program. It is a layered system of drivers, toolkits, libraries, documentation, compatible containers and a large installed base that tests unusual cases.
+
+Compatibility protects prior investment
+
+Software value compounds only if yesterday's code continues to work. NVIDIA documents backward compatibility for applications on newer drivers and limited minor-version compatibility within a CUDA major family. Those guarantees are not perfect—new features can require newer drivers—but they reduce the chance that a fleet upgrade breaks every application at once.
+
+Other platforms must build the same operational trust. AMD's current ROCm documentation presents an end-to-end stack of compilers, runtimes, math and communication libraries, while its compatibility matrices specify exact combinations of GPU, operating system, ROCm and framework versions. Publishing the matrix is useful; keeping popular models reliable across it is the harder work.
+
+Portability layers lower switching cost without erasing hardware differences
+
+An intermediate representation gives frameworks and accelerators a shared language. OpenXLA's StableHLO, for example, defines a versioned set of high-level machine-learning operations between frameworks and compilers. A framework can export the representation, and multiple hardware backends can consume it.
+

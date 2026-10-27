@@ -1,0 +1,34 @@
+That separation can reduce duplicated integration work, but portability is not automatic performance. A shared operation such as matrix multiplication still must be tiled for local memory, fused with neighboring operations and mapped to the target's communication pattern. Portable graphs make a model runnable; target-specific kernels and compiler passes often make it economical.
+
+Current releases show the direction of competition
+
+In October 2026, Google and Meta introduced TorchTPU, a native open-source PyTorch backend for Google TPUs using eager execution and torch.compile. IBM described moving its Spyre accelerator software to a torch.compile backend on October 13. These are meaningful ecosystem investments because they meet developers inside a familiar framework instead of demanding an entirely separate programming model.
+
+They are not proof that migration is frictionless or performance is equal across all models. Coverage of common operations, numerical behavior, distributed training, debugging and production serving still determines whether the backend survives contact with real workloads. The strongest evidence will be repeated external deployments, not the existence of a backend alone.
+
+Ecosystem economics can outweigh chip economics
+
+Suppose a new accelerator saves 25% on hardware and power for a workload but requires months of engineering, model changes and parallel infrastructure. The savings may disappear before the first useful output. Conversely, a mature software path can raise utilization, accelerate deployment and let a slightly less efficient chip create more value over its service life.
+
+This also changes supplier strategy. A challenger can narrow its initial market to a small set of high-value models, contribute support upstream to popular frameworks, provide containers and reference implementations, and make migration reversible. Each step lowers the customer's risk. The incumbent must keep compatibility and developer trust while still exposing new hardware features quickly.
+
+The biggest takeaway
+
+The winning accelerator is not simply the device with the most arithmetic or the best selected benchmark. It is the system that converts existing models into reliable, observable and well-utilized production work with the least total friction. Hardware creates the possible performance; compilers, libraries, compatibility and developer habits determine how much of that possibility becomes economic output.
+
+Sources
+
+NVIDIA CUDA Compatibility — current backward, minor-version and forward-compatibility rules: https://docs.nvidia.com/deploy/cuda-compatibility/
+
+AMD ROCm — current compiler, runtime, library and compatibility documentation: https://rocm.docs.amd.com/
+
+OpenXLA StableHLO — versioned portability layer between frameworks and compilers: https://openxla.org/stablehlo
+
+PyTorch, October 21, 2026 — TorchTPU native PyTorch backend for Google TPUs: https://pytorch.org/blog/introducing-torchtpu/
+
+PyTorch, October 13, 2026 — extending Inductor for IBM Spyre: https://pytorch.org/blog/extending-inductor-for-the-ibm-spyre-accelerator/
+
+Next lesson
+
+Lesson 083: Scale-Up vs. Scale-Out — Two Ways to Make One Computer Bigger
+
