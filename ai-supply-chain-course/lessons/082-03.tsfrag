@@ -1,0 +1,2 @@
+We will follow data across links inside and between systems and see why distance, bandwidth and latency create different networking problems.`,
+} satisfies Lesson;
