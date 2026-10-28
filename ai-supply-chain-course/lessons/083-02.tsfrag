@@ -1,0 +1,32 @@
+UALink takes an open-standard route. Its published 200G 1.0 specification defines a scale-up connection for as many as 1,024 accelerators in an AI pod. AMD's Helios rack, launched in 2026, uses UALink over Ethernet to connect 72 MI455X GPUs. A specification and a launch establish design intent; they do not yet prove broad production volume, software maturity or workload economics.
+
+Broadcom's October 8, 2026 OCP announcement shows Ethernet suppliers pushing across the old boundary. The company presented scale-up, scale-out and “scale-across” products and discussed an Ethernet transport for scale-up networking. Ethernet's attraction is a large supplier and operating ecosystem. The challenge is delivering the latency, loss behavior and predictable bandwidth that tightly synchronized accelerator traffic expects.
+
+Interfaces can become control points
+
+Choosing a fabric is not just choosing a cable. An accelerator needs compatible interface logic, switches, firmware, management, collective-communication software and rack design. A proprietary fabric can optimize the whole path and speed deployment, but it can bind the buyer to one roadmap. An open standard can widen supplier choice, yet interoperability, tuning and support must still become real products.
+
+The economics appear in utilization. A more expensive scale-up system can be worthwhile if it keeps costly accelerators computing instead of waiting. But an oversized domain wastes ports, power and capital when the workload rarely communicates across it. Operators therefore need application traces: message sizes, communication frequency, traffic patterns and the delay that actually extends a training step or inference response.
+
+The biggest takeaway
+
+Scale-up and scale-out are not simply fast and slow versions of the same network. They make different promises about distance, coordination, failure and expansion. The winning boundary is the smallest domain that keeps the workload's most expensive communication on a dependable fast path—without letting fabric cost, power or lock-in erase the benefit.
+
+Sources
+
+NVIDIA, NVLink Fusion — current scale-up architecture, custom-silicon integration and roadmap claims: https://www.nvidia.com/en-us/data-center/nvlink-fusion/
+
+NVIDIA Technical Blog, August 26, 2026 — NVLink Fusion chiplet and rack-scale integration: https://developer.nvidia.com/blog/nvidia-nvlink-fusion-brings-nvhbm-to-next-generation-ai-infrastructure/
+
+UALink Consortium — current 200G 1.0 and related scale-up specifications: https://ualinkconsortium.org/specification/
+
+AMD, 2026 — Helios rack-scale system and UALink-over-Ethernet design: https://www.amd.com/en/products/rackscale-solutions/helios.html
+
+Broadcom, October 8, 2026 — OCP scale-up, scale-out and scale-across networking announcement: https://investors.broadcom.com/news-releases/news-release-details/broadcom-redefines-ai-infrastructure-industry-leading-networking
+
+Next lesson
+
+Lesson 084: Electrical Links — Why Faster Copper Becomes Harder to Extend
+
+We will follow one bit through package traces, boards, cables and retimers, then see how signal integrity moves cost and power into the network.`,
+} satisfies Lesson;
