@@ -1,0 +1,43 @@
+import type { Lesson } from "./lessons";
+
+export const lesson083 = {
+  number: 83,
+  module: "Module 12: Networking, Interconnect & Optics",
+  title: "Scale-Up Domains — Where One AI Computer Ends",
+  date: "2026-10-28",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 078: Integrated packaging supply works when shared information and authority shorten learning loops across otherwise separate factories.
+
+Lesson 079: GPUs preserve flexibility, while custom silicon earns its efficiency only when a stable workload keeps enough deployed chips useful.
+
+Lesson 080: Hyperscalers design chips when workload knowledge, software control and fleet scale outweigh fixed engineering cost and supplier dependence.
+
+Lesson 081: Alternative accelerators remove specific data-movement constraints by accepting new manufacturing, compiler or device limits.
+
+Lesson 082: An accelerator's ecosystem converts possible hardware performance into reliable production output through software, compatibility and operational trust.
+
+The boundary is an architectural choice
+
+Lesson 043 introduced scale-up as the fast fabric inside a bounded accelerator group and scale-out as the network joining many groups. The deeper design question is where to draw that boundary.
+
+Inside a scale-up domain, software tries to treat many accelerators as parts of one large computer. They may exchange model state or intermediate results so frequently that a long delay on one transfer stalls work everywhere. Outside the domain, the system accepts more latency and protocol overhead in exchange for distance, expandability and failure isolation.
+
+Making the domain larger can keep a bigger model or communication-heavy operation on the fast path. It also requires more switch ports, cables, power, cooling and coordination. “One computer” is therefore not a natural physical fact. It is a promise that the interconnect can make often enough to justify the system around it.
+
+Distance changes the signal problem
+
+An electrical signal weakens and distorts as it travels through package traces, circuit boards and copper cables. Higher data rates leave less timing margin, so a path that works across a package may need retimers—chips that restore the signal—across a longer board or cable. Retimers add cost, power and latency, while connectors and dense cabling consume valuable rack space.
+
+Optics can carry data farther with lower loss, but it adds lasers, modulators, photodetectors, packaging and thermal-management problems. That makes the scale-up boundary partly an economic decision about where copper remains practical and where optical conversion becomes worth its extra components.
+
+The fastest domain is not automatically the largest
+
+A scale-up fabric is designed for frequent accelerator-to-accelerator exchanges. Its switches and links may provide high bandwidth with predictable paths, but the system still has a topology: not every pair necessarily owns a dedicated wire. Traffic can converge on shared links, and effective bandwidth depends on which accelerators communicate at the same time.
+
+A larger domain also expands the fault surface. If software assumes all participants are tightly coordinated, a failed link or accelerator can interrupt more work. Designers can add redundant paths, isolate failures and reroute traffic, but those protections consume silicon and engineering effort. The useful question is how much communication stays local without making the domain too expensive or fragile to operate.
+
+Competing systems draw different boundaries
+
+NVIDIA's NVLink scale-up fabric ties accelerators through NVLink switches, while NVLink Fusion offers custom accelerator and CPU designers a path into that rack architecture. NVIDIA says its sixth-generation roadmap connects 72 XPUs at 3.6 terabytes per second per XPU, with larger future domains planned. Those figures describe a vendor architecture and roadmap, not measured application performance.
+
