@@ -238,7 +238,14 @@
       "title": "Accelerator Ecosystems — Why the Best Chip Can Still Lose",
       "bodySha256": "9bfc2bad9b492811d88555051eba64785f56a36b1bf36215c05c1741111128f8",
       "body": "An AI accelerator becomes useful only through a software chain that translates framework operations into reliable device instructions. Compilers capture and lower model graphs, while optimized libraries supply fast routines for math, attention, communication and other common work. Mature drivers, containers, debuggers and profilers reduce migration risk and help teams keep hardware utilized. Compatibility rules matter because they protect prior investments in code and fleet operations as software and hardware versions change. Portability layers such as StableHLO let frameworks and hardware compilers share a common representation, but target-specific kernels and compiler passes are still needed for strong performance. Recent TorchTPU and IBM Spyre work shows challengers integrating directly with PyTorch rather than asking users to adopt isolated programming models. The core lesson is that hardware creates possible performance, while the ecosystem determines how much of it becomes dependable economic output."
+    },
+    {
+      "number": 83,
+      "date": "2026-10-28",
+      "title": "Scale-Up Domains — Where One AI Computer Ends",
+      "bodySha256": "f1cbc279eb9e258b3761abaea110992a8d38cbb17f709cfbff9ef4cf5a7fa3fd",
+      "body": "A scale-up domain is a tightly connected group of accelerators that software tries to use like one large computer. Designers choose where that domain ends by balancing fast local communication against distance, expandability and failure isolation. Electrical signals become harder to preserve as speed and distance rise, so longer copper paths may need power-hungry retimers, while optics extends reach by adding lasers and other components. Making a scale-up domain larger can keep more communication on the fast path, but it also adds switches, cables, power, coordination and more places for failures to interrupt work. NVLink emphasizes tightly integrated proprietary performance, while UALink and Ethernet-based approaches aim to widen supplier choice and reuse a broader networking ecosystem. An interface becomes a control point because the accelerator, switches, firmware, communication software and rack design all have to work together. The best boundary is the smallest dependable domain that keeps the workload's most costly communication local without letting fabric cost, power or lock-in erase the benefit."
     }
   ],
-  "updatedAt": "2026-10-27T11:12:00.000Z"
+  "updatedAt": "2026-10-28T11:10:20.008Z"
 }
