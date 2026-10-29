@@ -1,0 +1,26 @@
+Astera Labs announced its Aries 7 copper-and-optical signal-conditioning family on October 8, 2026, with initial sampling planned for the fourth quarter. Its use of a standard signal-conditioner footprint is meant to let system builders choose a redriver or retimer later without redesigning the board. That optionality is valuable, but announced sampling is not the same as high-volume availability.
+
+The electrical boundary is an economic boundary
+
+Copper usually wins at short reach because it avoids lasers, optical packaging and electrical-to-optical conversion. But faster copper pushes cost into SerDes design, low-loss board materials, connectors, retimers, active cables, cooling and validation. Eventually optics can become cheaper at the system level even if an optical module costs more than a passive cable.
+
+Control is distributed: chip designers own the SerDes, conditioning suppliers extend reach, component makers preserve the channel budget, and system builders qualify the complete path.
+
+The biggest takeaway
+
+Electrical reach is not a property of copper alone. It is the result of the transmitter, complete channel, receiver and signal-conditioning strategy working together. As lane speed rises, the physical margin shrinks, so the lowest-cost architecture is the one that uses passive copper where it is dependable, adds active conditioning only where it earns its power and complexity, and moves to optics when electrical compensation stops being the simpler system.
+
+Sources
+
+Broadcom, March 12, 2026 — Tomahawk 6 production-volume announcement and 100G/200G SerDes options: https://www.broadcom.com/company/news/product-releases/64031
+
+Marvell, October 13, 2026 — Alaska 3.2T retimer and 1.6T AEC DSP sampling announcement: https://www.marvell.com/company/newsroom/marvell-connectivity-portfolio-3-2t-retimer-second-generation-1-6t-aec-dsp.html
+
+Astera Labs, October 8, 2026 — Aries 7 copper and optical signal-conditioning announcement and stated sampling timeline: https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-announces-aries-7-industrys-first-pcie-7-signal
+
+Next lesson
+
+Lesson 085: Scale-Out Fabrics — Why Congestion Control Matters More Than Headline Bandwidth
+
+We will follow simultaneous accelerator traffic through multiple paths and compare how integrated and open Ethernet systems manage hotspots, tail latency and failure.`,
+} satisfies Lesson;
