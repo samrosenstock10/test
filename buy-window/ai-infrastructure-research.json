@@ -1815,6 +1815,41 @@
       "freshness": "incremental-gap-repair-after-partial-20261026-channel-check",
       "itemId": "dwarkesh-intel-tour-20261022",
       "primarySourceUrl": "https://www.dwarkesh.com/p/intel-tour"
+    },
+    {
+      "id": "expert-20261029-semianalysis-trainium3-pytorch",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "SemiAnalysis finds native PyTorch broadens Trainium3’s path but compilation remains a constraint",
+      "sourceTitle": "Amazon’s Trainium Takes a Strike at the Training King",
+      "url": "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at",
+      "speaker": "Kimbo Chen and Dylan Patel",
+      "role": "SemiAnalysis researchers",
+      "publishedDate": "2026-10-23",
+      "observedAt": "2026-10-29T12:32:26Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis-amazon-trainium3-20261023",
+      "summary": "SemiAnalysis reports hands-on Trainium3 rack testing and argues that AWS’s move toward native PyTorch/TorchNeuron can broaden adoption, while its own tests still show substantial compilation and first-step latency.",
+      "claim": "On 16 Trainium2 chips / 64 logical cores, SemiAnalysis measured Qwen3-32B at 11,099 tokens/sec eager with 23.89% MFU and 14,156 tokens/sec compiled with 30.47% MFU, a 1.28x gain. Trainium3 FlexAttention passed 89 of 96 tests; first-step latency was 184.6 seconds eager and 255.7 seconds compiled, and a gpt-oss compile took 27m17s.",
+      "interpretation": "Our inference: native PyTorch reduces switching friction and improves Trainium’s adoption path, strengthening Amazon’s captive-silicon option value. The source does not establish broad production adoption, mature CUDA parity or attractive AWS unit economics.",
+      "beneficiaryTickers": [
+        "AMZN"
+      ],
+      "counterTickers": [
+        "NVDA",
+        "AMD"
+      ],
+      "countercase": "The tests are selected SemiAnalysis configurations rather than neutral fleet-wide evidence. Seven FlexAttention cases failed, compilation remains slow, and the article does not provide customer retention, utilization, pricing, reliability, margin or return-on-capital data.",
+      "nextTest": "Require named external Trainium3 production customers, repeated multi-generation adoption, portability and compiler metrics, price/performance on representative workloads, utilization, reliability and AWS revenue and margin per deployed accelerator.",
+      "evidenceType": "independent-technical-testing",
+      "status": "evidence",
+      "location": "Official October 23, 2026 SemiAnalysis article; PyTorch/TorchNeuron discussion, benchmark tables, FlexAttention compatibility and compilation sections.",
+      "incentives": "SemiAnalysis sells infrastructure research and benchmarking; it benefits from differentiated technical analysis. The authors disclose direct testing, but workload and configuration choices remain editorial judgments.",
+      "verification": "Read the official article and preserved the reported test configuration, throughput, MFU, compatibility and compilation figures. Did not convert those measurements into fleet-wide share, customer economics or a portfolio recommendation.",
+      "freshness": "missed-cycle-repair-published-20261023",
+      "itemId": "semianalysis-amazon-trainium3-20261023",
+      "primarySourceUrl": "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at"
     }
   ],
   "evidence": [
@@ -4232,6 +4267,32 @@
       "counterTickers": [],
       "sourceObservationId": "expert-20261027-dwarkesh-intel-tool-chain",
       "corroborationNote": "This evidence row and the linked observation represent the same primary source and are not independent corroboration."
+    },
+    {
+      "id": "20261029-semianalysis-trainium3-pytorch",
+      "title": "SemiAnalysis tests Trainium3 software usability and compilation tradeoffs",
+      "url": "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at",
+      "kind": "independent-technical-testing",
+      "independenceGroup": "semianalysis-amazon-trainium3-20261023",
+      "publishedDate": "2026-10-23",
+      "observedAt": "2026-10-29T12:32:26Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "SemiAnalysis reports hands-on Trainium3 rack testing and argues that AWS’s move toward native PyTorch/TorchNeuron can broaden adoption, while its own tests still show substantial compilation and first-step latency.",
+      "claim": "On 16 Trainium2 chips / 64 logical cores, SemiAnalysis measured Qwen3-32B at 11,099 tokens/sec eager with 23.89% MFU and 14,156 tokens/sec compiled with 30.47% MFU, a 1.28x gain. Trainium3 FlexAttention passed 89 of 96 tests; first-step latency was 184.6 seconds eager and 255.7 seconds compiled, and a gpt-oss compile took 27m17s.",
+      "interpretation": "Our inference: native PyTorch reduces switching friction and improves Trainium’s adoption path, strengthening Amazon’s captive-silicon option value. The source does not establish broad production adoption, mature CUDA parity or attractive AWS unit economics.",
+      "verification": "Read the official article and preserved the reported test configuration, throughput, MFU, compatibility and compilation figures. Did not convert those measurements into fleet-wide share, customer economics or a portfolio recommendation.",
+      "countercase": "The tests are selected SemiAnalysis configurations rather than neutral fleet-wide evidence. Seven FlexAttention cases failed, compilation remains slow, and the article does not provide customer retention, utilization, pricing, reliability, margin or return-on-capital data.",
+      "nextTest": "Require named external Trainium3 production customers, repeated multi-generation adoption, portability and compiler metrics, price/performance on representative workloads, utilization, reliability and AWS revenue and margin per deployed accelerator.",
+      "beneficiaryTickers": [
+        "AMZN"
+      ],
+      "counterTickers": [
+        "NVDA",
+        "AMD"
+      ],
+      "sourceObservationId": "expert-20261029-semianalysis-trainium3-pytorch",
+      "corroborationNote": "This evidence row and linked observation represent the same primary source and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -9504,6 +9565,31 @@
       ],
       "screeningStatus": "unrated",
       "screeningReason": "The joint release establishes initial functional validation but not system qualification, customer adoption, volume production or investable economics. No conviction score is assigned."
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "stage": "unrated",
+      "firstObservedAt": "2026-10-29T12:32:26Z",
+      "priority": "normal",
+      "nextQuestion": "Can Trainium3’s native PyTorch path convert into broad external adoption and durable AWS revenue, margin and return-on-capital advantages versus NVIDIA and AMD?",
+      "sourceRefs": [
+        {
+          "id": "expert-20261029-semianalysis-trainium3-pytorch",
+          "sourceId": "semianalysis",
+          "evidenceId": "20261029-semianalysis-trainium3-pytorch",
+          "kind": "source-thesis",
+          "publishedDate": "2026-10-23",
+          "url": "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at"
+        }
+      ],
+      "aliases": [
+        "Amazon.com",
+        "Amazon Web Services",
+        "AWS"
+      ],
+      "screeningStatus": "unrated",
+      "screeningReason": "SemiAnalysis provides hands-on technical evidence and a credible adoption mechanism, but customer breadth, utilization, pricing, margins and returns are not established. No conviction rank or allocation conclusion is assigned."
     }
   ],
   "rankingMethodology": {
@@ -37031,24 +37117,18 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-27T12:33:15Z",
-    "kind": "builder-engineering-scan",
+    "asOf": "2026-10-29T12:36:12Z",
+    "kind": "semianalysis-missed-cycle-repair",
     "completedChannels": [
-      "information-bottleneck",
-      "ocp",
-      "gpu-mode",
-      "latent-space",
-      "dwarkesh"
+      "semianalysis"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "No post-cutoff qualifying item appeared on the current Information Bottleneck, Latent Space or GPU MODE surfaces; unchanged items were not repeated.",
-      "The Dwarkesh channel's prior partial check was repaired by reading the official October 22 full transcript; the Intel capacity estimate remains an attributed operator claim, not audited industry data.",
-      "The OCP October 19 paper was reviewed as the explicitly queued undercovered networking-family item; its original publication date is preserved.",
-      "OCP's framework does not provide a vendor-neutral production benchmark or durable public-company winner.",
-      "No decision-relevant valuation refresh was required."
+      "The October 23 article was discovered during the October 28 missed-cycle repair and retains its original publication date.",
+      "The source provides selected hands-on benchmarks, not fleet-wide adoption or customer economics.",
+      "No conviction score, rank, valuation, allocation or trade conclusion changed."
     ]
   },
-  "updatedAt": "2026-10-27T12:40:00Z"
+  "updatedAt": "2026-10-29T12:36:12Z"
 }
