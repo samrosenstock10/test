@@ -245,7 +245,14 @@
       "title": "Scale-Up Domains — Where One AI Computer Ends",
       "bodySha256": "f1cbc279eb9e258b3761abaea110992a8d38cbb17f709cfbff9ef4cf5a7fa3fd",
       "body": "A scale-up domain is a tightly connected group of accelerators that software tries to use like one large computer. Designers choose where that domain ends by balancing fast local communication against distance, expandability and failure isolation. Electrical signals become harder to preserve as speed and distance rise, so longer copper paths may need power-hungry retimers, while optics extends reach by adding lasers and other components. Making a scale-up domain larger can keep more communication on the fast path, but it also adds switches, cables, power, coordination and more places for failures to interrupt work. NVLink emphasizes tightly integrated proprietary performance, while UALink and Ethernet-based approaches aim to widen supplier choice and reuse a broader networking ecosystem. An interface becomes a control point because the accelerator, switches, firmware, communication software and rack design all have to work together. The best boundary is the smallest dependable domain that keeps the workload's most costly communication local without letting fabric cost, power or lock-in erase the benefit."
+    },
+    {
+      "number": 84,
+      "date": "2026-10-29",
+      "title": "Electrical Links — Why Faster Copper Becomes Harder to Extend",
+      "bodySha256": "72356dcbd5b4a8562070b41f0ff6ccbfc33e1580582792ef94dd5be285db2e27",
+      "body": "An electrical link is the complete path from a chip's transmitter through package traces, boards, connectors and cable to the receiving chip. Faster links often use PAM4 to carry two bits in each symbol, but its four voltage levels leave less room for noise and distortion. Every physical part consumes some of the channel's signal margin through loss, crosstalk or reflections. Equalization can correct predictable distortion, but a long or complicated path eventually becomes too weak to read reliably. A retimer recovers the arriving data and sends a newly timed signal, while an active electrical cable places similar processing near the cable ends to extend copper reach. Those components improve placement flexibility and diagnostics, but add power, heat, latency, firmware, qualification work and more possible failure points. The lowest-cost system uses passive copper where it remains dependable, adds active conditioning only where it earns its complexity, and moves to optics when compensating the electrical path is no longer simpler."
     }
   ],
-  "updatedAt": "2026-10-28T11:10:20.008Z"
+  "updatedAt": "2026-10-29T12:13:15.000Z"
 }
