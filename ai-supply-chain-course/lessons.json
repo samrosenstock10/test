@@ -902,7 +902,18 @@
         "lessons/083-01.tsfrag",
         "lessons/083-02.tsfrag"
       ]
+    },
+    {
+      "number": 84,
+      "module": "Module 12: Networking, Interconnect & Optics",
+      "title": "Electrical Links — Why Faster Copper Becomes Harder to Extend",
+      "date": "2026-10-29",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/084-01.tsfrag",
+        "lessons/084-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-28T11:07:06.083Z"
+  "updatedAt": "2026-10-29T12:10:30.000Z"
 }
