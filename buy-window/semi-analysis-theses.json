@@ -1,7 +1,17 @@
 {
-  "updatedAt": "2026-10-19T11:43:00Z",
+  "updatedAt": "2026-10-29T12:36:12Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "rows": [
+    {
+      "loggedDate": "2026-10-29",
+      "sourceDate": "2026-10-23",
+      "company": "Amazon / AMZN",
+      "bullishness": 4,
+      "summary": "AWS’s Trainium3 thesis strengthens because native PyTorch/TorchNeuron support and credible large-rack execution can widen accelerator adoption beyond tightly optimized lighthouse customers, while compilation latency and unproven customer economics keep the source thesis below maximum conviction.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at"
+      ]
+    },
     {
       "loggedDate": "2026-10-19",
       "sourceDate": "2026-10-19",
