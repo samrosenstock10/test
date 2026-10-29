@@ -1,0 +1,47 @@
+import type { Lesson } from "./lessons";
+
+export const lesson084 = {
+  number: 84,
+  module: "Module 12: Networking, Interconnect & Optics",
+  title: "Electrical Links — Why Faster Copper Becomes Harder to Extend",
+  date: "2026-10-29",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 079: GPUs preserve flexibility, while custom silicon earns efficiency only when stable workloads keep enough deployed chips useful.
+
+Lesson 080: Hyperscalers design chips when workload knowledge, software control and fleet scale outweigh fixed engineering cost and supplier dependence.
+
+Lesson 081: Alternative accelerators reduce particular data-movement costs by accepting new manufacturing, compiler or device constraints.
+
+Lesson 082: An accelerator ecosystem turns possible hardware performance into dependable output through software compatibility and operational trust.
+
+Lesson 083: A scale-up domain should be only large enough to keep costly communication local without wasting power, ports or flexibility.
+
+Faster copper creates a smaller target
+
+Lesson 046 explained the basic copper-versus-optics choice. The deeper problem is that copper does not have a fixed reach: every increase in data rate makes the same physical path harder to use reliably.
+
+A high-speed link begins in a serializer/deserializer, or SerDes. The transmitter turns many parallel bits inside a chip into a fast serial signal. The receiver samples that signal and reconstructs the original bits. Between them sit package traces, circuit-board copper, connectors and perhaps a cable. Each weakens or distorts the signal differently.
+
+Modern links often use PAM4, which encodes two bits in each symbol using four voltage levels. It carries more data without doubling the symbol rate, but the levels sit closer together, leaving less margin for noise, reflections and timing error.
+
+The channel spends a loss budget
+
+Engineers describe the complete path as a channel. Package traces, board material, connectors and cable consume its budget through insertion loss—the signal energy lost before the receiver. Crosstalk and reflected energy make the remainder harder to read.
+
+Equalization can partly undo predictable distortion by shaping the transmitted waveform and filtering it at the receiver. It cannot recover unlimited information, so another connector or meter of cable may make a nominally compatible link fail.
+
+Retimers trade simplicity for reach
+
+A redriver amplifies and reshapes an incoming electrical waveform without fully deciding every bit. It can be efficient when the signal remains fairly clean. A retimer goes further: it recovers the clock, decides which symbols arrived, and transmits a newly timed signal. That breaks one difficult channel into two easier ones.
+
+The benefit is placement freedom. The costs are extra silicon, latency, power, heat, firmware and qualification. Retimer telemetry can also reveal marginal lanes before intermittent errors stall an expensive system.
+
+An active electrical cable, or AEC, places signal-processing chips near its ends. It can reach farther than a passive copper cable, but consumes power at both ends and moves service risk into the cable assembly.
+
+Current products show the boundary moving
+
+Broadcom said in March 2026 that Tomahawk 6 was shipping in production volume with 100-gigabit and 200-gigabit SerDes options. Its high port density and claimed passive-copper reach can reduce the number of switch tiers or optical conversions, but the production statement concerns the switch chip, not every finished network's yield or cable reach.
+
+Marvell's October 13, 2026 Alaska announcement describes a 224-gigabit-per-lane retimer and a 1.6-terabit AEC processor designed to compensate more than 45 decibels of channel loss and support copper beyond six meters. Those products were sampling to customers, so the figures are design claims awaiting broader qualification and deployment evidence.
+
