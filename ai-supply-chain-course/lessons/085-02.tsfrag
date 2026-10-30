@@ -1,0 +1,32 @@
+Good congestion control keeps senders close to the usable capacity of each path without letting queues become long or unstable. React too slowly and buffers fill. React too aggressively and links sit idle. The best settings also change with topology, message size, failure state and the number of simultaneous jobs.
+
+Telemetry matters because operators need to distinguish a bad cable, an overloaded route and a poorly tuned sender. Those problems can all look like low accelerator utilization while demanding different fixes.
+
+Current products are moving intelligence into the fabric
+
+Arista announced its 7060XE7 1.6-terabit Ethernet portfolio on June 9, 2026. The company lists dynamic load balancing, ECN, PFC awareness, congestion signaling and fast feedback among its software features. The first 64-port systems were scheduled for the fourth quarter of 2026, while other configurations were scheduled for 2027. Those dates describe planned availability, not broad production qualification or proven performance in every customer cluster.
+
+The Ultra Ethernet Consortium released Specification 1.1 on October 12, 2026. It adds Congestion Signaling, a small tag that can carry information about where and how strongly a packet encountered congestion, plus programmable congestion-management interfaces intended to let different network adapters run portable control algorithms. A published specification is meaningful coordination, but it is not the same as interoperable products deployed at scale.
+
+These approaches show where competition is moving. Switch bandwidth still matters, but value can accrue to the companies that combine switch silicon, network adapters, routing software, telemetry and operational tools into a fabric that keeps expensive accelerators working predictably.
+
+The biggest takeaway
+
+A scale-out fabric is a feedback system. Paths distribute traffic, queues reveal collisions, switches signal pressure, and endpoints change their sending rates. Headline bandwidth sets the ceiling; congestion control determines how much of that ceiling a real AI job can use and whether one hotspot slows the entire cluster.
+
+Sources
+
+RFC Editor, September 2001 — RFC 3168 definition of Explicit Congestion Notification: https://www.rfc-editor.org/rfc/rfc3168.html
+
+IEEE 802.1, Priority-based Flow Control — 802.1Qbb purpose and per-traffic-class pause behavior: https://1.ieee802.org/dcb/802-1qbb/
+
+Arista Networks, June 9, 2026 — 7060XE7 features and stated availability schedule: https://investors.arista.com/Communications/Press-Releases-and-Events/Press-Release-Detail/2026/Arista-Introduces-Next-Generation-1-6Terabit-Portfolio-for-AI-Fabrics/default.aspx
+
+Ultra Ethernet Consortium, October 12, 2026 — Specification 1.1, Congestion Signaling and Programmable Congestion Management: https://ultraethernet.org/ultra-ethernet-consortium-releases-specification-1-1-advancing-ai-and-hpc-networking/
+
+Next lesson
+
+Lesson 086: Optical Links — When Lasers and Packaging Replace Copper
+
+We will follow a bit through a pluggable optical module and compare traditional transceivers, silicon photonics, linear-drive optics and co-packaged optics.`,
+} satisfies Lesson;
