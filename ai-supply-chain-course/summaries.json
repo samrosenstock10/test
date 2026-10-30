@@ -252,6 +252,13 @@
       "title": "Electrical Links — Why Faster Copper Becomes Harder to Extend",
       "bodySha256": "72356dcbd5b4a8562070b41f0ff6ccbfc33e1580582792ef94dd5be285db2e27",
       "body": "An electrical link is the complete path from a chip's transmitter through package traces, boards, connectors and cable to the receiving chip. Faster links often use PAM4 to carry two bits in each symbol, but its four voltage levels leave less room for noise and distortion. Every physical part consumes some of the channel's signal margin through loss, crosstalk or reflections. Equalization can correct predictable distortion, but a long or complicated path eventually becomes too weak to read reliably. A retimer recovers the arriving data and sends a newly timed signal, while an active electrical cable places similar processing near the cable ends to extend copper reach. Those components improve placement flexibility and diagnostics, but add power, heat, latency, firmware, qualification work and more possible failure points. The lowest-cost system uses passive copper where it remains dependable, adds active conditioning only where it earns its complexity, and moves to optics when compensating the electrical path is no longer simpler."
+    },
+    {
+      "number": 85,
+      "date": "2026-10-30",
+      "title": "Scale-Out Fabrics — Why Congestion Control Matters More Than Headline Bandwidth",
+      "bodySha256": "74684c78c8f42e14dff9a690d255b94b965719c61041070c8b21d5406391add0",
+      "body": "A scale-out fabric connects many servers or racks after the local scale-up domain ends. AI training sends synchronized transfers across that fabric, so one unusually slow flow can delay the next compute step for the whole job. Leaf-spine networks provide several paths, but coordinated senders can still create an incast that fills one output queue while other links remain available. Explicit Congestion Notification marks packets before a queue overflows so endpoints can slow their sending rates. Priority Flow Control can pause a congested traffic class to avoid loss, but the pause can spread upstream and block unrelated traffic. Dynamic routing and telemetry help distribute flows and show whether poor performance comes from a failed link, a crowded route or badly tuned senders. Headline bandwidth sets the theoretical ceiling, while congestion control determines how much useful performance the cluster can sustain."
     }
   ],
   "updatedAt": "2026-10-29T12:13:15.000Z"
