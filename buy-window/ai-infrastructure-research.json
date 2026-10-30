@@ -1850,6 +1850,36 @@
       "freshness": "missed-cycle-repair-published-20261023",
       "itemId": "semianalysis-amazon-trainium3-20261023",
       "primarySourceUrl": "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at"
+    },
+    {
+      "id": "expert-20261029-exponential-view-capital-coverage",
+      "channel": "exponential-view",
+      "sourceId": "exponential-view",
+      "sourceLane": "expert",
+      "title": "Exponential View models positive current AI-capital coverage but steep forward growth hurdles",
+      "sourceTitle": "AI Investment Brief: $1.6tr of lease commitments",
+      "url": "https://www.investmentbrief.ai/p/ai-investment-brief-monday-6",
+      "speaker": "Azeem Azhar and William Gildea",
+      "role": "Exponential View analysts",
+      "publishedDate": "2026-10-26",
+      "observedAt": "2026-10-30T00:57:51Z",
+      "contentAccess": "article",
+      "independenceGroup": "exponential-view-ai-capital-model-20261026",
+      "summary": "Exponential View estimates that annualized AI revenue currently covers the operating cost, depreciation and a 15% return on deployed AI capital, while the next 12–24 months of committed infrastructure require much faster sustained revenue growth to earn comparable returns.",
+      "claim": "The model estimates $304B of annualized AI revenue, including $222B of infrastructure revenue, against $75B depreciation, $15B operating cost and $79B required return on $525B of capital in service. Infrastructure coverage is 132%. It estimates 26% annual infrastructure-revenue growth over the equipment life to cover the next 12 months of commitments and 40% for 24-month commitments; aggregate lease commitments reach $1.6T with up to $99B of annual payments.",
+      "interpretation": "Our inference: current deployed AI infrastructure is not obviously unsupported by revenue, but the committed expansion creates a demanding growth and financing hurdle. This raises the value of contracted demand, customer prepayments and strong balance sheets while increasing execution risk for capacity built ahead of durable utilization. The model does not identify a public-company winner or justify a portfolio change.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "countercase": "This is an analyst model, not audited segment accounting. AI revenue attribution, useful-life assumptions, operating costs, required return, lease timing and cohort composition are judgmental; supplier revenue can remain strong even if infrastructure owners later earn inadequate returns, and future pricing or utilization may differ materially.",
+      "nextTest": "Reconcile hyperscaler and neocloud filings after current-quarter reports; track realized infrastructure revenue, utilization, lease commencement, depreciation, funding cost and return on invested capital against the model's 26% and 40% growth hurdles.",
+      "evidenceType": "investor-economic-model",
+      "status": "evidence",
+      "location": "Public October 26 article, AI Cycle Status and AI economy sections; paid-only detail was not inferred beyond accessible text.",
+      "incentives": "Exponential View sells economic analysis and subscription research. Its differentiated cohort model benefits from attention and continued readership; assumptions remain analyst-selected.",
+      "verification": "Read the accessible official article, including definitions of capital coverage and committed-capital growth hurdles. Preserved the authors' estimates and did not relabel them as audited company guidance or a normalized valuation baseline.",
+      "freshness": "weekly-supporting-source-published-20261026",
+      "itemId": "exponential-view-ai-capital-coverage-20261026",
+      "primarySourceUrl": "https://www.investmentbrief.ai/p/ai-investment-brief-monday-6"
     }
   ],
   "evidence": [
@@ -4293,6 +4323,27 @@
       ],
       "sourceObservationId": "expert-20261029-semianalysis-trainium3-pytorch",
       "corroborationNote": "This evidence row and linked observation represent the same primary source and are not independent corroboration."
+    },
+    {
+      "id": "20261029-exponential-view-capital-coverage",
+      "title": "Exponential View quantifies current AI-capital coverage and committed-growth hurdle",
+      "url": "https://www.investmentbrief.ai/p/ai-investment-brief-monday-6",
+      "kind": "investor-economic-model",
+      "independenceGroup": "exponential-view-ai-capital-model-20261026",
+      "publishedDate": "2026-10-26",
+      "observedAt": "2026-10-30T00:57:51Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "Exponential View estimates that annualized AI revenue currently covers the operating cost, depreciation and a 15% return on deployed AI capital, while the next 12–24 months of committed infrastructure require much faster sustained revenue growth to earn comparable returns.",
+      "claim": "The model estimates $304B of annualized AI revenue, including $222B of infrastructure revenue, against $75B depreciation, $15B operating cost and $79B required return on $525B of capital in service. Infrastructure coverage is 132%. It estimates 26% annual infrastructure-revenue growth over the equipment life to cover the next 12 months of commitments and 40% for 24-month commitments; aggregate lease commitments reach $1.6T with up to $99B of annual payments.",
+      "interpretation": "Our inference: current deployed AI infrastructure is not obviously unsupported by revenue, but the committed expansion creates a demanding growth and financing hurdle. This raises the value of contracted demand, customer prepayments and strong balance sheets while increasing execution risk for capacity built ahead of durable utilization. The model does not identify a public-company winner or justify a portfolio change.",
+      "verification": "Read the accessible official article, including definitions of capital coverage and committed-capital growth hurdles. Preserved the authors' estimates and did not relabel them as audited company guidance or a normalized valuation baseline.",
+      "countercase": "This is an analyst model, not audited segment accounting. AI revenue attribution, useful-life assumptions, operating costs, required return, lease timing and cohort composition are judgmental; supplier revenue can remain strong even if infrastructure owners later earn inadequate returns, and future pricing or utilization may differ materially.",
+      "nextTest": "Reconcile hyperscaler and neocloud filings after current-quarter reports; track realized infrastructure revenue, utilization, lease commencement, depreciation, funding cost and return on invested capital against the model's 26% and 40% growth hurdles.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261029-exponential-view-capital-coverage",
+      "corroborationNote": "This evidence row and linked observation represent the same analyst model and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -37117,18 +37168,21 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-29T12:36:12Z",
-    "kind": "semianalysis-missed-cycle-repair",
+    "asOf": "2026-10-30T00:57:51Z",
+    "kind": "expert-investor-scan",
     "completedChannels": [
-      "semianalysis"
+      "a16z",
+      "exponential-view"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "The October 23 article was discovered during the October 28 missed-cycle repair and retains its original publication date.",
-      "The source provides selected hands-on benchmarks, not fleet-wide adoption or customer economics.",
-      "No conviction score, rank, valuation, allocation or trade conclusion changed."
+      "The official a16z surface exposed no qualifying post-cutoff AI-infrastructure or physical-AI forecast; unchanged material was not repeated.",
+      "The accessible official Exponential View article was reviewed directly; paid-only detail was not inferred.",
+      "The capital-coverage figures are an analyst cohort model with judgmental revenue attribution, useful lives, operating costs, required return and commitment timing; they are not audited company segment results.",
+      "D3 source blobs were unchanged from the completed October 26 handoff: 75 Bottlenecks and 31 Claims, with no new resolved Claim to import.",
+      "No score, rank, thesis, valuation, allocation or trade conclusion changed."
     ]
   },
-  "updatedAt": "2026-10-29T12:36:12Z"
+  "updatedAt": "2026-10-30T01:02:25Z"
 }
