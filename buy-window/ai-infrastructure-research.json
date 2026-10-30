@@ -1880,6 +1880,36 @@
       "freshness": "weekly-supporting-source-published-20261026",
       "itemId": "exponential-view-ai-capital-coverage-20261026",
       "primarySourceUrl": "https://www.investmentbrief.ai/p/ai-investment-brief-monday-6"
+    },
+    {
+      "id": "expert-20261030-ocp-800vdc-standardization",
+      "channel": "ocp",
+      "sourceId": "ocp",
+      "sourceLane": "engineering",
+      "title": "OCP coordinates interoperable 800 VDC power architectures for AI data centers",
+      "sourceTitle": "Powering the Next Era of AI: How Google, Microsoft and Nvidia Are Standardizing and Accelerating the Industry Transition to LVDC",
+      "url": "https://www.opencompute.org/news/powering-the-next-era-of-ai-how-google-microsoft-and-nvidia-are-standardizing-and-accelerating-the-industry-transition-to-lvdc/",
+      "speaker": "Tom Garvens, Melissa Lott, Vladimir Troy and OCP power-distribution contributors",
+      "role": "Infrastructure leaders at Google, Microsoft and NVIDIA working through Open Compute Project",
+      "publishedDate": "2026-08-11",
+      "observedAt": "2026-10-30T12:34:53Z",
+      "contentAccess": "article",
+      "independenceGroup": "ocp-800vdc-power-distribution-20260811",
+      "summary": "OCP says Google, Microsoft and NVIDIA are aligning common 800 VDC requirements so AI data centers can use near-term rack-side conversion or longer-term direct medium-voltage-to-DC distribution with interoperable supplier interfaces.",
+      "claim": "OCP describes two transition paths: a side power rack converting existing 480 VAC to +/-400 or 0-800 VDC near compute racks, and a longer-term architecture converting MVAC directly to 800 VDC for the data hall. It says more than 80 partners are developing compatible infrastructure while power-quality, safety, certification and interface requirements remain active work.",
+      "interpretation": "Our inference: shared 800 VDC interfaces could reduce copper and conversion burden, lower supplier fragmentation and shorten qualification cycles as rack density rises. The consortium statement does not establish fleet-scale deployment, realized efficiency, supplier economics or a durable public-company winner.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "countercase": "This is a builder-consortium roadmap and specification effort, not a vendor-neutral production benchmark. Certification, fault protection, brownfield integration, equipment cost, reliability and operator adoption remain unresolved, and open interfaces may spread value across many suppliers rather than concentrate it.",
+      "nextTest": "Verify certified interoperable components, named production data halls, measured conversion losses, reliability and total installed cost for rack-side versus direct-MVAC designs, then identify suppliers with qualified volume shipments and defensible economics.",
+      "evidenceType": "builder-consortium-technical-specification",
+      "status": "evidence",
+      "location": "Official OCP article; shared-standard, architecture, safety and ecosystem sections; OCP Power Distribution project page and version 1.1.0 resource list.",
+      "incentives": "OCP and participating hyperscalers benefit from broader supplier interoperability and faster AI-infrastructure deployment. NVIDIA, Google and Microsoft also have commercial interests in the architectures they help define.",
+      "verification": "Read the official OCP article and current Power Distribution project page. Preserved the two architecture paths and consortium claims; did not treat partner count, projected efficiency or roadmap timing as independently verified production outcomes.",
+      "freshness": "undercovered-power-baseline-published-20260811",
+      "itemId": "ocp-800vdc-power-distribution-20260811",
+      "primarySourceUrl": "https://www.opencompute.org/news/powering-the-next-era-of-ai-how-google-microsoft-and-nvidia-are-standardizing-and-accelerating-the-industry-transition-to-lvdc/"
     }
   ],
   "evidence": [
@@ -4344,6 +4374,27 @@
       "counterTickers": [],
       "sourceObservationId": "expert-20261029-exponential-view-capital-coverage",
       "corroborationNote": "This evidence row and linked observation represent the same analyst model and are not independent corroboration."
+    },
+    {
+      "id": "20261030-ocp-800vdc-standardization",
+      "title": "OCP specifies rack-side and direct-MVAC paths toward 800 VDC AI power distribution",
+      "url": "https://www.opencompute.org/news/powering-the-next-era-of-ai-how-google-microsoft-and-nvidia-are-standardizing-and-accelerating-the-industry-transition-to-lvdc/",
+      "kind": "builder-consortium-technical-specification",
+      "independenceGroup": "ocp-800vdc-power-distribution-20260811",
+      "publishedDate": "2026-08-11",
+      "observedAt": "2026-10-30T12:34:53Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "OCP says Google, Microsoft and NVIDIA are aligning common 800 VDC requirements so AI data centers can use near-term rack-side conversion or longer-term direct medium-voltage-to-DC distribution with interoperable supplier interfaces.",
+      "claim": "OCP describes two transition paths: a side power rack converting existing 480 VAC to +/-400 or 0-800 VDC near compute racks, and a longer-term architecture converting MVAC directly to 800 VDC for the data hall. It says more than 80 partners are developing compatible infrastructure while power-quality, safety, certification and interface requirements remain active work.",
+      "interpretation": "Our inference: shared 800 VDC interfaces could reduce copper and conversion burden, lower supplier fragmentation and shorten qualification cycles as rack density rises. The consortium statement does not establish fleet-scale deployment, realized efficiency, supplier economics or a durable public-company winner.",
+      "verification": "Read the official OCP article and current Power Distribution project page. Preserved the two architecture paths and consortium claims; did not treat partner count, projected efficiency or roadmap timing as independently verified production outcomes.",
+      "countercase": "This is a builder-consortium roadmap and specification effort, not a vendor-neutral production benchmark. Certification, fault protection, brownfield integration, equipment cost, reliability and operator adoption remain unresolved, and open interfaces may spread value across many suppliers rather than concentrate it.",
+      "nextTest": "Verify certified interoperable components, named production data halls, measured conversion losses, reliability and total installed cost for rack-side versus direct-MVAC designs, then identify suppliers with qualified volume shipments and defensible economics.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261030-ocp-800vdc-standardization",
+      "corroborationNote": "This evidence row and linked observation represent the same OCP consortium source and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -37168,21 +37219,25 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-10-30T00:57:51Z",
-    "kind": "expert-investor-scan",
+    "asOf": "2026-10-30T12:34:53Z",
+    "kind": "builder-engineering-scan",
     "completedChannels": [
-      "a16z",
-      "exponential-view"
+      "information-bottleneck",
+      "ocp",
+      "gpu-mode",
+      "latent-space",
+      "dwarkesh"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "The official a16z surface exposed no qualifying post-cutoff AI-infrastructure or physical-AI forecast; unchanged material was not repeated.",
-      "The accessible official Exponential View article was reviewed directly; paid-only detail was not inferred.",
-      "The capital-coverage figures are an analyst cohort model with judgmental revenue attribution, useful lives, operating costs, required return and commitment timing; they are not audited company segment results.",
-      "D3 source blobs were unchanged from the completed October 26 handoff: 75 Bottlenecks and 31 Claims, with no new resolved Claim to import.",
+      "No post-cutoff qualifying infrastructure item appeared on the current Information Bottleneck or OCP news surfaces, and GPU MODE's lecture repository had no new commit.",
+      "Latent Space's October 30 item was screened as a coding-agent conference and model-news recap rather than firsthand AI-infrastructure supply-chain evidence.",
+      "Dwarkesh's October 29 essay concerns political power rather than AI data-center electrical engineering.",
+      "The OCP 800 VDC item is an August 11 builder-consortium baseline found during targeted power-family coverage; the original publication date is preserved.",
+      "The OCP roadmap does not independently establish production efficiency, reliability, installed cost, supplier economics or a durable public-company winner.",
       "No score, rank, thesis, valuation, allocation or trade conclusion changed."
     ]
   },
-  "updatedAt": "2026-10-30T01:02:25Z"
+  "updatedAt": "2026-10-30T12:36:04Z"
 }
