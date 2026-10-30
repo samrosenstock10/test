@@ -913,7 +913,18 @@
         "lessons/084-01.tsfrag",
         "lessons/084-02.tsfrag"
       ]
+    },
+    {
+      "number": 85,
+      "module": "Module 12: Networking, Interconnect & Optics",
+      "title": "Scale-Out Fabrics — Why Congestion Control Matters More Than Headline Bandwidth",
+      "date": "2026-10-30",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/085-01.tsfrag",
+        "lessons/085-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-29T12:10:30.000Z"
+  "updatedAt": "2026-10-30T11:05:56.815Z"
 }

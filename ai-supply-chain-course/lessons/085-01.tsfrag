@@ -1,0 +1,43 @@
+import type { Lesson } from "./lessons";
+
+export const lesson085 = {
+  number: 85,
+  module: "Module 12: Networking, Interconnect & Optics",
+  title: "Scale-Out Fabrics — Why Congestion Control Matters More Than Headline Bandwidth",
+  date: "2026-10-30",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 080: Hyperscalers design chips when workload knowledge, software control and fleet scale outweigh fixed engineering cost and supplier dependence.
+
+Lesson 081: Alternative accelerators reduce particular data-movement costs by accepting new manufacturing, compiler or device constraints.
+
+Lesson 082: An accelerator ecosystem turns possible hardware performance into dependable output through software compatibility and operational trust.
+
+Lesson 083: A scale-up domain should be only large enough to keep costly communication local without wasting power, ports or flexibility.
+
+Lesson 084: Faster electrical links lose reach because higher data rates leave less signal margin for copper loss, noise and reflections.
+
+A fast port is not the same as a fast fabric
+
+Scale-out networking connects many servers or racks after the local scale-up domain ends. Its job is not merely to move independent files. During distributed AI training, thousands of accelerators may exchange partial results through synchronized collective operations such as all-reduce. The next compute step can wait for the slowest transfer to finish.
+
+That makes tail latency—the completion time of the unusually slow flows—more important than a switch's headline bandwidth. A 1.6-terabit port can sit beside idle capacity elsewhere while one crowded path delays the entire job.
+
+Why synchronized traffic creates hotspots
+
+Large scale-out fabrics commonly use leaf switches connected to spine switches. Each server can reach another through several equal-cost paths, which helps the network spread traffic and survive failures.
+
+The difficulty is that AI traffic is coordinated. Many senders can target the same receiver or output link at nearly the same moment, a pattern called incast. Packets then enter a queue because the outgoing link cannot drain them as quickly as they arrive. A short queue absorbs a burst. A growing queue adds delay, and a full queue drops packets.
+
+Remote direct memory access, or RDMA, lets a network adapter move data directly between server memory with little CPU involvement. Ethernet implementations such as RoCE make these transfers efficient, but packet loss can be unusually expensive because recovery may stall a large synchronized operation.
+
+Three layers manage congestion
+
+First, load balancing chooses paths. Simple equal-cost multipath routing usually hashes each flow onto one route. That preserves packet order, but several large flows can collide on one link while another path remains underused. Dynamic or packet-level routing can react to queue conditions, although it must handle packets arriving out of order.
+
+Second, switches signal congestion before a queue overflows. Explicit Congestion Notification, or ECN, marks packets when a queue crosses a threshold instead of waiting to drop them. The mark reaches an endpoint, which tells the sender to reduce its rate. This feedback loop works only if marking thresholds, round-trip delay and sender response are tuned for the actual fabric.
+
+Third, Priority Flow Control, or PFC, can pause one traffic class on a congested link. It helps avoid loss, but it is a blunt local brake. A pause can propagate upstream, and unrelated traffic in the same class can wait behind the blocked flow. A network designed to be “lossless” can therefore suffer head-of-line blocking or even widespread pause storms.
+
+The system goal is controlled flow, not zero queues
+
