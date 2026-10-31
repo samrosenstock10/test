@@ -924,7 +924,19 @@
         "lessons/085-01.tsfrag",
         "lessons/085-02.tsfrag"
       ]
+    },
+    {
+      "number": 86,
+      "module": "Module 12: Networking, Interconnect & Optics",
+      "title": "Optical Links — When Lasers and Packaging Replace Copper",
+      "date": "2026-10-31",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/086-01.tsfrag",
+        "lessons/086-02.tsfrag",
+        "lessons/086-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-30T11:05:56.815Z"
+  "updatedAt": "2026-10-31T12:11:39.786Z"
 }

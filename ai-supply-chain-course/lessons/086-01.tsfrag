@@ -1,0 +1,45 @@
+import type { Lesson } from "./lessons";
+
+export const lesson086 = {
+  number: 86,
+  module: "Module 12: Networking, Interconnect & Optics",
+  title: "Optical Links — When Lasers and Packaging Replace Copper",
+  date: "2026-10-31",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 081: Alternative accelerators reduce particular data-movement costs by accepting new manufacturing, compiler or device constraints.
+
+Lesson 082: An accelerator ecosystem turns possible hardware performance into dependable output through software compatibility and operational trust.
+
+Lesson 083: A scale-up domain should be only large enough to keep costly communication local without wasting power, ports or flexibility.
+
+Lesson 084: Faster electrical links lose reach because higher data rates leave less signal margin for copper loss, noise and reflections.
+
+Lesson 085: Scale-out fabric performance depends on feedback among paths, queues, congestion signals and endpoint sending rates.
+
+Optics moves the hard part of the channel
+
+Copper carries data as changing voltages. As Lesson 084 showed, higher lane speeds and longer traces consume electrical margin. An optical link changes the carrier: a laser supplies light, a modulator encodes data onto it, fiber transports the light, and a photodetector converts it back into electrical current.
+
+The conversion does not make the link simple. It moves complexity into lasers, photonic devices, control electronics, fiber attachment, packaging and test. The key architectural question is where that conversion happens.
+
+A pluggable module keeps optics replaceable
+
+In a traditional pluggable link, the switch chip sends a high-speed electrical signal across the circuit board to a module at the front panel. Inside the module, a digital signal processor, or DSP, cleans up and retimes the electrical data. Drivers operate optical modulators, light travels through fiber, and the receiving module uses photodetectors, transimpedance amplifiers and another DSP to recover the bits.
+
+The module can be replaced without replacing the switch, and buyers can qualify multiple suppliers around a common form factor. But every port needs electrical traces to the faceplate and its own conversion electronics. As switch bandwidth rises, those traces become harder to route, while DSPs and modules consume more power in a crowded front panel.
+
+Silicon photonics integrates functions, not the whole supply chain
+
+Silicon photonics forms waveguides, splitters, modulators and sometimes detectors using silicon-compatible manufacturing. It can place many optical functions on one photonic integrated circuit and use established wafer processes.
+
+Silicon is poor at producing light efficiently, so many systems still depend on indium-phosphide lasers or another external light source. The photonic die must also align precisely with fibers and electronic chips. Packaging, laser reliability and test can therefore determine cost and yield even when the silicon photonics circuit works.
+
+Linear optics trades DSP power for tighter coordination
+
+Linear pluggable optics removes much of the module's digital signal processing and lets the host switch or interface electronics drive and interpret a more analog optical path. Related designs keep a retimer on one side while leaving the other side linear.
+
+Removing a DSP can reduce power, latency and cost. It also leaves less protection against board loss, component variation and temperature. The host SerDes, module and channel must behave as one carefully tuned system. That can work well inside a controlled architecture, but interoperability and field replacement are harder than the phrase “simple module” suggests.
+
+Co-packaged optics shortens the electrical path
+
