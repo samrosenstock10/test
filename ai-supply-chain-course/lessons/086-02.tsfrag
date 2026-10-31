@@ -1,0 +1,34 @@
+Co-packaged optics places optical engines beside the switch or compute silicon instead of at the front panel. The short electrical connection can save power and let more bandwidth escape a package before copper loss dominates. External lasers can keep the hottest or least serviceable light source away from the main package.
+
+The tradeoff is operational. Fiber attachment becomes part of advanced packaging, optical engines share a thermal and manufacturing environment with expensive switching silicon, and a failed optical component may be harder to replace. Yield, automated assembly, test coverage and repair strategy become as important as photonic performance.
+
+Current evidence spans production, ramps and proposals
+
+NVIDIA said on May 31, 2026 that its Spectrum-X Ethernet Photonics co-packaged-optics switches were in production. That is stronger evidence than a roadmap, but the company's claimed power and reliability gains remain vendor comparisons rather than broad independent workload results.
+
+Coherent launched its PhotonLink integrated-optics platform on September 21, 2026 for co-packaged, near-packaged and chip-to-chip designs. It reported more than ten CPO and more than ten NPO customer engagements, with revenue expected to begin ramping in the fourth quarter. Engagements and expected revenue show customer work, not yet stable high-volume economics.
+
+Ayar Labs said on September 10, 2026 that new funding would support its transition toward high-volume manufacturing of optical I/O. That makes it a meaningful architecture to watch, but funding and manufacturing readiness are not proof of qualified volume production.
+
+Where the economics can shift
+
+Pluggables preserve supplier choice and serviceability, so they remain valuable when faceplate power and density are manageable. Linear designs can remove DSP economics from the module but demand tighter system control. Co-packaged and optical-I/O designs move value toward lasers, photonic engines, precision packaging, fiber attach and automated test.
+
+The biggest takeaway is that optics does not simply replace a copper cable. It redraws the product boundary. The winning design will put the optical conversion close enough to save electrical power and bandwidth, but far enough away to preserve manufacturability, yield and repair.
+
+Sources
+
+Coherent, March 17, 2026 — 1.6T pluggable demonstrations across silicon photonics, indium-phosphide and VCSEL technologies: https://www.coherent.com/news/press-releases/coherent-demonstrates-next-gen-pluggable-transceiver-ofc-2026
+
+NVIDIA, May 31, 2026 — Spectrum-X Ethernet Photonics production claim and Rubin platform status: https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory
+
+Coherent, September 21, 2026 — PhotonLink architecture, customer-engagement counts and expected revenue ramp: https://ir.coherent.com/news-releases/news-release-details/coherent-launches-photonlinktm-integrated-optics-platform-ai
+
+Ayar Labs, September 10, 2026 — funding and stated transition toward high-volume CPO manufacturing: https://ayarlabs.com/news/ayar-labs-expands-2026-funding-to-650-million/
+
+OIF, current Energy Efficient Interfaces work — linear and retimed-transmitter/linear-receiver goals and interoperability context: https://www.oiforum.com/technical-work/hot-topics/energy-efficient-interfaces/
+
+Next lesson
+
+Lesson 087: EDA — Why Chip Complexity Creates Software Control Points
+
