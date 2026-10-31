@@ -259,6 +259,13 @@
       "title": "Scale-Out Fabrics — Why Congestion Control Matters More Than Headline Bandwidth",
       "bodySha256": "74684c78c8f42e14dff9a690d255b94b965719c61041070c8b21d5406391add0",
       "body": "A scale-out fabric connects many servers or racks after the local scale-up domain ends. AI training sends synchronized transfers across that fabric, so one unusually slow flow can delay the next compute step for the whole job. Leaf-spine networks provide several paths, but coordinated senders can still create an incast that fills one output queue while other links remain available. Explicit Congestion Notification marks packets before a queue overflows so endpoints can slow their sending rates. Priority Flow Control can pause a congested traffic class to avoid loss, but the pause can spread upstream and block unrelated traffic. Dynamic routing and telemetry help distribute flows and show whether poor performance comes from a failed link, a crowded route or badly tuned senders. Headline bandwidth sets the theoretical ceiling, while congestion control determines how much useful performance the cluster can sustain."
+    },
+    {
+      "number": 86,
+      "date": "2026-10-31",
+      "title": "Optical Links — When Lasers and Packaging Replace Copper",
+      "bodySha256": "286dc031a1c78bcc06fcb6d6b7a5e1b72b527655042556c8cc2ca77f83b5b2dc",
+      "body": "Optical links carry data by encoding electrical bits onto light, moving the hardest part of the connection from copper loss into lasers, photonic devices, packaging and test. A traditional pluggable module keeps the optics replaceable at the switch faceplate, but it requires long electrical traces and power-hungry conversion electronics for every port. Silicon photonics can integrate waveguides, modulators and other optical functions on one chip, yet it still depends on external light sources, precise fiber alignment and difficult packaging. Linear optics removes much of the module's digital signal processing to save power and latency, but the host electronics, optical module and channel must be controlled more tightly. Co-packaged optics moves optical engines beside the switch or compute chip, shortening the electrical path and increasing bandwidth density. That closer integration creates new manufacturing and operating risks because fiber attachment, heat, yield, testing and repair become tied to an expensive package. The core economic choice is where to place optical conversion so the system saves enough power and bandwidth without giving up too much serviceability, supplier choice or manufacturing yield."
     }
   ],
   "updatedAt": "2026-10-29T12:13:15.000Z"
