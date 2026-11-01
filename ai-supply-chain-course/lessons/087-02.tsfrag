@@ -1,0 +1,30 @@
+This creates a control point. Replacing a tool is not merely exporting a file and buying another license. The customer must reproduce results, reconnect scripts and libraries, retrain engineers, and persuade itself and manufacturing partners that the new flow finds the same important problems. Switching is possible, and customers often use tools from multiple vendors, but the cost rises where a tool owns trusted signoff or a deeply integrated workflow.
+
+Synopsys, Cadence and Siemens EDA compete across overlapping layers. Synopsys and Cadence offer broad design, verification and analysis portfolios. Siemens' Calibre is especially prominent in physical verification, alongside its other design and verification products. A customer may use one vendor for implementation, another for physical signoff and specialized point tools elsewhere. The durable advantage is not simply having the most features; it is being qualified, correlated and embedded at a stage where a missed error can force another expensive design cycle.
+
+AI may strengthen the loop before it replaces the engineer
+
+AI-assisted EDA can search more design choices, prioritize likely causes of violations and automate long sequences of tool runs. On July 27, 2026, Synopsys announced autonomous debug and implementation-closure workflows developed with Microsoft and used in early evaluations with AMD. It reported a 25–40% reduction in debug cycle time for the debug workflow. On June 1, Cadence described an autonomous verification agent used with NVIDIA's simulation and formal engines and claimed more than 40-fold faster RTL validation cycles in the cited workflow.
+
+Those are meaningful signs of active deployment, but they are vendor-reported examples, not proof that autonomous design is broadly replacing engineering teams. The agents still depend on trusted simulation, formal, implementation and signoff engines. A fast agent that optimizes the wrong constraint or accepts a false pass can accelerate the wrong answer.
+
+More automation can increase tool runs and the value of connected data, while customers also gain productivity. Cloud compute, internal tools, open-source components and vendor competition limit supplier capture.
+
+The biggest takeaway is that chip complexity does not create software power merely because designs contain more transistors. It creates power where a tool helps many interacting constraints converge, earns manufacturing trust and becomes part of the customer's accumulated workflow. AI is changing how that loop is operated, but the underlying checkpoint remains evidence that the complete design is correct and buildable.
+
+Sources
+
+Synopsys, What Is Electronic Design Automation? — design, verification and manufacturing flow: https://www.synopsys.com/glossary/what-is-electronic-design-automation.html
+
+TSMC, 2026 Open Innovation Platform Ecosystem Forum — foundry-qualified tools, IP and design enablement for advanced nodes and 3D integration: https://www.tsmc.com/static/english/campaign/oip2026/index.html
+
+Synopsys, July 27, 2026 — autonomous debug and implementation-closure workflows; reported early-evaluation cycle-time results: https://news.synopsys.com/2026-07-27-Synopsys-Advances-Agentic-AI-Chip-Design-with-AMD-and-Microsoft
+
+Cadence, June 1, 2026 — autonomous verification-agent announcement and vendor-reported NVIDIA workflow results: https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-unveils-industrys-first-fully-autonomous-virtual.html
+
+Siemens, Calibre physical verification — design-rule checking and signoff workflow context: https://eda.sw.siemens.com/en-US/ic/calibre-design/
+
+Next lesson
+
+Lesson 088: Processor IP — Why an Instruction Set Is Not the Whole Product
+

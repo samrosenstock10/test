@@ -1,0 +1,2 @@
+We will separate instruction-set architecture from licensed processor cores, software compatibility and custom implementation to see where Arm and alternative IP models create leverage.`,
+} satisfies Lesson;

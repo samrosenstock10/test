@@ -1,0 +1,43 @@
+import type { Lesson } from "./lessons";
+
+export const lesson087 = {
+  number: 87,
+  module: "Module 13: Design Software, IP & System Enablers",
+  title: "EDA — Why Chip Complexity Creates Software Control Points",
+  date: "2026-11-01",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 082: An accelerator ecosystem turns possible hardware performance into dependable output through software compatibility and operational trust.
+
+Lesson 083: A scale-up domain should be only large enough to keep costly communication local without wasting power, ports or flexibility.
+
+Lesson 084: Faster electrical links lose reach because higher data rates leave less signal margin for copper loss, noise and reflections.
+
+Lesson 085: Scale-out fabric performance depends on feedback among paths, queues, congestion signals and endpoint sending rates.
+
+Lesson 086: Optical links move data onto light but shift difficulty into lasers, photonics, packaging, alignment and test.
+
+EDA is a convergence machine
+
+Imagine a team has described a new AI chip in register-transfer level code, or RTL: a functional description of registers, arithmetic and data movement. The description may be logically correct, yet the chip still has to fit on a die, meet its clock target, stay within a power budget and obey thousands of manufacturing rules.
+
+Electronic design automation, or EDA, is the software system that turns this intent into a manufacturable layout and repeatedly tests whether the result still works. Lesson 062 introduced that flow. The deeper point today is that EDA is not a one-way converter. It is a convergence loop.
+
+A change that improves one result can damage another
+
+Synthesis translates RTL into a network of logic gates. Physical-design tools decide where cells, memories and other blocks sit, then route the wires between them. Analysis tools estimate whether signals arrive on time, power reaches every region, heat remains manageable and the layout follows the foundry's geometric rules.
+
+These goals interact. Moving two blocks closer can shorten a critical wire, but crowding may make other wires longer. A larger driver can improve timing while consuming more power and area. Extra power connections can reduce voltage drop while taking routing space. The tools therefore propose an implementation, analyze it, expose violations and revise it until the design closes.
+
+“Closure” means every required check is inside its allowed limit at the same time. Passing timing while failing power integrity is not closure. Passing on a typical model while failing a required temperature, voltage or manufacturing corner is not closure either.
+
+Verification asks whether the implementation is the intended chip
+
+Functional verification runs beside physical implementation. Simulation exercises chosen scenarios. Formal verification uses mathematical reasoning to prove defined properties or equivalence between representations. Emulation maps a large design onto specialized hardware so teams can run much more software before silicon exists.
+
+No single method covers every possible state cheaply, so teams combine tests, coverage, proofs and emulation. Their scripts, testbenches, constraint files and knowledge of meaningful warnings become an accumulated operating system around the tools.
+
+Signoff creates a trusted checkpoint
+
+The foundry publishes process-specific models and rule decks that describe what its manufacturing process can build. EDA vendors qualify tools against those requirements, while chip designers validate their own flow. Near tapeout, signoff tools perform the accepted final timing, power, signal-integrity and physical-verification checks.
+

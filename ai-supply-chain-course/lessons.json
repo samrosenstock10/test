@@ -936,7 +936,19 @@
         "lessons/086-02.tsfrag",
         "lessons/086-03.tsfrag"
       ]
+    },
+    {
+      "number": 87,
+      "module": "Module 13: Design Software, IP & System Enablers",
+      "title": "EDA — Why Chip Complexity Creates Software Control Points",
+      "date": "2026-11-01",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/087-01.tsfrag",
+        "lessons/087-02.tsfrag",
+        "lessons/087-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-31T12:11:39.786Z"
+  "updatedAt": "2026-11-01T13:01:42.196Z"
 }
