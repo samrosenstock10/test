@@ -266,7 +266,14 @@
       "title": "Optical Links — When Lasers and Packaging Replace Copper",
       "bodySha256": "286dc031a1c78bcc06fcb6d6b7a5e1b72b527655042556c8cc2ca77f83b5b2dc",
       "body": "Optical links carry data by encoding electrical bits onto light, moving the hardest part of the connection from copper loss into lasers, photonic devices, packaging and test. A traditional pluggable module keeps the optics replaceable at the switch faceplate, but it requires long electrical traces and power-hungry conversion electronics for every port. Silicon photonics can integrate waveguides, modulators and other optical functions on one chip, yet it still depends on external light sources, precise fiber alignment and difficult packaging. Linear optics removes much of the module's digital signal processing to save power and latency, but the host electronics, optical module and channel must be controlled more tightly. Co-packaged optics moves optical engines beside the switch or compute chip, shortening the electrical path and increasing bandwidth density. That closer integration creates new manufacturing and operating risks because fiber attachment, heat, yield, testing and repair become tied to an expensive package. The core economic choice is where to place optical conversion so the system saves enough power and bandwidth without giving up too much serviceability, supplier choice or manufacturing yield."
+    },
+    {
+      "number": 87,
+      "date": "2026-11-01",
+      "title": "EDA — Why Chip Complexity Creates Software Control Points",
+      "bodySha256": "9b6feb591669256e84ec7f564d58136701b6e44c7dba425a9e2dd4a6cfe4df96",
+      "body": "Electronic design automation turns a chip description into a physical layout and repeatedly balances timing, power, area and manufacturing rules. The design reaches closure only when all required limits are satisfied at the same time, because improving one result can damage another. Verification combines simulation, formal proofs and hardware emulation to test whether the implementation still behaves like the intended chip. Foundry-qualified rule decks and trusted signoff tools create important checkpoints before tapeout. Switching tools can be costly because a design team also depends on its scripts, libraries, testbenches, learned warnings and confidence that the new flow finds the same problems. Synopsys, Cadence and Siemens compete across overlapping parts of the workflow, with the strongest control points appearing where tools are qualified and deeply embedded. New AI agents can search design choices and automate debugging faster, but current performance claims are mainly vendor-reported examples and the agents still depend on trusted analysis engines. Rising chip complexity can increase the value and use of EDA software, while internal tools, open-source components and vendor competition still limit how much of that value one supplier captures."
     }
   ],
-  "updatedAt": "2026-10-29T12:13:15.000Z"
+  "updatedAt": "2026-11-01T13:03:34.318Z"
 }
