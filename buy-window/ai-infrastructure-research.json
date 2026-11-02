@@ -1910,6 +1910,35 @@
       "freshness": "undercovered-power-baseline-published-20260811",
       "itemId": "ocp-800vdc-power-distribution-20260811",
       "primarySourceUrl": "https://www.opencompute.org/news/powering-the-next-era-of-ai-how-google-microsoft-and-nvidia-are-standardizing-and-accelerating-the-industry-transition-to-lvdc/"
+    },
+    {
+      "id": "expert-20261102-semianalysis-datacenter-permitting-risk",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "Permitting risk shifts from a largely committed 2027 buildout to the 2028 pipeline",
+      "sourceTitle": "The Datacenter Backlash Goes Bipartisan: Next Week's Midterms and the 2028 Buildout",
+      "url": "https://newsletter.semianalysis.com/p/the-datacenter-backlash-goes-bipartisan",
+      "speaker": "Maya Barkin, Wayne Ma, Reyk Knuhtsen, Jeremie Eliahou Ontiveros and Dylan Patel",
+      "role": "SemiAnalysis research team",
+      "publishedDate": "2026-11-01",
+      "observedAt": "2026-11-02T13:36:05Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis-datacenter-buildout-model",
+      "summary": "SemiAnalysis argues that roughly three-quarters of 33.8 GW due across its top 20 U.S. states for 2027 is already under construction, while its 62.2 GW 2028 U.S. pipeline remains materially exposed to state permitting freezes and stricter grid, water and community conditions.",
+      "claim": "The public article says 13 major 2028 states account for 43.5 GW, Texas represents close to 30% of U.S. 2028 additions, and a prolonged Texas TCEQ permit freeze is the largest single risk to the national buildout forecast. It distinguishes outright pauses from conditions that developers may satisfy by funding grid upgrades, changing cooling designs or negotiating community agreements.",
+      "interpretation": "Our inference: near-term 2027 infrastructure demand is relatively de-risked by construction progress, but 2028 volume and timing are increasingly policy- and permit-sensitive. This strengthens deployment-risk monitoring for power, cooling and construction suppliers without establishing a company winner, realized revenue or durable margin capture.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "countercase": "The capacity figures and project-stage classifications come from SemiAnalysis's proprietary model and were not independently audited. Construction can still slip, while permits may reopen quickly; conversely, nominally manageable conditions can raise costs and delay projects more than modeled. The public portion does not identify supplier-specific exposure or economics.",
+      "nextTest": "Track the Texas TCEQ and ERCOT decisions, Oregon permit timing, state-election outcomes, projects moving from planned to construction and commissioned MW, and whether supplier backlogs, revenue, margins and cash conversion match the 2027/2028 capacity path.",
+      "evidenceType": "specialist-analyst-capacity-and-policy-forecast",
+      "status": "evidence",
+      "location": "Public portion of the November 1 SemiAnalysis article through the paid cutoff.",
+      "incentives": "SemiAnalysis sells proprietary datacenter, industrials, energy and capital-markets research tied to the forecast.",
+      "verification": "Read the attributable public article portion and official archive listing. The underlying project database, company exposure table and full capacity model were not independently reproduced.",
+      "freshness": "missed-sunday-cycle-repair",
+      "itemId": "semianalysis-datacenter-permitting-risk-20261101"
     }
   ],
   "evidence": [
@@ -4395,6 +4424,26 @@
       "counterTickers": [],
       "sourceObservationId": "expert-20261030-ocp-800vdc-standardization",
       "corroborationNote": "This evidence row and linked observation represent the same OCP consortium source and are not independent corroboration."
+    },
+    {
+      "id": "20261102-semianalysis-datacenter-permitting-risk",
+      "title": "Permitting risk shifts from a largely committed 2027 buildout to the 2028 pipeline",
+      "url": "https://newsletter.semianalysis.com/p/the-datacenter-backlash-goes-bipartisan",
+      "kind": "specialist-analyst-capacity-and-policy-forecast",
+      "independenceGroup": "semianalysis-datacenter-buildout-model",
+      "publishedDate": "2026-11-01",
+      "observedAt": "2026-11-02T13:36:05Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "SemiAnalysis argues that roughly three-quarters of 33.8 GW due across its top 20 U.S. states for 2027 is already under construction, while its 62.2 GW 2028 U.S. pipeline remains materially exposed to state permitting freezes and stricter grid, water and community conditions.",
+      "claim": "The public article says 13 major 2028 states account for 43.5 GW, Texas represents close to 30% of U.S. 2028 additions, and a prolonged Texas TCEQ permit freeze is the largest single risk to the national buildout forecast. It distinguishes outright pauses from conditions that developers may satisfy by funding grid upgrades, changing cooling designs or negotiating community agreements.",
+      "interpretation": "Our inference: near-term 2027 infrastructure demand is relatively de-risked by construction progress, but 2028 volume and timing are increasingly policy- and permit-sensitive. This strengthens deployment-risk monitoring for power, cooling and construction suppliers without establishing a company winner, realized revenue or durable margin capture.",
+      "verification": "Read the attributable public article portion and official archive listing. The underlying project database, company exposure table and full capacity model were not independently reproduced.",
+      "countercase": "The capacity figures and project-stage classifications come from SemiAnalysis's proprietary model and were not independently audited. Construction can still slip, while permits may reopen quickly; conversely, nominally manageable conditions can raise costs and delay projects more than modeled. The public portion does not identify supplier-specific exposure or economics.",
+      "nextTest": "Track the Texas TCEQ and ERCOT decisions, Oregon permit timing, state-election outcomes, projects moving from planned to construction and commissioned MW, and whether supplier backlogs, revenue, margins and cash conversion match the 2027/2028 capacity path.",
+      "beneficiaryTickers": [],
+      "sourceObservationId": "expert-20261102-semianalysis-datacenter-permitting-risk",
+      "corroborationNote": "This record and the linked observation are two representations of the same SemiAnalysis-originated item and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -41423,22 +41472,18 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-11-01T14:39:01.561Z",
-    "kind": "expert-investor-scan",
+    "asOf": "2026-11-02T13:43:03Z",
+    "kind": "semianalysis-source-repair",
     "completedChannels": [
-      "a16z"
+      "semianalysis"
     ],
-    "partialChannels": [
-      "exponential-view"
-    ],
+    "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "No new qualifying post-cutoff a16z infrastructure thesis was found; unchanged items were not repeated.",
-      "Exponential View's November 1 public weekly summary was reviewed only at the available public-summary level and did not provide decision-grade public-company economics.",
-      "The newly resolved Altair satellite launch claim was reviewed in the private Project handoff and skipped because it supplied no transferable AI-infrastructure supply, component-demand or value-capture mechanism.",
-      "The scheduled weekly review covered all 18 scored companies and the unscored Amazon challenger; no score, rank, thesis, core-eligibility or return-assumption change was justified.",
-      "No decision-relevant valuation refresh was required; actual last-verified dates were preserved."
+      "The November 1 article was observed during a missed Sunday-cycle repair on November 2; its original publication date is preserved.",
+      "The public article portion exposes capacity and permitting figures, but the proprietary project database, company exposure table and full model were not independently reproduced.",
+      "A bounded Gmail search found no matching direct or forwarded SemiAnalysis/Dylan Patel source email after October 31."
     ]
   },
-  "updatedAt": "2026-11-01T14:40:31Z"
+  "updatedAt": "2026-11-02T13:43:03Z"
 }
