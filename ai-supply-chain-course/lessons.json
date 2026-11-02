@@ -948,7 +948,19 @@
         "lessons/087-02.tsfrag",
         "lessons/087-03.tsfrag"
       ]
+    },
+    {
+      "number": 88,
+      "module": "Module 13: Design Software, IP & System Enablers",
+      "title": "Processor IP — Why an Instruction Set Is Not the Whole Product",
+      "date": "2026-11-02",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/088-01.tsfrag",
+        "lessons/088-02.tsfrag",
+        "lessons/088-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-01T13:01:42.196Z"
+  "updatedAt": "2026-11-02T13:06:30.000Z"
 }
