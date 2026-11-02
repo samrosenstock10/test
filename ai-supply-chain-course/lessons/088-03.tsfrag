@@ -1,0 +1,2 @@
+We will trace how power conversion, sensing and signal conditioning make digital compute usable, and why their manufacturing and economics differ from leading-edge logic.`,
+} satisfies Lesson;
