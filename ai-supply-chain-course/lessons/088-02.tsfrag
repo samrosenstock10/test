@@ -1,0 +1,34 @@
+It does not make processor development free. Someone must still create or license the core, prove that it follows the specification, build compilers and operating-system support, validate peripherals, debug firmware and maintain compatibility. Profiles such as RVA23 define common feature sets so software developers can rely on more than a minimal base ISA. That standardization improves portability but also reveals the central tension: freedom to vary hardware is valuable, while software needs predictable targets.
+
+The real competition is therefore not “paid ISA versus free ISA.” It is between complete paths to a dependable product. Arm offers mature cores, tools, system standards and an enormous installed software base. RISC-V offers an open architectural foundation and more freedom over implementation, supported by a growing ecosystem of core vendors and internal designs. In both cases, the winning implementation must still meet performance, security, verification and software requirements.
+
+Software compatibility is an economic asset
+
+A processor with excellent silicon but weak software support may require customers to port compilers, libraries, operating systems and applications. Those costs can exceed the apparent saving in IP fees. Compatibility also affects hardware teams before tapeout: they need models, development boards and stable toolchains so software can be ready when silicon arrives.
+
+This creates a two-sided control point. More deployed processors attract more software work; better software makes the architecture safer for the next chip designer. Customers can still switch architectures, especially when software is portable or cloud operators control their full stack, but migration carries testing and operational risk.
+
+The economics follow the layer of responsibility
+
+An IP supplier can earn upfront license fees, recurring royalties on shipped chips, subscriptions, support revenue or some combination. The customer avoids part of the fixed cost and schedule risk of designing everything internally. In exchange, it pays for each design or shipment and may become dependent on the supplier's roadmap.
+
+Value capture is strongest when the licensed block saves scarce engineering time, arrives with trusted verification and unlocks a software ecosystem. It is weaker when customers can substitute internal designs or competing IP without disrupting schedules and compatibility.
+
+The biggest takeaway is that an ISA defines what software may expect, while processor IP determines how that contract becomes working hardware. The commercial control point can move from the architecture to the core, subsystem, validation flow or software ecosystem. To judge Arm, RISC-V or any alternative, ask not only who owns the instruction set, but who removes the most risk between an architectural idea and a qualified product.
+
+Sources
+
+Arm, CPU Architecture — distinction between architecture and microarchitecture, and Arm implementation options: https://www.arm.com/architecture/cpu
+
+Arm, Licensing Model Options — processor IP, tools and licensing packages: https://www.arm.com/products/licensing
+
+Arm, September 8, 2026 — Neoverse CSS N4 announcement and stated subsystem capabilities: https://newsroom.arm.com/news/arm-agi-cpu-neoverse-css-n4-agentic-ai
+
+Arm, What Is Neoverse? — cores versus pre-integrated compute subsystems: https://newsroom.arm.com/blog/what-is-arm-neoverse
+
+RISC-V International, Ratified Specifications Library — open-standard ISA, ratified specifications and application profiles: https://docs.riscv.org/
+
+Next lesson
+
+Lesson 089: Analog and Power Devices — Why Advanced AI Still Depends on Mature Semiconductor Layers
+
