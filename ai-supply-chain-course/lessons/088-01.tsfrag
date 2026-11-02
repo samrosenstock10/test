@@ -1,0 +1,39 @@
+import type { Lesson } from "./lessons";
+
+export const lesson088 = {
+  number: 88,
+  module: "Module 13: Design Software, IP & System Enablers",
+  title: "Processor IP — Why an Instruction Set Is Not the Whole Product",
+  date: "2026-11-02",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 083: A scale-up domain should be only large enough to keep costly communication local without wasting power, ports or flexibility.
+
+Lesson 084: Faster electrical links lose reach because higher data rates leave less signal margin for copper loss, noise and reflections.
+
+Lesson 085: Scale-out fabric performance depends on feedback among paths, queues, congestion signals and endpoint sending rates.
+
+Lesson 086: Optical links move data onto light but shift difficulty into lasers, photonics, packaging, alignment and test.
+
+Lesson 087: EDA creates leverage where many design constraints must converge and a trusted tool becomes embedded in manufacturing signoff.
+
+The instruction set is a contract, not a finished processor
+
+A processor begins with an instruction-set architecture, or ISA: the contract that tells software which instructions exist, what registers mean, how memory behaves and how exceptions work. If two processors correctly implement the same ISA, compatible software can generally target both.
+
+But the ISA does not specify how fast either processor will run. That depends on the microarchitecture: pipelines, branch prediction, cache hierarchy, execution units, power controls and many other implementation choices. Two cores can speak the same software language while delivering very different performance, energy use and area.
+
+That distinction explains why an open or licensed ISA is not the same thing as a ready-to-manufacture CPU. A company still needs a core design, verification, physical implementation, memory and I/O interfaces, security features, software support and system validation.
+
+Licensing can stop at different layers
+
+Arm supplies several layers. An architecture license lets a customer build its own compliant microarchitecture. A processor-IP license provides a designed core, such as a Cortex or Neoverse core, that the customer integrates into a chip. A compute subsystem goes further by combining cores with interconnect, memory-system and other system IP in a pre-integrated, validated foundation.
+
+Each step changes the make-or-buy boundary. Building a custom core can create more differentiation, but it requires a large team and years of verification and software work. Licensing a core reduces that burden but gives the customer less control over the internal design. Starting from a subsystem can shorten time to silicon further, while moving more of the platform definition toward the IP supplier.
+
+Arm's September 8, 2026 Neoverse CSS N4 announcement illustrates the direction. Arm described a configurable subsystem with up to 128 cores per die, LPDDR6 and PCIe Gen 7 support. Those are announced product capabilities, not evidence that every customer has qualified production silicon. The important structural point is that Arm is selling more of the integrated starting platform, not merely an instruction set.
+
+RISC-V changes the ISA boundary, not every other boundary
+
+RISC-V is an open-standard ISA maintained through public specifications. Companies can implement the ratified instructions without paying one company for the ISA itself, and they can add permitted extensions or design their own cores. That can reduce dependence on a proprietary architecture owner and make specialization easier.
+
