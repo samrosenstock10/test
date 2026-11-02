@@ -4444,6 +4444,30 @@
       "beneficiaryTickers": [],
       "sourceObservationId": "expert-20261102-semianalysis-datacenter-permitting-risk",
       "corroborationNote": "This record and the linked observation are two representations of the same SemiAnalysis-originated item and are not independent corroboration."
+    },
+    {
+      "id": "20261102-anthropic-s1-compute-economics",
+      "title": "Anthropic S-1 exposes rapid revenue growth alongside fixed long-duration compute commitments",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "kind": "company-regulatory-filing",
+      "independenceGroup": "anthropic-s1-20261026",
+      "publishedDate": "2026-10-26",
+      "observedAt": "2026-11-02T14:38:42Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "Anthropic's filed S-1 reports $16.286 billion of H1 2026 revenue and $3.9 billion of operating cash flow while disclosing at least $110 billion of Amazon compute commitments through 2036 and up to $120.5 billion of SpaceXAI compute commitments extending into 2029.",
+      "claim": "The filing reports $8.945 billion of H1 2026 compute and infrastructure expense, versus $16.286 billion of revenue. It says the Amazon commitment is payable regardless of usage with a shortfall true-up, while SpaceXAI capacity reaches roughly $3.1 billion per month once fully delivered and becomes cancelable on 90 days' notice only after specified non-cancelable periods.",
+      "interpretation": "Our inference: frontier-model demand has reached substantial commercial scale, but durable economics depend on utilization, pricing, customer concentration and cash conversion against unusually large fixed or quasi-fixed compute obligations. The filing validates demand intensity; it does not establish a public-equity winner or an attractive Anthropic entry price because the offer price and share count remain blank.",
+      "verification": "Read Anthropic's official SEC filing cover, financial statements, commitments and governance sections. Independently checked the reported H1 revenue, compute expense, operating cash flow, Amazon and SpaceXAI terms, and did not rely on the peer memo's secondary summaries for these figures.",
+      "countercase": "The S-1 is a point-in-time issuer filing before pricing. Revenue growth may not persist; strategic counterparties and non-cash accounting can distort headline results; contract terms can change; and supplier revenue does not by itself prove attractive returns for Anthropic or counterparties.",
+      "nextTest": "Read the pricing amendment and final prospectus; reconcile share count, fully diluted valuation, customer concentration, gross margin, compute utilization, contract commencement, cancellation exposure, capital intensity and free-cash-flow conversion before any allocation analysis.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "sourceFindingId": "F-2026-11-02-01",
+      "sourceFindingPath": "inbox/2026-11-02-anthropic-public-s1.md",
+      "sourceFindingBlobSha": "5844179fb805efd06e55f94593511a38dacbfff3",
+      "sourceFindingRevision": "0f21b704",
+      "provenanceNote": "Muse discovered the filing. ChatGPT independently verified the decision-relevant figures in the original SEC document; this row and the Muse memo are not independent corroboration."
     }
   ],
   "rankings": [
@@ -41472,18 +41496,19 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-11-02T13:43:03Z",
-    "kind": "semianalysis-source-repair",
+    "asOf": "2026-11-02T14:38:42Z",
+    "kind": "expert-investor-scan",
     "completedChannels": [
-      "semianalysis"
+      "a16z"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "The November 1 article was observed during a missed Sunday-cycle repair on November 2; its original publication date is preserved.",
-      "The public article portion exposes capacity and permitting figures, but the proprietary project database, company exposure table and full model were not independently reproduced.",
-      "A bounded Gmail search found no matching direct or forwarded SemiAnalysis/Dylan Patel source email after October 31."
+      "No new qualifying post-cutoff a16z infrastructure thesis surfaced; unchanged items and the completed engineering scan were not repeated.",
+      "The Project handoff's new GXO/Agility 2027 humanoid-deployment milestone was reviewed and skipped because it does not yet supply a transferable AI-infrastructure value-capture mechanism.",
+      "Anthropic's official S-1 figures were independently checked after a Muse exact-revision handoff; the filing and peer memo are not counted as independent corroboration.",
+      "The weekly company review remains current through November 1. No score, rank, thesis, Company Universe, valuation or allocation change was justified."
     ]
   },
-  "updatedAt": "2026-11-02T13:43:03Z"
+  "updatedAt": "2026-11-02T14:38:42Z"
 }
