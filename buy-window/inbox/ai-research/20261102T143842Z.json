@@ -41499,10 +41499,7 @@
     "asOf": "2026-11-02T14:38:42Z",
     "kind": "expert-investor-scan",
     "completedChannels": [
-      "a16z",
-      "project-tracker-d3",
-      "peer-dedupe",
-      "anthropic-sec-filing"
+      "a16z"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
