@@ -1,0 +1,28 @@
+On March 16, 2026, Texas Instruments announced an 800-volt DC reference architecture developed with NVIDIA. TI described two stages from the 800-volt bus to processor power: an isolated converter to 6 volts, followed by a multiphase converter below one volt. Infineon announced 800-volt gallium-nitride intermediate-bus reference designs on March 17 and a 24-kilowatt silicon-carbide battery-backup reference design on June 2.
+
+These releases show suppliers actively redesigning the power path for denser AI racks. They do not prove that 800-volt distribution is already standard across operating fleets. A reference design still needs customer engineering, safety review, qualification, manufacturing scale and service experience.
+
+Power delivery is also moving closer to the processor. Analog Devices' May 19 agreement to acquire Empower Semiconductor targeted integrated voltage regulators and silicon capacitors for high-density compute. ADI said Empower's silicon capacitors were in production while integrated-voltage-regulator programs were advancing with customers. That is company-reported evidence of different maturity levels, not proof of broad adoption.
+
+The economics come from content, design-in and reliability
+
+AI systems can require many power and analog components across the rack, server board and accelerator module. As rack power rises, the semiconductor content used for conversion, monitoring and protection can rise even if the underlying devices are not made at the leading edge.
+
+The market is less concentrated than EUV lithography. Analog Devices, Texas Instruments, Monolithic Power Systems, Infineon and others compete across overlapping products, while customers can qualify multiple suppliers. A device can still become sticky after it is designed into a board, because replacement requires electrical, thermal, firmware and reliability validation. But competition, alternative architectures and customer sourcing discipline limit pricing power.
+
+The biggest takeaway is that advanced digital compute makes power conversion more important, not less. The scarce capability is not simply manufacturing another mature-node chip. It is delivering efficient, fast and trusted control across the complete path from a high-voltage source to a sub-one-volt processor rail. New 800-volt and integrated-regulator designs may shift where value sits, but reference designs and customer programs must be separated from qualified volume deployment.
+
+Sources
+
+Texas Instruments, March 16, 2026 — announced 800 VDC architecture and reference designs with NVIDIA: https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia.html
+
+Infineon, Data Center Power Solutions — conversion stages, device roles and grid-to-core architecture: https://www.infineon.com/applications/ai-data-center/data-center-power-solutions
+
+Infineon, March 17 and June 2, 2026 — announced GaN intermediate-bus and SiC battery-backup reference designs: https://www.infineon.com/technology-news/2026/infpss202603-067 and https://www.infineon.com/technology-news/2026/infpss202606-093
+
+Analog Devices, May 19, 2026 — Empower acquisition agreement, silicon-capacitor production and reported IVR program status: https://www.analog.com/en/newsroom/press-releases/2026/5-19-2026-adi-to-acquire-empower-semiconductor.html
+
+Next lesson
+
+Lesson 090: Design IP and Interfaces — Why Reusable Blocks Can Become Hidden Control Points
+
