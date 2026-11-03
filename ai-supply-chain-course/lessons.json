@@ -960,7 +960,19 @@
         "lessons/088-02.tsfrag",
         "lessons/088-03.tsfrag"
       ]
+    },
+    {
+      "number": 89,
+      "module": "Module 13: Design Software, IP & System Enablers",
+      "title": "Analog and Power Devices — Why Advanced AI Still Depends on Mature Semiconductor Layers",
+      "date": "2026-11-03",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/089-01.tsfrag",
+        "lessons/089-02.tsfrag",
+        "lessons/089-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-02T13:06:30.000Z"
+  "updatedAt": "2026-11-03T12:13:00Z"
 }
