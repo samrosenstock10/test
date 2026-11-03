@@ -1,0 +1,41 @@
+import type { Lesson } from "./lessons";
+
+export const lesson089 = {
+  number: 89,
+  module: "Module 13: Design Software, IP & System Enablers",
+  title: "Analog and Power Devices — Why Advanced AI Still Depends on Mature Semiconductor Layers",
+  date: "2026-11-03",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 084: Faster electrical links lose reach because higher data rates leave less signal margin for copper loss, noise and reflections.
+
+Lesson 085: Scale-out fabric performance depends on feedback among paths, queues, congestion signals and endpoint sending rates.
+
+Lesson 086: Optical links move data onto light but shift difficulty into lasers, photonics, packaging, alignment and test.
+
+Lesson 087: EDA creates leverage where many design constraints must converge and a trusted tool becomes embedded in manufacturing signoff.
+
+Lesson 088: An instruction set is only the software contract; cores, subsystems, validation and software support turn it into a dependable processor product.
+
+A digital accelerator cannot use raw facility power
+
+A GPU performs digital logic, but it cannot accept electricity directly from a building or even from a rack bus. Its transistors need tightly controlled voltages, often below one volt, while the processor's total power can reach hundreds of watts. Supplying the same power at lower voltage requires much higher current.
+
+That creates a chain of conversions. Facility power becomes regulated DC. Rack and server stages reduce it to an intermediate bus. Point-of-load converters near the processor create the final low-voltage, high-current rails. Every stage loses some energy as heat, occupies physical space and must survive faults.
+
+The basic converter is a controlled energy-transfer machine
+
+A switching regulator repeatedly turns power transistors on and off. Inductors store energy in magnetic fields, capacitors smooth voltage, and a controller measures the output and adjusts the switching pattern. The control loop must respond when an accelerator suddenly moves from a light workload to heavy computation.
+
+If voltage droops too far during that transient, the processor can fail. If the power stages switch slowly, the rail may not recover in time. If they switch faster, electrical losses, heat and interference can rise. Designers therefore balance efficiency, response speed, component size, cooling and reliability rather than optimizing one number.
+
+Higher distribution voltage reduces current for the same power, which cuts resistive losses in cables and busbars. But the final conversion still has to deliver enormous current close to the chip. This is why power density and physical placement matter: a long path adds resistance and inductance precisely where voltage margin is smallest.
+
+Analog and power chips perform different jobs from logic
+
+Controllers, gate drivers, current sensors, hot-swap devices, protection circuits and power stages translate between real electrical conditions and digital system requirements. They measure continuous signals, regulate energy and isolate faults. Many are manufactured on mature or specialty processes because high voltage, precision, reliability and power handling matter more than packing the maximum number of tiny transistors into one area.
+
+The power switches can use silicon, gallium nitride or silicon carbide. Gallium nitride can switch efficiently at high frequency, which may shrink magnetic components. Silicon carbide is useful at higher voltage and power. Neither material wins every conversion stage; cost, voltage, thermal behavior, switching frequency and qualification determine the choice.
+
+The architecture is moving, but announcements are not deployment
+
