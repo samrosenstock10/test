@@ -1939,6 +1939,38 @@
       "verification": "Read the attributable public article portion and official archive listing. The underlying project database, company exposure table and full capacity model were not independently reproduced.",
       "freshness": "missed-sunday-cycle-repair",
       "itemId": "semianalysis-datacenter-permitting-risk-20261101"
+    },
+    {
+      "id": "expert-20261104-semianalysis-spacex-13gw",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "SpaceX’s construction pace raises the 2027 AI-cloud target while power remains a gating risk",
+      "sourceTitle": "Elon Is Doing It Again: SpaceX Will Be The World’s Biggest AI Cloud",
+      "url": "https://newsletter.semianalysis.com/p/elon-is-doing-it-again-spacex-will",
+      "speaker": "Reyk Knuhtsen, Jeremie Eliahou Ontiveros and Dylan Patel",
+      "role": "SemiAnalysis researchers",
+      "publishedDate": "2026-11-03",
+      "observedAt": "2026-11-04T12:35:03Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis-spacex-20261103",
+      "summary": "SemiAnalysis says SpaceX has roughly 3.6GW of AI-datacenter capacity under construction, has identified more than 9GW and now targets about 13GW in 2027, strengthening execution evidence while leaving power, permitting, utilization and economics unresolved.",
+      "claim": "The public report says Colossus and Starbase sites moved from clearing to vertical construction unusually quickly, Colossus 2 has 5.9GWh of BESS being installed, and multiple sites could support the expanded target. It also identifies a possible roughly 300MW power shortfall at Colossus 2 and treats a TeraFab datacenter as medium-high-confidence rather than confirmed.",
+      "interpretation": "Our inference: SpaceX’s vertically integrated construction and power playbook may be a real speed advantage and raises the probability of exceptional AI-capacity growth. The evidence does not establish commissioned load, customer utilization, durable pricing, supplier value capture or attractive per-share returns, so it strengthens the source thesis without changing the 75-point investment ranking.",
+      "beneficiaryTickers": [
+        "SPCX"
+      ],
+      "counterTickers": [],
+      "countercase": "The capacity and construction classifications rely on SemiAnalysis’s proprietary model, imagery and selected filings rather than an audited site inventory. Construction can slip before commissioning; power and permits remain gating; internal versus external use is unclear; and rapid capex can destroy equity value even if gigawatts are delivered.",
+      "nextTest": "Track commissioned and accepted IT MW by site, grid and behind-the-meter power, BESS reliability, named third-party offtake, utilization, pricing, capex per MW and consolidated free-cash-flow conversion; confirm whether TeraFab actually includes a rentable datacenter.",
+      "evidenceType": "specialist-analyst-capacity-and-site-forecast",
+      "status": "evidence",
+      "location": "Public portion of the November 3, 2026 SemiAnalysis report through the paid cutoff.",
+      "incentives": "SemiAnalysis sells proprietary datacenter, energy and capital-markets research tied to the forecast.",
+      "verification": "Read the official article and archive. Preserved the authors’ site and capacity estimates, uncertainty around TeraFab, and stated power-balance risk; did not independently reproduce the proprietary datacenter model or promote construction into commissioned capacity.",
+      "freshness": "missed-cycle-repair-published-20261103",
+      "itemId": "semianalysis-spacex-13gw-20261103",
+      "primarySourceUrl": "https://newsletter.semianalysis.com/p/elon-is-doing-it-again-spacex-will"
     }
   ],
   "evidence": [
@@ -4468,6 +4500,29 @@
       "sourceFindingBlobSha": "5844179fb805efd06e55f94593511a38dacbfff3",
       "sourceFindingRevision": "0f21b704",
       "provenanceNote": "Muse discovered the filing. ChatGPT independently verified the decision-relevant figures in the original SEC document; this row and the Muse memo are not independent corroboration."
+    },
+    {
+      "id": "20261104-semianalysis-spacex-13gw",
+      "title": "SpaceX construction evidence raises the 2027 AI-cloud target while exposing power risk",
+      "url": "https://newsletter.semianalysis.com/p/elon-is-doing-it-again-spacex-will",
+      "kind": "specialist-analyst-capacity-and-site-forecast",
+      "independenceGroup": "semianalysis-spacex-20261103",
+      "publishedDate": "2026-11-03",
+      "observedAt": "2026-11-04T12:35:03Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "SemiAnalysis says SpaceX has roughly 3.6GW of AI-datacenter capacity under construction, has identified more than 9GW and now targets about 13GW in 2027, strengthening execution evidence while leaving power, permitting, utilization and economics unresolved.",
+      "claim": "The public report says Colossus and Starbase sites moved from clearing to vertical construction unusually quickly, Colossus 2 has 5.9GWh of BESS being installed, and multiple sites could support the expanded target. It also identifies a possible roughly 300MW power shortfall at Colossus 2 and treats a TeraFab datacenter as medium-high-confidence rather than confirmed.",
+      "interpretation": "Our inference: SpaceX’s vertically integrated construction and power playbook may be a real speed advantage and raises the probability of exceptional AI-capacity growth. The evidence does not establish commissioned load, customer utilization, durable pricing, supplier value capture or attractive per-share returns, so it strengthens the source thesis without changing the 75-point investment ranking.",
+      "verification": "Read the official article and archive. Preserved the authors’ site and capacity estimates, uncertainty around TeraFab, and stated power-balance risk; did not independently reproduce the proprietary datacenter model or promote construction into commissioned capacity.",
+      "countercase": "The capacity and construction classifications rely on SemiAnalysis’s proprietary model, imagery and selected filings rather than an audited site inventory. Construction can slip before commissioning; power and permits remain gating; internal versus external use is unclear; and rapid capex can destroy equity value even if gigawatts are delivered.",
+      "nextTest": "Track commissioned and accepted IT MW by site, grid and behind-the-meter power, BESS reliability, named third-party offtake, utilization, pricing, capex per MW and consolidated free-cash-flow conversion; confirm whether TeraFab actually includes a rentable datacenter.",
+      "beneficiaryTickers": [
+        "SPCX"
+      ],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261104-semianalysis-spacex-13gw",
+      "corroborationNote": "This evidence row and the linked observation represent the same SemiAnalysis-originated report and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -9456,6 +9511,15 @@
           "kind": "issuer-evidence",
           "url": "https://cursor.com/blog/spacex-model-training",
           "evidenceId": "dive-20260921-spcx-cursor"
+        },
+        {
+          "id": "expert-20261104-semianalysis-spacex-13gw",
+          "sourceId": "semianalysis",
+          "kind": "source-thesis",
+          "sourceCompany": "SpaceX / SPCX",
+          "publishedDate": "2026-11-03",
+          "url": "https://newsletter.semianalysis.com/p/elon-is-doing-it-again-spacex-will",
+          "evidenceId": "20261104-semianalysis-spacex-13gw"
         }
       ],
       "aliases": [],
@@ -41496,19 +41560,19 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-11-02T14:38:42Z",
-    "kind": "expert-investor-scan",
+    "asOf": "2026-11-04T12:35:03Z",
+    "kind": "semianalysis-daily-scan",
     "completedChannels": [
-      "a16z"
+      "semianalysis"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "No new qualifying post-cutoff a16z infrastructure thesis surfaced; unchanged items and the completed engineering scan were not repeated.",
-      "The Project handoff's new GXO/Agility 2027 humanoid-deployment milestone was reviewed and skipped because it does not yet supply a transferable AI-infrastructure value-capture mechanism.",
-      "Anthropic's official S-1 figures were independently checked after a Muse exact-revision handoff; the filing and peer memo are not counted as independent corroboration.",
-      "The weekly company review remains current through November 1. No score, rank, thesis, Company Universe, valuation or allocation change was justified."
+      "The November 3 SpaceX report was assigned to the missed November 3 source cycle; the current November 4 cycle was separately completed with no newer qualifying infrastructure item.",
+      "Capacity and construction-stage figures rely on SemiAnalysis’s proprietary model and site observations; they were not independently audited and were not promoted to commissioned load or realized economics.",
+      "The November 3 GDPx article and podcast were screened as model-evaluation research rather than AI-infrastructure supply, deployment or value-capture evidence.",
+      "No matching direct or forwarded SemiAnalysis/Dylan Patel email appeared after the prior cutoff. The November 1 weekly company review remains current through November 8; no score, rank, valuation, allocation or trade change was justified."
     ]
   },
-  "updatedAt": "2026-11-02T14:38:42Z"
+  "updatedAt": "2026-11-04T12:36:08Z"
 }
