@@ -1,7 +1,18 @@
 {
-  "updatedAt": "2026-10-29T12:37:21Z",
+  "updatedAt": "2026-11-04T12:38:52Z",
   "sourceSheet": "https://docs.google.com/spreadsheets/d/1yjmaEOFu5bE1FZkgDrrpKFI6ZvL6QDO9_YRZDfKkKjk/edit",
   "rows": [
+    {
+      "loggedDate": "2026-11-04",
+      "sourceDate": "2026-11-03",
+      "company": "SpaceX / SPCX",
+      "bullishness": 5,
+      "summary": "SemiAnalysis’s maximum-conviction SpaceX AI-cloud thesis strengthens because it now sees roughly 3.6GW under construction, more than 9GW of identifiable capacity and a company target near 13GW for 2027, while power delivery, permitting, utilization and consolidated cash economics remain unproven.",
+      "sourceUrls": [
+        "https://newsletter.semianalysis.com/p/elon-is-doing-it-again-spacex-will",
+        "https://newsletter.semianalysis.com/p/spacex-10gw-in-2027-why-its-real"
+      ]
+    },
     {
       "loggedDate": "2026-10-29",
       "sourceDate": "2026-10-23",
@@ -222,16 +233,6 @@
       "summary": "Cerebras materially strengthens its ultra-low-latency inference proposition with CS-4, nearly doubling per-user token speed at roughly similar customer TCO while improving rack manufacturability and enabling heterogeneous disaggregated inference.",
       "sourceUrls": [
         "https://newsletter.semianalysis.com/p/cerebrass-next-generation-cs-4-fast"
-      ]
-    },
-    {
-      "loggedDate": "2026-08-16",
-      "sourceDate": "2026-08-07",
-      "company": "SpaceX / SPCX",
-      "bullishness": 5,
-      "summary": "SemiAnalysis still believes SpaceX can scale AI compute toward 10GW by year-end 2027 and monetize scarce capacity at exceptional pricing, but its current published base case points to roughly $300B of ARR rather than the $500B figure previously captured in the ledger.",
-      "sourceUrls": [
-        "https://newsletter.semianalysis.com/p/spacex-10gw-in-2027-why-its-real"
       ]
     },
     {
