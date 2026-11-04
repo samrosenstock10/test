@@ -1,0 +1,39 @@
+import type { Lesson } from "./lessons";
+
+export const lesson090 = {
+  number: 90,
+  module: "Module 13: Design Software, IP & System Enablers",
+  title: "Design IP and Interfaces — Why Reusable Blocks Can Become Hidden Control Points",
+  date: "2026-11-04",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 085: Scale-out fabrics work as feedback systems in which routing, queues and congestion signals determine whether headline bandwidth becomes useful throughput.
+
+Lesson 086: Optical links move data onto light but shift difficulty into lasers, photonics, packaging, alignment and test.
+
+Lesson 087: EDA becomes a control point because complex designs must repeatedly converge through trusted implementation, verification and foundry signoff.
+
+Lesson 088: An instruction set is only the software contract; cores, subsystems, validation and software support turn it into a dependable processor product.
+
+Lesson 089: Advanced digital compute still depends on analog and power devices that convert, regulate, measure and protect electricity from the rack bus to sub-one-volt chip rails.
+
+A reusable interface is more than a block of logic
+
+A chip team can design its own compute engine yet still need that engine to communicate with memory, storage, networking and other chips. Reusable design intellectual property, or IP, lets the team license a proven implementation of one of those functions instead of rebuilding it for every product.
+
+Consider PCI Express, or PCIe, the standard interface used to connect processors with accelerators, network cards and storage. A complete PCIe implementation has several layers. The controller creates and interprets protocol packets, orders transactions and handles errors. The physical layer, usually called the PHY, converts digital data into carefully timed electrical signals and recovers those signals at the other end. Security, clocking, reset and test functions surround them. Verification IP generates legal and hostile traffic to check whether the implementation follows the standard.
+
+The standard defines the conversation. The licensed IP supplies machinery that can reliably hold that conversation.
+
+Why standards do not make implementations interchangeable
+
+PCIe compatibility gives buyers a common external contract, but the internal block still has to fit a particular chip. A digital controller may be delivered as configurable logic that the customer's EDA flow can synthesize. A high-speed PHY is more physically specific: its analog circuits, layout and electrical behavior depend on the foundry process, voltage, package and channel.
+
+That creates an important distinction between soft IP and hard IP. Soft IP is relatively portable design code that can be reimplemented for a target process. Hard IP is a characterized physical implementation with tighter process dependence. Porting a controller is not the same job as requalifying an analog PHY at a new node.
+
+Even a silicon-proven block does not prove the customer's finished chip. The controller and PHY must connect correctly to clocks, power domains, firmware, security logic and the package. The full channel includes board traces, connectors or optical conversion outside the die. Integration therefore combines reusable evidence with new system-specific risk.
+
+A current example shows the maturity ladder
+
+PCI-SIG released the PCIe 7.0 specification in June 2025 at 128 gigatransfers per second and listed Revision 7.1 on September 17, 2026. The standard is real, but compliance programs and products mature after the base specification.
+

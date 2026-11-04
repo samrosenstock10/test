@@ -972,7 +972,19 @@
         "lessons/089-02.tsfrag",
         "lessons/089-03.tsfrag"
       ]
+    },
+    {
+      "number": 90,
+      "module": "Module 13: Design Software, IP & System Enablers",
+      "title": "Design IP and Interfaces — Why Reusable Blocks Can Become Hidden Control Points",
+      "date": "2026-11-04",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/090-01.tsfrag",
+        "lessons/090-02.tsfrag",
+        "lessons/090-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-03T12:13:00Z"
+  "updatedAt": "2026-11-04T12:06:00Z"
 }

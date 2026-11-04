@@ -1,0 +1,30 @@
+Cadence demonstrated PCIe 7.0 transmitter and receiver IP operating at 128 gigatransfers per second over a non-retimed optical connection on July 3, 2026. Synopsys markets a complete PCIe 7.0 set spanning controller, PHY, security and verification IP. These are evidence that major IP suppliers are building the implementation stack. A standards-body release, a supplier demonstration and a customer chip in qualified volume production are still three different milestones.
+
+The same pattern appears inside advanced packages. The UCIe standard defines die-to-die communication among chiplets, while suppliers and chip teams still need physical implementations, package design, test, manageability and interoperability evidence. Open standards can expand the market without eliminating implementation work.
+
+Where the business control point forms
+
+Reusable IP spreads engineering cost across many customer designs. A supplier can earn project licenses, broader subscriptions, maintenance and support revenue, while customers may avoid years of specialist design and verification. The economic value is not the number of gates in the block. It is schedule saved and respin risk removed.
+
+A design win can become sticky. Replacing an interface block can change timing, power, firmware, physical layout and verification results, forcing the customer to repeat expensive work. Foundry-qualified versions, accumulated bug fixes and engineers familiar with the supplier's tools add switching friction.
+
+But the moat has limits. PCIe and UCIe are open industry standards, multiple vendors offer competing IP, and the largest chip companies can build important blocks internally. Customers can also negotiate portfolio licenses or choose different suppliers for the controller, PHY and verification environment. A supplier captures durable value only when its implementation evidence, process coverage and support remove more risk than alternatives.
+
+The biggest takeaway is that a standard opens an ecosystem, while dependable IP compresses the path from the standard to working silicon. The hidden control point is often the qualified boundary between protocol, analog signaling, foundry process and customer integration—not ownership of the standard itself.
+
+Sources
+
+PCI-SIG, Specifications — PCIe 7.0 release and current Revision 7.1 dated September 17, 2026: https://pcisig.com/specifications
+
+PCI-SIG, PCIe 7.0 FAQ — 128 GT/s signaling, x16 bandwidth and compliance-program timing: https://pcisig.com/faq?field_category_value%5B%5D=pci_express_7.0&keys=
+
+Cadence, July 3, 2026 — PCIe 7.0 electrical and optical demonstration at 128 GT/s: https://www.cadence.com/en_US/home/resources/videos/tools/silicon-solutions/cadence-ip-for-pcie-70-128-gts-in-3nm---electrical-and-optical.html
+
+Synopsys, June 10, 2024 — announced PCIe 7.0 controller, PHY, security and verification IP: https://news.synopsys.com/2024-06-10-Synopsys-Accelerates-Trillion-Parameter-HPC-AI-Supercomputing-Chip-Designs-with-Industrys-First-PCIe-7-0-IP-Solution
+
+UCIe Consortium, Specifications — die-to-die physical, protocol, manageability and compliance layers: https://www.uciexpress.org/specifications
+
+Next lesson
+
+Lesson 091: Whole-Stack Innovation Synthesis — Where Control Points Actually Form
+

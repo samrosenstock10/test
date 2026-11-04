@@ -1,0 +1,2 @@
+We will compare control points across manufacturing, packaging, compute, networking, power and design enablement using evidence about substitutability, qualification and deployment.`,
+} satisfies Lesson;
