@@ -822,7 +822,19 @@
         "lessons/083-01.tsfrag",
         "lessons/083-02.tsfrag"
       ]
+    },
+    {
+      "number": 91,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "Whole-Stack Innovation Synthesis — Where Control Points Actually Form",
+      "date": "2026-11-05",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/091-01.tsfrag",
+        "lessons/091-02.tsfrag",
+        "lessons/091-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-10-28T11:07:06.083Z"
+  "updatedAt": "2026-11-05T12:09:38.629Z"
 }
