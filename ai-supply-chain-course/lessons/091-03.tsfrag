@@ -1,0 +1,2 @@
+We will trace how a change in compute, memory, networking or power can relieve one constraint while creating a new supplier and operating bottleneck.`,
+} satisfies Lesson;
