@@ -1,0 +1,32 @@
+First, test substitution. Can a buyer replace the accelerator, switch, network interface or software layer without redesigning adjacent hardware and revalidating the workload? Standards help, but accumulated firmware, telemetry and tuning may still make substitution expensive.
+
+Second, test qualification authority. Who can diagnose a failure that crosses compute, communication, power and cooling? One accountable engineering loop may qualify faster; a modular stack preserves choice only if responsibility remains clear at failures.
+
+Third, test the learning loop. The strongest position belongs to the party that sees system failures, workload behavior and deployment data, then converts them into the next design. Integration can create that loop inside one platform. An open ecosystem can match it if partners share evidence quickly and customers retain enough technical authority to coordinate changes.
+
+The economics follow time to useful output
+
+A nominally cheaper rack can be more expensive if software porting, qualification and downtime delay productive accelerator-hours. An integrated platform can command a premium when it lowers those risks. But integration also concentrates roadmap, pricing and supply dependence. An open stack may improve bargaining power and let specialists compete, while transferring more integration cost to the customer or system builder.
+
+The claim that one model has durable control should therefore be falsifiable. NVIDIA's position would weaken if open systems repeatedly reach volume with comparable workload performance, reliability and serviceability while customers can switch components without major software or qualification cost. The open model would look weaker if deployments continue to require one dominant integrator or software stack to make nominally interchangeable parts work.
+
+The biggest takeaway
+
+Control does not come from owning the most parts. It comes from controlling the hardest verified transition between parts and useful output. Proprietary integration can hold that position, but open standards can relocate it. The decisive evidence is repeatable deployment, cross-layer learning and low switching cost—not the label “open” or “integrated” by itself.
+
+Sources
+
+NVIDIA, May 31, 2026 — Vera Rubin production ramp, partner manufacturing and Spectrum-X Photonics status: https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory
+
+NVIDIA DGX Vera Rubin NVL72 User Guide — rack composition, NVLink fabric, power and liquid-cooling design: https://docs.nvidia.com/dgx/dgxvr-user-guide/hardware.html
+
+AMD Helios — reference-design architecture, open standards and stated deployment timing: https://www.amd.com/en/products/rackscale-solutions/helios.html
+
+UALink Consortium — current accelerator-link, physical-layer, management and chiplet specifications: https://ualinkconsortium.org/specification/
+
+Open Compute Project — open multi-rack scale-up architecture objectives and current workstream status: https://www.opencompute.org/projects/semi-private-workstreams/open-multi-rack-scale-up-domains/
+
+Next lesson
+
+Lesson 092: Structural Bottleneck Shifts — How One Innovation Moves Scarcity Somewhere Else
+
