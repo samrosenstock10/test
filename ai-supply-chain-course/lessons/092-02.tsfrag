@@ -1,0 +1,36 @@
+The constraint has moved from “can enough copper fit here?” toward “can the whole protection and service system be qualified?” That is a cross-layer bottleneck: facility equipment, power racks, busbars, rack controllers, energy storage and compute hardware must respond as one system.
+
+A standard can widen supply without eliminating qualification
+
+Open specifications can give Eaton, Schneider Electric, Vertiv and other power suppliers a common electrical target rather than forcing each customer into a unique architecture. That can expand the supplier base and reduce dependence on one proprietary interface.
+
+But publishing a specification is not the same as proving production. The Open Compute Project has published a medium-voltage-to-800-VDC solid-state-transformer specification, while NVIDIA said in August 2026 that more than 80 equipment manufacturers were building around the architecture. NVIDIA also described an MGX-compatible 800-VDC power rack arriving in the second half of 2026 and a larger row power center expected in 2027. Those are evidence of coordination and product plans, not proof of broad qualified deployment.
+
+Qualification may become the new control point. A supplier that accumulates fault data, protection settings, connector experience and service procedures across real installations could make its system safer and faster to deploy. Yet open interfaces may let multiple vendors share that learning and prevent one company from owning the boundary.
+
+The economics follow the migrated constraint
+
+Less copper and fewer conversion stages can lower material use, electrical losses and floor-space pressure. The value does not vanish; some of it shifts toward high-voltage converters, DC protection, energy storage, controls, validation and field service.
+
+That shift also changes investment risk. Fast growth in AI-rack power does not guarantee that every electrical supplier captures high margins. Profit depends on who owns scarce qualified equipment, who bears warranty and integration risk, and whether common standards turn a specialized product into a competitive multi-vendor market.
+
+The biggest takeaway
+
+An innovation rarely removes scarcity from the whole stack. Raising distribution voltage can relieve current, copper and space constraints while creating harder protection, qualification and operating constraints. The important question is not only whether 800 VDC works in principle, but which suppliers can prove the complete system safely at scale—and whether open standards make that capability broadly substitutable.
+
+Sources
+
+NVIDIA, August 11, 2026 — 800 VDC architecture, partner participation and stated product timing: https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/
+
+NVIDIA — 800 VDC architecture and deployment paths: https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/
+
+Open Compute Project — Google, Microsoft and NVIDIA LVDC standardization and transition architectures: https://www.opencompute.org/news/powering-the-next-era-of-ai-how-google-microsoft-and-nvidia-are-standardizing-and-accelerating-the-industry-transition-to-lvdc/
+
+Open Compute Project — power-distribution scope, protection and transition work: https://www.opencompute.org/projects/data-center-facility/power-distribution/
+
+Open Compute Project — Solid State Transformer Spec MV to 800 VDC V0.3.0: https://www.opencompute.org/projects/data-center-facility/
+
+Next lesson
+
+Lesson 093: Emerging Approaches — How a New Architecture Can Create or Destroy a Control Point
+
