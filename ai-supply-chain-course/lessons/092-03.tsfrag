@@ -1,0 +1,2 @@
+We will compare how an emerging whole-stack design changes who owns the hardest interface, and what evidence would show that control is truly shifting.`,
+} satisfies Lesson;
