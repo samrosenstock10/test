@@ -996,7 +996,19 @@
         "lessons/091-02.tsfrag",
         "lessons/091-03.tsfrag"
       ]
+    },
+    {
+      "number": 92,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "Structural Bottleneck Shifts — When 800-Volt DC Relieves Copper and Creates a Qualification Bottleneck",
+      "date": "2026-11-06",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/092-01.tsfrag",
+        "lessons/092-02.tsfrag",
+        "lessons/092-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-05T12:09:38.628Z"
+  "updatedAt": "2026-11-06T12:08:46.304Z"
 }

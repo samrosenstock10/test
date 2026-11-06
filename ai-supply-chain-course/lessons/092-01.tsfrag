@@ -1,0 +1,41 @@
+import type { Lesson } from "./lessons";
+
+export const lesson092 = {
+  number: 92,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "Structural Bottleneck Shifts — When 800-Volt DC Relieves Copper and Creates a Qualification Bottleneck",
+  date: "2026-11-06",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 087: EDA tools become hard to replace when chip teams trust them to close design, verification and foundry-signoff problems repeatedly.
+
+Lesson 088: Processor IP creates value through validated cores, subsystems and software support, not through the instruction set alone.
+
+Lesson 089: AI racks need power devices that convert, regulate and protect electricity from the facility feed down to processor rails.
+
+Lesson 090: An open chip interface still depends on qualified controller, physical-layer and verification IP before it works reliably in silicon.
+
+Lesson 091: A durable control point forms where a supplier repeatedly turns several layers into useful output that customers cannot easily reproduce or replace.
+
+Solving the copper problem moves the bottleneck
+
+A dense AI rack can demand enormous power through a small physical space. At a fixed power level, voltage and current move in opposite directions: power equals voltage multiplied by current. Raise the distribution voltage, and the same rack can receive power with less current.
+
+That matters because current creates heat in conductors, and the loss rises with the square of current. If a path carries half the current through the same resistance, its resistive loss falls to one quarter. Lower current can also reduce the amount of copper, the size of busbars and the number of parallel conductors needed to reach the rack.
+
+This does not make the power problem disappear. It changes which physical problems are hardest.
+
+Why 800-volt direct current is emerging
+
+Today's data centers commonly receive alternating current, transform it to usable facility voltages, and convert it again near or inside the rack. NVIDIA, Google and Microsoft are now working through the Open Compute Project on an 800-volt direct-current, or 800 VDC, distribution standard for future high-density AI systems.
+
+The near-term design keeps existing facility power largely intact. A separate power rack beside the compute racks converts 480-volt alternating current into an 800-volt direct-current bus. Compute racks then draw from that shared bus. This sidecar architecture can reduce high-current cabling near the rack and let several compute racks share conversion and energy storage.
+
+A more structural future design would convert medium-voltage facility power directly to 800 VDC using transformer-rectifiers or solid-state transformers. That could remove conversion stages and free floor area. But it requires new equipment, protection schemes, operating procedures and code acceptance, so it is a longer qualification path rather than a simple component swap.
+
+The new bottleneck is safe interruption
+
+Lower current relieves copper and space pressure, but 800 VDC is harder to interrupt safely than ordinary low-voltage alternating current. Alternating current crosses zero every cycle, which helps an electrical arc extinguish. Direct current does not provide that natural zero crossing. A fault can keep feeding an arc unless breakers, contactors and controls detect and isolate it quickly.
+
+The power train therefore needs coordinated protection from the row bus through the rack connector. It also needs controlled startup so a newly connected rack does not pull a damaging surge, and enough short-duration stored energy to ride through brief disturbances. Connectors must prevent unsafe exposure and handle repeated service. Technicians need procedures and tools appropriate for higher-voltage DC.
+
