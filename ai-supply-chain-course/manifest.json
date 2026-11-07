@@ -846,7 +846,19 @@
         "lessons/092-02.tsfrag",
         "lessons/092-03.tsfrag"
       ]
+    },
+    {
+      "number": 93,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "CXL Memory Pooling — How an Open Fabric Can Destroy One Control Point and Create Another",
+      "date": "2026-11-07",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/093-01.tsfrag",
+        "lessons/093-02.tsfrag",
+        "lessons/093-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-06T12:08:47.877Z"
+  "updatedAt": "2026-11-07T12:10:00.000Z"
 }
