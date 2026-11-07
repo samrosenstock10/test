@@ -1,0 +1,39 @@
+import type { Lesson } from "./lessons";
+
+export const lesson093 = {
+  number: 93,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "CXL Memory Pooling — How an Open Fabric Can Destroy One Control Point and Create Another",
+  date: "2026-11-07",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 088: Processor IP creates value through validated cores, subsystems and software support, not through the instruction set alone.
+
+Lesson 089: AI racks need power devices that convert, regulate and protect electricity from the facility feed down to processor rails.
+
+Lesson 090: An open chip interface still depends on qualified controller, physical-layer and verification IP before it works reliably in silicon.
+
+Lesson 091: A durable control point forms where a supplier repeatedly turns several layers into useful output that customers cannot easily reproduce or replace.
+
+Lesson 092: Raising rack-distribution voltage can relieve copper and space constraints while moving scarcity toward protection, qualification and service.
+
+A server normally owns its memory
+
+A conventional server is built around memory installed beside one processor socket. The operating system treats those local memory channels as part of that machine, and the server is purchased with enough capacity for its expected peak. When demand is uneven, one server can run short while memory in another server sits unused. The capacity is physically present, but the architecture makes it hard to reassign.
+
+Compute Express Link, or CXL, is an open coherent interconnect designed to change that boundary. It lets a processor access memory attached through a high-speed link rather than only through its direct memory channels. A simple CXL memory expander adds capacity to one host. A switched fabric can go further: several hosts connect to a pool, and a fabric manager assigns portions of that memory where they are needed.
+
+This is not remote storage pretending to be memory. The processor can load and store data through a coherent memory protocol, so software can work with the added capacity as memory. But the path still runs through host ports, controllers, switches and media. Each step adds bandwidth, latency, error handling and management constraints.
+
+The architecture can destroy one control point
+
+Local memory ties capacity decisions to the CPU platform and motherboard. The processor vendor determines the number of memory channels, the server maker lays out the sockets, and the customer buys DIMMs for each box. If CXL expansion and pooling become practical, some capacity can move outside that fixed design. A customer could add or reassign memory without replacing an entire server or buying another processor merely to obtain more memory channels.
+
+An open standard can also widen the supplier set. The CXL Consortium says the interface maintains coherence across processors, memory expansion and accelerators. Its 4.0 specification, released in November 2025, doubled link speed to 128 gigatransfers per second and kept backward compatibility. Those facts show a common technical direction. They do not show that every device works with every platform at production scale.
+
+The control point may therefore move rather than disappear.
+
+The new control point is assignment with proof
+
+A useful pool needs more than a cable and a memory module. The system must discover devices, map addresses, isolate one host from another, report errors, survive hot-plug or failover events, and decide which pages belong near the processor and which can tolerate a slower tier. Firmware, operating systems, hypervisors and fleet software must agree on those policies.
+
