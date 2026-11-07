@@ -1,0 +1,14 @@
+Micron — CZ120 qualification milestone and stated production-volume availability through OEM channels: https://www.micron.com/about/press/news/micron-first-to-achieve-qualification-sample-milestone
+
+Intel, reviewed June 1, 2026 — Flat Memory Mode on Xeon 6 with CXL-attached memory: https://www.intel.com/content/www/us/en/support/articles/000102525/processors/intel-xeon-processors.html
+
+Intel and Micron — measured CXL expansion bandwidth and workload results on Xeon 6: https://www.intel.com/content/www/us/en/content-details/842211/optimizing-system-memory-bandwidth-with-micron-cxl-memory-expansion-modules-on-intel-xeon-6-processors.html
+
+Astera Labs — Leo controllers for memory expansion, sharing and pooling; product and demonstration status: https://www.asteralabs.com/products/leo-cxl-smart-memory-controllers/
+
+Next lesson
+
+Lesson 094: Finding the Next Structural Shift — What Would a TSMC-1987-Scale Change Look Like Today?
+
+We will apply the full course framework to identify an architecture or business model that changes who can participate, where learning accumulates and which interface becomes hardest to replace.`,
+} satisfies Lesson;
