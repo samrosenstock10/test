@@ -1,0 +1,26 @@
+That management layer can become the hard interface. If one supplier provides the switch, memory controllers, telemetry and orchestration software—and accumulates the best failure and workload data—it may make a nominally open fabric easier to deploy through its own stack. The control point would shift from physical DIMM slots toward qualification, routing and memory-placement policy.
+
+Current evidence shows several different maturity levels. Micron says its CZ120 CXL memory expansion modules are available in production volume through OEM channels, including Supermicro platforms. That is stronger evidence than a roadmap, but it proves expansion more directly than multi-host pooling. Intel documents a Flat Memory Mode for Xeon 6 systems that presents processor-attached DRAM and CXL memory as one address space managed by hardware. That simplifies tiering for a single host; it is not the same as dynamically sharing one pool across many hosts. Astera Labs lists orderable controllers for expansion and pooling, while describing its pooling result as an industry-first demonstration. A demo establishes feasibility, not widespread customer deployment.
+
+CXL 4.0 is also a specification, not a shipping fleet. Its doubled signaling rate and improved reliability features can support future designs, but servers, switches, memory devices, firmware and software still need to implement and qualify them together.
+
+Where the architecture helps—and where it does not
+
+Pooling is most attractive when capacity is stranded or demand changes over time. CPU databases, in-memory analytics and some inference services can value extra capacity even if every access is not as fast as local DRAM. Large inference systems may also use tiers for data such as less-active key-value cache, provided software moves information deliberately and the latency penalty does not erase the benefit.
+
+CXL does not make all memory interchangeable. High-bandwidth memory beside an accelerator offers much more bandwidth and lower access cost for the tensors used in active computation. Putting that working set behind a general-purpose fabric would usually create a new bottleneck. The emerging architecture is more likely to complement HBM and local DRAM with another capacity tier than to replace them.
+
+The economics depend on that placement. Better utilization could reduce overprovisioned memory and delay some server purchases. It can also create new spending on switches, controllers, enclosures, software and validation. Memory suppliers may sell capacity in new form factors; processor and server vendors may lose some control over configuration; fabric vendors may capture value if their qualified management stack becomes difficult to replace.
+
+What would prove that control is shifting
+
+The strongest signal is not a specification release or a lab benchmark. It is repeatable production use across multiple processors, memory vendors and server makers, with measured utilization gains after accounting for latency, power, failures and software work. Multi-host reassignment under real workloads would be especially important, because that is the step that converts expansion into a true shared pool.
+
+The biggest takeaway is that an open architecture can weaken an old control point without making the stack ownerless. CXL can loosen the bond between one server and its installed memory, yet the scarce capability may migrate to the layer that assigns, secures and qualifies pooled capacity. The winner will not necessarily be the company that owns the memory chips or the standard. It may be the company that makes the whole fabric trustworthy enough to operate.
+
+Sources
+
+CXL Consortium — CXL overview, coherence and open-standard scope: https://computeexpresslink.org/about-cxl/
+
+CXL Consortium, November 18, 2025 — CXL 4.0 bandwidth, bundled ports, RAS and backward compatibility: https://computeexpresslink.org/wp-content/uploads/2025/11/CXL_4.0-Specification-Release_FINAL_Website-Copy.pdf
+
