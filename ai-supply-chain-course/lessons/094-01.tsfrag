@@ -1,0 +1,35 @@
+import type { Lesson } from "./lessons";
+
+export const lesson094 = {
+  number: 94,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "Finding the Next Structural Shift — What Would a TSMC-1987-Scale Change Look Like Today?",
+  date: "2026-11-08",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 089: AI racks depend on power devices that convert, regulate and protect electricity from the facility feed down to processor rails.
+
+Lesson 090: An open chip interface still needs qualified controller, physical-layer and verification IP before it works reliably in silicon.
+
+Lesson 091: A durable control point forms where a supplier repeatedly turns several layers into useful output that customers cannot easily reproduce or replace.
+
+Lesson 092: Raising rack-distribution voltage can relieve copper constraints while moving scarcity toward protection, qualification and service.
+
+Lesson 093: CXL can loosen the bond between one server and its memory while shifting control toward fabric management and workload placement.
+
+A structural shift changes the boundary of the industry
+
+A faster component can win a product cycle without reorganizing an industry. TSMC's 1987 pure-play foundry model did something larger. It let chip designers enter without financing a leading factory, pooled expensive manufacturing and process learning across many customers, and gave those customers a manufacturer whose business depended on their success rather than on selling a competing chip.
+
+The physical work did not become easy. Fabrication still required process recipes, cleanrooms, yield learning and enormous capital. The innovation changed who had to own those capabilities. Design and manufacturing became separable businesses connected by process design kits, electronic-design tools, reusable IP and a trusted production relationship.
+
+That history suggests a demanding test for a modern structural shift. It must change who can participate, concentrate a scarce asset or learning loop that many participants can share, create a stable interface between specialists, and give the coordinator incentives that customers can trust. Finally, it must work repeatedly in production. A specification, demonstration or first customer proves only one layer of that claim.
+
+A candidate: the neutral chiplet platform
+
+One plausible candidate is an open chiplet platform: a way for a system designer to combine compute, memory, I/O, analog and specialized accelerator dies from different sources inside one package without designing every die or relying on one vertically integrated vendor.
+
+The physical idea is familiar. Smaller dies can be built on process nodes suited to their functions, tested separately and joined through a dense package. The structural idea is more ambitious. If die-to-die links, package rules, design files, test methods and commercial terms became reusable, a specialist could sell one chiplet into many systems. A new system company could assemble differentiated silicon without funding every block from scratch.
+
+UCIe is building part of that interface. Its 3.0 specification, released in August 2025, defines faster die-to-die links plus management and reliability features. The consortium includes foundries, packaging companies, cloud operators and chip suppliers. Live interoperability demonstrations at the 2026 Chiplet Summit are stronger evidence than a slide, but they still do not establish a liquid market of independently qualified dies.
+
