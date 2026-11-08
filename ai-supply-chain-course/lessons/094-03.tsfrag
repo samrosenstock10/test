@@ -1,0 +1,22 @@
+The most important signal is not another consortium member or bandwidth record. It is repeatable production that broadens participation while concentrating learning in a trusted shared platform. That is the full test: who can now enter, what they no longer need to own, where operational knowledge accumulates, and which interface becomes hardest to replace.
+
+Sources
+
+TSMC — current company profile and scale of the pure-play foundry model: https://investor.tsmc.com/english/fundamentals
+
+UCIe Consortium, August 5, 2025 — UCIe 3.0 specification, performance and manageability: https://www.uciexpress.org/specifications
+
+UCIe Consortium, March 2026 — Chiplet Summit interoperability demonstrations and ecosystem status: https://www.uciexpress.org/post/chiplet-summit-2026-ucie-momentum-across-a-growing-ecosystem
+
+imec, March 2, 2026 — open fine-pitch RDL and die-to-wafer hybrid-bonding design kits: https://www.imec-int.com/en/press/nanoic-opens-access-first-ever-fine-pitch-rdl-and-d2w-hybrid-bonding-interconnect-pdks
+
+imec and TSMC, September 23, 2026 — expanded managed-cloud access to advanced-node design infrastructure: https://www.imec-int.com/en/press/ic-link-imec-expands-collaboration-tsmc-accelerate-customer-access-advanced-node-chip-design
+
+TSMC — 3DFabric Alliance and advanced-packaging design ecosystem: https://www.tsmc.com/english/dedicatedFoundry/oip/3dfabric_alliance
+
+Next lesson
+
+Lesson 095: The Yield Learning Loop — When Better Lithography Moves the Bottleneck to Integration
+
+We will return to fabrication with a system question: how process improvement changes yield, packaging demand and the location of the next constraint.`,
+} satisfies Lesson;

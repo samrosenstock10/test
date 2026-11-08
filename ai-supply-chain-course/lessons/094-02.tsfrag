@@ -1,0 +1,22 @@
+Recent access programs show another layer moving. In March 2026, imec's NanoIC pilot line opened fine-pitch redistribution-layer and die-to-wafer hybrid-bonding design kits to universities, startups and industry teams. In September, IC-Link by imec and TSMC expanded access to advanced-node design infrastructure through a managed cloud flow. These programs lower the cost of exploration and design access. They are not proof that an outside team can choose several vendors' chiplets, assemble them through a neutral production platform and ship the result economically.
+
+Why the analogy is powerful—and incomplete
+
+The analogy to the foundry is strongest at the participation boundary. A true chiplet platform could let a company own the system architecture while renting verified building blocks and integration capacity. The shared platform could spread the fixed cost of interface IP, package characterization, test hardware and failure analysis across many designs. Each successful assembly could improve models of signal integrity, thermal behavior, bonding yield and known-good-die screening for the next customer.
+
+But the interface is harder than a connector drawing. A packaged system must deliver power, remove heat, align thousands of connections, manage firmware and security, isolate failures and prove that every die was good before expensive assembly. Yield can multiply across components: one bad die or bond can discard a costly package. When something fails, customers need to know whether the die supplier, package designer, foundry or assembly house is responsible.
+
+Those problems can create the new control point. The valuable platform may not be the company that publishes a chiplet catalog. It may be the neutral integrator that owns the package rules, qualification data, test flow and warranty boundary. TSMC's current 3DFabric ecosystem and Intel Foundry's systems-foundry offering both move in that direction, but each still combines proprietary process, packaging and enablement choices. Integration can make production easier while also making the platform harder to leave.
+
+The evidence ladder prevents premature conclusions
+
+The weakest evidence is an announcement that components are “chiplet ready.” A published standard is stronger because it lets independent teams design toward a common contract. Interoperability demonstrations show that particular implementations can communicate. Open design kits and pilot programs show that more teams can attempt real designs. Qualified multi-vendor production across several unrelated customers is the decisive step.
+
+The economic test is equally strict. Reusing a proven die may reduce design time and let each function use a suitable process node. Those savings must exceed the extra packaging, test, inventory and coordination costs. A platform also needs enough repeated designs to improve faster than customers can by integrating privately. Otherwise chiplets remain an engineering technique inside large companies rather than a new industry boundary.
+
+The candidate would fail the TSMC-scale test if cross-vendor assemblies remain rare, if qualification must be restarted for every package, if leading suppliers keep their best dies captive, or if package yield and warranty disputes overwhelm reuse. It would gain credibility when an independent system company can select important dies from multiple suppliers, reach volume through a neutral path, and then substitute or upgrade one die without rebuilding the entire product and software stack.
+
+The structural-shift lesson
+
+The next TSMC-scale change will probably look unimpressive at first because the key innovation may be a contract, interface and learning system rather than a spectacular component. Open chiplets are a credible candidate because they could separate system architecture from ownership of every die. They are not yet a proven equivalent to the pure-play foundry.
+
