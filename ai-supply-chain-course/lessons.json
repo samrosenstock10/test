@@ -1020,7 +1020,19 @@
         "lessons/093-02.tsfrag",
         "lessons/093-03.tsfrag"
       ]
+    },
+    {
+      "number": 94,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "Finding the Next Structural Shift — What Would a TSMC-1987-Scale Change Look Like Today?",
+      "date": "2026-11-08",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/094-01.tsfrag",
+        "lessons/094-02.tsfrag",
+        "lessons/094-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-07T12:10:00.000Z"
+  "updatedAt": "2026-11-08T12:13:00.000Z"
 }
