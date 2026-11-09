@@ -1,0 +1,49 @@
+import type { Lesson } from "./lessons";
+
+export const lesson095 = {
+  number: 95,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "The Yield Learning Loop — When Better Lithography Moves the Bottleneck to Integration",
+  date: "2026-11-09",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 090: Open chip interfaces still need qualified controller, physical-layer and verification IP before they work reliably in silicon.
+
+Lesson 091: A durable control point forms where one supplier repeatedly turns several layers into useful output that customers cannot easily reproduce.
+
+Lesson 092: Higher rack-distribution voltage can relieve copper constraints while moving scarcity toward protection, qualification and service.
+
+Lesson 093: CXL can loosen the bond between one server and its memory while shifting control toward fabric management and workload placement.
+
+Lesson 094: A structural shift broadens participation only when shared interfaces, learning and incentives produce repeatable results at scale.
+
+A better wafer can expose the next weak link
+
+Yield learning sounds like a fabrication story: run wafers, inspect defects, change a recipe and recover more good dies. Lesson 009 introduced that loop. The deeper system question is what happens after the loop succeeds.
+
+An AI accelerator is not useful when its logic die leaves the fab. It still needs qualified high-bandwidth memory, an interposer or bridge, thousands of package connections, power delivery, thermal control and final test. Improving lithography can increase the supply of good logic dies, but it cannot guarantee that the rest of the chain can turn them into working systems at the same rate.
+
+That is bottleneck migration. Progress at one stage changes which stage limits additional output.
+
+Each stage has its own learning loop
+
+Front-end wafer yield improves when engineers connect defects to patterning, deposition, etch, clean and process-control data. Memory suppliers learn how to stack and bond more dies reliably. Packaging teams learn how alignment, warpage, materials and thermal stress interact. Final test reveals failures that may have begun in any of those steps.
+
+The denominator changes at each boundary. A fab may report more good logic dies per wafer while the package assembler still loses complete assemblies. A memory supplier may ship more HBM stacks while one package design remains constrained by substrate flatness or bonding throughput.
+
+System learning requires the stages to share evidence. A final-test failure is much more useful when it can be traced to the exact logic wafer, HBM stack, substrate lot and assembly tool. Without that connection, each supplier can optimize its local yield while the finished product improves slowly.
+
+A simple output example
+
+Suppose a production plan starts with 100 possible systems. The fab produces 80 good logic dies, the memory line produces 90 qualified HBM sets, and final package assembly yields 85%.
+
+Only 80 complete input sets can enter assembly because logic is the smaller pool. At 85% assembly yield, the chain produces 68 working systems.
+
+Now better patterning and process control raise good logic output from 80 to 95. HBM becomes the smaller pool at 90 sets. With the same assembly yield, finished output rises only to about 76 systems, not 81. The lithography improvement was real, but memory availability and package yield now determine the next unit.
+
+This is why an upstream breakthrough can increase demand for a downstream supplier without making the upstream technology less important.
+
+Current ramps show several boundaries moving together
+
+TSMC reported in October that its 2-nanometer process produced 8% of third-quarter 2026 wafer revenue and described a steep ramp continuing into the fourth quarter. Revenue mix is not a direct yield measurement, but it is evidence that a new leading-edge process is moving into commercial volume.
+

@@ -1,0 +1,32 @@
+At the same time, TSMC continues expanding CoWoS advanced-packaging capacity for larger compute-and-memory systems. Micron says HBM4 is in high-volume shipments for a lead customer, while qualification samples have gone to multiple end customers. Those are different evidence levels: one qualified production path does not prove every accelerator platform has memory, package capacity and yield aligned.
+
+The important development is not one isolated shortage headline. Leading-edge logic, HBM4 and advanced packaging are all ramping, but they learn on different clocks. A faster logic ramp can pull the constraint toward memory qualification, package assembly, final test or customer-system validation.
+
+Where value and risk move
+
+When logic dies are scarce, another good wafer has high economic value. Once packaging or HBM binds, additional wafer output can become inventory waiting for a matched component. The valuable capability shifts toward whoever can raise the number of good finished packages, shorten qualification or diagnose cross-stage failures.
+
+That does not mean the old bottleneck disappears permanently. A new design, process node or demand surge can move it back. Nor does a capacity announcement establish usable supply. Installed tools still need recipes, trained operators, qualified materials, acceptable yield and customer approval.
+
+The right evidence is finished-system output
+
+To locate the real constraint, follow good units rather than nominal capacity. Ask how many qualified logic dies, HBM sets and substrates arrive together; what percentage survive assembly and final test; how long failures take to diagnose; and whether inventory is building before one step.
+
+The biggest takeaway is that yield learning is a chain of linked feedback loops. Better lithography creates value, but its success can expose the next integration limit. The strongest operator is not merely the one with the best local process. It is the one that can connect failure data across suppliers and keep moving the constraint until more complete systems—not just more components—work.
+
+Sources
+
+TSMC, October 15, 2026 — third-quarter results, 2-nanometer wafer-revenue contribution and stated fourth-quarter ramp: https://pr.tsmc.com/english/news/3346
+
+TSMC — CoWoS platform, production history and ongoing advanced-packaging expansion: https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
+
+ASML and Intel Foundry, September 8, 2026 — High-NA production use, processed-wafer count and stated tool performance: https://investor.asml.com/news-releases/news-release-details/intel-foundry-and-asml-collaborate-accelerate-industry-readiness-high-na-euv
+
+Micron — current quarterly product status for HBM4 high-volume shipments and customer qualification samples: https://investors.micron.com/financials/quarterly-results/default.aspx
+
+Next lesson
+
+Lesson 096: The Qualification Queue — Why Installed Capacity Can Still Be Unavailable
+
+We will separate installed tools, process qualification, customer approval and repeatable shipped output to see why supply can lag long after a factory looks ready.`,
+} satisfies Lesson;

@@ -1032,7 +1032,18 @@
         "lessons/094-02.tsfrag",
         "lessons/094-03.tsfrag"
       ]
+    },
+    {
+      "number": 95,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "The Yield Learning Loop — When Better Lithography Moves the Bottleneck to Integration",
+      "date": "2026-11-09",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/095-01.tsfrag",
+        "lessons/095-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-08T12:13:00.000Z"
+  "updatedAt": "2026-11-09T12:12:19.183Z"
 }
