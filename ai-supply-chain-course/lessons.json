@@ -1043,7 +1043,19 @@
         "lessons/095-01.tsfrag",
         "lessons/095-02.tsfrag"
       ]
+    },
+    {
+      "number": 96,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "The Qualification Queue — Why Installed Capacity Can Still Be Unavailable",
+      "date": "2026-11-10",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/096-01.tsfrag",
+        "lessons/096-02.tsfrag",
+        "lessons/096-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-09T12:12:19.183Z"
+  "updatedAt": "2026-11-10T12:08:49.777Z"
 }

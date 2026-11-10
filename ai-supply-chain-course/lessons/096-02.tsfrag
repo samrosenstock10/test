@@ -1,0 +1,32 @@
+The factory can truthfully report 20 installed tools, but only seven are usable for that product. These illustrative counts describe readiness, not yield. What matters is how much equipment can run the qualified product repeatedly at acceptable yield, throughput and reliability.
+
+Current projects show the stages clearly
+
+Amkor's May 2026 investor presentation separates completion of its Arizona advanced-packaging building from 2027 tool installation, line verification and qualification, and from a planned 2028 production start. Its September expansion announcement describes strong customer commitments and much larger planned cleanroom space. Customer commitments reduce demand uncertainty, but planned floor area is not shipped packages.
+
+Intel said in June 2026 that Intel 18A-P had entered risk production. Risk production uses real manufacturing to learn before broad volume. Intel also said 18A-P is design-rule compatible with Intel 18A, enabling more design reuse. Reuse can shorten qualification; it does not create approved volume for every product.
+
+SK hynix's August 2026 memory-fab announcement makes the timing distinction even more explicit. Its planned Y2 and M17 cleanrooms target 2029 and 2028 openings, while equipment installation is expected to proceed sequentially with demand. That is evidence of long-term capacity intent, not near-term available HBM or NAND supply.
+
+Read milestones by evidence level
+
+An investment announcement shows intent. Construction shows capital is being committed. Tool installation shows physical capability is arriving. Line qualification shows the process can repeat. Risk production shows learning on real products. Customer approval and stable shipments show commercially usable capacity.
+
+Equipment and construction suppliers may receive orders years before the line earns product revenue. Existing qualified lines can remain valuable even when a new factory has newer tools. Earlier access to the qualification queue can matter more than nominal future capacity.
+
+The biggest takeaway is simple: capacity becomes real through evidence, not installation. When supply looks abundant on paper but deliveries remain tight, locate the narrowest approval stage. The missing resource may be an engineer, a reliability test, a customer signoff or a stable recipe—not another machine.
+
+Sources
+
+Amkor, May 21, 2026 — Arizona campus timeline separating construction, tool installation, line verification, qualification and production: https://ir.amkor.com/static-files/342e34a3-d331-416d-a757-52f9c8c4a2a5
+
+Amkor, September 8, 2026 — phase-two Arizona expansion, customer commitments, planned cleanroom scale and forward-looking limits: https://ir.amkor.com/news-releases/news-release-details/amkor-technology-announces-phase-2-arizona-advanced-packaging
+
+Intel Foundry, June 16, 2026 — Intel 18A-P risk-production milestone and design-rule compatibility with Intel 18A: https://www.intel.com/content/www/us/en/newsroom/news/corporate/intel-foundry-details-process-milestones-future-innovation-at-vlsi-symposium.html
+
+SK hynix, August 7, 2026 — Y2 and M17 construction, cleanroom targets and demand-aligned sequential equipment installation: https://news.skhynix.com/en/fab-facility-investment-2026/
+
+Next lesson
+
+Lesson 097: The Cycle-Time Trap — Why Starting More Wafers Can Create a Longer Queue
+

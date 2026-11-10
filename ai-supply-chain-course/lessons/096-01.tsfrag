@@ -1,0 +1,49 @@
+import type { Lesson } from "./lessons";
+
+export const lesson096 = {
+  number: 96,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "The Qualification Queue — Why Installed Capacity Can Still Be Unavailable",
+  date: "2026-11-10",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 091: A control point forms when one supplier repeatedly coordinates hard-to-replace layers into useful system output.
+
+Lesson 092: Raising distribution voltage reduces current and copper burden while making protection, startup and service the next qualification boundary.
+
+Lesson 093: CXL can improve memory utilization while moving control toward switches, controllers, orchestration software and validated system behavior.
+
+Lesson 094: A structural shift matters only when shared interfaces, learning and incentives produce repeatable output across many participants.
+
+Lesson 095: Better logic yield can move the bottleneck to HBM, packaging or final test because finished systems need matched good components.
+
+An installed tool is not yet available capacity
+
+A new factory can look nearly finished from the outside. The cleanroom is enclosed, expensive machines are on the floor and a company may announce millions of units of future capacity.
+
+Yet a customer still cannot necessarily place a production order against that capacity.
+
+The missing step is qualification: building enough evidence that the factory, tool, process, product and customer system work repeatedly within defined limits. Because each layer waits for evidence from the one before it, qualification creates a queue between installed equipment and sellable output.
+
+Availability is a sequence of permissions
+
+First, the building must supply stable power, water, gases, cooling and contamination control. A machine can be physically present while its utilities, safety systems or material flow are not accepted for production.
+
+Second, the tool must be installed, calibrated and matched. Tool matching means proving that nominally identical machines produce sufficiently similar results. If one chamber deposits a slightly different film or one tester measures differently, engineers cannot freely move production between them.
+
+Third, the process recipe must qualify. A recipe is the controlled combination of settings, materials and steps used to make a structure. Engineers run test wafers, measure defects and electrical behavior, stress the process across normal variation and show that it stays inside an acceptable process window.
+
+Fourth, the actual product must qualify. A process that makes generic test structures well may still interact badly with one chip design, package or memory configuration. Reliability tests deliberately apply heat, voltage and repeated operation to expose failure modes that ordinary functional tests may miss.
+
+Finally, the customer may need to approve the product in its own board, server, software and operating environment. Only then can capacity become commercially useful for that customer.
+
+Why the queue does not disappear with more machines
+
+Qualification consumes scarce resources: pilot tools, test wafers, metrology, reliability chambers, engineering review and customer validation time. Adding another production tool may increase future nameplate capacity without expanding the engineers or test equipment needed to release it.
+
+Failures send work backward. A material change can require part of the recipe and product qualification to be repeated. Capacity is also product-specific: a line qualified for one package cannot automatically build every other package.
+
+An illustrative availability funnel
+
+Suppose a new line has 20 tools installed. Seventeen have completed facility acceptance, 14 are matched closely enough for the intended process, 10 have a stable production recipe and seven are approved for the first customer's product.
+

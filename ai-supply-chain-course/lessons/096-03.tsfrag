@@ -1,0 +1,2 @@
+We will connect work in process, bottleneck utilization and waiting time to see when more starts delay shipments instead of accelerating them.`,
+} satisfies Lesson;
