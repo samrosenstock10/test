@@ -893,7 +893,19 @@
         "lessons/096-02.tsfrag",
         "lessons/096-03.tsfrag"
       ]
+    },
+    {
+      "number": 97,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "The Cycle-Time Trap — Why Starting More Wafers Can Create a Longer Queue",
+      "date": "2026-11-11",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/097-01.tsfrag",
+        "lessons/097-02.tsfrag",
+        "lessons/097-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-10T12:08:49.777Z"
+  "updatedAt": "2026-11-11T12:10:21.933Z"
 }

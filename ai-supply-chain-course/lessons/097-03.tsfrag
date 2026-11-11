@@ -1,0 +1,2 @@
+We will examine how urgent lots, recipe changes and local scheduling decisions redistribute delay without necessarily increasing total output.`,
+} satisfies Lesson;

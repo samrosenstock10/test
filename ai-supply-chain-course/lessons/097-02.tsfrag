@@ -1,0 +1,32 @@
+Dispatching decides which lot runs next. A qualification lot or customer commitment may deserve priority, but frequent expediting does not create capacity; it moves delay onto other lots and may force extra recipe changes.
+
+Why shorter cycle time changes economics
+
+Less WIP ties up less material and processing cost before revenue. Faster completion also speeds learning: if electrical results return in six weeks instead of ten, engineers can correct a bad setting sooner and expose fewer wafers to it. Cycle time therefore affects working capital, delivery reliability, qualification speed and yield improvement.
+
+A current challenger is making this part of its strategy
+
+Rapidus says its IIM-1 pilot line uses single-wafer processing, automated transport and production-management systems to pursue short turnaround time. In April 2026, NEDO approved the company's fiscal-year plan to implement and validate those systems while Rapidus continued prototype and yield-improvement work toward targeted 2027 mass production.
+
+Individual-wafer data can shorten feedback and better routing can reduce non-processing time. But Rapidus has a pilot line and company-reported simulation goals, not mature high-volume proof. Single-wafer handling may also sacrifice some batch efficiency and still requires a balanced tool network.
+
+SEMI's August 2025 market analysis offers a broader warning. It estimated that fab cycle times had risen at a 14.8% annual rate since 2020 as process complexity and quality-control demands increased. That is an industry model, not a universal measurement for every fab, but it points to a structural pressure: more steps and tighter controls can lengthen the route even when temporary shortages ease.
+
+The biggest takeaway is that wafer starts are useful only when the factory can convert them into completions. Near a constraint, starting more work can enlarge queues, delay feedback and consume cash without raising output. Strong operations control the release of WIP, preserve headroom where variability matters and judge speed by finished good wafers—not by how crowded the factory looks.
+
+Sources
+
+MIT — Little's Law, L = λW, and its use in operations management: https://betterworld.mit.edu/littles-law/
+
+MIT, 2007 — Intel Fab 23 case study on wafer-start control, WIP and cycle-time improvement: https://dspace.mit.edu/entities/publication/537f5819-cfce-462d-afc5-7f5d938b6e47
+
+Rapidus, April 2026 — FY2026 short-turnaround manufacturing plan, pilot-line validation and 2027 mass-production target: https://www.rapidus.inc/en/news_topics/information/nedo-approves-rapidus-fy2026-plan-and-budget-for-2nm-semiconductor-projects/
+
+Rapidus, September 10, 2025 — company-reported single-wafer, transport and cycle-time strategy: https://www.rapidus.inc/en/interview/it0002/
+
+SEMI, August 11, 2025 — market analysis of fab cycle-time extension and process complexity: https://www.semi.org/en/blogs/from-latency-to-reaction-simulating-the-next-wafer-demand-inflection
+
+Next lesson
+
+Lesson 098: The Expedite Tax — Why Priority Lots Can Make the Rest of the Factory Later
+

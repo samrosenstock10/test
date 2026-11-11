@@ -1,0 +1,53 @@
+import type { Lesson } from "./lessons";
+
+export const lesson097 = {
+  number: 97,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "The Cycle-Time Trap — Why Starting More Wafers Can Create a Longer Queue",
+  date: "2026-11-11",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 092: Higher-voltage rack distribution reduces current and copper burden but makes protection, startup and service the next qualification boundary.
+
+Lesson 093: CXL can improve memory utilization while moving control toward switches, controllers, orchestration software and validated system behavior.
+
+Lesson 094: A structural shift matters only when shared interfaces, learning and incentives produce repeatable output across many participants.
+
+Lesson 095: Better logic yield can move the bottleneck to HBM, packaging or final test because finished systems need matched good components.
+
+Lesson 096: Installed tools become sellable capacity only after facility, tool, recipe, product and customer qualification evidence is complete.
+
+Starting more wafers can make completion slower
+
+A factory manager sees strong demand and releases more wafer lots. Tools look busier, but monthly completions barely rise. Wafers wait longer and engineers receive yield feedback later.
+
+Lesson 015 introduced fab queues. Today the deeper question is how work inside that network changes cycle time—the elapsed time from wafer start to completed fabrication.
+
+Work-in-process connects starts, output and time
+
+Work-in-process, usually shortened to WIP, means all wafers that have started but have not finished. Some are inside tools; most are waiting, moving, being measured or held for a decision.
+
+A basic relationship called Little's Law connects three average quantities:
+
+WIP = throughput × cycle time
+
+Throughput is the completion rate, such as finished wafers per week. If a stable fab completes 1,000 wafers per week and carries 8,000 wafers in process, its average cycle time is eight weeks.
+
+Now suppose managers push starts above what the constrained tool families can complete. Throughput remains about 1,000 wafers per week, but WIP rises to 10,000. Average cycle time becomes about ten weeks. The extra starts did not create extra output; they created two more weeks of inventory and waiting.
+
+Those numbers are illustrative, and the relationship describes long-run averages rather than every individual wafer. The operating lesson is still powerful: when the exit rate cannot rise, adding more material mainly lengthens the line.
+
+Why queues accelerate near full utilization
+
+A wafer fab is harder than one checkout line. Wafers revisit the same tool families at later stages, while products follow different recipes and tools require maintenance or recipe changes. This re-entrant flow lets one disruption affect several points in the route.
+
+Variability makes the problem nonlinear. If a critical tool is busy almost all the time, there is little spare capacity to absorb a long recipe, a failed chamber or a burst of urgent work. Each interruption leaves a queue that may still be present when the next interruption arrives. Utilization can rise a few percentage points while waiting time rises much more.
+
+That does not mean low utilization is always better. Idle equipment wastes expensive capital. The goal is enough productive loading to earn a return while preserving headroom at the operations whose variability would otherwise delay the whole factory.
+
+Release control is an operating decision
+
+The first control is not simply how fast a tool runs. It is how much new work the fab releases.
+
+A WIP limit can slow starts when inventory before a constrained operation is already high. Deliberately releasing less work can shorten the queue, clarify priorities and reduce the material exposed when a process problem appears.
+
