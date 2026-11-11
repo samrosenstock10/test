@@ -336,7 +336,14 @@
       "title": "The Qualification Queue — Why Installed Capacity Can Still Be Unavailable",
       "bodySha256": "cdaaec3d94b2d4b25e312ce5683796893966154497499dee0b623c0bfb7beacb",
       "body": "Lesson 096 explains why installed machines are not the same as commercially available capacity. A new line must clear facility acceptance, tool matching, process-recipe qualification, product reliability testing and customer-system approval before it can support real orders. Those steps form a queue because pilot tools, metrology, reliability chambers, engineering review and customer validation time are limited. Capacity is product-specific, and a material or process change can force the affected evidence to be rebuilt. In the lesson's illustrative funnel, 20 installed tools narrow to 17 facility-accepted tools, 14 matched tools, 10 stable recipes and only seven tools approved for the first customer's product. Amkor's Arizona timeline separates construction, tool installation, line verification and qualification from the later planned start of production. Intel's 18A-P risk-production milestone is stronger evidence than a roadmap, but it is not broad qualified volume for every customer, even with design-rule reuse. SK hynix's planned future cleanrooms and sequential equipment installation show long-term supply intent rather than near-term available memory output. The practical takeaway is to rank milestones from announcement through stable shipments and locate the narrowest approval stage instead of relying on cleanroom area or nameplate capacity."
+    },
+    {
+      "number": 97,
+      "date": "2026-11-11",
+      "title": "The Cycle-Time Trap — Why Starting More Wafers Can Create a Longer Queue",
+      "bodySha256": "5c27662e456eb72d323cb1b7044ee1659acb02a8e86fb2baca9360667aedf118",
+      "body": "Lesson 097 explains why releasing more wafers into a busy fab can lengthen cycle time without increasing finished output. Work-in-process, throughput and cycle time are linked: if throughput is fixed, adding unfinished wafers mainly enlarges the queue. Semiconductor fabs are especially sensitive because wafers revisit the same tool families, products follow different recipes and maintenance or recipe changes create variability. Near full utilization, small disruptions can cause waiting time to rise much faster than tool activity. WIP limits and disciplined release control can therefore improve flow even when deliberately starting fewer wafers feels counterintuitive. Shorter cycle time reduces cash tied up in unfinished material and returns yield-learning evidence sooner. Rapidus is pursuing single-wafer processing, automated transport and production control as a short-turnaround strategy, but its pilot and simulation evidence is not yet mature high-volume proof. The practical measure is finished good wafers and faster learning, not how crowded the fab looks."
     }
   ],
-  "updatedAt": "2026-11-10T12:10:44.285Z"
+  "updatedAt": "2026-11-11T12:13:13.467Z"
 }
