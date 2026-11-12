@@ -1,0 +1,30 @@
+A fab can reserve some future capacity for truly urgent lots rather than interrupting every current sequence. Reservation depth limits how much normal work is displaced. Due-date slack can distinguish a lot that is genuinely close to missing its promise from one that merely has an important customer name.
+
+Modern scheduling also uses rolling horizons. A May 2026 study at a global semiconductor manufacturer modeled a photolithography area with uncertain setup times, dynamic arrivals and random breakdowns. Its system repeatedly built a schedule, executed part of it and rescheduled as conditions changed. One perfect static schedule cannot survive a dynamic fab.
+
+At the 2026 SEMI Advanced Semiconductor Manufacturing Conference, researchers presented a fast, explainable multi-objective dispatcher for high-mix fabs. The important direction is not that one algorithm has solved scheduling. It is that fabs are testing priority, cycle time, setup and output together rather than letting one local urgency label dominate automatically.
+
+The commercial promise must include the expedite tax
+
+Sometimes expediting is rational. A qualification lot can unlock future production, an engineering lot can expose a yield problem and a critical customer order can protect a relationship worth more than the delay imposed elsewhere.
+
+The full tax includes extra waiting, added setups, smaller batches and schedule instability. Sales can promise an early date while production absorbs costs that never appear in the quoted expedite premium.
+
+The biggest takeaway is that dispatching allocates delay. A strong fab reserves priority for work whose system value exceeds the disruption, measures what gets displaced and keeps urgent status scarce enough to remain meaningful. The right scoreboard includes on-time delivery across all classes and total finished output—not just whether the loudest lot moved first.
+
+Sources
+
+SC4EU, September 1, 2026 — data-driven priority analysis using more than 2.3 million production-step records from a French 300-millimeter fab workcentre: https://www.sc4.eu/index.php/news-events?catid=8:news&id=96:when-too-many-lots-become-urgent&view=article
+
+Flexible Services and Manufacturing Journal, May 9, 2026 — rolling-horizon photolithography scheduling under dynamic arrivals, uncertain setups and random breakdowns: https://link.springer.com/article/10.1007/s10696-026-09666-5
+
+SEMI Advanced Semiconductor Manufacturing Conference, 2026 — explainable multi-objective wafer dispatching for high-mix fabs: https://doi.org/10.1109/ASMC69324.2026.11551254
+
+Concurrent Engineering, October 16, 2016 — reservation-based dispatching for high-priority and normal lots in make-to-order wafer fabs: https://doi.org/10.1177/1063293X16673882
+
+Next lesson
+
+Lesson 099: The Engineering-Lot Tradeoff — Why Sacrificing Today's Output Can Improve Tomorrow's Capacity
+
+We will examine when experimental and qualification wafers deserve scarce tool time because they can shorten learning, improve yield or release future production.`,
+} satisfies Lesson;

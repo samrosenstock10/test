@@ -1067,7 +1067,18 @@
         "lessons/097-02.tsfrag",
         "lessons/097-03.tsfrag"
       ]
+    },
+    {
+      "number": 98,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "The Expedite Tax — Why Priority Lots Can Make the Rest of the Factory Later",
+      "date": "2026-11-12",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/098-01.tsfrag",
+        "lessons/098-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-11T12:10:21.933Z"
+  "updatedAt": "2026-11-12T12:08:24Z"
 }

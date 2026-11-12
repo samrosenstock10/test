@@ -1,0 +1,49 @@
+import type { Lesson } from "./lessons";
+
+export const lesson098 = {
+  number: 98,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "The Expedite Tax — Why Priority Lots Can Make the Rest of the Factory Later",
+  date: "2026-11-12",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 093: CXL can improve memory utilization while moving control toward switches, controllers, orchestration software and validated system behavior.
+
+Lesson 094: A structural shift matters only when shared interfaces, learning and incentives produce repeatable output across many participants.
+
+Lesson 095: Better logic yield can move the bottleneck to HBM, packaging or final test because finished systems need matched good components.
+
+Lesson 096: Installed tools become sellable capacity only after facility, tool, recipe, product and customer qualification evidence is complete.
+
+Lesson 097: Releasing more wafers than constrained tools can finish enlarges WIP, lengthens cycle time and delays yield learning.
+
+One urgent lot can make many other lots later
+
+A customer needs prototypes early, an engineering team needs failure data and a late order faces a delivery penalty. A fab marks all three wafer lots urgent and moves them ahead of ordinary production.
+
+Each urgent lot may finish sooner, but the factory has not created more tool-hours. Expediting chooses who receives scarce time; it does not create capacity.
+
+Dispatching decides who moves next
+
+Yesterday's lesson focused on release control: how much work enters the fab. Dispatching is the next decision. Whenever a tool becomes available, the dispatch rule chooses which eligible lot runs next.
+
+Eligibility comes first. A lot may need a particular recipe, reticle, chamber qualification or prior measurement. Among eligible lots, a fab can favor first-in-first-out order, the earliest due date, the least remaining slack or a formal priority class such as Hot.
+
+These rules optimize different outcomes. First-in-first-out treats waiting order consistently. Earliest-due-date rules protect near commitments. A priority rule accelerates selected lots. None can make every lot first.
+
+Queue jumping redistributes delay
+
+Suppose one hot lot moves ahead of six standard lots at a constrained tool. If its process occupies the tool for two hours, the hot lot may save twelve hours of waiting while each standard lot waits two hours longer. The total effect can be worse when the hot lot changes the tool's setup. A setup prepares a tool to switch recipes or operating conditions. Inserting one different urgent lot can break a sequence of similar work and require a change away and then back.
+
+The priority lot now consumes its processing time plus setup time and adds variability to the queue. At batch tools, it may also cause a partly filled run. The expedited lot moves faster, but total output can fall.
+
+When everything is urgent, priority stops working
+
+Priority is valuable because it is scarce. If sales, engineering and customers can label many lots Hot, those lots begin competing with one another and standard work can starve.
+
+A September 2026 SC4EU analysis used more than 2.3 million production-step records covering 21,546 wafer lots in one French 300-millimeter fab's photolithography workcentre. Hot and Critical lots averaged 7.3% of observed volume, with weekly shares from 4.81% to 14.7%. Its models found that as the urgent share increased, the speed advantage of priority lots declined.
+
+That is one workcentre and a model of historical decisions, not a universal threshold for every fab. The mechanism is broader: priority cannot remain selective if too much work receives it.
+
+Good rules protect the whole factory
+
