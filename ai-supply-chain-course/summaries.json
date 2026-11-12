@@ -343,7 +343,14 @@
       "title": "The Cycle-Time Trap — Why Starting More Wafers Can Create a Longer Queue",
       "bodySha256": "5c27662e456eb72d323cb1b7044ee1659acb02a8e86fb2baca9360667aedf118",
       "body": "Lesson 097 explains why releasing more wafers into a busy fab can lengthen cycle time without increasing finished output. Work-in-process, throughput and cycle time are linked: if throughput is fixed, adding unfinished wafers mainly enlarges the queue. Semiconductor fabs are especially sensitive because wafers revisit the same tool families, products follow different recipes and maintenance or recipe changes create variability. Near full utilization, small disruptions can cause waiting time to rise much faster than tool activity. WIP limits and disciplined release control can therefore improve flow even when deliberately starting fewer wafers feels counterintuitive. Shorter cycle time reduces cash tied up in unfinished material and returns yield-learning evidence sooner. Rapidus is pursuing single-wafer processing, automated transport and production control as a short-turnaround strategy, but its pilot and simulation evidence is not yet mature high-volume proof. The practical measure is finished good wafers and faster learning, not how crowded the fab looks."
+    },
+    {
+      "number": 98,
+      "date": "2026-11-12",
+      "title": "The Expedite Tax — Why Priority Lots Can Make the Rest of the Factory Later",
+      "bodySha256": "4bd407dbfe68a9191432b26c5d7b3e77da6705a786728914295d82699e39a341",
+      "body": "Lesson 098 explains that expediting a wafer lot reallocates scarce tool time but does not create additional capacity. Dispatching rules choose among eligible lots using criteria such as arrival order, due date, remaining slack or formal priority. When one urgent lot jumps a queue, standard lots wait longer, and a recipe change or broken batch can also reduce total output. Priority loses its power when too many lots receive urgent status because urgent lots begin competing with one another while ordinary work risks starvation. A September 2026 analysis of one French fab workcentre found that the speed advantage of Hot and Critical lots declined as their share increased, although the result is not a universal threshold for all fabs. Reservations, due-date slack and rolling-horizon scheduling can protect selected urgent work without allowing every local request to disrupt the whole factory. Expediting can still be rational when a qualification lot unlocks future output, an engineering lot accelerates yield learning or a critical order protects unusually high customer value. The practical lesson is to measure displaced waiting, added setups, batch loss, on-time delivery across all classes and total finished output—not only whether the loudest lot moved first."
     }
   ],
-  "updatedAt": "2026-11-11T12:13:13.467Z"
+  "updatedAt": "2026-11-12T12:10:42.000Z"
 }
