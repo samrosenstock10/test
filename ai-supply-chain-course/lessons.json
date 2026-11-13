@@ -1078,7 +1078,18 @@
         "lessons/098-01.tsfrag",
         "lessons/098-02.tsfrag"
       ]
+    },
+    {
+      "number": 99,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "The Engineering-Lot Tradeoff — Why Sacrificing Today's Output Can Improve Tomorrow's Capacity",
+      "date": "2026-11-13",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/099-01.tsfrag",
+        "lessons/099-02.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-12T12:08:24Z"
+  "updatedAt": "2026-11-13T12:08:48Z"
 }

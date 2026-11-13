@@ -1,0 +1,24 @@
+On October 1, 2026, AlixLabs began a six-month evaluation of its atomic-layer-etch pitch-splitting process in imec's NanoIC pilot line. The plan starts with coupons, then transfers selected conditions to full wafers and measures dimensions, roughness, profile and stochastic defects. That sequence preserves expensive full-wafer work for settings that survive earlier screening.
+
+On November 11, imec and Vertical Compute announced an expanded engineering partnership to move a vertically integrated memory concept toward a 16-nanometer pre-production chip. The commercial foundry will make the base chip, while imec will add the proprietary memory layer in its pilot line.
+
+These are current learning programs, not proof of stable high-volume output. AlixLabs still needs full-wafer evidence, equipment qualification and manufacturer adoption. Vertical Compute describes a path toward production, not shipped volume. Their relevance is the staged mechanism: experiments reduce uncertainty before larger manufacturing commitments.
+
+The biggest takeaway is that production and engineering lots compete for the same physical resources but create different kinds of value. Production lots monetize today's qualified process. Well-designed engineering lots can improve tomorrow's yield, release new capacity or prevent a larger qualification failure. The right question is not whether engineering interrupts output; it is whether a small, controlled interruption buys enough reliable learning to improve the much larger stream that follows.
+
+Sources
+
+NIST Engineering Statistics Handbook — design of experiments as rigorous data collection under constraints on runs, time and money: https://itl.nist.gov/div898/handbook/pmd/section3/pmd31.htm
+
+imec, October 1, 2026 — AlixLabs evaluation progressing from coupons to full wafers in the NanoIC pilot line: https://www.imec-int.com/en/press/alixlabs-begins-apstm-technology-evaluation-within-nanoic-pilot-line
+
+imec, November 11, 2026 — Vertical Compute partnership and planned 16-nanometer pre-production integration: https://www.imec-int.com/en/press/vertical-compute-expands-partnership-imec-accelerate-commercial-manufacturing-vertically
+
+imec — NanoIC pilot-line infrastructure, maturity targets and validation roles: https://www.imec-int.com/en/infrastructure
+
+Next lesson
+
+Lesson 100: The Change-Control Paradox — Why Freezing a Process Can Make Future Improvement Possible
+
+We will examine how a stable manufacturing baseline protects yield and traceability while controlled changes preserve a path for learning.`,
+} satisfies Lesson;

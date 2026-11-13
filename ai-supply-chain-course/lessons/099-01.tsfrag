@@ -1,0 +1,53 @@
+import type { Lesson } from "./lessons";
+
+export const lesson099 = {
+  number: 99,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "The Engineering-Lot Tradeoff — Why Sacrificing Today's Output Can Improve Tomorrow's Capacity",
+  date: "2026-11-13",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 094: A structural shift matters only when shared interfaces, learning and incentives produce repeatable output across many participants.
+
+Lesson 095: Better logic yield can move the bottleneck to HBM, packaging or final test because finished systems need matched good components.
+
+Lesson 096: Installed tools become sellable capacity only after facility, tool, recipe, product and customer qualification evidence is complete.
+
+Lesson 097: Releasing more wafers than constrained tools can finish enlarges WIP, lengthens cycle time and delays yield learning.
+
+Lesson 098: Expediting a lot reallocates delay and can add setups or broken batches, so urgent status must remain selective.
+
+The lot that reduces output today
+
+A fab has a constrained etch tool and a queue of customer wafers. Engineers ask to run two lots with altered process settings. Those lots will consume scarce tool time, extra metrology and perhaps a setup change. This week's production output falls.
+
+That can still be the higher-capacity decision.
+
+An engineering lot is material run to answer a process, product or equipment question rather than to become normal sellable output. Its value is information: which setting improves yield, what failure mechanism matters, whether a new tool matches the installed fleet or whether a customer product can clear qualification.
+
+Engineering time has a visible opportunity cost
+
+Production lots convert qualified capacity into revenue. An engineering lot can interrupt a stable sequence, require special handling and generate more inspection or electrical-test work. If it uses a bottleneck tool, the cost includes the production lots that wait behind it.
+
+This deepens yesterday's dispatching problem. Priority should not come from the label “engineering.” It should come from the expected system value of the answer.
+
+A disciplined experiment changes one decision
+
+Engineers often use design of experiments, or DOE: a planned set of runs that changes selected process factors and measures their effect on responses such as critical dimension, defectivity or electrical yield. Split lots can divide wafers from one starting lot across different settings, helping separate the effect of the experiment from unrelated wafer-to-wafer variation.
+
+The best experiment is not the one with the most data. It asks a specific question, includes a credible comparison and uses the minimum runs needed for a defensible answer. A coupon or a few split wafers may screen an idea before a full-wafer or full-route trial. That reduces the amount of scarce production capacity spent on weak hypotheses.
+
+The economic test is future output, not today's utilization
+
+Suppose two engineering lots displace two production lots. Engineers estimate a 30% chance that the tested recipe will improve good-die yield by 1.5 percentage points across 600 future lots.
+
+The expected gain is:
+
+30% × 1.5% × 600 = 2.7 full-lot equivalents of additional good die
+
+That simplified estimate exceeds the two-lot experiment cost. Across only 100 remaining lots, the expected gain would be 0.45 lot equivalent, so the same experiment would not clear the threshold.
+
+Real decisions also include learning delay, downstream yield, customer value and the risk that a small experiment will not reproduce in volume. The point is not false precision. An engineering lot is an investment whose return depends on probability, improvement size and the number of future units affected.
+
+Current pilot-line work shows the staircase of evidence
+
