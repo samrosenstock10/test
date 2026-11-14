@@ -357,7 +357,14 @@
       "title": "The Engineering-Lot Tradeoff — Why Sacrificing Today's Output Can Improve Tomorrow's Capacity",
       "bodySha256": "3cc3dc6a9c84727b92ead909c0967123bcaf7ea95313e1ff4499cd0c9a4dbf72",
       "body": "Lesson 099 explains why a fab may rationally sacrifice some output today to improve capacity, yield or qualification evidence tomorrow. Engineering lots use production equipment to answer process, product or equipment questions rather than to create normal sellable output. Their cost includes scarce tool time, extra metrology, setup changes and the production lots that wait behind them. A disciplined experiment changes selected factors, keeps a credible comparison and uses the minimum runs needed for a defensible answer. Coupon tests and split wafers can screen weak ideas before a full-wafer or full-route trial consumes more capacity. The economic test compares the experiment's opportunity cost with the probability, size and remaining production span of the expected improvement. Current AlixLabs and Vertical Compute work at imec illustrates staged learning from early experiments toward larger manufacturing commitments, but neither announcement proves stable high-volume production. The practical lesson is that a small, controlled interruption is worthwhile only when it buys reliable learning that improves the much larger stream of output that follows."
+    },
+    {
+      "number": 100,
+      "date": "2026-11-14",
+      "title": "The Change-Control Paradox — Why Freezing a Process Can Make Future Improvement Possible",
+      "bodySha256": "c0785d7e1448d7a745be1e384367213879f43bbfa45a595cfdfc53a3cdf23da7",
+      "body": "Lesson 100 explains why manufacturing improvement needs a stable production baseline. That baseline identifies the approved process flow, recipes, tool groups, materials, masks, measurements and test limits used for each product. Engineers can keep learning on a separate controlled path without silently changing normal production. Statistical process control and traceability make yield shifts interpretable only when current output can be compared with a known revision. A disciplined change moves through definition, risk assessment, bounded experiment and qualification, approval of a specific release, and close monitoring with a rollback path. Higher-risk changes may justify temporarily running the qualified flow and candidate flow in parallel even though duplication costs money. TI's change-notification requirements and TSMC's qualification and MES controls illustrate how suppliers coordinate evidence, timing and containment across customers, but they do not prove every individual change is riskless. The practical lesson is that freezing a reference point can accelerate improvement because successful changes become easier to prove and scale."
     }
   ],
-  "updatedAt": "2026-11-13T12:12:22.000Z"
+  "updatedAt": "2026-11-14T12:05:18.000Z"
 }
