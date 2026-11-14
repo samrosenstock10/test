@@ -2052,6 +2052,36 @@
       "verification": "Official a16z article read directly. Traction claims are attributed to the investors and company, not independently audited.",
       "freshness": "missed-source-repair",
       "itemId": "a16z-tutor-intelligence-20261102"
+    },
+    {
+      "id": "expert-20261113-semianalysis-nvidia-succession",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "title": "NVIDIA succession exposes founder-dependent operating and ecosystem risk",
+      "sourceTitle": "Nvidia and the World Without Jensen",
+      "url": "https://newsletter.semianalysis.com/p/nvidia-and-the-world-without-jensen",
+      "speaker": "Dylan Patel and SemiAnalysis team",
+      "role": "Specialist semiconductor and datacenter analysts",
+      "publishedDate": "2026-11-12",
+      "observedAt": "2026-11-14T14:39:25Z",
+      "contentAccess": "article",
+      "independenceGroup": "semianalysis-nvidia-succession-20261112",
+      "summary": "SemiAnalysis argues that NVIDIA's unusually flat, founder-centric organization, long-duration product bets and customer/supplier relationships were materially dependent on Jensen Huang, making leadership succession a decision-relevant execution and ecosystem risk.",
+      "claim": "The public article describes roughly 60 direct reports, founder-led resource allocation and relationship-dependent supplier and customer coordination; it predicts that a successor may reduce long-horizon bets and weaken allocation, ecosystem and open-source advantages.",
+      "interpretation": "The resignation increases uncertainty around NVIDIA's organizational speed, roadmap risk tolerance and ecosystem coordination. It is material counterevidence, but the analyst's competitive-capacity forecast and claims about government motives are forecasts or speculation, not verified facts.",
+      "beneficiaryTickers": [],
+      "counterTickers": [
+        "NVDA"
+      ],
+      "countercase": "NVIDIA officially says operations, roadmap and customer commitments should continue without interruption under interim CEO Colette Kress while the board runs a search. A deep management bench, institutionalized processes and existing contracts may preserve execution better than the founder-dependence thesis implies.",
+      "nextTest": "Track the permanent CEO choice, senior-leader retention, roadmap timing, supplier allocations, customer commitments, open-source posture and measured accelerator share through 2028.",
+      "evidenceType": "specialist-analyst-organizational-thesis-with-official-event-verification",
+      "status": "evidence",
+      "location": "Public article portion covering operating structure, succession, supplier/customer relationships and forecast implications",
+      "incentives": "SemiAnalysis sells semiconductor and datacenter research; its competitive-capacity estimate is proprietary analysis.",
+      "verification": "Read the attributable public article portion and NVIDIA's official CEO-transition announcement. NVIDIA independently confirms the resignation, interim CEO and search; the article's organizational judgments, competitive forecast and motive theories were not independently verified.",
+      "freshness": "missed-source-repair",
+      "itemId": "semianalysis-nvidia-succession-20261112"
     }
   ],
   "evidence": [
@@ -4604,6 +4634,29 @@
       "counterTickers": [],
       "sourceObservationId": "expert-20261104-semianalysis-spacex-13gw",
       "corroborationNote": "This evidence row and the linked observation represent the same SemiAnalysis-originated report and are not independent corroboration."
+    },
+    {
+      "id": "20261113-semianalysis-nvidia-succession",
+      "title": "NVIDIA succession raises founder-dependence and ecosystem-execution risk",
+      "url": "https://newsletter.semianalysis.com/p/nvidia-and-the-world-without-jensen",
+      "kind": "specialist-analyst-organizational-and-competitive-thesis",
+      "independenceGroup": "semianalysis-nvidia-succession-20261112",
+      "publishedDate": "2026-11-12",
+      "observedAt": "2026-11-14T14:39:25Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "SemiAnalysis argues that Jensen Huang's immediate resignation exposes founder-dependent organizational, supplier-allocation and customer-ecosystem risks at NVIDIA; NVIDIA's official announcement confirms the transition but says operations and commitments should continue.",
+      "claim": "The public article describes an unusually flat organization with roughly 60 direct reports and founder-led long-duration bets and relationships. It forecasts weaker ecosystem coordination and more non-NVIDIA accelerator capacity under successor leadership, while NVIDIA confirms Colette Kress as interim CEO and an internal/external search.",
+      "interpretation": "Our inference: leadership succession is material counterevidence for NVIDIA's execution and moat durability, but it does not by itself justify a score or ranking change before the due weekly review. The analyst's greater-than-70% non-NVIDIA 2028 capacity estimate and motive theories remain unverified forecasts.",
+      "verification": "Read the public SemiAnalysis article portion and NVIDIA's official announcement at https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition. Preserved the distinction between confirmed transition facts and analyst inference.",
+      "countercase": "NVIDIA's roadmap, contracts and operating cadence may be institutionalized beyond its founder; the interim CEO and existing leadership team may preserve continuity, and the analyst may overstate person-specific dependency or competitive displacement.",
+      "nextTest": "At the November 15 weekly review, test permanent leadership, executive retention, roadmap delivery, allocation behavior, customer commitments, open-source/China posture and independent accelerator-capacity data.",
+      "beneficiaryTickers": [],
+      "counterTickers": [
+        "NVDA"
+      ],
+      "sourceObservationId": "expert-20261113-semianalysis-nvidia-succession",
+      "corroborationNote": "This evidence row and the linked observation represent the same SemiAnalysis-originated item and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -45845,7 +45898,7 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-11-10T14:50:58Z",
+    "asOf": "2026-11-14T14:39:25Z",
     "kind": "expert-investor-scan",
     "completedChannels": [
       "semianalysis",
@@ -45855,12 +45908,12 @@
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "The SemiAnalysis Galaxy report was reviewed through its attributable public preview; proprietary model details and Envision-supplied figures were not independently audited.",
-      "The OCP engineering article provided technical control-layer evidence without identifying a durable public-company beneficiary.",
-      "Tutor Intelligence traction is attributed to a16z and the portfolio company; customer identities, autonomy share and unit economics remain undisclosed.",
+      "The missed November 13 SemiAnalysis source cycle was repaired at the actual November 14 observation time; the November 12 source date was preserved and completed evidence was not repeated.",
+      "The NVIDIA resignation and interim CEO were verified at the official announcement. Founder-dependence, competitive-capacity and motive claims remain analyst judgments or forecasts.",
+      "The OCP programmable-networking recording remained an inaccessible source lead rather than measured production, reliability or economics evidence.",
       "Project Bottlenecks and Claims were unchanged; no D3 import was required.",
-      "No decision-relevant valuation refresh was required; actual last-verified dates were preserved."
+      "The weekly company review is next due November 15. No score, rank, valuation or Company Universe change was made."
     ]
   },
-  "updatedAt": "2026-11-10T14:50:58Z"
+  "updatedAt": "2026-11-14T14:48:59Z"
 }
