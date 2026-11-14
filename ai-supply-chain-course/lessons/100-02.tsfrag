@@ -1,0 +1,28 @@
+Texas Instruments' product-change-notification page, updated March 17, 2026, says notifiable changes are communicated with the affected products, expected impact, qualification plan or results, sample availability and projected production shipment date. TI also says custom-device changes require customer approval. The mechanism matters more than the specific company: downstream users need time and evidence to decide whether a supplier's change preserves form, fit, function, quality and reliability.
+
+TSMC describes qualification before a new technology transfers to manufacturing, manufacturing defense systems linked through its execution system and abnormal-signal escalation. Those statements describe a quality architecture, not proof that every individual change is riskless. The value is disciplined traceability and containment when reality differs from the plan.
+
+The economic paradox
+
+Freezing a process can look conservative because it delays a promising improvement. But an uncontrolled change can create scrap, customer requalification, field failures and weeks of root-cause work across many future lots.
+
+The right comparison is therefore not “change versus no change.” It is uncontrolled learning versus controlled learning.
+
+A strong change system can improve faster because it protects a reference point, makes experimental evidence interpretable and lets successful revisions scale with confidence. The biggest takeaway is simple: manufacturing progress depends on preserving enough stability to know whether a change actually worked.
+
+Sources
+
+NIST/SEMATECH Engineering Statistics Handbook — process stability as consistent mean, variance and distribution over time: https://www.itl.nist.gov/div898/handbook/ppc/section4/ppc45.htm
+
+NIST/SEMATECH Engineering Statistics Handbook — statistical process control compares current measurements with an established baseline: https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc12.htm
+
+TSMC — quality management, qualification before transfer to manufacturing and MES-linked manufacturing defense systems: https://www.cld.tsmc.com/english/aboutTSMC/quality_and_reliability
+
+Texas Instruments, March 17, 2026 — product-change notifications, qualification information and customer approval for custom-device changes: https://edgeworker.ti.com/en-us/quality-reliability/quality/product-change-notification
+
+Next lesson
+
+Lesson 101: Bottleneck Migration — How Solving One Constraint Moves the Economics Somewhere Else
+
+We will connect fabrication, memory, packaging, networking, power, cooling and deployment as one chain whose marginal constraint can move after each improvement.`,
+} satisfies Lesson;

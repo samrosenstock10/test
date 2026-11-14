@@ -1089,6 +1089,17 @@
         "lessons/099-01.tsfrag",
         "lessons/099-02.tsfrag"
       ]
+    },
+    {
+      "number": 100,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "The Change-Control Paradox — Why Freezing a Process Can Make Future Improvement Possible",
+      "date": "2026-11-14",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/100-01.tsfrag",
+        "lessons/100-02.tsfrag"
+      ]
     }
   ],
   "updatedAt": "2026-11-13T12:08:48Z"

@@ -1,0 +1,49 @@
+import type { Lesson } from "./lessons";
+
+export const lesson100 = {
+  number: 100,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "The Change-Control Paradox — Why Freezing a Process Can Make Future Improvement Possible",
+  date: "2026-11-14",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 095: Better logic yield can move the bottleneck to HBM, packaging or final test because finished systems need matched good components.
+
+Lesson 096: Installed tools become sellable capacity only after facility, tool, recipe, product and customer qualification evidence is complete.
+
+Lesson 097: Releasing more wafers than constrained tools can finish enlarges WIP, lengthens cycle time and delays yield learning.
+
+Lesson 098: Expediting a lot reallocates delay and can add setups or broken batches, so urgent status must remain selective.
+
+Lesson 099: Engineering lots sacrifice some current output to buy information that can improve future yield, qualification or capacity.
+
+Why improvement needs something frozen
+
+Yesterday's engineering lot can reveal that a new etch setting improves critical dimension or lowers defects. The discovery is not yet permission to change production.
+
+A fab needs an approved baseline: the specific process flow, recipes, tool groups, materials, masks, measurement methods and test limits that define how a product is made. Freezing that baseline does not mean engineers stop learning. It means normal output stays on a known revision while proposed changes travel through a separate, controlled path.
+
+Without that separation, improvement becomes hard to prove. If a recipe, material supplier and inspection limit all change at once, a later yield shift has several possible causes. Engineers lose the clean comparison that Lesson 099's experiment was designed to create.
+
+A baseline turns variation into evidence
+
+Statistical process control compares current measurements with a historical picture of stable performance. NIST describes a stable process as one whose measured distribution, mean and variance remain consistent over time. Control charts then help distinguish ordinary variation from a signal that deserves investigation.
+
+That comparison only works if engineers know what “the process” was for each wafer. The manufacturing execution system should record the product route, recipe revision, tool, material lots, timestamps and disposition. A lot that behaves differently can then be traced to a specific change or abnormal event instead of becoming a vague yield mystery.
+
+This is why uncontrolled improvement is self-defeating. A process can be changed so often that its historical data no longer describes the thing running today.
+
+The controlled path from idea to production
+
+A disciplined change usually moves through five gates.
+
+First, define the proposed change and its reason. Second, assess what could be affected: electrical behavior, reliability, yield, cycle time, adjacent process steps, customer qualification or supply continuity. Third, run bounded experiments and qualification tests against the frozen baseline. Fourth, approve a specific revision, effective lot and release plan. Fifth, monitor the first production lots closely and preserve a rollback path.
+
+The size of the evidence should match the risk. A metrology software fix may need a different package from a new photoresist, chamber hardware or wafer-fab location. A change that looks neutral at one step can alter adhesion, overlay, thermal behavior or long-term reliability later in the route.
+
+For high-risk transitions, a fab may keep a qualified production flow while a limited tool set or product group runs the candidate revision. That costs duplication and slows adoption, but it prevents every customer lot from becoming part of the experiment.
+
+Change control coordinates the supply chain
+
+The baseline extends beyond one fab. Materials, equipment, masks, packaging, test programs and customer systems can all carry revision dependencies.
+
