@@ -1,0 +1,45 @@
+import type { Lesson } from "./lessons";
+
+export const lesson101 = {
+  number: 101,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "Bottleneck Migration — How Solving One Constraint Moves the Economics Somewhere Else",
+  date: "2026-11-15",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 096: Installed tools become sellable capacity only after facilities, recipes, products and customer systems clear qualification.
+
+Lesson 097: Releasing more wafers than constrained tools can finish enlarges queues and delays both shipments and learning.
+
+Lesson 098: Expediting one lot redistributes delay and may create setup work, so urgency does not increase total capacity by itself.
+
+Lesson 099: Engineering lots trade some current output for information that can improve future yield, qualification or capacity.
+
+Lesson 100: A stable production baseline makes controlled experiments interpretable and lets proven changes scale with traceability.
+
+The constraint moves after success
+
+An AI system is a chain of conversions. Wafer fabrication turns designs into good logic dies. Memory and packaging turn dies into accelerators. Networks join accelerators into useful groups. Power and cooling let those groups run. Deployment and software turn installed hardware into completed workloads.
+
+The chain's bottleneck is the stage where one more unit of capability would increase useful output now. When that stage improves, the old constraint may stop binding and another one becomes visible. This is bottleneck migration.
+
+The idea sounds simple, but it changes how to read almost every capacity announcement. A real improvement can be technically important and still produce less system output than its headline suggests because the rest of the stack has not moved with it.
+
+Three ways a bottleneck can migrate
+
+First, a serial stage can become the new limit. If fabrication supplies more good compute dies but qualified HBM sets do not increase, memory becomes the smaller pool. If both arrive but package assembly cannot bond and test them fast enough, packaging binds instead.
+
+Second, a shared resource can become congested. More working accelerators raise traffic through scale-up and scale-out fabrics. The chips may be available, yet collective communication leaves them waiting. Faster network hardware can then expose a software-placement or congestion-control problem rather than eliminating idle time automatically.
+
+Third, an operating boundary can strand installed hardware. A rack may be assembled but lack an energized electrical path, enough liquid-cooling capacity or completed commissioning. In that case inventory has advanced farther through the supply chain, but useful compute has not.
+
+These constraints interact. A power cap may reduce rack demand but lengthen a synchronized job. Spreading servers across lower-density racks may solve cooling while increasing cable length and network complexity. The correct unit is therefore useful workload output, not wafers, packages, ports, megawatts or installed accelerators considered alone.
+
+A simple migration map
+
+Suppose a deployment can complete 1,000 useful workload units per day. Packaging is fully occupied, while the network, power system and software each have roughly 15% spare capacity.
+
+A packaging improvement raises potential accelerator output by 20%. Useful output rises only to about 1,150 units because the next layer runs out of headroom. The remaining package capacity becomes inventory or a buffer. If networking is the new limit, upgrading power first will not release that inventory.
+
+Now suppose better communication software raises effective network capacity by 10%. Output can increase again, but perhaps only until the cooling loop reaches its operating limit. Nothing failed. Each success changed the marginal constraint.
+

@@ -1,0 +1,34 @@
+This differs from Lesson 036's one-time capacity calculation and Lesson 095's yield example. The durable lesson is a method: after every improvement, redraw the full path, measure spare capacity at each boundary and ask which next unit can actually become useful work.
+
+Current ramps show different clocks
+
+TSMC reported in October that its 2-nanometer process had entered a steep commercial ramp, while it continued expanding CoWoS advanced-packaging capacity. Micron reported HBM4 high-volume shipments for a lead customer alongside qualification samples for others. Those statements describe genuine progress at different maturity levels; they do not prove that logic, memory and packaging are available in matched quantities for every accelerator platform.
+
+The same distinction applies farther downstream. AMD's Helios architecture and UALink define a path for large accelerator domains, while data-center electrical and cooling projects must still be installed, tested and commissioned at specific sites. An architecture announcement, a customer sample and repeatable production output belong on different evidence rungs.
+
+Where the economics migrate
+
+Scarcity changes bargaining power. When good logic dies are the limiting input, additional foundry output is especially valuable. If the constraint moves to HBM qualification, advanced packaging, optical links or electrical equipment, the next dollar of system output may depend more on those suppliers.
+
+That does not make the old layer unimportant. It may remain technically essential, possess strong long-term economics or become scarce again with the next product generation. Bottleneck value is often temporary; control-point value is more durable because qualification knowledge, software, service and switching costs can persist even after physical supply expands.
+
+The practical test is to follow the waiting
+
+Look for good dies waiting for memory, packages waiting for test, racks waiting for power, accelerators waiting on communication, or completed facilities waiting for qualification. Inventory, queue time, utilization and commissioning milestones reveal more than nominal capacity alone.
+
+The biggest takeaway is that progress moves the question. Do not ask only whether one layer improved. Ask what now waits, which resource would release it, how quickly that resource can expand and whether the supplier solving today's constraint retains value after the chain rebalances.
+
+Sources
+
+TSMC, October 15, 2026 — third-quarter results, 2-nanometer wafer-revenue contribution and stated fourth-quarter ramp: https://pr.tsmc.com/english/news/3346
+
+TSMC — CoWoS advanced-packaging platform and production expansion: https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
+
+Micron — current quarterly product status for HBM4 high-volume shipments and customer qualification samples: https://investors.micron.com/financials/quarterly-results/default.aspx
+
+AMD — Helios rack-scale system and UALink-over-Ethernet architecture: https://www.amd.com/en/products/rackscale-solutions/helios.html
+
+Next lesson
+
+Lesson 102: Engineering Learning Loops — How Evidence Converts Uncertainty Into Repeatable Output
+

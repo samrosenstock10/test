@@ -1100,7 +1100,19 @@
         "lessons/100-01.tsfrag",
         "lessons/100-02.tsfrag"
       ]
+    },
+    {
+      "number": 101,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "Bottleneck Migration — How Solving One Constraint Moves the Economics Somewhere Else",
+      "date": "2026-11-15",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/101-01.tsfrag",
+        "lessons/101-02.tsfrag",
+        "lessons/101-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-13T12:08:48Z"
+  "updatedAt": "2026-11-15T12:07:35.639Z"
 }
