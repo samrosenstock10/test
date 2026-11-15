@@ -364,7 +364,14 @@
       "title": "The Change-Control Paradox — Why Freezing a Process Can Make Future Improvement Possible",
       "bodySha256": "c0785d7e1448d7a745be1e384367213879f43bbfa45a595cfdfc53a3cdf23da7",
       "body": "Lesson 100 explains why manufacturing improvement needs a stable production baseline. That baseline identifies the approved process flow, recipes, tool groups, materials, masks, measurements and test limits used for each product. Engineers can keep learning on a separate controlled path without silently changing normal production. Statistical process control and traceability make yield shifts interpretable only when current output can be compared with a known revision. A disciplined change moves through definition, risk assessment, bounded experiment and qualification, approval of a specific release, and close monitoring with a rollback path. Higher-risk changes may justify temporarily running the qualified flow and candidate flow in parallel even though duplication costs money. TI's change-notification requirements and TSMC's qualification and MES controls illustrate how suppliers coordinate evidence, timing and containment across customers, but they do not prove every individual change is riskless. The practical lesson is that freezing a reference point can accelerate improvement because successful changes become easier to prove and scale."
+    },
+    {
+      "number": 101,
+      "date": "2026-11-15",
+      "title": "Bottleneck Migration — How Solving One Constraint Moves the Economics Somewhere Else",
+      "bodySha256": "f2b4597e0e01617a077346faa6bd933e9882e5559d206732583f28dbe3c7455b",
+      "body": "Lesson 101 explains why solving one supply-chain constraint usually reveals another rather than removing all limits. AI output depends on a chain that converts good logic dies, memory and packages into networked, powered, cooled and commissioned systems running useful workloads. A bottleneck can migrate to the next serial stage, to congestion in a shared resource such as a network, or to an operating boundary such as power, cooling or deployment. Because these limits interact, counting wafers, packages, ports, megawatts or installed accelerators alone can overstate useful capacity. After every improvement, the practical method is to redraw the full path, measure spare capacity at each boundary and identify what is now waiting. Current logic, HBM, packaging and rack-scale architecture milestones can be real progress while still sitting at different maturity and qualification levels. Scarcity may shift short-term bargaining power toward the supplier that releases the present constraint, while more durable value can remain with control points supported by qualification knowledge, software, service and switching costs. The lasting lesson is to follow queues, inventory, utilization and commissioning evidence to see where the next unit of useful AI output is actually blocked."
     }
   ],
-  "updatedAt": "2026-11-14T12:05:18.000Z"
+  "updatedAt": "2026-11-15T12:08:17.000Z"
 }
