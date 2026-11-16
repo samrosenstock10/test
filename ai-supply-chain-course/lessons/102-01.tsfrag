@@ -1,0 +1,41 @@
+import type { Lesson } from "./lessons";
+
+export const lesson102 = {
+  number: 102,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "Engineering Learning Loops — How Evidence Converts Uncertainty Into Repeatable Output",
+  date: "2026-11-16",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 097: Releasing more work than a constrained tool can finish enlarges queues and slows both shipments and learning.
+
+Lesson 098: Expediting one lot redistributes delay and can add setup work without increasing total capacity.
+
+Lesson 099: Engineering lots exchange some current output for information that can improve future yield, qualification or capacity.
+
+Lesson 100: A stable production baseline makes controlled changes interpretable and lets proven improvements scale with traceability.
+
+Lesson 101: Solving one constraint moves the marginal bottleneck, so the full stack must be redrawn after every improvement.
+
+A factory can be busy and still learn slowly
+
+Nominal equipment capacity answers how much material could move. A learning loop answers how quickly an uncertain engineering choice becomes a repeatable production decision.
+
+The loop is: state a testable question, run a bounded experiment, measure the result, separate signal from noise, confirm the result, qualify the change and release it under control. Only then does information become usable output. If any step waits in a queue, produces ambiguous evidence or fails qualification, the calendar keeps moving while uncertainty remains.
+
+This makes learning throughput different from wafer throughput. A fab may process many lots yet complete few valid learning cycles because metrology is late, experiments change several factors at once, failure analysis is backlogged or the customer's qualification window is long. More equipment at the first step does not fix a slow evidence path.
+
+The scarce unit is a defensible conclusion
+
+Suppose an engineering team is choosing between two process settings. Setting B appears to raise yield by one percentage point, but the trial used a different incoming wafer mix and the measurement system is noisy. The apparent gain is not yet a production decision.
+
+A useful experiment must isolate the change well enough to support a causal conclusion. NIST describes design of experiments as a systematic way to generate valid engineering conclusions while minimizing runs, time and money. That does not mean every problem needs a large statistical program. It means the question, factors, measurements and acceptance rule should be specified before results tempt the team to tell a convenient story.
+
+Measurement quality is part of the loop. If a metrology tool cannot resolve the expected change, the experiment may consume wafers without reducing uncertainty. If sampling is too sparse, drift can hide between observations. If the process baseline is unstable, ordinary variation can be mistaken for improvement. Lessons 008, 009, 071 and 100 built those pieces separately; the new connection is that their combined delay sets the speed of engineering learning.
+
+Three clocks govern the result
+
+The first clock is experiment cycle time: how long it takes to schedule, process, measure and analyze a run. The second is confirmation time: how long it takes to repeat the result across tools, materials, shifts or lots. The third is qualification time: how long suppliers and customers need to prove that the change meets reliability, performance and traceability requirements.
+
+These clocks cannot always be compressed in the same way. Parallel experiments can screen several hypotheses quickly, but they consume scarce wafers, engineering attention and metrology slots. A faster measurement can shorten the loop only if it is accurate enough for the decision. A customer may require reliability exposure that cannot be replaced by a promising short test.
+
