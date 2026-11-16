@@ -1,0 +1,38 @@
+The correct objective is therefore not maximum experiments. It is maximum valid uncertainty reduction per unit of calendar time and constrained resource.
+
+A simple economic test
+
+Imagine a packaging line loses $100,000 of contribution each week because one failure mode holds yield below target. An experiment costs $40,000 and has a one-in-three chance of identifying a fix worth $60,000 per week. Waiting four weeks for a metrology slot carries an expected cost even before the experiment begins.
+
+This does not make every fast experiment worthwhile. False conclusions can be more expensive than delay because a weak change may contaminate production, trigger requalification or damage customer trust. The economic comparison is between the expected value of information, the cost of obtaining it, the cost of waiting and the downside of acting on bad evidence.
+
+That is why a short, well-instrumented loop can be more valuable than another nominal tool. It converts uncertainty into a controlled decision sooner. But once measurement, analysis or qualification becomes the constraint, adding experimental wafers may only enlarge the learning queue.
+
+Where coordination matters
+
+Many semiconductor learning loops cross company boundaries. A material supplier may see its own process data, the fab may see inline measurements, the packaging house may see assembly failures and the customer may see system reliability. No participant alone has the complete causal chain.
+
+Shared definitions, traceable lot histories and agreed acceptance criteria reduce handoff delay. Pilot lines can also separate exploration from high-volume production: imec says its NanoIC infrastructure is designed to speed R&D learning cycles and let foundries, equipment makers and materials suppliers validate technologies before commercial scale. The important evidence is not access to an advanced tool by itself, but repeatable results that survive the transition into a qualified production flow.
+
+The practical dashboard
+
+Track five things: the number of open engineering questions, median time from hypothesis to measured result, confirmation success rate, qualification lead time and the value of production decisions released. Also watch where experiments wait. A falling cycle time with a rising false-positive rate is not better learning; neither is a large experiment count with few controlled releases.
+
+The biggest takeaway is that learning is a production system for evidence. Its bottlenecks can be measured, its queues can be shortened and its conclusions can be improved. The durable advantage belongs to organizations that turn uncertain observations into repeatable, qualified production decisions faster without lowering the evidence standard.
+
+Sources
+
+NIST/SEMATECH Engineering Statistics Handbook — process improvement, experimental design and the need for capable measurement and stable processes: https://www.itl.nist.gov/div898/handbook/pri/pri.htm
+
+NIST — definition and uses of design of experiments for valid engineering conclusions under constraints on runs, time and money: https://www.itl.nist.gov/div898/handbook/pmd/section3/pmd31.htm
+
+NIST, June 30, 2026 — semiconductor manufacturing review covering inline metrology, process control and data analytics: https://www.nist.gov/publications/innovations-advanced-processes-and-systems-semiconductor-manufacturing
+
+NIST — semiconductor strain-measurement program on faster cycles of learning and the transition from lab to nearline and inline metrology: https://www.nist.gov/programs-projects/strain-measurement-semiconductor-devices-and-packages
+
+imec — NanoIC pilot-line infrastructure, platform repeatability and validation before high-volume production: https://www.imec-int.com/en/infrastructure
+
+Next lesson
+
+Lesson 103: Supplier Economics and Control Points — Where Scarcity Becomes Durable Value
+
