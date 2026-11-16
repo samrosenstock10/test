@@ -371,7 +371,14 @@
       "title": "Bottleneck Migration — How Solving One Constraint Moves the Economics Somewhere Else",
       "bodySha256": "f2b4597e0e01617a077346faa6bd933e9882e5559d206732583f28dbe3c7455b",
       "body": "Lesson 101 explains why solving one supply-chain constraint usually reveals another rather than removing all limits. AI output depends on a chain that converts good logic dies, memory and packages into networked, powered, cooled and commissioned systems running useful workloads. A bottleneck can migrate to the next serial stage, to congestion in a shared resource such as a network, or to an operating boundary such as power, cooling or deployment. Because these limits interact, counting wafers, packages, ports, megawatts or installed accelerators alone can overstate useful capacity. After every improvement, the practical method is to redraw the full path, measure spare capacity at each boundary and identify what is now waiting. Current logic, HBM, packaging and rack-scale architecture milestones can be real progress while still sitting at different maturity and qualification levels. Scarcity may shift short-term bargaining power toward the supplier that releases the present constraint, while more durable value can remain with control points supported by qualification knowledge, software, service and switching costs. The lasting lesson is to follow queues, inventory, utilization and commissioning evidence to see where the next unit of useful AI output is actually blocked."
+    },
+    {
+      "number": 102,
+      "date": "2026-11-16",
+      "title": "Engineering Learning Loops — How Evidence Converts Uncertainty Into Repeatable Output",
+      "bodySha256": "8e93aad10e22da0dacd5d1b9d87e3153f4563768156be0b90720373535d9f86c",
+      "body": "Lesson 102 explains that a factory can process a great deal of material while completing very few valid learning cycles. An engineering learning loop moves from a testable question through a bounded experiment, measurement, causal diagnosis, confirmation, qualification and controlled release. The scarce output is therefore a defensible production decision, not simply another experimental wafer or equipment hour. Experiment cycle time, confirmation time and qualification time are separate clocks, and each can become the limiting queue. Faster experiments help only when measurement is capable, the baseline is stable and the evidence survives repetition and customer requirements. The economic decision weighs the expected value of information against experiment cost, waiting cost and the risk of acting on a false conclusion. Because evidence is often split across material suppliers, fabs, packaging houses and customers, traceable lot histories and shared acceptance criteria can shorten handoff delays. The lasting lesson is to manage learning as an evidence-production system and maximize valid uncertainty reduction per unit of calendar time without lowering the evidence standard."
     }
   ],
-  "updatedAt": "2026-11-15T12:08:17.000Z"
+  "updatedAt": "2026-11-16T12:15:27.000Z"
 }
