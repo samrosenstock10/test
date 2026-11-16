@@ -950,7 +950,19 @@
         "lessons/101-02.tsfrag",
         "lessons/101-03.tsfrag"
       ]
+    },
+    {
+      "number": 102,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "Engineering Learning Loops — How Evidence Converts Uncertainty Into Repeatable Output",
+      "date": "2026-11-16",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/102-01.tsfrag",
+        "lessons/102-02.tsfrag",
+        "lessons/102-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-15T12:07:35.639Z"
+  "updatedAt": "2026-11-16T12:15:07.663Z"
 }
