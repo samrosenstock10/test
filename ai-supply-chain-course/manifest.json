@@ -962,7 +962,19 @@
         "lessons/102-02.tsfrag",
         "lessons/102-03.tsfrag"
       ]
+    },
+    {
+      "number": 103,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "Supplier Economics and Control Points — Where Scarcity Becomes Durable Value",
+      "date": "2026-11-17",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/103-01.tsfrag",
+        "lessons/103-02.tsfrag",
+        "lessons/103-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-16T12:15:07.663Z"
+  "updatedAt": "2026-11-17T12:03:39.455Z"
 }
