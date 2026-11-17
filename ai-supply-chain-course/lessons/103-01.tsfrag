@@ -1,0 +1,39 @@
+import type { Lesson } from "./lessons";
+
+export const lesson103 = {
+  number: 103,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "Supplier Economics and Control Points — Where Scarcity Becomes Durable Value",
+  date: "2026-11-17",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 098: Expediting one lot redistributes delay and can add setup work without increasing total capacity.
+
+Lesson 099: Engineering lots exchange some current output for information that can improve future yield, qualification or capacity.
+
+Lesson 100: A stable production baseline makes controlled changes interpretable and lets proven improvements scale with traceability.
+
+Lesson 101: Solving one constraint moves the marginal bottleneck, so the full stack must be redrawn after every improvement.
+
+Lesson 102: Engineering advantage comes from converting uncertainty into qualified production decisions faster without lowering the evidence standard.
+
+Scarcity does not automatically create a durable control point
+
+When one supplier releases the current bottleneck, customers may accept higher prices, longer commitments or less favorable terms. That is real economic value. But it may be temporary scarcity rent rather than lasting supplier power.
+
+A durable control point continues to capture value after the immediate shortage eases. The customer still depends on the supplier because changing creates engineering work, qualification risk, lost learning data, service disruption or weaker system performance. The distinction matters because capacity can expand faster than those relationships unwind—or, in other cases, an open standard or credible second source can make switching easier than the market expects.
+
+Five tests separate the two
+
+The first test is bottleneck relief. Does one more unit from this supplier increase finished, useful output now? A qualified packaging slot can be worth far more when good logic dies and HBM are waiting than when customers have spare package capacity. This identifies present scarcity, not permanence.
+
+The second test is switching cost. Ask what must be redone if the customer changes suppliers: design rules, process recipes, software, reliability testing, field procedures, spare-parts inventory or customer qualification. The strongest switching costs are operational, not contractual. A customer may be free to leave on paper and still face months of engineering risk.
+
+The third test is service intensity. Complex equipment and systems need uptime support, upgrades, calibration, applications knowledge and rapid parts delivery. Each installed unit can create a recurring relationship and a growing dataset about failures and performance. That learning can improve the supplier's next service action and next product, making the installed base more valuable than the original sale alone.
+
+The fourth test is utilization and fixed-cost exposure. A supplier with expensive factories, inventory and field teams can show powerful profit growth when volume rises because more revenue spreads those costs. The same operating leverage works in reverse when orders pause. High margins during full utilization may therefore reflect the cycle as well as durable differentiation.
+
+The fifth test is retained pricing power after expansion. Imagine industry capacity doubles and lead times normalize. Can the supplier still earn attractive returns because it owns unique performance, trusted qualification, essential software or a dense service network? Or do customers rebid the work and push price toward cost? That counterfactual is the cleanest separation between a bottleneck premium and a control point.
+
+Three different sources of value
+
