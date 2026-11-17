@@ -1,0 +1,34 @@
+Consider a substrate supplier that is temporarily the only qualified source for one package. Its capacity is scarce and switching requires requalification, so it has both short-term and potentially durable value. If two additional suppliers qualify using the same interface and comparable yields, scarcity rent can fall. The remaining value depends on execution, learning and service.
+
+Now consider a lithography-equipment supplier. The machine's technical capability matters, but so do installation, uptime, field upgrades and process applications. ASML reported €8.2 billion of 2025 net service and field-option sales, up 26.2%, and says roughly 10,000 customer-support employees serve systems in customer fabs. Those figures show the economic weight of an installed base and service organization. They do not by themselves prove that every service dollar has equal margin or that customers lack negotiating power.
+
+Lam Research offers a second example. Its fiscal 2026 filing reported about $8.35 billion of customer-support-related revenue alongside $14.89 billion of systems revenue. Support includes service, spares, upgrades and mature-node equipment. A recurring revenue stream can soften the equipment cycle and deepen customer knowledge, but its durability still depends on tool relevance, uptime performance and customer alternatives.
+
+How standards change the answer
+
+Open interfaces can lower one form of switching cost while leaving others intact. A standard connector may let several vendors attach, yet firmware, diagnostics, orchestration and qualification can remain supplier-specific. Conversely, a customer with enough scale may internalize integration, sponsor second sources or use purchasing power to prevent one vendor from owning the system boundary.
+
+This is why market share alone is not the test. A supplier can have high share because it is temporarily capacity-constrained, because its product is genuinely superior or because customers are locked into a qualified operating system. Those conditions imply different economics.
+
+A practical value-capture map
+
+For each supplier, write five lines: what waits for its product today; what the customer must redo to switch; what recurring service or data relationship follows installation; how utilization changes unit economics; and what advantage remains after lead times normalize.
+
+Then add the falsifiers. Capacity expansion may erase scarcity. A second source may clear qualification. A standard may commoditize the interface. A new architecture may bypass the component. A customer's vertical integration may absorb the learning loop.
+
+The biggest takeaway is that bottlenecks explain where value appears first, while control points explain where value can persist. Durable supplier economics come from protecting useful output through qualification, service, learning and switching friction—not merely from being scarce during one phase of the buildout.
+
+Sources
+
+ASML 2025 Annual Report — system sales, installed-base service and field-option sales, customer support and operating results: https://www.investor.asml.com/annual-reports/2025/financials
+
+ASML — customer-support organization, uptime services, parts logistics, upgrades and applications support: https://www.asml.com/en/products/customer-support
+
+Lam Research fiscal 2026 Annual Report — systems revenue and customer-support-related revenue including service, spares, upgrades and Reliant equipment: https://www.sec.gov/Archives/edgar/data/707549/000114036126037568/ef20082688_ars.pdf
+
+Lam Research September 2026 Form 10-Q — current demand drivers, installed-base support and factors affecting revenue timing: https://www.sec.gov/Archives/edgar/data/707549/000070754926000054/lrcx-20260927.htm
+
+Next lesson
+
+Lesson 104: The Evidence Ladder — From Announcement to Profitable Scale
+
