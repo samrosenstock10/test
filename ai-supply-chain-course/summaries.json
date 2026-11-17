@@ -378,7 +378,14 @@
       "title": "Engineering Learning Loops — How Evidence Converts Uncertainty Into Repeatable Output",
       "bodySha256": "8e93aad10e22da0dacd5d1b9d87e3153f4563768156be0b90720373535d9f86c",
       "body": "Lesson 102 explains that a factory can process a great deal of material while completing very few valid learning cycles. An engineering learning loop moves from a testable question through a bounded experiment, measurement, causal diagnosis, confirmation, qualification and controlled release. The scarce output is therefore a defensible production decision, not simply another experimental wafer or equipment hour. Experiment cycle time, confirmation time and qualification time are separate clocks, and each can become the limiting queue. Faster experiments help only when measurement is capable, the baseline is stable and the evidence survives repetition and customer requirements. The economic decision weighs the expected value of information against experiment cost, waiting cost and the risk of acting on a false conclusion. Because evidence is often split across material suppliers, fabs, packaging houses and customers, traceable lot histories and shared acceptance criteria can shorten handoff delays. The lasting lesson is to manage learning as an evidence-production system and maximize valid uncertainty reduction per unit of calendar time without lowering the evidence standard."
+    },
+    {
+      "number": 103,
+      "date": "2026-11-17",
+      "title": "Supplier Economics and Control Points — Where Scarcity Becomes Durable Value",
+      "bodySha256": "0c1e7978c40ddfe01c4bcb99ce0e39507bb5fcde3d166f842186fbd07109f399",
+      "body": "Lesson 103 separates temporary scarcity rent from a durable supplier control point. The first question is whether one more unit from a supplier releases the system’s current bottleneck, which identifies present value but not permanence. Durable value is more likely when switching requires redesign, requalification, software changes, new field procedures or the loss of accumulated operating knowledge. Installed-base service, upgrades, parts logistics and performance data can deepen the relationship long after the original equipment sale. Utilization also matters because fixed factories and service networks can magnify profits when volume is high and reverse them when the cycle weakens. The strongest test asks what pricing power remains after capacity expands and lead times normalize. ASML and Lam show how large installed bases can support material service and upgrade revenue, but the revenue mix alone does not prove monopoly power. The lasting method is to map bottleneck relief, switching work, recurring service, utilization exposure and post-expansion pricing power, then identify standards, second sources, architectural bypasses or customer integration that could break the control point."
     }
   ],
-  "updatedAt": "2026-11-16T12:15:27.000Z"
+  "updatedAt": "2026-11-17T12:04:52.000Z"
 }
