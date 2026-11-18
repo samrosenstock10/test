@@ -1,0 +1,43 @@
+import type { Lesson } from "./lessons";
+
+export const lesson104 = {
+  number: 104,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "The Evidence Ladder — From Announcement to Profitable Scale",
+  date: "2026-11-18",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 099: Engineering lots trade some current output for evidence that can improve future yield, qualification or capacity.
+
+Lesson 100: A stable production baseline makes controlled changes interpretable and lets proven improvements scale with traceability.
+
+Lesson 101: Solving one constraint moves the marginal bottleneck, so the full stack must be redrawn after every improvement.
+
+Lesson 102: Engineering advantage comes from converting uncertainty into qualified production decisions faster without lowering the evidence standard.
+
+Lesson 103: Scarcity creates durable supplier value only when switching costs, service, learning or differentiated performance survive capacity expansion.
+
+A true statement can still support a false conclusion
+
+A company announces a new factory, demonstrates a device, ships samples, enters qualification or begins production. Each statement may be accurate. The analytical error is treating every one as evidence of the same thing: profitable capacity at scale.
+
+They are different rungs on an evidence ladder. Moving upward requires new proof because a new failure mode appears at every step. A prototype may work once but not repeat. Samples may exist but fail a customer's reliability tests. A qualified product may ship in small quantities while yield, cycle time or upstream supply limits volume. High volume can still earn poor returns if utilization, price, service cost or working capital disappoints.
+
+Seven rungs, seven valid inferences
+
+1. Announcement or roadmap. Management has stated an intention, target or allocation. This can reveal strategy, budget direction and a date worth monitoring. It does not prove technical feasibility, installed capacity, customer demand or economic return.
+
+2. Demonstration. A defined device, process or system worked under stated conditions. This is stronger than a slide because some physical uncertainty has been retired. It does not prove repeatability, manufacturability, reliability or customer acceptance.
+
+3. Sample or engineering lot. A customer or internal team can evaluate real material. The design and process are mature enough to produce testable units. A sample is not a qualified product, and one shipment says little about yield or sustained output.
+
+4. Customer qualification. A specific customer, product and use case have passed defined performance, reliability and traceability requirements. This supports commercial eligibility for that scope. It does not automatically transfer to every customer, package, factory, tool set or operating condition.
+
+5. Initial or risk production. The integrated process is making sellable or near-sellable output and the organization is learning under real manufacturing conditions. This proves more than a lab result but may still involve low utilization, selective lots, extra inspection and unstable yields.
+
+6. Volume production. Output is repeating at a meaningful rate with a controlled process. Evidence should include units, revenue share, shipment rate or another denominator—not merely the word "volume." This supports manufacturing maturity for the specified product and period, not unconstrained supply across the whole stack.
+
+7. Profitable scale. Volume produces attractive economics after scrap, depreciation, service, inventory, expedites and capital needs. The proof is sustained margin, cash generation or returns across a useful period. A shortage price or one full quarter may flatter economics that weaken when capacity expands.
+
+The discipline is to claim no more than the rung proves
+
