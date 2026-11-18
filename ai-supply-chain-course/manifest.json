@@ -974,7 +974,19 @@
         "lessons/103-02.tsfrag",
         "lessons/103-03.tsfrag"
       ]
+    },
+    {
+      "number": 104,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "The Evidence Ladder — From Announcement to Profitable Scale",
+      "date": "2026-11-18",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/104-01.tsfrag",
+        "lessons/104-02.tsfrag",
+        "lessons/104-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-17T12:03:39.455Z"
+  "updatedAt": "2026-11-18T12:10:25.892Z"
 }
