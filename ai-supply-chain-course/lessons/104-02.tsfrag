@@ -1,0 +1,37 @@
+Micron's June 2026 results offer an unusually clear comparison inside one sentence: HBM4 was in high-volume shipments for its lead customer's platform, while qualification samples had been shipped to multiple other end customers. The first clause supports volume evidence for one platform. The second supports evaluation activity elsewhere. Combining them into "HBM4 is qualified and in volume for all major customers" would erase the scope that Micron carefully preserved.
+
+TSMC reported that 2-nanometer shipments represented 8% of third-quarter 2026 wafer revenue and expected a steep fourth-quarter ramp. Revenue share is strong evidence that 2-nanometer wafers were shipping at commercial scale; it is more informative than an announcement or isolated demonstration. But it does not prove that every advanced package, HBM supply, substrate, rack power path or customer system is equally ready. One rung can be high at one layer while the finished-system stack remains uneven.
+
+ASML makes a different distinction explicit. Its year-end 2025 release defined net bookings as accepted written orders and backlog as accepted orders not yet recorded in sales. Bookings and backlog therefore demonstrate customer commitment and future workload, not current revenue, shipment timing or profit. Export restrictions, component supply, customer-site readiness and acceptance can still affect conversion. The evidence is valuable precisely because its meaning is bounded.
+
+Use a one-rung promotion rule
+
+When evidence is incomplete, do not leap several rungs because the story is plausible. At most, treat the next rung as a hypothesis to test. A working demonstration may justify asking whether samples exist. Samples may justify checking qualification. Qualification may justify looking for production units, yield and rate. Volume may justify testing margins and returns.
+
+Four labels make the rule operational:
+
+- Date: When was the evidence true?
+- Scope: Which customer, product, factory, tool set or geography did it cover?
+- Unit: Was the claim about one device, samples, wafers, shipments, revenue, capacity or profit?
+- Counterevidence: What observation would show that progress stalled or the economics changed?
+
+These labels prevent verbs from doing analytical work they cannot do. "Launched," "available," "qualified," "shipping" and "in production" are not interchangeable. Neither are orders, installed tools, nameplate capacity, good output and profitable output.
+
+The ladder also connects engineering evidence to supplier economics
+
+Lessons 096 and 102 showed that qualification and learning are real constraints. Lesson 103 showed that scarcity and durable value capture are different. The ladder links them: evidence of advancing maturity can identify where technical risk is falling, while evidence of profitable scale tests whether that progress creates durable economic value.
+
+A supplier may climb quickly from demonstration to qualification because it has strong joint engineering and a trusted installed base. That capability can be a control point. But the conclusion becomes durable only if production repeats, customers remain dependent for operational reasons and returns survive the next capacity cycle.
+
+The biggest takeaway is simple: ask what the evidence directly proves, then stop. The gap between that statement and the desired conclusion is the remaining work. Good analysis does not punish ambition; it preserves the distinctions needed to see when ambition becomes repeatable, useful and economically real.
+
+Sources
+
+Micron Technology, Fiscal Q3 2026 results — https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Results-for-the-Third-Quarter-of-Fiscal-2026/default.aspx
+
+TSMC, Third Quarter 2026 results — https://pr.tsmc.com/english/news/3346
+
+ASML, Fourth Quarter and Full-Year 2025 results — https://www.investor.asml.com/news-releases/news-release-details/q4-2025-financial-results
+
+Next lesson
+
