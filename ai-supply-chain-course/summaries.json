@@ -385,7 +385,14 @@
       "title": "Supplier Economics and Control Points — Where Scarcity Becomes Durable Value",
       "bodySha256": "0c1e7978c40ddfe01c4bcb99ce0e39507bb5fcde3d166f842186fbd07109f399",
       "body": "Lesson 103 separates temporary scarcity rent from a durable supplier control point. The first question is whether one more unit from a supplier releases the system’s current bottleneck, which identifies present value but not permanence. Durable value is more likely when switching requires redesign, requalification, software changes, new field procedures or the loss of accumulated operating knowledge. Installed-base service, upgrades, parts logistics and performance data can deepen the relationship long after the original equipment sale. Utilization also matters because fixed factories and service networks can magnify profits when volume is high and reverse them when the cycle weakens. The strongest test asks what pricing power remains after capacity expands and lead times normalize. ASML and Lam show how large installed bases can support material service and upgrade revenue, but the revenue mix alone does not prove monopoly power. The lasting method is to map bottleneck relief, switching work, recurring service, utilization exposure and post-expansion pricing power, then identify standards, second sources, architectural bypasses or customer integration that could break the control point."
+    },
+    {
+      "number": 104,
+      "date": "2026-11-18",
+      "title": "The Evidence Ladder — From Announcement to Profitable Scale",
+      "bodySha256": "c4465ecb3c3717c093d5ccca621b914dccdcec4d7c9147a5a04d136f6f4f290a",
+      "body": "Lesson 104 introduces an evidence ladder that separates announcement, demonstration, sampling, customer qualification, initial production, volume production and profitable scale. Each rung proves something useful, but none should be treated as proof of all the rungs above it. A sample shows that evaluable material exists, while qualification proves acceptance only for a defined customer, product and operating scope. Volume claims become stronger when they include a denominator such as shipments, wafer-revenue share or production rate, yet even volume does not prove attractive economics. Micron’s HBM4 disclosure shows why scope matters: high-volume shipments for one lead platform and qualification samples for other customers are different evidence. TSMC’s 2-nanometer wafer-revenue share provides commercial production evidence at the foundry layer without proving equal readiness across packaging, memory, power and systems. ASML’s definitions distinguish accepted bookings and backlog from revenue already recognized, preventing future demand evidence from being mistaken for present sales or profit. The durable method is to record the date, scope, unit and possible counterevidence, then move no more than one rung beyond the observed fact as a hypothesis to test."
     }
   ],
-  "updatedAt": "2026-11-17T12:04:52.000Z"
+  "updatedAt": "2026-11-18T12:12:28.306Z"
 }
