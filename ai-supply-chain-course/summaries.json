@@ -392,7 +392,14 @@
       "title": "The Evidence Ladder — From Announcement to Profitable Scale",
       "bodySha256": "c4465ecb3c3717c093d5ccca621b914dccdcec4d7c9147a5a04d136f6f4f290a",
       "body": "Lesson 104 introduces an evidence ladder that separates announcement, demonstration, sampling, customer qualification, initial production, volume production and profitable scale. Each rung proves something useful, but none should be treated as proof of all the rungs above it. A sample shows that evaluable material exists, while qualification proves acceptance only for a defined customer, product and operating scope. Volume claims become stronger when they include a denominator such as shipments, wafer-revenue share or production rate, yet even volume does not prove attractive economics. Micron’s HBM4 disclosure shows why scope matters: high-volume shipments for one lead platform and qualification samples for other customers are different evidence. TSMC’s 2-nanometer wafer-revenue share provides commercial production evidence at the foundry layer without proving equal readiness across packaging, memory, power and systems. ASML’s definitions distinguish accepted bookings and backlog from revenue already recognized, preventing future demand evidence from being mistaken for present sales or profit. The durable method is to record the date, scope, unit and possible counterevidence, then move no more than one rung beyond the observed fact as a hypothesis to test."
+    },
+    {
+      "number": 105,
+      "date": "2026-11-19",
+      "title": "A Cross-Stack Decision Framework — Constraint, Evidence and Value Capture",
+      "bodySha256": "ed02a746c8381c385edb57b33703bd05ed1932e77a351fc15dc7767786c9ffb2",
+      "body": "Lesson 105 turns the course’s main mechanisms into a reusable decision sheet. First define the useful output and time horizon so nominal capacity, installed tools and finished customer output are not confused. Next locate the present constraint by following queues, yield loss, missing matched components, qualification delay, software limits or facility bottlenecks. Describe the smallest mechanism that could release that constraint and predict which constraint would move next, including the main tradeoff. Grade the available evidence by date, scope, unit and maturity rung so a true claim does not support a stronger conclusion than it proves. Then separate immediate bottleneck relief from durable value capture by testing switching work, service, learning, alternatives, utilization and return on capital. End with one decision, one observation that would falsify it and the next measurement that would most reduce uncertainty. The advanced-packaging example shows why construction and installed tools can indicate future potential without proving product-specific qualified output. The framework retrieves earlier lessons when needed without claiming that delivery equals mastery."
     }
   ],
-  "updatedAt": "2026-11-18T12:12:28.306Z"
+  "updatedAt": "2026-11-19T12:05:58.487Z"
 }
