@@ -1,0 +1,47 @@
+import type { Lesson } from "./lessons";
+
+export const lesson105 = {
+  number: 105,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "A Cross-Stack Decision Framework — Constraint, Evidence and Value Capture",
+  date: "2026-11-19",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 100: A stable production baseline makes controlled changes interpretable and lets proven improvements scale with traceability.
+
+Lesson 101: Solving one constraint moves the marginal bottleneck, so the full stack must be redrawn after every improvement.
+
+Lesson 102: Engineering advantage comes from converting uncertainty into qualified production decisions faster without lowering the evidence standard.
+
+Lesson 103: Scarcity creates durable supplier value only when switching costs, service, learning or differentiated performance survive capacity expansion.
+
+Lesson 104: Announcements, demonstrations, samples, qualification, volume production and profitable scale are different evidence rungs.
+
+A good decision starts by narrowing the question
+
+The AI supply chain is too interconnected for “Is this technology important?” to be a useful final question. A technology can be important yet unavailable, available yet not limiting output, or scarce yet unable to earn durable returns.
+
+A better decision uses six questions in order. Each answer constrains the next one. The result is a short decision sheet that can evaluate a factory change, a supplier claim, a system architecture or an investment thesis without pretending that one framework removes uncertainty.
+
+1. What useful output matters, and over what time?
+
+Begin with the output the customer can actually use: qualified packages per week, reliable training tokens per dollar, racks commissioned per month or another concrete unit. Name the geography, product and time horizon.
+
+This prevents denominator drift. Wafer starts, installed tools, accelerator shipments and available megawatts can all rise while completed AI systems remain limited somewhere else. Lesson 036 introduced the full-stack denominator; Lesson 101 showed why it must be redrawn after each improvement.
+
+A one-year operating decision and a ten-year structural view may produce different answers. Near-term output may depend on an already-qualified line. Long-term advantage may depend on learning speed, standards or a supplier's ability to expand without losing economics.
+
+2. Where is the present constraint?
+
+Follow the waiting, not the publicity. Look for queues, low matched-component availability, yield loss, qualification delay, software incompatibility, power limits or commissioning bottlenecks. Then ask whether the constraint is physical capacity, process capability, coordination or evidence.
+
+This distinction changes the remedy. More assembly tools do not release output if substrates are missing. More wafers do not help if package yield is low. A completed building does not create customer capacity before tools, recipes and products are qualified. More experiments do not accelerate learning if metrology or engineering review is the queue.
+
+The test is marginal: if one more unit of this resource appeared today, would finished useful output increase? If not, keep tracing.
+
+3. What mechanism could release it—and what moves next?
+
+Describe the smallest causal chain. Avoid “more capacity” as an explanation. State what changes physically or operationally: a new tool reduces a queue, a recipe raises good-die yield, an interface removes a conversion step, or shared acceptance criteria shorten qualification.
+
+Then name the likely next constraint. This is the migration test from Lesson 101. A change is more credible when the analysis predicts both the benefit and the new waiting point. If better logic yield raises the need for HBM and package slots, that is not failure; it is evidence that the system map is working.
+
