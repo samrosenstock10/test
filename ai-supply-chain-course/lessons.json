@@ -1148,7 +1148,19 @@
         "lessons/104-02.tsfrag",
         "lessons/104-03.tsfrag"
       ]
+    },
+    {
+      "number": 105,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "A Cross-Stack Decision Framework — Constraint, Evidence and Value Capture",
+      "date": "2026-11-19",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/105-01.tsfrag",
+        "lessons/105-02.tsfrag",
+        "lessons/105-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-18T12:10:25.892Z"
+  "updatedAt": "2026-11-19T12:03:52.114Z"
 }
