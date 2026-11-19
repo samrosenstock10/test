@@ -1,0 +1,32 @@
+The mechanism should also identify the main tradeoff. A faster process may narrow the operating window. A denser package may worsen thermal or yield coupling. A second source may reduce dependence but add qualification and inventory complexity.
+
+4. What evidence rung has actually been reached?
+
+Record four labels from Lesson 104: date, scope, unit and counterevidence. Then classify the evidence as announcement, demonstration, sample, qualification, initial production, volume production or profitable scale.
+
+The purpose is not to distrust every claim. It is to prevent a correct fact from carrying a conclusion it cannot support. A sample can prove evaluable material exists. Customer qualification can prove acceptance for a specified use. Neither alone proves repeatable volume or attractive returns.
+
+The U.S. Government Accountability Office's technology-readiness guidance makes a similar discipline explicit: the assessment scope and level of detail should match the evidence available, and readiness for one component does not automatically prove readiness for integration into a larger system.
+
+5. Who captures value, and how durable is it?
+
+Separate bottleneck relief from lasting power. A scarce supplier may earn strong prices today because one more unit releases customer output. Durable value requires something that survives the response: hard switching and requalification work, unique performance, installed-base service, trusted software, accumulated operating data or a learning loop competitors cannot quickly reproduce.
+
+Test the downside as capacity expands. Ask who funds the assets, bears scrap and inventory, supports the installed base and suffers when utilization falls. Revenue growth is not the same as return on capital. The SEC's guidance on reading company filings points analysts toward business description, risk factors, management discussion, financial statements and cash flow because the economics live across all of them, not in one announcement.
+
+6. What is the decision, the falsifier and the next measurement?
+
+End with one action at the appropriate confidence level. “Monitor qualification” is different from “commit capacity,” just as “promising supplier” is different from “durable control point.”
+
+Write one observation that would change the answer. It might be a qualification failure, a rival second source, a yield plateau, lower utilization, a standards-based substitute or a downstream bottleneck that prevents the expected output gain.
+
+Finally, choose the next measurement that most reduces decision uncertainty. NIST describes design of experiments as a way to obtain valid, defensible conclusions with limited runs, time and money. The same logic applies to analysis: seek the smallest new piece of evidence that can distinguish between the leading explanations.
+
+A compact worked example
+
+Suppose a supplier announces a large advanced-packaging expansion.
+
+Useful output is not square footage or installed tools; it is qualified good packages for a defined accelerator and period. The present constraint might be assembly slots, but it could instead be substrates, HBM, final test or customer qualification. The proposed mechanism is that new tools raise package throughput, with final test or component matching likely to become the next constraint.
+
+If the evidence is only construction and tool installation, the claim remains below qualified production. Value may accrue to the packaging supplier during scarcity, but durability depends on customer switching work, yield learning, service and whether competing capacity arrives. The immediate decision could be to recognize future supply potential without counting it as current output. The falsifier is repeated qualification delay or missing matched components. The next measurement is product-specific qualified output, not nameplate capacity.
+
