@@ -1,0 +1,38 @@
+Engineering choices move boundaries rather than eliminate tradeoffs
+
+Many important choices in this course were versions of the same question: where should a function live, and which tradeoff becomes acceptable?
+
+A custom accelerator can improve efficiency for a stable workload but sacrifices some flexibility. Advanced packaging can place compute and memory closer together but couples yield, thermal and assembly risks. Optical links can extend reach and bandwidth but add conversion, power and service complexity. Higher-voltage distribution can reduce current and copper burden while making protection and field procedures more demanding. Open interfaces can widen supplier choice while leaving integration, firmware, qualification and accountability unresolved.
+
+There is rarely a universally best architecture. The better design fits the workload, volume, maturity, operating environment and failure cost. The physical mechanism tells you what improves; the new boundary tells you what becomes harder.
+
+Supplier economics depend on what stays difficult
+
+A shortage can make any qualified unit valuable. It does not automatically create a durable control point.
+
+Lasting supplier power is more likely when replacement requires redesign, requalification, new software, changed field procedures or the loss of accumulated operating knowledge. Installed-base service, trusted tools, unique performance and learning data can deepen the relationship. Open standards, credible second sources, architectural bypasses and customer internalization can weaken it.
+
+Utilization matters too. Expensive factories, inventory and service networks create operating leverage in both directions. Attractive economics must survive more than one moment of full capacity and shortage pricing.
+
+The practical test from Lesson 103 is to separate immediate bottleneck relief from retained pricing power after capacity expands. Then ask who funds the assets, bears scrap and working capital, supports the installed base and captures the learning.
+
+Evidence must match the claim
+
+The course repeatedly separated what is announced from what is demonstrated, qualified, produced and profitable.
+
+A roadmap shows intent. A prototype shows that something worked under defined conditions. Samples enable evaluation. Customer qualification proves acceptance for a specific scope. Initial production generates real operating evidence. Volume production requires repeatable output at a meaningful rate. Profitable scale requires sustained economics after the full cost of capacity, yield, service and capital.
+
+Official 2026 disclosures from TSMC and Micron illustrated why scope matters: commercial wafer revenue, high-volume shipments for one platform and qualification samples for other customers are all useful evidence, but they prove different things. Standards such as UCIe can define an interface and broaden participation without proving that every multi-vendor implementation is qualified or economical.
+
+The enduring rule is simple: record the date, scope and unit, then claim no more than the evidence directly supports. Name the observation that would change the conclusion.
+
+A durable reference to the course
+
+When a new claim or problem appears, this retrieval map points back to the most useful parts of the archive:
+
+- For the physical path from wafer through system, begin with Lessons 001–010, 031–036 and 049–050.
+- For architecture, memory, packaging, networking and software tradeoffs, use Lessons 032–058 and 075–93.
+- For design-to-volume, equipment, materials, test and qualification, use Lessons 059–74 and 94–100.
+- For whole-stack bottlenecks, learning, supplier economics and evidence, use Lessons 101–105.
+- For one compact analysis, use Lesson 105's sequence: useful output, constraint, release mechanism, evidence rung, value capture, decision and falsifier.
+
