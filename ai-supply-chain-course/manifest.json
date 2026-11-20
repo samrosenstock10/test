@@ -998,7 +998,19 @@
         "lessons/105-02.tsfrag",
         "lessons/105-03.tsfrag"
       ]
+    },
+    {
+      "number": 106,
+      "module": "Module 14: Whole-Stack Innovation Synthesis",
+      "title": "COURSE FINALE — The AI Supply Chain as One System",
+      "date": "2026-11-20",
+      "format": "lesson-ts",
+      "parts": [
+        "lessons/106-01.tsfrag",
+        "lessons/106-02.tsfrag",
+        "lessons/106-03.tsfrag"
+      ]
     }
   ],
-  "updatedAt": "2026-11-19T12:03:52.114Z"
+  "updatedAt": "2026-11-20T12:03:46.056Z"
 }
