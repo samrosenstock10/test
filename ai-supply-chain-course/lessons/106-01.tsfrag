@@ -1,0 +1,45 @@
+import type { Lesson } from "./lessons";
+
+export const lesson106 = {
+  number: 106,
+  module: "Module 14: Whole-Stack Innovation Synthesis",
+  title: "COURSE FINALE — The AI Supply Chain as One System",
+  date: "2026-11-20",
+  body: `Prior Lessons — 1-Sentence Recap
+
+Lesson 101: Solving one constraint moves the marginal bottleneck, so the full stack must be redrawn after every improvement.
+
+Lesson 102: Engineering advantage comes from converting uncertainty into qualified production decisions faster without lowering the evidence standard.
+
+Lesson 103: Scarcity creates durable supplier value only when switching costs, service, learning or differentiated performance survive capacity expansion.
+
+Lesson 104: Announcements, demonstrations, samples, qualification, volume production and profitable scale are different evidence rungs.
+
+Lesson 105: A useful decision defines output, finds the constraint, explains the release mechanism, grades evidence, tests value capture and names a falsifier.
+
+The course ends where the supply chain begins: with useful output
+
+The AI supply chain is not a row of independent industries. It is one coupled system that converts designs, materials, equipment, electricity, software and operating knowledge into useful computation.
+
+A model reaches a user only when many layers work together. Workloads and software shape the architecture. Accelerators need logic, memory and packaging. Those components depend on EDA, IP, masks, wafer processes, equipment, materials and test. Finished systems need networking, storage, power conversion, cooling, buildings, grid connections, commissioning and field service. Qualification and reliability evidence connect every handoff.
+
+The common denominator is not chips, wafers, racks or megawatts by themselves. It is reliable workload output at an acceptable cost and time. That idea first appeared as a whole-stack question in Lesson 036 and became the organizing principle of the closing sequence.
+
+Bottlenecks make the system economic
+
+In a serial system, additional output is limited by the current constraint. More logic dies do not produce more accelerators if HBM or package slots are missing. More accelerators do not produce useful cluster time if the network, power path, cooling system or software cannot support them. An installed tool does not become customer capacity until the facility, recipe, product and customer are qualified.
+
+This is why demand does not flow evenly backward through the chain. It concentrates at the marginal constraint. Lead times, margins, customer commitments and engineering attention can all rise at that point.
+
+But the constraint moves. Better wafer yield may expose packaging yield. More package capacity may expose final test. A faster interconnect may expose software scheduling or power. The durable habit is to follow what waits, what is lost and what one additional unit would actually release. Then redraw the map after every improvement.
+
+Learning is a form of capacity
+
+The physical path alone is incomplete. A supply chain also carries information.
+
+Yield improves when defects are measured, traced and linked to causes. New equipment becomes productive when recipes stabilize and products qualify. Engineering lots consume current capacity to answer questions that may improve future output. Change control protects a stable baseline so experimental results remain interpretable.
+
+The learning loop is therefore part of the production system: define a question, run a bounded test, measure, diagnose, confirm, qualify and release the change under control. The scarce resource may be a tool, a reliability chamber, metrology time, customer review or the ability to reach a defensible conclusion.
+
+Lessons 095 through 100 developed those mechanisms in factories and integration. Lesson 102 connected them into learning throughput. The important result is not activity. It is uncertainty converted into repeatable, qualified output.
+
