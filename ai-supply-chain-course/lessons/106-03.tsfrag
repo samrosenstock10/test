@@ -1,0 +1,30 @@
+No one list replaces the original lessons, their sources or the course atlas. It is an index for returning to the right mechanism when a real decision makes it relevant.
+
+Optional future self-study
+
+Several worthwhile areas remain deeper than this course needed to go: detailed process integration and reliability physics; compiler and kernel performance engineering; power-market and grid-interconnection modeling; trade controls and industrial policy; and full financial modeling of suppliers across capital cycles.
+
+These are optional future self-study topics, not scheduled extensions. A future question can use the archive as a starting point without restarting the daily course.
+
+The biggest takeaway
+
+Useful AI output emerges only when physical capacity, engineering learning, qualification, infrastructure and economics align. Local progress matters, but its system value depends on the next constraint. Technical advantage becomes durable when it repeatedly converts uncertainty into qualified output. Supplier value becomes durable when customers still depend on the capability after scarcity eases. Confidence becomes durable when the evidence is strong enough for the claim and the falsifier is explicit.
+
+Scheduled AI Supply Chain Course lessons are now complete with Lesson 106, dated November 20, 2026. The site, archive, atlas, summaries and source history remain available as references. Completion records delivery and publication of the course; it does not claim that every lesson was read or that mastery was achieved.
+
+Sources
+
+U.S. Government Accountability Office, Technology Readiness Assessment Guide — https://www.gao.gov/products/gao-20-48g
+
+NIST/SEMATECH e-Handbook, What is design of experiments? — https://www.itl.nist.gov/div898/handbook/pmd/section3/pmd31.htm
+
+TSMC, Third Quarter 2026 results — https://pr.tsmc.com/english/news/3346
+
+Micron Technology, Fiscal Q3 2026 results — https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Results-for-the-Third-Quarter-of-Fiscal-2026/default.aspx
+
+UCIe Consortium, specifications and press releases — https://www.uciexpress.org/press-releases
+
+Course completion
+
+This is the course finale. There is no scheduled next lesson.`
+} satisfies Lesson;
