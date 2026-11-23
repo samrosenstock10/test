@@ -106,6 +106,13 @@
       "url": "https://www.umc.com/en/News/press_release",
       "kind": "issuer-primary-source",
       "priority": "targeted-primary-source"
+    },
+    {
+      "id": "cisco",
+      "label": "Cisco Investor Relations",
+      "url": "https://investor.cisco.com/",
+      "kind": "issuer-primary-source",
+      "priority": "targeted-primary-source"
     }
   ],
   "observations": [
@@ -2110,6 +2117,39 @@
       "freshness": "newly-discovered-in-current-seven-day-window",
       "itemId": "latent-space-bfl-20261116",
       "sourceLane": "engineering",
+      "counterTickers": []
+    },
+    {
+      "id": "expert-20261123-cisco-scale-across-coherent",
+      "channel": "Cisco Investor Relations",
+      "sourceId": "cisco",
+      "sourceLane": "expert",
+      "title": "Power-constrained multi-site AI clusters expand coherent DCI demand",
+      "sourceTitle": "Cisco Q1 FY2027 prepared remarks and investor presentation",
+      "url": "https://investor.cisco.com/files/doc_earnings/2027/q1/transcript/Q1FY27-Prepared-Remarks.pdf",
+      "speaker": "Cisco management",
+      "role": "Q1 FY2027 prepared remarks and investor presentation",
+      "publishedDate": "2026-11-12",
+      "observedAt": "2026-11-23T14:30:58Z",
+      "contentAccess": "article",
+      "independenceGroup": "cisco-q1fy27-scale-across-20261112",
+      "summary": "Cisco reports that hyperscalers are deploying scale-across networking in production to link GPU back-end fabrics across power-constrained data-center locations; its investor presentation illustrates roughly 14 times traditional DCI bandwidth and 12,000–32,000 coherent ports versus 1,000–2,000 in traditional DCI.",
+      "claim": "Cisco raised FY2027 hyperscaler AI-infrastructure revenue guidance to $9 billion and reported three new Q1 AI design wins, including two P200-powered DCI/scale-across systems. The port ranges are Cisco architecture scenarios, not disclosed orders or shipment counts.",
+      "interpretation": "Our inference: power and site constraints can make inter-data-center coherent transport a structural AI-infrastructure demand layer in addition to scale-up and scale-out networking. This strengthens the interconnect mechanism but does not establish supplier share, durable margins or an attractive stock at the current price.",
+      "beneficiaryTickers": [
+        "CSCO",
+        "CIEN",
+        "NOK"
+      ],
+      "countercase": "The evidence is issuer-led. Cisco names no hyperscaler, port shipment, Acacia order value or per-project economics; the 14x and port-count figures are illustrative architecture scenarios and may partly substitute for other network spending.",
+      "nextTest": "Look for a named hyperscaler deployment, Cisco Acacia revenue or order value, or independent Ciena/Nokia disclosure quantifying scale-across coherent-port demand and economics.",
+      "evidenceType": "issuer-strategy-and-production-claim",
+      "status": "evidence",
+      "location": "Cisco Q1 FY2027 prepared remarks and official investor presentation dated November 12, 2026; the deck figures were checked through a mirror of the Cisco presentation.",
+      "incentives": "Cisco sells the Silicon One systems, Acacia coherent optics and line systems described and benefits from framing scale-across as a major demand category.",
+      "verification": "ChatGPT rechecked the official Cisco investor-relations event and prepared-remarks surfaces after Muse verified the figures against Cisco materials. The Grok report, Muse memo, observation and evidence row all represent the same Cisco-originated disclosure and are not independent corroboration.",
+      "freshness": "new-peer-discovered-primary-evidence",
+      "itemId": "cisco-q1fy27-scale-across-20261112",
       "counterTickers": []
     }
   ],
@@ -4707,6 +4747,31 @@
       "counterTickers": [],
       "sourceObservationId": "expert-20261120-latent-space-bfl-robotics-single-shot",
       "corroborationNote": "This evidence row and linked observation are the same Latent Space/BFL-originated item and are not independent corroboration."
+    },
+    {
+      "id": "20261123-cisco-scale-across-coherent",
+      "title": "Power-constrained multi-site AI clusters expand coherent DCI demand",
+      "url": "https://investor.cisco.com/files/doc_earnings/2027/q1/transcript/Q1FY27-Prepared-Remarks.pdf",
+      "kind": "issuer-strategy-and-production-claim",
+      "independenceGroup": "cisco-q1fy27-scale-across-20261112",
+      "publishedDate": "2026-11-12",
+      "observedAt": "2026-11-23T14:30:58Z",
+      "contentAccess": "article",
+      "status": "evidence",
+      "summary": "Cisco reports that hyperscalers are deploying scale-across networking in production to link GPU back-end fabrics across power-constrained data-center locations; its investor presentation illustrates roughly 14 times traditional DCI bandwidth and 12,000–32,000 coherent ports versus 1,000–2,000 in traditional DCI.",
+      "claim": "Cisco raised FY2027 hyperscaler AI-infrastructure revenue guidance to $9 billion and reported three new Q1 AI design wins, including two P200-powered DCI/scale-across systems. The port ranges are Cisco architecture scenarios, not disclosed orders or shipment counts.",
+      "interpretation": "Our inference: power and site constraints can make inter-data-center coherent transport a structural AI-infrastructure demand layer in addition to scale-up and scale-out networking. This strengthens the interconnect mechanism but does not establish supplier share, durable margins or an attractive stock at the current price.",
+      "verification": "ChatGPT rechecked the official Cisco investor-relations event and prepared-remarks surfaces after Muse verified the figures against Cisco materials. The Grok report, Muse memo, observation and evidence row all represent the same Cisco-originated disclosure and are not independent corroboration.",
+      "countercase": "The evidence is issuer-led. Cisco names no hyperscaler, port shipment, Acacia order value or per-project economics; the 14x and port-count figures are illustrative architecture scenarios and may partly substitute for other network spending.",
+      "nextTest": "Look for a named hyperscaler deployment, Cisco Acacia revenue or order value, or independent Ciena/Nokia disclosure quantifying scale-across coherent-port demand and economics.",
+      "beneficiaryTickers": [
+        "CSCO",
+        "CIEN",
+        "NOK"
+      ],
+      "sourceObservationId": "expert-20261123-cisco-scale-across-coherent",
+      "corroborationNote": "This row, the linked observation, Grok report and Muse memo are representations of the same Cisco-originated disclosure and count as one evidence origin.",
+      "counterTickers": []
     }
   ],
   "rankings": [
@@ -54399,36 +54464,22 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-11-22T14:41:02Z",
+    "asOf": "2026-11-23T14:30:58Z",
     "kind": "expert-investor-scan",
-    "logicalDate": "2026-11-22",
-    "incrementalAfter": "2026-11-21T14:35:26Z",
-    "reconciliationWindowDays": 30,
+    "logicalDate": "2026-11-23",
+    "incrementalAfter": "2026-11-22T14:33:35Z",
     "completedChannels": [
-      "semianalysis",
-      "information-bottleneck",
-      "latent-space",
-      "dwarkesh",
-      "gpu-mode",
-      "ocp",
       "a16z",
-      "exponential-view"
+      "cisco"
     ],
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "No new qualifying post-cutoff SemiAnalysis, builder-engineering, a16z, OCP or Exponential View item appeared on the bounded official/public surfaces; unchanged verified evidence was reused.",
-      "The Black Forest Labs transcript item was source-complete on November 20 and is included here to repair its incomplete protected publication without repeating research.",
-      "The November 22 Soitec peer intake belongs to Future Leaders and Atlas and was not duplicated as independent Infrastructure evidence.",
-      "The due weekly review completed with full append-only snapshots and no score, rank, thesis, core-eligibility or valuation change; actual valuation dates were preserved."
+      "No new qualifying post-cutoff a16z infrastructure or physical-AI thesis appeared on the bounded official surface; unchanged material was not repeated.",
+      "Cisco's November 12 primary disclosure was surfaced through the November 23 Grok/Muse handoff and preserved once as issuer evidence. Its illustrative 14x bandwidth and 12,000–32,000 coherent-port scenario is not an order, shipment count or independent forecast.",
+      "Canonical Project Bottlenecks and Claims remain at blobs 7860aa262e43aadbcaae188dba96a9f171596203 and 03c0fe749ad1c31b55d465a4051fbecc8d1faaf6; no D3 import was required.",
+      "The November 22 weekly full-universe review remains complete; the next weekly review is due November 29. No score, rank, Company Universe or decision-relevant valuation refresh was justified."
     ],
-    "exponentialView": {
-      "logicalWeek": "2026-11-22",
-      "checkedAt": "2026-11-22T14:41:02Z",
-      "status": "complete",
-      "reviewedItemUrls": [],
-      "gaps": []
-    },
     "d3": {
       "bottlenecks": {
         "blobSha": "7860aa262e43aadbcaae188dba96a9f171596203",
@@ -54445,12 +54496,15 @@
     "d4": {
       "peerRecords": [
         {
-          "sourceFindingId": "F-2026-11-22-01",
-          "disposition": "reviewed-owning-lanes-not-duplicated"
+          "sourceRunPath": "grok/runs/20261123T113049Z.md",
+          "sourceRunBlobSha": "4fe20aeead98c72a0426de7df36ee6fba8c96e72",
+          "disposition": "cisco-primary-disclosure-preserved-once-zeta-remains-future-leaders-owner"
         }
       ],
-      "importedEvidenceIds": []
+      "importedEvidenceIds": [
+        "20261123-cisco-scale-across-coherent"
+      ]
     }
   },
-  "updatedAt": "2026-11-22T14:41:02Z"
+  "updatedAt": "2026-11-23T14:43:54Z"
 }
