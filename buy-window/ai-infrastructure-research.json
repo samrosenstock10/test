@@ -2183,6 +2183,64 @@
       "freshness": "late-discovered-current-source-index",
       "itemId": "ocp-meta-icecube-20261111",
       "counterTickers": []
+    },
+    {
+      "id": "expert-20261125-semianalysis-unconventional-ai-oscillator",
+      "channel": "semianalysis",
+      "sourceId": "semianalysis",
+      "sourceLane": "semianalysis",
+      "title": "Unconventional AI uses coupled oscillators to target energy-bound inference",
+      "sourceTitle": "Building a chip to beat biology | Naveen Rao - Unconventional AI [Tape Out - Ep.001]",
+      "url": "https://www.youtube.com/watch?v=FBtUWwlaBoY",
+      "speaker": "Naveen Rao; Dylan Patel",
+      "role": "Unconventional AI founder; SemiAnalysis founder and specialist analyst",
+      "publishedDate": "2026-11-24",
+      "observedAt": "2026-11-25T14:30:00Z",
+      "contentAccess": "full-transcript",
+      "independenceGroup": "semianalysis-unconventional-ai-tapeout-20261124",
+      "summary": "Naveen Rao describes a coupled-oscillator analog-compute architecture that is programmed by weights, prioritizes joules per token and uses roughly quarterly tape-outs to iterate.",
+      "claim": "Rao reports that a first test chip generated small images at about 900 nanojoules each versus about 50 millijoules on a GPU. The comparison is company-reported, workload details and conversion overhead are not independently validated, and it is not a production benchmark.",
+      "interpretation": "If oscillator-based compute preserves its energy advantage after conversion, programmability and system overhead, it could create a specialized inference substrate. The evidence supports a mechanism lead, not a public-company winner or investable economics.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "countercase": "Analog accelerators have often lost headline efficiency advantages after data conversion, calibration and limited programmability are counted. No independent benchmark, customer, product or revenue evidence was found.",
+      "nextTest": "Verify a later tape-out with a fully specified workload and end-to-end energy including conversion, then look for independent replication, system integration and customer evidence.",
+      "evidenceType": "founder-interview-with-company-reported-prototype-result",
+      "status": "lead",
+      "location": "Tape Out episode 1, especially the oscillator-chip and challenge sections.",
+      "incentives": "Rao is the founder of Unconventional AI; SemiAnalysis is launching an interview series about AI-hardware founders.",
+      "verification": "The official SemiAnalysis video identity and dated public summaries were checked; Muse independently confirmed the YouTube/LinkedIn publication. Numerical performance remains attributed to Rao and is not independent measurement.",
+      "freshness": "new-current-source-item",
+      "itemId": "semianalysis-tapeout-unconventional-ai-20261124"
+    },
+    {
+      "id": "expert-20261125-a16z-embo-world-model-robot-learning",
+      "channel": "expert",
+      "sourceId": "a16z",
+      "sourceLane": "expert",
+      "title": "a16z argues world-model training can improve robot generalization and recovery",
+      "sourceTitle": "Investing in Embo",
+      "url": "https://a16z.com/announcement/investing-in-embo/",
+      "speaker": "Justine Moore; Raghu Raghuram; Matt Bornstein",
+      "role": "Andreessen Horowitz investors",
+      "publishedDate": "2026-11-23",
+      "observedAt": "2026-11-25T14:30:00Z",
+      "contentAccess": "article",
+      "independenceGroup": "a16z-embo-investment-20261123",
+      "summary": "a16z argues that a world model trained on internet video and robot demonstrations can let robot agents practice through reinforcement learning in imagined scenarios, broadening task generalization and recovery from failures.",
+      "claim": "The investors describe Embo's plan to combine internet-scale pretraining, robot demonstrations and reinforcement learning in both simulation and the real world. They call early results promising but disclose no benchmark, customer deployment or operating metric.",
+      "interpretation": "The mechanism could reduce dependence on exhaustive task-specific demonstrations and improve long-tail recovery, but the source establishes investor conviction in a private company rather than technical validation or a public-equity beneficiary.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "countercase": "a16z led the financing and has a direct financial incentive. World models can fail under distribution shift, simulated practice may not transfer to physical reliability, and the article provides no measured task success, intervention, safety or economics.",
+      "nextTest": "Look for a specified cross-environment task benchmark, recovery performance, real-world intervention and safety rates, and a named customer pilot that reproduces the claimed generalization.",
+      "evidenceType": "investor-thesis-on-private-robotics-company",
+      "status": "lead",
+      "location": "Official investment announcement sections on generalization, resilience, video pretraining and imagined practice.",
+      "incentives": "a16z led Embo's financing and benefits from the portfolio company's success.",
+      "verification": "Read the full official a16z announcement. The mechanism and investor conviction are verified as published views; technical performance and commercial traction are not independently verified.",
+      "freshness": "new-after-prior-expert-cutoff",
+      "itemId": "a16z-embo-20261123"
     }
   ],
   "evidence": [
@@ -4828,6 +4886,48 @@
       "counterTickers": [],
       "sourceObservationId": "expert-20261124-ocp-meta-icecube-102t",
       "corroborationNote": "This evidence row and linked observation represent the same Meta/OCP specification and are not independent corroboration."
+    },
+    {
+      "id": "20261125-semianalysis-unconventional-ai-oscillator",
+      "title": "Coupled-oscillator test chip targets energy-bound inference",
+      "url": "https://www.youtube.com/watch?v=FBtUWwlaBoY",
+      "kind": "founder-interview-with-company-reported-prototype-result",
+      "independenceGroup": "semianalysis-unconventional-ai-tapeout-20261124",
+      "publishedDate": "2026-11-24",
+      "observedAt": "2026-11-25T14:30:00Z",
+      "contentAccess": "full-transcript",
+      "status": "lead",
+      "summary": "Unconventional AI reports a coupled-oscillator test chip and a roughly quarterly tape-out cadence aimed at reducing end-to-end energy per inference.",
+      "claim": "Rao reports that a first test chip generated small images at about 900 nanojoules each versus about 50 millijoules on a GPU. The comparison is company-reported, workload details and conversion overhead are not independently validated, and it is not a production benchmark.",
+      "interpretation": "If oscillator-based compute preserves its energy advantage after conversion, programmability and system overhead, it could create a specialized inference substrate. The evidence supports a mechanism lead, not a public-company winner or investable economics.",
+      "verification": "The official SemiAnalysis video identity and dated public summaries were checked; Muse independently confirmed the YouTube/LinkedIn publication. Numerical performance remains attributed to Rao and is not independent measurement.",
+      "countercase": "Analog accelerators have often lost headline efficiency advantages after data conversion, calibration and limited programmability are counted. No independent benchmark, customer, product or revenue evidence was found.",
+      "nextTest": "Verify a later tape-out with a fully specified workload and end-to-end energy including conversion, then look for independent replication, system integration and customer evidence.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261125-semianalysis-unconventional-ai-oscillator",
+      "corroborationNote": "This evidence row, the SemiAnalysis interview, Grok report, Muse review and Atlas record all represent the same founder-originated disclosure and are not independent corroboration."
+    },
+    {
+      "id": "20261125-a16z-embo-world-model-robot-learning",
+      "title": "World-model practice is proposed to improve robot generalization and recovery",
+      "url": "https://a16z.com/announcement/investing-in-embo/",
+      "kind": "investor-thesis-on-private-robotics-company",
+      "independenceGroup": "a16z-embo-investment-20261123",
+      "publishedDate": "2026-11-23",
+      "observedAt": "2026-11-25T14:30:00Z",
+      "contentAccess": "article",
+      "status": "lead",
+      "summary": "a16z argues that a world model trained on internet video and robot demonstrations can let robot agents practice through reinforcement learning in imagined scenarios, broadening task generalization and recovery from failures.",
+      "claim": "The investors describe Embo's plan to combine internet-scale pretraining, robot demonstrations and reinforcement learning in both simulation and the real world. They call early results promising but disclose no benchmark, customer deployment or operating metric.",
+      "interpretation": "The mechanism could reduce dependence on exhaustive task-specific demonstrations and improve long-tail recovery, but the source establishes investor conviction in a private company rather than technical validation or a public-equity beneficiary.",
+      "verification": "Read the full official a16z announcement. The mechanism and investor conviction are verified as published views; technical performance and commercial traction are not independently verified.",
+      "countercase": "a16z led the financing and has a direct financial incentive. World models can fail under distribution shift, simulated practice may not transfer to physical reliability, and the article provides no measured task success, intervention, safety or economics.",
+      "nextTest": "Look for a specified cross-environment task benchmark, recovery performance, real-world intervention and safety rates, and a named customer pilot that reproduces the claimed generalization.",
+      "beneficiaryTickers": [],
+      "counterTickers": [],
+      "sourceObservationId": "expert-20261125-a16z-embo-world-model-robot-learning",
+      "corroborationNote": "This evidence row and linked observation are the same a16z investment announcement and are not independent corroboration."
     }
   ],
   "rankings": [
@@ -54520,10 +54620,8 @@
     }
   ],
   "coverage": {
-    "asOf": "2026-11-24T14:38:27Z",
-    "kind": "daily-combined-source-completion",
-    "logicalDate": "2026-11-24",
-    "incrementalAfter": "2026-11-23T14:30:58Z",
+    "asOf": "2026-11-25T14:30:00Z",
+    "kind": "daily-source-cycles",
     "completedChannels": [
       "semianalysis",
       "information-bottleneck",
@@ -54536,39 +54634,10 @@
     "partialChannels": [],
     "unavailableChannels": [],
     "limitations": [
-      "No newer qualifying SemiAnalysis item appeared after the completed November 23 cutoff; email was not independently available, so the verified public-source check is recorded separately in the canonical run log.",
-      "The OCP-hosted Meta IceCube specification was read directly. Its architecture and requirements are primary evidence; fleet reliability, measured leakage/service outcomes and supplier economics remain unverified.",
-      "No additional qualifying post-cutoff builder item surfaced on the bounded Information Bottleneck, Latent Space, GPU MODE or Dwarkesh surfaces.",
-      "The November 24 Silicom lead and Sivers duplicate remain owned by Future Leaders/Atlas and were not counted as independent builder evidence.",
-      "No score, rank, Company Universe, valuation or legacy thesis change was justified.",
-      "No new qualifying post-cutoff a16z AI-infrastructure or physical-AI thesis appeared on the bounded official surface; unchanged Machine Age material was not repeated.",
-      "The current Latent Space and OCP public surfaces were handled in the builder lane; the Meta IceCube specification was preserved once as OCP engineering evidence.",
-      "The November 24 Grok/Muse Silicom item remains a Future Leaders/Atlas lead and Sivers is a duplicate; neither was duplicated as expert evidence.",
-      "The November 22 weekly full-universe review remains complete; the next weekly review is due November 29. No score, rank, thesis, Company Universe or valuation refresh was justified."
-    ],
-    "d3": {
-      "bottlenecks": {
-        "blobSha": "7860aa262e43aadbcaae188dba96a9f171596203",
-        "status": "unchanged"
-      },
-      "claims": {
-        "blobSha": "03c0fe749ad1c31b55d465a4051fbecc8d1faaf6",
-        "status": "unchanged"
-      },
-      "selected": [],
-      "imported": [],
-      "reason": "The completed November 23 Project cycle added no new Bottleneck or Claim source version."
-    },
-    "d4": {
-      "peerRecords": [
-        {
-          "sourceReportPath": "grok/runs/20261124T113006Z.md",
-          "sourceReportBlobSha": "ba456fcef8261ebad8fac31dd96b637985499397",
-          "disposition": "silicom-owned-by-future-leaders-sivers-duplicate-robotics-anecdote-parked"
-        }
-      ],
-      "importedEvidenceIds": []
-    }
+      "Direct email was not independently available for SemiAnalysis; bounded official public surfaces were checked.",
+      "The Unconventional AI performance claim is founder-reported and lacks independent end-to-end measurement.",
+      "The a16z Embo article establishes investor conviction and mechanism framing, not technical performance or commercial traction."
+    ]
   },
-  "updatedAt": "2026-11-24T14:39:31Z"
+  "updatedAt": "2026-11-25T14:53:11Z"
 }
